@@ -9,46 +9,47 @@
 export function MechanisticCaveatPanel() {
   return (
     <div className="prose-panel" data-testid="panel-03c">
-      <h3>Where Km comes from</h3>
-      <p>The three-step scheme behind the model is</p>
+      <h3>Km은 어디에서 오는가</h3>
+      <p>이 모델의 바탕이 되는 반응 단계는 다음과 같습니다.</p>
       <p className="equation">E + S ⇌ ES → E + P</p>
       <p>
-        with association k₁, dissociation k₋₁ and catalysis k<sub>cat</sub>. Solving it under the steady-state assumption
-        gives
+        여기서 결합 속도상수는 k₁, 해리 속도상수는 k₋₁, 촉매 단계의 속도상수는 k<sub>cat</sub>입니다. 정상 상태 가정(steady-state
+        assumption)으로 이 식을 풀면 다음을 얻습니다.
       </p>
       <p className="equation" data-testid="km-expression">
         Km = (k₋₁ + k<sub>cat</sub>) / k₁
       </p>
-      <p>while the equilibrium dissociation constant of the ES complex — the quantity that actually describes binding — is</p>
+      <p>반면 실제로 결합을 나타내는 값인 ES 복합체의 평형 해리 상수(dissociation constant)는 다음과 같습니다.</p>
       <p className="equation" data-testid="kd-expression">
         K<sub>d</sub> = k₋₁ / k₁
       </p>
       <details data-testid="km-kd-details">
-        <summary>When do Km and K<sub>d</sub> come close, and when do they not?</summary>
+        <summary>Km과 K<sub>d</sub>는 언제 비슷해지고, 언제 달라질까?</summary>
         <ul>
           <li>
-            If k<sub>cat</sub> ≪ k₋₁ — the complex falls apart far more often than it turns over — the k<sub>cat</sub> term is
-            negligible and <strong>Km approaches K<sub>d</sub></strong>.
+            k<sub>cat</sub> ≪ k₋₁인 경우, 즉 ES 복합체가 생성물로 전환되기보다 다시 해리되는 경우가 훨씬 많으면
+            k<sub>cat</sub> 항을 무시할 수 있으므로 <strong>Km이 K<sub>d</sub>에 가까워질 수 있습니다</strong>.
           </li>
           <li>
-            If k<sub>cat</sub> is comparable to or larger than k₋₁, Km is larger than K<sub>d</sub>, and how much larger depends
-            on the catalytic step, not on binding.
+            k<sub>cat</sub>이 k₋₁과 비슷하거나 더 크면 Km은 K<sub>d</sub>보다 커집니다. 얼마나 커지는지는 결합이 아니라 촉매
+            단계에 따라 달라집니다.
           </li>
           <li>
-            <strong>In general Km and K<sub>d</sub> are different quantities.</strong> Two enzymes with the same Km can have
-            very different binding constants, and a mutation that raises Km may have changed k<sub>cat</sub> rather than
-            binding.
+            <strong>하지만 일반적으로 Km과 K<sub>d</sub>는 서로 다른 물리적 의미를 가진 값입니다.</strong> Km이 같은 두
+            효소라도 결합 상수는 크게 다를 수 있고, 돌연변이로 Km이 커졌더라도 결합이 아니라 k<sub>cat</sub>이 바뀐 것일 수
+            있습니다.
           </li>
         </ul>
         <p>
-          So a measured Km on its own constrains the combination (k₋₁ + k<sub>cat</sub>)/k₁ and nothing finer. Separating the
-          individual rate constants takes further experiments — for example pre-steady-state measurements — not a v₀-vs-[S]
-          curve.
+          따라서 Km의 크기만으로 기질 결합 친화도(binding affinity)를 일반적으로 단정할 수 없습니다. 측정한 Km은
+          (k₋₁ + k<sub>cat</sub>)/k₁이라는 조합의 값을 알려 줄 뿐입니다. 개별 속도상수를 구분하려면 v₀ 대 [S] 곡선이 아니라
+          전정상 상태(pre-steady-state) 측정 같은 추가 실험이 필요합니다.
         </p>
       </details>
       <p className="small">
-        The whole of Module 03 also assumes one substrate, initial-rate conditions and no cooperativity. Plenty of real
-        enzymes do not follow Michaelis–Menten kinetics at all; see <a href="#/model-notes">Model Notes</a>.
+        모듈 03 전체는 기질이 하나이고, 초기 속도 조건(initial-rate condition)이며, 협동성(cooperativity)이 없다고
+        가정합니다. 실제 효소 중에는 Michaelis–Menten 반응속도론을 따르지 않는 효소도 많습니다. 자세한 내용은{' '}
+        <a href="#/model-notes">모델 및 주의사항</a>을 참고하세요.
       </p>
     </div>
   );

@@ -8,13 +8,12 @@ import type {ModuleId} from '../../app/modules';
 export function ComingSoon({id}: {id: ModuleId}) {
   return (
     <main className="module" data-testid={`module-${id}`}>
-      <ModuleHeader id={id} tag={<span className="badge">Coming in Enzyme II</span>} />
+      <ModuleHeader id={id} tag={<span className="badge">Enzyme II에서 다룰 예정</span>} />
       <div className="prose-panel">
-        <p>This module is part of the next session, Enzyme II — Inhibition &amp; Regulation. It is not built yet.</p>
+        <p>이 모듈은 다음 차시인 Enzyme II — 효소 저해와 조절에서 다룰 내용이며, 아직 준비 중입니다.</p>
         <p>
-          Everything it needs from this app already exists: the velocity model in <code>src/kinetics</code> is written as a
-          general <code>KineticModel</code>, so an inhibition model is a new implementation of the same interface rather
-          than a change to the plotting code.
+          지금 모듈 03에서 사용하는 반응 속도 모델을 바탕으로, 저해제(inhibitor)가 있을 때 v₀ 대 [S] 곡선이 어떻게
+          달라지는지 이어서 탐구하게 됩니다.
         </p>
       </div>
     </main>

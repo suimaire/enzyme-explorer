@@ -306,7 +306,7 @@ export class StructureScene {
       if (!residue) continue;
       const metal = residue.atoms.some((a) => isMetal(atoms[a].element));
       if (metal || view.showLabels)
-        this.label(metal ? residue.resName : 'Zn-bound solvent', this.positions[this.anchorAtom(residue)], metal ? 'metal' : '', 10, metal ? -26 : 12);
+        this.label(metal ? residue.resName : 'Zn²⁺ 결합 solvent', this.positions[this.anchorAtom(residue)], metal ? 'metal' : '', 10, metal ? -26 : 12);
     }
 
     this.drawMeasurements(view.measurements);

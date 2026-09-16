@@ -68,11 +68,11 @@ export function MichaelisMentenPlot({
         data-current-velocity={current.toFixed(3)}
         data-axis-max={velocityAxisMax.toFixed(3)}
         data-baseline-vmax={baseline ? calculateVmax(baseline).toFixed(3) : ''}
-        aria-label={`Initial velocity against substrate concentration. Substrate axis 0 to ${SUBSTRATE_AXIS_MAX} micromolar, velocity axis 0 to ${velocityAxisMax.toFixed(
+        aria-label={`기질 농도에 따른 초기 속도 그래프. 기질 농도 축 0–${SUBSTRATE_AXIS_MAX} µM, 속도 축 0–${velocityAxisMax.toFixed(
           0,
-        )} nanomolar per second. Vmax ${vmax.toFixed(1)} nanomolar per second, Km ${parameters.km} micromolar. At the current substrate ${currentSubstrate} micromolar, v0 is ${current.toFixed(
+        )} nM/s. Vmax ${vmax.toFixed(1)} nM/s, Km ${parameters.km} µM. 현재 [S] ${currentSubstrate} µM에서 v₀는 ${current.toFixed(
           1,
-        )} nanomolar per second.${baseline ? ` A reference curve with Vmax ${calculateVmax(baseline).toFixed(1)} is kept for comparison.` : ''}`}
+        )} nM/s입니다.${baseline ? ` 비교를 위해 Vmax ${calculateVmax(baseline).toFixed(1)}인 기준 곡선이 함께 표시됩니다.` : ''}`}
       >
         <g className="plot-grid">
           {yTicks.map((t) => (

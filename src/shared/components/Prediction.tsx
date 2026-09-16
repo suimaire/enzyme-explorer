@@ -62,7 +62,7 @@ export function PredictQuestion<K extends string>({
     <div className="predict" data-testid={testId} data-locked={locked ? 'yes' : 'no'}>
       <fieldset disabled={locked}>
         <legend>
-          <span className="predict-tag">Predict</span> {question}
+          <span className="predict-tag">먼저 예측</span> {question}
         </legend>
         {choices.map((c) => (
           <label key={c.id} className="choice">
@@ -80,11 +80,11 @@ export function PredictQuestion<K extends string>({
       {hint ? <p className="small">{hint}</p> : null}
       {locked ? (
         <p className="locked-note" data-testid={testId ? `${testId}-locked` : undefined}>
-          Locked prediction: <strong>{choices.find((c) => c.id === choice)?.label}</strong>
+          확정한 예측: <strong>{choices.find((c) => c.id === choice)?.label}</strong>
         </p>
       ) : (
         <button type="button" className="primary" disabled={!choice} onClick={() => predictions.lock(name)}>
-          Lock prediction
+          예측 확정
         </button>
       )}
     </div>
@@ -98,7 +98,7 @@ export function PredictQuestion<K extends string>({
 export function Reveal({
   gate,
   gateMessage,
-  label = 'Reveal explanation',
+  label = '설명 보기',
   children,
   testId,
 }: {
@@ -119,7 +119,7 @@ export function Reveal({
   return (
     <div className="explain" data-testid={testId}>
       <h4>
-        <span className="explain-tag">Explain</span> Explanation
+        <span className="explain-tag">설명</span> 관찰 결과 해석
       </h4>
       {children}
     </div>

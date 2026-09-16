@@ -37,17 +37,17 @@ export function KineticsLab() {
     <main className="module" data-testid="module-kinetics">
       <ModuleHeader
         id="kinetics"
-        tag={<TeachingModel>Single-substrate, irreversible, initial-rate model</TeachingModel>}
+        tag={<TeachingModel>단일 기질, 비가역 반응, 초기 속도 모델</TeachingModel>}
         onReset={reset}
       />
       <Segmented
-        label="Section"
+        label="탐구 단계"
         value={section}
         options={
           [
-            ['a', '03A · Measuring initial velocity'],
-            ['b', '03B · Michaelis–Menten explorer'],
-            ['c', '03C · Km and the mechanism'],
+            ['a', '03A · 초기 속도 측정'],
+            ['b', '03B · Michaelis–Menten 탐색'],
+            ['c', '03C · Km과 반응 메커니즘'],
           ] as const
         }
         onChange={setSection}
@@ -61,11 +61,11 @@ export function KineticsLab() {
         <>
           {assays.length && drifted ? (
             <p className="drift-note" data-testid="drift-note">
-              The diamonds were measured in 03A with Km = {PREPARATION.km} µM, k<sub>cat</sub> = {PREPARATION.kcat} s⁻¹ and [E]T ={' '}
-              {PREPARATION.enzymeTotal} nM. The curve now uses different parameters, so those measurements are not expected to
-              lie on it — they are data, and the curve is a model.{' '}
+              마름모 측정점은 03A에서 Km = {PREPARATION.km} µM, k<sub>cat</sub> = {PREPARATION.kcat} s⁻¹, [E]T ={' '}
+              {PREPARATION.enzymeTotal} nM 조건으로 측정한 값입니다. 지금 곡선은 다른 조건을 사용하므로 측정점이 곡선 위에
+              놓이지 않는 것이 정상입니다. 측정점은 데이터이고, 곡선은 모델입니다.{' '}
               <button type="button" onClick={() => setParameters(PREPARATION)} data-testid="restore-preparation">
-                Restore the assay conditions
+                측정 조건으로 되돌리기
               </button>
             </p>
           ) : null}

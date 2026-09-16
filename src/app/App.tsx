@@ -28,15 +28,15 @@ export function App() {
           <h1>
             Enzyme <span>Explorer</span>
           </h1>
-          <p>Catalysis &amp; Kinetics · 효소는 어떻게 반응 속도를 바꾸는가</p>
+          <p>효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론</p>
         </div>
         <p className="current-module">
-          {entry.number ? `Module ${entry.number} · ` : ''}
+          {entry.number ? `모듈 ${entry.number} · ` : ''}
           {entry.title}
         </p>
       </header>
 
-      <nav className="module-nav" aria-label="Modules">
+      <nav className="module-nav" aria-label="학습 모듈">
         {MODULES.map((m) => (
           <a
             key={m.id}
@@ -50,7 +50,7 @@ export function App() {
           >
             <small>{m.number ? `${m.number} · ${m.eyebrow}` : m.eyebrow}</small>
             {m.title}
-            {m.status === 'planned' ? <em>Coming in Enzyme II</em> : null}
+            {m.status === 'planned' ? <em>Enzyme II에서 다룰 예정</em> : null}
           </a>
         ))}
       </nav>
@@ -62,7 +62,7 @@ export function App() {
         <Suspense
           fallback={
             <main className="module">
-              <p>Loading PDB 2CBA…</p>
+              <p>PDB 2CBA 구조를 불러오는 중…</p>
             </main>
           }
         >
@@ -73,14 +73,14 @@ export function App() {
       {current === 'model-notes' ? <ModelNotes /> : null}
 
       <footer>
-        <span>Enzyme Explorer · Enzyme I — Catalysis &amp; Kinetics</span>
+        <span>Enzyme Explorer · Enzyme I — 촉매 작용과 반응속도론</span>
         <span>
           <a href={hashFor('model-notes')} onClick={(e) => {e.preventDefault(); navigate('model-notes');}}>
-            Model Notes
+            모델 및 주의사항
           </a>{' '}
           ·{' '}
           <a href={PROTEIN_EXPLORER_URL} target="_blank" rel="noreferrer noopener" data-testid="protein-explorer-link">
-            Review protein structure and folding ↗
+            단백질 구조와 접힘 복습하기 ↗
           </a>
         </span>
       </footer>

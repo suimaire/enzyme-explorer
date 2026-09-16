@@ -5,7 +5,7 @@ export function ModuleHeader({
   id,
   tag,
   onReset,
-  resetLabel = 'Reset module',
+  resetLabel = '이 모듈 초기화',
 }: {
   id: ModuleId;
   tag?: React.ReactNode;
@@ -17,10 +17,10 @@ export function ModuleHeader({
     <header className="module-heading">
       <div>
         <p className="eyebrow">
-          {entry.number ? `Module ${entry.number} · ` : ''}
+          {entry.number ? `모듈 ${entry.number} · ` : ''}
           {entry.eyebrow}
         </p>
-        <h2>{entry.title}</h2>
+        <h2>{entry.heading ?? entry.title}</h2>
         {entry.question ? <p className="module-question">{entry.question}</p> : null}
       </div>
       <div className="module-heading-side">

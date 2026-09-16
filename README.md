@@ -59,9 +59,9 @@ does not exist — there is no SPA-rewrite 404 to work around.
 | `#/reaction-energy` | 01 Reaction Energy — interactive reaction-coordinate diagram | ✅ |
 | `#/carbonic-anhydrase` | 02 Carbonic Anhydrase — guided 3D active site (PDB 2CBA) | ✅ |
 | `#/kinetics` | 03 Enzyme Kinetics Lab — 03A initial velocity, 03B Michaelis–Menten, 03C Km and mechanism | ✅ |
-| `#/inhibition` | 04 Inhibition | Coming in Enzyme II |
-| `#/regulation` | 05 Regulation | Coming in Enzyme II |
-| `#/model-notes` | Model Notes — every simplification, stated | ✅ |
+| `#/inhibition` | 04 효소 저해 (Inhibition) | Enzyme II에서 다룰 예정 |
+| `#/regulation` | 05 효소 조절 (Regulation) | Enzyme II에서 다룰 예정 |
+| `#/model-notes` | 모델 및 주의사항 (Model Notes) — every simplification, stated | ✅ |
 
 ```
 src/
@@ -119,23 +119,24 @@ uses for drawing:
 
 ## Scientific simplifications
 
-Stated in full on the in-app **Model Notes** page and in [`docs/SCIENTIFIC_NOTES.md`](docs/SCIENTIFIC_NOTES.md).
+Stated in full on the in-app **모델 및 주의사항** (Model Notes) page and in [`docs/SCIENTIFIC_NOTES.md`](docs/SCIENTIFIC_NOTES.md).
 In short:
 
 - **Module 01** draws *one* barrier per pathway; the reaction coordinate is not time; the energies are
   chosen on a teaching scale, not measured.
 - **Module 02** separates what the coordinates contain (atom positions) from what is a mechanistic
   reading of them (protonation states, proton transfer, the catalytic cycle). Every mechanistic
-  statement carries a *Mechanistic interpretation* tag. The solvent bound to Zn²⁺ is labelled
-  **Zn-bound solvent**, never "hydroxide", because a 1.54 Å X-ray model does not locate hydrogens.
+  statement carries a *반응 메커니즘 해석* (mechanistic interpretation) tag. The solvent bound to Zn²⁺ is labelled
+  **Zn²⁺에 결합한 solvent** (Zn-bound solvent), never "hydroxide", because a 1.54 Å X-ray model does not locate hydrogens.
 - **Module 03** is single-substrate, irreversible, initial-rate Michaelis–Menten, with no product
   inhibition and no cooperativity. **Km is never equated with binding affinity.**
 
 `tests/language.test.ts` enforces this: it scans every source file for the specific over-simplifications
 the app exists to avoid ("Km = affinity", "enzymes give energy", "moves the equilibrium", "all enzymes
 follow Michaelis–Menten", "Zn provides OH⁻", "His64 binds Zn", "the PDB shows proton transfer", a
-negative ΔG implying speed, the reaction coordinate as time) and fails if any of them reappears as an
-affirmative claim. It also asserts that the replacement safeguards are still present.
+negative ΔG implying speed, the reaction coordinate as time) in both English and the Korean UI copy ("Km은
+친화도이다", "효소는 ΔG를 낮춘다", "His64가 Zn²⁺에 직접 배위한다", …) and fails if any of them reappears as an
+affirmative claim; sentences that refute a misconception are allowed. It also asserts that the replacement safeguards are still present.
 
 ## Relationship with Protein 3D Explorer
 

@@ -11,118 +11,118 @@ export function ModelNotes() {
       <ModuleHeader id="model-notes" />
       <div className="prose-panel notes">
         <p className="lead">
-          Each module uses a deliberately simplified model. None of them is wrong for what it is used for, and all of them
-          break somewhere. This page says where.
+          각 모듈은 일부러 단순화한 모델을 사용합니다. 각 모델은 그 목적에는 맞지만, 모두 어딘가에서 한계가 있습니다. 이
+          페이지는 그 한계가 어디인지 정리합니다.
         </p>
 
         <section>
-          <h3>01 · Reaction energy</h3>
+          <h3>01 · 반응 에너지</h3>
           <ul>
             <li>
-              <strong>One barrier.</strong> The diagram draws a single transition state per pathway. Real enzyme mechanisms
-              usually pass through several intermediates and several transition states; the &ldquo;activation barrier&rdquo; then
-              refers to the highest effective barrier along the route, and a catalysed route may not even have the same
-              intermediates as the uncatalysed one.
+              <strong>활성화 장벽이 하나뿐입니다.</strong> 다이어그램은 경로마다 전이 상태(transition state)를 하나만
+              그립니다. 실제 효소 반응은 보통 여러 중간체와 여러 전이 상태를 거칩니다. 이때 &ldquo;활성화 장벽&rdquo;은 경로
+              전체에서 가장 높은 유효 장벽을 뜻하며, 효소가 있을 때의 경로는 효소가 없을 때와 중간체 자체가 다를 수도
+              있습니다.
             </li>
             <li>
-              <strong>The reaction coordinate is not time.</strong> The x axis is conceptual progress along a pathway. A
-              position on it does not correspond to a moment during a reaction, and molecules do not travel along it at a
-              steady speed.
+              <strong>반응 좌표(reaction coordinate)는 시간축이 아닙니다.</strong> 가로축은 반응 경로를 따라 진행되는
+              정도를 나타낸 개념적 좌표입니다. 축 위의 한 위치가 반응 중 특정 순간을 뜻하지 않으며, 분자가 이 축을 따라
+              일정한 속도로 움직이는 것도 아닙니다.
             </li>
             <li>
-              <strong>The energies are chosen, not measured.</strong> They are on an arbitrary kJ·mol⁻¹ teaching scale, set by
-              the sliders. No value in that module describes any particular real reaction.
+              <strong>에너지 값은 측정값이 아니라 설정값입니다.</strong> 슬라이더로 정한 교육용 kJ·mol⁻¹ 눈금이며, 이
+              모듈의 어떤 값도 실제 특정 반응을 나타내지 않습니다.
             </li>
             <li>
-              <strong>ΔG and ΔG°.</strong> The vertical difference drawn between the two end points is a difference of
-              standard free energies. It is ΔG° that fixes the equilibrium constant, while the instantaneous ΔG of a
-              reacting mixture also depends on the concentrations present at that moment.
+              <strong>ΔG와 ΔG°.</strong> 두 끝 상태 사이의 높이 차이는 표준 자유에너지의 차이입니다. 평형 상수를 결정하는
+              것은 ΔG°이며, 실제 반응 혼합물의 순간적인 ΔG는 그 순간의 농도에도 영향을 받습니다.
             </li>
             <li>
-              <strong>The rate factor.</strong> The quoted rate increase is exp(ΔΔG‡/RT) at 298 K, from transition-state
-              theory with the same pre-exponential factor assumed for both pathways. It follows from the energies you chose
-              and is not a measured rate enhancement.
+              <strong>속도 증가 배율.</strong> 표시되는 속도 증가 배율은 298 K에서 exp(ΔΔG‡/RT)로 계산한 값입니다. 전이
+              상태 이론을 적용하고 두 경로의 앞지수 인자가 같다고 가정했습니다. 여러분이 설정한 에너지에서 나온 결과이며,
+              실제로 측정한 속도 증가가 아닙니다.
             </li>
           </ul>
         </section>
 
         <section>
-          <h3>02 · Carbonic anhydrase</h3>
+          <h3>02 · 탄산무수화효소</h3>
           <ul>
             <li>
-              <strong>A structure is a model, not a film.</strong> PDB {STRUCTURE_SOURCE.pdbId} is an experimental model fitted
-              to X-ray diffraction data from a crystal at {STRUCTURE_SOURCE.resolution} Å resolution. It shows one refined set
-              of positions, not the motion of the enzyme and not the reaction happening.
+              <strong>구조는 모델이지 영상이 아닙니다.</strong> PDB {STRUCTURE_SOURCE.pdbId}는 결정의 X선 회절 데이터에
+              맞추어 만든 {STRUCTURE_SOURCE.resolution} Å 분해능의 실험 모델입니다. 정밀화된 원자 위치 한 세트를 보여 줄 뿐,
+              효소의 움직임이나 반응이 일어나는 과정을 보여 주지 않습니다.
             </li>
             <li>
-              <strong>Protonation states are interpretations.</strong> A standard X-ray structure at this resolution does not
-              locate hydrogen atoms. Whether the solvent molecule bound to Zn²⁺ is water or hydroxide at a given pH is a
-              mechanistic conclusion drawn from many kinds of evidence, not something read off these coordinates. The app
-              therefore labels that position &ldquo;Zn-bound solvent&rdquo;.
+              <strong>양성자화 상태(protonation state)는 해석입니다.</strong> 이 분해능의 일반적인 X선 구조에서는 수소
+              원자의 위치가 결정되지 않습니다. 특정 pH에서 Zn²⁺에 결합한 solvent 분자가 물인지 수산화 이온인지는 여러
+              증거를 종합한 메커니즘 해석이며, 이 좌표에서 직접 읽을 수 있는 것이 아닙니다. 그래서 이 앱은 그 자리를
+              &ldquo;Zn²⁺에 결합한 solvent&rdquo;라고 부릅니다.
             </li>
             <li>
-              <strong>Crystallographic waters are not the whole solvent.</strong> Only ordered water molecules appear in the
-              model. The mobile solvent, and the exchange of water in and out of the active site during turnover, are not
-              represented.
+              <strong>결정 구조의 물 분자가 용매 전체는 아닙니다.</strong> 모델에는 위치가 고정된 물 분자만 나타납니다.
+              자유롭게 움직이는 용매와, 반응이 반복되는 동안 활성 부위를 드나드는 물의 교환은 표현되지 않습니다.
             </li>
             <li>
-              <strong>Hydrogen bonds are geometric inferences.</strong> Without hydrogen positions, a short donor–acceptor
-              distance is evidence for a possible hydrogen bond, not a confirmed one. The app describes such contacts as
-              possible interactions and reports the distance it measured.
+              <strong>수소 결합(hydrogen bond)은 기하 구조로부터의 추론입니다.</strong> 수소 위치가 없으므로, 주개와
+              받개 사이의 거리가 짧다는 것은 수소 결합이 있을 가능성을 뒷받침할 뿐 확정하지 않습니다. 이 앱은 그런 접촉을
+              가능한 상호작용으로만 설명하고 측정한 거리를 함께 보여 줍니다.
             </li>
             <li>
-              <strong>Alternate conformations.</strong> His64 is modelled in two conformations in this entry. The viewer shows
-              the higher-occupancy one and says so; the presence of two is itself part of the experimental result.
+              <strong>두 가지 형태(alternate conformation).</strong> 이 구조에서 His64는 두 가지 형태로 모델링되어
+              있습니다. 3D 화면은 점유율이 더 높은 형태를 보여 주며, 두 형태가 존재한다는 사실 자체도 실험 결과의
+              일부입니다.
             </li>
             <li>
-              <strong>The catalytic cycle is a teaching summary.</strong> The arrows in the chemistry panel are a mechanistic
-              interpretation built from the wider literature, not something observed in this file.
+              <strong>촉매 순환은 수업용 요약입니다.</strong> 화학 설명 영역의 순환 단계는 여러 연구를 종합한 반응
+              메커니즘 해석이며, 이 파일에서 관찰된 것이 아닙니다.
             </li>
           </ul>
         </section>
 
         <section>
-          <h3>03 · Michaelis–Menten kinetics</h3>
+          <h3>03 · Michaelis–Menten 반응속도론</h3>
           <ul>
             <li>
-              <strong>One substrate, one product, no inhibitor.</strong> The model is E + S ⇌ ES → E + P under the
-              steady-state assumption.
+              <strong>기질 하나, 생성물 하나, 저해제 없음.</strong> 모델은 정상 상태 가정(steady-state assumption)을 적용한
+              E + S ⇌ ES → E + P입니다.
             </li>
             <li>
-              <strong>Initial-rate conditions.</strong> v₀ = Vmax[S]/(Km + [S]) is the rate at the instant the reaction starts,
-              when [S] is still the concentration you set and essentially no product has accumulated.
+              <strong>초기 속도 조건(initial-rate condition).</strong> v₀ = Vmax[S]/(Km + [S])는 반응이 시작되는 순간의
+              속도입니다. 이때 [S]는 아직 설정한 농도 그대로이고, 생성물은 거의 쌓이지 않았습니다.
             </li>
             <li>
-              <strong>The progress-curve simulation is irreversible.</strong> It integrates dS/dt = −Vmax·S/(Km + S) with
-              P = S₀ − S: no reverse reaction, no product inhibition, no enzyme inactivation, and the steady-state
-              approximation assumed to hold for the whole run rather than only at the start.
+              <strong>반응 진행 곡선 시뮬레이션은 비가역 반응입니다.</strong> P = S₀ − S 조건에서 dS/dt = −Vmax·S/(Km + S)를
+              적분합니다. 역반응, 생성물 저해(product inhibition), 효소 불활성화가 없으며, 정상 상태 근사가 반응 초기뿐
+              아니라 측정 시간 전체에서 성립한다고 가정합니다.
             </li>
             <li>
-              <strong>No cooperativity or allosteric regulation.</strong> Enzymes that show sigmoidal v₀-vs-[S] behaviour are
-              not described by this equation at all. &ldquo;All enzymes follow Michaelis–Menten kinetics&rdquo; is false.
+              <strong>협동성(cooperativity)이나 알로스테릭 조절은 다루지 않습니다.</strong> v₀ 대 [S] 그래프가 S자 모양인
+              효소, 즉 알로스테릭 반응속도론(allosteric kinetics)을 보이는 효소는 이 식으로 전혀 설명되지 않습니다.
+              &ldquo;모든 효소가 Michaelis–Menten 반응속도론을 따른다&rdquo;는 말은 틀렸습니다.
             </li>
             <li>
-              <strong>Km is not K<sub>d</sub>.</strong> Km = (k₋₁ + k<sub>cat</sub>)/k₁, while K<sub>d</sub> = k₋₁/k₁. The two
-              coincide only in the limit k<sub>cat</sub> ≪ k₋₁. A change in Km does not, on its own, tell you how
-              substrate-binding affinity changed.
+              <strong>Km은 K<sub>d</sub>가 아닙니다.</strong> Km = (k₋₁ + k<sub>cat</sub>)/k₁이고 K<sub>d</sub> = k₋₁/k₁입니다.
+              두 값은 k<sub>cat</sub> ≪ k₋₁인 극한에서만 거의 같아집니다. Km의 변화만으로는 기질 결합 친화도가 어떻게
+              변했는지 알 수 없습니다.
             </li>
             <li>
-              <strong>Vmax is an asymptote.</strong> It is the limit v₀ approaches as [S] → ∞, not a velocity reached at any
-              finite substrate concentration.
+              <strong>Vmax는 점근값입니다.</strong> [S] → ∞일 때 v₀가 다가가는 한계값이며, 유한한 기질 농도에서 실제로
+              도달하는 속도가 아닙니다.
             </li>
           </ul>
         </section>
 
         <section>
-          <h3>Structure source</h3>
+          <h3>구조 출처</h3>
           <p>
             PDB {STRUCTURE_SOURCE.pdbId} — {STRUCTURE_SOURCE.title}. {STRUCTURE_SOURCE.method}, {STRUCTURE_SOURCE.resolution} Å.{' '}
-            {STRUCTURE_SOURCE.citation} The file is bundled with the app exactly as downloaded from RCSB PDB, so the app never
-            depends on a network service at runtime.
+            {STRUCTURE_SOURCE.citation} 이 파일은 RCSB PDB에서 내려받은 그대로 앱에 포함되어 있으므로, 앱을 실행할 때 외부
+            네트워크 서비스에 의존하지 않습니다.
           </p>
           <p className="small">
             <a href={STRUCTURE_SOURCE.url} target="_blank" rel="noreferrer noopener">
-              RCSB PDB entry {STRUCTURE_SOURCE.pdbId}
+              RCSB PDB 항목 {STRUCTURE_SOURCE.pdbId}
             </a>
           </p>
         </section>

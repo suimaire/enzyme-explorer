@@ -20,41 +20,45 @@ export type ModuleEntry = {
   /** Two-digit number shown in the navigation, or null for pages that are not numbered modules. */
   number: string | null;
   eyebrow: string;
+  /** Short title used in the navigation and the site header. */
   title: string;
+  /** Longer title for the module page itself, when it differs from the navigation title. */
+  heading?: string;
   /** The inquiry question the module opens with. */
   question: string;
   status: 'ready' | 'planned';
 };
 
 export const MODULES: readonly ModuleEntry[] = [
-  {id: 'start', number: null, eyebrow: 'Start', title: 'Start', question: 'How can a protein make a chemical reaction faster?', status: 'ready'},
+  {id: 'start', number: null, eyebrow: 'Start', title: '시작', question: '단백질은 어떻게 화학 반응을 더 빠르게 만들 수 있을까?', status: 'ready'},
   {
     id: 'reaction-energy',
     number: '01',
-    eyebrow: 'Energy',
-    title: 'Reaction Energy',
-    question: 'Why can a thermodynamically favourable reaction still be slow?',
+    eyebrow: '에너지',
+    title: '반응 에너지',
+    question: '열역학적으로 유리한 반응도 왜 느릴 수 있을까?',
     status: 'ready',
   },
   {
     id: 'carbonic-anhydrase',
     number: '02',
-    eyebrow: 'Active-site chemistry',
-    title: 'Carbonic Anhydrase',
-    question: 'How can the chemical environment of an active site change the reactivity of water?',
+    eyebrow: '활성 부위 화학',
+    title: '탄산무수화효소',
+    heading: '탄산무수화효소의 활성 부위',
+    question: '활성 부위의 화학적 환경은 물의 반응성을 어떻게 바꿀까?',
     status: 'ready',
   },
   {
     id: 'kinetics',
     number: '03',
-    eyebrow: 'Kinetics',
-    title: 'Enzyme Kinetics Lab',
-    question: 'How can we experimentally observe the effect of an enzyme?',
+    eyebrow: '반응속도론',
+    title: '효소 반응속도론 실험실',
+    question: '효소가 반응 속도를 바꾸는 효과를 어떻게 실험적으로 확인할 수 있을까?',
     status: 'ready',
   },
-  {id: 'inhibition', number: '04', eyebrow: 'Enzyme II', title: 'Inhibition', question: '', status: 'planned'},
-  {id: 'regulation', number: '05', eyebrow: 'Enzyme II', title: 'Regulation', question: '', status: 'planned'},
-  {id: 'model-notes', number: null, eyebrow: 'Reference', title: 'Model Notes', question: '', status: 'ready'},
+  {id: 'inhibition', number: '04', eyebrow: 'Enzyme II', title: '효소 저해', question: '', status: 'planned'},
+  {id: 'regulation', number: '05', eyebrow: 'Enzyme II', title: '효소 조절', question: '', status: 'planned'},
+  {id: 'model-notes', number: null, eyebrow: 'Reference', title: '모델 및 주의사항', question: '', status: 'ready'},
 ];
 
 export const moduleEntry = (id: ModuleId): ModuleEntry => MODULES.find((m) => m.id === id)!;

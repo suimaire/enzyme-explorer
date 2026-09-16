@@ -1,7 +1,7 @@
 /** Badge for any quantity that comes from a chosen teaching parameter rather than from a measurement. */
 export const TeachingModel = ({children}: {children?: React.ReactNode}) => (
   <span className="teaching-model">
-    <span className="teaching-model-tag">Teaching model</span>
+    <span className="teaching-model-tag">교육용 모델</span>
     {children}
   </span>
 );
@@ -22,7 +22,7 @@ export const Caution = ({title, children}: {title: string; children: React.React
  */
 export const SourceTag = ({kind}: {kind: 'experimental' | 'interpretation'}) =>
   kind === 'experimental' ? (
-    <span className="source-tag experimental">Experimental structure</span>
+    <span className="source-tag experimental">실험 구조 데이터</span>
   ) : (
-    <span className="source-tag interpretation">Mechanistic interpretation</span>
+    <span className="source-tag interpretation">반응 메커니즘 해석</span>
   );

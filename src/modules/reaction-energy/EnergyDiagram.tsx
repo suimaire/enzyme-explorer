@@ -78,11 +78,11 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
   const ticks = [-30, -15, 0, 15, 30, 45, 60, 70];
 
   const description =
-    `Reaction-coordinate diagram, teaching model. Reactant energy 0, product energy ${signed(uncatalyzed.product, 0)} kilojoules per mole. ` +
-    `Uncatalysed transition state ${uncatalyzed.transitionState.toFixed(0)}, forward barrier ${uncatalyzed.forwardBarrier.toFixed(0)}, reverse barrier ${uncatalyzed.reverseBarrier.toFixed(0)}. ` +
+    `반응 좌표 다이어그램, 교육용 모델. 반응물 에너지 0, 생성물 에너지 ${signed(uncatalyzed.product, 0)} kJ/mol. ` +
+    `효소가 없을 때 전이 상태 ${uncatalyzed.transitionState.toFixed(0)}, 정반응 장벽 ${uncatalyzed.forwardBarrier.toFixed(0)}, 역반응 장벽 ${uncatalyzed.reverseBarrier.toFixed(0)}. ` +
     (catalyzed
-      ? `Catalysed transition state ${catalyzed.transitionState.toFixed(0)}, forward barrier ${catalyzed.forwardBarrier.toFixed(0)}, reverse barrier ${catalyzed.reverseBarrier.toFixed(0)}. The reactant and product energies are identical on both pathways.`
-      : 'The enzyme is off, so only the uncatalysed pathway is drawn.');
+      ? `효소가 있을 때 전이 상태 ${catalyzed.transitionState.toFixed(0)}, 정반응 장벽 ${catalyzed.forwardBarrier.toFixed(0)}, 역반응 장벽 ${catalyzed.reverseBarrier.toFixed(0)}. 두 경로에서 반응물과 생성물의 에너지는 같습니다.`
+      : '효소가 없으므로 효소가 없을 때의 경로만 표시됩니다.');
 
   return (
     <div ref={host} className="energy-diagram">
@@ -154,7 +154,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
           dashed
           anchor="end"
           hideLabel={narrow}
-          label={`forward ${uncatalyzed.forwardBarrier.toFixed(0)}`}
+          label={`정반응 ${uncatalyzed.forwardBarrier.toFixed(0)}`}
         />
         {catalyzed ? (
           <EnergyArrow
@@ -164,7 +164,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
             bottom={Y(catalyzed.reactant)}
             color={PATHWAY_COLORS.catalyzed}
             hideLabel={narrow}
-            label={`forward ${catalyzed.forwardBarrier.toFixed(0)}`}
+            label={`정반응 ${catalyzed.forwardBarrier.toFixed(0)}`}
           />
         ) : null}
         {catalyzed ? (
@@ -176,7 +176,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
             color={PATHWAY_COLORS.catalyzed}
             anchor="end"
             hideLabel={narrow}
-            label={`reverse ${catalyzed.reverseBarrier.toFixed(0)}`}
+            label={`역반응 ${catalyzed.reverseBarrier.toFixed(0)}`}
           />
         ) : null}
         <EnergyArrow
@@ -187,7 +187,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
           color={PATHWAY_COLORS.uncatalyzed}
           dashed
           hideLabel={narrow}
-          label={`reverse ${uncatalyzed.reverseBarrier.toFixed(0)}`}
+          label={`역반응 ${uncatalyzed.reverseBarrier.toFixed(0)}`}
         />
         <EnergyArrow
           testId="arrow-delta-g"
@@ -201,26 +201,38 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
         />
 
         <text className="state-label" x={X(COORDINATE.reactantEnd / 2)} y={Y(uncatalyzed.reactant) - 10} textAnchor="middle">
-          Reactants
+          반응물
         </text>
-        <text className="state-label" x={X((1 + COORDINATE.productStart) / 2)} y={Y(uncatalyzed.product) - 10} textAnchor="middle">
-          Products
+        {/* The product label sits on the side of its level away from the reactant level, so it does not land
+            inside the span of the ΔG arrow and its label — unless there is no room below the level, in which case
+            ΔG is large and the arrow label is far away anyway. */}
+        <text
+          className="state-label"
+          x={X((1 + COORDINATE.productStart) / 2)}
+          y={
+            uncatalyzed.product > uncatalyzed.reactant || Y(uncatalyzed.product) + 20 > m.t + ph - 4
+              ? Y(uncatalyzed.product) - 10
+              : Y(uncatalyzed.product) + 20
+          }
+          textAnchor="middle"
+        >
+          생성물
         </text>
         <text className="state-label" x={X(COORDINATE.transitionState)} y={Y(uncatalyzed.transitionState) - 12} textAnchor="middle">
-          Transition state
+          전이 상태
         </text>
 
         {/* On a phone the plot area is narrower than the caption, so the axis captions centre on the whole
             figure rather than on the plot box; otherwise the long sub-label runs off the right edge. */}
         <text className="axis-label" x={narrow ? width / 2 : m.l + pw / 2} y={height - (narrow ? 26 : 30)} textAnchor="middle">
-          Reaction coordinate
+          반응 좌표(reaction coordinate)
         </text>
         <text className="axis-sublabel" x={narrow ? width / 2 : m.l + pw / 2} y={height - (narrow ? 9 : 12)} textAnchor="middle" fontSize={narrow ? 10 : undefined}>
-          Conceptual progress along a reaction pathway — not time
+          {narrow ? '반응 경로상의 개념적 진행 정도 · 시간축 아님' : '반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다.'}
         </text>
         {/* The rotated label has to fit inside the plot height, which is short on a phone. */}
         <text className="axis-label" transform={`translate(${narrow ? 13 : 15} ${m.t + ph / 2}) rotate(-90)`} textAnchor="middle" fontSize={narrow ? 11.5 : undefined}>
-          {narrow ? 'Relative free energy (kJ·mol⁻¹)' : 'Relative Gibbs free energy (kJ·mol⁻¹)'}
+          {narrow ? '상대 자유에너지 (kJ·mol⁻¹)' : '상대 Gibbs 자유에너지 (kJ·mol⁻¹)'}
         </text>
       </svg>
     </div>

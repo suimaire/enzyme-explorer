@@ -51,10 +51,10 @@ export function ProgressCurvePlot({
         data-duration={duration.toFixed(2)}
         data-final-product={final ? final.product.toFixed(3) : ''}
         data-tangent={tangent ? 'on' : 'off'}
-        aria-label={`Product concentration against time for an assay starting at ${initialSubstrate} micromolar substrate. Over ${duration.toFixed(
+        aria-label={`초기 기질 농도 ${initialSubstrate} µM에서 시작한 반응의 시간에 따른 생성물 농도. ${duration.toFixed(
           0,
-        )} seconds the product rises to ${final ? final.product.toFixed(1) : '0'} micromolar, and the curve flattens as substrate is used up.${
-          tangent ? ' A straight tangent drawn at time zero shows the initial rate; the curve falls below it as the run proceeds.' : ''
+        )}초 동안 생성물이 ${final ? final.product.toFixed(1) : '0'} µM까지 증가하며, 기질이 소모될수록 곡선이 완만해집니다.${
+          tangent ? ' t = 0에서 그린 직선 접선이 초기 속도를 나타내며, 반응이 진행될수록 곡선이 접선 아래로 내려갑니다.' : ''
         }`}
       >
         <defs>
@@ -100,11 +100,11 @@ export function ProgressCurvePlot({
           // Placed above the tangent, far enough along the window that the real curve has already dropped
           // clear of it — the label must not sit on top of either line.
           <text x={X(duration * 0.52)} y={Y(tangent[1].product * 0.52) - 12} fill={KINETICS_COLORS.tangent} fontSize={12} textAnchor="middle">
-            initial rate (tangent at t = 0)
+            초기 속도 (t = 0에서의 접선)
           </text>
         ) : null}
         <text className="axis-label" x={m.l + pw / 2} y={height - (narrow ? 12 : 14)} textAnchor="middle">
-          Time (s)
+          시간 (s)
         </text>
         <text className="axis-label" transform={`translate(${narrow ? 13 : 15} ${m.t + ph / 2}) rotate(-90)`} textAnchor="middle">
           [P] (µM)

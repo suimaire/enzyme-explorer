@@ -1,7 +1,7 @@
 # Scientific notes
 
 Every model in this app is a deliberate simplification. This document says what each one assumes, where
-it breaks, and what the app does to stop a student generalising past it. The in-app **Model Notes** page
+it breaks, and what the app does to stop a student generalising past it. The in-app **모델 및 주의사항** (Model Notes) page
 (`#/model-notes`) carries a student-facing version of the same content; this file adds the reasoning
 behind the implementation choices.
 
@@ -96,7 +96,7 @@ A standard X-ray structure at this resolution does not locate hydrogen atoms. Wh
 molecule on the zinc is water or hydroxide at a given pH is a mechanistic conclusion drawn from many
 kinds of evidence, not something read off these coordinates.
 
-**Consequence in the app:** the fourth coordination position is labelled **`Zn-bound solvent`** in the
+**Consequence in the app:** the fourth coordination position is labelled **`Zn²⁺에 결합한 solvent`** (Zn-bound solvent) in the
 viewer and nowhere reads "Zn–OH⁻ observed in the PDB".
 
 ### Coordination is measured, never assumed
