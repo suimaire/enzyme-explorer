@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.browser-cache/
+*.tsbuildinfo
+
+# Local Claude Code preview config (pins a machine-specific port)
+.claude/
