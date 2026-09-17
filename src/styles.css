@@ -883,3 +883,353 @@ details summary {
   font-size: 12.5px;
   font-weight: bold;
 }
+
+/* ---------- Module 02: guided residue finding ---------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.preset-note {
+  margin: -4px 0 12px;
+}
+.selection-readout strong {
+  color: #1f2a31;
+}
+.atom-label.atom {
+  color: #2d3d47;
+  background: #fffffff0;
+  border-bottom-color: #5c6b75;
+  font-size: 11.5px;
+}
+.atom-label.noted {
+  border-bottom-color: var(--accent);
+}
+.inquiry-steps {
+  list-style: none;
+  counter-reset: step;
+  padding: 0;
+  margin: 0 0 12px;
+  display: grid;
+  gap: 4px;
+  font-size: 14px;
+}
+.inquiry-steps li {
+  position: relative;
+  padding-left: 30px;
+}
+.inquiry-steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 21px;
+  height: 21px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+.inquiry-steps strong {
+  margin-right: 6px;
+  color: var(--accent-dark);
+}
+.reading-guide {
+  margin: 0 0 12px;
+  padding: 8px 12px 10px;
+  background: #fbfdfe;
+  border-left: 4px solid #6b8797;
+}
+.reading-guide summary {
+  font-size: 14.5px;
+  min-height: 34px;
+  display: list-item;
+  padding-top: 4px;
+}
+.reading-guide section {
+  border-top: 1px dotted #ccd6db;
+  padding-top: 6px;
+  margin-top: 6px;
+}
+.reading-guide h4 {
+  font-size: 14px;
+  margin: 2px 0 4px;
+}
+.reading-guide p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+.his-ring {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  margin: 2px 0 4px;
+}
+.his-ring .bond {
+  fill: none;
+  stroke: #6f808a;
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+.his-ring .carbon {
+  fill: #9aa7af;
+}
+.his-ring .nitrogen {
+  fill: #3a64c8;
+  stroke: #fff;
+  stroke-width: 1.5;
+}
+.his-ring text {
+  font-size: 11px;
+  fill: #3a4a54;
+}
+.his-ring .n-name {
+  font-size: 12px;
+  font-weight: bold;
+  fill: #26479a;
+}
+.his-ring .note {
+  font-size: 10.5px;
+  fill: var(--soft);
+}
+.finder-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 12px;
+  display: grid;
+  gap: 8px;
+}
+.finder-item {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 8px 10px;
+  background: #fff;
+}
+.finder-item[data-active='yes'] {
+  border-color: #b0327c;
+  box-shadow: inset 4px 0 #b0327c;
+  background: #fdf7fa;
+}
+.finder-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.finder-name {
+  font-size: 15.5px;
+}
+.find-button {
+  flex-shrink: 0;
+  min-height: 40px;
+  padding: 4px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--accent-dark);
+  border-color: var(--accent);
+  white-space: nowrap;
+}
+.find-button[aria-pressed='true'] {
+  border-color: #b0327c;
+  color: #8c1f5c;
+  background: #f9e9f2;
+  box-shadow: inset 0 -3px #b0327c;
+}
+.finder-measure {
+  margin: 4px 0 2px;
+  font-size: 13.5px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 8px;
+}
+.finder-measure.pending {
+  color: var(--soft);
+}
+.finder-distance {
+  font-variant-numeric: tabular-nums;
+  font-weight: bold;
+  color: #3c4d57;
+  border-bottom: 2px dotted #5c6b75;
+}
+.judgement {
+  margin: 4px 0 0;
+}
+.judgement legend {
+  font-size: 13px;
+  font-weight: normal;
+  color: var(--soft);
+  margin-bottom: 2px;
+}
+.judgement-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.judgement-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 2px 12px 2px 8px;
+  border: 1px solid #c6d1d8;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.judgement-option:has(input:checked) {
+  border-color: var(--accent);
+  background: #e8f1f7;
+}
+.judgement-option input {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+.judgement:disabled .judgement-option {
+  cursor: default;
+  color: #43535d;
+}
+.finder-verdict {
+  margin: 6px 0 0;
+  font-size: 13.5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+}
+.finder-match {
+  color: #1f7a63;
+}
+.finder-verdict[data-match='no'] .finder-match {
+  color: #98241b;
+}
+.table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  margin: 8px 0;
+}
+.residue-table caption {
+  text-align: left;
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--soft);
+  padding-bottom: 4px;
+}
+.residue-table th.number {
+  text-align: right;
+}
+.residue-table tbody th {
+  color: #1f2a31;
+  font-size: 13.5px;
+}
+.residue-table tr.is-selected > * {
+  background: #fdf1f7;
+}
+.residue-table tr.is-selected > th:first-child {
+  box-shadow: inset 3px 0 #b0327c;
+}
+.residue-table td.verdict-yes {
+  font-weight: bold;
+  color: var(--accent-dark);
+}
+.residue-table td.find-cell {
+  text-align: right;
+  width: 1%;
+  padding: 3px 0 3px 6px;
+}
+.residue-table .find-button {
+  min-height: 36px;
+  padding: 2px 10px;
+  font-size: 13px;
+}
+.row-note {
+  display: block;
+  font-size: 11.5px;
+  font-weight: normal;
+  color: var(--soft);
+}
+.summary-table .group-row th {
+  font-size: 12px;
+  color: var(--soft);
+  padding-top: 8px;
+  border-bottom-color: #b8c4cb;
+}
+.summary-table .group-row.contrast th {
+  color: #98241b;
+}
+.summary-table tr.non-ligand > * {
+  background: #fdf5f4;
+}
+.not-ligand-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  color: #98241b;
+  border: 1px solid #d9a39d;
+  border-radius: 3px;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+.guide-questions {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 5px;
+  padding: 6px 12px 8px;
+  margin-bottom: 10px;
+  background: #fbfdfe;
+}
+.guide-questions h4 {
+  font-size: 14px;
+  margin: 4px 0;
+}
+.guide-questions ol {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 14.5px;
+}
+.role-compare {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 8px;
+  margin: 8px 0;
+}
+.role-card {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 6px 10px;
+  background: #fff;
+}
+.role-card.ligand {
+  border-top: 4px solid var(--accent);
+}
+.role-card.non-ligand {
+  border-top: 4px solid #98241b;
+}
+.role-card h5 {
+  font-size: 14px;
+  margin: 2px 0 4px;
+}
+.explain .role-card p {
+  font-size: 13.5px;
+  margin: 4px 0;
+}
+.return-link {
+  display: none;
+  margin-top: 6px;
+  min-height: 40px;
+  font-size: 14px;
+}
+@media (max-width: 1180px) {
+  .return-link {
+    display: inline-block;
+  }
+}

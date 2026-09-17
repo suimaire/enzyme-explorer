@@ -87,6 +87,23 @@ const BANNED: {claim: RegExp; why: string}[] = [
     claim: /(Zn|금속)[^.]{0,20}(수산화\s*이온|OH⁻)[^.]{0,20}(관찰|확인)(된다|됩니다|했다|했습니다)/,
     why: '양성자화 상태는 관찰이 아니라 해석이다',
   },
+  {
+    claim: /His\s*-?\s*64[^.]{0,30}(네 번째\s*)?(단백질\s*)?(Zn²?⁺?|금속)[^.]{0,6}(리간드|배위\s*잔기)(이다|입니다|다)/,
+    why: 'His64는 Zn²⁺의 리간드가 아니다',
+  },
+  // Structure-reading guide (Module 02, Stage 2)
+  {
+    claim: /배위\s*(결합)?[은는이가]?[^.]{0,30}(완전히|전혀)\s*(별개|다른|특별한)[^.]{0,15}결합(이다|입니다)/,
+    why: '배위는 다른 화학 결합과 완전히 별개인 특별한 결합으로 가르치지 않는다',
+  },
+  {
+    claim: /잔기\s*번호[은는이가]?[^.]{0,30}(항상|언제나|반드시)[^.]{0,30}번째\s*아미노산(이다|입니다|과 같다|과 같습니다)/,
+    why: '잔기 번호는 PDB numbering이며 사슬의 순서와 항상 같지는 않다',
+  },
+  {
+    claim: /(가까이|근처에)\s*있(으면|기만 하면)[^.]{0,20}(직접\s*)?배위(한다|합니다|하는 것이다)/,
+    why: '근처에 있다는 것만으로 직접 배위라고 판단하지 않는다',
+  },
 ];
 
 /** Every fragment of `text` that makes a banned claim without negating it. */
@@ -119,6 +136,10 @@ describe('language guards', () => {
     '효소는 반응에 에너지를 공급한다.',
     '모든 효소는 Michaelis–Menten 반응속도론을 따른다.',
     'PDB 구조는 양성자 이동을 보여 준다.',
+    'His64는 Zn²⁺의 리간드이다.',
+    '배위 결합은 공유 결합과 완전히 별개인 특별한 결합이다.',
+    '잔기 번호는 항상 앞에서부터 센 번째 아미노산과 같습니다.',
+    'Zn²⁺ 근처에 있으면 직접 배위한다.',
     'Km = affinity',
     'The enzyme shifts the equilibrium towards products',
   ])('flags the misconception: %s', (sentence) => {
@@ -138,6 +159,9 @@ describe('language guards', () => {
     'ΔG < 0인 반응은 반드시 빠르게 일어날까?',
     '“모든 효소가 Michaelis–Menten 반응속도론을 따른다”는 말은 틀렸습니다.',
     '결정 구조는 양성자 이동도 양성자화 상태도 직접 보여 주지 않습니다.',
+    'His64는 Zn²⁺의 리간드가 아닙니다.',
+    '번호는 사슬 앞에서부터 센 순서와 항상 같지는 않습니다.',
+    '근처에 있다는 것만으로는 직접 배위가 아닙니다.',
     'Km is not, in general, a direct measure of affinity',
   ])('does not flag a refutation or an open question: %s', (sentence) => {
     expect(flagged(sentence)).toBe(false);
@@ -155,6 +179,18 @@ describe('language guards', () => {
     // The solvent position is never named as a hydroxide, in the panels or in the viewer label.
     expect(all).toContain('Zn²⁺에 결합한 solvent');
     expect(all).toContain("'Zn²⁺ 결합 solvent'");
+    // The Stage 2 reading guide explains the label, the two histidine nitrogens and coordination, and keeps
+    // the verdict tied to a measured distance rather than to proximity alone.
+    expect(all).toContain('histidine의 세 글자 약어');
+    expect(all).toContain('사슬 앞에서부터 센 순서와 항상 같지는');
+    expect(all).toContain('<strong>ND1</strong>, <strong>NE2</strong>로 적습니다');
+    expect(all).toContain('금속–리간드 상호작용');
+    expect(all).toContain('비공유 전자쌍');
+    expect(all).toContain('근처에 있다는 것만으로는 직접 배위가 아닙니다');
+    // Stage 4 keeps His64 a non-ligand in every rendered form, and its role an interpretation.
+    expect(all).toContain('Zn²⁺에 직접 배위하지 않습니다');
+    expect(all).toContain("NON_LIGAND_NOTE = '직접 배위 안 함'");
+    expect(all).toContain('양성자 셔틀(proton shuttle)과 관련된 잔기');
     // Teaching-model and experimental/interpretation labelling exist and are used.
     expect(all).toContain('교육용 모델');
     expect(all).toContain('반응 메커니즘 해석');

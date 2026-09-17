@@ -1,19 +1,22 @@
-import {useEffect, useMemo, useState} from 'react';
+import {useEffect, useMemo, useRef, useState} from 'react';
 import pdbUrl from '../../data/structures/2CBA.pdb?url';
 import {StructureViewer, type CameraRequest} from './StructureViewer';
 import {ChemistryPanel} from './ChemistryPanel';
+import {ReadingGuide} from './ReadingGuide';
+import {ResidueFinder, type Judgement} from './ResidueFinder';
 import {STRUCTURE_SOURCE} from './structureSource';
-import {COORDINATION_MAX, analyzeActiveSite, type ActiveSite} from './activeSite';
+import {COORDINATION_MAX, SITE_RADIUS, analyzeActiveSite, type ActiveSite} from './activeSite';
+import {STAGE_PRESETS, buildStageView, metalContact, stageCameraAtoms, type Stage} from './stageView';
 import {ModuleHeader} from '../../shared/components/ModuleHeader';
 import {Segmented} from '../../shared/components/Segmented';
 import {PredictQuestion, Reveal, usePredictions} from '../../shared/components/Prediction';
 import {Caution, SourceTag} from '../../shared/components/Callout';
 import {parseStructure, residueLabel, type Structure} from '../../viewer/pdb/parsePdb';
+import {atomDisplayName} from '../../viewer/pdb/atomNames';
 import {inferBonds} from '../../viewer/pdb/bonds';
 import {PROTEIN_EXPLORER_URL} from '../../app/App';
-import type {Measurement, Representation, StructureView} from '../../viewer/rendering/StructureScene';
+import type {Representation} from '../../viewer/rendering/StructureScene';
 
-type Stage = 1 | 2 | 3 | 4;
 type QuestionKey = 'shuttle';
 
 const STAGES: {id: Stage; label: string; eyebrow: string}[] = [
@@ -68,73 +71,109 @@ export function CarbonicAnhydraseLab() {
 function Lab({model}: {model: Model}) {
   const {structure, bonds, site} = model;
   const [stage, setStage] = useState<Stage>(1);
-  const [representation, setRepresentation] = useState<Representation>('ribbon');
+  const [representation, setRepresentation] = useState<Representation>(STAGE_PRESETS[1].representation);
   const [selected, setSelected] = useState<number | null>(null);
   const [camera, setCamera] = useState<CameraRequest>({preset: 'overview', token: 0});
-  const [guess, setGuess] = useState<Set<number>>(new Set());
-  const [guessLocked, setGuessLocked] = useState(false);
+  const [judgements, setJudgements] = useState<Map<number, Judgement>>(new Map());
+  const [judgementsLocked, setJudgementsLocked] = useState(false);
+  const [measured, setMeasured] = useState<Set<number>>(new Set());
   const predictions = usePredictions<QuestionKey>();
 
   /** His64 is named here, but its classification comes from the measured distance, not from its number. */
   const shuttle = site.histidines.find((h) => h.resSeq === 64) ?? null;
-  const solventResidue = site.boundSolvent?.residueIndex ?? null;
+  const shuttleLocked = predictions.get('shuttle').locked;
 
-  const view: StructureView = useMemo(() => {
-    const highlighted = new Set<number>();
-    const spheres = new Set<number>([site.metal.residueIndex]);
-    const measurements: Measurement[] = [];
-    if (stage >= 2) for (const l of site.ligands) highlighted.add(l.residueIndex);
-    if (stage === 2) for (const l of site.ligands) measurements.push({a: site.metal.atomIndex, b: l.atomIndex});
-    if (stage >= 3 && solventResidue !== null) spheres.add(solventResidue);
-    if (stage === 3 && site.boundSolvent) {
-      measurements.push({a: site.metal.atomIndex, b: site.boundSolvent.atomIndex});
-      if (site.nextWater) measurements.push({a: site.metal.atomIndex, b: site.nextWater.atomIndex});
-    }
-    if (stage === 4 && shuttle) {
-      highlighted.add(shuttle.residueIndex);
-      measurements.push({a: site.metal.atomIndex, b: shuttle.closest.atomIndex});
-    }
-    if (stage === 2 && guessLocked) for (const index of guess) highlighted.add(index);
-    if (selected !== null) highlighted.add(selected);
-    return {representation, highlighted, spheres, selected, measurements, showLabels: stage >= 2};
-  }, [stage, representation, selected, site, shuttle, solventResidue, guess, guessLocked]);
+  const view = useMemo(
+    () => buildStageView(structure, site, shuttle, {stage, representation, selected, judgementsLocked, shuttleLocked}),
+    [structure, site, shuttle, stage, representation, selected, judgementsLocked, shuttleLocked],
+  );
 
-  const focus = (preset: CameraRequest['preset']) => setCamera((c) => ({preset, token: c.token + 1}));
+  const focus = (preset: CameraRequest['preset'], atoms?: readonly number[]) => setCamera((c) => ({preset, atoms, token: c.token + 1}));
+
+  /** Frames one residue together with the metal, so both ends of the measured distance are on screen. */
+  const frameResidue = (residueIndex: number, extra: readonly number[] = []) =>
+    focus('atoms', [...structure.residues[residueIndex].atoms, site.metal.atomIndex, ...extra]);
+
+  const markMeasured = (residueIndex: number) =>
+    setMeasured((prev) => (prev.has(residueIndex) ? prev : new Set(prev).add(residueIndex)));
+
+  const workspace = useRef<HTMLElement>(null);
+  /** The [찾기] button last used, so a student on a narrow screen can jump back to the list after looking. */
+  const returnTarget = useRef<HTMLElement | null>(null);
+  const [canReturn, setCanReturn] = useState(false);
+
+  /**
+   * On a narrow screen the list sits below the viewer, so a [찾기] press would otherwise move a camera the
+   * student cannot see. Bring the viewer into view when most of it is off screen; wide layouts never scroll.
+   */
+  const revealViewer = (from?: HTMLElement) => {
+    const host = workspace.current;
+    returnTarget.current = from ?? null;
+    setCanReturn(Boolean(from));
+    if (!host || !from) return;
+    const rect = host.getBoundingClientRect();
+    const visible = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+    if (visible < Math.min(rect.height, window.innerHeight) * 0.6) {
+      const smooth = !window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
+      host.scrollIntoView({behavior: smooth ? 'smooth' : 'auto', block: 'start'});
+    }
+  };
+
+  const backToList = () => {
+    const target = returnTarget.current;
+    if (!target) return;
+    target.scrollIntoView({block: 'center'});
+    target.focus({preventScroll: true});
+  };
+
+  const findResidue = (residueIndex: number, from?: HTMLElement) => {
+    setSelected(residueIndex);
+    markMeasured(residueIndex);
+    frameResidue(residueIndex);
+    revealViewer(from);
+  };
+
+  const pick = (residueIndex: number) => {
+    setSelected(residueIndex);
+    markMeasured(residueIndex);
+  };
+
+  /** Entering a stage applies its preset again: representation, cleared selection and camera. */
   const goToStage = (next: Stage) => {
+    const preset = STAGE_PRESETS[next];
     setStage(next);
+    setRepresentation(preset.representation);
     setSelected(null);
-    if (next >= 2) focus('active-site');
+    setCanReturn(false);
+    const atoms = stageCameraAtoms(structure, site, shuttle, next);
+    if (atoms) focus('atoms', atoms);
+    else focus('overview');
   };
 
   const reset = () => {
     setStage(1);
-    setRepresentation('ribbon');
+    setRepresentation(STAGE_PRESETS[1].representation);
     setSelected(null);
-    setGuess(new Set());
-    setGuessLocked(false);
+    setJudgements(new Map());
+    setJudgementsLocked(false);
+    setMeasured(new Set());
     predictions.reset();
     focus('overview');
   };
 
-  const selectedResidue = selected === null ? null : structure.residues[selected];
-  const selectedDistance =
-    selected === null
-      ? null
-      : Math.min(
-          ...structure.residues[selected].atoms.map((i) => {
-            const a = structure.atoms[i].position;
-            const b = structure.atoms[site.metal.atomIndex].position;
-            return Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
-          }),
-        );
+  const judge = (residueIndex: number, judgement: Judgement) =>
+    setJudgements((prev) => new Map(prev).set(residueIndex, judgement));
 
-  const toggleGuess = (index: number) =>
-    setGuess((prev) => {
-      const next = new Set(prev);
-      if (next.has(index)) next.delete(index);
-      else next.add(index);
-      return next;
-    });
+  const allJudged = site.histidines.every((h) => judgements.has(h.residueIndex));
+  const agreed = site.histidines.filter((h) => judgements.get(h.residueIndex) === (h.coordinating ? 'yes' : 'no')).length;
+  const summaryOpen = stage >= 3 || judgementsLocked;
+
+  const selectedResidue = selected === null ? null : structure.residues[selected];
+  const selectedContact = metalContact(structure, site, selected);
+  /** Before the Stage 2 judgements are locked, the readout gives the measurement but leaves the verdict to the student. */
+  const showDistanceVerdict = !(stage === 2 && !judgementsLocked);
+
+  const rowClass = (residueIndex: number) => (selected === residueIndex ? 'is-selected' : undefined);
 
   return (
     <main className="module" data-testid="module-carbonic-anhydrase">
@@ -174,6 +213,12 @@ function Lab({model}: {model: Model}) {
             }
             onChange={setRepresentation}
           />
+          <p className="small preset-note" data-testid="preset-note">
+            {stage === 1
+              ? '1단계 기본 표시: 전체 단백질 리본과 Zn²⁺ 구.'
+              : `${stage}단계 기본 표시: 옅은 리본 + 조사할 잔기 막대 모형 + Zn²⁺ 구.`}{' '}
+            다른 단계로 이동하면 그 단계의 기본 표시로 돌아갑니다.
+          </p>
           <div className="button-row">
             <button type="button" onClick={() => focus('active-site')} data-testid="focus-active-site">
               활성 부위로 이동
@@ -188,13 +233,13 @@ function Lab({model}: {model: Model}) {
           </p>
         </section>
 
-        <section className="workspace" aria-label="3D 구조">
+        <section className="workspace" aria-label="3D 구조" ref={workspace}>
           <StructureViewer
             structure={structure}
             bonds={bonds}
             view={view}
             camera={camera}
-            onPick={setSelected}
+            onPick={pick}
             options={{
               ariaLabel: `Human Carbonic Anhydrase II, PDB ${STRUCTURE_SOURCE.pdbId}, chain ${STRUCTURE_SOURCE.chain}. 촉매 작용을 하는 Zn²⁺ 이온이 표시된 단백질 리본 모델. 드래그하여 회전, 스크롤하여 확대·축소, 잔기를 클릭하여 선택.`,
               focus: {target: structure.atoms[site.metal.atomIndex].position, distance: 17},
@@ -207,15 +252,37 @@ function Lab({model}: {model: Model}) {
             </span>
             <span>거리는 PDB에 등록된 좌표에서 측정한 값 (Å)</span>
           </div>
-          {selectedResidue ? (
-            <p className="plot-caption" data-testid="selection-readout">
-              선택한 잔기 <strong>{residueLabel(selectedResidue)}</strong> — {site.metal.resName}까지의 최단 거리:{' '}
-              {selectedDistance!.toFixed(2)} Å{' '}
-              {selectedDistance! <= COORDINATION_MAX ? '(직접 배위가 가능한 거리)' : '(직접 배위하기에는 너무 먼 거리)'}
-            </p>
-          ) : (
-            <p className="plot-caption">선택한 잔기가 없습니다. 리본이나 곁사슬을 클릭하면 Zn²⁺까지의 거리를 측정합니다.</p>
-          )}
+          <p className="plot-caption selection-readout" data-testid="selection-readout" aria-live="polite">
+            {selectedResidue && selectedContact && selectedResidue.kind === 'water' ? (
+              <>
+                선택한 물 분자 <strong>HOH {selectedResidue.resSeq}</strong>의 산소 원자 — Zn²⁺까지{' '}
+                <strong>{selectedContact.distance.toFixed(2)} Å</strong>
+                {selectedContact.distance <= COORDINATION_MAX ? ' (Zn²⁺에 결합한 solvent)' : ' (Zn²⁺에 결합하지 않은 물 분자)'}
+              </>
+            ) : selectedResidue && selectedContact ? (
+              <>
+                선택한 잔기 <strong>{residueLabel(selectedResidue)}</strong> — Zn²⁺에 가장 가까운 원자{' '}
+                <strong>{atomDisplayName(selectedContact.atomName)}</strong>,{' '}
+                <strong>{selectedContact.distance.toFixed(2)} Å</strong>
+                {showDistanceVerdict
+                  ? selectedContact.distance <= COORDINATION_MAX
+                    ? ' (직접 배위가 가능한 거리)'
+                    : ' (직접 배위하기에는 너무 먼 거리)'
+                  : null}
+              </>
+            ) : selectedResidue ? (
+              <>
+                <strong>Zn²⁺ 이온</strong>을 선택했습니다. 주변 잔기를 선택하면 Zn²⁺까지의 거리를 측정합니다.
+              </>
+            ) : (
+              '선택한 잔기가 없습니다. [찾기] 버튼을 누르거나 리본·곁사슬을 클릭하면 Zn²⁺까지의 거리를 측정합니다.'
+            )}
+          </p>
+          {canReturn && selected !== null ? (
+            <button type="button" className="return-link" onClick={backToList} data-testid="back-to-list">
+              ↩ 목록으로 돌아가기
+            </button>
+          ) : null}
         </section>
 
         <section className="inquiry" aria-label="단계별 안내와 질문">
@@ -244,57 +311,93 @@ function Lab({model}: {model: Model}) {
           {stage === 2 ? (
             <div data-testid="stage-2-panel">
               <h3>2단계 · Zn²⁺에 직접 배위하는 잔기 찾기</h3>
+              <ol className="inquiry-steps">
+                <li>
+                  <strong>찾기</strong> 후보 잔기의 [찾기]를 눌러 3D 구조에서 위치를 확인합니다.
+                </li>
+                <li>
+                  <strong>측정</strong> Zn²⁺에 가장 가까운 원자와 그 거리를 읽습니다.
+                </li>
+                <li>
+                  <strong>판단</strong> Zn²⁺에 직접 배위하는 잔기인지 예/아니오로 고릅니다.
+                </li>
+              </ol>
+              <ReadingGuide />
               <p className="small">
-                Zn²⁺ 이온에서 12 Å 이내에 원자가 있는 histidine 잔기를 모두 나열했습니다. 직접 배위하는 리간드(ligand)라고
-                생각하는 잔기를 고른 뒤 답을 확정하면 측정한 거리가 표시됩니다.
+                Zn²⁺에서 {SITE_RADIUS} Å 이내에 원자가 있는 histidine {site.histidines.length}개를 가까운 순서로 나열했습니다.
+                3D 화면에서는 모두 같은 막대 모형으로 표시됩니다.
               </p>
-              <fieldset disabled={guessLocked}>
-                <legend>
-                  <span className="predict-tag">먼저 예측</span> Zn²⁺에 직접 배위하는 histidine 잔기는 무엇일까?
-                </legend>
-                {site.histidines.map((h) => (
-                  <label key={h.residueIndex} className="choice">
-                    <input type="checkbox" checked={guess.has(h.residueIndex)} onChange={() => toggleGuess(h.residueIndex)} />
-                    <span>His {h.resSeq}</span>
-                  </label>
-                ))}
-              </fieldset>
-              {guessLocked ? (
-                <table className="residue-table" data-testid="ligand-table">
-                  <thead>
-                    <tr>
-                      <th scope="col">잔기</th>
-                      <th scope="col">가장 가까운 원자</th>
-                      <th scope="col">Zn²⁺까지 거리 (Å)</th>
-                      <th scope="col">직접 배위?</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {site.histidines.map((h) => (
-                      <tr key={h.residueIndex} data-testid={`his-${h.resSeq}`}>
-                        <td>His {h.resSeq}</td>
-                        <td>{h.closest.atomName}</td>
-                        <td className="number">{h.closest.distance.toFixed(2)}</td>
-                        <td>{h.coordinating ? '예' : '아니오'}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+              <ResidueFinder
+                candidates={site.histidines}
+                selected={selected}
+                measured={measured}
+                judgements={judgements}
+                locked={judgementsLocked}
+                onFind={findResidue}
+                onJudge={judge}
+              />
+              {judgementsLocked ? (
+                <>
+                  <p className="locked-note" data-testid="judgement-score">
+                    {site.histidines.length}개 중 {agreed}개의 판단이 좌표로 측정한 결과와 같습니다.
+                  </p>
+                  <div className="table-scroll">
+                    <table className="residue-table" data-testid="ligand-table">
+                      <caption>좌표로 측정한 결과</caption>
+                      <thead>
+                        <tr>
+                          <th scope="col">잔기</th>
+                          <th scope="col">Zn²⁺에 가장 가까운 원자</th>
+                          <th scope="col" className="number">
+                            Zn²⁺까지 거리 (Å)
+                          </th>
+                          <th scope="col">직접 배위?</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {site.histidines.map((h) => (
+                          <tr key={h.residueIndex} data-testid={`his-${h.resSeq}`} className={rowClass(h.residueIndex)}>
+                            <th scope="row">His {h.resSeq}</th>
+                            <td>{atomDisplayName(h.closest.atomName)}</td>
+                            <td className="number">{h.closest.distance.toFixed(2)}</td>
+                            <td className={h.coordinating ? 'verdict-yes' : 'verdict-no'}>{h.coordinating ? '예' : '아니오'}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </>
               ) : (
-                <button type="button" className="primary" disabled={guess.size === 0} onClick={() => setGuessLocked(true)} data-testid="lock-guess">
-                  답 확정하고 거리 측정
-                </button>
+                <>
+                  <button
+                    type="button"
+                    className="primary"
+                    disabled={!allJudged}
+                    onClick={() => setJudgementsLocked(true)}
+                    data-testid="lock-guess"
+                  >
+                    판단 확정하고 결과 비교
+                  </button>
+                  {!allJudged ? (
+                    <p className="small">
+                      {site.histidines.length}개 잔기 모두에 예/아니오를 고르면 확정할 수 있습니다. (
+                      {judgements.size}/{site.histidines.length})
+                    </p>
+                  ) : null}
+                </>
               )}
               <Reveal
                 testId="ligand-explanation"
-                gate={guessLocked}
-                gateMessage="잔기를 고르고 답을 확정하면 설명을 볼 수 있습니다."
+                gate={judgementsLocked}
+                gateMessage="모든 잔기를 판단하고 확정하면 설명을 볼 수 있습니다."
               >
                 <p>
-                  세 histidine 곁사슬이 Zn²⁺에 직접 닿습니다: {site.ligands.map((l) => residueLabel(structure.residues[l.residueIndex])).join(', ')}
-                  (각각 {site.ligands.map((l) => l.distance.toFixed(2)).join(', ')} Å). 두 잔기는 Nε2, 한 잔기는 Nδ1 원자로
-                  배위합니다. 어느 질소 원자가 배위하는지는 각 잔기의 기하 구조에 따라 정해지며, 이 앱은 미리 가정하지 않고
-                  좌표상 가장 가까운 원자를 그대로 보여 줍니다.
+                  세 histidine 곁사슬이 Zn²⁺에 직접 닿습니다:{' '}
+                  {site.ligands
+                    .map((l) => `${residueLabel(structure.residues[l.residueIndex])} ${atomDisplayName(l.atomName)} ${l.distance.toFixed(2)} Å`)
+                    .join(', ')}
+                  . 두 잔기는 Nε2, 한 잔기는 Nδ1 원자로 배위합니다. 어느 질소 원자가 배위하는지는 각 잔기의 기하 구조에 따라
+                  정해지며, 이 앱은 미리 가정하지 않고 좌표상 가장 가까운 원자를 그대로 보여 줍니다.
                 </p>
                 <p>
                   목록의 나머지 histidine은 모두 몇 Å 이상 더 멀리 있습니다. 세 리간드와 나머지 잔기 사이에 뚜렷한 간격이
@@ -310,26 +413,64 @@ function Lab({model}: {model: Model}) {
           {stage === 3 ? (
             <div data-testid="stage-3-panel">
               <h3>3단계 · Zn²⁺에 결합한 solvent 관찰</h3>
+              <div className="guide-questions">
+                <h4>생각해 볼 질문</h4>
+                <ol>
+                  <li>Zn²⁺에 가장 가까운 solvent(용매 분자)는 무엇이고, 얼마나 가까울까?</li>
+                  <li>왜 이 solvent가 특별히 중요할까?</li>
+                </ol>
+                <p className="small">
+                  3D 화면의 청록색 구가 Zn²⁺에 결합한 solvent의 산소 원자입니다. 막대 모형은 2단계에서 찾은 세 리간드입니다.
+                </p>
+              </div>
               {site.boundSolvent ? (
                 <>
-                  <table className="residue-table" data-testid="solvent-table">
-                    <tbody>
-                      <tr>
-                        <th scope="row">Zn²⁺에 결합한 solvent</th>
-                        <td className="number">{site.boundSolvent.distance.toFixed(2)} Å</td>
-                      </tr>
-                      {site.nextWater ? (
-                        <tr>
-                          <th scope="row">그다음으로 가까운 물 분자</th>
-                          <td className="number">{site.nextWater.distance.toFixed(2)} Å</td>
+                  <div className="table-scroll">
+                    <table className="residue-table" data-testid="solvent-table">
+                      <tbody>
+                        <tr className={rowClass(site.boundSolvent.residueIndex)}>
+                          <th scope="row">Zn²⁺에 결합한 solvent의 O</th>
+                          <td className="number">{site.boundSolvent.distance.toFixed(2)} Å</td>
+                          <td className="find-cell">
+                            <button
+                              type="button"
+                              className="find-button"
+                              aria-label="Zn²⁺에 결합한 solvent를 3D 구조에서 찾기"
+                              onClick={(e) => findResidue(site.boundSolvent!.residueIndex, e.currentTarget)}
+                              data-testid="find-solvent"
+                            >
+                              <span aria-hidden="true">⌖</span> 찾기
+                            </button>
+                          </td>
                         </tr>
-                      ) : null}
-                    </tbody>
-                  </table>
+                        {site.nextWater ? (
+                          <tr className={rowClass(site.nextWater.residueIndex)}>
+                            <th scope="row">그다음으로 가까운 물 분자의 O</th>
+                            <td className="number">{site.nextWater.distance.toFixed(2)} Å</td>
+                            <td className="find-cell">
+                              <button
+                                type="button"
+                                className="find-button"
+                                aria-label="그다음으로 가까운 물 분자를 3D 구조에서 찾기"
+                                onClick={(e) => findResidue(site.nextWater!.residueIndex, e.currentTarget)}
+                                data-testid="find-next-water"
+                              >
+                                <span aria-hidden="true">⌖</span> 찾기
+                              </button>
+                            </td>
+                          </tr>
+                        ) : null}
+                      </tbody>
+                    </table>
+                  </div>
                   <p>
-                    <SourceTag kind="experimental" />네 번째 배위 자리에는 solvent(용매 분자)의 산소 원자 하나가 금속 직접
-                    배위에 전형적인 거리로 놓여 있습니다. 그다음으로 가까운 물 분자는 이 범위를 훨씬 벗어나 있으므로, 이 판단은
-                    거리 기준을 어디에 두든 달라지지 않습니다.
+                    <SourceTag kind="experimental" />세 histidine은 Zn²⁺의 배위 자리 네 곳 중 세 곳을 채웁니다. 네 번째
+                    배위 자리에는 solvent(용매 분자)의 산소 원자 하나가 금속 직접 배위에 전형적인 거리로 놓여 있습니다. 그다음으로
+                    가까운 물 분자는 이 범위를 훨씬 벗어나 있으므로, 이 판단은 거리 기준을 어디에 두든 달라지지 않습니다.
+                  </p>
+                  <p>
+                    이 solvent가 중요한 까닭은 촉매 금속에 직접 붙어 있는 유일한 용매 분자이기 때문입니다. 아래 화학 설명
+                    영역에서 금속과 활성 부위 환경이 이 solvent의 성질을 어떻게 바꾸는지 해석합니다.
                   </p>
                   <Caution title="구조가 알려 주는 것과 알려 주지 않는 것">
                     <p>
@@ -353,6 +494,10 @@ function Lab({model}: {model: Model}) {
           {stage === 4 && shuttle ? (
             <div data-testid="stage-4-panel">
               <h3>4단계 · His64의 역할 비교</h3>
+              <p className="small">
+                3D 화면은 His{shuttle.resSeq}와 Zn²⁺를 함께 보여 줍니다. 세 리간드(막대 모형)와 His{shuttle.resSeq}의 거리를
+                비교해 보세요.
+              </p>
               <PredictQuestion
                 predictions={predictions}
                 name="shuttle"
@@ -362,23 +507,65 @@ function Lab({model}: {model: Model}) {
                   {id: 'yes', label: '그렇다 — 네 번째 단백질 리간드이다'},
                   {id: 'no', label: '아니다 — 직접 배위하기에는 너무 멀다'},
                 ]}
-                hint="3D 화면에서 His64를 선택해 거리를 확인한 뒤 결정하세요."
+                hint="표의 거리와 3D 화면의 점선을 확인한 뒤 결정하세요."
               />
-              <table className="residue-table" data-testid="shuttle-table">
-                <tbody>
-                  <tr>
-                    <th scope="row">His {shuttle.resSeq}의 가장 가까운 원자</th>
-                    <td>{shuttle.closest.atomName}</td>
-                    <td className="number">{shuttle.closest.distance.toFixed(2)} Å</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">비교: 직접 배위하는 리간드</th>
-                    <td colSpan={2} className="number">
-                      {site.ligands.map((l) => l.distance.toFixed(2)).join(' · ')} Å
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+              <div className="table-scroll">
+                <table className="residue-table" data-testid="shuttle-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">잔기</th>
+                      <th scope="col">Zn²⁺에 가장 가까운 원자</th>
+                      <th scope="col" className="number">
+                        거리 (Å)
+                      </th>
+                      <th scope="col">
+                        <span className="visually-hidden">찾기</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className={`shuttle-row ${rowClass(shuttle.residueIndex) ?? ''}`}>
+                      <th scope="row">His {shuttle.resSeq}</th>
+                      <td>{atomDisplayName(shuttle.closest.atomName)}</td>
+                      <td className="number">{shuttle.closest.distance.toFixed(2)}</td>
+                      <td className="find-cell">
+                        <button
+                          type="button"
+                          className="find-button"
+                          aria-label={`3D 구조에서 찾기: His ${shuttle.resSeq}`}
+                          onClick={(e) => {
+                            pick(shuttle.residueIndex);
+                            focus('atoms', stageCameraAtoms(structure, site, shuttle, 4)!);
+                            revealViewer(e.currentTarget);
+                          }}
+                          data-testid="find-shuttle"
+                        >
+                          <span aria-hidden="true">⌖</span> 찾기
+                        </button>
+                      </td>
+                    </tr>
+                    {site.ligands.map((l) => (
+                      <tr key={l.atomIndex} className={rowClass(l.residueIndex)}>
+                        <th scope="row">
+                          {residueLabel(structure.residues[l.residueIndex])} <span className="row-note">비교: 리간드</span>
+                        </th>
+                        <td>{atomDisplayName(l.atomName)}</td>
+                        <td className="number">{l.distance.toFixed(2)}</td>
+                        <td className="find-cell">
+                          <button
+                            type="button"
+                            className="find-button"
+                            aria-label={`3D 구조에서 찾기: ${residueLabel(structure.residues[l.residueIndex])}`}
+                            onClick={(e) => findResidue(l.residueIndex, e.currentTarget)}
+                          >
+                            <span aria-hidden="true">⌖</span> 찾기
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
               {shuttle.hasAlternates ? (
                 <p className="small">
                   <SourceTag kind="experimental" />
@@ -388,11 +575,32 @@ function Lab({model}: {model: Model}) {
               ) : null}
               <Reveal
                 testId="shuttle-explanation"
-                gate={predictions.get('shuttle').locked}
+                gate={shuttleLocked}
                 gateMessage="예측을 확정하면 설명을 볼 수 있습니다."
               >
+                <div className="role-compare" data-testid="role-compare">
+                  <div className="role-card ligand">
+                    <h5>{site.ligands.map((l) => residueLabel(structure.residues[l.residueIndex])).join(' · ')}</h5>
+                    <p>
+                      <SourceTag kind="experimental" />
+                      질소 원자가 Zn²⁺에서 {site.ligands.map((l) => l.distance.toFixed(2)).join(' · ')} Å —{' '}
+                      <strong>Zn²⁺에 직접 배위</strong>
+                    </p>
+                  </div>
+                  <div className="role-card non-ligand">
+                    <h5>His {shuttle.resSeq}</h5>
+                    <p>
+                      <SourceTag kind="experimental" />
+                      가장 가까운 원자도 {shuttle.closest.distance.toFixed(2)} Å — <strong>직접 배위하지 않음</strong>
+                    </p>
+                    <p>
+                      <SourceTag kind="interpretation" />
+                      양성자 이동(proton transfer) · 양성자 셔틀(proton shuttle)과 관련된 잔기
+                    </p>
+                  </div>
+                </div>
                 <p>
-                  His{shuttle.resSeq}는 Zn²⁺의 직접 리간드가 <strong>아닙니다</strong>. 가장 가까운 원자도 Zn²⁺에서{' '}
+                  His{shuttle.resSeq}는 Zn²⁺에 직접 배위하지 않습니다. 가장 가까운 원자도 Zn²⁺에서{' '}
                   {shuttle.closest.distance.toFixed(2)} Å 떨어져 있습니다. 2단계에서 측정한 세 histidine의 배위 거리의 약{' '}
                   {Math.round(shuttle.closest.distance / site.ligands[0].distance)}배로, 직접 배위하기에는 너무 먼 거리입니다.
                 </p>
@@ -410,38 +618,57 @@ function Lab({model}: {model: Model}) {
             </div>
           ) : null}
 
-          <div className="readout">
+          <div className="readout" data-testid="site-summary">
             <h3>활성 부위 요약</h3>
-            <table className="residue-table">
-              <tbody>
-                {site.ligands.map((l) => (
-                  <tr key={l.atomIndex}>
-                    <th scope="row">
-                      {residueLabel(structure.residues[l.residueIndex])} {l.atomName}
-                    </th>
-                    <td className="number">{l.distance.toFixed(2)} Å</td>
-                  </tr>
-                ))}
-                {site.boundSolvent ? (
-                  <tr>
-                    <th scope="row">Zn²⁺에 결합한 solvent의 O</th>
-                    <td className="number">{site.boundSolvent.distance.toFixed(2)} Å</td>
-                  </tr>
-                ) : null}
-                {shuttle ? (
-                  <tr>
-                    <th scope="row">
-                      His {shuttle.resSeq} {shuttle.closest.atomName} (리간드 아님)
-                    </th>
-                    <td className="number">{shuttle.closest.distance.toFixed(2)} Å</td>
-                  </tr>
-                ) : null}
-              </tbody>
-            </table>
-            <p className="small">
-              모든 값은 PDB {STRUCTURE_SOURCE.pdbId}에 등록된 좌표에서 직접 측정했으며, 미리 정해 둔 표에서 가져온 값이
-              아닙니다.
-            </p>
+            {summaryOpen ? (
+              <>
+                <table className="residue-table summary-table">
+                  <tbody>
+                    <tr className="group-row">
+                      <th scope="colgroup" colSpan={2}>
+                        Zn²⁺에 직접 배위하는 원자 (≤ {COORDINATION_MAX} Å)
+                      </th>
+                    </tr>
+                    {site.ligands.map((l) => (
+                      <tr key={l.atomIndex} className={rowClass(l.residueIndex)}>
+                        <th scope="row">
+                          {residueLabel(structure.residues[l.residueIndex])} {atomDisplayName(l.atomName)}
+                        </th>
+                        <td className="number">{l.distance.toFixed(2)} Å</td>
+                      </tr>
+                    ))}
+                    {site.boundSolvent ? (
+                      <tr className={rowClass(site.boundSolvent.residueIndex)}>
+                        <th scope="row">Zn²⁺에 결합한 solvent의 O</th>
+                        <td className="number">{site.boundSolvent.distance.toFixed(2)} Å</td>
+                      </tr>
+                    ) : null}
+                    {shuttle ? (
+                      <>
+                        <tr className="group-row contrast">
+                          <th scope="colgroup" colSpan={2}>
+                            비교: 직접 리간드가 아님
+                          </th>
+                        </tr>
+                        <tr className={`non-ligand ${rowClass(shuttle.residueIndex) ?? ''}`} data-testid="summary-shuttle">
+                          <th scope="row">
+                            His {shuttle.resSeq} {atomDisplayName(shuttle.closest.atomName)}{' '}
+                            <span className="not-ligand-tag">리간드 아님</span>
+                          </th>
+                          <td className="number">{shuttle.closest.distance.toFixed(2)} Å</td>
+                        </tr>
+                      </>
+                    ) : null}
+                  </tbody>
+                </table>
+                <p className="small">
+                  모든 값은 PDB {STRUCTURE_SOURCE.pdbId}에 등록된 좌표에서 직접 측정했으며, 미리 정해 둔 표에서 가져온 값이
+                  아닙니다.
+                </p>
+              </>
+            ) : (
+              <p className="gate-note">2단계에서 직접 배위 여부를 판단하고 확정하면 측정한 요약이 여기에 표시됩니다.</p>
+            )}
           </div>
         </section>
       </div>

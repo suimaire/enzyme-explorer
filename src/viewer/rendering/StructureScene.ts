@@ -20,9 +20,18 @@ export type StructureView = {
   selected: number | null;
   measurements: Measurement[];
   showLabels: boolean;
+  /** Opacity of the ribbon, so a study stage can keep the fold as faint context behind its stick models. Default 1. */
+  ribbonOpacity?: number;
+  /** Single atoms to ring and, optionally, name — for example the atom of a residue nearest the metal. */
+  markedAtoms?: {atom: number; label?: string}[];
+  /** Short text appended to a residue's label, keyed by residue index. */
+  labelNotes?: Map<number, string>;
 };
 
-export type CameraPreset = 'overview' | 'active-site' | 'fit';
+/** `atoms` frames a given set of atoms (for example one residue together with the metal). */
+export type CameraPreset = 'overview' | 'active-site' | 'fit' | 'atoms';
+
+const prefersReducedMotion = () => typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 export type SceneOptions = {
   ariaLabel: string;
@@ -31,6 +40,12 @@ export type SceneOptions = {
 };
 
 const toVector = (p: Vec3) => new T.Vector3(p[0], p[1], p[2]);
+
+/**
+ * Which label keeps its place when two collide: the measured distance, then the residue being examined, its
+ * nearest atom, the metal, and finally the other residue and solvent labels.
+ */
+const LABEL_PRIORITY: Record<string, number> = {measure: 0, selected: 1, atom: 2, metal: 3, solvent: 3, residue: 4};
 
 /**
  * Three.js view of one experimental structure.
@@ -55,7 +70,8 @@ export class StructureScene {
   private picks = new PickRegistry();
   private tap = new TapGuard();
   private labels: HTMLSpanElement[] = [];
-  private pending: {element: HTMLSpanElement; at: T.Vector3; dx: number; dy: number}[] = [];
+  private pending: {element: HTMLSpanElement; at: T.Vector3; dx: number; dy: number; priority: number}[] = [];
+  private flight: number | null = null;
   private disposed = false;
 
   constructor(
@@ -110,7 +126,7 @@ export class StructureScene {
       this.camera.aspect = w / h;
       this.camera.updateProjectionMatrix();
       // Re-fit only when the shape of the viewport really changed, so a scroll bar does not reset the view.
-      if (Math.abs(previous - this.camera.aspect) > 0.01 && this.host.dataset.cameraPreset !== 'active-site') this.cameraView('fit');
+      if (Math.abs(previous - this.camera.aspect) > 0.01 && this.host.dataset.cameraPreset === 'overview') this.cameraView('fit');
       this.render();
     });
     this.resize.observe(host);
@@ -130,13 +146,18 @@ export class StructureScene {
     else if (e.key === '-') s.radius *= 1.1;
     else return;
     e.preventDefault();
+    this.stopFlight();
     s.makeSafe();
     s.radius = T.MathUtils.clamp(s.radius, this.controls.minDistance, this.controls.maxDistance);
     this.camera.position.copy(this.controls.target).add(new T.Vector3().setFromSpherical(s));
     this.controls.update();
   };
 
-  private down = (e: PointerEvent) => this.tap.down(e);
+  private down = (e: PointerEvent) => {
+    // A student who grabs the view mid-flight takes over the camera.
+    this.stopFlight();
+    this.tap.down(e);
+  };
   private cancel = () => this.tap.cancel();
   private up = (e: PointerEvent) => {
     if (!this.tap.up(e)) return;
@@ -207,15 +228,18 @@ export class StructureScene {
 
   private ribbon(view: StructureView) {
     const residues = this.structure.residues.slice(...this.structure.ranges.polymer);
+    const opacity = T.MathUtils.clamp(view.ribbonOpacity ?? 1, 0.05, 1);
     for (const run of ribbonRuns(residues, this.structure.atoms, this.positions)) {
       const {geometry, vertexResidue} = ribbonGeometry(run, this.structure.atoms, this.positions, (r) =>
         view.highlighted.has(r.index) ? HIGHLIGHT_COLOR : RIBBON_COLOR,
       );
-      const material = this.material(0xffffff);
+      const material = this.material(0xffffff, opacity);
       material.vertexColors = true;
       const mesh = new T.Mesh(geometry, material);
+      // A faint ribbon is context: it is drawn after the stick models and never takes a tap away from them.
+      if (opacity < 1) mesh.renderOrder = 1;
       this.group.add(mesh);
-      this.picks.add(mesh, (hit) => vertexResidue[hit.face!.a]);
+      this.picks.add(mesh, (hit) => vertexResidue[hit.face!.a], opacity < 1 ? -1 : 0);
     }
   }
 
@@ -226,7 +250,9 @@ export class StructureScene {
     element.hidden = true;
     this.host.append(element);
     this.labels.push(element);
-    this.pending.push({element, at: at.clone(), dx, dy});
+    this.pending.push({element, at: at.clone(), dx, dy, priority: LABEL_PRIORITY[className] ?? LABEL_PRIORITY.residue});
+    // Earlier entries claim screen space first when labels collide.
+    this.pending.sort((a, b) => a.priority - b.priority);
   }
 
   private clear() {
@@ -286,19 +312,29 @@ export class StructureScene {
     if (view.selected !== null) {
       const residue = structure.residues[view.selected];
       if (residue) {
-        const halo = this.instanced(this.sphere, residue.atoms.length, 0.3);
+        const halo = this.instanced(this.sphere, residue.atoms.length, 0.24);
         residue.atoms.forEach((a, k) =>
-          this.setBall(halo, k, this.positions[a], view.representation === 'spacefill' ? vdwRadius(atoms[a].element) + 0.25 : 0.8, SELECT_COLOR),
+          this.setBall(halo, k, this.positions[a], view.representation === 'spacefill' ? vdwRadius(atoms[a].element) + 0.25 : 0.62, SELECT_COLOR),
         );
-        this.label(residueLabel(residue), this.positions[this.anchorAtom(residue)], 'selected');
+        this.label(this.residueText(view, residue), this.positions[this.anchorAtom(residue)], 'selected');
       }
+    }
+
+    const marked = view.markedAtoms ?? [];
+    if (marked.length) {
+      const rings = this.instanced(this.sphere, marked.length, 0.35);
+      marked.forEach(({atom, label}, k) => {
+        const radius = view.representation === 'spacefill' ? vdwRadius(atoms[atom].element) + 0.35 : 0.78;
+        this.setBall(rings, k, this.positions[atom], radius, MEASURE_COLOR);
+        if (label) this.label(label, this.positions[atom], 'atom', 8, 6);
+      });
     }
 
     if (view.showLabels)
       for (const index of view.highlighted) {
         if (index === view.selected) continue;
         const residue = structure.residues[index];
-        if (residue) this.label(residueLabel(residue), this.positions[this.anchorAtom(residue)], '');
+        if (residue) this.label(this.residueText(view, residue), this.positions[this.anchorAtom(residue)], view.labelNotes?.has(index) ? 'noted' : '');
       }
     for (const index of view.spheres) {
       if (index === view.selected) continue;
@@ -306,7 +342,7 @@ export class StructureScene {
       if (!residue) continue;
       const metal = residue.atoms.some((a) => isMetal(atoms[a].element));
       if (metal || view.showLabels)
-        this.label(metal ? residue.resName : 'Zn²⁺ 결합 solvent', this.positions[this.anchorAtom(residue)], metal ? 'metal' : '', 10, metal ? -26 : 12);
+        this.label(metal ? residue.resName : 'Zn²⁺ 결합 solvent', this.positions[this.anchorAtom(residue)], metal ? 'metal' : 'solvent', 10, metal ? -26 : 12);
     }
 
     this.drawMeasurements(view.measurements);
@@ -320,7 +356,14 @@ export class StructureScene {
       .join(',');
     d.selectedResidue = view.selected === null ? '' : String(structure.residues[view.selected]?.resSeq ?? '');
     d.measurements = view.measurements.map((m) => this.measured(m).toFixed(2)).join(',');
+    d.markedAtoms = marked.map(({atom}) => `${atoms[atom].resSeq}:${atoms[atom].name}`).join(',');
+    d.ribbonOpacity = String(view.ribbonOpacity ?? 1);
     this.render();
+  }
+
+  private residueText(view: StructureView, residue: PdbResidue): string {
+    const note = view.labelNotes?.get(residue.index);
+    return note ? `${residueLabel(residue)} · ${note}` : residueLabel(residue);
   }
 
   private anchorAtom(residue: PdbResidue): number {
@@ -354,21 +397,88 @@ export class StructureScene {
 
   // ---------- camera ----------
 
-  cameraView(preset: CameraPreset): void {
-    if (this.disposed) return;
-    if (preset === 'active-site' && this.options.focus) {
-      const target = toVector(this.options.focus.target);
-      // Look at the site from outside the protein, so the surrounding chain does not sit between it and the camera.
-      const direction = target.clone().sub(this.center).normalize();
-      if (direction.lengthSq() < 1e-6) direction.set(0.35, 0.2, 1).normalize();
+  /** Direction from the protein centre out through `target`, so the surrounding chain does not sit in front of it. */
+  private outward(target: T.Vector3): T.Vector3 {
+    const direction = target.clone().sub(this.center);
+    return direction.lengthSq() < 1e-6 ? new T.Vector3(0.35, 0.2, 1).normalize() : direction.normalize();
+  }
+
+  /**
+   * Viewing direction for a framed set of atoms that contains a metal: from outside the protein, but turned
+   * side-on to the line from the metal to the other atoms, so a measured distance is not foreshortened.
+   */
+  private sideView(atoms: readonly number[], target: T.Vector3): T.Vector3 {
+    const direction = this.outward(target);
+    const metal = atoms.find((i) => isMetal(this.structure.atoms[i].element));
+    const others = atoms.filter((i) => i !== metal);
+    if (metal === undefined || !others.length) return direction;
+    const axis = others
+      .reduce((sum, i) => sum.add(this.positions[i]), new T.Vector3())
+      .multiplyScalar(1 / others.length)
+      .sub(this.positions[metal]);
+    if (axis.lengthSq() < 1e-6) return direction;
+    axis.normalize();
+    const side = direction.clone().addScaledVector(axis, -direction.dot(axis));
+    if (side.lengthSq() < 0.09) side.copy(new T.Vector3(0, 1, 0).cross(axis));
+    if (side.lengthSq() < 1e-6) side.copy(new T.Vector3(1, 0, 0).cross(axis));
+    return side.normalize();
+  }
+
+  private stopFlight() {
+    if (this.flight !== null) cancelAnimationFrame(this.flight);
+    this.flight = null;
+  }
+
+  /** Moves the camera to look at `target` from `position`, smoothly unless the student prefers reduced motion. */
+  private flyTo(target: T.Vector3, position: T.Vector3) {
+    this.stopFlight();
+    this.camera.up.set(0, 1, 0);
+    if (prefersReducedMotion()) {
       this.controls.target.copy(target);
-      this.camera.up.set(0, 1, 0);
-      this.camera.position.copy(target).addScaledVector(direction, this.options.focus.distance);
-      this.host.dataset.cameraPreset = 'active-site';
+      this.camera.position.copy(position);
       this.controls.update();
       this.render();
       return;
     }
+    const fromTarget = this.controls.target.clone();
+    const fromPosition = this.camera.position.clone();
+    const start = performance.now();
+    const duration = 520;
+    const step = (now: number) => {
+      if (this.disposed) return;
+      const t = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - t, 3);
+      this.controls.target.lerpVectors(fromTarget, target, eased);
+      this.camera.position.lerpVectors(fromPosition, position, eased);
+      this.controls.update();
+      this.render();
+      this.flight = t < 1 ? requestAnimationFrame(step) : null;
+    };
+    this.flight = requestAnimationFrame(step);
+  }
+
+  cameraView(preset: CameraPreset, atoms: readonly number[] = []): void {
+    if (this.disposed) return;
+    if (preset === 'atoms' && atoms.length) {
+      // Frame the given atoms (a residue together with the metal) with room left for their labels.
+      const points = atoms.map((i) => this.positions[i]);
+      const target = new T.Box3().setFromPoints(points).getCenter(new T.Vector3());
+      const radius = Math.max(...points.map((p) => p.distanceTo(target))) + 3.5;
+      const halfV = T.MathUtils.degToRad(this.camera.fov / 2);
+      const halfH = Math.atan(Math.tan(halfV) * this.camera.aspect);
+      const distance = T.MathUtils.clamp(radius / Math.sin(Math.min(halfV, halfH)), this.controls.minDistance, this.controls.maxDistance);
+      this.host.dataset.cameraPreset = 'atoms';
+      this.host.dataset.cameraAtoms = [...new Set(atoms.map((i) => this.structure.atoms[i].resSeq))].join(',');
+      this.flyTo(target, target.clone().addScaledVector(this.sideView(atoms, target), distance));
+      return;
+    }
+    if (preset === 'active-site' && this.options.focus) {
+      const target = toVector(this.options.focus.target);
+      this.host.dataset.cameraPreset = 'active-site';
+      this.flyTo(target, target.clone().addScaledVector(this.outward(target), this.options.focus.distance));
+      return;
+    }
+    this.stopFlight();
     const keepDirection = preset === 'fit';
     const direction = keepDirection
       ? this.camera.position.clone().sub(this.controls.target).normalize()
@@ -398,13 +508,39 @@ export class StructureScene {
     this.renderer.render(this.scene, this.camera);
     const w = this.host.clientWidth;
     const h = this.host.clientHeight;
-    for (const {element, at, dx, dy} of this.pending) {
+    // Labels are placed in priority order. One that would cover an already placed label is nudged a line up
+    // or down; if neither fits it is hidden, except the two labels a student is actively reading.
+    const placed: {left: number; top: number; right: number; bottom: number}[] = [];
+    const collides = (box: (typeof placed)[number]) =>
+      placed.some((o) => box.left < o.right && o.left < box.right && box.top < o.bottom && o.top < box.bottom);
+    for (const {element, at, dx, dy, priority} of this.pending) {
       const p = at.clone().project(this.camera);
-      const hidden = Math.abs(p.z) > 1 || p.x < -1 || p.x > 1 || p.y < -1 || p.y > 1;
-      element.hidden = hidden;
-      if (hidden) continue;
-      element.style.left = `${T.MathUtils.clamp(((p.x + 1) * w) / 2 + dx, 4, Math.max(4, w - element.offsetWidth - 4))}px`;
-      element.style.top = `${T.MathUtils.clamp(((1 - p.y) * h) / 2 + dy, 4, Math.max(4, h - element.offsetHeight - 4))}px`;
+      const offscreen = Math.abs(p.z) > 1 || p.x < -1 || p.x > 1 || p.y < -1 || p.y > 1;
+      element.hidden = offscreen;
+      if (offscreen) continue;
+      const width = element.offsetWidth;
+      const height = element.offsetHeight;
+      const left = T.MathUtils.clamp(((p.x + 1) * w) / 2 + dx, 4, Math.max(4, w - width - 4));
+      const baseTop = ((1 - p.y) * h) / 2 + dy;
+      const step = height + 2;
+      let box = null;
+      for (const shift of [0, step, -step, 2 * step, -2 * step]) {
+        const top = T.MathUtils.clamp(baseTop + shift, 4, Math.max(4, h - height - 4));
+        const candidate = {left, top, right: left + width, bottom: top + height};
+        if (!collides(candidate)) {
+          box = candidate;
+          break;
+        }
+      }
+      if (!box && priority <= LABEL_PRIORITY.selected) {
+        const top = T.MathUtils.clamp(baseTop, 4, Math.max(4, h - height - 4));
+        box = {left, top, right: left + width, bottom: top + height};
+      }
+      element.hidden = !box;
+      if (!box) continue;
+      placed.push(box);
+      element.style.left = `${box.left}px`;
+      element.style.top = `${box.top}px`;
     }
     const d = this.host.dataset;
     d.cameraDistance = this.camera.position.distanceTo(this.controls.target).toFixed(3);
@@ -419,6 +555,7 @@ export class StructureScene {
 
   dispose(): void {
     if (this.disposed) return;
+    this.stopFlight();
     this.disposed = true;
     this.resize.disconnect();
     this.controls.dispose();

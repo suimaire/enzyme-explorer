@@ -2,8 +2,8 @@ import {useEffect, useRef, useState} from 'react';
 import {StructureScene, type CameraPreset, type SceneOptions, type StructureView} from '../../viewer/rendering/StructureScene';
 import type {Structure} from '../../viewer/pdb/parsePdb';
 
-/** A camera request. The token makes repeated presses of the same preset take effect. */
-export type CameraRequest = {preset: CameraPreset; token: number};
+/** A camera request. The token makes repeated presses of the same preset take effect; `atoms` is what the `atoms` preset frames. */
+export type CameraRequest = {preset: CameraPreset; token: number; atoms?: readonly number[]};
 
 let webglSupport: boolean | null = null;
 
@@ -84,7 +84,7 @@ export function StructureViewer({
   }, [view]);
 
   useEffect(() => {
-    if (camera.token) scene.current?.cameraView(camera.preset);
+    if (camera.token) scene.current?.cameraView(camera.preset, camera.atoms);
   }, [camera]);
 
   return (
