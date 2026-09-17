@@ -1045,30 +1045,100 @@ details summary {
   margin-right: 6px;
   color: var(--accent-dark);
 }
+/* Module 02 reference strip: directly under the viewer on wide screens, beside the finder on tablets, folded on phones. */
+.workbench.has-guide {
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'controls workspace inquiry'
+    'controls guide inquiry'
+    'observation observation observation';
+}
+.structure-guide {
+  grid-area: guide;
+  min-width: 0;
+}
+.workbench > section.structure-guide {
+  border: 0;
+  padding: 0;
+  background: none;
+}
+@media (max-width: 1180px) {
+  .workbench.has-guide {
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+      'workspace workspace'
+      'controls inquiry'
+      'guide inquiry'
+      'observation observation';
+  }
+}
+@media (max-width: 760px) {
+  .workbench.has-guide {
+    grid-template-rows: none;
+    grid-template-areas: 'workspace' 'controls' 'guide' 'inquiry' 'observation';
+  }
+}
 .reading-guide {
-  margin: 0 0 12px;
-  padding: 8px 12px 10px;
+  margin: 0;
+  padding: 8px 14px 12px;
   background: #fbfdfe;
   border-left: 4px solid #6b8797;
 }
-.reading-guide summary {
-  font-size: 14.5px;
+.reading-guide > summary {
+  font-size: 15px;
   min-height: 34px;
   display: list-item;
   padding-top: 4px;
 }
-.reading-guide section {
-  border-top: 1px dotted #ccd6db;
-  padding-top: 6px;
+.reading-guide-topics {
+  margin-left: 6px;
+  font-size: 13px;
+  font-weight: normal;
+  color: var(--soft);
+}
+.guide-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
   margin-top: 6px;
 }
-.reading-guide h4 {
+@media (max-width: 1180px) {
+  .guide-cards {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+.guide-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 8px 12px 6px;
+  background: #fff;
+}
+.guide-card h4 {
   font-size: 14px;
   margin: 2px 0 4px;
 }
-.reading-guide p {
+.guide-card p {
   font-size: 14px;
   margin: 4px 0;
+}
+.guide-card p.small {
+  font-size: 13px;
+  color: var(--soft);
+}
+.guide-more {
+  margin: auto 0 0;
+  padding: 0;
+  border: 0;
+}
+.guide-more > summary {
+  display: list-item;
+  min-height: 32px;
+  padding-top: 4px;
+  font-size: 13px;
+  color: var(--accent-dark);
 }
 .his-ring {
   display: block;

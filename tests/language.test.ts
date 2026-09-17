@@ -183,7 +183,8 @@ describe('language guards', () => {
     // the verdict tied to a measured distance rather than to proximity alone.
     expect(all).toContain('histidine의 세 글자 약어');
     expect(all).toContain('사슬 앞에서부터 센 순서와 항상 같지는');
-    expect(all).toContain('<strong>ND1</strong>, <strong>NE2</strong>로 적습니다');
+    expect(all).toContain('PDB에서는 이를 <strong>NE2</strong>');
+    expect(all).toContain('<strong>ND1</strong>로 적습니다');
     expect(all).toContain('금속–리간드 상호작용');
     expect(all).toContain('비공유 전자쌍');
     expect(all).toContain('근처에 있다는 것만으로는 직접 배위가 아닙니다');

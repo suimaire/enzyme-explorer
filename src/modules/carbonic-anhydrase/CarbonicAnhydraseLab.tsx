@@ -188,7 +188,7 @@ function Lab({model}: {model: Model}) {
         onReset={reset}
       />
 
-      <div className="workbench">
+      <div className="workbench has-guide">
         <section className="controls" aria-label="3D 화면 조작">
           <h3>탐구 순서</h3>
           <ul className="stage-list">
@@ -285,6 +285,13 @@ function Lab({model}: {model: Model}) {
           ) : null}
         </section>
 
+        {/* Reference, not inquiry: kept out of the finder panel so Stage 2 opens on the residues themselves. */}
+        {stage >= 2 ? (
+          <section className="structure-guide" aria-label="구조 읽는 법">
+            <ReadingGuide />
+          </section>
+        ) : null}
+
         <section className="inquiry" aria-label="단계별 안내와 질문">
           {stage === 1 ? (
             <div data-testid="stage-1-panel">
@@ -322,7 +329,6 @@ function Lab({model}: {model: Model}) {
                   <strong>판단</strong> Zn²⁺에 직접 배위하는 잔기인지 예/아니오로 고릅니다.
                 </li>
               </ol>
-              <ReadingGuide />
               <p className="small">
                 Zn²⁺에서 {SITE_RADIUS} Å 이내에 원자가 있는 histidine {site.histidines.length}개를 가까운 순서로 나열했습니다.
                 3D 화면에서는 모두 같은 막대 모형으로 표시됩니다.
