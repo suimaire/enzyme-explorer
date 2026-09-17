@@ -59,21 +59,48 @@ export function KineticsLab() {
 
       {section === 'b' ? (
         <>
-          {assays.length && drifted ? (
-            <p className="drift-note" data-testid="drift-note">
-              마름모 측정점은 03A에서 Km = {PREPARATION.km} µM, k<sub>cat</sub> = {PREPARATION.kcat} s⁻¹, [E]T ={' '}
-              {PREPARATION.enzymeTotal} nM 조건으로 측정한 값입니다. 지금 곡선은 다른 조건을 사용하므로 측정점이 곡선 위에
-              놓이지 않는 것이 정상입니다. 측정점은 데이터이고, 곡선은 모델입니다.{' '}
-              <button type="button" onClick={() => setParameters(PREPARATION)} data-testid="restore-preparation">
-                측정 조건으로 되돌리기
-              </button>
-            </p>
-          ) : null}
+          {assays.length ? <MeasurementConditionNote drifted={drifted} onRestore={() => setParameters(PREPARATION)} /> : null}
           <MichaelisMentenPanel parameters={parameters} onParameters={setParameters} assays={assays} />
         </>
       ) : null}
 
       {section === 'c' ? <MechanisticCaveatPanel /> : null}
     </main>
+  );
+}
+
+/**
+ * How the 03A diamonds relate to the curve now on screen.
+ *
+ * Both states are always rendered, stacked in one grid cell, and only the inactive one is hidden with
+ * `visibility`. The slot is therefore as tall as the taller message at every width from the moment 03B opens,
+ * so a slider drag that switches between the two never moves the sliders under a student's finger. The slot
+ * exists only when there are measurements: without them it can never change while 03B is open.
+ */
+export function MeasurementConditionNote({drifted, onRestore}: {drifted: boolean; onRestore: () => void}) {
+  const conditions = (
+    <>
+      <span className="nowrap">Km = {PREPARATION.km} µM</span>, <span className="nowrap">k<sub>cat</sub> = {PREPARATION.kcat} s⁻¹</span>,{' '}
+      <span className="nowrap">[E]T = {PREPARATION.enzymeTotal} nM</span>
+    </>
+  );
+  return (
+    <div className="drift-note" data-state={drifted ? 'drifted' : 'matched'} data-testid="drift-note" aria-live="polite">
+      <div className="drift-note-state" data-testid="drift-note-matched">
+        <p>
+          <strong>측정점과 곡선의 조건이 같습니다.</strong> 마름모 측정점은 03A에서 {conditions} 조건으로 측정한
+          데이터이고, 지금 곡선도 같은 조건의 모델입니다.
+        </p>
+      </div>
+      <div className="drift-note-state" data-testid="drift-note-drifted">
+        <p>
+          <strong>측정점은 데이터, 곡선은 모델입니다.</strong> 마름모 측정점은 03A 조건({conditions})에서 측정한
+          값입니다. 지금 곡선은 조건이 다르므로 측정점이 곡선 위에 놓이지 않는 것이 정상입니다.
+        </p>
+        <button type="button" onClick={onRestore} data-testid="restore-preparation">
+          측정 조건으로 되돌리기
+        </button>
+      </div>
+    </div>
   );
 }

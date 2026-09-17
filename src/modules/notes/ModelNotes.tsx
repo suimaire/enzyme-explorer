@@ -1,4 +1,5 @@
 import {ModuleHeader} from '../../shared/components/ModuleHeader';
+import {RateConstant} from '../../shared/components/Formula';
 import {STRUCTURE_SOURCE} from '../carbonic-anhydrase/structureSource';
 
 /**
@@ -115,8 +116,15 @@ export function ModelNotes() {
               &ldquo;모든 효소가 Michaelis–Menten 반응속도론을 따른다&rdquo;는 말은 틀렸습니다.
             </li>
             <li>
-              <strong>Km은 K<sub>d</sub>가 아닙니다.</strong> Km = (k₋₁ + k<sub>cat</sub>)/k₁이고 K<sub>d</sub> = k₋₁/k₁입니다.
-              두 값은 k<sub>cat</sub> ≪ k₋₁인 극한에서만 거의 같아집니다. Km의 변화만으로는 기질 결합 친화도가 어떻게
+              <strong>Km은 K<sub>d</sub>가 아닙니다.</strong> <span className="nowrap">
+                Km = (<RateConstant step="-1" /> + <RateConstant step="cat" />)/<RateConstant step="1" />
+              </span>
+              이고{' '}
+              <span className="nowrap">
+                K<sub>d</sub> = <RateConstant step="-1" />/<RateConstant step="1" />
+              </span>
+              입니다. 두 값은 <RateConstant step="cat" /> ≪{' '}
+              <RateConstant step="-1" />인 극한에서만 거의 같아집니다. Km의 변화만으로는 기질 결합 친화도가 어떻게
               변했는지 알 수 없습니다.
             </li>
             <li>

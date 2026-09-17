@@ -549,18 +549,61 @@ fieldset legend {
   margin: 6px 0;
 }
 
+/*
+ * The 03B measurement note keeps both of its states in one grid cell and hides the inactive one with
+ * visibility, so its height never changes while a slider is being dragged. Hidden content is also removed
+ * from the tab order and the accessibility tree.
+ */
 .drift-note {
-  border: 1px solid var(--warn-line);
+  display: grid;
+  border: 1px solid var(--line);
   border-radius: 5px;
-  background: #fdfaf3;
-  padding: 10px 14px;
+  background: var(--surface);
+  padding: 8px 14px;
   font-size: 14px;
+  line-height: 1.5;
   margin: 0 0 14px;
 }
-.drift-note button {
-  min-height: 34px;
-  padding: 3px 10px;
+.drift-note[data-state='drifted'] {
+  border-color: var(--warn-line);
+  background: #fdfaf3;
+}
+.drift-note-state {
+  grid-area: 1 / 1;
+  display: flex;
+  align-items: center;
+  gap: 8px 16px;
+}
+.drift-note-state p {
+  margin: 0;
+  flex: 1 1 auto;
+}
+.drift-note sub {
+  line-height: 0;
+}
+.nowrap {
+  white-space: nowrap;
+}
+.drift-note-state button {
+  flex: none;
+  min-height: 40px;
+  padding: 3px 12px;
   font-size: 13.5px;
+  white-space: nowrap;
+}
+.drift-note[data-state='drifted'] [data-testid='drift-note-matched'],
+.drift-note[data-state='matched'] [data-testid='drift-note-drifted'] {
+  visibility: hidden;
+}
+@media (max-width: 760px) {
+  .drift-note {
+    font-size: 13.5px;
+    padding: 8px 12px;
+  }
+  .drift-note-state {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* ---------- plots ---------- */
@@ -725,14 +768,75 @@ ul.legend li {
 .prose-panel li {
   margin-bottom: 8px;
 }
+/* Displayed equations: HTML fractions and <sub> subscripts, see src/shared/components/Formula.tsx. */
 .equation {
-  font-family: 'Cambria Math', Cambria, Georgia, serif;
-  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 0.3em;
+  row-gap: 4px;
+  font-family: 'Cambria Math', Cambria, 'STIX Two Math', 'Times New Roman', Georgia, serif;
+  font-size: 20px;
+  line-height: 1.3;
   background: var(--surface);
   border-left: 3px solid var(--accent);
-  padding: 8px 14px;
-  margin: 10px 0;
+  padding: 10px 16px;
+  margin: 12px 0;
+  max-width: 100%;
+  overflow-x: auto;
 }
+.formula-symbol {
+  white-space: nowrap;
+  font-family: 'Cambria Math', Cambria, 'STIX Two Math', 'Times New Roman', Georgia, serif;
+}
+/* Subscripts sit inside the line box instead of stretching it, in prose and in equations alike. */
+.formula-symbol sub {
+  font-size: 0.72em;
+  line-height: 0;
+  vertical-align: -0.28em;
+  margin-left: 0.04em;
+}
+.fraction {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  vertical-align: middle;
+}
+.fraction-numerator {
+  padding: 0 0.25em 0.1em;
+  border-bottom: 1.5px solid currentColor;
+  white-space: nowrap;
+}
+.fraction-denominator {
+  padding: 0.12em 0.25em 0;
+  white-space: nowrap;
+}
+.scheme-arrow {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 2.2em;
+  line-height: 1;
+}
+.scheme-arrow-glyph {
+  font-size: 1.25em;
+  line-height: 1.05;
+}
+.scheme-arrow-label {
+  font-size: 0.72em;
+  min-height: 1.1em;
+}
+@media (max-width: 760px) {
+  .prose-panel {
+    padding: 4px 14px 16px;
+  }
+  .equation {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+}
+
 details {
   border: 1px solid var(--line);
   border-radius: 5px;
