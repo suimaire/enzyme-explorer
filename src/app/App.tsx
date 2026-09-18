@@ -83,6 +83,8 @@ export function App() {
             단백질 구조와 접힘 복습하기 ↗
           </a>
         </span>
+        {/* 조회수: 포털 공통 모듈(page-views.js)이 채운다. index.html 의 loader 참고 */}
+        <span data-page-views="" hidden />
       </footer>
     </>
   );
