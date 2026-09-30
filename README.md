@@ -60,7 +60,7 @@ does not exist — there is no SPA-rewrite 404 to work around.
 | `#/carbonic-anhydrase` | 02 Carbonic Anhydrase — guided 3D active site (PDB 2CBA) | ✅ |
 | `#/kinetics` | 03 Enzyme Kinetics Lab — 03A initial velocity, 03B Michaelis–Menten, 03C Km and mechanism | ✅ |
 | `#/inhibition` | 04 효소 저해 (Inhibition) | Enzyme II에서 다룰 예정 |
-| `#/regulation` | 05 효소 조절 (Regulation) | Enzyme II에서 다룰 예정 |
+| `#/regulation` | 05 효소 조절 — Hormonal Regulation | ✅ 간 PFKFB1 L형 · 예측/5단계 관찰/가상 개입/실험 3D |
 | `#/model-notes` | 모델 및 주의사항 (Model Notes) — every simplification, stated | ✅ |
 
 ```

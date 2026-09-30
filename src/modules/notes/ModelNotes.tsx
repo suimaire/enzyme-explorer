@@ -17,6 +17,16 @@ export function ModelNotes() {
         </p>
 
         <section>
+          <h3>05 · Hormonal Regulation</h3>
+          <p>간 PFKFB1 L형의 급성 조절을 탐구하는 정성적 모델입니다. 실제 농도, 혈당, 대사속도나 반응 시간을 계산하지 않으며 다른 PFKFB isoform에 일반화할 수 없습니다.</p>
+          <p>F-2,6-BP 고정은 인과 관계를 탐구하는 가상 개입입니다. 상위 호르몬 신호를 유지하고 하위 효소에 적용되는 조절물질 상태만 바꿉니다.</p>
+          <p>PFK-2 / FBPase-2의 증감 표시는 상대적 활성을 뜻합니다. 인슐린의 phosphatase 관여는 간접 근거로 설명합니다. 간 L형의 apparent Km / Vmax 심화 설명과 다른 조직의 isoform 비교는 모듈 안에서 접어두고 확인할 수 있습니다.</p>
+          <p>사람 UniProt P16118-1 Ser33의 조절 주석은 by similarity (ECO:0000250)입니다. 랫드 문헌의 Ser32와 번호 체계를 구분합니다.</p>
+          <p>1K6M은 사람 간 효소의 절단·변이 구조입니다. canonical 40–471에 좌표가 있고 Ser33은 construct에 포함되지 않습니다. 등록 변이 4개 외에 H305R 서열 불일치의 원인은 미확인입니다. assembly 1은 A 및 대칭 변환된 A로 구성됩니다. 3D 실험 좌표와 독립적인 조절 Ser 모식도를 분리합니다.</p>
+          <a href="#/regulation">효소 조절 모듈과 출처 확인 →</a>
+        </section>
+
+        <section>
           <h3>01 · 반응 에너지</h3>
           <ul>
             <li>

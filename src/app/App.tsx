@@ -7,10 +7,11 @@ import {KineticsLab} from '../modules/kinetics/KineticsLab';
 import {ModelNotes} from '../modules/notes/ModelNotes';
 import {ComingSoon} from '../modules/placeholder/ComingSoon';
 
-/** Loaded on demand: this is the only module that pulls in three.js and the bundled 2CBA coordinates. */
+/** Experimental structures and their renderer are loaded on demand. */
 const CarbonicAnhydraseLab = lazy(() =>
   import('../modules/carbonic-anhydrase/CarbonicAnhydraseLab').then((m) => ({default: m.CarbonicAnhydraseLab})),
 );
+const HormonalRegulation = lazy(() => import('../modules/regulation/HormonalRegulation').then(m => ({default: m.HormonalRegulation})));
 
 export const PROTEIN_EXPLORER_URL = 'https://suimaire.github.io/protein-3d-explorer/';
 
@@ -20,7 +21,7 @@ export function App() {
 
   return (
     <>
-      <header className="site-header">
+      <header className={`site-header${current === 'regulation' ? ' regulation-shell' : ''}`}>
         <div className="brand-mark" aria-hidden="true">
           E
         </div>
@@ -36,7 +37,7 @@ export function App() {
         </p>
       </header>
 
-      <nav className="module-nav" aria-label="학습 모듈">
+      <nav className={`module-nav${current === 'regulation' ? ' regulation-shell' : ''}`} aria-label="학습 모듈">
         {MODULES.map((m) => (
           <a
             key={m.id}
@@ -69,7 +70,8 @@ export function App() {
           <CarbonicAnhydraseLab />
         </Suspense>
       ) : null}
-      {current === 'inhibition' || current === 'regulation' ? <ComingSoon id={current} /> : null}
+      {current === 'regulation' ? <Suspense fallback={<main className="module"><p>효소 조절 모듈을 불러오는 중…</p></main>}><HormonalRegulation /></Suspense> : null}
+      {current === 'inhibition' ? <ComingSoon id={current} /> : null}
       {current === 'model-notes' ? <ModelNotes /> : null}
 
       <footer>

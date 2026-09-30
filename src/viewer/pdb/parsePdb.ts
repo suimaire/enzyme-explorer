@@ -198,6 +198,7 @@ function parseHeader(lines: string[]) {
 /**
  * Reads one chain of a structure, keeping its hetero groups and waters.
  * `chain` selects the polymer chain; hetero groups and waters of that chain are kept with it.
+ * Use '*' explicitly for a pre-validated multichain biological assembly.
  */
 export function parseStructure(text: string, chain = 'A'): Structure {
   const lines = firstModel(text);
@@ -209,7 +210,7 @@ export function parseStructure(text: string, chain = 'A'): Structure {
   for (const line of lines) {
     const record = column(line, 1, 6);
     if (record !== 'ATOM' && record !== 'HETATM') continue;
-    if (column(line, 22, 22) !== chain) {
+    if (chain !== '*' && column(line, 22, 22) !== chain) {
       omitted.otherChains++;
       continue;
     }
@@ -248,7 +249,7 @@ export function parseStructure(text: string, chain = 'A'): Structure {
     title: header.title,
     method: header.method,
     resolution: header.resolution,
-    chains: [chain],
+    chains: chain === '*' ? [...new Set(atoms.map(a => a.chain))] : [chain],
     atoms,
     residues: [...polymer, ...hetero, ...water],
     ranges: {

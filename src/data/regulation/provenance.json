@@ -1,0 +1,261 @@
+{
+  "acquired": "2026-09-30",
+  "sourceId": "1K6M",
+  "species": "Homo sapiens",
+  "reference": "P16118-1",
+  "tissue": "liver L form, truncated engineered construct",
+  "method": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.4,
+  "entitySequence": "NSPTMVIMVGLPARGKTYISTKLTRYLNFIGTPTKVFNLGQYRREAVSYKNYEFFLPDNMEALQIRKQCALAALKDVHNYLSHEEGHVAVFDATNTTRERRSLILQFAKEHGYKVFFIESICNDPGIIAENIRQVKLGSPDYIDCDREKVLEDFLKRIECYEVNYQPLDEELDSHLSYIKIFDVGTRYMVNRVQDHIQSRTVYYLMNIHVTPRSIYLCRHGESELNIRGRIGGDSGLSVRGKQYAYALANFIQSQGISSLKVFTSRMKRTIQTAEALGVPYEQFKALNEIDAGVCEEMTYEEIQEHYPEEFALRDQDKYRYRYPKGESYEDLVQRLEPVIMELERQENVLVICHQAVMRCLLAYFLDKSSEELPYLKCPLHTVLKLTPVAYGCKVESIYLNVEAVNTHREKPENVDITREPEEALDTVPAHY",
+  "entityLength": 432,
+  "numbering": {
+    "canonical": [
+      40,
+      471
+    ],
+    "auth": [
+      39,
+      470
+    ],
+    "label": [
+      1,
+      432
+    ],
+    "rule": "canonical = auth + 1 = label + 39"
+  },
+  "excludedFromConstructCanonical": [
+    [
+      1,
+      39
+    ]
+  ],
+  "unresolvedWithinDepositedEntity": [],
+  "regulatorySer": {
+    "canonical": 33,
+    "presentInConstruct": false,
+    "coordinate": null,
+    "evidence": "ECO:0000250 (by similarity), UniProtKB P07953"
+  },
+  "declaredMutationsCanonical": [
+    "W68F",
+    "W302F",
+    "W323F",
+    "D410E"
+  ],
+  "sequenceDifferences": [
+    {
+      "canonical": 68,
+      "auth": 67,
+      "label": 29,
+      "reference": "W",
+      "deposited": "F"
+    },
+    {
+      "canonical": 302,
+      "auth": 301,
+      "label": 263,
+      "reference": "W",
+      "deposited": "F"
+    },
+    {
+      "canonical": 305,
+      "auth": 304,
+      "label": 266,
+      "reference": "H",
+      "deposited": "R"
+    },
+    {
+      "canonical": 323,
+      "auth": 322,
+      "label": 284,
+      "reference": "W",
+      "deposited": "F"
+    },
+    {
+      "canonical": 410,
+      "auth": 409,
+      "label": 371,
+      "reference": "D",
+      "deposited": "E"
+    }
+  ],
+  "discrepancy": "H305R (auth 304, label 266) is present in the deposited sequence but absent from SEQADV; origin unverified. Do not call it a fifth confirmed engineered mutation.",
+  "domains": {
+    "source": "P16118 UniProt Region annotations; functional regions, not a geometric half split",
+    "pfk2Canonical": [
+      2,
+      250
+    ],
+    "fbpase2Canonical": [
+      251,
+      471
+    ],
+    "pfk2VisibleAuth": [
+      39,
+      249
+    ],
+    "fbpase2VisibleAuth": [
+      250,
+      470
+    ]
+  },
+  "assembly": {
+    "id": 1,
+    "oligomer": "homodimer",
+    "sourceChains": [
+      "A"
+    ],
+    "operators": [
+      "1",
+      "2"
+    ],
+    "outputChains": [
+      "A",
+      "C"
+    ],
+    "operator2": [
+      [
+        -1,
+        0,
+        0,
+        -1.0954984649
+      ],
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1,
+        89.6633078975
+      ]
+    ],
+    "excluded": "deposited B; all HETATM (AGS, PO4, waters)",
+    "coordinatePolicy": "A unchanged; C is assembly transform rounded to PDB 0.001 Å; no hormone-dependent coordinate changes"
+  },
+  "files": [
+    {
+      "name": "1K6M-assembly1-protein.pdb",
+      "kind": "processed",
+      "url": null,
+      "sha256": "91bff80c01110bd51c47ea3cea68ff3325cb81c800b3aa3bd93d7d3be3c62873"
+    },
+    {
+      "name": "1k6m-mapping.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/pdbe/api/mappings/uniprot/1k6m",
+      "sha256": "49f45c0094c6c87f08979bb35a0e6b73067b2679576a8ac75a938f7bfc1ff9ef"
+    },
+    {
+      "name": "1K6M.cif",
+      "kind": "source",
+      "url": "https://files.rcsb.org/download/1K6M.cif",
+      "sha256": "78f08722ec7093bb110a74456944bbe3acaf00cb9ee23b5a62331e9e789d7e49"
+    },
+    {
+      "name": "1K6M.pdb",
+      "kind": "source",
+      "url": "https://files.rcsb.org/download/1K6M.pdb",
+      "sha256": "10c952b517220c0e52aa98a7d8d984f5fffdd42809c7b264d59d73a18213757a"
+    },
+    {
+      "name": "P16118.json",
+      "kind": "source",
+      "url": "https://rest.uniprot.org/uniprotkb/P16118.json",
+      "sha256": "5235b35a4e962f70c03aca03d54552a653abb227665a64c6182391cbde965184"
+    },
+    {
+      "name": "P47871.json",
+      "kind": "source",
+      "url": "https://rest.uniprot.org/uniprotkb/P47871.json",
+      "sha256": "61848589c479943652ab211dee36b585fcf1cdcb94b7df4fcdbaa22e6e0d8d37"
+    },
+    {
+      "name": "PMID-1339450.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:1339450%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "63a4f94663038773bbb8ff548018e77072909d74c09468b374a4a1d705e6d558"
+    },
+    {
+      "name": "PMID-32193322.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:32193322%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "7b10af929f9452f9c7fc3094f2030dafd557a4cd044e2e576546ccc19a5cc91c"
+    },
+    {
+      "name": "PMID-6260770.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:6260770%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "381650c72c66bc90d262ccd30580069734be6d5d9f536cfe44c0a5ae40c5f685"
+    },
+    {
+      "name": "PMID-6296099.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:6296099%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "d37f1c43eef43ac74d84ac6351331a5ccd8049fd46de6f0beccf6ce27d509ad4"
+    },
+    {
+      "name": "PMID-6323408.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:6323408%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "f1b4e523ebbbc3e3a35435e8c457e96f2ad087156b6281ef40e9bb0b22eedba0"
+    },
+    {
+      "name": "PMID-6455662.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:6455662%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "21cd857314bfe2be1657c4c02f0c592a6ffccbbea2be02868871fee654d351fe"
+    },
+    {
+      "name": "structure-paper.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI:10.1074/jbc.M209105200&format=json&resultType=core",
+      "sha256": "4ad77b0522b2144ba25a3d431ab03cd0ffaba95a1b65e2a68a671f1c69490b8e"
+    },
+    {
+      "name": "PMID-10749675.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:10749675%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "ec20dcda2f5dd336bd25297d071c793fd80495c5d54865c458d80c92046220e7"
+    },
+    {
+      "name": "PMID-8390983.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:8390983%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "f3d310c6af6876e06240fa363e595241114432c3cc9167f118a35960eb8c4fe9"
+    },
+    {
+      "name": "PMID-7549867.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:7549867%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "8bbc4b3c080b211b2549fc1045c878888af0d750fe6d73f70d04c5f84658e02a"
+    },
+    {
+      "name": "PMID-2158992.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:2158992%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "c42696ce553fbc5a86edaa87f2aaf9980c4f5603145047be05593c6fca5bc2e8"
+    },
+    {
+      "name": "PMID-15170386.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:15170386%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "7d0ae13ef49e2f8eaf7c2a3276b113391707872d4fe3964918bc212b3c5b9d59"
+    },
+    {
+      "name": "PMID-2846551.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:2846551%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "42c11f507c17548dedd22c0941a09a67799082f7b548699a6f6e132368f31990"
+    },
+    {
+      "name": "PMID-9211863.json",
+      "kind": "source",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:9211863%20AND%20SRC:MED&format=json&resultType=core",
+      "sha256": "4160671a1fd1e60c500939f2e55e487164ef98b88caae04511e77c91caf3a8fb"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Scientific notes
 
+Module 05's evidence, residue-number mapping, structure discrepancies and assembly audit are recorded separately in [REGULATION_AUDIT.md](REGULATION_AUDIT.md). Its qualitative hormonal model does not reuse the kinetic equations below.
+
 Every model in this app is a deliberate simplification. This document says what each one assumes, where
 it breaks, and what the app does to stop a student generalising past it. The in-app **모델 및 주의사항** (Model Notes) page
 (`#/model-notes`) carries a student-facing version of the same content; this file adds the reasoning

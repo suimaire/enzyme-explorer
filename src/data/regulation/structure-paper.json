@@ -1,0 +1,325 @@
+{
+  "version": "6.9",
+  "hitCount": 1,
+  "request": {
+    "queryString": "DOI:10.1074/jbc.M209105200",
+    "resultType": "core",
+    "cursorMark": "*",
+    "pageSize": 25,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "12379646",
+        "source": "MED",
+        "pmid": "12379646",
+        "doi": "10.1074/jbc.m209105200",
+        "title": "Tissue-specific structure/function differentiation of the liver isoform of 6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase.",
+        "authorString": "Lee YH, Li Y, Uyeda K, Hasemann CA.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Lee YH",
+              "lastName": "Lee",
+              "firstName": "Yong-Hwan",
+              "initials": "YH",
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Structural Biology Core, Molecular Biology, University of Missouri, Columbia, Missouri 65211, USA. leeyon@missouri.edu"
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Li Y",
+              "lastName": "Li",
+              "firstName": "Yang",
+              "initials": "Y"
+            },
+            {
+              "fullName": "Uyeda K",
+              "lastName": "Uyeda",
+              "firstName": "Kosaku",
+              "initials": "K"
+            },
+            {
+              "fullName": "Hasemann CA",
+              "lastName": "Hasemann",
+              "firstName": "Charles A",
+              "initials": "CA",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0009-0007-5076-6951"
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0009-0007-5076-6951"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics",
+            "related_data",
+            "wikipedia"
+          ]
+        },
+        "journalInfo": {
+          "issue": "1",
+          "volume": "278",
+          "journalIssueId": 1161449,
+          "dateOfPublication": "2003 Jan",
+          "monthOfPublication": 1,
+          "yearOfPublication": 2003,
+          "journal": {
+            "medlineAbbreviation": "J Biol Chem",
+            "title": "The Journal of biological chemistry",
+            "essn": "1083-351X",
+            "issn": "0021-9258",
+            "nlmid": "2985121R",
+            "isoabbreviation": "J Biol Chem"
+          },
+          "printPublicationDate": "2003-01-01"
+        },
+        "pubYear": "2003",
+        "pageInfo": "523-530",
+        "abstractText": "The crystal structures of the human liver 6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase in three different liganding states were determined and compared with those of the rat testis isozyme. A set of amino acid sequence heterogeneity from the two distinct genes encoding the two different tissue isozymes leads to both global and local conformational differences that may cause the differences in catalytic properties of the two isozymes. The sequence differences in a beta-hairpin loop in the kinase domain causes a translational shift of several hydrophobic interactions in the dimeric contact region, and its propagation to the domains interface results in a 5 degrees twist of the entire bisphosphatase domain relative to the kinase domain. The bisphosphatase domain twist allows the dimeric interactions between the bisphosphatase domains, which are negligible in the testis enzyme, and as a result, the conformational stability of the domain is increased. Sequence polymorphisms also confer small but significant structural dissimilarities in the substrate-binding loops, allowing the differentiated catalytic properties between the two different tissue-type isozymes. Whereas the polymorphic sequence at the bisphosphatase-active pocket suggests a more suitable substrate binding, a similar extent of sequence differences at the kinase-active pocket confers a different mechanism of substrates bindings to the kinase-active pocket. It includes the ATP-sensitive unwinding of the switch helix alpha5, which is a characteristic ATP-dependent conformational change in the testis form. The sequence-dependent structural difference disallows the liver kinase to follow the ATP-switch mechanism. Altogether these suggest that the liver isoform has structural features more appropriate for an elevated bisphosphatase activity, compared with that of the testis form. The structural predisposition for bisphosphatase activity in the liver isozyme is consistent with the liver-unique glucose metabolic pathway, gluconeogenesis.",
+        "affiliation": "Structural Biology Core, Molecular Biology, University of Missouri, Columbia, Missouri 65211, USA. leeyon@missouri.edu",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print-Electronic",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, U.S. Gov't, P.H.S.",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIDDK NIH HHS",
+              "acronym": "DK",
+              "grantId": "DK16194",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIDDK NIH HHS",
+              "acronym": "DK",
+              "grantId": "DK52089",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Liver",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "EN",
+                    "qualifierName": "enzymology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Testis",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "EN",
+                    "qualifierName": "enzymology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rats"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Phosphofructokinase-2",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IP",
+                    "qualifierName": "isolation & purification"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Isoenzymes",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "GE",
+                    "qualifierName": "genetics"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Crystallography, X-Ray"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Sequence Alignment"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Amino Acid Sequence"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Structure, Secondary"
+            },
+            {
+              "majorTopic_YN": "Y",
+              "descriptorName": "Protein Structure, Tertiary"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Folding"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Structure-Activity Relationship"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Dimerization"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Models, Molecular"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Molecular Sequence Data"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Isoenzymes",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Phosphofructokinase-2",
+              "registryNumber": "EC 2.7.1.105"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1074/jbc.M209105200"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 32,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "Y",
+        "dbCrossReferenceList": {
+          "dbName": [
+            "CHEBI",
+            "INTACT",
+            "INTERPRO",
+            "PDB",
+            "UNIPROT"
+          ]
+        },
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2003-02-10",
+        "dateOfCreation": "2002-10-16",
+        "dateOfRevision": "2021-02-06",
+        "electronicPublicationDate": "2002-10-11",
+        "firstPublicationDate": "2002-10-11",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

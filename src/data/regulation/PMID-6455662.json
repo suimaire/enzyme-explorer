@@ -1,0 +1,353 @@
+{
+  "version": "6.9",
+  "hitCount": 1,
+  "request": {
+    "queryString": "EXT_ID:6455662 AND SRC:MED",
+    "internalQuery": "EXT_ID:6455662 AND SRC:MED",
+    "resultType": "CORE",
+    "cursorMark": "*",
+    "pageSize": 25,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "6455662",
+        "source": "MED",
+        "pmid": "6455662",
+        "pmcid": "PMC319593",
+        "fullTextIdList": {
+          "fullTextId": [
+            "PMC319593"
+          ]
+        },
+        "doi": "10.1073/pnas.78.6.3483",
+        "title": "Control of liver 6-phosphofructokinase by fructose 2,6-bisphosphate and other effectors.",
+        "authorString": "Van Schaftingen E, Jett MF, Hue L, Hers HG.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Van Schaftingen E",
+              "lastName": "Van Schaftingen",
+              "firstName": "E",
+              "initials": "E",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6199-7647"
+              }
+            },
+            {
+              "fullName": "Jett MF",
+              "lastName": "Jett",
+              "firstName": "M F",
+              "initials": "MF"
+            },
+            {
+              "fullName": "Hue L",
+              "lastName": "Hue",
+              "firstName": "L",
+              "initials": "L"
+            },
+            {
+              "fullName": "Hers HG",
+              "lastName": "Hers",
+              "firstName": "H G",
+              "initials": "HG"
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6199-7647"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "altmetrics"
+          ]
+        },
+        "journalInfo": {
+          "issue": "6",
+          "volume": "78",
+          "journalIssueId": 422880,
+          "dateOfPublication": "1981 Jun",
+          "monthOfPublication": 6,
+          "yearOfPublication": 1981,
+          "journal": {
+            "medlineAbbreviation": "Proc Natl Acad Sci U S A",
+            "title": "Proceedings of the National Academy of Sciences of the United States of America",
+            "essn": "1091-6490",
+            "issn": "0027-8424",
+            "isoabbreviation": "Proc Natl Acad Sci U S A",
+            "nlmid": "7505876"
+          },
+          "printPublicationDate": "1981-06-01"
+        },
+        "pubYear": "1981",
+        "pageInfo": "3483-3486",
+        "abstractText": "Rat liver 6-phosphofructokinase (ATP-D-fructose-6-phosphate 1-phosphotransferase, EC 2.7.1.11) was partially purified free of interfering enzymes by a rapid procedure. Fructose 2,6-bisphosphate, at micromolar concentrations, greatly stimulated the enzyme by increasing its affinity for fructose 6-phosphate and relieving the inhibition by ATP. Its action was synergistic with that of AMP. As a stimulator of liver phosphofructokinase, fructose 2,6-bisphosphate was approximately 1000- and 2500-fold more efficient than fructose 1,6-bisphosphate and glucose 1,6-bisphosphate, respectively. The concentration at which a half-maximal effect was obtained with the hexose bisphosphates was dependent upon the experimental conditions. It was relatively high at physiological concentrations of substrates, AMP, and Pi, and under these conditions the positive effect of fructose 1,6-bisphosphate was no longer detectable. This was probably due to the negative effect of fructose 1,6-bisphosphate as a reaction product inhibitor. It is concluded that fructose 2,6-bisphosphate rather than fructose 1,6-bisphosphate controls, in association with other effectors, the activity of phosphofructokinase in the liver.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, U.S. Gov't, P.H.S.",
+            "Research Support, Non-U.S. Gov't",
+            "research-article",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIADDK NIH HHS",
+              "acronym": "AM",
+              "grantId": "AM 05843",
+              "orderIn": 0
+            },
+            {
+              "agency": "NIADDK NIH HHS",
+              "acronym": "AM",
+              "grantId": "AM 9235",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Liver",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "EN",
+                    "qualifierName": "enzymology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rats"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Phosphofructokinase-1",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Fructosephosphates",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Fructosediphosphates",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Glucosephosphates",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Hexosediphosphates",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PH",
+                    "qualifierName": "physiology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adenosine Monophosphate",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adenosine Triphosphate",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Structure-Activity Relationship"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Kinetics"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Isomerism"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Phosphofructokinase-1",
+              "registryNumber": "EC 2.7.1.11"
+            },
+            {
+              "name": "Glucosephosphates",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Fructosediphosphates",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Hexosediphosphates",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Fructosephosphates",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Adenosine Triphosphate",
+              "registryNumber": "8L70Q75FXE"
+            },
+            {
+              "name": "Adenosine Monophosphate",
+              "registryNumber": "415SHH325A"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Unpaywall",
+              "url": "https://europepmc.org/articles/pmc319593?pdf=render"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1073/pnas.78.6.3483"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "html",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC319593"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "pdf",
+              "site": "Europe_PMC",
+              "url": "https://europepmc.org/articles/PMC319593?pdf=render"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1073/pnas.78.6.3483"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "Y",
+        "inPMC": "Y",
+        "citedByCount": 161,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "Y",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "N",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "1981-10-29",
+        "dateOfCreation": "1981-06-01",
+        "dateOfRevision": "2021-01-08",
+        "firstPublicationDate": "1981-06-01",
+        "firstIndexDate": "2009-12-24",
+        "fullTextReceivedDate": "2025-02-02",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

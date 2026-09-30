@@ -57,7 +57,7 @@ export const MODULES: readonly ModuleEntry[] = [
     status: 'ready',
   },
   {id: 'inhibition', number: '04', eyebrow: 'Enzyme II', title: '효소 저해', question: '', status: 'planned'},
-  {id: 'regulation', number: '05', eyebrow: 'Enzyme II', title: '효소 조절', question: '', status: 'planned'},
+  {id: 'regulation', number: '05', eyebrow: 'Enzyme II', title: '효소 조절', heading: 'Hormonal Regulation', question: '인슐린과 글루카곤은 한 단백질의 두 활성을 어떻게 조절할까?', status: 'ready'},
   {id: 'model-notes', number: null, eyebrow: 'Reference', title: '모델 및 주의사항', question: '', status: 'ready'},
 ];
 

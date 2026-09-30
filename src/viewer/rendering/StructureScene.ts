@@ -22,6 +22,9 @@ export type StructureView = {
   showLabels: boolean;
   /** Opacity of the ribbon, so a study stage can keep the fold as faint context behind its stick models. Default 1. */
   ribbonOpacity?: number;
+  /** Optional domain palette and visibility; residue indices refer to the unchanged structure. */
+  ribbonColors?: ReadonlyMap<number, number>;
+  visibleResidues?: ReadonlySet<number>;
   /** Single atoms to ring and, optionally, name — for example the atom of a residue nearest the metal. */
   markedAtoms?: {atom: number; label?: string}[];
   /** Short text appended to a residue's label, keyed by residue index. */
@@ -227,11 +230,11 @@ export class StructureScene {
   }
 
   private ribbon(view: StructureView) {
-    const residues = this.structure.residues.slice(...this.structure.ranges.polymer);
+    const residues = this.structure.residues.slice(...this.structure.ranges.polymer).filter(r => !view.visibleResidues || view.visibleResidues.has(r.index));
     const opacity = T.MathUtils.clamp(view.ribbonOpacity ?? 1, 0.05, 1);
     for (const run of ribbonRuns(residues, this.structure.atoms, this.positions)) {
       const {geometry, vertexResidue} = ribbonGeometry(run, this.structure.atoms, this.positions, (r) =>
-        view.highlighted.has(r.index) ? HIGHLIGHT_COLOR : RIBBON_COLOR,
+        view.ribbonColors?.get(r.index) ?? (view.highlighted.has(r.index) ? HIGHLIGHT_COLOR : RIBBON_COLOR),
       );
       const material = this.material(0xffffff, opacity);
       material.vertexColors = true;
@@ -568,6 +571,7 @@ export class StructureScene {
     this.sphere.dispose();
     this.cylinder.dispose();
     this.renderer.dispose();
+    this.renderer.forceContextLoss();
     canvas.remove();
   }
 }
