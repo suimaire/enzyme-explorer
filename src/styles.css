@@ -138,46 +138,45 @@ h1 span {
 
 .module-nav {
   display: flex;
-  gap: 6px;
+  gap: 4px;
+  max-width: 100%;
   overflow-x: auto;
-  padding: 10px max(20px, calc((100% - 1400px) / 2));
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  padding: 0 max(14px, calc((100% - 1400px) / 2));
   border-bottom: 1px solid var(--line);
-  background: var(--surface);
-}
-.module-nav a {
-  display: block;
-  min-width: 132px;
-  padding: 8px 12px;
-  /* A visible edge on every item: at narrow widths adjacent titles otherwise read as one phrase. */
-  border: 1px solid var(--line);
-  border-radius: 5px;
   background: #fff;
+}
+.module-nav::-webkit-scrollbar { display: none; }
+.module-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  flex: 0 0 auto;
+  min-height: 51px;
+  padding: 0 13px;
+  background: transparent;
   text-decoration: none;
-  color: #21323c;
-  font-size: 14.5px;
+  color: var(--soft);
+  font-size: 14px;
   white-space: nowrap;
 }
-.module-nav a:hover {
-  background: #e9f1f6;
+.module-nav a:hover, .module-nav a:focus-visible {
+  background: #f2f6f9;
+}
+.module-nav a:focus-visible {
+  outline-offset: -4px;
 }
 .module-nav a[aria-current='page'] {
-  background: #fff;
-  border-color: var(--accent);
+  color: var(--accent-dark);
   box-shadow: inset 0 -3px var(--accent);
   font-weight: bold;
 }
 .module-nav small {
-  display: block;
   font-size: 11px;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   color: var(--soft);
-}
-.module-nav em {
-  display: block;
-  font-size: 11px;
-  font-style: normal;
-  color: var(--warn);
 }
 
 main.module {

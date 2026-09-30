@@ -1,0 +1,182 @@
+[
+  {
+    "size": {
+      "width": 390,
+      "height": 844
+    },
+    "layouts": {
+      "pathway": {
+        "columns": "minmax(190px, 0.8fr) minmax(0px, 1.8fr)",
+        "display": "flex",
+        "overflow": 0
+      },
+      "intervention": {
+        "columns": "minmax(190px, 0.8fr) minmax(0px, 1.8fr)",
+        "display": "flex",
+        "overflow": 0
+      },
+      "structure": {
+        "columns": "minmax(0px, 1fr)",
+        "display": "flex",
+        "overflow": 0
+      }
+    },
+    "navClientWidth": 375,
+    "navHeight": 51.66666793823242,
+    "navScrollWidth": 807,
+    "viewer": {
+      "height": 438.875,
+      "width": 321.3333435058594
+    }
+  },
+  {
+    "size": {
+      "width": 768,
+      "height": 1024
+    },
+    "layouts": {
+      "pathway": {
+        "columns": "213.74px 480.927px",
+        "display": "grid",
+        "overflow": 0
+      },
+      "intervention": {
+        "columns": "213.74px 480.927px",
+        "display": "grid",
+        "overflow": 0
+      },
+      "structure": {
+        "columns": "704.667px",
+        "display": "grid",
+        "overflow": 0
+      }
+    },
+    "navClientWidth": 753,
+    "navHeight": 51.66666793823242,
+    "navScrollWidth": 807,
+    "viewer": {
+      "height": 580,
+      "width": 679.3333740234375
+    }
+  },
+  {
+    "size": {
+      "width": 1024,
+      "height": 768
+    },
+    "layouts": {
+      "pathway": {
+        "columns": "218.125px 490.781px 231.76px",
+        "display": "grid",
+        "overflow": 0
+      },
+      "intervention": {
+        "columns": "218.125px 490.781px 231.76px",
+        "display": "grid",
+        "overflow": 0
+      },
+      "structure": {
+        "columns": "960.667px",
+        "display": "grid",
+        "overflow": 0
+      }
+    },
+    "navClientWidth": 1009,
+    "navHeight": 51.66666793823242,
+    "navScrollWidth": 1009,
+    "viewer": {
+      "height": 460.7916870117187,
+      "width": 935.3333740234376
+    }
+  },
+  {
+    "size": {
+      "width": 1280,
+      "height": 800
+    },
+    "layouts": {
+      "pathway": {
+        "columns": "262.427px 617.49px 308.75px",
+        "display": "grid",
+        "overflow": 0
+      },
+      "intervention": {
+        "columns": "262.427px 617.49px 308.75px",
+        "display": "grid",
+        "overflow": 0
+      },
+      "structure": {
+        "columns": "260px 942.667px",
+        "display": "grid",
+        "overflow": 0
+      }
+    },
+    "navClientWidth": 1265,
+    "navHeight": 51.66666793823242,
+    "navScrollWidth": 1265,
+    "viewer": {
+      "height": 520,
+      "width": 909.3333740234376
+    }
+  },
+  {
+    "size": {
+      "width": 1600,
+      "height": 900
+    },
+    "layouts": {
+      "pathway": {
+        "columns": "301.135px 708.573px 354.292px",
+        "display": "grid",
+        "overflow": 0
+      },
+      "intervention": {
+        "columns": "301.135px 708.573px 354.292px",
+        "display": "grid",
+        "overflow": 0
+      },
+      "structure": {
+        "columns": "260px 1118px",
+        "display": "grid",
+        "overflow": 0
+      }
+    },
+    "navClientWidth": 1585,
+    "navHeight": 51.66666793823242,
+    "navScrollWidth": 1585,
+    "viewer": {
+      "height": 585,
+      "width": 1084.666748046875
+    }
+  },
+  {
+    "size": {
+      "width": 1440,
+      "height": 900
+    },
+    "layouts": {
+      "pathway": {
+        "columns": "297.75px 700.604px 350.302px",
+        "display": "grid",
+        "overflow": 0
+      },
+      "intervention": {
+        "columns": "297.75px 700.604px 350.302px",
+        "display": "grid",
+        "overflow": 0
+      },
+      "structure": {
+        "columns": "260px 1102.67px",
+        "display": "grid",
+        "overflow": 0
+      }
+    },
+    "navClientWidth": 1425,
+    "navHeight": 51.66666793823242,
+    "navScrollWidth": 1425,
+    "viewer": {
+      "height": 585,
+      "width": 1069.3333740234375
+    }
+  }
+]

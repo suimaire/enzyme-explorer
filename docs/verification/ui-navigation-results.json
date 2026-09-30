@@ -1,0 +1,65 @@
+[
+  {
+    "current": "nav-start",
+    "focus": true,
+    "hash": "#/start",
+    "navHeight": 51.66666793823242,
+    "overflow": 0,
+    "touchHeight": 51,
+    "visible": true
+  },
+  {
+    "current": "nav-reaction-energy",
+    "focus": true,
+    "hash": "#/reaction-energy",
+    "navHeight": 51.66666793823242,
+    "overflow": 0,
+    "touchHeight": 51,
+    "visible": true
+  },
+  {
+    "current": "nav-carbonic-anhydrase",
+    "focus": true,
+    "hash": "#/carbonic-anhydrase",
+    "navHeight": 51.66666793823242,
+    "overflow": 0,
+    "touchHeight": 51,
+    "visible": true
+  },
+  {
+    "current": "nav-kinetics",
+    "focus": true,
+    "hash": "#/kinetics",
+    "navHeight": 51.66666793823242,
+    "overflow": 0,
+    "touchHeight": 51,
+    "visible": true
+  },
+  {
+    "current": "nav-inhibition",
+    "focus": true,
+    "hash": "#/inhibition",
+    "navHeight": 51.66666793823242,
+    "overflow": 0,
+    "touchHeight": 51,
+    "visible": true
+  },
+  {
+    "current": "nav-model-notes",
+    "focus": true,
+    "hash": "#/model-notes",
+    "navHeight": 51.66666793823242,
+    "overflow": 0,
+    "touchHeight": 51,
+    "visible": true
+  },
+  {
+    "current": "nav-regulation",
+    "focus": true,
+    "hash": "#/regulation",
+    "navHeight": 51.66666793823242,
+    "overflow": 0,
+    "touchHeight": 51,
+    "visible": true
+  }
+]

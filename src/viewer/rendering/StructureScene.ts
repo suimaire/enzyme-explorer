@@ -5,6 +5,7 @@ import {PickRegistry, TapGuard} from '../picking/picking';
 import {DIMMED, HIGHLIGHT_COLOR, MEASURE_COLOR, METAL_COLOR, RIBBON_COLOR, SELECT_COLOR, SOLVENT_COLOR, elementColor, isMetal, vdwRadius} from '../pdb/elements';
 import {residueLabel, type PdbResidue, type Structure, type Vec3} from '../pdb/parsePdb';
 import {residueOfAtom} from '../measurements/distance';
+import {fitSelection} from './fitSelection';
 
 export type Representation = 'ribbon' | 'sticks' | 'spacefill';
 
@@ -32,7 +33,7 @@ export type StructureView = {
 };
 
 /** `atoms` frames a given set of atoms (for example one residue together with the metal). */
-export type CameraPreset = 'overview' | 'active-site' | 'fit' | 'atoms';
+export type CameraPreset = 'overview' | 'active-site' | 'fit' | 'atoms' | 'selection';
 
 const prefersReducedMotion = () => typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -76,6 +77,8 @@ export class StructureScene {
   private pending: {element: HTMLSpanElement; at: T.Vector3; dx: number; dy: number; priority: number}[] = [];
   private flight: number | null = null;
   private disposed = false;
+  private fittedAtoms: readonly number[] = [];
+  private cameraAdjusted = false;
 
   constructor(
     private host: HTMLDivElement,
@@ -112,6 +115,7 @@ export class StructureScene {
     this.controls.minDistance = 8;
     this.controls.maxDistance = 320;
     this.controls.addEventListener('change', this.render);
+    this.controls.addEventListener('start', this.markCameraAdjusted);
 
     canvas.addEventListener('keydown', this.keyboard);
     canvas.addEventListener('pointerdown', this.down);
@@ -129,7 +133,10 @@ export class StructureScene {
       this.camera.aspect = w / h;
       this.camera.updateProjectionMatrix();
       // Re-fit only when the shape of the viewport really changed, so a scroll bar does not reset the view.
-      if (Math.abs(previous - this.camera.aspect) > 0.01 && this.host.dataset.cameraPreset === 'overview') this.cameraView('fit');
+      if (Math.abs(previous - this.camera.aspect) > 0.01 && !this.cameraAdjusted) {
+        if (this.host.dataset.cameraPreset === 'overview') this.cameraView('fit');
+        else if (this.host.dataset.cameraPreset === 'selection') this.cameraView('selection', this.fittedAtoms);
+      }
       this.render();
     });
     this.resize.observe(host);
@@ -137,6 +144,8 @@ export class StructureScene {
   }
 
   // ---------- interaction ----------
+
+  private markCameraAdjusted = () => {this.cameraAdjusted = true;};
 
   private keyboard = (e: KeyboardEvent) => {
     const offset = this.camera.position.clone().sub(this.controls.target);
@@ -149,6 +158,7 @@ export class StructureScene {
     else if (e.key === '-') s.radius *= 1.1;
     else return;
     e.preventDefault();
+    this.markCameraAdjusted();
     this.stopFlight();
     s.makeSafe();
     s.radius = T.MathUtils.clamp(s.radius, this.controls.minDistance, this.controls.maxDistance);
@@ -462,6 +472,21 @@ export class StructureScene {
 
   cameraView(preset: CameraPreset, atoms: readonly number[] = []): void {
     if (this.disposed) return;
+    this.cameraAdjusted = false;
+    if (preset === 'selection' && atoms.length) {
+      this.stopFlight();
+      this.fittedAtoms = atoms;
+      const direction = this.camera.position.clone().sub(this.controls.target).normalize();
+      const {target, distance} = fitSelection(atoms.map(i => this.positions[i]), direction, this.camera.up, this.camera.aspect, this.camera.fov);
+      this.controls.target.copy(target);
+      this.camera.position.copy(target).addScaledVector(direction, distance);
+      // Narrow screens may need a larger stand-off than the legacy overview limit.
+      this.controls.maxDistance = Math.max(320, distance * 1.5);
+      this.host.dataset.cameraPreset = 'selection';
+      this.controls.update();
+      this.render();
+      return;
+    }
     if (preset === 'atoms' && atoms.length) {
       // Frame the given atoms (a residue together with the metal) with room left for their labels.
       const points = atoms.map((i) => this.positions[i]);
@@ -547,6 +572,8 @@ export class StructureScene {
     }
     const d = this.host.dataset;
     d.cameraDistance = this.camera.position.distanceTo(this.controls.target).toFixed(3);
+    d.cameraPosition = this.camera.position.toArray().map(n => n.toFixed(3)).join(',');
+    d.cameraTarget = this.controls.target.toArray().map(n => n.toFixed(3)).join(',');
   };
 
   /** Screen position of a residue's anchor atom, for automated picking checks. */
@@ -561,6 +588,7 @@ export class StructureScene {
     this.stopFlight();
     this.disposed = true;
     this.resize.disconnect();
+    this.controls.removeEventListener('start', this.markCameraAdjusted);
     this.controls.dispose();
     const canvas = this.renderer.domElement;
     canvas.removeEventListener('keydown', this.keyboard);

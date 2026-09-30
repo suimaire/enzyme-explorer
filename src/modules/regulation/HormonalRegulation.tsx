@@ -4,6 +4,7 @@ import {PredictQuestion, Reveal, usePredictions} from '../../shared/components/P
 import {Segmented} from '../../shared/components/Segmented';
 import {InterventionFlow, Pathway, PhosphateTrace, Results, SugarComparison} from './Diagrams';
 import {IsoformCaution, KineticExplanation} from './ScientificContext';
+import {StructureResults} from './StructureResults';
 import {deriveRegulation, HORMONE_DRIVEN, INITIAL_STATE, regulationReducer, SCENARIO_LABEL, stepDescription, STEPS, type Scenario, type View} from './model';
 import './regulation.css';
 
@@ -16,6 +17,7 @@ export function HormonalRegulation() {
   const [state, dispatch] = useReducer(regulationReducer, INITIAL_STATE);
   const [comparison, setComparison] = useState(false);
   const [trace, setTrace] = useState(false);
+  const [structureVisited, setStructureVisited] = useState(false);
   const [epoch, setEpoch] = useState(0);
   const [reduced, setReduced] = useState(() => typeof window !== 'undefined' && typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   const locked = predictions.get('f26').locked;
@@ -47,7 +49,7 @@ export function HormonalRegulation() {
   return <main className="module regulation-module" data-testid="module-regulation" data-scenario={scenario ?? 'unobserved'} data-step={step}>
     <ModuleHeader id="regulation" onReset={reset} tag={<div className="reg-badges"><span className="badge">간 PFKFB1 · L형</span><span className="badge">정성적 조절 모델</span></div>} />
     <div className="reg-status-line"><span>한 단백질, 두 촉매 활성. 신호를 보내고 조절의 연결을 따라가세요.</span>{clamped && <strong className="reg-clamp-badge">가상 개입: F-2,6-BP 고정</strong>}</div>
-    <div className="reg-workspace">
+    <div className={`reg-workspace${view === 'structure' ? ' reg-workspace-structure' : ''}`}>
       <section className="reg-input reg-panel" aria-labelledby="reg-input-heading">
         <h3 id="reg-input-heading">① 신호 보내기</h3>
         {locked ? <div className="reg-prediction-locked">✓ 예측 확정: {choices.find(c => c.id === predictions.get('f26').choice)?.label}<small>이제 두 신호를 자유롭게 비교하세요.</small></div> : <PredictQuestion predictions={predictions} name="f26" question="두 상황 중 F-2,6-BP가 상대적으로 높아지는 쪽은?" choices={choices} testId="reg-prediction" />}
@@ -57,10 +59,11 @@ export function HormonalRegulation() {
       </section>
       <section className="reg-center reg-panel" aria-labelledby="reg-center-heading">
         <h3 id="reg-center-heading">② 무엇이 바뀌는가?</h3>
-        <Segmented label="관찰 보기" value={view} options={views} onChange={v => {dispatch({type: 'view', view: v}); setTrace(false);}} />
+        <Segmented label="관찰 보기" value={view} options={views} onChange={v => {if (v === 'structure') setStructureVisited(true); dispatch({type: 'view', view: v}); setTrace(false);}} />
         <ol className="reg-steps" aria-label="설명 단계">{STEPS.map((s, i) => <li key={s} aria-current={step === i + 1 ? 'step' : undefined} data-reached={step >= i + 1}><span>{i + 1}</span><small>{s}</small></li>)}</ol>
         <div className="reg-observation">
-          {view === 'structure' ? <Suspense fallback={<p>로컬 실험 구조를 불러오는 중…</p>}><ProteinStructure result={result} step={step} /></Suspense> : view === 'intervention' ? <div className="reg-intervention">
+          {structureVisited && <div hidden={view !== 'structure'}><Suspense fallback={<p>로컬 실험 구조를 불러오는 중…</p>}><ProteinStructure result={result} step={step} /></Suspense></div>}
+          {view === 'structure' ? <StructureResults result={result} step={step} clamped={clamped} onPathway={() => dispatch({type: 'view', view: 'pathway'})} /> : view === 'intervention' ? <div className="reg-intervention">
             <h4>F-2,6-BP만 바꾸면?</h4>
             {!compared ? <div className="reg-intervention-locked"><strong>두 호르몬의 5단계까지 먼저 관찰하세요.</strong><p>비교 후 낮음/높음 고정이 열립니다.</p><button type="button" onClick={() => dispatch({type: 'view', view: 'pathway'})}>조절 경로로 돌아가기</button></div> : <>
               <p>인과 관계를 탐구하는 모델 조작입니다. 실제 약물 처치나 실험 protocol이 아닙니다.</p>
@@ -83,7 +86,7 @@ export function HormonalRegulation() {
         <p className="reg-narration" aria-live="polite" aria-atomic="true">{step > 0 && <b>{step}/5 · </b>}{stepDescription(result, step)}</p>
         <p className="reg-timing">교육용 설명 재생 · 실제 반응 시간이 아닙니다.{reduced ? ' 동작 줄이기: 신호 결과는 즉시 전환하며 이전/다음 단계도 사용할 수 있습니다.' : ''}</p>
       </section>
-      <Results result={result} step={step} clamped={clamped} />
+      {view !== 'structure' && <Results result={result} step={step} clamped={clamped} />}
     </div>
     <div className="reg-extras">
       <button type="button" disabled={step < 3} aria-expanded={trace} onClick={() => {dispatch({type: 'pause'}); setTrace(!trace);}}>인산기 이동 확인 {trace ? '−' : '+'}</button>

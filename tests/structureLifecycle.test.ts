@@ -15,7 +15,7 @@ describe('structure scene teardown', () => {
       dispose: vi.fn(),
       forceContextLoss: vi.fn(() => {contextAlive = false;}),
     };
-    const controls = {dispose: vi.fn()};
+    const controls = {dispose: vi.fn(), removeEventListener: vi.fn()};
     const resize = {disconnect: vi.fn()};
     const picks = {clear: vi.fn()};
     const label = {remove: vi.fn()};
@@ -30,7 +30,7 @@ describe('structure scene teardown', () => {
     const scene = Object.assign(Object.create(StructureScene.prototype) as object, {
       renderer, controls, resize, picks, sphere, cylinder, group,
       labels: [label], pending: [], disposed: false, flight,
-      keyboard: vi.fn(), down: vi.fn(), up: vi.fn(), cancel: vi.fn(),
+      keyboard: vi.fn(), down: vi.fn(), up: vi.fn(), cancel: vi.fn(), markCameraAdjusted: vi.fn(),
     }) as unknown as StructureScene;
 
     scene.dispose();
@@ -45,5 +45,6 @@ describe('structure scene teardown', () => {
       expect(dispose).toHaveBeenCalledTimes(1);
     }
     expect(canvas.removeEventListener).toHaveBeenCalledTimes(4);
+    expect(controls.removeEventListener).toHaveBeenCalledExactlyOnceWith('start', expect.any(Function));
   });
 });

@@ -3,7 +3,9 @@
 import {createRoot} from 'react-dom/client';
 import {App} from '../../src/app/App';
 import '../../src/styles.css';
+import {installLayoutChecks} from './ui-layout-checks';
 const params = new URLSearchParams(location.search);
+if (params.get('uiAudit') === '1') installLayoutChecks();
 if (params.get('webgl') === 'unavailable') {
   const original = HTMLCanvasElement.prototype.getContext;
   HTMLCanvasElement.prototype.getContext = function (this: HTMLCanvasElement, ...args: Parameters<typeof original>) {

@@ -1,5 +1,6 @@
 import {Suspense, lazy} from 'react';
-import {MODULES, hashFor, moduleEntry} from './modules';
+import {hashFor, moduleEntry} from './modules';
+import {ModuleNavigation} from './ModuleNavigation';
 import {useHashModule} from './useHashModule';
 import {StartPage} from '../modules/start/StartPage';
 import {ReactionEnergyLab} from '../modules/reaction-energy/ReactionEnergyLab';
@@ -37,24 +38,7 @@ export function App() {
         </p>
       </header>
 
-      <nav className={`module-nav${current === 'regulation' ? ' regulation-shell' : ''}`} aria-label="학습 모듈">
-        {MODULES.map((m) => (
-          <a
-            key={m.id}
-            href={hashFor(m.id)}
-            aria-current={current === m.id ? 'page' : undefined}
-            data-testid={`nav-${m.id}`}
-            onClick={(e) => {
-              e.preventDefault();
-              navigate(m.id);
-            }}
-          >
-            <small>{m.number ? `${m.number} · ${m.eyebrow}` : m.eyebrow}</small>
-            {m.title}
-            {m.status === 'planned' ? <em>Enzyme II에서 다룰 예정</em> : null}
-          </a>
-        ))}
-      </nav>
+      <ModuleNavigation current={current} navigate={navigate} />
 
       {current === 'start' ? <StartPage onNavigate={navigate} /> : null}
       {current === 'reaction-energy' ? <ReactionEnergyLab /> : null}
