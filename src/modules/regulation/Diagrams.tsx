@@ -9,7 +9,7 @@ export function RegulatorySite({result, revealed}: {result: RegulationResult | n
   </div>;
 }
 
-export function Pathway({result, step, clamped, onCompare}: {result: RegulationResult | null; step: number; clamped: boolean; onCompare: () => void}) {
+export function Pathway({result, step, clamped, onCompare}: {result: RegulationResult | null; step: number; clamped: boolean; onCompare: (trigger: HTMLButtonElement) => void}) {
   return <div className="reg-pathway" data-testid="reg-pathway">
     <div className={`reg-signal-chain ${step === 1 ? 'reg-current' : ''}`}>
       {result ? result.phosphorylated ? <><strong>글루카곤 수용체</strong><span>→ Gs → adenylyl cyclase</span><span>→ cAMP ↑ → <b>PKA</b></span></> : <><strong>인슐린 수용체 신호</strong><span>→ 세부 신호전달 요약</span><span>→ 순탈인산화가 우세한 조절 상태</span></> : <><strong>아직 비교하지 않음</strong><span>호르몬 신호를 보내면 여기에 경로가 나타납니다.</span></>}
@@ -31,7 +31,7 @@ export function Pathway({result, step, clamped, onCompare}: {result: RegulationR
         <div><b>FBPase-2</b><span>F6P + Pi <i className="reg-reaction-arrow">←</i> F-2,6-BP + H₂O</span></div>
       </> : <p className="small">3단계에서 두 촉매 반응을 확인합니다.</p>}
     </div>
-    <button type="button" className={`reg-metabolite ${step === 4 ? 'reg-current' : ''}`} onClick={onCompare} aria-label="F-2,6-BP와 F-1,6-BP 비교" disabled={step < 4}>
+    <button type="button" className={`reg-metabolite ${step === 4 ? 'reg-current' : ''}`} onClick={event => onCompare(event.currentTarget)} aria-label="F-2,6-BP와 F-1,6-BP 비교" disabled={step < 4}>
       <span className="reg-sugar-p">● 조절물질 · 하위 효소에 적용</span><b>F-2,6-BP</b>
       <strong>{result && step >= 4 ? LEVEL_LABEL[result.effectiveF26] : '다음 단계에서 확인'}</strong>
       {result && step >= 4 && <small>{clamped ? `가상 고정 적용 · 호르몬 조절이 예측: ${LEVEL_LABEL[result.hormoneF26]}` : `호르몬 조절 · ${F26_DIRECTION_LABEL[result.hormoneF26]}`}</small>}
@@ -103,11 +103,25 @@ export function PhosphateTrace() {
   </div>;
 }
 
-export function SugarComparison({onClose}: {onClose: () => void}) {
+export function SugarComparison({onClose, returnFocus}: {onClose: () => void; returnFocus?: () => void}) {
   const dialog = useRef<HTMLDialogElement>(null);
-  useEffect(() => {dialog.current?.showModal();}, []);
-  return <dialog ref={dialog} className="reg-comparison" onCancel={onClose} onClose={onClose} aria-labelledby="reg-sugar-title">
-    <div className="reg-dialog-heading"><h3 id="reg-sugar-title">이름은 비슷해도 위치와 역할은 다릅니다</h3><button type="button" autoFocus onClick={onClose}>닫기</button></div>
+  const closeButton = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    const element = dialog.current;
+    element?.showModal();
+    return () => {
+      element?.close();
+      // Wait until DOM removal/reset has finished before choosing a surviving focus target.
+      queueMicrotask(() => {if (!document.querySelector('dialog:modal')) returnFocus?.();});
+    };
+  }, [returnFocus]);
+  function close() {dialog.current?.close(); onClose();}
+  return <dialog ref={dialog} className="reg-comparison" onCancel={event => {event.preventDefault(); close();}} onClose={onClose} aria-labelledby="reg-sugar-title"
+    onKeyDown={event => {
+      // This comparison has one focusable control; match StructureFrame's explicit Tab containment.
+      if (event.key === 'Tab') {event.preventDefault(); closeButton.current?.focus();}
+    }}>
+    <div className="reg-dialog-heading"><h3 id="reg-sugar-title">이름은 비슷해도 위치와 역할은 다릅니다</h3><button ref={closeButton} type="button" autoFocus onClick={close}>닫기</button></div>
     <p>인산기 위치 모식도 · 실제 고리 구조나 입체화학을 뜻하는 구조식이 아닙니다.</p>
     <div className="reg-sugar-grid">{[{name: 'F-2,6-BP', positions: [2,6], enzyme: 'PFK-2', role: '이 조절축의 조절물질'}, {name: 'F-1,6-BP', positions: [1,6], enzyme: 'PFK-1', role: '해당과정 중간체'}].map(s => <section key={s.name}><h4>{s.name}</h4><div className="reg-carbon-positions" aria-label={`인산기 위치 ${s.positions.join(', ')}`}>{[1,2,3,4,5,6].map(n => <div key={n}><span>{n}</span><b>{s.positions.includes(n) ? '●P' : '·'}</b></div>)}</div><p><b>{s.enzyme}</b>가 생성 · {s.role}</p></section>)}</div>
     <p><b>PFK-1:</b> F6P + ATP → F-1,6-BP + ADP</p><p><b>FBPase-1:</b> F-1,6-BP + H₂O → F6P + Pi</p>

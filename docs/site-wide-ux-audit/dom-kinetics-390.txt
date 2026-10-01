@@ -1,0 +1,89 @@
+- banner:
+  - generic: E
+  - heading "Enzyme Explorer" [level=1]
+  - paragraph: 효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론
+  - paragraph: 모듈 03 · 효소 반응속도론 실험실
+- navigation "학습 모듈":
+  - link "Start 시작":
+    - /url: "#/start"
+    - generic: Start
+  - link "01 반응 에너지":
+    - /url: "#/reaction-energy"
+    - generic: "01"
+    - generic: 반응 에너지
+  - link "02 탄산무수화효소":
+    - /url: "#/carbonic-anhydrase"
+    - generic: "02"
+    - generic: 탄산무수화효소
+  - link "03 효소 반응속도론 실험실" [active]:
+    - /url: "#/kinetics"
+    - generic: "03"
+    - generic: 반응속도론
+  - link "04 효소 저해 · Enzyme II에서 다룰 예정":
+    - /url: "#/inhibition"
+    - generic: "04"
+    - generic: 효소 저해
+  - link "05 효소 조절":
+    - /url: "#/regulation"
+    - generic: "05"
+    - generic: 효소 조절
+  - link "Reference 모델 및 주의사항":
+    - /url: "#/model-notes"
+    - generic: Reference
+- main:
+  - paragraph: 모듈 03 · 반응속도론
+  - heading "효소 반응속도론 실험실" [level=2]
+  - paragraph: 효소가 반응 속도를 바꾸는 효과를 어떻게 실험적으로 확인할 수 있을까?
+  - generic: 교육용 모델
+  - text: 단일 기질, 비가역 반응, 초기 속도 모델
+  - button "이 모듈 초기화"
+  - group "탐구 단계":
+    - generic: 탐구 단계
+    - group "탐구 단계":
+      - button "03A · 초기 속도 측정" [pressed]
+      - button "03B · Michaelis–Menten 탐색"
+      - button "03C · Km과 반응 메커니즘"
+  - region "측정 조건":
+    - heading "반응 측정하기" [level=3]
+    - paragraph: 효소 시료 X를 일정한 농도로 사용합니다. 이 측정의 목적은 효소의 반응속도 상수를 알아내는 것이며, 03B에서 그 값을 구체적으로 다룹니다.
+    - paragraph: 반응 진행 곡선 → 초기 구간의 기울기 → 초기 속도 v₀ → v₀ 대 [S] 그래프(03B)
+    - group "초기 기질 농도 [S]₀":
+      - generic: 초기 기질 농도 [S]₀
+      - button "10 µM"
+      - button "25 µM"
+      - button "50 µM" [pressed]
+      - button "100 µM"
+      - button "250 µM"
+      - button "500 µM"
+    - button "반응 시작"
+    - generic: 교육용 모델
+    - text: 비가역 반응으로 단순화한 Michaelis–Menten 모델
+  - region "반응 진행 곡선":
+    - paragraph: 초기 기질 농도 [S]₀를 고르고 반응을 시작하면 반응 진행 곡선(progress curve)이 그려집니다.
+  - region "질문과 측정 결과":
+    - group "먼저 예측 반응이 시작된 뒤 생성물은 일정한 속도로 계속 쌓일까?":
+      - generic: 먼저 예측
+      - text: 반응이 시작된 뒤 생성물은 일정한 속도로 계속 쌓일까?
+      - radio "그렇다 — 생성물 농도 [P]가 직선으로 증가한다"
+      - generic: 그렇다 — 생성물 농도 [P]가 직선으로 증가한다
+      - radio "아니다 — 처음에 가장 빠르게 증가하고 점차 느려진다"
+      - generic: 아니다 — 처음에 가장 빠르게 증가하고 점차 느려진다
+      - radio "아니다 — 처음에는 느리다가 점차 빨라진다"
+      - generic: 아니다 — 처음에는 느리다가 점차 빨라진다
+    - paragraph: 예측을 확정한 뒤 반응을 시작해 비교해 보세요.
+    - button "예측 확정" [disabled]
+    - heading "측정 결과" [level=3]
+    - paragraph: 반응을 시작한 뒤, 초기 구간의 기울기로 초기 속도(initial velocity, v₀)를 측정하세요.
+    - heading "모은 측정값 (0개)" [level=3]
+    - paragraph: 아직 측정값이 없습니다.
+    - paragraph: 측정값은 자동으로 03B의 Michaelis–Menten 그래프(v₀ 대 [S])로 보내져 마름모로 표시됩니다.
+  - region "설명":
+    - paragraph: 예측을 확정하고, 반응을 시작한 뒤 초기 속도를 측정하면 설명을 볼 수 있습니다.
+- contentinfo:
+  - generic: Enzyme Explorer · Enzyme I — 촉매 작용과 반응속도론
+  - link "모델 및 주의사항":
+    - /url: "#/model-notes"
+  - text: ·
+  - link "단백질 구조와 접힘 복습하기 ↗":
+    - /url: https://suimaire.github.io/protein-3d-explorer/
+  - generic: today 1 · total 15

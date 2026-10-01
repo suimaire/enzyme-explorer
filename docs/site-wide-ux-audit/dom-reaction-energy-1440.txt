@@ -1,0 +1,119 @@
+- banner:
+  - generic: E
+  - heading "Enzyme Explorer" [level=1]
+  - paragraph: 효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론
+  - paragraph: 모듈 01 · 반응 에너지
+- navigation "학습 모듈":
+  - link "Start 시작":
+    - /url: "#/start"
+    - generic: Start
+  - link "01 반응 에너지" [active]:
+    - /url: "#/reaction-energy"
+    - generic: "01"
+    - generic: 반응 에너지
+  - link "02 탄산무수화효소":
+    - /url: "#/carbonic-anhydrase"
+    - generic: "02"
+    - generic: 탄산무수화효소
+  - link "03 효소 반응속도론 실험실":
+    - /url: "#/kinetics"
+    - generic: "03"
+    - generic: 반응속도론
+  - link "04 효소 저해 · Enzyme II에서 다룰 예정":
+    - /url: "#/inhibition"
+    - generic: "04"
+    - generic: 효소 저해
+  - link "05 효소 조절":
+    - /url: "#/regulation"
+    - generic: "05"
+    - generic: 효소 조절
+  - link "Reference 모델 및 주의사항":
+    - /url: "#/model-notes"
+    - generic: Reference
+- main:
+  - paragraph: 모듈 01 · 에너지
+  - heading "반응 에너지" [level=2]
+  - paragraph: 열역학적으로 유리한 반응도 왜 느릴 수 있을까?
+  - generic: 교육용 모델
+  - text: 하나의 활성화 장벽으로 단순화한 교육용 모델 · 상대 에너지(kJ·mol⁻¹)는 측정값이 아닌 설정값
+  - button "이 모듈 초기화"
+  - region "조건 조절":
+    - heading "조건 조절" [level=3]
+    - generic: 생성물의 자유에너지
+    - status:
+      - text: "-18"
+      - generic: kJ·mol⁻¹
+    - slider "생성물의 자유에너지": "-18"
+    - paragraph: 반응물 상태를 0으로 고정한 상대값입니다.
+    - generic: 효소가 없을 때 전이 상태(transition state)의 에너지
+    - status:
+      - text: "55"
+      - generic: kJ·mol⁻¹
+    - slider "효소가 없을 때 전이 상태(transition state)의 에너지": "55"
+    - paragraph: 반응 경로에서 에너지가 가장 높은 지점입니다. 항상 반응물과 생성물보다 높게 유지됩니다.
+    - group "효소":
+      - generic: 효소
+      - group "효소":
+        - button "없음" [disabled] [pressed]
+        - button "있음" [disabled]
+    - paragraph: 효소를 넣기 전에 첫 번째 예측을 먼저 확정하세요.
+    - generic: 효소에 의한 전이 상태 에너지 감소
+    - status:
+      - text: "20"
+      - generic: kJ·mol⁻¹
+    - slider "효소에 의한 전이 상태 에너지 감소" [disabled]: "20"
+    - paragraph: 전이 상태의 에너지에만 적용됩니다. 반응물과 생성물의 에너지는 그대로입니다.
+  - region "반응 좌표 다이어그램":
+    - img "반응 좌표 다이어그램, 교육용 모델. 반응물 에너지 0, 생성물 에너지 −18 kJ/mol. 효소가 없을 때 전이 상태 55, 정반응 장벽 55, 역반응 장벽 73. 효소가 없으므로 효소가 없을 때의 경로만 표시됩니다.":
+      - generic: "-30"
+      - generic: "-15"
+      - generic: "0"
+      - generic: "15"
+      - generic: "30"
+      - generic: "45"
+      - generic: "60"
+      - generic: "70"
+      - generic: 정반응 55
+      - generic: 역반응 73
+      - generic: ΔG −18
+      - generic: 반응물
+      - generic: 생성물
+      - generic: 전이 상태
+      - generic: 반응 좌표(reaction coordinate)
+      - generic: 반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다.
+      - generic: 상대 Gibbs 자유에너지 (kJ·mol⁻¹)
+    - list:
+      - text: 효소가 없을 때의 경로
+      - text: 반응물·생성물의 에너지 수준
+  - region "질문과 관찰 결과":
+    - group "먼저 예측 ΔG < 0인 반응은 반드시 빠르게 일어날까?":
+      - generic: 먼저 예측
+      - text: ΔG < 0인 반응은 반드시 빠르게 일어날까?
+      - radio "그렇다"
+      - generic: 그렇다
+      - radio "아니다"
+      - generic: 아니다
+      - radio "이 정보만으로는 알 수 없다"
+      - generic: 이 정보만으로는 알 수 없다
+    - paragraph: 다이어그램을 조작하기 전에 먼저 정하세요.
+    - button "예측 확정" [disabled]
+    - heading "관찰" [level=3]
+    - term: 반응의 ΔG
+    - definition: −18 kJ·mol⁻¹
+    - term: 정반응 활성화 장벽 ΔG‡
+    - definition: 55 kJ·mol⁻¹
+    - term: 역반응 활성화 장벽 ΔG‡
+    - definition: 73 kJ·mol⁻¹
+    - term: 평형의 위치
+    - definition: 효소가 있어도 평형의 위치는 변하지 않습니다.
+    - paragraph: 효소를 ‘있음’으로 바꾸면 같은 축 위에서 두 번째 경로를 비교할 수 있습니다.
+  - region "설명":
+    - paragraph: 첫 번째 예측을 확정하고 효소를 ‘있음’으로 바꾼 뒤, 새로 나타나는 네 가지 질문에 답하세요.
+- contentinfo:
+  - generic: Enzyme Explorer · Enzyme I — 촉매 작용과 반응속도론
+  - link "모델 및 주의사항":
+    - /url: "#/model-notes"
+  - text: ·
+  - link "단백질 구조와 접힘 복습하기 ↗":
+    - /url: https://suimaire.github.io/protein-3d-explorer/
+  - generic: today 1 · total 15

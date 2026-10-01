@@ -3,6 +3,8 @@ import {COORDINATE, ENERGY_DOMAIN, pathwayPoints, type Pathway, type ReactionEne
 import {signed} from '../../shared/math/format';
 
 export const PATHWAY_COLORS = {uncatalyzed: '#6b7a85', catalyzed: '#15618f', level: '#a8761c'} as const;
+/** Text has its own darker shades; the curve/arrow palette retains its meaning. */
+export const ENERGY_TEXT_COLORS = {uncatalyzed: '#51636f', catalyzed: '#15618f', level: '#8a5908'} as const;
 
 /** A vertical measurement arrow between two energies, drawn with a head at each end. */
 function EnergyArrow({
@@ -10,6 +12,7 @@ function EnergyArrow({
   top,
   bottom,
   color,
+  textColor,
   dashed,
   label,
   anchor = 'start',
@@ -20,6 +23,7 @@ function EnergyArrow({
   top: number;
   bottom: number;
   color: string;
+  textColor: string;
   dashed?: boolean;
   label: string;
   anchor?: 'start' | 'end';
@@ -33,7 +37,7 @@ function EnergyArrow({
       <path d={head(top, 1)} fill={color} />
       <path d={head(bottom, -1)} fill={color} />
       {hideLabel ? null : (
-        <text x={anchor === 'start' ? x + 6 : x - 6} y={(top + bottom) / 2 + 4} textAnchor={anchor} fill={color} fontSize={12}>
+        <text className="chart-key" x={anchor === 'start' ? x + 6 : x - 6} y={(top + bottom) / 2 + 4} textAnchor={anchor} fill={textColor}>
           {label}
         </text>
       )}
@@ -64,7 +68,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
 
   const narrow = width < 560;
   const height = Math.round(Math.min(460, Math.max(300, width * 0.62)));
-  const m = {l: narrow ? 50 : 64, r: narrow ? 14 : 22, t: 18, b: narrow ? 58 : 64};
+  const m = {l: narrow ? 50 : 64, r: narrow ? 20 : 26, t: 28, b: narrow ? 96 : 64};
   const pw = width - m.l - m.r;
   const ph = height - m.t - m.b;
   const X = (x: number) => m.l + x * pw;
@@ -75,7 +79,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
       .map((s, i) => `${i ? 'L' : 'M'}${X(s.x).toFixed(2)},${Y(s.energy).toFixed(2)}`)
       .join('');
   const {uncatalyzed, catalyzed} = profile;
-  const ticks = [-30, -15, 0, 15, 30, 45, 60, 70];
+  const ticks = narrow ? [-30, 0, 30, 60, 70] : [-30, -15, 0, 15, 30, 45, 60, 70];
 
   const description =
     `반응 좌표 다이어그램, 교육용 모델. 반응물 에너지 0, 생성물 에너지 ${signed(uncatalyzed.product, 0)} kJ/mol. ` +
@@ -92,6 +96,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
         viewBox={`0 0 ${width} ${height}`}
         role="img"
         data-testid={testId}
+        data-narrow={narrow}
         data-enzyme={catalyzed ? 'on' : 'off'}
         data-delta-g={profile.deltaG.toFixed(2)}
         data-forward-uncatalyzed={uncatalyzed.forwardBarrier.toFixed(2)}
@@ -104,7 +109,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
           {ticks.map((t) => (
             <g key={t}>
               <line x1={m.l} x2={m.l + pw} y1={Y(t)} y2={Y(t)} />
-              <text x={m.l - 6} y={Y(t) + 4} textAnchor="end" fontSize={narrow ? 10.5 : 12}>
+              <text x={m.l - 6} y={Y(t) + 4} textAnchor="end">
                 {t}
               </text>
             </g>
@@ -151,6 +156,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
           top={Y(uncatalyzed.transitionState)}
           bottom={Y(uncatalyzed.reactant)}
           color={PATHWAY_COLORS.uncatalyzed}
+          textColor={ENERGY_TEXT_COLORS.uncatalyzed}
           dashed
           anchor="end"
           hideLabel={narrow}
@@ -163,6 +169,8 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
             top={Y(catalyzed.transitionState)}
             bottom={Y(catalyzed.reactant)}
             color={PATHWAY_COLORS.catalyzed}
+            textColor={ENERGY_TEXT_COLORS.catalyzed}
+            anchor="end"
             hideLabel={narrow}
             label={`정반응 ${catalyzed.forwardBarrier.toFixed(0)}`}
           />
@@ -174,6 +182,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
             top={Y(catalyzed.transitionState)}
             bottom={Y(catalyzed.product)}
             color={PATHWAY_COLORS.catalyzed}
+            textColor={ENERGY_TEXT_COLORS.catalyzed}
             anchor="end"
             hideLabel={narrow}
             label={`역반응 ${catalyzed.reverseBarrier.toFixed(0)}`}
@@ -185,6 +194,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
           top={Y(uncatalyzed.transitionState)}
           bottom={Y(uncatalyzed.product)}
           color={PATHWAY_COLORS.uncatalyzed}
+          textColor={ENERGY_TEXT_COLORS.uncatalyzed}
           dashed
           hideLabel={narrow}
           label={`역반응 ${uncatalyzed.reverseBarrier.toFixed(0)}`}
@@ -195,10 +205,21 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
           top={Y(Math.max(uncatalyzed.reactant, uncatalyzed.product))}
           bottom={Y(Math.min(uncatalyzed.reactant, uncatalyzed.product))}
           color={PATHWAY_COLORS.level}
+          textColor={ENERGY_TEXT_COLORS.level}
           anchor="end"
           hideLabel={narrow}
           label={`ΔG ${signed(profile.deltaG, 0)}`}
         />
+
+        {/* Narrow plots use two readable numeric rows instead of squeezing text between the arrows. */}
+        {narrow ? <g data-testid="energy-numeric-summary">
+          <text className="chart-key" x={width / 2} y={height - 76} textAnchor="middle" fill={ENERGY_TEXT_COLORS.uncatalyzed}>
+            정반응 {uncatalyzed.forwardBarrier.toFixed(0)}{catalyzed ? ` → ${catalyzed.forwardBarrier.toFixed(0)}` : ''} · 역반응 {uncatalyzed.reverseBarrier.toFixed(0)}{catalyzed ? ` → ${catalyzed.reverseBarrier.toFixed(0)}` : ''}
+          </text>
+          <text className="chart-key" x={width / 2} y={height - 56} textAnchor="middle" fill={ENERGY_TEXT_COLORS.level}>
+            ΔG {signed(profile.deltaG, 0)} · 단위 kJ·mol⁻¹
+          </text>
+        </g> : null}
 
         <text className="state-label" x={X(COORDINATE.reactantEnd / 2)} y={Y(uncatalyzed.reactant) - 10} textAnchor="middle">
           반응물
@@ -231,7 +252,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
           {narrow ? '반응 경로상의 개념적 진행 정도 · 시간축 아님' : '반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다.'}
         </text>
         {/* The rotated label has to fit inside the plot height, which is short on a phone. */}
-        <text className="axis-label" transform={`translate(${narrow ? 13 : 15} ${m.t + ph / 2}) rotate(-90)`} textAnchor="middle" fontSize={narrow ? 11.5 : undefined}>
+        <text className="axis-label" transform={`translate(${narrow ? 15 : 17} ${m.t + ph / 2}) rotate(-90)`} textAnchor="middle">
           {narrow ? '상대 자유에너지 (kJ·mol⁻¹)' : '상대 Gibbs 자유에너지 (kJ·mol⁻¹)'}
         </text>
       </svg>

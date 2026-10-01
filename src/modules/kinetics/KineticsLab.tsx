@@ -1,4 +1,5 @@
-import {useState} from 'react';
+import {useLearningState, useResetLearningModule} from '../../app/LearningSession';
+import {KINETICS_PREPARATION} from '../../app/learningSessionStore';
 import {InitialVelocityPanel} from './InitialVelocityPanel';
 import {MichaelisMentenPanel} from './MichaelisMentenPanel';
 import {MechanisticCaveatPanel} from './MechanisticCaveatPanel';
@@ -11,20 +12,20 @@ import type {AssayResult, MichaelisMentenParameters} from '../../kinetics/types'
  * The enzyme preparation used in 03A, and the starting point of the 03B sliders. The 03A assays are
  * measurements *of* this preparation, which is why 03B starts from exactly these values.
  */
-export const PREPARATION: MichaelisMentenParameters = {km: 75, kcat: 20, enzymeTotal: 5};
+export const PREPARATION: MichaelisMentenParameters = KINETICS_PREPARATION;
 
-type Section = 'a' | 'b' | 'c';
-
-/** Module 03. Three sections, one shared set of measurements, no router — the section is local state. */
+/** Module 03. Three sections share one App-session learning snapshot. */
 export function KineticsLab() {
-  const [section, setSection] = useState<Section>('a');
-  const [parameters, setParameters] = useState<MichaelisMentenParameters>(PREPARATION);
-  const [assays, setAssays] = useState<AssayResult[]>([]);
+  const [section, setSection] = useLearningState('kinetics', 'section');
+  const [parameters, setParameters] = useLearningState('kinetics', 'parameters');
+  const [assays, setAssays] = useLearningState('kinetics', 'assays');
+  const resetSession = useResetLearningModule('kinetics');
 
   const record = (result: AssayResult) =>
     setAssays((prev) => (prev.some((a) => a.initialSubstrate === result.initialSubstrate) ? prev : [...prev, result]));
 
   const reset = () => {
+    resetSession();
     setSection('a');
     setParameters(PREPARATION);
     setAssays([]);
@@ -34,7 +35,7 @@ export function KineticsLab() {
     parameters.km !== PREPARATION.km || parameters.kcat !== PREPARATION.kcat || parameters.enzymeTotal !== PREPARATION.enzymeTotal;
 
   return (
-    <main className="module" data-testid="module-kinetics">
+    <div className="module" data-testid="module-kinetics">
       <ModuleHeader
         id="kinetics"
         tag={<TeachingModel>단일 기질, 비가역 반응, 초기 속도 모델</TeachingModel>}
@@ -65,7 +66,7 @@ export function KineticsLab() {
       ) : null}
 
       {section === 'c' ? <MechanisticCaveatPanel /> : null}
-    </main>
+    </div>
   );
 }
 

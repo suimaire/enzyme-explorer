@@ -1,0 +1,39 @@
+{
+  "baseline": {
+    "testFiles": 13,
+    "testsPassed": 201,
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed",
+    "diffCheck": "passed"
+  },
+  "final": {
+    "testFiles": 14,
+    "testsPassed": 210,
+    "testDurationSeconds": 7.63,
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed",
+    "diffCheck": "passed",
+    "mobileFlowRecords": 70,
+    "layoutRecordsPerViewport": 22,
+    "phaseA2RecordsPerViewport": 45,
+    "consoleErrorsAfterFinalSource": 0,
+    "consoleWarningsAfterFinalSource": 0
+  },
+  "retainedBuildWarning": "Existing Three.js and ProteinStructure chunks exceed 500 kB",
+  "intermediateFailures": [
+    "Concurrent validation: existing reaction energy domain test exceeded its unchanged 5000 ms timeout. Standalone npm test passed, including the final 210-test run.",
+    "New mobile fixture: background smooth scrolling exceeded its 2500 ms wait. Wait extended to 8000 ms with the same focus and target-visible assertions; final 70 records passed. Production navigation unchanged."
+  ],
+  "restrictions": {
+    "commit": false,
+    "push": false,
+    "branchChanged": false,
+    "dependenciesChanged": false,
+    "scientificCalculationsChanged": false,
+    "sessionStateChanged": false,
+    "stickyControlBarAdded": false,
+    "ux009Through016Changed": false
+  }
+}

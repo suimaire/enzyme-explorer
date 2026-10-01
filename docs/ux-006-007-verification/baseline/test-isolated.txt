@@ -1,0 +1,13 @@
+
+> enzyme-explorer@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.1 D:/CODEX/260831 biochemistry/enzyme-explorer
+
+
+ Test Files  12 passed (12)
+      Tests  195 passed (195)
+   Start at  12:53:09
+   Duration  10.28s (tests 71%, transform 17%, import 11%, worker 1%)
+

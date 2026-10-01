@@ -1,0 +1,27 @@
+
+> enzyme-explorer@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 75 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                 1.36 kB │ gzip:   0.86 kB
+dist/assets/2CBA-KgaqpoRL.pdb                 219.51 kB
+dist/assets/HormonalRegulation-B8okM2zU.css    17.32 kB │ gzip:   4.15 kB
+dist/assets/index-CFEvWvak.css                 20.18 kB │ gzip:   5.01 kB
+dist/assets/Segmented-jP70VvD7.js              11.78 kB │ gzip:   4.87 kB
+dist/assets/StructureViewer-C9XoSt4q.js        22.81 kB │ gzip:   8.69 kB
+dist/assets/HormonalRegulation-BBdI3i_e.js     30.19 kB │ gzip:   8.98 kB
+dist/assets/CarbonicAnhydraseLab-CzUde4dX.js   36.78 kB │ gzip:  11.53 kB
+dist/assets/index-DZi3uV2E.js                 290.29 kB │ gzip:  90.28 kB
+dist/assets/three-DBUjQsI8.js                 510.63 kB │ gzip: 127.81 kB
+dist/assets/ProteinStructure-CtsGdfBQ.js      582.20 kB │ gzip: 149.98 kB
+
+✓ built in 308ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

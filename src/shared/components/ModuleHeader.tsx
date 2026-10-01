@@ -1,4 +1,5 @@
 import {moduleEntry, type ModuleId} from '../../app/modules';
+import {MODEL_NOTES_SECTIONS, modelNotesHash} from '../../app/modelNotesNavigation';
 
 /** Common module heading: number, title, the module's inquiry question, a model tag and a Reset control. */
 export function ModuleHeader({
@@ -13,6 +14,7 @@ export function ModuleHeader({
   resetLabel?: string;
 }) {
   const entry = moduleEntry(id);
+  const reference = MODEL_NOTES_SECTIONS.find(section => section.module === id);
   return (
     <header className="module-heading">
       <div>
@@ -25,6 +27,7 @@ export function ModuleHeader({
       </div>
       <div className="module-heading-side">
         {tag}
+        {reference ? <a href={modelNotesHash(reference.id)}>모델 및 주의사항</a> : null}
         {onReset ? (
           <button type="button" onClick={onReset} data-testid="reset-module">
             {resetLabel}

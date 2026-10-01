@@ -1,0 +1,276 @@
+{
+  "version": "6.9",
+  "hitCount": 1,
+  "request": {
+    "queryString": "EXT_ID:6323408 AND SRC:MED",
+    "internalQuery": "EXT_ID:6323408 AND SRC:MED",
+    "resultType": "CORE",
+    "cursorMark": "*",
+    "pageSize": 25,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "6323408",
+        "source": "MED",
+        "pmid": "6323408",
+        "doi": "10.1016/s0021-9258(17)43618-0",
+        "title": "Differences in kinetic properties of phospho and dephospho forms of fructose-6-phosphate, 2-kinase and fructose 2,6-bisphosphatase.",
+        "authorString": "Sakakibara R, Kitajima S, Uyeda K.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Sakakibara R",
+              "lastName": "Sakakibara",
+              "firstName": "R",
+              "initials": "R"
+            },
+            {
+              "fullName": "Kitajima S",
+              "lastName": "Kitajima",
+              "firstName": "S",
+              "initials": "S"
+            },
+            {
+              "fullName": "Uyeda K",
+              "lastName": "Uyeda",
+              "firstName": "K",
+              "initials": "K"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "1",
+          "volume": "259",
+          "journalIssueId": 617171,
+          "dateOfPublication": "1984 Jan",
+          "monthOfPublication": 1,
+          "yearOfPublication": 1984,
+          "journal": {
+            "medlineAbbreviation": "J Biol Chem",
+            "title": "The Journal of biological chemistry",
+            "essn": "1083-351X",
+            "issn": "0021-9258",
+            "isoabbreviation": "J Biol Chem",
+            "nlmid": "2985121R"
+          },
+          "printPublicationDate": "1984-01-01"
+        },
+        "pubYear": "1984",
+        "pageInfo": "41-46",
+        "abstractText": "Fructose-6-P,2-kinase:fructose 2,6-bisphosphatase has been purified to homogeneity. The ratio of the activities of fructose-6-P,2-kinase to fructose 2,6-bisphosphatase is 1.2. The enzyme (\"native\") contains 0.2 mol of phosphate/mol of subunit, and it is fully phosphorylated to 0.96 mol of phosphate/mol of subunit by cAMP-dependent protein kinase. Kinetic behavior of the native and phosphorylated forms of these enzymes was investigated. Both native and phosphofructose-6-P,2-kinase show sigmoidal kinetics with respect to fructose-6-P with an apparent K0.5 of 15 microM and 50 microM, respectively. The Hill coefficients are also increased from 1.3 to 2 by phosphorylation. The initial velocity patterns with respect to ATP follows Michaelis-Menten kinetics but the K0.5 of the phosphoenzyme (0.5 mM) is higher than that of the native enzyme (0.25 mM). The native fructose 2,6-bisphosphatase shows a biphasic saturation curve with respect to fructose-2,6-P2 which appears to be negatively cooperative. The phosphofructose 2,6-bisphosphatase, however, exhibits no cooperativity, and the apparent K0.5 for the substrate is 0.5 microM. Both forms of the phosphatase show the same Vmax. Based on these results possible allosteric regulation of fructose-6-P, 2-kinase and fructose 2,6-bisphosphatase in a reciprocal manner in vivo is discussed.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, U.S. Gov't, P.H.S.",
+            "Research Support, U.S. Gov't, Non-P.H.S.",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIADDK NIH HHS",
+              "acronym": "AM",
+              "grantId": "AM16194",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rabbits"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Phosphoric Monoester Hydrolases",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IP",
+                    "qualifierName": "isolation & purification"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Phosphofructokinase-2"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Phosphotransferases",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "IP",
+                    "qualifierName": "isolation & purification"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Kinases",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Fructosephosphates",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Adenosine Triphosphate",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Chromatography, Affinity"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Phosphorylation"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Kinetics"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "fructose-6-phosphate",
+              "registryNumber": "6814-87-5"
+            },
+            {
+              "name": "Fructosephosphates",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Phosphofructokinase-2",
+              "registryNumber": "EC 2.7.1.105"
+            },
+            {
+              "name": "Phosphotransferases",
+              "registryNumber": "EC 2.7.-"
+            },
+            {
+              "name": "Protein Kinases",
+              "registryNumber": "EC 2.7.-"
+            },
+            {
+              "name": "Adenosine Triphosphate",
+              "registryNumber": "8L70Q75FXE"
+            },
+            {
+              "name": "Phosphoric Monoester Hydrolases",
+              "registryNumber": "EC 3.1.3.2"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "abs",
+              "site": "intl.jbc.org",
+              "url": "http://intl.jbc.org/cgi/content/abstract/259/1/41"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/S0021-9258(17)43618-0"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 68,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "1984-05-11",
+        "dateOfCreation": "1984-01-10",
+        "dateOfRevision": "2021-02-10",
+        "firstPublicationDate": "1984-01-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

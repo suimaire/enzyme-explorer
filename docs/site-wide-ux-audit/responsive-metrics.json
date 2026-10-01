@@ -1,0 +1,8162 @@
+[
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 92,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 161,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 285,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 433,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 553,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 664,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 774,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 127,
+        "text": "01에너지 Energy왜 열역학적으로 유리한 반응도 느릴 수 있을까?",
+        "w": 455,
+        "x": 96,
+        "y": 395
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 127,
+        "text": "02활성 부위 화학 Active-site chemistry분자의 3차원 환경은 어",
+        "w": 455,
+        "x": 565,
+        "y": 395
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 127,
+        "text": "03반응속도론 Kinetics효소의 효과를 실험적으로 어떻게 측정할 수 있을까?",
+        "w": 455,
+        "x": 1034,
+        "y": 395
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1585,
+    "graphs": [],
+    "h2": {
+      "h": 86,
+      "w": 605,
+      "x": 96,
+      "y": 189
+    },
+    "hash": "#/start",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "Start",
+      "activeBounds": {
+        "h": 51,
+        "w": 64,
+        "x": 92,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1585,
+      "width": 1585
+    },
+    "outside": [],
+    "pageHeight": 1050,
+    "scrollWidth": 1585,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1600
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 92,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 160,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 284,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 432,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 553,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 663,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 773,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 1354,
+        "y": 166
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "없음",
+        "w": 127,
+        "x": 113,
+        "y": 614
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "있음",
+        "w": 127,
+        "x": 246,
+        "y": 614
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 1152,
+        "y": 483
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1585,
+    "graphs": [
+      {
+        "h": 410,
+        "w": 662,
+        "x": 423,
+        "y": 288
+      }
+    ],
+    "h2": {
+      "h": 36,
+      "w": 329,
+      "x": 96,
+      "y": 189
+    },
+    "hash": "#/reaction-energy",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "01반응 에너지",
+      "activeBounds": {
+        "h": 51,
+        "w": 120,
+        "x": 160,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1585,
+      "width": 1585
+    },
+    "outside": [],
+    "pageHeight": 1022,
+    "scrollWidth": 1585,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      },
+      {
+        "fs": "12px",
+        "t": "-30"
+      },
+      {
+        "fs": "12px",
+        "t": "-15"
+      },
+      {
+        "fs": "12px",
+        "t": "0"
+      },
+      {
+        "fs": "12px",
+        "t": "15"
+      },
+      {
+        "fs": "12px",
+        "t": "30"
+      },
+      {
+        "fs": "12px",
+        "t": "45"
+      },
+      {
+        "fs": "12px",
+        "t": "60"
+      },
+      {
+        "fs": "12px",
+        "t": "70"
+      },
+      {
+        "fs": "12px",
+        "t": "정반응 55"
+      },
+      {
+        "fs": "12px",
+        "t": "역반응 73"
+      },
+      {
+        "fs": "12px",
+        "t": "ΔG −18"
+      },
+      {
+        "fs": "12.5px",
+        "t": "반응물"
+      },
+      {
+        "fs": "12.5px",
+        "t": "생성물"
+      },
+      {
+        "fs": "12.5px",
+        "t": "전이 상태"
+      },
+      {
+        "fs": "13px",
+        "t": "반응 좌표(reaction coordinate)"
+      },
+      {
+        "fs": "11.5px",
+        "t": "반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다."
+      },
+      {
+        "fs": "13px",
+        "t": "상대 Gibbs 자유에너지 (kJ·mol⁻¹)"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1600
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 92,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 160,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 284,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 432,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 553,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 663,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 773,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 1354,
+        "y": 166
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "1단계전체 단백질에서 활성 부위 찾기",
+        "w": 260,
+        "x": 113,
+        "y": 318
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "2단계Zn²⁺에 직접 배위하는 잔기 찾기",
+        "w": 260,
+        "x": 113,
+        "y": 380
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "3단계Zn²⁺에 결합한 solvent 관찰",
+        "w": 260,
+        "x": 113,
+        "y": 443
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "4단계His64의 역할 비교",
+        "w": 260,
+        "x": 113,
+        "y": 505
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "리본",
+        "w": 72,
+        "x": 113,
+        "y": 602
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "막대",
+        "w": 72,
+        "x": 191,
+        "y": 602
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "공간 채움",
+        "w": 104,
+        "x": 269,
+        "y": 602
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "활성 부위로 이동",
+        "w": 151,
+        "x": 113,
+        "y": 731
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "카메라 초기화",
+        "w": 130,
+        "x": 113,
+        "y": 783
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "활성 부위로 이동",
+        "w": 151,
+        "x": 1134,
+        "y": 519
+      }
+    ],
+    "canvases": [
+      {
+        "h": 478,
+        "w": 660,
+        "x": 424,
+        "y": 288
+      }
+    ],
+    "clientWidth": 1585,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 395,
+      "x": 96,
+      "y": 189
+    },
+    "hash": "#/carbonic-anhydrase",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "02탄산무수화효소",
+      "activeBounds": {
+        "h": 51,
+        "w": 144,
+        "x": 284,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1585,
+      "width": 1585
+    },
+    "outside": [],
+    "pageHeight": 1210,
+    "scrollWidth": 1585,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      },
+      {
+        "fs": "12px",
+        "t": "ZN"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1600
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 92,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 160,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 284,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 432,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 553,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 663,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 773,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 1354,
+        "y": 166
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03A · 초기 속도 측정",
+        "w": 430,
+        "x": 96,
+        "y": 301
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03B · Michaelis–Menten 탐색",
+        "w": 484,
+        "x": 532,
+        "y": 301
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03C · Km과 반응 메커니즘",
+        "w": 466,
+        "x": 1022,
+        "y": 301
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "10 µM",
+        "w": 69,
+        "x": 113,
+        "y": 566
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "25 µM",
+        "w": 69,
+        "x": 188,
+        "y": 566
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "50 µM",
+        "w": 69,
+        "x": 263,
+        "y": 566
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "100 µM",
+        "w": 77,
+        "x": 113,
+        "y": 616
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "250 µM",
+        "w": 77,
+        "x": 196,
+        "y": 616
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "500 µM",
+        "w": 77,
+        "x": 278,
+        "y": 616
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "반응 시작",
+        "w": 98,
+        "x": 113,
+        "y": 678
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 1152,
+        "y": 637
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1585,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 497,
+      "x": 96,
+      "y": 189
+    },
+    "hash": "#/kinetics",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "03반응속도론",
+      "activeBounds": {
+        "h": 51,
+        "w": 116,
+        "x": 432,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1585,
+      "width": 1585
+    },
+    "outside": [],
+    "pageHeight": 1150,
+    "scrollWidth": 1585,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1600
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 100,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 168,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 292,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 440,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 560,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 670,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 780,
+        "y": 92
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1600,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 116,
+      "x": 104,
+      "y": 189
+    },
+    "hash": "#/inhibition",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "04효소 저해",
+      "activeBounds": {
+        "h": 51,
+        "w": 106,
+        "x": 560,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1600,
+      "width": 1600
+    },
+    "outside": [],
+    "pageHeight": 900,
+    "scrollWidth": 1600,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1600
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 92,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 160,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 284,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 432,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 553,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 663,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 773,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 1354,
+        "y": 136
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 113,
+        "y": 490
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 141,
+        "text": "신호 선택인슐린 우세신호 보내기식후 상황을 생각해 보세요",
+        "w": 268,
+        "x": 113,
+        "y": 550
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 141,
+        "text": "신호 선택글루카곤 우세신호 보내기공복 상황을 생각해 보세요",
+        "w": 268,
+        "x": 113,
+        "y": 703
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "조절 경로",
+        "w": 221,
+        "x": 428,
+        "y": 314
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "실제 3D 구조",
+        "w": 221,
+        "x": 655,
+        "y": 314
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "중간 신호 직접 조작",
+        "w": 221,
+        "x": 882,
+        "y": 314
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 72,
+        "text": "● 조절물질 · 하위 효소에 적용F-2,6-BP다음 단계에서 확인눌러서 F-1,6",
+        "w": 652,
+        "x": 432,
+        "y": 738
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "← 이전",
+        "w": 164,
+        "x": 428,
+        "y": 882
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "▶ 재생",
+        "w": 164,
+        "x": 599,
+        "y": 882
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "다음 →",
+        "w": 164,
+        "x": 769,
+        "y": 882
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "처음부터",
+        "w": 164,
+        "x": 939,
+        "y": 882
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "인산기 이동 확인 +",
+        "w": 164,
+        "x": 96,
+        "y": 1035
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1585,
+    "graphs": [],
+    "h2": {
+      "h": 31,
+      "w": 426,
+      "x": 96,
+      "y": 159
+    },
+    "hash": "#/regulation",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "05효소 조절",
+      "activeBounds": {
+        "h": 51,
+        "w": 106,
+        "x": 663,
+        "y": 72
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1585,
+      "width": 1585
+    },
+    "outside": [],
+    "pageHeight": 1407,
+    "scrollWidth": 1585,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1600
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 92,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 160,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 284,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 432,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 553,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 663,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 773,
+        "y": 92
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1585,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 204,
+      "x": 96,
+      "y": 189
+    },
+    "hash": "#/model-notes",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "Reference",
+      "activeBounds": {
+        "h": 51,
+        "w": 98,
+        "x": 773,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1585,
+      "width": 1585
+    },
+    "outside": [],
+    "pageHeight": 2889,
+    "scrollWidth": 1585,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1600
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 355,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 475,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 585,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 695,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 127,
+        "text": "01에너지 Energy왜 열역학적으로 유리한 반응도 느릴 수 있을까?",
+        "w": 450,
+        "x": 24,
+        "y": 395
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 127,
+        "text": "02활성 부위 화학 Active-site chemistry분자의 3차원 환경은 어",
+        "w": 450,
+        "x": 488,
+        "y": 395
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 127,
+        "text": "03반응속도론 Kinetics효소의 효과를 실험적으로 어떻게 측정할 수 있을까?",
+        "w": 450,
+        "x": 951,
+        "y": 395
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1425,
+    "graphs": [],
+    "h2": {
+      "h": 86,
+      "w": 605,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/start",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "Start",
+      "activeBounds": {
+        "h": 51,
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1425,
+      "width": 1425
+    },
+    "outside": [],
+    "pageHeight": 1050,
+    "scrollWidth": 1425,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1440
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 1266,
+        "y": 166
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "없음",
+        "w": 125,
+        "x": 41,
+        "y": 614
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "있음",
+        "w": 125,
+        "x": 172,
+        "y": 614
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 1069,
+        "y": 483
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1425,
+    "graphs": [
+      {
+        "h": 405,
+        "w": 654,
+        "x": 347,
+        "y": 288
+      }
+    ],
+    "h2": {
+      "h": 36,
+      "w": 329,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/reaction-energy",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "01반응 에너지",
+      "activeBounds": {
+        "h": 51,
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1425,
+      "width": 1425
+    },
+    "outside": [],
+    "pageHeight": 1043,
+    "scrollWidth": 1425,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      },
+      {
+        "fs": "12px",
+        "t": "-30"
+      },
+      {
+        "fs": "12px",
+        "t": "-15"
+      },
+      {
+        "fs": "12px",
+        "t": "0"
+      },
+      {
+        "fs": "12px",
+        "t": "15"
+      },
+      {
+        "fs": "12px",
+        "t": "30"
+      },
+      {
+        "fs": "12px",
+        "t": "45"
+      },
+      {
+        "fs": "12px",
+        "t": "60"
+      },
+      {
+        "fs": "12px",
+        "t": "70"
+      },
+      {
+        "fs": "12px",
+        "t": "정반응 55"
+      },
+      {
+        "fs": "12px",
+        "t": "역반응 73"
+      },
+      {
+        "fs": "12px",
+        "t": "ΔG −18"
+      },
+      {
+        "fs": "12.5px",
+        "t": "반응물"
+      },
+      {
+        "fs": "12.5px",
+        "t": "생성물"
+      },
+      {
+        "fs": "12.5px",
+        "t": "전이 상태"
+      },
+      {
+        "fs": "13px",
+        "t": "반응 좌표(reaction coordinate)"
+      },
+      {
+        "fs": "11.5px",
+        "t": "반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다."
+      },
+      {
+        "fs": "13px",
+        "t": "상대 Gibbs 자유에너지 (kJ·mol⁻¹)"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1440
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 1266,
+        "y": 166
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "1단계전체 단백질에서 활성 부위 찾기",
+        "w": 257,
+        "x": 41,
+        "y": 318
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "2단계Zn²⁺에 직접 배위하는 잔기 찾기",
+        "w": 257,
+        "x": 41,
+        "y": 380
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "3단계Zn²⁺에 결합한 solvent 관찰",
+        "w": 257,
+        "x": 41,
+        "y": 443
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "4단계His64의 역할 비교",
+        "w": 257,
+        "x": 41,
+        "y": 505
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "리본",
+        "w": 71,
+        "x": 41,
+        "y": 602
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "막대",
+        "w": 71,
+        "x": 118,
+        "y": 602
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "공간 채움",
+        "w": 103,
+        "x": 195,
+        "y": 602
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "활성 부위로 이동",
+        "w": 151,
+        "x": 41,
+        "y": 731
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "카메라 초기화",
+        "w": 130,
+        "x": 41,
+        "y": 783
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "활성 부위로 이동",
+        "w": 151,
+        "x": 1051,
+        "y": 519
+      }
+    ],
+    "canvases": [
+      {
+        "h": 478,
+        "w": 652,
+        "x": 348,
+        "y": 288
+      }
+    ],
+    "clientWidth": 1425,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 395,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/carbonic-anhydrase",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "02탄산무수화효소",
+      "activeBounds": {
+        "h": 51,
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1425,
+      "width": 1425
+    },
+    "outside": [],
+    "pageHeight": 1210,
+    "scrollWidth": 1425,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      },
+      {
+        "fs": "12px",
+        "t": "ZN"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1440
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 1266,
+        "y": 166
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03A · 초기 속도 측정",
+        "w": 425,
+        "x": 24,
+        "y": 301
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03B · Michaelis–Menten 탐색",
+        "w": 479,
+        "x": 455,
+        "y": 301
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03C · Km과 반응 메커니즘",
+        "w": 461,
+        "x": 939,
+        "y": 301
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "10 µM",
+        "w": 69,
+        "x": 41,
+        "y": 566
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "25 µM",
+        "w": 69,
+        "x": 116,
+        "y": 566
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "50 µM",
+        "w": 69,
+        "x": 190,
+        "y": 566
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "100 µM",
+        "w": 77,
+        "x": 41,
+        "y": 616
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "250 µM",
+        "w": 77,
+        "x": 123,
+        "y": 616
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "500 µM",
+        "w": 77,
+        "x": 206,
+        "y": 616
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "반응 시작",
+        "w": 98,
+        "x": 41,
+        "y": 678
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 1069,
+        "y": 637
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1425,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 497,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/kinetics",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "03반응속도론",
+      "activeBounds": {
+        "h": 51,
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1425,
+      "width": 1425
+    },
+    "outside": [],
+    "pageHeight": 1150,
+    "scrollWidth": 1425,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1440
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 20,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 88,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 212,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 360,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 480,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 590,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 700,
+        "y": 92
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1440,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 116,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/inhibition",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "04효소 저해",
+      "activeBounds": {
+        "h": 51,
+        "w": 106,
+        "x": 480,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    "outside": [],
+    "pageHeight": 900,
+    "scrollWidth": 1440,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1440
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 1266,
+        "y": 136
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 41,
+        "y": 490
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 141,
+        "text": "신호 선택인슐린 우세신호 보내기식후 상황을 생각해 보세요",
+        "w": 264,
+        "x": 41,
+        "y": 550
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 141,
+        "text": "신호 선택글루카곤 우세신호 보내기공복 상황을 생각해 보세요",
+        "w": 264,
+        "x": 41,
+        "y": 703
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "조절 경로",
+        "w": 218,
+        "x": 353,
+        "y": 314
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "실제 3D 구조",
+        "w": 218,
+        "x": 577,
+        "y": 314
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "중간 신호 직접 조작",
+        "w": 218,
+        "x": 801,
+        "y": 314
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 72,
+        "text": "● 조절물질 · 하위 효소에 적용F-2,6-BP다음 단계에서 확인눌러서 F-1,6",
+        "w": 644,
+        "x": 357,
+        "y": 738
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "← 이전",
+        "w": 162,
+        "x": 353,
+        "y": 882
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "▶ 재생",
+        "w": 162,
+        "x": 521,
+        "y": 882
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "다음 →",
+        "w": 162,
+        "x": 689,
+        "y": 882
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "처음부터",
+        "w": 162,
+        "x": 857,
+        "y": 882
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "인산기 이동 확인 +",
+        "w": 164,
+        "x": 24,
+        "y": 1035
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1425,
+    "graphs": [],
+    "h2": {
+      "h": 31,
+      "w": 426,
+      "x": 24,
+      "y": 159
+    },
+    "hash": "#/regulation",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "05효소 조절",
+      "activeBounds": {
+        "h": 51,
+        "w": 106,
+        "x": 584,
+        "y": 72
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1425,
+      "width": 1425
+    },
+    "outside": [],
+    "pageHeight": 1407,
+    "scrollWidth": 1425,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1440
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1425,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 204,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/model-notes",
+    "height": 900,
+    "internalScroll": [],
+    "nav": {
+      "active": "Reference",
+      "activeBounds": {
+        "h": 51,
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1425,
+      "width": 1425
+    },
+    "outside": [],
+    "pageHeight": 2889,
+    "scrollWidth": 1425,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1440
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 355,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 475,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 585,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 695,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 152,
+        "text": "01에너지 Energy왜 열역학적으로 유리한 반응도 느릴 수 있을까?",
+        "w": 396,
+        "x": 24,
+        "y": 395
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 152,
+        "text": "02활성 부위 화학 Active-site chemistry분자의 3차원 환경은 어",
+        "w": 396,
+        "x": 434,
+        "y": 395
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 152,
+        "text": "03반응속도론 Kinetics효소의 효과를 실험적으로 어떻게 측정할 수 있을까?",
+        "w": 396,
+        "x": 845,
+        "y": 395
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1265,
+    "graphs": [],
+    "h2": {
+      "h": 86,
+      "w": 605,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/start",
+    "height": 800,
+    "internalScroll": [],
+    "nav": {
+      "active": "Start",
+      "activeBounds": {
+        "h": 51,
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    "outside": [],
+    "pageHeight": 1075,
+    "scrollWidth": 1265,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1280
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 1106,
+        "y": 166
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "없음",
+        "w": 108,
+        "x": 41,
+        "y": 658
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "있음",
+        "w": 108,
+        "x": 155,
+        "y": 658
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 952,
+        "y": 505
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1265,
+    "graphs": [
+      {
+        "h": 355,
+        "w": 572,
+        "x": 313,
+        "y": 288
+      }
+    ],
+    "h2": {
+      "h": 36,
+      "w": 329,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/reaction-energy",
+    "height": 800,
+    "internalScroll": [],
+    "nav": {
+      "active": "01반응 에너지",
+      "activeBounds": {
+        "h": 51,
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    "outside": [],
+    "pageHeight": 1087,
+    "scrollWidth": 1265,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      },
+      {
+        "fs": "12px",
+        "t": "-30"
+      },
+      {
+        "fs": "12px",
+        "t": "-15"
+      },
+      {
+        "fs": "12px",
+        "t": "0"
+      },
+      {
+        "fs": "12px",
+        "t": "15"
+      },
+      {
+        "fs": "12px",
+        "t": "30"
+      },
+      {
+        "fs": "12px",
+        "t": "45"
+      },
+      {
+        "fs": "12px",
+        "t": "60"
+      },
+      {
+        "fs": "12px",
+        "t": "70"
+      },
+      {
+        "fs": "12px",
+        "t": "정반응 55"
+      },
+      {
+        "fs": "12px",
+        "t": "역반응 73"
+      },
+      {
+        "fs": "12px",
+        "t": "ΔG −18"
+      },
+      {
+        "fs": "12.5px",
+        "t": "반응물"
+      },
+      {
+        "fs": "12.5px",
+        "t": "생성물"
+      },
+      {
+        "fs": "12.5px",
+        "t": "전이 상태"
+      },
+      {
+        "fs": "13px",
+        "t": "반응 좌표(reaction coordinate)"
+      },
+      {
+        "fs": "11.5px",
+        "t": "반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다."
+      },
+      {
+        "fs": "13px",
+        "t": "상대 Gibbs 자유에너지 (kJ·mol⁻¹)"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1280
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 1106,
+        "y": 166
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 79,
+        "text": "1단계전체 단백질에서 활성 부위 찾기",
+        "w": 222,
+        "x": 41,
+        "y": 318
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 79,
+        "text": "2단계Zn²⁺에 직접 배위하는 잔기 찾기",
+        "w": 222,
+        "x": 41,
+        "y": 403
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "3단계Zn²⁺에 결합한 solvent 관찰",
+        "w": 222,
+        "x": 41,
+        "y": 487
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "4단계His64의 역할 비교",
+        "w": 222,
+        "x": 41,
+        "y": 550
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "리본",
+        "w": 59,
+        "x": 41,
+        "y": 647
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "막대",
+        "w": 59,
+        "x": 106,
+        "y": 647
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "공간 채움",
+        "w": 91,
+        "x": 172,
+        "y": 647
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "활성 부위로 이동",
+        "w": 151,
+        "x": 41,
+        "y": 775
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "카메라 초기화",
+        "w": 130,
+        "x": 41,
+        "y": 827
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "활성 부위로 이동",
+        "w": 151,
+        "x": 934,
+        "y": 545
+      }
+    ],
+    "canvases": [
+      {
+        "h": 462,
+        "w": 571,
+        "x": 313,
+        "y": 288
+      }
+    ],
+    "clientWidth": 1265,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 395,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/carbonic-anhydrase",
+    "height": 800,
+    "internalScroll": [],
+    "nav": {
+      "active": "02탄산무수화효소",
+      "activeBounds": {
+        "h": 51,
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    "outside": [],
+    "pageHeight": 1276,
+    "scrollWidth": 1265,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      },
+      {
+        "fs": "12px",
+        "t": "ZN"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1280
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 1106,
+        "y": 166
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03A · 초기 속도 측정",
+        "w": 372,
+        "x": 24,
+        "y": 301
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03B · Michaelis–Menten 탐색",
+        "w": 425,
+        "x": 402,
+        "y": 301
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03C · Km과 반응 메커니즘",
+        "w": 408,
+        "x": 833,
+        "y": 301
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "10 µM",
+        "w": 69,
+        "x": 41,
+        "y": 609
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "25 µM",
+        "w": 69,
+        "x": 116,
+        "y": 609
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "50 µM",
+        "w": 69,
+        "x": 41,
+        "y": 659
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "100 µM",
+        "w": 77,
+        "x": 116,
+        "y": 659
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "250 µM",
+        "w": 77,
+        "x": 41,
+        "y": 709
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "500 µM",
+        "w": 77,
+        "x": 123,
+        "y": 709
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "반응 시작",
+        "w": 98,
+        "x": 41,
+        "y": 771
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 952,
+        "y": 659
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1265,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 497,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/kinetics",
+    "height": 800,
+    "internalScroll": [],
+    "nav": {
+      "active": "03반응속도론",
+      "activeBounds": {
+        "h": 51,
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    "outside": [],
+    "pageHeight": 1193,
+    "scrollWidth": 1265,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1280
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1280,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 116,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/inhibition",
+    "height": 800,
+    "internalScroll": [],
+    "nav": {
+      "active": "04효소 저해",
+      "activeBounds": {
+        "h": 51,
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1280,
+      "width": 1280
+    },
+    "outside": [],
+    "pageHeight": 800,
+    "scrollWidth": 1280,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1280
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 1106,
+        "y": 136
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 41,
+        "y": 490
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 141,
+        "text": "신호 선택인슐린 우세신호 보내기식후 상황을 생각해 보세요",
+        "w": 229,
+        "x": 41,
+        "y": 550
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 141,
+        "text": "신호 선택글루카곤 우세신호 보내기공복 상황을 생각해 보세요",
+        "w": 229,
+        "x": 41,
+        "y": 703
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "조절 경로",
+        "w": 191,
+        "x": 317,
+        "y": 314
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "실제 3D 구조",
+        "w": 191,
+        "x": 514,
+        "y": 314
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "중간 신호 직접 조작",
+        "w": 191,
+        "x": 711,
+        "y": 314
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 72,
+        "text": "● 조절물질 · 하위 효소에 적용F-2,6-BP다음 단계에서 확인눌러서 F-1,6",
+        "w": 561,
+        "x": 321,
+        "y": 738
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "← 이전",
+        "w": 141,
+        "x": 317,
+        "y": 882
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "▶ 재생",
+        "w": 142,
+        "x": 465,
+        "y": 882
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "다음 →",
+        "w": 141,
+        "x": 612,
+        "y": 882
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "처음부터",
+        "w": 141,
+        "x": 760,
+        "y": 882
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "인산기 이동 확인 +",
+        "w": 164,
+        "x": 24,
+        "y": 1035
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1265,
+    "graphs": [],
+    "h2": {
+      "h": 31,
+      "w": 426,
+      "x": 24,
+      "y": 159
+    },
+    "hash": "#/regulation",
+    "height": 800,
+    "internalScroll": [],
+    "nav": {
+      "active": "05효소 조절",
+      "activeBounds": {
+        "h": 51,
+        "w": 106,
+        "x": 584,
+        "y": 72
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    "outside": [],
+    "pageHeight": 1407,
+    "scrollWidth": 1265,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1280
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1265,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 204,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/model-notes",
+    "height": 800,
+    "internalScroll": [],
+    "nav": {
+      "active": "Reference",
+      "activeBounds": {
+        "h": 51,
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1265,
+      "width": 1265
+    },
+    "outside": [],
+    "pageHeight": 2889,
+    "scrollWidth": 1265,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1280
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 355,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 475,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 585,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 695,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 152,
+        "text": "01에너지 Energy왜 열역학적으로 유리한 반응도 느릴 수 있을까?",
+        "w": 311,
+        "x": 24,
+        "y": 395
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 152,
+        "text": "02활성 부위 화학 Active-site chemistry분자의 3차원 환경은 어",
+        "w": 311,
+        "x": 349,
+        "y": 395
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 152,
+        "text": "03반응속도론 Kinetics효소의 효과를 실험적으로 어떻게 측정할 수 있을까?",
+        "w": 311,
+        "x": 674,
+        "y": 395
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1009,
+    "graphs": [],
+    "h2": {
+      "h": 86,
+      "w": 605,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/start",
+    "height": 768,
+    "internalScroll": [],
+    "nav": {
+      "active": "Start",
+      "activeBounds": {
+        "h": 51,
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    "outside": [],
+    "pageHeight": 1075,
+    "scrollWidth": 1009,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1024
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 850,
+        "y": 166
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "없음",
+        "w": 236,
+        "x": 41,
+        "y": 1107
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "있음",
+        "w": 236,
+        "x": 282,
+        "y": 1107
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 586,
+        "y": 998
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1009,
+    "graphs": [
+      {
+        "h": 460,
+        "w": 927,
+        "x": 41,
+        "y": 288
+      }
+    ],
+    "h2": {
+      "h": 36,
+      "w": 329,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/reaction-energy",
+    "height": 768,
+    "internalScroll": [],
+    "nav": {
+      "active": "01반응 에너지",
+      "activeBounds": {
+        "h": 51,
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    "outside": [],
+    "pageHeight": 1506,
+    "scrollWidth": 1009,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      },
+      {
+        "fs": "12px",
+        "t": "-30"
+      },
+      {
+        "fs": "12px",
+        "t": "-15"
+      },
+      {
+        "fs": "12px",
+        "t": "0"
+      },
+      {
+        "fs": "12px",
+        "t": "15"
+      },
+      {
+        "fs": "12px",
+        "t": "30"
+      },
+      {
+        "fs": "12px",
+        "t": "45"
+      },
+      {
+        "fs": "12px",
+        "t": "60"
+      },
+      {
+        "fs": "12px",
+        "t": "70"
+      },
+      {
+        "fs": "12px",
+        "t": "정반응 55"
+      },
+      {
+        "fs": "12px",
+        "t": "역반응 73"
+      },
+      {
+        "fs": "12px",
+        "t": "ΔG −18"
+      },
+      {
+        "fs": "12.5px",
+        "t": "반응물"
+      },
+      {
+        "fs": "12.5px",
+        "t": "생성물"
+      },
+      {
+        "fs": "12.5px",
+        "t": "전이 상태"
+      },
+      {
+        "fs": "13px",
+        "t": "반응 좌표(reaction coordinate)"
+      },
+      {
+        "fs": "11.5px",
+        "t": "반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다."
+      },
+      {
+        "fs": "13px",
+        "t": "상대 Gibbs 자유에너지 (kJ·mol⁻¹)"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1024
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 850,
+        "y": 166
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "1단계전체 단백질에서 활성 부위 찾기",
+        "w": 477,
+        "x": 41,
+        "y": 864
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "2단계Zn²⁺에 직접 배위하는 잔기 찾기",
+        "w": 477,
+        "x": 41,
+        "y": 926
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "3단계Zn²⁺에 결합한 solvent 관찰",
+        "w": 477,
+        "x": 41,
+        "y": 988
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "4단계His64의 역할 비교",
+        "w": 477,
+        "x": 41,
+        "y": 1051
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "리본",
+        "w": 144,
+        "x": 41,
+        "y": 1148
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "막대",
+        "w": 144,
+        "x": 191,
+        "y": 1148
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "공간 채움",
+        "w": 176,
+        "x": 342,
+        "y": 1148
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "활성 부위로 이동",
+        "w": 151,
+        "x": 41,
+        "y": 1255
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "카메라 초기화",
+        "w": 130,
+        "x": 199,
+        "y": 1255
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "활성 부위로 이동",
+        "w": 151,
+        "x": 568,
+        "y": 1039
+      }
+    ],
+    "canvases": [
+      {
+        "h": 444,
+        "w": 926,
+        "x": 42,
+        "y": 288
+      }
+    ],
+    "clientWidth": 1009,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 395,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/carbonic-anhydrase",
+    "height": 768,
+    "internalScroll": [],
+    "nav": {
+      "active": "02탄산무수화효소",
+      "activeBounds": {
+        "h": 51,
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    "outside": [],
+    "pageHeight": 1633,
+    "scrollWidth": 1009,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      },
+      {
+        "fs": "12px",
+        "t": "ZN"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1024
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 340,
+        "y": 273
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03A · 초기 속도 측정",
+        "w": 286,
+        "x": 24,
+        "y": 363
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03B · Michaelis–Menten 탐색",
+        "w": 340,
+        "x": 316,
+        "y": 363
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03C · Km과 반응 메커니즘",
+        "w": 323,
+        "x": 662,
+        "y": 363
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "10 µM",
+        "w": 69,
+        "x": 41,
+        "y": 743
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "25 µM",
+        "w": 69,
+        "x": 116,
+        "y": 743
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "50 µM",
+        "w": 69,
+        "x": 190,
+        "y": 743
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "100 µM",
+        "w": 77,
+        "x": 265,
+        "y": 743
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "250 µM",
+        "w": 77,
+        "x": 348,
+        "y": 743
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "500 µM",
+        "w": 77,
+        "x": 430,
+        "y": 743
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "반응 시작",
+        "w": 98,
+        "x": 41,
+        "y": 805
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 586,
+        "y": 832
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1009,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 497,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/kinetics",
+    "height": 768,
+    "internalScroll": [],
+    "nav": {
+      "active": "03반응속도론",
+      "activeBounds": {
+        "h": 51,
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    "outside": [],
+    "pageHeight": 1345,
+    "scrollWidth": 1009,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1024
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1024,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 116,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/inhibition",
+    "height": 768,
+    "internalScroll": [],
+    "nav": {
+      "active": "04효소 저해",
+      "activeBounds": {
+        "h": 51,
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1024,
+      "width": 1024
+    },
+    "outside": [],
+    "pageHeight": 768,
+    "scrollWidth": 1024,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1024
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 850,
+        "y": 136
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 37,
+        "y": 507
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 135,
+        "text": "신호 선택인슐린 우세신호 보내기식후 상황을 생각해 보세요",
+        "w": 193,
+        "x": 37,
+        "y": 567
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 135,
+        "text": "신호 선택글루카곤 우세신호 보내기공복 상황을 생각해 보세요",
+        "w": 193,
+        "x": 37,
+        "y": 714
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "조절 경로",
+        "w": 151,
+        "x": 265,
+        "y": 312
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "실제 3D 구조",
+        "w": 151,
+        "x": 422,
+        "y": 312
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "중간 신호 직접 조작",
+        "w": 151,
+        "x": 579,
+        "y": 312
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 72,
+        "text": "● 조절물질 · 하위 효소에 적용F-2,6-BP다음 단계에서 확인눌러서 F-1,6",
+        "w": 442,
+        "x": 269,
+        "y": 732
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "← 이전",
+        "w": 112,
+        "x": 265,
+        "y": 880
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "▶ 재생",
+        "w": 112,
+        "x": 383,
+        "y": 880
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "다음 →",
+        "w": 112,
+        "x": 501,
+        "y": 880
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "처음부터",
+        "w": 112,
+        "x": 618,
+        "y": 880
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "인산기 이동 확인 +",
+        "w": 164,
+        "x": 24,
+        "y": 1036
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1009,
+    "graphs": [],
+    "h2": {
+      "h": 31,
+      "w": 426,
+      "x": 24,
+      "y": 159
+    },
+    "hash": "#/regulation",
+    "height": 768,
+    "internalScroll": [],
+    "nav": {
+      "active": "05효소 조절",
+      "activeBounds": {
+        "h": 51,
+        "w": 106,
+        "x": 584,
+        "y": 72
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    "outside": [],
+    "pageHeight": 1408,
+    "scrollWidth": 1009,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1024
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 1009,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 204,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/model-notes",
+    "height": 768,
+    "internalScroll": [],
+    "nav": {
+      "active": "Reference",
+      "activeBounds": {
+        "h": 51,
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1009,
+      "width": 1009
+    },
+    "outside": [],
+    "pageHeight": 2889,
+    "scrollWidth": 1009,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 1024
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 355,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 475,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 585,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 695,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 152,
+        "text": "01에너지 Energy왜 열역학적으로 유리한 반응도 느릴 수 있을까?",
+        "w": 345,
+        "x": 24,
+        "y": 395
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 152,
+        "text": "02활성 부위 화학 Active-site chemistry분자의 3차원 환경은 어",
+        "w": 345,
+        "x": 383,
+        "y": 395
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 152,
+        "text": "03반응속도론 Kinetics효소의 효과를 실험적으로 어떻게 측정할 수 있을까?",
+        "w": 345,
+        "x": 24,
+        "y": 561
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 753,
+    "graphs": [],
+    "h2": {
+      "h": 86,
+      "w": 605,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/start",
+    "height": 1024,
+    "internalScroll": [],
+    "nav": {
+      "active": "Start",
+      "activeBounds": {
+        "h": 51,
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 808,
+      "width": 753
+    },
+    "outside": [],
+    "pageHeight": 1270,
+    "scrollWidth": 753,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 768
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 439,
+        "y": 273
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "없음",
+        "w": 166,
+        "x": 41,
+        "y": 1147
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "있음",
+        "w": 166,
+        "x": 213,
+        "y": 1147
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 447,
+        "y": 1059
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 753,
+    "graphs": [
+      {
+        "h": 416,
+        "w": 671,
+        "x": 41,
+        "y": 350
+      }
+    ],
+    "h2": {
+      "h": 36,
+      "w": 329,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/reaction-energy",
+    "height": 1024,
+    "internalScroll": [],
+    "nav": {
+      "active": "01반응 에너지",
+      "activeBounds": {
+        "h": 51,
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 807,
+      "width": 753
+    },
+    "outside": [],
+    "pageHeight": 1596,
+    "scrollWidth": 753,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      },
+      {
+        "fs": "12px",
+        "t": "-30"
+      },
+      {
+        "fs": "12px",
+        "t": "-15"
+      },
+      {
+        "fs": "12px",
+        "t": "0"
+      },
+      {
+        "fs": "12px",
+        "t": "15"
+      },
+      {
+        "fs": "12px",
+        "t": "30"
+      },
+      {
+        "fs": "12px",
+        "t": "45"
+      },
+      {
+        "fs": "12px",
+        "t": "60"
+      },
+      {
+        "fs": "12px",
+        "t": "70"
+      },
+      {
+        "fs": "12px",
+        "t": "정반응 55"
+      },
+      {
+        "fs": "12px",
+        "t": "역반응 73"
+      },
+      {
+        "fs": "12px",
+        "t": "ΔG −18"
+      },
+      {
+        "fs": "12.5px",
+        "t": "반응물"
+      },
+      {
+        "fs": "12.5px",
+        "t": "생성물"
+      },
+      {
+        "fs": "12.5px",
+        "t": "전이 상태"
+      },
+      {
+        "fs": "13px",
+        "t": "반응 좌표(reaction coordinate)"
+      },
+      {
+        "fs": "11.5px",
+        "t": "반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다."
+      },
+      {
+        "fs": "13px",
+        "t": "상대 Gibbs 자유에너지 (kJ·mol⁻¹)"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 768
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 376,
+        "y": 273
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "1단계전체 단백질에서 활성 부위 찾기",
+        "w": 339,
+        "x": 41,
+        "y": 960
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "2단계Zn²⁺에 직접 배위하는 잔기 찾기",
+        "w": 339,
+        "x": 41,
+        "y": 1023
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "3단계Zn²⁺에 결합한 solvent 관찰",
+        "w": 339,
+        "x": 41,
+        "y": 1085
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "4단계His64의 역할 비교",
+        "w": 339,
+        "x": 41,
+        "y": 1147
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "리본",
+        "w": 98,
+        "x": 41,
+        "y": 1244
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "막대",
+        "w": 98,
+        "x": 145,
+        "y": 1244
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "공간 채움",
+        "w": 130,
+        "x": 249,
+        "y": 1244
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "활성 부위로 이동",
+        "w": 151,
+        "x": 41,
+        "y": 1351
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "카메라 초기화",
+        "w": 130,
+        "x": 199,
+        "y": 1351
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "활성 부위로 이동",
+        "w": 151,
+        "x": 429,
+        "y": 1187
+      }
+    ],
+    "canvases": [
+      {
+        "h": 478,
+        "w": 670,
+        "x": 42,
+        "y": 350
+      }
+    ],
+    "clientWidth": 753,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 395,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/carbonic-anhydrase",
+    "height": 1024,
+    "internalScroll": [],
+    "nav": {
+      "active": "02탄산무수화효소",
+      "activeBounds": {
+        "h": 51,
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 807,
+      "width": 753
+    },
+    "outside": [],
+    "pageHeight": 1779,
+    "scrollWidth": 753,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      },
+      {
+        "fs": "12px",
+        "t": "ZN"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 768
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 340,
+        "y": 273
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03A · 초기 속도 측정",
+        "w": 201,
+        "x": 24,
+        "y": 363
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03B · Michaelis–Menten 탐색",
+        "w": 255,
+        "x": 231,
+        "y": 363
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03C · Km과 반응 메커니즘",
+        "w": 237,
+        "x": 491,
+        "y": 363
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "10 µM",
+        "w": 69,
+        "x": 41,
+        "y": 786
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "25 µM",
+        "w": 69,
+        "x": 116,
+        "y": 786
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "50 µM",
+        "w": 69,
+        "x": 190,
+        "y": 786
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "100 µM",
+        "w": 77,
+        "x": 265,
+        "y": 786
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "250 µM",
+        "w": 77,
+        "x": 41,
+        "y": 836
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "500 µM",
+        "w": 77,
+        "x": 123,
+        "y": 836
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "반응 시작",
+        "w": 98,
+        "x": 41,
+        "y": 898
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 447,
+        "y": 900
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 753,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 497,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/kinetics",
+    "height": 1024,
+    "internalScroll": [],
+    "nav": {
+      "active": "03반응속도론",
+      "activeBounds": {
+        "h": 51,
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 807,
+      "width": 753
+    },
+    "outside": [],
+    "pageHeight": 1484,
+    "scrollWidth": 753,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 768
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 92
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 768,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 116,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/inhibition",
+    "height": 1024,
+    "internalScroll": [],
+    "nav": {
+      "active": "04효소 저해",
+      "activeBounds": {
+        "h": 51,
+        "w": 106,
+        "x": 474,
+        "y": 92
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 807,
+      "width": 768
+    },
+    "outside": [],
+    "pageHeight": 1024,
+    "scrollWidth": 768,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 768
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 14,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 82,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 206,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 354,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 474,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 72
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 265,
+        "y": 237
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 37,
+        "y": 569
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 135,
+        "text": "신호 선택인슐린 우세신호 보내기식후 상황을 생각해 보세요",
+        "w": 188,
+        "x": 37,
+        "y": 629
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 135,
+        "text": "신호 선택글루카곤 우세신호 보내기공복 상황을 생각해 보세요",
+        "w": 188,
+        "x": 37,
+        "y": 776
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "조절 경로",
+        "w": 148,
+        "x": 261,
+        "y": 374
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "실제 3D 구조",
+        "w": 148,
+        "x": 414,
+        "y": 374
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 44,
+        "text": "중간 신호 직접 조작",
+        "w": 148,
+        "x": 568,
+        "y": 374
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 72,
+        "text": "● 조절물질 · 하위 효소에 적용F-2,6-BP다음 단계에서 확인눌러서 F-1,6",
+        "w": 432,
+        "x": 265,
+        "y": 794
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "← 이전",
+        "w": 109,
+        "x": 261,
+        "y": 942
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "▶ 재생",
+        "w": 109,
+        "x": 376,
+        "y": 942
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "다음 →",
+        "w": 109,
+        "x": 491,
+        "y": 942
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "처음부터",
+        "w": 109,
+        "x": 607,
+        "y": 942
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "인산기 이동 확인 +",
+        "w": 164,
+        "x": 24,
+        "y": 1395
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 753,
+    "graphs": [],
+    "h2": {
+      "h": 31,
+      "w": 426,
+      "x": 24,
+      "y": 159
+    },
+    "hash": "#/regulation",
+    "height": 1024,
+    "internalScroll": [],
+    "nav": {
+      "active": "05효소 조절",
+      "activeBounds": {
+        "h": 51,
+        "w": 106,
+        "x": 584,
+        "y": 72
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 807,
+      "width": 753
+    },
+    "outside": [],
+    "pageHeight": 1795,
+    "scrollWidth": 753,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 768
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": -26,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 42,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 166,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 314,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 434,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 544,
+        "y": 92
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 654,
+        "y": 92
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 753,
+    "graphs": [],
+    "h2": {
+      "h": 36,
+      "w": 204,
+      "x": 24,
+      "y": 189
+    },
+    "hash": "#/model-notes",
+    "height": 1024,
+    "internalScroll": [],
+    "nav": {
+      "active": "Reference",
+      "activeBounds": {
+        "h": 51,
+        "w": 98,
+        "x": 654,
+        "y": 92
+      },
+      "scrollLeft": 40,
+      "scrollWidth": 807,
+      "width": 753
+    },
+    "outside": [],
+    "pageHeight": 3147,
+    "scrollWidth": 753,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 768
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 12,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 81,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 205,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 353,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 473,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 584,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 694,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 152,
+        "text": "01에너지 Energy왜 열역학적으로 유리한 반응도 느릴 수 있을까?",
+        "w": 347,
+        "x": 14,
+        "y": 618
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 152,
+        "text": "02활성 부위 화학 Active-site chemistry분자의 3차원 환경은 어",
+        "w": 347,
+        "x": 14,
+        "y": 784
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 152,
+        "text": "03반응속도론 Kinetics효소의 효과를 실험적으로 어떻게 측정할 수 있을까?",
+        "w": 347,
+        "x": 14,
+        "y": 951
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 375,
+    "graphs": [],
+    "h2": {
+      "h": 130,
+      "w": 347,
+      "x": 14,
+      "y": 318
+    },
+    "hash": "#/start",
+    "height": 844,
+    "internalScroll": [],
+    "nav": {
+      "active": "Start",
+      "activeBounds": {
+        "h": 51,
+        "w": 64,
+        "x": 12,
+        "y": 225
+      },
+      "scrollLeft": 1.600000023841858,
+      "scrollWidth": 808,
+      "width": 375
+    },
+    "outside": [],
+    "pageHeight": 1915,
+    "scrollWidth": 375,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 390
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 12,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 80,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 204,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 352,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 473,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 583,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 693,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 14,
+        "y": 469
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "없음",
+        "w": 154,
+        "x": 31,
+        "y": 1256
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "있음",
+        "w": 154,
+        "x": 191,
+        "y": 1256
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 49,
+        "y": 1697
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 375,
+    "graphs": [
+      {
+        "h": 300,
+        "w": 314,
+        "x": 31,
+        "y": 545
+      }
+    ],
+    "h2": {
+      "h": 31,
+      "w": 329,
+      "x": 14,
+      "y": 318
+    },
+    "hash": "#/reaction-energy",
+    "height": 844,
+    "internalScroll": [],
+    "nav": {
+      "active": "01반응 에너지",
+      "activeBounds": {
+        "h": 51,
+        "w": 120,
+        "x": 80,
+        "y": 225
+      },
+      "scrollLeft": 1.600000023841858,
+      "scrollWidth": 807,
+      "width": 375
+    },
+    "outside": [],
+    "pageHeight": 2306,
+    "scrollWidth": 375,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      },
+      {
+        "fs": "10.5px",
+        "t": "-30"
+      },
+      {
+        "fs": "10.5px",
+        "t": "-15"
+      },
+      {
+        "fs": "10.5px",
+        "t": "0"
+      },
+      {
+        "fs": "10.5px",
+        "t": "15"
+      },
+      {
+        "fs": "10.5px",
+        "t": "30"
+      },
+      {
+        "fs": "10.5px",
+        "t": "45"
+      },
+      {
+        "fs": "10.5px",
+        "t": "60"
+      },
+      {
+        "fs": "10.5px",
+        "t": "70"
+      },
+      {
+        "fs": "12.5px",
+        "t": "반응물"
+      },
+      {
+        "fs": "12.5px",
+        "t": "생성물"
+      },
+      {
+        "fs": "12.5px",
+        "t": "전이 상태"
+      },
+      {
+        "fs": "13px",
+        "t": "반응 좌표(reaction coordinate)"
+      },
+      {
+        "fs": "11.5px",
+        "t": "반응 경로상의 개념적 진행 정도 · 시간축 아님"
+      },
+      {
+        "fs": "13px",
+        "t": "상대 자유에너지 (kJ·mol⁻¹)"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 390
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": 12,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": 80,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 204,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 352,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 473,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 583,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 693,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 14,
+        "y": 455
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "1단계전체 단백질에서 활성 부위 찾기",
+        "w": 314,
+        "x": 31,
+        "y": 1211
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "2단계Zn²⁺에 직접 배위하는 잔기 찾기",
+        "w": 314,
+        "x": 31,
+        "y": 1273
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "3단계Zn²⁺에 결합한 solvent 관찰",
+        "w": 314,
+        "x": 31,
+        "y": 1336
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 56,
+        "text": "4단계His64의 역할 비교",
+        "w": 314,
+        "x": 31,
+        "y": 1398
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "리본",
+        "w": 90,
+        "x": 31,
+        "y": 1495
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "막대",
+        "w": 90,
+        "x": 127,
+        "y": 1495
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "공간 채움",
+        "w": 122,
+        "x": 223,
+        "y": 1495
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "활성 부위로 이동",
+        "w": 151,
+        "x": 31,
+        "y": 1602
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "카메라 초기화",
+        "w": 130,
+        "x": 189,
+        "y": 1602
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "활성 부위로 이동",
+        "w": 151,
+        "x": 31,
+        "y": 2053
+      }
+    ],
+    "canvases": [
+      {
+        "h": 478,
+        "w": 312,
+        "x": 32,
+        "y": 532
+      }
+    ],
+    "clientWidth": 375,
+    "graphs": [],
+    "h2": {
+      "h": 31,
+      "w": 347,
+      "x": 14,
+      "y": 318
+    },
+    "hash": "#/carbonic-anhydrase",
+    "height": 844,
+    "internalScroll": [],
+    "nav": {
+      "active": "02탄산무수화효소",
+      "activeBounds": {
+        "h": 51,
+        "w": 144,
+        "x": 204,
+        "y": 225
+      },
+      "scrollLeft": 1.600000023841858,
+      "scrollWidth": 807,
+      "width": 375
+    },
+    "outside": [],
+    "pageHeight": 2654,
+    "scrollWidth": 375,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      },
+      {
+        "fs": "12px",
+        "t": "ZN"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 390
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": -81,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": -14,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 110,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 259,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 379,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 489,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 599,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 14,
+        "y": 452
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03A · 초기 속도 측정",
+        "w": 347,
+        "x": 14,
+        "y": 542
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03B · Michaelis–Menten 탐색",
+        "w": 347,
+        "x": 14,
+        "y": 592
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "03C · Km과 반응 메커니즘",
+        "w": 347,
+        "x": 14,
+        "y": 642
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "10 µM",
+        "w": 69,
+        "x": 31,
+        "y": 1111
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "25 µM",
+        "w": 69,
+        "x": 106,
+        "y": 1111
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "50 µM",
+        "w": 69,
+        "x": 180,
+        "y": 1111
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "100 µM",
+        "w": 77,
+        "x": 255,
+        "y": 1111
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "250 µM",
+        "w": 77,
+        "x": 31,
+        "y": 1161
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 44,
+        "text": "500 µM",
+        "w": 77,
+        "x": 113,
+        "y": 1161
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "반응 시작",
+        "w": 98,
+        "x": 31,
+        "y": 1223
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 49,
+        "y": 1644
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 375,
+    "graphs": [],
+    "h2": {
+      "h": 31,
+      "w": 347,
+      "x": 14,
+      "y": 318
+    },
+    "hash": "#/kinetics",
+    "height": 844,
+    "internalScroll": [],
+    "nav": {
+      "active": "03반응속도론",
+      "activeBounds": {
+        "h": 51,
+        "w": 116,
+        "x": 259,
+        "y": 225
+      },
+      "scrollLeft": 95.1999969482422,
+      "scrollWidth": 807,
+      "width": 375
+    },
+    "outside": [],
+    "pageHeight": 2280,
+    "scrollWidth": 375,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 390
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": -191,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": -123,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": 1,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 149,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 269,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 380,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 490,
+        "y": 225
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 390,
+    "graphs": [],
+    "h2": {
+      "h": 31,
+      "w": 115,
+      "x": 14,
+      "y": 318
+    },
+    "hash": "#/inhibition",
+    "height": 844,
+    "internalScroll": [],
+    "nav": {
+      "active": "04효소 저해",
+      "activeBounds": {
+        "h": 51,
+        "w": 106,
+        "x": 269,
+        "y": 225
+      },
+      "scrollLeft": 204.8000030517578,
+      "scrollWidth": 807,
+      "width": 390
+    },
+    "outside": [],
+    "pageHeight": 844,
+    "scrollWidth": 390,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 390
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": -313,
+        "y": 205
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": -246,
+        "y": 205
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": -122,
+        "y": 205
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": 27,
+        "y": 205
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 147,
+        "y": 205
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 257,
+        "y": 205
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 367,
+        "y": 205
+      },
+      {
+        "disabled": false,
+        "fs": "16px",
+        "h": 44,
+        "text": "이 모듈 초기화",
+        "w": 135,
+        "x": 14,
+        "y": 430
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "예측 확정",
+        "w": 98,
+        "x": 27,
+        "y": 762
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 119,
+        "text": "신호 선택인슐린 우세신호 보내기식후 상황을 생각해 보세요",
+        "w": 157,
+        "x": 27,
+        "y": 822
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 119,
+        "text": "신호 선택글루카곤 우세신호 보내기공복 상황을 생각해 보세요",
+        "w": 157,
+        "x": 192,
+        "y": 822
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 52,
+        "text": "조절 경로",
+        "w": 103,
+        "x": 27,
+        "y": 1112
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 52,
+        "text": "실제 3D 구조",
+        "w": 103,
+        "x": 136,
+        "y": 1112
+      },
+      {
+        "disabled": false,
+        "fs": "12px",
+        "h": 52,
+        "text": "중간 신호 직접 조작",
+        "w": 103,
+        "x": 245,
+        "y": 1112
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 72,
+        "text": "● 조절물질 · 하위 효소에 적용F-2,6-BP다음 단계에서 확인눌러서 F-1,6",
+        "w": 314,
+        "x": 31,
+        "y": 1555
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "← 이전",
+        "w": 76,
+        "x": 27,
+        "y": 1702
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "▶ 재생",
+        "w": 76,
+        "x": 109,
+        "y": 1702
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "다음 →",
+        "w": 76,
+        "x": 191,
+        "y": 1702
+      },
+      {
+        "disabled": true,
+        "fs": "12px",
+        "h": 44,
+        "text": "처음부터",
+        "w": 76,
+        "x": 273,
+        "y": 1702
+      },
+      {
+        "disabled": true,
+        "fs": "16px",
+        "h": 44,
+        "text": "인산기 이동 확인 +",
+        "w": 164,
+        "x": 14,
+        "y": 2139
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 375,
+    "graphs": [],
+    "h2": {
+      "h": 31,
+      "w": 347,
+      "x": 14,
+      "y": 292
+    },
+    "hash": "#/regulation",
+    "height": 844,
+    "internalScroll": [],
+    "nav": {
+      "active": "05효소 조절",
+      "activeBounds": {
+        "h": 51,
+        "w": 106,
+        "x": 257,
+        "y": 205
+      },
+      "scrollLeft": 327.20001220703125,
+      "scrollWidth": 807,
+      "width": 375
+    },
+    "outside": [],
+    "pageHeight": 2654,
+    "scrollWidth": 375,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 390
+  },
+  {
+    "buttons": [
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Start",
+        "w": 64,
+        "x": -404,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "01반응 에너지",
+        "w": 120,
+        "x": -336,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "02탄산무수화효소",
+        "w": 144,
+        "x": -212,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "03반응속도론",
+        "w": 116,
+        "x": -64,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "04효소 저해",
+        "w": 106,
+        "x": 57,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "05효소 조절",
+        "w": 106,
+        "x": 167,
+        "y": 225
+      },
+      {
+        "disabled": false,
+        "fs": "14px",
+        "h": 51,
+        "text": "Reference",
+        "w": 98,
+        "x": 277,
+        "y": 225
+      }
+    ],
+    "canvases": [],
+    "clientWidth": 375,
+    "graphs": [],
+    "h2": {
+      "h": 31,
+      "w": 174,
+      "x": 14,
+      "y": 318
+    },
+    "hash": "#/model-notes",
+    "height": 844,
+    "internalScroll": [],
+    "nav": {
+      "active": "Reference",
+      "activeBounds": {
+        "h": 51,
+        "w": 98,
+        "x": 277,
+        "y": 225
+      },
+      "scrollLeft": 417.6000061035156,
+      "scrollWidth": 807,
+      "width": 375
+    },
+    "outside": [],
+    "pageHeight": 5602,
+    "scrollWidth": 375,
+    "scrollY": 0,
+    "smallText": [
+      {
+        "fs": "14px",
+        "t": "Start"
+      },
+      {
+        "fs": "14px",
+        "t": "01반응 에너지"
+      },
+      {
+        "fs": "14px",
+        "t": "02탄산무수화효소"
+      },
+      {
+        "fs": "14px",
+        "t": "03반응속도론"
+      },
+      {
+        "fs": "14px",
+        "t": "04효소 저해"
+      },
+      {
+        "fs": "14px",
+        "t": "05효소 조절"
+      },
+      {
+        "fs": "14px",
+        "t": "Reference"
+      }
+    ],
+    "title": "Enzyme Explorer · 효소 촉매와 반응속도론",
+    "width": 390
+  }
+]

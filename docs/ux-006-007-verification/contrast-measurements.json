@@ -1,0 +1,78 @@
+[
+  {
+    "phase": "before",
+    "viewport": [
+      1440,
+      900
+    ],
+    "background": "rgb(255, 255, 255)",
+    "measurements": [
+      {
+        "text": "정반응 55",
+        "fontSize": "12px",
+        "computedRGB": "rgb(107, 122, 133)",
+        "contrast": 4.423227533092817,
+        "passesNormalText": false
+      },
+      {
+        "text": "역반응 73",
+        "fontSize": "12px",
+        "computedRGB": "rgb(107, 122, 133)",
+        "contrast": 4.423227533092817,
+        "passesNormalText": false
+      },
+      {
+        "text": "ΔG −18",
+        "fontSize": "12px",
+        "computedRGB": "rgb(168, 118, 28)",
+        "contrast": 3.9824713554869215,
+        "passesNormalText": false
+      }
+    ]
+  },
+  {
+    "phase": "after",
+    "viewport": [
+      1440,
+      900
+    ],
+    "background": "rgb(255, 255, 255)",
+    "measurements": [
+      {
+        "text": "정반응 55",
+        "fontSize": "14px",
+        "computedRGB": "rgb(81, 99, 111)",
+        "contrast": 6.242305624594633,
+        "passesNormalText": true
+      },
+      {
+        "text": "정반응 35",
+        "fontSize": "14px",
+        "computedRGB": "rgb(21, 97, 143)",
+        "contrast": 6.69131279649103,
+        "passesNormalText": true
+      },
+      {
+        "text": "역반응 53",
+        "fontSize": "14px",
+        "computedRGB": "rgb(21, 97, 143)",
+        "contrast": 6.69131279649103,
+        "passesNormalText": true
+      },
+      {
+        "text": "역반응 73",
+        "fontSize": "14px",
+        "computedRGB": "rgb(81, 99, 111)",
+        "contrast": 6.242305624594633,
+        "passesNormalText": true
+      },
+      {
+        "text": "ΔG −18",
+        "fontSize": "14px",
+        "computedRGB": "rgb(138, 89, 8)",
+        "contrast": 5.977605400658139,
+        "passesNormalText": true
+      }
+    ]
+  }
+]

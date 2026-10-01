@@ -1,0 +1,53 @@
+{
+  "firstTabEvidence": {
+    "active": "<a class=\"skip-link\" href=\"#main-content\">본문으로 건너뛰기</a>",
+    "hash": "#/start",
+    "top": 12
+  },
+  "skipEvidence": {
+    "activeId": "main-content",
+    "activeTag": "MAIN",
+    "hash": "#/start",
+    "top": 16.25
+  },
+  "rail01": {
+    "focus": "nav-reaction-energy",
+    "hash": "#/reaction-energy",
+    "title": "반응 에너지 · Enzyme Explorer"
+  },
+  "rail02": {
+    "focus": "nav-carbonic-anhydrase",
+    "hash": "#/carbonic-anhydrase",
+    "title": "탄산무수화효소 · Enzyme Explorer"
+  },
+  "rail03": {
+    "focus": "nav-kinetics",
+    "hash": "#/kinetics",
+    "title": "효소 반응속도론 실험실 · Enzyme Explorer"
+  },
+  "referenceKeyboard01": {
+    "focusId": "model-notes-energy",
+    "hash": "#/model-notes?section=energy",
+    "top": 15.75
+  },
+  "referenceKeyboard03": {
+    "focusId": "model-notes-kinetics",
+    "hash": "#/model-notes?section=kinetics",
+    "title": "모델 및 주의사항 · Enzyme Explorer",
+    "top": 15.65000057220459
+  },
+  "tocKeyboard": {
+    "focusId": "model-notes-energy",
+    "hash": "#/model-notes?section=energy",
+    "top": 15.75
+  },
+  "dialogEscEvidence": {
+    "activeTag": "BUTTON",
+    "dialogCount": 0,
+    "label": "F-2,6-BP와 F-1,6-BP 비교"
+  },
+  "dialogButtonEvidence": {
+    "dialogCount": 0,
+    "label": "F-2,6-BP와 F-1,6-BP 비교"
+  }
+}

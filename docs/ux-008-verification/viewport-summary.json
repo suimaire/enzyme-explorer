@@ -1,0 +1,50 @@
+[
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "records": 22,
+    "result": "ALL UX-008 LAYOUT CHECKS PASSED"
+  },
+  {
+    "viewport": [
+      1600,
+      900
+    ],
+    "records": 22,
+    "result": "ALL UX-008 LAYOUT CHECKS PASSED"
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "records": 22,
+    "result": "ALL UX-008 LAYOUT CHECKS PASSED"
+  },
+  {
+    "viewport": [
+      1280,
+      800
+    ],
+    "records": 22,
+    "result": "ALL UX-008 LAYOUT CHECKS PASSED"
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "records": 22,
+    "result": "ALL UX-008 LAYOUT CHECKS PASSED"
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "records": 22,
+    "result": "ALL UX-008 LAYOUT CHECKS PASSED"
+  }
+]

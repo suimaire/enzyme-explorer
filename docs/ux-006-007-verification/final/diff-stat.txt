@@ -1,0 +1,15 @@
+ src/app/App.tsx                                    |  16 ++-
+ .../carbonic-anhydrase/CarbonicAnhydraseLab.tsx    |  29 +++--
+ src/modules/kinetics/InitialVelocityPanel.tsx      |  34 ++++--
+ src/modules/kinetics/KineticsLab.tsx               |  17 +--
+ src/modules/kinetics/MichaelisMentenPanel.tsx      | 121 ++++++++++++++-------
+ src/modules/kinetics/MichaelisMentenPlot.tsx       |  20 ++--
+ src/modules/kinetics/ProgressCurvePlot.tsx         |  19 ++--
+ src/modules/reaction-energy/EnergyDiagram.tsx      |  31 +++++-
+ src/modules/reaction-energy/ReactionEnergyLab.tsx  |  41 ++++---
+ src/modules/reaction-energy/energyProfile.ts       |   8 +-
+ src/modules/regulation/HormonalRegulation.tsx      |  23 ++--
+ src/modules/regulation/regulation.css              |  31 +++---
+ src/shared/components/Prediction.tsx               |  27 +++--
+ src/styles.css                                     |  38 ++++++-
+ 14 files changed, 305 insertions(+), 150 deletions(-)

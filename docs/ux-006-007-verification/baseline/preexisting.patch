@@ -1,0 +1,737 @@
+diff --git a/src/app/App.tsx b/src/app/App.tsx
+index 3c4f32c..ddc5807 100644
+--- a/src/app/App.tsx
++++ b/src/app/App.tsx
+@@ -7,6 +7,8 @@ import {ReactionEnergyLab} from '../modules/reaction-energy/ReactionEnergyLab';
+ import {KineticsLab} from '../modules/kinetics/KineticsLab';
+ import {ModelNotes} from '../modules/notes/ModelNotes';
+ import {ComingSoon} from '../modules/placeholder/ComingSoon';
++import {LearningModuleScope, LearningSessionProvider} from './LearningSession';
++import type {LearningSession} from './learningSessionStore';
+ 
+ /** Experimental structures and their renderer are loaded on demand. */
+ const CarbonicAnhydraseLab = lazy(() =>
+@@ -16,7 +18,11 @@ const HormonalRegulation = lazy(() => import('../modules/regulation/HormonalRegu
+ 
+ export const PROTEIN_EXPLORER_URL = 'https://suimaire.github.io/protein-3d-explorer/';
+ 
+-export function App() {
++export function App({session}: {session?: LearningSession} = {}) {
++  return <LearningSessionProvider session={session}><AppContent /></LearningSessionProvider>;
++}
++
++function AppContent() {
+   const [current, navigate] = useHashModule();
+   const entry = moduleEntry(current);
+ 
+@@ -41,8 +47,8 @@ export function App() {
+       <ModuleNavigation current={current} navigate={navigate} />
+ 
+       {current === 'start' ? <StartPage onNavigate={navigate} /> : null}
+-      {current === 'reaction-energy' ? <ReactionEnergyLab /> : null}
+-      {current === 'kinetics' ? <KineticsLab /> : null}
++      {current === 'reaction-energy' ? <LearningModuleScope module="reactionEnergy"><ReactionEnergyLab /></LearningModuleScope> : null}
++      {current === 'kinetics' ? <LearningModuleScope module="kinetics"><KineticsLab /></LearningModuleScope> : null}
+       {current === 'carbonic-anhydrase' ? (
+         <Suspense
+           fallback={
+@@ -51,10 +57,10 @@ export function App() {
+             </main>
+           }
+         >
+-          <CarbonicAnhydraseLab />
++          <LearningModuleScope module="carbonicAnhydrase"><CarbonicAnhydraseLab /></LearningModuleScope>
+         </Suspense>
+       ) : null}
+-      {current === 'regulation' ? <Suspense fallback={<main className="module"><p>효소 조절 모듈을 불러오는 중…</p></main>}><HormonalRegulation /></Suspense> : null}
++      {current === 'regulation' ? <Suspense fallback={<main className="module"><p>효소 조절 모듈을 불러오는 중…</p></main>}><LearningModuleScope module="regulation"><HormonalRegulation /></LearningModuleScope></Suspense> : null}
+       {current === 'inhibition' ? <ComingSoon id={current} /> : null}
+       {current === 'model-notes' ? <ModelNotes /> : null}
+ 
+diff --git a/src/modules/carbonic-anhydrase/CarbonicAnhydraseLab.tsx b/src/modules/carbonic-anhydrase/CarbonicAnhydraseLab.tsx
+index c358621..b479650 100644
+--- a/src/modules/carbonic-anhydrase/CarbonicAnhydraseLab.tsx
++++ b/src/modules/carbonic-anhydrase/CarbonicAnhydraseLab.tsx
+@@ -16,6 +16,7 @@ import {atomDisplayName} from '../../viewer/pdb/atomNames';
+ import {inferBonds} from '../../viewer/pdb/bonds';
+ import {PROTEIN_EXPLORER_URL} from '../../app/App';
+ import type {Representation} from '../../viewer/rendering/StructureScene';
++import {useLearningState, useResetLearningModule} from '../../app/LearningSession';
+ 
+ type QuestionKey = 'shuttle';
+ 
+@@ -70,13 +71,20 @@ export function CarbonicAnhydraseLab() {
+ 
+ function Lab({model}: {model: Model}) {
+   const {structure, bonds, site} = model;
+-  const [stage, setStage] = useState<Stage>(1);
+-  const [representation, setRepresentation] = useState<Representation>(STAGE_PRESETS[1].representation);
++  const [stage, setStage] = useLearningState('carbonicAnhydrase', 'stage');
++  const [representation, setRepresentation] = useState<Representation>(STAGE_PRESETS[stage].representation);
+   const [selected, setSelected] = useState<number | null>(null);
+-  const [camera, setCamera] = useState<CameraRequest>({preset: 'overview', token: 0});
+-  const [judgements, setJudgements] = useState<Map<number, Judgement>>(new Map());
+-  const [judgementsLocked, setJudgementsLocked] = useState(false);
+-  const [measured, setMeasured] = useState<Set<number>>(new Set());
++  const [camera, setCamera] = useState<CameraRequest>(() => {
++    const shuttle = site.histidines.find(h => h.resSeq === 64) ?? null;
++    const atoms = stageCameraAtoms(structure, site, shuttle, stage);
++    return atoms ? {preset: 'atoms', atoms, token: 1} : {preset: 'overview', token: 0};
++  });
++  const [answers, setAnswers] = useLearningState('carbonicAnhydrase', 'judgements');
++  const judgements = useMemo(() => new Map(Object.entries(answers).map(([index, answer]) => [Number(index), answer])), [answers]);
++  const [judgementsLocked, setJudgementsLocked] = useLearningState('carbonicAnhydrase', 'judgementsLocked');
++  const [measuredIndices, setMeasuredIndices] = useLearningState('carbonicAnhydrase', 'measured');
++  const measured = useMemo(() => new Set(measuredIndices), [measuredIndices]);
++  const resetSession = useResetLearningModule('carbonicAnhydrase');
+   const predictions = usePredictions<QuestionKey>();
+ 
+   /** His64 is named here, but its classification comes from the measured distance, not from its number. */
+@@ -95,7 +103,7 @@ function Lab({model}: {model: Model}) {
+     focus('atoms', [...structure.residues[residueIndex].atoms, site.metal.atomIndex, ...extra]);
+ 
+   const markMeasured = (residueIndex: number) =>
+-    setMeasured((prev) => (prev.has(residueIndex) ? prev : new Set(prev).add(residueIndex)));
++    setMeasuredIndices(prev => prev.includes(residueIndex) ? prev : [...prev, residueIndex]);
+ 
+   const workspace = useRef<HTMLElement>(null);
+   /** The [찾기] button last used, so a student on a narrow screen can jump back to the list after looking. */
+@@ -151,18 +159,19 @@ function Lab({model}: {model: Model}) {
+   };
+ 
+   const reset = () => {
++    resetSession();
+     setStage(1);
+     setRepresentation(STAGE_PRESETS[1].representation);
+     setSelected(null);
+-    setJudgements(new Map());
++    setAnswers({});
+     setJudgementsLocked(false);
+-    setMeasured(new Set());
++    setMeasuredIndices([]);
+     predictions.reset();
+     focus('overview');
+   };
+ 
+   const judge = (residueIndex: number, judgement: Judgement) =>
+-    setJudgements((prev) => new Map(prev).set(residueIndex, judgement));
++    setAnswers(prev => ({...prev, [residueIndex]: judgement}));
+ 
+   const allJudged = site.histidines.every((h) => judgements.has(h.residueIndex));
+   const agreed = site.histidines.filter((h) => judgements.get(h.residueIndex) === (h.coordinating ? 'yes' : 'no')).length;
+diff --git a/src/modules/kinetics/InitialVelocityPanel.tsx b/src/modules/kinetics/InitialVelocityPanel.tsx
+index 1c0aa4e..6c46226 100644
+--- a/src/modules/kinetics/InitialVelocityPanel.tsx
++++ b/src/modules/kinetics/InitialVelocityPanel.tsx
+@@ -1,4 +1,5 @@
+ import {useMemo, useState} from 'react';
++import {useLearningState} from '../../app/LearningSession';
+ import {ProgressCurvePlot} from './ProgressCurvePlot';
+ import {PredictQuestion, Reveal, usePredictions} from '../../shared/components/Prediction';
+ import {TeachingModel} from '../../shared/components/Callout';
+@@ -13,9 +14,8 @@ type QuestionKey = 'linear';
+ /**
+  * 03A — where a v0 value comes from.
+  *
+- * A student picks [S]₀, runs an assay, sees a product progress curve, and only then measures its initial
+- * slope. The Michaelis–Menten curve is never shown here; it is assembled in 03B out of the points measured
+- * in this panel.
++ * A student picks [S]₀, runs an assay, sees a product progress curve, then records the model's t=0 rate.
++ * The tangent illustrates the experimental slope concept; the button records an analytical model value.
+  */
+ export function InitialVelocityPanel({
+   parameters,
+@@ -28,10 +28,11 @@ export function InitialVelocityPanel({
+   onRecord: (result: AssayResult) => void;
+   onClear: () => void;
+ }) {
+-  const [substrate, setSubstrate] = useState<number>(SUBSTRATE_CHOICES[2]);
+-  const [run, setRun] = useState<{substrate: number} | null>(null);
+-  const [measured, setMeasured] = useState(false);
+-  const predictions = usePredictions<QuestionKey>();
++  const [substrate, setSubstrate] = useLearningState('kinetics', 'initialSubstrate');
++  const [run, setRun] = useLearningState('kinetics', 'assayRun');
++  const [measured, setMeasured] = useLearningState('kinetics', 'measured');
++  const [duplicateMeasurement, setDuplicateMeasurement] = useState(false);
++  const predictions = usePredictions<QuestionKey>('initial');
+ 
+   const simulation = useMemo(() => {
+     if (!run) return null;
+@@ -49,11 +50,13 @@ export function InitialVelocityPanel({
+   const startRun = () => {
+     setRun({substrate});
+     setMeasured(false);
++    setDuplicateMeasurement(false);
+   };
+ 
+   const measure = () => {
+     if (!run || !simulation) return;
+     setMeasured(true);
++    setDuplicateMeasurement(alreadyRecorded);
+     if (!alreadyRecorded) {
+       onRecord({initialSubstrate: run.substrate, initialVelocity: simulation.velocity, parameters});
+     }
+@@ -64,8 +67,10 @@ export function InitialVelocityPanel({
+       <section className="controls" aria-label="측정 조건">
+         <h3>반응 측정하기</h3>
+         <p className="small">
+-          효소 시료 X를 일정한 농도로 사용합니다. 이 측정의 목적은 효소의 반응속도 상수를 알아내는 것이며, 03B에서 그
+-          값을 구체적으로 다룹니다.
++          효소 시료 X를 일정한 농도로 사용합니다. 기질 농도에 따른 초기 속도를 관찰하고, 03B에서 모델 곡선과 비교합니다.
++        </p>
++        <p className="small" data-testid="virtual-measurement-note">
++          실험 원자료가 아닌 모델 계산 기반 가상 측정입니다. 무작위 측정 오차 없이, 동일 조건은 1개 측정점으로 관리합니다.
+         </p>
+         <p className="small flow-note" data-testid="velocity-flow">
+           반응 진행 곡선 → 초기 구간의 기울기 → 초기 속도 v₀ → v₀ 대 [S] 그래프(03B)
+@@ -86,6 +91,11 @@ export function InitialVelocityPanel({
+             초기 속도 측정
+           </button>
+         ) : null}
++        <div aria-live="polite" data-testid="measurement-status">
++          {measured && duplicateMeasurement && alreadyRecorded
++            ? <p className="small">동일 조건의 모델값은 이미 기록되어 있습니다. 독립 반복 실험으로 추가하지 않습니다.</p>
++            : null}
++        </div>
+         <TeachingModel>비가역 반응으로 단순화한 Michaelis–Menten 모델</TeachingModel>
+       </section>
+ 
+@@ -130,7 +140,7 @@ export function InitialVelocityPanel({
+               </div>
+             </dl>
+           ) : (
+-            <p className="small">반응을 시작한 뒤, 초기 구간의 기울기로 초기 속도(initial velocity, v₀)를 측정하세요.</p>
++            <p className="small">반응을 시작한 뒤, 측정 버튼으로 모델의 초기 속도(initial velocity, v₀)를 기록하세요.</p>
+           )}
+         </div>
+ 
+@@ -185,6 +195,10 @@ export function InitialVelocityPanel({
+             실제로 설정한 기질 농도에 대응하는 속도이기 때문입니다. 측정할 때마다 ([S]₀, v₀) 한 쌍이 얻어지고, 03B에서 이
+             점들을 모아 그래프를 완성합니다.
+           </p>
++          <p className="small">
++            실험에서는 초기 구간의 기울기로 v₀를 추정합니다. 이 교육용 도구의 측정 버튼은 현재 모델의 t=0 초기 속도를
++            계산하여 기록합니다.
++          </p>
+           <p className="small">
+             이 시뮬레이션은 P = S₀ − S 조건에서 dS/dt = −Vmax·S/(Km + S)를 적분합니다. 역반응, 생성물 저해(product
+             inhibition), 효소 불활성화는 고려하지 않습니다. 자세한 내용은 <a href="#/model-notes">모델 및 주의사항</a>을
+diff --git a/src/modules/kinetics/KineticsLab.tsx b/src/modules/kinetics/KineticsLab.tsx
+index 8e078a0..0d95209 100644
+--- a/src/modules/kinetics/KineticsLab.tsx
++++ b/src/modules/kinetics/KineticsLab.tsx
+@@ -1,4 +1,5 @@
+-import {useState} from 'react';
++import {useLearningState, useResetLearningModule} from '../../app/LearningSession';
++import {KINETICS_PREPARATION} from '../../app/learningSessionStore';
+ import {InitialVelocityPanel} from './InitialVelocityPanel';
+ import {MichaelisMentenPanel} from './MichaelisMentenPanel';
+ import {MechanisticCaveatPanel} from './MechanisticCaveatPanel';
+@@ -11,20 +12,20 @@ import type {AssayResult, MichaelisMentenParameters} from '../../kinetics/types'
+  * The enzyme preparation used in 03A, and the starting point of the 03B sliders. The 03A assays are
+  * measurements *of* this preparation, which is why 03B starts from exactly these values.
+  */
+-export const PREPARATION: MichaelisMentenParameters = {km: 75, kcat: 20, enzymeTotal: 5};
++export const PREPARATION: MichaelisMentenParameters = KINETICS_PREPARATION;
+ 
+-type Section = 'a' | 'b' | 'c';
+-
+-/** Module 03. Three sections, one shared set of measurements, no router — the section is local state. */
++/** Module 03. Three sections share one App-session learning snapshot. */
+ export function KineticsLab() {
+-  const [section, setSection] = useState<Section>('a');
+-  const [parameters, setParameters] = useState<MichaelisMentenParameters>(PREPARATION);
+-  const [assays, setAssays] = useState<AssayResult[]>([]);
++  const [section, setSection] = useLearningState('kinetics', 'section');
++  const [parameters, setParameters] = useLearningState('kinetics', 'parameters');
++  const [assays, setAssays] = useLearningState('kinetics', 'assays');
++  const resetSession = useResetLearningModule('kinetics');
+ 
+   const record = (result: AssayResult) =>
+     setAssays((prev) => (prev.some((a) => a.initialSubstrate === result.initialSubstrate) ? prev : [...prev, result]));
+ 
+   const reset = () => {
++    resetSession();
+     setSection('a');
+     setParameters(PREPARATION);
+     setAssays([]);
+diff --git a/src/modules/kinetics/MichaelisMentenPanel.tsx b/src/modules/kinetics/MichaelisMentenPanel.tsx
+index 3c45da9..afa36b9 100644
+--- a/src/modules/kinetics/MichaelisMentenPanel.tsx
++++ b/src/modules/kinetics/MichaelisMentenPanel.tsx
+@@ -1,4 +1,5 @@
+-import {useMemo, useState} from 'react';
++import {useMemo} from 'react';
++import {useLearningState} from '../../app/LearningSession';
+ import {MichaelisMentenPlot, SUBSTRATE_AXIS_MAX} from './MichaelisMentenPlot';
+ import {KINETICS_COLORS} from './ProgressCurvePlot';
+ import {PredictQuestion, Reveal, usePredictions} from '../../shared/components/Prediction';
+@@ -16,6 +17,13 @@ export const PARAMETER_RANGES = {
+   kcat: {min: 2, max: 60, step: 1},
+ } as const;
+ 
++/** Two observations can complete the inquiry; reaching the range limit does not imply saturation. */
++export function saturationObservation(km: number, substrate: number): 'saturation' | 'range-limit' | null {
++  if (substrate >= 4 * km) return 'saturation';
++  if (substrate >= PARAMETER_RANGES.substrate.max) return 'range-limit';
++  return null;
++}
++
+ type Experiment = 'saturation' | 'enzyme' | 'km';
+ type QuestionKey =
+   | 'saturation'
+@@ -39,32 +47,37 @@ export function MichaelisMentenPanel({
+   onParameters: (next: MichaelisMentenParameters) => void;
+   assays: readonly AssayResult[];
+ }) {
+-  const [experiment, setExperiment] = useState<Experiment>('saturation');
+-  const [substrate, setSubstrate] = useState(80);
+-  const [baseline, setBaseline] = useState<MichaelisMentenParameters | null>(null);
++  const [experiment, setExperiment] = useLearningState('kinetics', 'experiment');
++  const [substrate, setSubstrate] = useLearningState('kinetics', 'substrate');
++  const [baseline, setBaseline] = useLearningState('kinetics', 'baseline');
+   /**
+-   * Velocity axis held fixed while a reference curve is on screen. It is set from the reference *before*
+-   * any parameter moves, with room for a doubling, so a comparison never rescales the y axis.
++   * Reference axis range, reserved before parameters move. The current curve can expand this range.
+    */
+-  const [axisLock, setAxisLock] = useState<number | null>(null);
+-  const [showVmaxGuide, setShowVmaxGuide] = useState(false);
+-  const [showKmGuide, setShowKmGuide] = useState(false);
+-  const [exploredHigh, setExploredHigh] = useState(false);
+-  const predictions = usePredictions<QuestionKey>();
++  const [axisLock, setAxisLock] = useLearningState('kinetics', 'axisLock');
++  const [showVmaxGuide, setShowVmaxGuide] = useLearningState('kinetics', 'showVmaxGuide');
++  const [showKmGuide, setShowKmGuide] = useLearningState('kinetics', 'showKmGuide');
++  // Reuse the existing progress flag for either completed observation, scoped to the selected Km.
++  const [exploredHigh, setExploredHigh] = useLearningState('kinetics', 'exploredHigh');
++  const predictions = usePredictions<QuestionKey>('mm');
+ 
+   const vmax = calculateVmax(parameters);
+   const v0 = calculateV0(parameters, substrate);
+   const axisMax = useMemo(() => Math.max(axisLock ?? 0, vmax * 1.1), [axisLock, vmax]);
++  const axisExpanded = axisLock !== null && axisMax > axisLock;
++  const rangeLimited = PARAMETER_RANGES.substrate.max < 4 * parameters.km;
+ 
+   const setSubstrateTracked = (value: number) => {
+     setSubstrate(value);
+-    if (value >= 4 * parameters.km) setExploredHigh(true);
++    if (saturationObservation(parameters.km, value)) setExploredHigh(true);
++  };
++  const changeKm = (km: number) => {
++    onParameters({...parameters, km});
++    setExploredHigh(saturationObservation(km, substrate) !== null);
+   };
+ 
+   /**
+-   * Freezes the current curve as a reference and locks the velocity axis with enough headroom for what the
+-   * experiment is about to do. Headroom is reserved *before* any parameter moves, so the comparison itself
+-   * never rescales the axis: the new curve visibly grows rather than the reference visibly shrinking.
++   * Keeps the current curve as a reference and reserves headroom before parameters move.
++   * Both curves share the same axis, which expands when the current Vmax exceeds the reserved range.
+    */
+   const captureBaseline = (headroom: number) => {
+     setBaseline(parameters);
+@@ -132,7 +145,7 @@ export function MichaelisMentenPanel({
+           max={PARAMETER_RANGES.km.max}
+           step={PARAMETER_RANGES.km.step}
+           unit="µM"
+-          onChange={(km) => onParameters({...parameters, km})}
++          onChange={changeKm}
+         />
+         <div className="button-row">
+           {baseline ? (
+@@ -183,16 +196,21 @@ export function MichaelisMentenPanel({
+               <svg width="16" height="14" aria-hidden="true">
+                 <rect x="3" y="2" width="9" height="9" fill={KINETICS_COLORS.measured} transform="rotate(45 7.5 6.5)" />
+               </svg>
+-              03A 측정값 (속이 빈 마름모 = 현재와 다른 조건에서 측정)
++              03A 가상 측정값 (속이 빈 마름모 = 현재와 다른 조건에서 측정)
+             </li>
+           ) : null}
+         </ul>
+         <p className="plot-caption" data-testid="axis-note">
+           기질 농도 축: 0–{SUBSTRATE_AXIS_MAX} µM로 고정.{' '}
+           {axisLock
+-            ? '비교 기준 곡선이 표시되는 동안에는 속도 축도 고정되어, 곡선 높이의 변화를 그대로 비교할 수 있습니다.'
++            ? '비교 기준 곡선은 유지됩니다. 새 곡선이 현재 범위를 넘으면 속도 축은 자동으로 확장됩니다.'
+             : '기본 탐색에서는 속도 축을 현재 Vmax에 맞추어 표시합니다.'}
+         </p>
++        {axisExpanded ? (
++          <p className="plot-caption" data-testid="axis-rescale-note" aria-live="polite">
++            속도 축 자동 확장: {axisLock!.toFixed(0)} → {axisMax.toFixed(0)} nM·s⁻¹. 두 곡선은 같은 축으로 비교합니다.
++          </p>
++        ) : null}
+       </section>
+ 
+       <section className="inquiry" aria-label="탐구 활동">
+@@ -255,31 +273,52 @@ export function MichaelisMentenPanel({
+             <p className="small">
+               이제 <strong>현재 기질 농도 [S]</strong>를 낮은 값에서 높은 값까지 움직이며 v₀와 Vmax의 관계를 관찰해 보세요.
+             </p>
++            <p className="small" data-testid="saturation-ratio">
++              현재 [S] / Km = {(substrate / parameters.km).toFixed(1)} · v₀ = {(v0 / vmax).toFixed(2)} Vmax
++            </p>
+             <Reveal
+               testId="saturation-explanation"
+               gate={predictions.get('saturation').locked && exploredHigh}
+-              gateMessage="먼저 예측을 확정한 뒤 [S]를 Km보다 충분히 크게 높여 그래프가 어떻게 변하는지 확인하세요."
++              gateMessage={rangeLimited
++                ? `먼저 예측을 확정한 뒤 현재 범위의 최대 [S](${PARAMETER_RANGES.substrate.max} µM)까지 올려 포화에 얼마나 가까운지 확인하세요.`
++                : '먼저 예측을 확정한 뒤 [S]를 Km의 4배 이상으로 높여 그래프가 어떻게 변하는지 확인하세요.'}
+             >
+-              <p>
+-                v₀는 한계값에 가까워집니다. 이 모델에서 v₀가 Vmax에 도달한 비율은 [S]/(Km + [S])이므로, 하나의 곡선에서 세
+-                구간을 볼 수 있습니다.
+-              </p>
+-              <ul>
+-                <li>
+-                  <strong>[S] ≪ Km</strong> — 분모에서 Km이 대부분을 차지하므로 v₀ ≈ (Vmax/Km)·[S]입니다. 원점을 지나는
+-                  직선에 가깝습니다.
+-                </li>
+-                <li>
+-                  <strong>[S] = Km</strong> — v₀는 정확히 Vmax/2입니다.
+-                </li>
+-                <li>
+-                  <strong>[S] ≫ Km</strong> — 비율이 1에 가까워지므로 v₀는 Vmax에 가까워지고, 기질을 더 넣어도 v₀는 거의
+-                  변하지 않습니다.
+-                </li>
+-              </ul>
+-              <p>
+-                Vmax는 유한한 [S]에서는 실제로 도달하지 않는 한계값이며, [S]가 커질수록 곡선이 다가가는 값입니다.
+-              </p>
++              {rangeLimited ? (
++                <div data-testid="saturation-range-explanation">
++                  <p>
++                    현재 실험 범위의 최대 [S]({PARAMETER_RANGES.substrate.max} µM)까지 올렸지만, 아직 Vmax에 충분히 가까운
++                    포화 영역은 아닙니다. 이 범위에서 [S] / Km은 최대 {(PARAMETER_RANGES.substrate.max / parameters.km).toFixed(1)},
++                    속도는 약 {saturationFraction(parameters, PARAMETER_RANGES.substrate.max).toFixed(2)} Vmax입니다.
++                  </p>
++                  <p>
++                    포화 여부는 절대적인 [S]보다 <strong>[S] / Km</strong> 관계에 달려 있습니다. Km이 클수록 같은 정도의
++                    포화를 보기 위해 더 높은 [S]가 필요합니다. Km을 낮추고 같은 [S]에서 비교해 보세요.
++                  </p>
++                </div>
++              ) : (
++                <div data-testid="saturation-near-explanation">
++                  <p>
++                    v₀는 한계값에 가까워집니다. 이 모델에서 v₀가 Vmax에 도달한 비율은 [S]/(Km + [S])이므로, 하나의 곡선에서 세
++                    구간을 볼 수 있습니다.
++                  </p>
++                  <ul>
++                    <li>
++                      <strong>[S] ≪ Km</strong> — 분모에서 Km이 대부분을 차지하므로 v₀ ≈ (Vmax/Km)·[S]입니다. 원점을 지나는
++                      직선에 가깝습니다.
++                    </li>
++                    <li>
++                      <strong>[S] = Km</strong> — v₀는 정확히 Vmax/2입니다.
++                    </li>
++                    <li>
++                      <strong>[S] ≫ Km</strong> — 비율이 1에 가까워지므로 v₀는 Vmax에 가까워지고, 기질을 더 넣어도 v₀는 거의
++                      변하지 않습니다.
++                    </li>
++                  </ul>
++                  <p>
++                    Vmax는 유한한 [S]에서는 실제로 도달하지 않는 한계값이며, [S]가 커질수록 곡선이 다가가는 값입니다.
++                  </p>
++                </div>
++              )}
+               <button type="button" onClick={() => setShowVmaxGuide((v) => !v)} data-testid="toggle-vmax-guide">
+                 Vmax 기준선 {showVmaxGuide ? '숨기기' : '보기'}
+               </button>
+@@ -351,8 +390,8 @@ export function MichaelisMentenPanel({
+                 [S]를 움직여도 이 비율이 그대로인지 확인해 보세요.
+               </p>
+               <p className="small">
+-                속도 축은 [E]T를 바꾸기 전에 고정되었습니다. 따라서 지금 보이는 차이는 축 눈금이 바뀐 것이 아니라 곡선 높이가
+-                실제로 달라진 것입니다.
++                비교 기준 곡선은 유지되며, 필요하면 속도 축이 자동으로 확장됩니다. 화면 높이와 함께 현재 Vmax 및 기준 곡선
++                대비 비율을 확인하세요. 두 곡선은 항상 같은 좌표계로 그려집니다.
+               </p>
+             </Reveal>
+           </div>
+diff --git a/src/modules/kinetics/MichaelisMentenPlot.tsx b/src/modules/kinetics/MichaelisMentenPlot.tsx
+index 4d0995c..98ba536 100644
+--- a/src/modules/kinetics/MichaelisMentenPlot.tsx
++++ b/src/modules/kinetics/MichaelisMentenPlot.tsx
+@@ -12,9 +12,8 @@ const sameParameters = (a: MichaelisMentenParameters, b: MichaelisMentenParamete
+ /**
+  * v0 against [S].
+  *
+- * Both axes are held fixed while a comparison is running: the x axis always spans 0–600 µM, and the y axis
+- * is driven by `velocityAxisMax`, which the panel locks before an experiment changes a parameter. Without
+- * that lock, doubling [E]T would double Vmax *and* the axis, and the two curves would look identical.
++ * The x axis always spans 0–600 µM. Both curves use one y scale driven by `velocityAxisMax`.
++ * The panel reserves reference headroom and expands it when needed to show the current curve.
+  */
+ export function MichaelisMentenPlot({
+   parameters,
+diff --git a/src/modules/reaction-energy/ReactionEnergyLab.tsx b/src/modules/reaction-energy/ReactionEnergyLab.tsx
+index aa17063..5480f3a 100644
+--- a/src/modules/reaction-energy/ReactionEnergyLab.tsx
++++ b/src/modules/reaction-energy/ReactionEnergyLab.tsx
+@@ -1,10 +1,14 @@
+-import {useMemo, useState} from 'react';
++import {useMemo} from 'react';
++import {useLearningState, useResetLearningModule} from '../../app/LearningSession';
++import {ENERGY_DEFAULTS as DEFAULTS} from '../../app/learningSessionStore';
+ import {EnergyDiagram, PATHWAY_COLORS} from './EnergyDiagram';
+ import {
+   BARRIER_TOP_RANGE,
+   LOWERING_RANGE,
++  MIN_BARRIER,
+   PRODUCT_RANGE,
+   clampTransitionState,
++  maxBarrierLowering,
+   reactionEnergyProfile,
+   relativeRateFactor,
+ } from './energyProfile';
+@@ -15,8 +19,6 @@ import {Slider} from '../../shared/components/Slider';
+ import {TeachingModel} from '../../shared/components/Callout';
+ import {multiplier, signed} from '../../shared/math/format';
+ 
+-const DEFAULTS = {productEnergy: -18, barrierTop: 55, barrierLowering: 20};
+-
+ type QuestionKey = 'opening' | 'deltaG' | 'barrier' | 'rate' | 'equilibrium';
+ 
+ /**
+@@ -24,12 +26,13 @@ type QuestionKey = 'opening' | 'deltaG' | 'barrier' | 'rate' | 'equilibrium';
+  * switches the enzyme on and reads the same three numbers off the same axis.
+  */
+ export function ReactionEnergyLab() {
+-  const [productEnergy, setProductEnergy] = useState(DEFAULTS.productEnergy);
+-  const [barrierTop, setBarrierTop] = useState(DEFAULTS.barrierTop);
+-  const [barrierLowering, setBarrierLowering] = useState(DEFAULTS.barrierLowering);
+-  const [enzyme, setEnzyme] = useState(false);
++  const [productEnergy, setProductEnergy] = useLearningState('reactionEnergy', 'productEnergy');
++  const [barrierTop, setBarrierTop] = useLearningState('reactionEnergy', 'barrierTop');
++  const [barrierLowering, setBarrierLowering] = useLearningState('reactionEnergy', 'barrierLowering');
++  const [enzyme, setEnzyme] = useLearningState('reactionEnergy', 'enzyme');
+   /** Remembers that the catalysed pathway has been seen at least once, so the follow-up questions are earned. */
+-  const [enzymeSeen, setEnzymeSeen] = useState(false);
++  const [enzymeSeen, setEnzymeSeen] = useLearningState('reactionEnergy', 'enzymeSeen');
++  const resetSession = useResetLearningModule('reactionEnergy');
+   const predictions = usePredictions<QuestionKey>();
+ 
+   const profile = useMemo(
+@@ -40,11 +43,23 @@ export function ReactionEnergyLab() {
+   /** The slider can ask for a transition state below an end point; this is the value the model actually uses. */
+   const clampedTop = clampTransitionState(barrierTop, productEnergy);
+   const clamped = clampedTop > barrierTop;
++  const maxLowering = maxBarrierLowering(barrierTop, productEnergy);
++
++  // Update the selected reduction with the energy condition, before the next render uses either value.
++  const changeProductEnergy = (value: number) => {
++    setBarrierLowering((previous) => Math.min(previous, maxBarrierLowering(barrierTop, value)));
++    setProductEnergy(value);
++  };
++  const changeBarrierTop = (value: number) => {
++    setBarrierLowering((previous) => Math.min(previous, maxBarrierLowering(value, productEnergy)));
++    setBarrierTop(value);
++  };
+ 
+   const openingLocked = predictions.get('opening').locked;
+   const followUps: QuestionKey[] = ['deltaG', 'barrier', 'rate', 'equilibrium'];
+ 
+   const reset = () => {
++    resetSession();
+     setProductEnergy(DEFAULTS.productEnergy);
+     setBarrierTop(DEFAULTS.barrierTop);
+     setBarrierLowering(DEFAULTS.barrierLowering);
+@@ -77,7 +92,7 @@ export function ReactionEnergyLab() {
+             max={PRODUCT_RANGE.max}
+             step={PRODUCT_RANGE.step}
+             unit="kJ·mol⁻¹"
+-            onChange={setProductEnergy}
++            onChange={changeProductEnergy}
+             note="반응물 상태를 0으로 고정한 상대값입니다."
+           />
+           <Slider
+@@ -88,7 +103,7 @@ export function ReactionEnergyLab() {
+             max={BARRIER_TOP_RANGE.max}
+             step={BARRIER_TOP_RANGE.step}
+             unit="kJ·mol⁻¹"
+-            onChange={setBarrierTop}
++            onChange={changeBarrierTop}
+             note={
+               clamped
+                 ? `${clampedTop} kJ·mol⁻¹로 유지됨: 전이 상태는 그것이 연결하는 두 상태보다 낮을 수 없습니다.`
+@@ -113,12 +128,12 @@ export function ReactionEnergyLab() {
+             label="효소에 의한 전이 상태 에너지 감소"
+             value={barrierLowering}
+             min={LOWERING_RANGE.min}
+-            max={LOWERING_RANGE.max}
++            max={maxLowering}
+             step={LOWERING_RANGE.step}
+             unit="kJ·mol⁻¹"
+             onChange={setBarrierLowering}
+-            disabled={!enzyme}
+-            note="전이 상태의 에너지에만 적용됩니다. 반응물과 생성물의 에너지는 그대로입니다."
++            disabled={!enzyme || maxLowering === 0}
++            note={`현재 조건에서 최대 감소량: ${maxLowering} kJ·mol⁻¹. 정·역반응 장벽을 최소 ${MIN_BARRIER} kJ·mol⁻¹로 유지합니다. 반응물·생성물 에너지는 그대로입니다.`}
+           />
+         </section>
+ 
+diff --git a/src/modules/reaction-energy/energyProfile.ts b/src/modules/reaction-energy/energyProfile.ts
+index dcdb7d7..9daf73e 100644
+--- a/src/modules/reaction-energy/energyProfile.ts
++++ b/src/modules/reaction-energy/energyProfile.ts
+@@ -16,7 +16,7 @@ export const REACTANT_ENERGY = 0;
+ /** Slider bounds. The plotted y range is derived from these alone, so it never rescales while a student works. */
+ export const PRODUCT_RANGE = {min: -30, max: 30, step: 1} as const;
+ export const BARRIER_TOP_RANGE = {min: 20, max: 70, step: 1} as const;
+-export const LOWERING_RANGE = {min: 5, max: 35, step: 1} as const;
++export const LOWERING_RANGE = {min: 0, max: 35, step: 1} as const;
+ 
+ /** A transition state has to lie above both end points; this is the smallest gap the model allows. */
+ export const MIN_BARRIER = 5;
+@@ -66,6 +66,12 @@ export function clampTransitionState(barrierTop: number, productEnergy: number):
+   return Math.max(barrierTop, floor);
+ }
+ 
++/** Input limit using the same transition-state floor as the model, within the teaching control's range. */
++export function maxBarrierLowering(barrierTop: number, productEnergy: number): number {
++  const floor = Math.max(REACTANT_ENERGY, productEnergy) + MIN_BARRIER;
++  return Math.min(LOWERING_RANGE.max, clampTransitionState(barrierTop, productEnergy) - floor);
++}
++
+ const pathway = (transitionState: number, productEnergy: number): Pathway => ({
+   reactant: REACTANT_ENERGY,
+   transitionState,
+diff --git a/src/modules/regulation/HormonalRegulation.tsx b/src/modules/regulation/HormonalRegulation.tsx
+index ba75e28..a19da1c 100644
+--- a/src/modules/regulation/HormonalRegulation.tsx
++++ b/src/modules/regulation/HormonalRegulation.tsx
+@@ -1,11 +1,12 @@
+-import {lazy, Suspense, useEffect, useReducer, useState} from 'react';
++import {lazy, Suspense, useCallback, useEffect, useState} from 'react';
++import {useLearningState, useResetLearningModule} from '../../app/LearningSession';
+ import {ModuleHeader} from '../../shared/components/ModuleHeader';
+ import {PredictQuestion, Reveal, usePredictions} from '../../shared/components/Prediction';
+ import {Segmented} from '../../shared/components/Segmented';
+ import {InterventionFlow, Pathway, PhosphateTrace, Results, SugarComparison} from './Diagrams';
+ import {IsoformCaution, KineticExplanation} from './ScientificContext';
+ import {StructureResults} from './StructureResults';
+-import {deriveRegulation, HORMONE_DRIVEN, INITIAL_STATE, regulationReducer, SCENARIO_LABEL, stepDescription, STEPS, type Scenario, type View} from './model';
++import {deriveRegulation, HORMONE_DRIVEN, regulationReducer, SCENARIO_LABEL, stepDescription, STEPS, type Action, type Scenario, type View} from './model';
+ import './regulation.css';
+ 
+ const ProteinStructure = lazy(() => import('./ProteinStructure').then(m => ({default: m.ProteinStructure})));
+@@ -14,10 +15,12 @@ const views: readonly (readonly [View, string])[] = [['pathway', '조절 경로'
+ 
+ export function HormonalRegulation() {
+   const predictions = usePredictions<'f26'>();
+-  const [state, dispatch] = useReducer(regulationReducer, INITIAL_STATE);
++  const [state, setState] = useLearningState('regulation', 'lab');
++  const dispatch = useCallback((action: Action) => setState(previous => regulationReducer(previous, action)), [setState]);
++  const resetSession = useResetLearningModule('regulation');
+   const [comparison, setComparison] = useState(false);
+   const [trace, setTrace] = useState(false);
+-  const [structureVisited, setStructureVisited] = useState(false);
++  const [structureVisited, setStructureVisited] = useState(state.view === 'structure');
+   const [epoch, setEpoch] = useState(0);
+   const [reduced, setReduced] = useState(() => typeof window !== 'undefined' && typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+   const locked = predictions.get('f26').locked;
+@@ -33,18 +36,20 @@ export function HormonalRegulation() {
+     const change = () => {setReduced(media.matches); dispatch({type: 'pause'});};
+     media.addEventListener('change', change);
+     return () => media.removeEventListener('change', change);
+-  }, []);
++  }, [dispatch]);
+   useEffect(() => {
+     if (status !== 'playing') return;
+     const timer = window.setTimeout(() => dispatch({type: 'tick', run, step}), 950);
+     return () => window.clearTimeout(timer);
+-  }, [status, run, step]);
++  }, [status, run, step, dispatch]);
+   useEffect(() => {
+     const hide = () => {if (document.hidden) dispatch({type: 'pause'});};
+     document.addEventListener('visibilitychange', hide);
+     return () => document.removeEventListener('visibilitychange', hide);
+-  }, []);
+-  function reset() {dispatch({type: 'reset'}); predictions.reset(); setComparison(false); setTrace(false); setEpoch(n => n + 1);}
++  }, [dispatch]);
++  // Keep the current learning step, but leave no playback running after route exit.
++  useEffect(() => () => dispatch({type: 'pause'}), [dispatch]);
++  function reset() {dispatch({type: 'reset'}); resetSession(); predictions.reset(); setComparison(false); setTrace(false); setEpoch(n => n + 1);}
+   function signal(s: Scenario) {if (locked) {dispatch({type: 'signal', scenario: s, reducedMotion: reduced}); setTrace(false);}}
+   return <main className="module regulation-module" data-testid="module-regulation" data-scenario={scenario ?? 'unobserved'} data-step={step}>
+     <ModuleHeader id="regulation" onReset={reset} tag={<div className="reg-badges"><span className="badge">간 PFKFB1 · L형</span><span className="badge">정성적 조절 모델</span></div>} />
+@@ -73,7 +78,7 @@ export function HormonalRegulation() {
+                 <button type="button" disabled={step < 5} aria-pressed={!clamped} onClick={() => dispatch({type: 'control', control: HORMONE_DRIVEN})}>호르몬 조절로 복귀</button>
+               </div>
+               {result && <InterventionFlow result={result} step={step} clamped={clamped} />}
+-              <Reveal key={`${epoch}-${scenario}-${clamped ? control.level : 'auto'}`} gate={state.interventionObserved && step === 5} gateMessage="낮음 또는 높음으로 고정하고 결과를 관찰한 뒤 해설을 열 수 있습니다." label="가상 개입 해설 보기" testId="reg-intervention-explanation"><p>고정한 F-2,6-BP가 하위 효소의 조절에 적용됩니다. 상위 호르몬 신호와 PFKFB1 상태는 유지됩니다. 이 결과가 실제 간에서 글루카곤의 모든 작용을 취소한다는 뜻은 아닙니다.</p></Reveal>
++              <Reveal key={`${epoch}-${scenario}-${clamped ? control.level : 'auto'}`} sessionKey={`${scenario}-${clamped ? control.level : 'auto'}`} gate={state.interventionObserved && step === 5} gateMessage="낮음 또는 높음으로 고정하고 결과를 관찰한 뒤 해설을 열 수 있습니다." label="가상 개입 해설 보기" testId="reg-intervention-explanation"><p>고정한 F-2,6-BP가 하위 효소의 조절에 적용됩니다. 상위 호르몬 신호와 PFKFB1 상태는 유지됩니다. 이 결과가 실제 간에서 글루카곤의 모든 작용을 취소한다는 뜻은 아닙니다.</p></Reveal>
+             </>}
+           </div> : <Pathway result={result} step={step} clamped={clamped} onCompare={() => {dispatch({type: 'pause'}); setComparison(true);}} />}
+         </div>
+diff --git a/src/shared/components/Prediction.tsx b/src/shared/components/Prediction.tsx
+index 20fbf1f..92a3c4d 100644
+--- a/src/shared/components/Prediction.tsx
++++ b/src/shared/components/Prediction.tsx
+@@ -1,4 +1,5 @@
+-import {useCallback, useMemo, useState} from 'react';
++import {useCallback, useMemo} from 'react';
++import {useLearningProgress} from '../../app/LearningSession';
+ 
+ /**
+  * Predict → lock → manipulate → observe → explain.
+@@ -13,6 +14,7 @@ export type Choice = {id: string; label: string};
+ export type PredictionState = {choice: string | null; locked: boolean};
+ 
+ const EMPTY: PredictionState = {choice: null, locked: false};
++const EMPTY_GROUP: Partial<Record<string, PredictionState>> = {};
+ 
+ export type PredictionSet<K extends string> = {
+   get: (key: K) => PredictionState;
+@@ -26,16 +28,17 @@ export type PredictionSet<K extends string> = {
+ };
+ 
+ /** Prediction state for one module. Modules keep their own set; nothing is shared between modules. */
+-export function usePredictions<K extends string>(): PredictionSet<K> {
+-  const [state, setState] = useState<Partial<Record<K, PredictionState>>>({});
++export function usePredictions<K extends string>(group = 'main'): PredictionSet<K> {
++  const [groups, setGroups] = useLearningProgress('predictions');
++  const state = groups[group] ?? EMPTY_GROUP;
+   const get = useCallback((key: K) => state[key] ?? EMPTY, [state]);
+   const choose = useCallback((key: K, choice: string) => {
+-    setState((prev) => (prev[key]?.locked ? prev : {...prev, [key]: {choice, locked: false}}));
+-  }, []);
++    setGroups(prev => prev[group]?.[key]?.locked ? prev : {...prev, [group]: {...prev[group], [key]: {choice, locked: false}}});
++  }, [group, setGroups]);
+   const lock = useCallback((key: K) => {
+-    setState((prev) => (prev[key]?.choice ? {...prev, [key]: {choice: prev[key]!.choice, locked: true}} : prev));
+-  }, []);
+-  const reset = useCallback(() => setState({}), []);
++    setGroups(prev => prev[group]?.[key]?.choice ? {...prev, [group]: {...prev[group], [key]: {choice: prev[group][key]!.choice, locked: true}}} : prev);
++  }, [group, setGroups]);
++  const reset = useCallback(() => setGroups(prev => ({...prev, [group]: {}})), [group, setGroups]);
+   const allLocked = useCallback((keys: readonly K[]) => keys.every((k) => state[k]?.locked), [state]);
+   const anyLocked = useCallback((keys: readonly K[]) => keys.some((k) => state[k]?.locked), [state]);
+   return useMemo(() => ({get, choose, lock, reset, allLocked, anyLocked}), [get, choose, lock, reset, allLocked, anyLocked]);
+@@ -101,18 +104,22 @@ export function Reveal({
+   label = '설명 보기',
+   children,
+   testId,
++  sessionKey,
+ }: {
+   gate: boolean;
+   gateMessage: string;
+   label?: string;
+   children: React.ReactNode;
+   testId?: string;
++  sessionKey?: string;
+ }) {
+-  const [open, setOpen] = useState(false);
++  const [reveals, setReveals] = useLearningProgress('reveals');
++  const key = `${testId ?? label}:${sessionKey ?? ''}`;
++  const open = reveals[key] ?? false;
+   if (!gate) return <p className="gate-note" data-testid={testId ? `${testId}-gate` : undefined}>{gateMessage}</p>;
+   if (!open)
+     return (
+-      <button type="button" className="primary" data-testid={testId ? `${testId}-button` : undefined} onClick={() => setOpen(true)}>
++      <button type="button" className="primary" data-testid={testId ? `${testId}-button` : undefined} onClick={() => setReveals(prev => ({...prev, [key]: true}))}>
+         {label}
+       </button>
+     );

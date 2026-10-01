@@ -1,4 +1,5 @@
-import {useCallback, useMemo, useState} from 'react';
+import {useCallback, useMemo} from 'react';
+import {useLearningProgress} from '../../app/LearningSession';
 
 /**
  * Predict → lock → manipulate → observe → explain.
@@ -13,6 +14,7 @@ export type Choice = {id: string; label: string};
 export type PredictionState = {choice: string | null; locked: boolean};
 
 const EMPTY: PredictionState = {choice: null, locked: false};
+const EMPTY_GROUP: Partial<Record<string, PredictionState>> = {};
 
 export type PredictionSet<K extends string> = {
   get: (key: K) => PredictionState;
@@ -26,16 +28,17 @@ export type PredictionSet<K extends string> = {
 };
 
 /** Prediction state for one module. Modules keep their own set; nothing is shared between modules. */
-export function usePredictions<K extends string>(): PredictionSet<K> {
-  const [state, setState] = useState<Partial<Record<K, PredictionState>>>({});
+export function usePredictions<K extends string>(group = 'main'): PredictionSet<K> {
+  const [groups, setGroups] = useLearningProgress('predictions');
+  const state = groups[group] ?? EMPTY_GROUP;
   const get = useCallback((key: K) => state[key] ?? EMPTY, [state]);
   const choose = useCallback((key: K, choice: string) => {
-    setState((prev) => (prev[key]?.locked ? prev : {...prev, [key]: {choice, locked: false}}));
-  }, []);
+    setGroups(prev => prev[group]?.[key]?.locked ? prev : {...prev, [group]: {...prev[group], [key]: {choice, locked: false}}});
+  }, [group, setGroups]);
   const lock = useCallback((key: K) => {
-    setState((prev) => (prev[key]?.choice ? {...prev, [key]: {choice: prev[key]!.choice, locked: true}} : prev));
-  }, []);
-  const reset = useCallback(() => setState({}), []);
+    setGroups(prev => prev[group]?.[key]?.choice ? {...prev, [group]: {...prev[group], [key]: {choice: prev[group][key]!.choice, locked: true}}} : prev);
+  }, [group, setGroups]);
+  const reset = useCallback(() => setGroups(prev => ({...prev, [group]: {}})), [group, setGroups]);
   const allLocked = useCallback((keys: readonly K[]) => keys.every((k) => state[k]?.locked), [state]);
   const anyLocked = useCallback((keys: readonly K[]) => keys.some((k) => state[k]?.locked), [state]);
   return useMemo(() => ({get, choose, lock, reset, allLocked, anyLocked}), [get, choose, lock, reset, allLocked, anyLocked]);
@@ -101,18 +104,22 @@ export function Reveal({
   label = '설명 보기',
   children,
   testId,
+  sessionKey,
 }: {
   gate: boolean;
   gateMessage: string;
   label?: string;
   children: React.ReactNode;
   testId?: string;
+  sessionKey?: string;
 }) {
-  const [open, setOpen] = useState(false);
+  const [reveals, setReveals] = useLearningProgress('reveals');
+  const key = `${testId ?? label}:${sessionKey ?? ''}`;
+  const open = reveals[key] ?? false;
   if (!gate) return <p className="gate-note" data-testid={testId ? `${testId}-gate` : undefined}>{gateMessage}</p>;
   if (!open)
     return (
-      <button type="button" className="primary" data-testid={testId ? `${testId}-button` : undefined} onClick={() => setOpen(true)}>
+      <button type="button" className="primary" data-testid={testId ? `${testId}-button` : undefined} onClick={() => setReveals(prev => ({...prev, [key]: true}))}>
         {label}
       </button>
     );

@@ -1,0 +1,124 @@
+{
+  "appDesktop": [
+    {
+      "level": "error",
+      "message": "[vite] SyntaxError: The requested module '/enzyme-explorer/src/app/LearningSession.ts' does not provide an export named 'LearningModuleScope'",
+      "timestamp": "2026-10-01T01:17:40.275Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] Failed to reload /src/app/App.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)",
+      "timestamp": "2026-10-01T01:17:40.275Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] SyntaxError: The requested module '/enzyme-explorer/src/app/LearningSession.ts' does not provide an export named 'useLearningState'",
+      "timestamp": "2026-10-01T01:17:41.069Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] Failed to reload /src/modules/kinetics/KineticsLab.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)",
+      "timestamp": "2026-10-01T01:17:41.069Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] SyntaxError: The requested module '/enzyme-explorer/src/app/LearningSession.ts' does not provide an export named 'useLearningState'",
+      "timestamp": "2026-10-01T01:17:41.857Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] Failed to reload /src/modules/kinetics/InitialVelocityPanel.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)",
+      "timestamp": "2026-10-01T01:17:41.857Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] SyntaxError: The requested module '/enzyme-explorer/src/app/LearningSession.ts' does not provide an export named 'useLearningState'",
+      "timestamp": "2026-10-01T01:17:42.563Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] Failed to reload /src/modules/kinetics/MichaelisMentenPanel.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)",
+      "timestamp": "2026-10-01T01:17:42.563Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] SyntaxError: The requested module '/enzyme-explorer/src/app/LearningSession.ts' does not provide an export named 'useLearningState'",
+      "timestamp": "2026-10-01T01:17:43.308Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] Failed to reload /src/modules/reaction-energy/ReactionEnergyLab.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)",
+      "timestamp": "2026-10-01T01:17:43.308Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] SyntaxError: The requested module '/enzyme-explorer/src/app/LearningSession.ts' does not provide an export named 'useLearningProgress'",
+      "timestamp": "2026-10-01T01:19:06.300Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] Failed to reload /src/shared/components/Prediction.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)",
+      "timestamp": "2026-10-01T01:19:06.300Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] Failed to reload /src/modules/reaction-energy/ReactionEnergyLab.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)",
+      "timestamp": "2026-10-01T01:19:55.643Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] Failed to reload /src/modules/kinetics/KineticsLab.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)",
+      "timestamp": "2026-10-01T01:19:55.643Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] SyntaxError: The requested module '/enzyme-explorer/src/app/LearningSession.ts' does not provide an export named 'useLearningProgress'",
+      "timestamp": "2026-10-01T01:19:57.413Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] Failed to reload /src/modules/kinetics/KineticsLab.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)",
+      "timestamp": "2026-10-01T01:19:57.414Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] SyntaxError: The requested module '/enzyme-explorer/src/app/LearningSession.ts' does not provide an export named 'useLearningProgress'",
+      "timestamp": "2026-10-01T01:19:58.508Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    },
+    {
+      "level": "error",
+      "message": "[vite] Failed to reload /src/modules/reaction-energy/ReactionEnergyLab.tsx. This could be due to syntax errors or importing non-existent modules. (see errors above)",
+      "timestamp": "2026-10-01T01:19:58.508Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    }
+  ],
+  "appMobile": [],
+  "mobileLearning": [],
+  "existingRegulation": [],
+  "desktopHarness": [
+    {
+      "level": "error",
+      "message": "Error: Missing/enabled button: 다음 →\n    at button (http://127.0.0.1:5173/enzyme-explorer/tests/browser/session-harness.tsx?t=1790817996344:124:42)\n    at learningChecks (http://127.0.0.1:5173/enzyme-explorer/tests/browser/session-harness.tsx?t=1790817996344:229:46)\n    at async start.onclick (http://127.0.0.1:5173/enzyme-explorer/tests/browser/session-harness.tsx?t=1790817996344:305:4)",
+      "timestamp": "2026-10-01T01:28:39.129Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    }
+  ],
+  "desktopHarnessNote": "The one earlier harness error at 01:28:39 UTC was a fixed test loop that assumed autoplay had not advanced. Subsequent desktop learning and lifecycle runs passed; no app warning/error was recorded."
+}

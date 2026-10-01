@@ -1,0 +1,20 @@
+{
+  "referenceCount": "모은 측정값 (1개)",
+  "startCount": "모은 측정값 (1개)",
+  "resetCount": "모은 측정값 (0개)",
+  "reloadCount": "모은 측정값 (0개)",
+  "carbonicBefore": 1,
+  "carbonicExit": 0,
+  "carbonicRestored": {
+    "stage": "true",
+    "answers": "",
+    "canvas": 1
+  },
+  "regulationBefore": 1,
+  "regulationExit": 0,
+  "regulationRestored": {
+    "view": "true",
+    "canvas": 1,
+    "modal": 0
+  }
+}

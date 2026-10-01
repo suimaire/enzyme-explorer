@@ -1,3 +1,4 @@
+import {modelNotesHash} from '../../app/modelNotesNavigation';
 import {Caution, SourceTag} from '../../shared/components/Callout';
 
 /**
@@ -51,7 +52,7 @@ export function ChemistryPanel({unlocked}: {unlocked: boolean}) {
             효소가 없을 때 용액에서 일어나는 반응보다 가장 높은 활성화 장벽이 더 낮은 경로를 제공한 것입니다.
           </p>
           <p className="small">
-            단순화한 내용 전체는 <a href="#/model-notes">모델 및 주의사항</a>에서 볼 수 있습니다.
+            단순화한 내용 전체는 <a href={modelNotesHash('carbonic')}>모델 및 주의사항</a>에서 볼 수 있습니다.
           </p>
         </>
       )}

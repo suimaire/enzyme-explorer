@@ -1,0 +1,135 @@
+import {describe, expect, it} from 'vitest';
+import {renderToStaticMarkup} from 'react-dom/server';
+import {LearningModuleScope, LearningSessionProvider} from '../src/app/LearningSession';
+import {createLearningSession, KINETICS_PREPARATION} from '../src/app/learningSessionStore';
+import {ReactionEnergyLab} from '../src/modules/reaction-energy/ReactionEnergyLab';
+import {maxBarrierLowering, MIN_BARRIER, reactionEnergyProfile} from '../src/modules/reaction-energy/energyProfile';
+import {KineticsLab} from '../src/modules/kinetics/KineticsLab';
+import {PARAMETER_RANGES, saturationObservation} from '../src/modules/kinetics/MichaelisMentenPanel';
+
+const renderKinetics = (session: ReturnType<typeof createLearningSession>) => renderToStaticMarkup(
+  <LearningSessionProvider session={session}><LearningModuleScope module="kinetics"><KineticsLab /></LearningModuleScope></LearningSessionProvider>,
+);
+const mmSession = (km = 75, substrate = 80) => {
+  const session = createLearningSession();
+  session.set('kinetics', 'section', 'b');
+  session.set('kinetics', 'parameters', {...KINETICS_PREPARATION, km});
+  session.set('kinetics', 'substrate', substrate);
+  session.set('kinetics', 'predictions', {mm: {saturation: {choice: 'ceiling', locked: true}}});
+  return session;
+};
+
+describe('UX-002 reduction control matches the guarded model', () => {
+  it.each([[55, 30, 20], [55, -18, 35], [20, 30, 0], [20, 0, 15], [70, 30, 35]])(
+    'TS %s, product %s gives a reachable reduction maximum %s', (barrierTop, productEnergy, maximum) => {
+      expect(maxBarrierLowering(barrierTop, productEnergy)).toBe(maximum);
+      const session = createLearningSession();
+      session.set('reactionEnergy', 'barrierTop', barrierTop);
+      session.set('reactionEnergy', 'productEnergy', productEnergy);
+      session.set('reactionEnergy', 'barrierLowering', maximum);
+      session.set('reactionEnergy', 'enzyme', true);
+      const html = renderToStaticMarkup(<LearningSessionProvider session={session}>
+        <LearningModuleScope module="reactionEnergy"><ReactionEnergyLab /></LearningModuleScope>
+      </LearningSessionProvider>);
+      expect(html).toMatch(new RegExp(`min="0" max="${maximum}"[^>]*data-testid="barrier-lowering"[^>]*value="${maximum}"`));
+      expect(html).toContain(`현재 조건에서 최대 감소량: ${maximum} kJ·mol⁻¹`);
+      const input = {barrierTop, productEnergy, barrierLowering: maximum, enzyme: true};
+      const {uncatalyzed, catalyzed, deltaG} = reactionEnergyProfile(input);
+      expect(uncatalyzed.forwardBarrier - catalyzed!.forwardBarrier).toBe(maximum);
+      expect(uncatalyzed.reverseBarrier - catalyzed!.reverseBarrier).toBe(maximum);
+      expect(catalyzed!.forwardBarrier).toBeGreaterThanOrEqual(MIN_BARRIER);
+      expect(catalyzed!.reverseBarrier).toBeGreaterThanOrEqual(MIN_BARRIER);
+      expect(deltaG).toBe(productEnergy);
+      const off = reactionEnergyProfile({...input, enzyme: false});
+      expect(off.catalyzed).toBeNull();
+      expect(off.uncatalyzed).toEqual(uncatalyzed);
+      expect(off.deltaG).toBe(deltaG);
+    },
+  );
+});
+
+describe('UX-003 reachable saturation observations', () => {
+  it.each([[100, 400, 'saturation'], [150, 600, 'saturation'], [155, 600, 'range-limit'], [300, 600, 'range-limit']] as const)(
+    'Km %s at [S] %s opens the %s explanation after prediction and exploration', (km, substrate, path) => {
+      expect(PARAMETER_RANGES.substrate.max).toBe(600);
+      expect(saturationObservation(km, substrate - 5)).toBeNull();
+      expect(saturationObservation(km, substrate)).toBe(path);
+      const session = mmSession(km, substrate);
+      expect(renderKinetics(session)).toContain('data-testid="saturation-explanation-gate"');
+      session.set('kinetics', 'exploredHigh', true);
+      expect(renderKinetics(session)).toContain('data-testid="saturation-explanation-button"');
+      session.set('kinetics', 'reveals', {'saturation-explanation:': true});
+      const html = renderKinetics(session);
+      expect(html).toContain(path === 'saturation' ? 'data-testid="saturation-near-explanation"' : 'data-testid="saturation-range-explanation"');
+      expect(html).not.toContain(path === 'saturation' ? 'data-testid="saturation-range-explanation"' : 'data-testid="saturation-near-explanation"');
+      session.set('kinetics', 'predictions', {});
+      expect(renderKinetics(session)).toContain('data-testid="saturation-explanation-gate"');
+    },
+  );
+  it('calculates the high-Km ratio and speed, without calling 600 µM saturation', () => {
+    const session = mmSession(300, 600);
+    session.set('kinetics', 'exploredHigh', true);
+    session.set('kinetics', 'reveals', {'saturation-explanation:': true});
+    const html = renderKinetics(session);
+    expect(html).toContain('현재 [S] / Km = 2.0 · v₀ = 0.67 Vmax');
+    expect(html).toContain('66.7%');
+    expect(html).toContain('아직 Vmax에 충분히 가까운 포화 영역은 아닙니다.');
+    expect(html).toContain('Km이 클수록 같은 정도의');
+  });
+});
+
+describe('UX-004 one shared velocity axis with conditional rescale feedback', () => {
+  it('preserves reference headroom, expands to 330, and reprojects both curves on that axis', () => {
+    const session = mmSession(75, 600);
+    session.set('kinetics', 'baseline', {...KINETICS_PREPARATION});
+    session.set('kinetics', 'axisLock', 115);
+    const before = renderKinetics(session);
+    expect(before).toContain('data-axis-max="115.000"');
+    expect(before).not.toContain('data-testid="axis-rescale-note"');
+    session.set('kinetics', 'parameters', {...KINETICS_PREPARATION, kcat: 60});
+    const after = renderKinetics(session);
+    expect(after).toContain('data-axis-max="330.000"');
+    expect(after).toContain('data-baseline-vmax="100.000"');
+    expect(after).toContain('속도 축 자동 확장: 115 → 330 nM·s⁻¹');
+    expect(after).toContain('300.0 nM·s⁻¹');
+    expect(after).not.toContain('속도 축도 고정');
+    // Independent known values at [S]=600, on the same SSR viewport and 0–330 velocity domain.
+    const end = (id: string) => {
+      const d = after.match(new RegExp(`data-testid="${id}" d="([^"]+)"`))![1];
+      return Number(d.split('L').at(-1)!.split(',')[1]);
+    };
+    const plotHeight = 408 - 16 - 58;
+    expect(end('baseline-curve')).toBeCloseTo(16 + (1 - (100 * 600 / 675) / 330) * plotHeight, 2);
+    expect(end('mm-curve')).toBeCloseTo(16 + (1 - (300 * 600 / 675) / 330) * plotHeight, 2);
+    session.set('kinetics', 'parameters', {...KINETICS_PREPARATION, kcat: 10});
+    expect(renderKinetics(session)).not.toContain('data-testid="axis-rescale-note"');
+  });
+});
+
+describe('UX-005 measurement meaning near the controls', () => {
+  it('states model origin, no random error, and one point per condition before a run', () => {
+    const html = renderKinetics(createLearningSession());
+    expect(html).toContain('data-testid="virtual-measurement-note"');
+    expect(html).toContain('실험 원자료가 아닌 모델 계산 기반 가상 측정');
+    expect(html).toContain('무작위 측정 오차 없이');
+    expect(html).toContain('동일 조건은 1개 측정점');
+    expect(html).toContain('aria-live="polite" data-testid="measurement-status"');
+    const comparison = mmSession();
+    comparison.set('kinetics', 'assays', [{initialSubstrate: 50, initialVelocity: 40, parameters: {...KINETICS_PREPARATION}}]);
+    const mmHtml = renderKinetics(comparison);
+    expect(mmHtml).toContain('03A 가상 측정값');
+    expect(mmHtml).not.toMatch(/\bfit\b|best fit|추정된 Km|추정된 Vmax/i);
+  });
+  it('distinguishes experimental slope estimation from analytical t=0 recording, retaining long-window error teaching', () => {
+    const session = createLearningSession();
+    session.set('kinetics', 'assayRun', {substrate: 50});
+    session.set('kinetics', 'measured', true);
+    session.set('kinetics', 'predictions', {initial: {linear: {choice: 'slows', locked: true}}});
+    session.set('kinetics', 'reveals', {'progress-explanation:': true});
+    const html = renderKinetics(session);
+    expect(html).toContain('실험에서는 초기 구간의 기울기로 v₀를 추정');
+    expect(html).toContain('현재 모델의 t=0 초기 속도를');
+    expect(html).toContain('너무 긴 시간 구간으로 속도를 측정할 때 생기는 오차');
+    expect(html).toContain('40.0 nM·s⁻¹');
+  });
+});

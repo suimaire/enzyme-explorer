@@ -1,0 +1,717 @@
+{
+  "document": [
+    375,
+    375,
+    99899
+  ],
+  "items": [
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1037.537525177002,
+        "height": 19.200000762939453,
+        "left": 26.80000114440918,
+        "right": 87.91250038146973,
+        "top": 1018.3375244140624,
+        "width": 61.11249923706055,
+        "x": 26.80000114440918,
+        "y": 1018.3375244140624
+      },
+      "class": null,
+      "color": "rgb(100, 120, 133)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "12px",
+      "text": "1"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1079.137477874756,
+        "height": 41.60000228881836,
+        "left": 26.80000114440918,
+        "right": 87.91250038146973,
+        "top": 1037.5374755859375,
+        "width": 61.11249923706055,
+        "x": 26.80000114440918,
+        "y": 1037.5374755859375
+      },
+      "class": null,
+      "color": "rgb(100, 120, 133)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "수용체 / 신호전달"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1037.537525177002,
+        "height": 19.200000762939453,
+        "left": 91.9124984741211,
+        "right": 153.0374984741211,
+        "top": 1018.3375244140624,
+        "width": 61.125,
+        "x": 91.9124984741211,
+        "y": 1018.3375244140624
+      },
+      "class": null,
+      "color": "rgb(100, 120, 133)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "12px",
+      "text": "2"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1058.337476730347,
+        "height": 20.80000114440918,
+        "left": 91.9124984741211,
+        "right": 153.0374984741211,
+        "top": 1037.5374755859375,
+        "width": 61.125,
+        "x": 91.9124984741211,
+        "y": 1037.5374755859375
+      },
+      "class": null,
+      "color": "rgb(100, 120, 133)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "조절 Ser"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1037.537525177002,
+        "height": 19.200000762939453,
+        "left": 157.03750610351562,
+        "right": 218.15000534057617,
+        "top": 1018.3375244140624,
+        "width": 61.11249923706055,
+        "x": 157.03750610351562,
+        "y": 1018.3375244140624
+      },
+      "class": null,
+      "color": "rgb(100, 120, 133)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "12px",
+      "text": "3"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1079.137477874756,
+        "height": 41.60000228881836,
+        "left": 157.03750610351562,
+        "right": 218.15000534057617,
+        "top": 1037.5374755859375,
+        "width": 61.11249923706055,
+        "x": 157.03750610351562,
+        "y": 1037.5374755859375
+      },
+      "class": null,
+      "color": "rgb(100, 120, 133)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "두 촉매 활성"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1037.537525177002,
+        "height": 19.200000762939453,
+        "left": 222.15000915527344,
+        "right": 283.27500915527344,
+        "top": 1018.3375244140624,
+        "width": 61.125,
+        "x": 222.15000915527344,
+        "y": 1018.3375244140624
+      },
+      "class": null,
+      "color": "rgb(100, 120, 133)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "12px",
+      "text": "4"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1058.337476730347,
+        "height": 20.80000114440918,
+        "left": 222.15000915527344,
+        "right": 283.27500915527344,
+        "top": 1037.5374755859375,
+        "width": 61.125,
+        "x": 222.15000915527344,
+        "y": 1037.5374755859375
+      },
+      "class": null,
+      "color": "rgb(100, 120, 133)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "F-2,6-BP"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1037.537525177002,
+        "height": 19.200000762939453,
+        "left": 287.2749938964844,
+        "right": 348.3999938964844,
+        "top": 1018.3375244140624,
+        "width": 61.125,
+        "x": 287.2749938964844,
+        "y": 1018.3375244140624
+      },
+      "class": null,
+      "color": "rgb(18, 78, 113)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "12px",
+      "text": "5"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1082.337474822998,
+        "height": 44.79999923706055,
+        "left": 287.2749938964844,
+        "right": 348.3999938964844,
+        "top": 1037.5374755859375,
+        "width": 61.125,
+        "x": 287.2749938964844,
+        "y": 1037.5374755859375
+      },
+      "class": null,
+      "color": "rgb(18, 78, 113)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "14px",
+      "text": "하위 조절 방향"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": "reg-structure-source",
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "1K6M · 사람 간 PFKFB1 · X선 2.40 Å실험 구조 데이터 · 절단·변이 construct · assembly 1"
+    },
+    {
+      "background": "rgb(255, 255, 255)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": null,
+      "color": "rgb(15, 74, 110)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "전체 이량체"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": null,
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "한 사슬 보기"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": null,
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "PFK-2 도메인"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": null,
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "FBPase-2 도메인"
+    },
+    {
+      "background": "rgb(237, 244, 248)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": "reg-expand",
+      "color": "rgb(15, 74, 110)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "크게 보기"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": "reg-focus-caption",
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "16px",
+      "text": "드래그 회전 · 휠 확대 · 방향 키 / + / −고정된 실험 좌표 · Ser33과 phosphorylation 전후의 실제 atomic motion은 이 구조에서 직접 확인하지 않습니다."
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": "reg-structure-legend",
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "▰ PFK-2 · 상대적 활성 감소 ↓▰ FBPase-2 · 상대적 활성 증가 ↑"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": null,
+      "color": "rgb(23, 108, 114)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "▰ PFK-2 · 상대적 활성 감소 ↓"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": null,
+      "color": "rgb(128, 91, 42)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "▰ FBPase-2 · 상대적 활성 증가 ↑"
+    },
+    {
+      "background": "rgb(245, 249, 251)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": "reg-structure-scope",
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "이 구조에서 보이는 것 / 보이지 않는 것이 구조에서 확인✓ 한 사슬의 PFK-2 / FBPase-2 catalytic domains✓ dimer architecture · assembly 1이 구조에서 직접 확인하지 않음× N-terminal regulatory Ser의 phosphorylation× phosphorylation 전후의 실제 atomic motion실험 좌표는 고정되어 있습니다. 활성 범례와 Ser 개념도는 교육용 regulation overlay입니다."
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": "reg-structure-tools",
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "16px",
+      "text": "선택 범위 맞춤드래그 회전 · 휠 확대 · 키보드 방향 키 / + / −"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "class": "reg-picked",
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "색은 기능 영역을 구분합니다. 잔기를 누르면 세 가지 번호를 확인합니다."
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1284.1375484466553,
+        "height": 23.399999618530273,
+        "left": 84.98750305175781,
+        "right": 137.0000038146973,
+        "top": 1260.737548828125,
+        "width": 52.01250076293945,
+        "x": 84.98750305175781,
+        "y": 1260.737548828125
+      },
+      "class": null,
+      "color": "rgb(22, 94, 97)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "18px",
+      "text": "PFK-2"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1319.337574005127,
+        "height": 18.200000762939453,
+        "left": 52.66250228881836,
+        "right": 169.33750534057617,
+        "top": 1301.1375732421875,
+        "width": 116.6750030517578,
+        "x": 52.66250228881836,
+        "y": 1301.1375732421875
+      },
+      "class": null,
+      "color": "rgb(22, 94, 97)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "14px",
+      "text": "상대적 활성 감소 ↓"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1284.1375484466553,
+        "height": 23.399999618530273,
+        "left": 223.1750030517578,
+        "right": 305.2125015258789,
+        "top": 1260.737548828125,
+        "width": 82.0374984741211,
+        "x": 223.1750030517578,
+        "y": 1260.737548828125
+      },
+      "class": null,
+      "color": "rgb(121, 85, 37)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "18px",
+      "text": "FBPase-2"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1319.337574005127,
+        "height": 18.200000762939453,
+        "left": 205.8625030517578,
+        "right": 322.5375061035156,
+        "top": 1301.1375732421875,
+        "width": 116.6750030517578,
+        "x": 205.8625030517578,
+        "y": 1301.1375732421875
+      },
+      "class": null,
+      "color": "rgb(121, 85, 37)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "14px",
+      "text": "상대적 활성 증가 ↑"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1349.7375011444092,
+        "height": 23.80000114440918,
+        "left": 45.400001525878906,
+        "right": 329.7999954223633,
+        "top": 1325.9375,
+        "width": 284.3999938964844,
+        "x": 45.400001525878906,
+        "y": 1325.9375
+      },
+      "class": "reg-domain-caption",
+      "color": "rgb(82, 101, 112)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "상대적 활성 · 두 도메인은 계속 함께 존재"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1412.9375267028809,
+        "height": 51.60000228881836,
+        "left": 30.80000114440918,
+        "right": 344.4000072479248,
+        "top": 1361.3375244140625,
+        "width": 313.6000061035156,
+        "x": 30.80000114440918,
+        "y": 1361.3375244140625
+      },
+      "class": "reg-reactions",
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "PFK-2F6P + ATP → F-2,6-BP + ADPFBPase-2F6P + Pi ← F-2,6-BP + H₂O"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1387.1375255584717,
+        "height": 20.80000114440918,
+        "left": 129.78750610351562,
+        "right": 304.4125061035156,
+        "top": 1366.3375244140625,
+        "width": 174.625,
+        "x": 129.78750610351562,
+        "y": 1366.3375244140625
+      },
+      "class": null,
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "F6P + ATP → F-2,6-BP + ADP"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1407.937574386597,
+        "height": 20.80000114440918,
+        "left": 138.5625,
+        "right": 299.875,
+        "top": 1387.1375732421875,
+        "width": 161.3125,
+        "x": 138.5625,
+        "y": 1387.1375732421875
+      },
+      "class": null,
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "F6P + Pi ← F-2,6-BP + H₂O"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1460.0375003814695,
+        "height": 22.100000381469727,
+        "left": 222.25,
+        "right": 328.5999984741211,
+        "top": 1437.9375,
+        "width": 106.3499984741211,
+        "x": 222.25,
+        "y": 1437.9375
+      },
+      "class": null,
+      "color": "rgb(31, 42, 49)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "17px",
+      "text": "낮음"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1547.9375267028809,
+        "height": 41.60000228881836,
+        "left": 30.80000114440918,
+        "right": 344.4000072479248,
+        "top": 1506.3375244140625,
+        "width": 313.6000061035156,
+        "x": 30.80000114440918,
+        "y": 1506.3375244140625
+      },
+      "class": "reg-legend",
+      "color": "rgb(94, 115, 127)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "실선 → 촉매 반응 · 점선 ⇢ 활성화 조절 · 점선 ┤ 억제 조절"
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 1658.737548828125,
+        "height": 42,
+        "left": 26.80000114440918,
+        "right": 348.4000072479248,
+        "top": 1616.737548828125,
+        "width": 321.6000061035156,
+        "x": 26.80000114440918,
+        "y": 1616.737548828125
+      },
+      "class": "reg-narration",
+      "color": "rgb(50, 86, 109)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13px",
+      "text": "5/5 · PFK-1 활성화 자극 감소 ↓; FBPase-1 억제 완화. 이 조절축의 방향을 오른쪽에서 확인하세요."
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 2223.6875495910645,
+        "height": 52.20000076293945,
+        "left": 26.80000114440918,
+        "right": 348.4000072479248,
+        "top": 2171.487548828125,
+        "width": 321.6000061035156,
+        "x": 26.80000114440918,
+        "y": 2171.487548828125
+      },
+      "class": "reg-scope",
+      "color": "rgb(82, 105, 119)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "12px",
+      "text": "다른 조절 요인을 고정했을 때 이 조절축이 유도하는 방향입니다. 실제 대사속도나 혈당을 계산하지 않습니다."
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 2337.0875492095947,
+        "height": 21.600000381469727,
+        "left": 14,
+        "right": 316.57501220703125,
+        "top": 2315.487548828125,
+        "width": 302.57501220703125,
+        "x": 14,
+        "y": 2315.487548828125
+      },
+      "class": "gate-note",
+      "color": "rgb(138, 89, 8)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13.5px",
+      "text": "두 상황을 관찰한 뒤 비교 해설을 열 수 있습니다."
+    },
+    {
+      "background": "rgba(0, 0, 0, 0)",
+      "box": {
+        "bottom": 2395.2876472473145,
+        "height": 43.20000076293945,
+        "left": 14,
+        "right": 361.2000122070313,
+        "top": 2352.087646484375,
+        "width": 347.20001220703125,
+        "x": 14,
+        "y": 2352.087646484375
+      },
+      "class": "gate-note",
+      "color": "rgb(138, 89, 8)",
+      "fill": "rgb(0, 0, 0)",
+      "hidden": false,
+      "size": "13.5px",
+      "text": "두 상황의 5단계까지 관찰하면 인산화와 두 촉매 활성의 심화 설명을 열 수 있습니다."
+    }
+  ],
+  "route": "#/regulation",
+  "viewport": [
+    390,
+    844
+  ]
+}

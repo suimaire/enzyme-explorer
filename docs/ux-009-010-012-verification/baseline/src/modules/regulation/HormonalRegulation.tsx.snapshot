@@ -1,0 +1,114 @@
+import {lazy, Suspense, useCallback, useEffect, useState} from 'react';
+import {useLearningState, useResetLearningModule} from '../../app/LearningSession';
+import {ModuleHeader} from '../../shared/components/ModuleHeader';
+import {PredictQuestion, Reveal, usePredictions} from '../../shared/components/Prediction';
+import {Segmented} from '../../shared/components/Segmented';
+import {InterventionFlow, Pathway, PhosphateTrace, Results, SugarComparison} from './Diagrams';
+import {IsoformCaution, KineticExplanation} from './ScientificContext';
+import {StructureResults} from './StructureResults';
+import {deriveRegulation, HORMONE_DRIVEN, regulationReducer, SCENARIO_LABEL, stepDescription, STEPS, type Action, type Scenario, type View} from './model';
+import './regulation.css';
+
+const ProteinStructure = lazy(() => import('./ProteinStructure').then(m => ({default: m.ProteinStructure})));
+const choices = [{id: 'insulin', label: '인슐린 우세'}, {id: 'glucagon', label: '글루카곤 우세'}, {id: 'unsure', label: '아직 모르겠음'}];
+const views: readonly (readonly [View, string])[] = [['pathway', '조절 경로'], ['structure', '실제 3D 구조'], ['intervention', '중간 신호 직접 조작']];
+
+export function HormonalRegulation() {
+  const predictions = usePredictions<'f26'>();
+  const [state, setState] = useLearningState('regulation', 'lab');
+  const dispatch = useCallback((action: Action) => setState(previous => regulationReducer(previous, action)), [setState]);
+  const resetSession = useResetLearningModule('regulation');
+  const [comparison, setComparison] = useState(false);
+  const [trace, setTrace] = useState(false);
+  const [structureVisited, setStructureVisited] = useState(state.view === 'structure');
+  const [epoch, setEpoch] = useState(0);
+  const [reduced, setReduced] = useState(() => typeof window !== 'undefined' && typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  const locked = predictions.get('f26').locked;
+  const {scenario, narration, control, view} = state;
+  const {step, status, run} = narration;
+  const result = scenario ? deriveRegulation(scenario, control) : null;
+  const clamped = control.mode === 'clamped';
+  const compared = state.observed.length === 2;
+
+  useEffect(() => {
+    if (typeof window.matchMedia !== 'function') return;
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const change = () => {setReduced(media.matches); dispatch({type: 'pause'});};
+    media.addEventListener('change', change);
+    return () => media.removeEventListener('change', change);
+  }, [dispatch]);
+  useEffect(() => {
+    if (status !== 'playing') return;
+    const timer = window.setTimeout(() => dispatch({type: 'tick', run, step}), 950);
+    return () => window.clearTimeout(timer);
+  }, [status, run, step, dispatch]);
+  useEffect(() => {
+    const hide = () => {if (document.hidden) dispatch({type: 'pause'});};
+    document.addEventListener('visibilitychange', hide);
+    return () => document.removeEventListener('visibilitychange', hide);
+  }, [dispatch]);
+  // Keep the current learning step, but leave no playback running after route exit.
+  useEffect(() => () => dispatch({type: 'pause'}), [dispatch]);
+  function reset() {dispatch({type: 'reset'}); resetSession(); predictions.reset(); setComparison(false); setTrace(false); setEpoch(n => n + 1);}
+  function signal(s: Scenario) {if (locked) {dispatch({type: 'signal', scenario: s, reducedMotion: reduced}); setTrace(false);}}
+  return <main className="module regulation-module" data-testid="module-regulation" data-scenario={scenario ?? 'unobserved'} data-step={step}>
+    <ModuleHeader id="regulation" onReset={reset} tag={<div className="reg-badges"><span className="badge">간 PFKFB1 · L형</span><span className="badge">정성적 조절 모델</span></div>} />
+    <div className="reg-status-line"><span>한 단백질, 두 촉매 활성. 신호를 보내고 조절의 연결을 따라가세요.</span>{clamped && <strong className="reg-clamp-badge">가상 개입: F-2,6-BP 고정</strong>}</div>
+    <div className={`reg-workspace${view === 'structure' ? ' reg-workspace-structure' : ''}`}>
+      <section className="reg-input reg-panel" aria-labelledby="reg-input-heading">
+        <h3 id="reg-input-heading">① 신호 보내기</h3>
+        {locked ? <div className="reg-prediction-locked">✓ 예측 확정: {choices.find(c => c.id === predictions.get('f26').choice)?.label}<small>이제 두 신호를 자유롭게 비교하세요.</small></div> : <PredictQuestion predictions={predictions} name="f26" question="두 상황 중 F-2,6-BP가 상대적으로 높아지는 쪽은?" choices={choices} testId="reg-prediction" />}
+        <div className="reg-hormones">{(['insulinDominant', 'glucagonDominant'] as const).map(s => <button type="button" key={s} disabled={!locked} className={`reg-hormone ${s}`} aria-pressed={scenario === s} onClick={() => signal(s)} data-testid={`signal-${s}`}><span>{scenario === s ? '✓ 선택한 신호' : '신호 선택'}</span><strong>{SCENARIO_LABEL[s]}<br/>신호 보내기</strong><small>{s === 'insulinDominant' ? '식후 상황을 생각해 보세요' : '공복 상황을 생각해 보세요'}</small></button>)}</div>
+        <p className="small">실제 생리에서는 두 호르몬이 함께 존재합니다. 여기서는 우세한 조절 신호를 비교합니다.</p>
+        <div className="reg-observed" aria-label="관찰 완료한 상황">{(['insulinDominant', 'glucagonDominant'] as const).map(s => <span key={s}>{state.observed.includes(s) ? '✓' : '○'} {SCENARIO_LABEL[s]} 관찰</span>)}</div>
+      </section>
+      <section className="reg-center reg-panel" aria-labelledby="reg-center-heading">
+        <h3 id="reg-center-heading">② 무엇이 바뀌는가?</h3>
+        <Segmented label="관찰 보기" value={view} options={views} onChange={v => {if (v === 'structure') setStructureVisited(true); dispatch({type: 'view', view: v}); setTrace(false);}} />
+        <ol className="reg-steps" aria-label="설명 단계">{STEPS.map((s, i) => <li key={s} aria-current={step === i + 1 ? 'step' : undefined} data-reached={step >= i + 1}><span>{i + 1}</span><small>{s}</small></li>)}</ol>
+        <div className="reg-observation">
+          {structureVisited && <div hidden={view !== 'structure'}><Suspense fallback={<p>로컬 실험 구조를 불러오는 중…</p>}><ProteinStructure result={result} step={step} /></Suspense></div>}
+          {view === 'structure' ? <StructureResults result={result} step={step} clamped={clamped} onPathway={() => dispatch({type: 'view', view: 'pathway'})} /> : view === 'intervention' ? <div className="reg-intervention">
+            <h4>F-2,6-BP만 바꾸면?</h4>
+            {!compared ? <div className="reg-intervention-locked"><strong>두 호르몬의 5단계까지 먼저 관찰하세요.</strong><p>비교 후 낮음/높음 고정이 열립니다.</p><button type="button" onClick={() => dispatch({type: 'view', view: 'pathway'})}>조절 경로로 돌아가기</button></div> : <>
+              <p>인과 관계를 탐구하는 모델 조작입니다. 실제 약물 처치나 실험 protocol이 아닙니다.</p>
+              <div className="reg-inline-buttons" role="group" aria-label="F-2,6-BP 가상 개입">
+                <button type="button" disabled={step < 5} aria-pressed={clamped && control.level === 'low'} onClick={() => dispatch({type: 'control', control: {mode: 'clamped', level: 'low'}})}>낮게 고정</button>
+                <button type="button" disabled={step < 5} aria-pressed={clamped && control.level === 'high'} onClick={() => dispatch({type: 'control', control: {mode: 'clamped', level: 'high'}})}>높게 고정</button>
+                <button type="button" disabled={step < 5} aria-pressed={!clamped} onClick={() => dispatch({type: 'control', control: HORMONE_DRIVEN})}>호르몬 조절로 복귀</button>
+              </div>
+              {result && <InterventionFlow result={result} step={step} clamped={clamped} />}
+              <Reveal key={`${epoch}-${scenario}-${clamped ? control.level : 'auto'}`} sessionKey={`${scenario}-${clamped ? control.level : 'auto'}`} gate={state.interventionObserved && step === 5} gateMessage="낮음 또는 높음으로 고정하고 결과를 관찰한 뒤 해설을 열 수 있습니다." label="가상 개입 해설 보기" testId="reg-intervention-explanation"><p>고정한 F-2,6-BP가 하위 효소의 조절에 적용됩니다. 상위 호르몬 신호와 PFKFB1 상태는 유지됩니다. 이 결과가 실제 간에서 글루카곤의 모든 작용을 취소한다는 뜻은 아닙니다.</p></Reveal>
+            </>}
+          </div> : <Pathway result={result} step={step} clamped={clamped} onCompare={() => {dispatch({type: 'pause'}); setComparison(true);}} />}
+        </div>
+        <div className="reg-playback" role="group" aria-label="설명 재생 조작">
+          <button type="button" disabled={!scenario || step <= 1} onClick={() => dispatch({type: 'previous'})} aria-label="이전 단계">← 이전</button>
+          <button type="button" disabled={!scenario} onClick={() => dispatch({type: status === 'playing' ? 'pause' : 'play'})}>{status === 'playing' ? 'Ⅱ 일시정지' : '▶ 재생'}</button>
+          <button type="button" disabled={!scenario || step >= 5} onClick={() => dispatch({type: 'next'})} aria-label="다음 단계">다음 →</button>
+          <button type="button" disabled={!scenario} onClick={() => dispatch({type: 'restart'})}>처음부터</button>
+        </div>
+        <p className="reg-narration" aria-live="polite" aria-atomic="true">{step > 0 && <b>{step}/5 · </b>}{stepDescription(result, step)}</p>
+        <p className="reg-timing">교육용 설명 재생 · 실제 반응 시간이 아닙니다.{reduced ? ' 동작 줄이기: 신호 결과는 즉시 전환하며 이전/다음 단계도 사용할 수 있습니다.' : ''}</p>
+      </section>
+      {view !== 'structure' && <Results result={result} step={step} clamped={clamped} />}
+    </div>
+    <div className="reg-extras">
+      <button type="button" disabled={step < 3} aria-expanded={trace} onClick={() => {dispatch({type: 'pause'}); setTrace(!trace);}}>인산기 이동 확인 {trace ? '−' : '+'}</button>
+      <Reveal key={epoch} gate={locked && compared} gateMessage="두 상황을 관찰한 뒤 비교 해설을 열 수 있습니다." label="호르몬 비교 해설 보기" testId="reg-explanation"><p>간 PFKFB1 L형에서는 인슐린 우세의 순탈인산화 상태가 F-2,6-BP 증가 방향으로, 글루카곤–PKA의 인산화 상태가 감소 방향으로 연결됩니다. 인산화의 효과는 도메인마다 다르며 다른 PFKFB isoform에 일반화할 수 없습니다.</p></Reveal>
+    </div>
+    {trace && step >= 3 && <PhosphateTrace />}
+    {locked && compared ? <details key={`kinetics-${epoch}`} className="reg-details reg-kinetic-details" data-testid="reg-kinetic-details"><summary>인산화가 두 활성을 어떻게 바꾸는지 보기</summary><KineticExplanation /></details> : <p className="gate-note">두 상황의 5단계까지 관찰하면 인산화와 두 촉매 활성의 심화 설명을 열 수 있습니다.</p>}
+    <IsoformCaution key={`isoform-${epoch}`} />
+    <details className="reg-details"><summary>자료·잔기 번호·모델의 한계</summary>
+      <p>이 모듈은 간 PFKFB1 L형의 급성 조절축을 단순화합니다. 실제 농도, 대사 flux, 혈당, 분자동역학을 계산하지 않습니다.</p>
+      <p>사람 P16118-1의 조절 잔기는 Ser33입니다. UniProt 주석은 <b>by similarity · ECO:0000250, P07953</b> 근거를 갖습니다. 랫드 간 문헌의 관례적 Ser32와 기준 서열이 다릅니다.</p>
+      <p>1K6M은 사람 간 효소의 절단·변이 construct입니다. canonical 40–471만 포함하므로 N-terminal regulatory Ser33은 이 실험 구조에 직접 포함되어 있지 않습니다. 따라서 조절 Ser의 인산화 상태는 독립적인 2D 개념도로 표시합니다. construct의 432개 잔기에는 모두 좌표가 있습니다. Ser33을 construct 내의 unresolved residue로 설명하지 않습니다.</p>
+      <p>등록 변이: W68F, W302F, W323F, D410E (사람 canonical 번호). 현재 기준 서열과의 추가 불일치 H305R (auth 304 / label 266)은 등록 변이 목록에 없습니다. <b>원인 미확인</b>이며 서열이나 좌표를 수정하지 않습니다. 1K6M은 도메인 구조를 관찰하는 자료로 사용합니다.</p>
+      <p><b>인슐린 설명의 근거 수준:</b> 흡수 후 공복 상태의 마취된 랫드 간 연구에서 인슐린에 따른 PFK-2 상대적 활성 증가와 FBPase-2 상대적 활성 감소가 관찰되었습니다. 효소의 phosphorylation state 감소와 하나 이상의 phosphatase 관여를 지지하는 <b>간접 근거</b>입니다. 따라서 기본 화면은 “인슐린 우세 상태에서 순탈인산화 쪽으로” 요약하며, 특정 phosphatase나 Akt를 유일한 필수 경로로 확정하지 않습니다. <a href="https://pubmed.ncbi.nlm.nih.gov/2158992/" target="_blank" rel="noreferrer">PMID 2158992 · 원논문 초록 대조</a>.</p>
+      <p>도메인 색은 UniProt 기능 영역 PFK-2 2–250 / FBPase-2 251–471에 근거합니다. biological assembly 1은 A와 대칭 변환된 A로 구성됩니다. PO4 ligand는 조절 Ser의 인산기가 아니며 이 보기에서는 ligand를 생략했습니다.</p>
+      <ul><li><a href="https://www.uniprot.org/uniprotkb/P16118/entry" target="_blank" rel="noreferrer">UniProt P16118 · 서열·조절 주석·기능 영역</a></li><li><a href="https://www.rcsb.org/structure/1K6M" target="_blank" rel="noreferrer">RCSB 1K6M · X선 2.40 Å · assembly</a> · <a href="https://doi.org/10.1074/jbc.M209105200" target="_blank" rel="noreferrer">구조 원논문</a> (초록 확인, 전문 미확인)</li>{[['6323408','인산화형/탈인산화형의 성질'],['1339450','랫드 Ser32 변이 연구'],['6296099','인슐린과 간 F-2,6-BP'],['6455662','PFK-1 활성화'],['6260770','FBPase-1 억제']].map(([id, title]) => <li key={id}><a href={`https://pubmed.ncbi.nlm.nih.gov/${id}/`} target="_blank" rel="noreferrer">{title} · PMID {id}</a> (원논문 초록 대조)</li>)}</ul>
+    </details>
+    {comparison && <SugarComparison onClose={() => setComparison(false)} />}
+  </main>;
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "viewport": [
+      1600,
+      900
+    ],
+    "fullRecords": 426,
+    "fullResult": "ALL READABILITY CHECKS PASSED",
+    "graphRecords": 363,
+    "graphResult": "ALL GRAPH CHECKS PASSED",
+    "collisions": 0
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "fullRecords": 426,
+    "fullResult": "ALL READABILITY CHECKS PASSED",
+    "graphRecords": 363,
+    "graphResult": "ALL GRAPH CHECKS PASSED",
+    "collisions": 0
+  },
+  {
+    "viewport": [
+      1280,
+      800
+    ],
+    "fullRecords": 426,
+    "fullResult": "ALL READABILITY CHECKS PASSED",
+    "graphRecords": 363,
+    "graphResult": "ALL GRAPH CHECKS PASSED",
+    "collisions": 0
+  },
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "fullRecords": 426,
+    "fullResult": "ALL READABILITY CHECKS PASSED",
+    "graphRecords": 363,
+    "graphResult": "ALL GRAPH CHECKS PASSED",
+    "collisions": 0
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "fullRecords": 426,
+    "fullResult": "ALL READABILITY CHECKS PASSED",
+    "graphRecords": 363,
+    "graphResult": "ALL GRAPH CHECKS PASSED",
+    "collisions": 0
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "fullRecords": 346,
+    "fullResult": "ALL READABILITY CHECKS PASSED",
+    "graphRecords": 282,
+    "graphResult": "ALL GRAPH CHECKS PASSED",
+    "collisions": 0
+  }
+]

@@ -1,0 +1,434 @@
+[
+  {
+    "path": "src\\main.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\styles.css",
+    "unchanged": false
+  },
+  {
+    "path": "src\\vite-env.d.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\app\\App.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\app\\LearningSession.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\app\\learningSessionStore.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\app\\ModuleNavigation.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\app\\modules.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\app\\useHashModule.ts",
+    "unchanged": false
+  },
+  {
+    "path": "src\\data\\regulation\\1K6M-assembly1-protein.pdb",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\1k6m-mapping.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\1K6M.cif",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\1K6M.pdb",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\P16118.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\P47871.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-10749675.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-1339450.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-15170386.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-2158992.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-2846551.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-32193322.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-6260770.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-6296099.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-6323408.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-6455662.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-7549867.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-8390983.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\PMID-9211863.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\provenance.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\regulation\\structure-paper.json",
+    "unchanged": true
+  },
+  {
+    "path": "src\\data\\structures\\2CBA.pdb",
+    "unchanged": true
+  },
+  {
+    "path": "src\\kinetics\\michaelisMenten.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\kinetics\\progressCurve.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\kinetics\\types.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\carbonic-anhydrase\\activeSite.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\carbonic-anhydrase\\CarbonicAnhydraseLab.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\modules\\carbonic-anhydrase\\ChemistryPanel.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\modules\\carbonic-anhydrase\\ReadingGuide.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\carbonic-anhydrase\\ResidueFinder.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\carbonic-anhydrase\\stageView.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\carbonic-anhydrase\\structureSource.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\carbonic-anhydrase\\StructureViewer.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\kinetics\\InitialVelocityPanel.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\modules\\kinetics\\KineticsLab.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\modules\\kinetics\\MechanisticCaveatPanel.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\modules\\kinetics\\MichaelisMentenPanel.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\kinetics\\MichaelisMentenPlot.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\kinetics\\ProgressCurvePlot.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\notes\\ModelNotes.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\modules\\placeholder\\ComingSoon.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\modules\\reaction-energy\\EnergyDiagram.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\reaction-energy\\energyProfile.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\reaction-energy\\ReactionEnergyLab.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\modules\\regulation\\Diagrams.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\modules\\regulation\\HormonalRegulation.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\modules\\regulation\\model.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\regulation\\ProteinStructure.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\regulation\\regulation.css",
+    "unchanged": false
+  },
+  {
+    "path": "src\\modules\\regulation\\ScientificContext.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\regulation\\StructureFrame.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\regulation\\StructureResults.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\regulation\\structureSource.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\modules\\start\\StartPage.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\shared\\components\\Callout.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\shared\\components\\Formula.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\shared\\components\\ModuleHeader.tsx",
+    "unchanged": false
+  },
+  {
+    "path": "src\\shared\\components\\Prediction.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\shared\\components\\SectionJumpButton.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\shared\\components\\Segmented.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\shared\\components\\Slider.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "src\\shared\\components\\useMeasuredWidth.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\shared\\math\\format.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\viewer\\measurements\\distance.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\viewer\\pdb\\atomNames.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\viewer\\pdb\\bonds.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\viewer\\pdb\\elements.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\viewer\\pdb\\parsePdb.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\viewer\\picking\\picking.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\viewer\\rendering\\fitSelection.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\viewer\\rendering\\ribbon.ts",
+    "unchanged": true
+  },
+  {
+    "path": "src\\viewer\\rendering\\StructureScene.ts",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\equations.test.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\language.test.ts",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\learningSession.test.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\michaelisMenten.test.ts",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\mobileExperiment.test.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\phaseA2.test.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\progressCurve.test.ts",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\reactionEnergy.test.ts",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\readability.test.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\regulation.test.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\stageView.test.ts",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\structure.test.ts",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\structureLifecycle.test.ts",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\uiLayout.test.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\browser\\mobile-experiment-harness.html",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\browser\\mobile-experiment-harness.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\browser\\phase-a2-harness.html",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\browser\\phase-a2-harness.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\browser\\readability-harness.html",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\browser\\readability-harness.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\browser\\regulation-harness.html",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\browser\\regulation-harness.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\browser\\session-harness.html",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\browser\\session-harness.tsx",
+    "unchanged": true
+  },
+  {
+    "path": "tests\\browser\\ui-layout-checks.ts",
+    "unchanged": true
+  },
+  {
+    "path": "package.json",
+    "unchanged": true
+  },
+  {
+    "path": "package-lock.json",
+    "unchanged": true
+  }
+]

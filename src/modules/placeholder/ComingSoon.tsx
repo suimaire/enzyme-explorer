@@ -7,7 +7,7 @@ import type {ModuleId} from '../../app/modules';
  */
 export function ComingSoon({id}: {id: ModuleId}) {
   return (
-    <main className="module" data-testid={`module-${id}`}>
+    <div className="module" data-testid={`module-${id}`}>
       <ModuleHeader id={id} tag={<span className="badge">Enzyme II에서 다룰 예정</span>} />
       <div className="prose-panel">
         <p>이 모듈은 다음 차시인 Enzyme II — 효소 저해와 조절에서 다룰 내용이며, 아직 준비 중입니다.</p>
@@ -16,6 +16,6 @@ export function ComingSoon({id}: {id: ModuleId}) {
           달라지는지 이어서 탐구하게 됩니다.
         </p>
       </div>
-    </main>
+    </div>
   );
 }

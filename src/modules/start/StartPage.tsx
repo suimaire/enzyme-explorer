@@ -16,7 +16,7 @@ const CARDS: {id: ModuleId; number: string; eyebrow: string; english: string; qu
 export function StartPage({onNavigate}: {onNavigate: (id: ModuleId) => void}) {
   const planned = MODULES.filter((m) => m.status === 'planned');
   return (
-    <main className="module start-page" data-testid="module-start">
+    <div className="module start-page" data-testid="module-start">
       <section className="start-question">
         <p className="eyebrow">Basic Biochemistry ET · 7차시 · Enzyme I</p>
         <h2>단백질은 어떻게 화학 반응을 더 빠르게 만들 수 있을까?</h2>
@@ -73,6 +73,6 @@ export function StartPage({onNavigate}: {onNavigate: (id: ModuleId) => void}) {
           ))}
         </ul>
       </section>
-    </main>
+    </div>
   );
 }

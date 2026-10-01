@@ -1,11 +1,13 @@
-import {lazy, Suspense, useEffect, useReducer, useState} from 'react';
+import {lazy, Suspense, useCallback, useEffect, useRef, useState} from 'react';
+import {modelNotesHash} from '../../app/modelNotesNavigation';
+import {useLearningState, useResetLearningModule} from '../../app/LearningSession';
 import {ModuleHeader} from '../../shared/components/ModuleHeader';
 import {PredictQuestion, Reveal, usePredictions} from '../../shared/components/Prediction';
 import {Segmented} from '../../shared/components/Segmented';
 import {InterventionFlow, Pathway, PhosphateTrace, Results, SugarComparison} from './Diagrams';
 import {IsoformCaution, KineticExplanation} from './ScientificContext';
 import {StructureResults} from './StructureResults';
-import {deriveRegulation, HORMONE_DRIVEN, INITIAL_STATE, regulationReducer, SCENARIO_LABEL, stepDescription, STEPS, type Scenario, type View} from './model';
+import {deriveRegulation, HORMONE_DRIVEN, regulationReducer, SCENARIO_LABEL, stepDescription, STEPS, type Action, type Scenario, type View} from './model';
 import './regulation.css';
 
 const ProteinStructure = lazy(() => import('./ProteinStructure').then(m => ({default: m.ProteinStructure})));
@@ -14,10 +16,20 @@ const views: readonly (readonly [View, string])[] = [['pathway', '조절 경로'
 
 export function HormonalRegulation() {
   const predictions = usePredictions<'f26'>();
-  const [state, dispatch] = useReducer(regulationReducer, INITIAL_STATE);
+  const [state, setState] = useLearningState('regulation', 'lab');
+  const dispatch = useCallback((action: Action) => setState(previous => regulationReducer(previous, action)), [setState]);
+  const resetSession = useResetLearningModule('regulation');
   const [comparison, setComparison] = useState(false);
+  const comparisonTrigger = useRef<HTMLButtonElement>(null);
+  const closeComparison = useCallback(() => setComparison(false), []);
+  const returnComparisonFocus = useCallback(() => {
+    const trigger = comparisonTrigger.current;
+    const target = trigger?.isConnected && !trigger.disabled && !trigger.closest('[hidden]')
+      ? trigger : document.getElementById('reg-center-heading') ?? document.getElementById('main-content');
+    target?.focus({preventScroll: true});
+  }, []);
   const [trace, setTrace] = useState(false);
-  const [structureVisited, setStructureVisited] = useState(false);
+  const [structureVisited, setStructureVisited] = useState(state.view === 'structure');
   const [epoch, setEpoch] = useState(0);
   const [reduced, setReduced] = useState(() => typeof window !== 'undefined' && typeof window.matchMedia === 'function' && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
   const locked = predictions.get('f26').locked;
@@ -33,20 +45,22 @@ export function HormonalRegulation() {
     const change = () => {setReduced(media.matches); dispatch({type: 'pause'});};
     media.addEventListener('change', change);
     return () => media.removeEventListener('change', change);
-  }, []);
+  }, [dispatch]);
   useEffect(() => {
     if (status !== 'playing') return;
     const timer = window.setTimeout(() => dispatch({type: 'tick', run, step}), 950);
     return () => window.clearTimeout(timer);
-  }, [status, run, step]);
+  }, [status, run, step, dispatch]);
   useEffect(() => {
     const hide = () => {if (document.hidden) dispatch({type: 'pause'});};
     document.addEventListener('visibilitychange', hide);
     return () => document.removeEventListener('visibilitychange', hide);
-  }, []);
-  function reset() {dispatch({type: 'reset'}); predictions.reset(); setComparison(false); setTrace(false); setEpoch(n => n + 1);}
+  }, [dispatch]);
+  // Keep the current learning step, but leave no playback running after route exit.
+  useEffect(() => () => dispatch({type: 'pause'}), [dispatch]);
+  function reset() {dispatch({type: 'reset'}); resetSession(); predictions.reset(); setComparison(false); setTrace(false); setEpoch(n => n + 1);}
   function signal(s: Scenario) {if (locked) {dispatch({type: 'signal', scenario: s, reducedMotion: reduced}); setTrace(false);}}
-  return <main className="module regulation-module" data-testid="module-regulation" data-scenario={scenario ?? 'unobserved'} data-step={step}>
+  return <div className="module regulation-module" data-testid="module-regulation" data-scenario={scenario ?? 'unobserved'} data-step={step}>
     <ModuleHeader id="regulation" onReset={reset} tag={<div className="reg-badges"><span className="badge">간 PFKFB1 · L형</span><span className="badge">정성적 조절 모델</span></div>} />
     <div className="reg-status-line"><span>한 단백질, 두 촉매 활성. 신호를 보내고 조절의 연결을 따라가세요.</span>{clamped && <strong className="reg-clamp-badge">가상 개입: F-2,6-BP 고정</strong>}</div>
     <div className={`reg-workspace${view === 'structure' ? ' reg-workspace-structure' : ''}`}>
@@ -58,7 +72,7 @@ export function HormonalRegulation() {
         <div className="reg-observed" aria-label="관찰 완료한 상황">{(['insulinDominant', 'glucagonDominant'] as const).map(s => <span key={s}>{state.observed.includes(s) ? '✓' : '○'} {SCENARIO_LABEL[s]} 관찰</span>)}</div>
       </section>
       <section className="reg-center reg-panel" aria-labelledby="reg-center-heading">
-        <h3 id="reg-center-heading">② 무엇이 바뀌는가?</h3>
+        <h3 id="reg-center-heading" tabIndex={-1}>② 무엇이 바뀌는가?</h3>
         <Segmented label="관찰 보기" value={view} options={views} onChange={v => {if (v === 'structure') setStructureVisited(true); dispatch({type: 'view', view: v}); setTrace(false);}} />
         <ol className="reg-steps" aria-label="설명 단계">{STEPS.map((s, i) => <li key={s} aria-current={step === i + 1 ? 'step' : undefined} data-reached={step >= i + 1}><span>{i + 1}</span><small>{s}</small></li>)}</ol>
         <div className="reg-observation">
@@ -73,9 +87,9 @@ export function HormonalRegulation() {
                 <button type="button" disabled={step < 5} aria-pressed={!clamped} onClick={() => dispatch({type: 'control', control: HORMONE_DRIVEN})}>호르몬 조절로 복귀</button>
               </div>
               {result && <InterventionFlow result={result} step={step} clamped={clamped} />}
-              <Reveal key={`${epoch}-${scenario}-${clamped ? control.level : 'auto'}`} gate={state.interventionObserved && step === 5} gateMessage="낮음 또는 높음으로 고정하고 결과를 관찰한 뒤 해설을 열 수 있습니다." label="가상 개입 해설 보기" testId="reg-intervention-explanation"><p>고정한 F-2,6-BP가 하위 효소의 조절에 적용됩니다. 상위 호르몬 신호와 PFKFB1 상태는 유지됩니다. 이 결과가 실제 간에서 글루카곤의 모든 작용을 취소한다는 뜻은 아닙니다.</p></Reveal>
+              <Reveal key={`${epoch}-${scenario}-${clamped ? control.level : 'auto'}`} sessionKey={`${scenario}-${clamped ? control.level : 'auto'}`} gate={state.interventionObserved && step === 5} gateMessage="낮음 또는 높음으로 고정하고 결과를 관찰한 뒤 해설을 열 수 있습니다." label="가상 개입 해설 보기" testId="reg-intervention-explanation"><p>고정한 F-2,6-BP가 하위 효소의 조절에 적용됩니다. 상위 호르몬 신호와 PFKFB1 상태는 유지됩니다. 이 결과가 실제 간에서 글루카곤의 모든 작용을 취소한다는 뜻은 아닙니다.</p></Reveal>
             </>}
-          </div> : <Pathway result={result} step={step} clamped={clamped} onCompare={() => {dispatch({type: 'pause'}); setComparison(true);}} />}
+          </div> : <Pathway result={result} step={step} clamped={clamped} onCompare={trigger => {comparisonTrigger.current = trigger; dispatch({type: 'pause'}); setComparison(true);}} />}
         </div>
         <div className="reg-playback" role="group" aria-label="설명 재생 조작">
           <button type="button" disabled={!scenario || step <= 1} onClick={() => dispatch({type: 'previous'})} aria-label="이전 단계">← 이전</button>
@@ -104,6 +118,7 @@ export function HormonalRegulation() {
       <p>도메인 색은 UniProt 기능 영역 PFK-2 2–250 / FBPase-2 251–471에 근거합니다. biological assembly 1은 A와 대칭 변환된 A로 구성됩니다. PO4 ligand는 조절 Ser의 인산기가 아니며 이 보기에서는 ligand를 생략했습니다.</p>
       <ul><li><a href="https://www.uniprot.org/uniprotkb/P16118/entry" target="_blank" rel="noreferrer">UniProt P16118 · 서열·조절 주석·기능 영역</a></li><li><a href="https://www.rcsb.org/structure/1K6M" target="_blank" rel="noreferrer">RCSB 1K6M · X선 2.40 Å · assembly</a> · <a href="https://doi.org/10.1074/jbc.M209105200" target="_blank" rel="noreferrer">구조 원논문</a> (초록 확인, 전문 미확인)</li>{[['6323408','인산화형/탈인산화형의 성질'],['1339450','랫드 Ser32 변이 연구'],['6296099','인슐린과 간 F-2,6-BP'],['6455662','PFK-1 활성화'],['6260770','FBPase-1 억제']].map(([id, title]) => <li key={id}><a href={`https://pubmed.ncbi.nlm.nih.gov/${id}/`} target="_blank" rel="noreferrer">{title} · PMID {id}</a> (원논문 초록 대조)</li>)}</ul>
     </details>
-    {comparison && <SugarComparison onClose={() => setComparison(false)} />}
-  </main>;
+    <p className="small"><a href={modelNotesHash('regulation')}>모델 및 주의사항</a></p>
+    {comparison && <SugarComparison onClose={closeComparison} returnFocus={returnComparisonFocus} />}
+  </div>;
 }

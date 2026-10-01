@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-01",
+  "timezone": "Asia/Seoul",
+  "browser": "Connected Windows Microsoft Edge",
+  "url": "http://127.0.0.1:5173/enzyme-explorer/",
+  "mode": "Ordinary local application; manual UI smoke only, no full audit/stress rerun",
+  "desktop": {
+    "viewport": [
+      1440,
+      900
+    ],
+    "skip": {
+      "firstTab": "본문으로 건너뛰기",
+      "visibleTop": 12,
+      "enterFocus": "main-content",
+      "hashAfterActivation": ""
+    },
+    "energy": {
+      "product": 30,
+      "transitionState": 55,
+      "reductionMaximum": 20,
+      "reductionValue": 20,
+      "forward": "55 → 35 kJ·mol⁻¹",
+      "reverse": "25 → 5 kJ·mol⁻¹"
+    },
+    "kinetics": {
+      "initialSubstrate": 50,
+      "initialVelocity": 40,
+      "rowsBefore": 1,
+      "referenceHash": "#/model-notes?section=kinetics",
+      "referenceFocus": "model-notes-kinetics",
+      "returnHash": "#/kinetics",
+      "returnFocus": "main-content",
+      "rowsAfter": 1,
+      "rowAfter": [
+        "50",
+        "40.0"
+      ]
+    },
+    "sugarComparison": {
+      "opened": true,
+      "closeKey": "Escape",
+      "openDialogsAfter": 0,
+      "focusAfter": "F-2,6-BP와 F-1,6-BP 비교"
+    },
+    "titles": [
+      "시작 · Enzyme Explorer",
+      "반응 에너지 · Enzyme Explorer",
+      "효소 반응속도론 실험실 · Enzyme Explorer",
+      "모델 및 주의사항 · Enzyme Explorer",
+      "효소 조절 · Enzyme Explorer"
+    ]
+  },
+  "mobile": {
+    "viewport": [
+      390,
+      844
+    ],
+    "jump": {
+      "button": "진행 곡선에서 확인 ↓",
+      "focus": "initial-graph",
+      "headingTop": 15.800000190734863
+    },
+    "referenceToc": {
+      "link": "03 · 효소 반응속도론 실험실",
+      "hash": "#/model-notes?section=kinetics",
+      "focus": "model-notes-kinetics",
+      "headingTop": 16.05000114440918
+    },
+    "horizontalOverflow": false
+  },
+  "console": {
+    "levels": [
+      "error",
+      "warn"
+    ],
+    "entries": [],
+    "count": 0
+  },
+  "cleanup": {
+    "viewportReset": true,
+    "createdTabClosed": true
+  },
+  "result": "passed",
+  "limitations": "CSS viewport overrides; physical touch, actual screen reader speech, 200% zoom and projector not tested"
+}

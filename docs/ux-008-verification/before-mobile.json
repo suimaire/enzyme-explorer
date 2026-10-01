@@ -1,0 +1,214 @@
+{
+  "energy": {
+    "baseline": null,
+    "catalyst": {
+      "height": 72,
+      "text": "효소없음있음",
+      "y": 1228
+    },
+    "controls": {
+      "height": 558,
+      "text": "조건 조절생성물의 자유에너지-18 kJ·mol⁻¹반응물 상태를 0으로 고정한 상대값입니다.효소가 없을 때 전이 상태(transition state)의 에너지55 ",
+      "y": 935
+    },
+    "explanation": {
+      "height": 43,
+      "text": "첫 번째 예측을 확정하고 효소를 ‘있음’으로 바꾼 뒤, 새로 나타나는 네 가지 질문에 답하세요.",
+      "y": 2103
+    },
+    "graph": {
+      "height": 389,
+      "text": "-300306070정반응 55 · 역반응 73ΔG −18 · 단위 kJ·mol⁻¹반응물생성물전이 상태반응 좌표(reaction coordinate)반응 경로상의 ",
+      "y": 531
+    },
+    "header": {
+      "height": 225,
+      "text": "EEnzyme Explorer효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론모듈 01 · 반응 에너지",
+      "y": 0
+    },
+    "measure": null,
+    "measurements": null,
+    "observation": {
+      "height": 260,
+      "text": "관찰반응의 ΔG−18 kJ·mol⁻¹정반응 활성화 장벽 ΔG‡55 kJ·mol⁻¹역반응 활성화 장벽 ΔG‡73 kJ·mol⁻¹평형의 위치효소가 있어도 평형의 위치",
+      "y": 1790
+    },
+    "prediction": {
+      "height": 252,
+      "text": "먼저 예측 ΔG < 0인 반응은 반드시 빠르게 일어날까?그렇다아니다이 정보만으로는 알 수 없다다이어그램을 조작하기 전에 먼저 정하세요.예측 확정",
+      "y": 1524
+    },
+    "predictionA": null,
+    "predictionB": null,
+    "rail": null,
+    "readout": null,
+    "run": null,
+    "saturation": null,
+    "substrate": null,
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  "initialEmpty": {
+    "baseline": null,
+    "catalyst": null,
+    "controls": {
+      "height": 474,
+      "text": "반응 측정하기효소 시료 X를 일정한 농도로 사용합니다. 기질 농도에 따른 초기 속도를 관찰하고, 03B에서 모델 곡선과 비교합니다.실험 원자료가 아닌 모델 계산 ",
+      "y": 923
+    },
+    "explanation": {
+      "height": 81,
+      "text": "예측을 확정하고, 반응을 시작한 뒤 초기 속도를 측정하면 설명을 볼 수 있습니다.",
+      "y": 2086
+    },
+    "graph": {
+      "height": 209,
+      "text": "초기 기질 농도 [S]₀를 고르고 반응을 시작하면 반응 진행 곡선(progress curve)이 그려집니다.",
+      "y": 698
+    },
+    "header": {
+      "height": 225,
+      "text": "EEnzyme Explorer효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론모듈 03 · 효소 반응속도론 실험실",
+      "y": 0
+    },
+    "measure": null,
+    "measurements": null,
+    "observation": null,
+    "prediction": null,
+    "predictionA": {
+      "height": 343,
+      "text": "먼저 예측 반응이 시작된 뒤 생성물은 일정한 속도로 계속 쌓일까?그렇다 — 생성물 농도 [P]가 직선으로 증가한다아니다 — 처음에 가장 빠르게 증가하고 점차 느려",
+      "y": 1428
+    },
+    "predictionB": null,
+    "rail": null,
+    "readout": null,
+    "run": {
+      "height": 44,
+      "text": "반응 시작",
+      "y": 1293
+    },
+    "saturation": null,
+    "substrate": {
+      "height": 128,
+      "text": "초기 기질 농도 [S]₀10 µM25 µM50 µM100 µM250 µM500 µM",
+      "y": 1153
+    },
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  "initialMeasured": {
+    "baseline": null,
+    "catalyst": null,
+    "controls": {
+      "height": 474,
+      "text": "반응 측정하기효소 시료 X를 일정한 농도로 사용합니다. 기질 농도에 따른 초기 속도를 관찰하고, 03B에서 모델 곡선과 비교합니다.실험 원자료가 아닌 모델 계산 ",
+      "y": 1031
+    },
+    "explanation": {
+      "height": 81,
+      "text": "예측을 확정하고, 반응을 시작한 뒤 초기 속도를 측정하면 설명을 볼 수 있습니다.",
+      "y": 2299
+    },
+    "graph": {
+      "height": 317,
+      "text": "[S]₀ = 50 µM · 측정 시간 770 s (기질의 절반이 소모될 때까지)025500385770초기 속도 (t = 0에서의 접선)시간 (s)[P] (µM)",
+      "y": 698
+    },
+    "header": {
+      "height": 225,
+      "text": "EEnzyme Explorer효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론모듈 03 · 효소 반응속도론 실험실",
+      "y": 0
+    },
+    "measure": {
+      "height": 44,
+      "text": "초기 속도 측정",
+      "y": 1401
+    },
+    "measurements": {
+      "height": 61,
+      "text": "[S]₀ (µM)v₀ (nM·s⁻¹)5040.0",
+      "y": 2066
+    },
+    "observation": null,
+    "prediction": null,
+    "predictionA": {
+      "height": 343,
+      "text": "먼저 예측 반응이 시작된 뒤 생성물은 일정한 속도로 계속 쌓일까?그렇다 — 생성물 농도 [P]가 직선으로 증가한다아니다 — 처음에 가장 빠르게 증가하고 점차 느려",
+      "y": 1535
+    },
+    "predictionB": null,
+    "rail": null,
+    "readout": null,
+    "run": {
+      "height": 44,
+      "text": "반응 시작",
+      "y": 1401
+    },
+    "saturation": null,
+    "substrate": {
+      "height": 128,
+      "text": "초기 기질 농도 [S]₀10 µM25 µM50 µM100 µM250 µM500 µM",
+      "y": 1261
+    },
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  "mm": {
+    "baseline": {
+      "height": 44,
+      "text": "현재 곡선을 비교 기준으로 저장",
+      "y": 1760
+    },
+    "catalyst": null,
+    "controls": {
+      "height": 497,
+      "text": "조건 조절현재 기질 농도 [S]80 µM그래프에서 현재 기질 농도에 해당하는 점을 선택합니다. [S]를 바꾸어도 곡선 자체는 변하지 않습니다.총 효소 농도 [E]",
+      "y": 1322
+    },
+    "explanation": null,
+    "graph": {
+      "height": 427,
+      "text": "02855831100200400600[S] (µM)v₀ (nM·s⁻¹)현재 조건현재 [S]03A 가상 측정값 (속이 빈 마름모 = 현재와 다른 조건에서 측정)기질",
+      "y": 879
+    },
+    "header": {
+      "height": 225,
+      "text": "EEnzyme Explorer효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론모듈 03 · 효소 반응속도론 실험실",
+      "y": 0
+    },
+    "measure": null,
+    "measurements": null,
+    "observation": null,
+    "prediction": null,
+    "predictionA": null,
+    "predictionB": {
+      "height": 300,
+      "text": "먼저 예측 기질 농도 [S]를 계속 높이면 v₀도 같은 비율로 계속 증가할까?그렇다 — [S]가 2배가 되면 v₀도 계속 2배가 된다아니다 — v₀는 증가하지만 ",
+      "y": 2188
+    },
+    "rail": null,
+    "readout": {
+      "height": 190,
+      "text": "관찰Vmax = kcat[E]T100.0 nM·s⁻¹현재 [S]80 µM현재 초기 속도 v₀51.6 nM·s⁻¹v₀ / Vmax51.6%",
+      "y": 1850
+    },
+    "run": null,
+    "saturation": {
+      "height": 43,
+      "text": "먼저 예측을 확정한 뒤 [S]를 Km의 4배 이상으로 높여 그래프가 어떻게 변하는지 확인하세요.",
+      "y": 2581
+    },
+    "substrate": null,
+    "viewport": [
+      390,
+      844
+    ]
+  }
+}

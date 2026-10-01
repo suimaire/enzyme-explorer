@@ -1,10 +1,12 @@
-import {useMemo, useState} from 'react';
+import {useMemo} from 'react';
+import {useLearningState} from '../../app/LearningSession';
 import {MichaelisMentenPlot, SUBSTRATE_AXIS_MAX} from './MichaelisMentenPlot';
 import {KINETICS_COLORS} from './ProgressCurvePlot';
 import {PredictQuestion, Reveal, usePredictions} from '../../shared/components/Prediction';
 import {Segmented} from '../../shared/components/Segmented';
 import {Slider} from '../../shared/components/Slider';
 import {Caution} from '../../shared/components/Callout';
+import {SectionJumpButton} from '../../shared/components/SectionJumpButton';
 import {calculateV0, calculateVmax, saturationFraction} from '../../kinetics/michaelisMenten';
 import {ratio} from '../../shared/math/format';
 import type {AssayResult, MichaelisMentenParameters} from '../../kinetics/types';
@@ -15,6 +17,13 @@ export const PARAMETER_RANGES = {
   km: {min: 10, max: 300, step: 5},
   kcat: {min: 2, max: 60, step: 1},
 } as const;
+
+/** Two observations can complete the inquiry; reaching the range limit does not imply saturation. */
+export function saturationObservation(km: number, substrate: number): 'saturation' | 'range-limit' | null {
+  if (substrate >= 4 * km) return 'saturation';
+  if (substrate >= PARAMETER_RANGES.substrate.max) return 'range-limit';
+  return null;
+}
 
 type Experiment = 'saturation' | 'enzyme' | 'km';
 type QuestionKey =
@@ -39,32 +48,37 @@ export function MichaelisMentenPanel({
   onParameters: (next: MichaelisMentenParameters) => void;
   assays: readonly AssayResult[];
 }) {
-  const [experiment, setExperiment] = useState<Experiment>('saturation');
-  const [substrate, setSubstrate] = useState(80);
-  const [baseline, setBaseline] = useState<MichaelisMentenParameters | null>(null);
+  const [experiment, setExperiment] = useLearningState('kinetics', 'experiment');
+  const [substrate, setSubstrate] = useLearningState('kinetics', 'substrate');
+  const [baseline, setBaseline] = useLearningState('kinetics', 'baseline');
   /**
-   * Velocity axis held fixed while a reference curve is on screen. It is set from the reference *before*
-   * any parameter moves, with room for a doubling, so a comparison never rescales the y axis.
+   * Reference axis range, reserved before parameters move. The current curve can expand this range.
    */
-  const [axisLock, setAxisLock] = useState<number | null>(null);
-  const [showVmaxGuide, setShowVmaxGuide] = useState(false);
-  const [showKmGuide, setShowKmGuide] = useState(false);
-  const [exploredHigh, setExploredHigh] = useState(false);
-  const predictions = usePredictions<QuestionKey>();
+  const [axisLock, setAxisLock] = useLearningState('kinetics', 'axisLock');
+  const [showVmaxGuide, setShowVmaxGuide] = useLearningState('kinetics', 'showVmaxGuide');
+  const [showKmGuide, setShowKmGuide] = useLearningState('kinetics', 'showKmGuide');
+  // Reuse the existing progress flag for either completed observation, scoped to the selected Km.
+  const [exploredHigh, setExploredHigh] = useLearningState('kinetics', 'exploredHigh');
+  const predictions = usePredictions<QuestionKey>('mm');
 
   const vmax = calculateVmax(parameters);
   const v0 = calculateV0(parameters, substrate);
   const axisMax = useMemo(() => Math.max(axisLock ?? 0, vmax * 1.1), [axisLock, vmax]);
+  const axisExpanded = axisLock !== null && axisMax > axisLock;
+  const rangeLimited = PARAMETER_RANGES.substrate.max < 4 * parameters.km;
 
   const setSubstrateTracked = (value: number) => {
     setSubstrate(value);
-    if (value >= 4 * parameters.km) setExploredHigh(true);
+    if (saturationObservation(parameters.km, value)) setExploredHigh(true);
+  };
+  const changeKm = (km: number) => {
+    onParameters({...parameters, km});
+    setExploredHigh(saturationObservation(km, substrate) !== null);
   };
 
   /**
-   * Freezes the current curve as a reference and locks the velocity axis with enough headroom for what the
-   * experiment is about to do. Headroom is reserved *before* any parameter moves, so the comparison itself
-   * never rescales the axis: the new curve visibly grows rather than the reference visibly shrinking.
+   * Keeps the current curve as a reference and reserves headroom before parameters move.
+   * Both curves share the same axis, which expands when the current Vmax exceeds the reserved range.
    */
   const captureBaseline = (headroom: number) => {
     setBaseline(parameters);
@@ -89,9 +103,9 @@ export function MichaelisMentenPanel({
   const baselineV0 = baseline ? calculateV0(baseline, substrate) : null;
 
   return (
-    <div className="workbench" data-testid="panel-03b">
+    <div className="workbench mobile-experiment" data-testid="panel-03b">
       <section className="controls" aria-label="조건 조절">
-        <h3>조건 조절</h3>
+        <h3 id="mm-controls" className="section-jump-target" tabIndex={-1}>조건 조절</h3>
         <Slider
           testId="current-substrate"
           label="현재 기질 농도 [S]"
@@ -132,8 +146,18 @@ export function MichaelisMentenPanel({
           max={PARAMETER_RANGES.km.max}
           step={PARAMETER_RANGES.km.step}
           unit="µM"
-          onChange={(km) => onParameters({...parameters, km})}
+          onChange={changeKm}
         />
+        <div className="readout compact-feedback mobile-experiment-helper" data-testid="mm-compact-readout">
+          <h3>현재 조건의 모델값</h3>
+          <dl>
+            <div><dt>Km</dt><dd>{parameters.km} µM</dd></div>
+            <div><dt>Vmax</dt><dd>{vmax.toFixed(1)} nM·s⁻¹</dd></div>
+            <div><dt>현재 [S]</dt><dd>{substrate} µM</dd></div>
+            <div><dt>현재 v₀</dt><dd>{v0.toFixed(1)} nM·s⁻¹</dd></div>
+          </dl>
+        </div>
+        <SectionJumpButton targetId="mm-graph">그래프에서 확인 ↓</SectionJumpButton>
         <div className="button-row">
           {baseline ? (
             <button type="button" onClick={clearBaseline} data-testid="clear-baseline">
@@ -148,6 +172,7 @@ export function MichaelisMentenPanel({
       </section>
 
       <section className="workspace" aria-label="Michaelis–Menten 그래프">
+        <h3 id="mm-graph" className="section-jump-target mobile-experiment-helper" tabIndex={-1}>Michaelis–Menten 그래프</h3>
         <MichaelisMentenPlot
           parameters={parameters}
           baseline={baseline}
@@ -183,19 +208,27 @@ export function MichaelisMentenPanel({
               <svg width="16" height="14" aria-hidden="true">
                 <rect x="3" y="2" width="9" height="9" fill={KINETICS_COLORS.measured} transform="rotate(45 7.5 6.5)" />
               </svg>
-              03A 측정값 (속이 빈 마름모 = 현재와 다른 조건에서 측정)
+              03A 가상 측정값 (속이 빈 마름모 = 현재와 다른 조건에서 측정)
             </li>
           ) : null}
         </ul>
         <p className="plot-caption" data-testid="axis-note">
           기질 농도 축: 0–{SUBSTRATE_AXIS_MAX} µM로 고정.{' '}
           {axisLock
-            ? '비교 기준 곡선이 표시되는 동안에는 속도 축도 고정되어, 곡선 높이의 변화를 그대로 비교할 수 있습니다.'
+            ? '비교 기준 곡선은 유지됩니다. 새 곡선이 현재 범위를 넘으면 속도 축은 자동으로 확장됩니다.'
             : '기본 탐색에서는 속도 축을 현재 Vmax에 맞추어 표시합니다.'}
         </p>
+        {axisExpanded ? (
+          <p className="plot-caption" data-testid="axis-rescale-note" aria-live="polite">
+            속도 축 자동 확장: {axisLock!.toFixed(0)} → {axisMax.toFixed(0)} nM·s⁻¹. 두 곡선은 같은 축으로 비교합니다.
+          </p>
+        ) : null}
+        <SectionJumpButton targetId="mm-controls">조건 조절로 돌아가기 ↑</SectionJumpButton>
+        <SectionJumpButton targetId="mm-inquiry">예측과 해설에서 확인 ↓</SectionJumpButton>
       </section>
 
       <section className="inquiry" aria-label="탐구 활동">
+        <h3 id="mm-inquiry" className="section-jump-target mobile-experiment-helper" tabIndex={-1}>예측과 해설</h3>
         <div className="readout" data-testid="mm-readout">
           <h3>관찰</h3>
           <dl>
@@ -255,31 +288,52 @@ export function MichaelisMentenPanel({
             <p className="small">
               이제 <strong>현재 기질 농도 [S]</strong>를 낮은 값에서 높은 값까지 움직이며 v₀와 Vmax의 관계를 관찰해 보세요.
             </p>
+            <p className="small" data-testid="saturation-ratio">
+              현재 [S] / Km = {(substrate / parameters.km).toFixed(1)} · v₀ = {(v0 / vmax).toFixed(2)} Vmax
+            </p>
             <Reveal
               testId="saturation-explanation"
               gate={predictions.get('saturation').locked && exploredHigh}
-              gateMessage="먼저 예측을 확정한 뒤 [S]를 Km보다 충분히 크게 높여 그래프가 어떻게 변하는지 확인하세요."
+              gateMessage={rangeLimited
+                ? `먼저 예측을 확정한 뒤 현재 범위의 최대 [S](${PARAMETER_RANGES.substrate.max} µM)까지 올려 포화에 얼마나 가까운지 확인하세요.`
+                : '먼저 예측을 확정한 뒤 [S]를 Km의 4배 이상으로 높여 그래프가 어떻게 변하는지 확인하세요.'}
             >
-              <p>
-                v₀는 한계값에 가까워집니다. 이 모델에서 v₀가 Vmax에 도달한 비율은 [S]/(Km + [S])이므로, 하나의 곡선에서 세
-                구간을 볼 수 있습니다.
-              </p>
-              <ul>
-                <li>
-                  <strong>[S] ≪ Km</strong> — 분모에서 Km이 대부분을 차지하므로 v₀ ≈ (Vmax/Km)·[S]입니다. 원점을 지나는
-                  직선에 가깝습니다.
-                </li>
-                <li>
-                  <strong>[S] = Km</strong> — v₀는 정확히 Vmax/2입니다.
-                </li>
-                <li>
-                  <strong>[S] ≫ Km</strong> — 비율이 1에 가까워지므로 v₀는 Vmax에 가까워지고, 기질을 더 넣어도 v₀는 거의
-                  변하지 않습니다.
-                </li>
-              </ul>
-              <p>
-                Vmax는 유한한 [S]에서는 실제로 도달하지 않는 한계값이며, [S]가 커질수록 곡선이 다가가는 값입니다.
-              </p>
+              {rangeLimited ? (
+                <div data-testid="saturation-range-explanation">
+                  <p>
+                    현재 실험 범위의 최대 [S]({PARAMETER_RANGES.substrate.max} µM)까지 올렸지만, 아직 Vmax에 충분히 가까운
+                    포화 영역은 아닙니다. 이 범위에서 [S] / Km은 최대 {(PARAMETER_RANGES.substrate.max / parameters.km).toFixed(1)},
+                    속도는 약 {saturationFraction(parameters, PARAMETER_RANGES.substrate.max).toFixed(2)} Vmax입니다.
+                  </p>
+                  <p>
+                    포화 여부는 절대적인 [S]보다 <strong>[S] / Km</strong> 관계에 달려 있습니다. Km이 클수록 같은 정도의
+                    포화를 보기 위해 더 높은 [S]가 필요합니다. Km을 낮추고 같은 [S]에서 비교해 보세요.
+                  </p>
+                </div>
+              ) : (
+                <div data-testid="saturation-near-explanation">
+                  <p>
+                    v₀는 한계값에 가까워집니다. 이 모델에서 v₀가 Vmax에 도달한 비율은 [S]/(Km + [S])이므로, 하나의 곡선에서 세
+                    구간을 볼 수 있습니다.
+                  </p>
+                  <ul>
+                    <li>
+                      <strong>[S] ≪ Km</strong> — 분모에서 Km이 대부분을 차지하므로 v₀ ≈ (Vmax/Km)·[S]입니다. 원점을 지나는
+                      직선에 가깝습니다.
+                    </li>
+                    <li>
+                      <strong>[S] = Km</strong> — v₀는 정확히 Vmax/2입니다.
+                    </li>
+                    <li>
+                      <strong>[S] ≫ Km</strong> — 비율이 1에 가까워지므로 v₀는 Vmax에 가까워지고, 기질을 더 넣어도 v₀는 거의
+                      변하지 않습니다.
+                    </li>
+                  </ul>
+                  <p>
+                    Vmax는 유한한 [S]에서는 실제로 도달하지 않는 한계값이며, [S]가 커질수록 곡선이 다가가는 값입니다.
+                  </p>
+                </div>
+              )}
               <button type="button" onClick={() => setShowVmaxGuide((v) => !v)} data-testid="toggle-vmax-guide">
                 Vmax 기준선 {showVmaxGuide ? '숨기기' : '보기'}
               </button>
@@ -351,8 +405,8 @@ export function MichaelisMentenPanel({
                 [S]를 움직여도 이 비율이 그대로인지 확인해 보세요.
               </p>
               <p className="small">
-                속도 축은 [E]T를 바꾸기 전에 고정되었습니다. 따라서 지금 보이는 차이는 축 눈금이 바뀐 것이 아니라 곡선 높이가
-                실제로 달라진 것입니다.
+                비교 기준 곡선은 유지되며, 필요하면 속도 축이 자동으로 확장됩니다. 화면 높이와 함께 현재 Vmax 및 기준 곡선
+                대비 비율을 확인하세요. 두 곡선은 항상 같은 좌표계로 그려집니다.
               </p>
             </Reveal>
           </div>

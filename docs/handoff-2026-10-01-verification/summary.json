@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-01",
+  "timezone": "Asia/Seoul",
+  "branch": "main",
+  "previousHead": "6d19656f77cf812b2001ef57328bc15e66871dac",
+  "commitMessage": "fix: improve enzyme explorer learning UX",
+  "scope": {
+    "resolved": [
+      "UX-001",
+      "UX-002",
+      "UX-003",
+      "UX-004",
+      "UX-005",
+      "UX-006",
+      "UX-007",
+      "UX-008",
+      "UX-009",
+      "UX-010",
+      "UX-012"
+    ],
+    "pending": [
+      "UX-011",
+      "UX-013",
+      "UX-014",
+      "UX-015",
+      "UX-016"
+    ]
+  },
+  "commands": {
+    "test": {
+      "exitCode": 0,
+      "files": 15,
+      "passed": 246,
+      "durationSeconds": 11.01,
+      "retry": false
+    },
+    "typecheck": {
+      "exitCode": 0
+    },
+    "lint": {
+      "exitCode": 0,
+      "warnings": 0
+    },
+    "build": {
+      "exitCode": 0,
+      "warnings": "Existing >500 kB chunks: Three.js 510.63 kB, ProteinStructure 582.20 kB"
+    },
+    "diffCheck": {
+      "exitCode": 0
+    }
+  },
+  "browserSmoke": "browser-smoke.json",
+  "evidenceAudit": {
+    "manifestItemsHashAndSizeMatched": 146,
+    "existingDocsJsonParsed": 173,
+    "invalidJson": 0,
+    "missingLocalReportLinks": 0
+  },
+  "sourcePolicy": "No application source or test edits during handoff; all accumulated UX changes reviewed",
+  "metadataChange": ".gitattributes preserves archive bytes/hashes and intentional raw evidence padding only",
+  "localOnly": [
+    {
+      "path": "node_modules/",
+      "reason": "Reproducible dependency install"
+    },
+    {
+      "path": "dist/",
+      "reason": "Reproducible build output"
+    },
+    {
+      "path": ".claude/launch.json",
+      "reason": "Ignored machine-specific preview port"
+    }
+  ],
+  "stageChecks": {
+    "cachedDiffCheck": {
+      "exitCode": 0
+    },
+    "stagedFiles": 558,
+    "expectedFilesMissing": 0,
+    "unexpectedStagedFiles": 0,
+    "sourceTestDependencyFreezeChecked": 112,
+    "sourceChangesDuringHandoff": 0,
+    "archivedEvidenceStagedBlobsByteIdentical": 503,
+    "unstagedFiles": 0,
+    "untrackedRequiredFiles": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "keyboardAfterPredictionJump": {
+    "focus": {
+      "tag": "INPUT",
+      "type": "radio",
+      "value": "yes"
+    },
+    "header": {
+      "height": 225.48959350585935,
+      "position": "static"
+    },
+    "margin": "16px",
+    "rail": {
+      "height": 51.66666793823242,
+      "position": "static"
+    }
+  },
+  "desktop": {
+    "graphJumpButtons": 0,
+    "prerequisiteJumpButtons": 0
+  }
+}

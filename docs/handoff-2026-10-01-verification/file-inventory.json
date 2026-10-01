@@ -1,0 +1,4348 @@
+{
+  "date": "2026-10-01",
+  "note": "Reviewed checkpoint candidates; inventory excludes its own self-referential hash and later final diff-check log. Existing source/data and all previously tracked files also remain versioned.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "status": "modified",
+      "category": "evidence preservation metadata",
+      "bytes": 818,
+      "sha256": "34a3b24c66b74da2ac53dddf7de108b974e9ea6b3976d56ccae08221af2047da"
+    },
+    {
+      "path": "docs/HANDOFF_2026-10-01.md",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 14649,
+      "sha256": "0b00a03ba99e88e5bc0516f67b4abd0fd5a040699a531351714870c190479f10"
+    },
+    {
+      "path": "docs/SITE_WIDE_UX_AUDIT.md",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 65437,
+      "sha256": "1073209f2351cf192dec868489a5a2a65ec082e9db1dd2e393421268827bea26"
+    },
+    {
+      "path": "docs/UX_001_SESSION_VERIFICATION.md",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 10866,
+      "sha256": "72375b2d08eabfb5d6177a6c2f16b7b032d79ffbbcf23026d6a2843193fed6a9"
+    },
+    {
+      "path": "docs/UX_006_007_READABILITY_VERIFICATION.md",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 19717,
+      "sha256": "f1b4a8178790caa915d9ab5b7202540559a61732f09f39d29630166199fb1fd7"
+    },
+    {
+      "path": "docs/UX_008_MOBILE_FLOW_VERIFICATION.md",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15222,
+      "sha256": "46a51b90d5ac6684e60249c2876df7466c5e3f913865e370754b0ede43c7cac2"
+    },
+    {
+      "path": "docs/handoff-2026-10-01-verification/browser-smoke.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2242,
+      "sha256": "7b07a24d263334f3c1e3840f4d0feed9c70f635f4ea241211dc6ad823c170213"
+    },
+    {
+      "path": "docs/handoff-2026-10-01-verification/build.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1427,
+      "sha256": "a6540868ff5ff2c56ebb07b1e27cf0452dd540b868f4d9c562d0474bbf4379b9"
+    },
+    {
+      "path": "docs/handoff-2026-10-01-verification/lint.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 43,
+      "sha256": "67c27f63c5efc92eae2c0de7d8119f1b22f1885862fdec138135185604f05f47"
+    },
+    {
+      "path": "docs/handoff-2026-10-01-verification/summary.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2040,
+      "sha256": "09bae54ec50f9f7f5502d027d511baeccbc24c1bb4ebc94388d1d39467f52bf4"
+    },
+    {
+      "path": "docs/handoff-2026-10-01-verification/test.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 266,
+      "sha256": "b946ec1bdf9e5876ef0e3fd847026287695ade0323565d99d0ba480ee41917fa"
+    },
+    {
+      "path": "docs/handoff-2026-10-01-verification/typecheck.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 52,
+      "sha256": "fb2965ee2493cda160860917cb383fca85f7756d3cf88bfa7d3ecb18b04c33df"
+    },
+    {
+      "path": "docs/phase-a2-verification/axis-rescale-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 102509,
+      "sha256": "a418721694b16732ae2768fbd0060d0c8c0f5f09f6e0f573ba6906730902a3ad"
+    },
+    {
+      "path": "docs/phase-a2-verification/axis-rescale-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 38707,
+      "sha256": "7a08056770d011cd4f6edd72e3cdab794619844f3bffc1346d37692d6687a210"
+    },
+    {
+      "path": "docs/phase-a2-verification/before-energy-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 111447,
+      "sha256": "1d336c6bd36c00b847a1d34767c45799786ba1b498f2046598dc0d211a16be56"
+    },
+    {
+      "path": "docs/phase-a2-verification/before-kinetics-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 103313,
+      "sha256": "b2931eae03131445e0b1f89eb1ac602e609cceab99d3a124371f531763453bad"
+    },
+    {
+      "path": "docs/phase-a2-verification/before-kinetics.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 946,
+      "sha256": "f86564467e20e6843edf566f9d502dd77d1bea6cabd8105a97ec5df8d2f01bd7"
+    },
+    {
+      "path": "docs/phase-a2-verification/checks-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5544,
+      "sha256": "436268633d34a22392198eed2450c710b653f5fec9e690889fe3f805bb86908e"
+    },
+    {
+      "path": "docs/phase-a2-verification/checks-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5543,
+      "sha256": "f37c2c2b92825766609e1d5029032bc5dadaf91c9d47d02869c54d47712d967b"
+    },
+    {
+      "path": "docs/phase-a2-verification/console-final.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 64,
+      "sha256": "5c848bf159ff10bc7359e2d87ea52c3dcafc01780dab5f8c8c170665eac5d722"
+    },
+    {
+      "path": "docs/phase-a2-verification/development-fixture-history.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5351,
+      "sha256": "9721ed9e63832cee59eeb43924094dc2ac7852b6674ba835e8dd7c3b0ca82d14"
+    },
+    {
+      "path": "docs/phase-a2-verification/energy-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 113890,
+      "sha256": "2e83fa694a5b3ed5eabb98d3adcfd8e760a32c86008c889ce11820de4cc97f72"
+    },
+    {
+      "path": "docs/phase-a2-verification/energy-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 40767,
+      "sha256": "d2ea8c53f2b97232935c5044451779d3d3ae020bf81648d24754291fb6756a44"
+    },
+    {
+      "path": "docs/phase-a2-verification/layout-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 980,
+      "sha256": "8583e5a386fdf37a78e2be304092f7f9064e5ea2cd039be45a30e6eb9afb9a6d"
+    },
+    {
+      "path": "docs/phase-a2-verification/layout-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2036,
+      "sha256": "95200bdd7514bfc47a2580a688e7f352c39b2e514e6fa5668aab2298d11fc61f"
+    },
+    {
+      "path": "docs/phase-a2-verification/measurement-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 109644,
+      "sha256": "4729f368013ee81a6e5d7c5777a16b0ed10a1f2977912271840be374eb466a94"
+    },
+    {
+      "path": "docs/phase-a2-verification/measurement-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 45835,
+      "sha256": "91c77d4e7daf911a2f19312d30a358fdaac615a4597a108f8d1b4013a2c4809e"
+    },
+    {
+      "path": "docs/phase-a2-verification/saturation-300-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 89951,
+      "sha256": "5e947d169f732b13791d0dbf265728819b0f8ab6d43175bda2e3f5655e2619af"
+    },
+    {
+      "path": "docs/phase-a2-verification/saturation-300-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 53282,
+      "sha256": "f0070d970efff5defc1670272aa53ed07326c60e6821b526d8690e6c4cbc98d8"
+    },
+    {
+      "path": "docs/phase-a2-verification/verification.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5710,
+      "sha256": "dc6dd9d74172fb335d8412cb94dd779b0191f4bb7e134ef57a278c86ce2167cb"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-carbonic-anhydrase-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 51152,
+      "sha256": "4ea81d56a7d604c1bf030e58a60e5e97fdac7a7b542e3a91d2d41f1f394d6c74"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-inhibition-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 36999,
+      "sha256": "1f58e5322707e93a69febb1577ef5bc47b2a25f2ef68e5e5e2ec34c0476c817f"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-kinetics-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 37917,
+      "sha256": "d8d076e90f1edec562705ffb8ec6545bdff54ad21016272158b2fd5ed9084e79"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-model-notes-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 52914,
+      "sha256": "d3ee0893936ed689997b84703623bb73200d492059fc4dbee7f6d2582e3b4cce"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-reaction-energy-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 38821,
+      "sha256": "26d159f9225cded70f27fc2ac0dbdfbdcde801e4db9a9b056c68f413a815a996"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-regulation-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 33449,
+      "sha256": "d0e67439f50864edd37b46d96caf1677d2caf7a4cbaf9f00c2af2e823e80125d"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-start-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 54157,
+      "sha256": "6d9c9b0afa8aeee52717e60bd1668efbadd6c08858aaf83a570d9550179c9fa4"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 135567,
+      "sha256": "35bfd2f1d22ebee547e282f575897d3aabc07bdc0151b9df6bbd9eef5b899a20"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-anhydrase-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 61386,
+      "sha256": "8cc2fca725a62a365199da9aa173915897bca0ecfdfc826f4b4bd0931dc6d52b"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-anhydrase-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 118217,
+      "sha256": "7b9021995a834d324f96f2353ea2c065c02051dcb50d45dc8f5ee04f6fe89864"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-anhydrase-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 135516,
+      "sha256": "0767c6903887a41a55bd2717b5fc1ba8b09850911d420a7cdbc0c288bc3351ce"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-anhydrase-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 136581,
+      "sha256": "ce28d9667041b57c69a0f8e8d04dc61c050ee01924c736a0f134734d79bf089e"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-anhydrase-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 33870,
+      "sha256": "4f8ad0a6b0411c95805e74cfe389c4105b2c67e5211fc473e559ddba55dca47d"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-anhydrase-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 77309,
+      "sha256": "4880a2ccb4544949dcb44b9483071449f1a8a4e5b96295509f99ca38ae020f00"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-drag-after.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 136512,
+      "sha256": "9374e9821161747da38476675b445a18696020c733d1647acc226f687b61e0e0"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-drag-before.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 135567,
+      "sha256": "35bfd2f1d22ebee547e282f575897d3aabc07bdc0151b9df6bbd9eef5b899a20"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-mobile-find.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 40908,
+      "sha256": "6e550c3901d9c2921d7a2c8a24e87db3656fa5137e2dcc0a1daf5d2104fb3d65"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-residue-distance.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 85582,
+      "sha256": "2474546047458f1d6dcaa1e72867527d75987a8da92cd9bfb22231cacd3ff570"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-energy-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 116391,
+      "sha256": "904b705252e7f15f42bee2ddc6cf10f7278e393bc2f5c1946d5fad49cb56711f"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-energy-catalyst.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 124262,
+      "sha256": "5ba8f490d2e90e05331fc596dcfea951cbf1ead663d9652e14e76df831933136"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-energy-clamped-mismatch.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 112609,
+      "sha256": "5077aa26ddfa3a46d86215a15d76ce67cbadb57aad8f3eeca537c51b233b508f"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-energy-mobile-gate.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 42305,
+      "sha256": "ba403c7a35f9bc06180df035ba3a04d9fdbe01c3aa34bfcb21d9a2b53d6bf210"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-energy-zoom-attempt.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 116391,
+      "sha256": "904b705252e7f15f42bee2ddc6cf10f7278e393bc2f5c1946d5fad49cb56711f"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-inhibition-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 47932,
+      "sha256": "862353061c1433c11e5fa2e38c9eb0c6ab686fe44d33a97aa950aaa56ff50f0a"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-inhibition-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 50386,
+      "sha256": "a7d6dd65ccb4a8667191648a2789f4b3f930153045efb37445ff0a4f48ff510b"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-inhibition-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 53069,
+      "sha256": "76888b744cc210d3057ca504e6f715db35cf22cd17e9d91b4b85f6cd0cfb8bc2"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-inhibition-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 54483,
+      "sha256": "85a42139cb41928cfd5e0150d042854c8676cf23aa58cde6280d81272c460446"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-inhibition-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 36529,
+      "sha256": "87aa39c7d0a96c4cf733650815e836046053190c2d45b898791a14dbb0314153"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-inhibition-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 45567,
+      "sha256": "be18b006d63601beeb5a60729cdde14972eb5535124f55aea68ae40c9c02f027"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-keyboard-focus.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 117124,
+      "sha256": "e275bf3f0f62dcde03435e8971d1ad0c5a5a32b4a91006caef4aca18ced33fe5"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-03b.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 117335,
+      "sha256": "1feb45de05401dce7ed4eab7292596833f9e557956393af8057f82462ecb2ed5"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 78486,
+      "sha256": "a1f0edc0be11f8a6da84ba5834c86446744cb619eae230380bb03ace51898dea"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 92239,
+      "sha256": "dced37a72004ac3462d3be7148d553ba094d37e8aa88240574aee17720d391a9"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 105540,
+      "sha256": "84d340e91c48cd111f6930f7e6de16a3086891c085e8b118286b6ffe1171b468"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 106759,
+      "sha256": "bd27a17058e2386912c27632ac81024445a8b4f2179be1a4e8a08530eb818fa7"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 37163,
+      "sha256": "dc6a79932dc1192a6d7a4e3eab116de4a190a9d839606fa565a21807fc01d216"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 89247,
+      "sha256": "fdf12db733b83c0936a75a137d0e03c16b6971b560bc2f8ed9512fbeeefe6257"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-after-reference.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 105586,
+      "sha256": "e0be597e820fc50b8c757386263f16c10ff516db2f8c1a2759a2255b5f84c506"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-axis-after.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 103554,
+      "sha256": "4279e53122bc84b9d875c80fafeab649ad284473d0e41bd4e5c11d7baaf7d2b7"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-axis-before.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 94649,
+      "sha256": "1ae7b4da04408c5fd52d0ef1dc79f541d076cdb8d7e1ce910b9c9188ee1a0d44"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-before-reference.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 99369,
+      "sha256": "8eebeadbc593e2bb62d5f1072fdcb0f13b65e2169454c3aa81b5a2006ffd71b7"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-saturation-gate-full.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 192942,
+      "sha256": "ccb81ca0e879201f20db9e60bf5f92b8d562ac0b1cf06b1c560883e886507231"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-saturation-gate.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 110453,
+      "sha256": "afae4396369c37c92143f15c21b5ca7ab5b7db3c507a4cde5da4714e5a186b50"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-model-notes-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 98220,
+      "sha256": "fc87689853649d04bec6ee2790304e124e51eeb8f87e7d2a51c0f3bb296e485e"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-model-notes-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 103196,
+      "sha256": "be10b20acaa03488b594214b5f2dbcad0dff4db6051a8d256ac22279b7c8d4eb"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-model-notes-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 117802,
+      "sha256": "21cae01c7a9c05a21bc30af24bb5b37dd83ceaf12cc553568c4d6a8d96c72dee"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-model-notes-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 120320,
+      "sha256": "19d4dcb3c75e4e0033832233f487f9cb27233d4d4bce7205b4299dac39d65d7d"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-model-notes-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 47644,
+      "sha256": "c1e6fb053cd43d4f7212b9074eb5eafbe22d08a4da3edc033c22d7041dd82530"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-model-notes-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 120542,
+      "sha256": "dafcf69b7efaa9148377c1754464a75b70f66be8ff4abaee2afb627e6c6682cb"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reaction-energy-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 60292,
+      "sha256": "21f72e26cf47171f8e19858b2076b7ce979f843f0732dde18a2ccabad37dd4e4"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reaction-energy-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 104438,
+      "sha256": "eda4adfe0fe29df9804c23f28ae6aca464744fe5c91c058f3aea5d13031a8fdb"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reaction-energy-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 116461,
+      "sha256": "b5eb21a055d8178dace2b6e745d299390aa492019cec78260ff2711e9fa4f83c"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reaction-energy-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 118235,
+      "sha256": "63ac070914d0360efdee884c522f4cca3fd37eab408a086a3f85f28454f79fc9"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reaction-energy-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 35003,
+      "sha256": "86dc4f219c1e4ec78da4051fb1bba901c7ba4a09fc7813068fa89652971ddf78"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reaction-energy-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 74407,
+      "sha256": "fb448c7e1b45aaaf04ed11aad3598bb607fe4d6a0aa01d0d5012e3fc59a892d4"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reference-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 117802,
+      "sha256": "21cae01c7a9c05a21bc30af24bb5b37dd83ceaf12cc553568c4d6a8d96c72dee"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reference-bottom-mobile.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 60553,
+      "sha256": "a7dfd6689a96ee220836d2228455bd192acc4cc72b1c92f19a3450dce397c57e"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 89813,
+      "sha256": "5e9971ba6e304c56779555032ae174b30704fd66b65fa8c14128b6008dd4455f"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 97719,
+      "sha256": "370aa8c0e8a77bcdbfcebb80447d6e831b657439e8a0ac64c22f8b23e406cb5f"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 113130,
+      "sha256": "02e8dac4608336f66271a57684b48a8e26c7811b517b4dfaaa89860030ef69c4"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 113642,
+      "sha256": "d288d21b05a04dc3e6e96a02f4802be6d9510ecc59e3c43c4a622209b48709ec"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 35035,
+      "sha256": "f2ba07f7af0850448880386f858a22d7870a97cfa08d74ecd3e838de11e8caed"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-3d-mobile.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 36823,
+      "sha256": "c9368762091ab8bf4d690b115e71d55d54aa23de7099e6a44c5798115b4b81d5"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-3d.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 115853,
+      "sha256": "9eac48b6f5285aeee0c6468e2a7a1a156ed4154e191d28706e8d102829c3b929"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 93257,
+      "sha256": "b5ea4fc12b17c15204860dc10697c7baabe75f6eab73332f9741e4a54243775c"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-adp-label.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 79907,
+      "sha256": "94d723e3ba25cf2a8f79c016b40588394addbd8fc9ad934ef34b9b87039cbead"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-clamp.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 131150,
+      "sha256": "9cde672d3cb365f7a1df3d65cd58ba135745fb2105be190431da8fdb532c1b64"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-comparison-dialog.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 93508,
+      "sha256": "7b47f7aebd2cea1b89d450aaa8dc1c78fd6118e752ed2c26477316233d6d1030"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-drag-after.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 114533,
+      "sha256": "b82ba5168f31b293f006cad6a016eae4b2f364ad16fd43bfa2c90a20bf7d9087"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-drag-before.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 115853,
+      "sha256": "9eac48b6f5285aeee0c6468e2a7a1a156ed4154e191d28706e8d102829c3b929"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-large-mobile.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 43374,
+      "sha256": "0eaf385a9d4892cfe5f389f21d36be72b316a65b388435914cd5a5acaf4a3dd2"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-large.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 79559,
+      "sha256": "c2d15959a5f47473c9d6a5b398c38dbe7e2ea3cb1e59939cddf289d31b47fe0f"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-start-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 94222,
+      "sha256": "e6124f3bee42fd4ba692807f2fdd4b8264cd05b23c1a57c0778dd3a964108f57"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-start-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 99406,
+      "sha256": "e8b268d1a030e500e44da862af1e69192aa3ab9de70daef3e22119d092bade97"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-start-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 115659,
+      "sha256": "922a3db864f8620d93c3bab26e73724bf95db0e6fe43b130c59025724a6a7d8a"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-start-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 117223,
+      "sha256": "2c1ce751937b2ddae89c5f37a9a99623b785c403ec420a20ccef5cf9cb73b774"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-start-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 40466,
+      "sha256": "dcbb01e26aad27f71e5e437c5675b65d461df670dc6867a2be9d6ba2be7e5ada"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-start-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 99807,
+      "sha256": "e697631e1ac904b9ba2222316f1f2517990588b906228fcc6961eb11f2024a33"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/axis-comparison.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 388,
+      "sha256": "beb8ca405ffd5f973baaff9fb140744d2e620811d0e905cb6e49658540157156"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-carbonic-anhydrase-1440.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5083,
+      "sha256": "b57455f275fa9a5891a20dbb89780a3027880d00e97176277fbe3167408d97b2"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-carbonic-anhydrase-390.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5083,
+      "sha256": "b57455f275fa9a5891a20dbb89780a3027880d00e97176277fbe3167408d97b2"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-inhibition-1440.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1817,
+      "sha256": "354e10693079c2378f08030afd2f299db3aaa584e74b96d1387609a165490c49"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-inhibition-390.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1817,
+      "sha256": "354e10693079c2378f08030afd2f299db3aaa584e74b96d1387609a165490c49"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-kinetics-1440.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 4343,
+      "sha256": "50a8626bb058cfe94e2ce6f5ed4661b32adee1532050d684694396c496b0695c"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-kinetics-390.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 4343,
+      "sha256": "50a8626bb058cfe94e2ce6f5ed4661b32adee1532050d684694396c496b0695c"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-model-notes-1440.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 10555,
+      "sha256": "8084cbb70679d1034c24c59615a0fd71cefdc0ad9317d69adbe2e6a4f0430fdb"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-model-notes-390.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 10555,
+      "sha256": "8084cbb70679d1034c24c59615a0fd71cefdc0ad9317d69adbe2e6a4f0430fdb"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-reaction-energy-1440.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5196,
+      "sha256": "9e726454522227fbbcbca49f125f095b03b9a5147a426c1f8a4eb6be0091376a"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-reaction-energy-390.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5059,
+      "sha256": "d47dbdc315bb40b9ef04e5fa30edfd0f554fb271e8597be46f87c0e3e33964cc"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-regulation-1440.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5980,
+      "sha256": "bfbbf49362755264469ac9413bc51db53c5c4b47bd521a2fca5705045b8b1cb8"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-regulation-390.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5980,
+      "sha256": "bfbbf49362755264469ac9413bc51db53c5c4b47bd521a2fca5705045b8b1cb8"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-start-1440.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3807,
+      "sha256": "090e77691117b701b8e0b64e1fa25e197b89ca173004a50c0614826784553565"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-start-390.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3807,
+      "sha256": "090e77691117b701b8e0b64e1fa25e197b89ca173004a50c0614826784553565"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/energy-graph-text-styles.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2111,
+      "sha256": "9fc490d31cc3a70d32a81956302b7143f3bb413be320bb9892572dfc0520ca12"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/evidence-manifest.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 33235,
+      "sha256": "e5deb17eeae2cbf4cf44e52b537c4e4aba4d36c6d64b7bb195364475047d7ef4"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/focus-return-comparison.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 64,
+      "sha256": "53f54a260db5775fb3d9ad3f97580017be9db3d1b63a9649840e7b31d8e79e01"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/keyboard-navigation.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1061,
+      "sha256": "2a7fa3f2671d5a96889f207ef7f9b605d82e9e017f6d38d221f6101aa399f89a"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/lifecycle-harness-run-1.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1453,
+      "sha256": "88b9a69efe259c46f42fa8c35e0e55d77e80e37c3d7900f3c455ee45f12071fb"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/lifecycle-harness-run-2.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1453,
+      "sha256": "3ec34d228a47a6a3d96bd7cab5ce3743ae149514d1d16ff0aa651e70283ec174"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/overview-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 238208,
+      "sha256": "746ec8f276fa64fe9a1fa0812a1e38adee0b75395cb7e82fb4901cb8014ad8b3"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/overview-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 201492,
+      "sha256": "55853ce3fcfbe721eb18f5ff2529367459d3c2111d449b716217813690849d72"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/overview-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 190720,
+      "sha256": "10c9bcc547ecdbd08eaa29ba30e34581b58414a618fa8677c63164d7df6532cb"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/overview-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 166666,
+      "sha256": "cfb94ea009a7c31e858f96d7b9ebaa18946ecddae2fc2f22e4050e23b81f8f36"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/overview-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 438983,
+      "sha256": "71908fb4ddebff3e4f0c31b9b4b70101553282e1cc74ea4582d64b364cd6e8ea"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/overview-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 430350,
+      "sha256": "be5ec5a4284f0945b31652af825fc6c687d711be3b34353ec8df7d4a9eb88ca6"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/production-console-after-stress.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/production-console.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/production-route-stress.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1318,
+      "sha256": "d3f851a7ce88ed4711cb5dc575d592af009e18d3aaaafee81625358e5e6d62a2"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/regulation-clamp-high-dom.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6091,
+      "sha256": "866147541009d9a5f3cdb797d6c4b92aaece91f0281e64163eada8d31a90ab2e"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/regulation-clamp-low-dom.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6083,
+      "sha256": "ae6c4039d21bdb092207a6bea3cd4e807b208e9743d0880493bfaea86b2b7c4b"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/regulation-clamp-return-dom.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6058,
+      "sha256": "ec8209d8a8339243b86d067e40f423fdd35fb8ed80dc298ff5ebbb4b3c76db22"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/responsive-metrics.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 154075,
+      "sha256": "414970a34db61a5b671bb5bfa04c426073b5c679341ad5b7e7aea02d9b91e269"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/saturation-gate-dom.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6417,
+      "sha256": "a547ed05952574288b90c9d6e1d76dd7f2503c58063101e1c20d6bb53d6e3359"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/scroll-bottom-checks.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 749,
+      "sha256": "d5ef2b0de7457ed9c802e266867e1d1088db47ffbe36729230f8fe842e59e65c"
+    },
+    {
+      "path": "docs/site-wide-ux-audit/verification.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8871,
+      "sha256": "605c69d70769804eabfc27529a2485f9682500b49e65cccf71fa887e295b5520"
+    },
+    {
+      "path": "docs/ux-001-verification/console.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 252,
+      "sha256": "20e28287d46ba90fe5d1ca64cc5c6501679f07aee7baa2468f1f6b9fb222c53b"
+    },
+    {
+      "path": "docs/ux-001-verification/development-console-history.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6654,
+      "sha256": "e0350a01a1657b085708b3038b84c90c8ca559dbb6a460044c6e3d2bfe4624d5"
+    },
+    {
+      "path": "docs/ux-001-verification/existing-regulation-ui.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1453,
+      "sha256": "88b9a69efe259c46f42fa8c35e0e55d77e80e37c3d7900f3c455ee45f12071fb"
+    },
+    {
+      "path": "docs/ux-001-verification/kinetics-baseline-1440.png",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 212454,
+      "sha256": "30ed7fb20e6cf5778782dafb4d2493d409c84b0a3418f90dfc2bcdd43f8d26fb"
+    },
+    {
+      "path": "docs/ux-001-verification/kinetics-reference-1440.png",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 152445,
+      "sha256": "24a7178c82addecbb01e75984494d3c502a8f91cb08f87a1d745950b2ddac0a9"
+    },
+    {
+      "path": "docs/ux-001-verification/kinetics-reference-390.png",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 40224,
+      "sha256": "b026053a74ed094186dd1d45e0c265d388ccceb8b1d9cb451ff81ee33487eb48"
+    },
+    {
+      "path": "docs/ux-001-verification/learning-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3062,
+      "sha256": "de3aafae0ed8dbbb6fb7a7de91b1f58fd7052180cbe30f81956262d96ef957a7"
+    },
+    {
+      "path": "docs/ux-001-verification/learning-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3061,
+      "sha256": "dfc151bb5cc54db30acc55a77ef0a643492270cdbe1c5f1e7583e90a43ee0bf1"
+    },
+    {
+      "path": "docs/ux-001-verification/lifecycle-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 9691,
+      "sha256": "83c248daa4bb63e7f78224d2b84a29c8638854223f0d96587393446d0e7c9a70"
+    },
+    {
+      "path": "docs/ux-001-verification/production-desktop.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 168,
+      "sha256": "9d4452c29b408e736a8cec21ffee623221c0b8b8d354bb5701f7fbba9292595e"
+    },
+    {
+      "path": "docs/ux-001-verification/production-mobile-3d.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 169,
+      "sha256": "e8679b7883c292c1bf6c2ce92854f56e6c19ea4952d926e45acc652a279eda6e"
+    },
+    {
+      "path": "docs/ux-001-verification/production-mobile.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 439,
+      "sha256": "fc85cfc0cf682614cf8e3bda4fb19029c39a8768fab0ce1907c0dd4be7c3fa29"
+    },
+    {
+      "path": "docs/ux-001-verification/regulation-restored-390.png",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 46359,
+      "sha256": "c05a22d743bbf8d7edd76b8ab072448676dc78591d4e9cecc6911f00d878fe3a"
+    },
+    {
+      "path": "docs/ux-001-verification/verification.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 724,
+      "sha256": "bebea9c9519055e928c5509780b1fab7fac1666448d0c6d94fc05c7acfd73601"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-active-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 171721,
+      "sha256": "22a77c76c44b75614a9b6e71f592311fc307f6cc6cc5c37a724a460296a696e4"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-active-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12255,
+      "sha256": "a346e9cb48f8192e83911771971f752cef4c9c9e8f06ff7371837c6420302b33"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-active-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 36891,
+      "sha256": "e8beaa6d4eb098990f8206d32f873188adbf8abc0f007c3a65b042a0e156fecd"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-active-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12223,
+      "sha256": "c3ec678e20399ee7855613e1a84e75d9a6d98e8090c4d232ef837498a8da4c51"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-overview-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 130331,
+      "sha256": "3b536acd3e7aa1863f48391794d299c573482010bfeaba3f1d2d116dd2b97ecc"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-overview-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8785,
+      "sha256": "46c5b5cdab5a6a52d37ecb521b79b37e28320e2884234cbc943e9bb074e93026"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-overview-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 30402,
+      "sha256": "67f379e70d8bcc10eff03308f92436e3bc85cde3014a9f3c709eb820173e71e8"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-overview-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8757,
+      "sha256": "ccec908c858fcaadeca9de746182c21fc14c5d81cf86cd4dc7ad4f8ce9aaf49c"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-selected-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 74113,
+      "sha256": "3ff4c808e30756485226ab2b8f0adb5431c0a95e2611553a17dbb229cf6d7ed6"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-selected-1024.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 13233,
+      "sha256": "3b724afba3aced2b96c78a1b8275dfb36697b8d0b41b1ffd65153ac8bf5c89d4"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-selected-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 135654,
+      "sha256": "5fd55edf1b1fe3605e5c92b0e5e40a2d154f1bcaf1247690dc1b3547e111c51a"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-selected-1280.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 13297,
+      "sha256": "13a7a8dfa8ddbe3af58714d3ff508d55759f07f35ceca182f3ca218b4cae3cab"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-selected-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 170180,
+      "sha256": "9e68665f89ce06814dc89e6a1857b73c3ee8f41feea41a07b9af686b7fb762db"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-selected-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 13283,
+      "sha256": "e90aa03d5c3e74cc19ee199fcdd008e825452666f7b3e02ecf5a82492e97a5f9"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-selected-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 172551,
+      "sha256": "9a9289e3de7282d0d1128d3801159181d250a1b525afd955bb3551ac3eb32b8d"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-selected-1600.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 13227,
+      "sha256": "67749206cd72cc9f6cf1475324b41989b4cf325014ffbb1d270792dc794a0231"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-selected-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 38071,
+      "sha256": "f8ba45394ed216940d36c2a8cddd8003b05a412819c4ed1cccfd9c05f2131cea"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-selected-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 13438,
+      "sha256": "0ad0ff920409a95fb26b9abbfbfd5d7eecd786f8ec6b9d1f13412bc99935861b"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-selected-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 81349,
+      "sha256": "8b1205acc21cdc8e81345b9fe9eb3b051ccf28d54f162d25a6718d63e8fa7d57"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-carbonic-selected-768.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 13290,
+      "sha256": "56f4fbb7a5102c67bc710b2faafd8dae35dc4f7c3719c19243b2651b75730d4c"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-catalyst-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 72413,
+      "sha256": "55c60d136057ecb1e434fa31bc0b4d8894b861215994d7dd189009bda4bdacd7"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-catalyst-1024.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15190,
+      "sha256": "2aa62fe8159c9cfda125ad189fb7052de37398dc3ced3ad33c0e1d338cad2477"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-catalyst-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 110868,
+      "sha256": "118a2f079a57a5c9bf1dcadd60daf4d4a2c6890266752e3f5c28bab74fe3a85c"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-catalyst-1280.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15338,
+      "sha256": "f5c5734697d695197dd4faadf2a833ffceebbaaca0ae543c2c12095eebb9dcdc"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-catalyst-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 128162,
+      "sha256": "97828dc6077b4334d7e0e1eebd929661a0f7f19de7637dcae110fcb61ca33432"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-catalyst-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15052,
+      "sha256": "2747b81b5110cb5127797409ada04d210a5374e4de8b9ac202649f029a78e548"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-catalyst-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 128432,
+      "sha256": "3c684b73364c54444962d6b530d92f6a95143feb562b60cd6ece888fec788af4"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-catalyst-1600.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15324,
+      "sha256": "7cef0fc8f61f81439f7cd02f15ed41d20b749af3ac44ad2e41fc25bc6e2c1a15"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-catalyst-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 40660,
+      "sha256": "070751f392c74097021b30ca0ae9f548af7557ed3e06e1575d8abd4bf34106c4"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-catalyst-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12418,
+      "sha256": "5f511dcf60b5c510764233027b8a483e2c4e471dc2effc6fb112c46480301862"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-catalyst-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 44589,
+      "sha256": "96f2be4a26531ff3895fcea2cb4dd4939f33d638192cdaacb0f70f3e8d51e550"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-catalyst-768.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15223,
+      "sha256": "78e7c82170062a91b6b2e9b0bbb3c17d13598ece1aade7bd78224f91f2447e6a"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-default-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 116572,
+      "sha256": "9d360fd82735d4b5eb7ff0da0d8645d464479c344b8bf9e948931ee11506b14a"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-default-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 14089,
+      "sha256": "5b97100048c649ac9978bbf4ff22d00728b1c44c1a8db0c9721e49290244780f"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-default-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 39596,
+      "sha256": "fd4f72a04d0256e76be807ccb6620bcb471757fa9db162081dd5c6bf8a6cd33c"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-default-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12300,
+      "sha256": "be7c3639a4b8340f5799762e0af455ef67e0e819192232e52e7ea8f0acfaae46"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-maximum-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 126271,
+      "sha256": "d0ce0edf48524987da3b6f8d21f0cba44f58070a20ce0453681c95a7e7a437bd"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-maximum-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15118,
+      "sha256": "61ad4f0215c036b6342f45363099c328f5843a6913501d505823414fa7b0f81f"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-maximum-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 40078,
+      "sha256": "304c2fb3c8d1331a6b2eccd524de68b04d49f8bb4fb677f2603894fd19ad6a6d"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-energy-maximum-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12415,
+      "sha256": "74cd20b4a519f190ead7c75b9735064f1682abd719830167ecb7d496cdb98f3a"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-default-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 111288,
+      "sha256": "95c42d7468a53b9341d930e4f4aff833e2341c4ade7f2d726903700ffc1bf793"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-default-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 13502,
+      "sha256": "11eb67605affa89da47261f4de0a33dfd8ee3a3cc6658a19ab83cce2ac651477"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-default-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 34561,
+      "sha256": "07f2a1849f80faea5c703b0f035cfd5aadba67b43aa7041015f5eea3669d5137"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-default-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12104,
+      "sha256": "d9f3bdca2d6be795960b3fc77014e61cd18f9cb62dadfdeb7a0049f35bd6ca3a"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-expanded-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 75593,
+      "sha256": "541bb258684de11c08ab5432a1e0c05d125a30064745f035cb56408e9ce4e121"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-expanded-1024.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 16745,
+      "sha256": "faee7eb3e2adfa52f7611d2e637c859ddc862ea52c319651d3a970269b2cec19"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-expanded-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 108522,
+      "sha256": "59bb17ac2b79e86998b3335a8eee83cf7311921110b05da2a6574ede6eee6722"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-expanded-1280.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 16825,
+      "sha256": "1cfea028c18bd2a9ae3a5e639bdcb77c02014345f0a89115d6134338c6720cfd"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-expanded-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 121790,
+      "sha256": "d5f352a4f9e35bfb401c2e7e9c70a5ae6880ca50f371ac6bcdf494dcc69871b9"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-expanded-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 16493,
+      "sha256": "a3e2d88510c6017a6fcc8e6df56282ce95c007664c7d9869cbd8651620b8109e"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-expanded-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 125192,
+      "sha256": "0799c6bedda60846d24f97fd6a489a4a9365dd3d122b0c507a54081a384f23fa"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-expanded-1600.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 16784,
+      "sha256": "179f5e1cb76fe4c1985474811247f52350b0c44c940c7487e5f427f1e35e29fe"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-expanded-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 43371,
+      "sha256": "2470563253e8f4b5e255e119fa6e1e9a1f41157ed729273f6f3bbaef8d5f9bc1"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-expanded-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15445,
+      "sha256": "fee84d8b9170721b0eac4b000b908d609f076a0a44ce9f5b61576d792d8667d0"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-expanded-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 47854,
+      "sha256": "f4b085185264fcea8f4b959275c19c663d37f8bd6114df89162d5522fe2da58a"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-expanded-768.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 16780,
+      "sha256": "4b5469e10c112e5b5793a484b5969999d19f27f5e708682c0c47db5c77db049d"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-high-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 128035,
+      "sha256": "9e0120b49ab5609cfb6fb55efb7311554b5fcc99d133dd5e2c908a4651d3a277"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-high-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 14455,
+      "sha256": "12bcc29d040f8a96121be1b495837f3096e91dee5c5febaab358f08273f00a95"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-high-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 42020,
+      "sha256": "6089eb36a2d75ec5328fe00b28552920cfb49226bb9e0d08b0cb40ccdd78969b"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-mm-high-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 13058,
+      "sha256": "ed78b845de492fb68a037898edc79f6b17074db7b7fec968d1ee19874157b925"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-pathway-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 99513,
+      "sha256": "09c7dcede47672489437b22a645f29e16b819d9c934bd0f096ce3aeaaf4b63f0"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-pathway-1024.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12803,
+      "sha256": "779fb1c170b370427a23296b096f0861eeac2c3a8e36da07af68ffb7d584217e"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-pathway-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 111700,
+      "sha256": "50418de10ea1c02e02d2e134e88e761344ec76e1e5f986b7cd1c079a1db12e7f"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-pathway-1280.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12784,
+      "sha256": "ec3940d798110b65654701234bdf3c6dc4529e2b9faad7f5801d54c9bfdc478d"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-pathway-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 128359,
+      "sha256": "73aabdc8c0baeecc95c405f3b538183d662fef85a3db7edc720ea8dda5763a4e"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-pathway-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 18944,
+      "sha256": "e263e66890cfacc7601a292e7190feca9d89a8ad0b00e7bb6985aaa156157df9"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-pathway-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 128666,
+      "sha256": "3ad747727f4044f07a0fe4230a5e4e554f7d4d62f54dc89323ab8681a1847a0d"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-pathway-1600.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12838,
+      "sha256": "f53ffe099b4a1fdab07049538aa404b08f98ceb8b16f2c1d47be359705a8dd0c"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-pathway-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 41128,
+      "sha256": "f9acfd4d340d63143038b1d075d0860a36dd0cc37adbdfeb768d4245eadd465a"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-pathway-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 19104,
+      "sha256": "e8ba2b243ee2e456aada08624a37e2ea3c8af3c4b98c95e23170a6db1af9e3a7"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-pathway-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 85938,
+      "sha256": "92bd3b05973bf1233b99bfed2bdf94d75a7e45e816019409fdee193d723212d3"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-pathway-768.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12996,
+      "sha256": "9d625fdb03e4020672e4460530f859061fb845bce67d6c162e8ed46091f18daf"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-progress-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 112174,
+      "sha256": "3cc56223c2bf8a7ea22156326d1b4a2cadf04a417b0a9d9d7f160f1458688e32"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-progress-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12269,
+      "sha256": "6a276abeac3fc08f7dd9e5e02bb0b8090e71405d2f5a09e07a6873ba4a1e6b34"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-progress-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 38933,
+      "sha256": "227abc39c667694bf03bae90a2e9b21318622daf2cef7796bc49e5bdece299f5"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-progress-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 10385,
+      "sha256": "a5fe4ef9224b74286a1919e207d699f3dd193cc8fc4b0c7e8dd38a7fa4aad6d6"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-structure-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 96510,
+      "sha256": "b81f64b67e1dd4a547db88a7e5bc9dd913038661e83946b05c785255d566004c"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-structure-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15314,
+      "sha256": "4103afe64c877ba34404e103fd722b4160f786b97c045ec8dab274219b71d256"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-structure-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 49067,
+      "sha256": "560cbcce56eccd799904aae88a473b4895f064a7d2d86c0b839c83730efa84f6"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-structure-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15185,
+      "sha256": "447663443c3b43bfc3c6f3c8f8e69eac0795ed72fd36c17eeadd6283ec993af0"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-structure-expanded-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 79682,
+      "sha256": "e743db70c1b1478d0368bd0d2ed7312fa5d93df870a24ae121e0e55b54dd9d56"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-structure-expanded-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15011,
+      "sha256": "79ad5bb73b4acc4c00d0558e902ade9f6784e88c86d3ab79e1a4a0b34b3c8ca6"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-structure-expanded-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 43258,
+      "sha256": "eccb427f74d969e3fc63774936bffd1e7043a3042e95b752625bea044911394d"
+    },
+    {
+      "path": "docs/ux-006-007-verification/after-structure-expanded-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 14916,
+      "sha256": "c34c2fb897cad36c2b52b2311ba5a844e3e7f53fb9ca68659003de38f64e8d3a"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/check-0.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1201,
+      "sha256": "0ee5021b21e6461438d97711153d6076a14ebc2c1b3bffb9ca1a0d8525c079d5"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/check-1.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 55,
+      "sha256": "765f10fc1581ec910b0abfea229e69c95a6d5ccc18a0ba47b691b27f3db63144"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/check-2.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 46,
+      "sha256": "63542693038cc4485a6e67e06d28415f22cb7b03b897f7319af547816abb52d7"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/check-3.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1429,
+      "sha256": "cf9a800ba750c831c5f86556988b986d8a87b801373edb76f13fa0021bd22f2e"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/check-4.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1354,
+      "sha256": "1dfcbe27a4da420c7b9a6f9ad3d4631fbbaa9cc349cf0fc2391105515db2f90f"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/preexisting.patch",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 42668,
+      "sha256": "47f169f5e134e4dac574878433d917dd1976769e1f324d5ea1db7c0b64ef698d"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/src/modules/carbonic-anhydrase/StructureViewer.tsx.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3184,
+      "sha256": "98eb43aaf01377ed3d1bef92323f57aa31239f532bd6035cbfee09635ca7829f"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/src/modules/kinetics/MichaelisMentenPlot.tsx.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 7178,
+      "sha256": "1b8c89569e26bdfc2bbcf6de2db73c11bc9e113669946a814ebf3b8df7e01c39"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/src/modules/kinetics/ProgressCurvePlot.tsx.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 4902,
+      "sha256": "f33cc52787643df1b8101acba77eec8be7e3f1407125dbfc99bee2eabf4a82ea"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/src/modules/reaction-energy/EnergyDiagram.tsx.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 10198,
+      "sha256": "88d539acdea8b7686b24f69faff1931a5fd8b96eeda69c1edff5a74e44f9ecdf"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/src/modules/regulation/Diagrams.tsx.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 10845,
+      "sha256": "2c2fefc0ca281f2c7dc603583680f1eb7dd238c9b390619022c15b9cde981f04"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/src/modules/regulation/ProteinStructure.tsx.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5115,
+      "sha256": "cf8e7e72b00ec3b25fa98c1abac3e667dc69801a04ce478a20db2c9966dd5d7f"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/src/modules/regulation/regulation.css.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 20092,
+      "sha256": "9d388900106264570494465ec2d553f111185cf44eb41800d9f81ebaf00efb19"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/src/styles.css.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 27953,
+      "sha256": "237ac5c1db41165298ff1f4757b5512b12168f1a990886ad7abb4544ddd93a2d"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/test-isolated.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 269,
+      "sha256": "8e191a6bb48437e5520f36897e1d43a5202d7bf9b8b707aa57fbde2968276c4e"
+    },
+    {
+      "path": "docs/ux-006-007-verification/baseline/tests/phaseA2.test.tsx.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8398,
+      "sha256": "83b71adbfd1f66545b4561957fb1c765dc55f50bf3d4238a66fe9d61a9bd9f32"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-carbonic-overview-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5474,
+      "sha256": "c1ac61bd27b2cfe821b1843645025b914b2a0514c9c91e71d93a52a66a4b74d0"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-carbonic-selected-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 113439,
+      "sha256": "dc46a668bbe0ee8a505f73233e97a22c4ab1c5c48a2e644db2ad9e615ef84efa"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-carbonic-selected-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 9520,
+      "sha256": "fa70b745a251f7afade1bebbb55f87c1a1a06e2104cb7b31bbd07cd8b4096f6b"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-carbonic-selected-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 215317,
+      "sha256": "304bfaafef991412261d74c7b2b6ad051a563d1519aa0ef4207e79582c0f5adc"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-carbonic-selected-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 9634,
+      "sha256": "d1d29bb16f67740ada9b3cb695c8ba09bd81e1eb6aec5bf240c6c08a271cf573"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-energy-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 139473,
+      "sha256": "8068e0fb2d11ef2e3a60f415c7c570c7c0501b7ddc54870f58cc401a7f84736e"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-energy-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 13676,
+      "sha256": "f6f10e4ff9c197c563259a427e94f835c65f49746ee5ad879bf1dd2bd8205b8d"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-energy-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 114849,
+      "sha256": "368500ec9342665681a39dc35576da363e0aa1c9d96d52584cd10e0435d2163d"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-energy-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12050,
+      "sha256": "be64e93f7a9385b137657d999c6bdc2c8709e22253e58837c5aae97ffc515d5f"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-mm-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 205151,
+      "sha256": "1872dc5c92d3c5387168cb128924d4a9d6cad9f44d3b50303f575824c37eb7de"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-mm-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 11754,
+      "sha256": "5891bb72daed8c9f14db49660afccd458cdf2f8e4d3a7a90acad7af991baedaa"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-mm-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 169416,
+      "sha256": "7f4875b58815df19f420bab4d1ddf4af4d555a6f2c66bd57599cb0baa2790cac"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-mm-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 11669,
+      "sha256": "335f00014120ceaa995f10a6510e639313590534639907d801f138cd4b532154"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-pathway-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 9932,
+      "sha256": "fe2c794084a397f4e8b539f4dca5bc9640b3e76605f8b115c76c18fd802b5ef1"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-pathway-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 47901,
+      "sha256": "570c303a1db76d41125c7f5536aadf7ad3fd370129fb6f564cb7577eb72706ba"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-pathway-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 18827,
+      "sha256": "7d79cb3d9c8c2b9589a87e54bb0bf6ec5f4997322430740ad9b4db1205afb1ac"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-pathway-step5-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 127607,
+      "sha256": "a9db1a2d9691981f43923d013d87f2fa8883f8e5b0c8347470168416484f53ed"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-pathway-step5-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 18828,
+      "sha256": "8948004633c76eb79f145d2fa2856d5b0fb9b2944706b1efdfbd9ab15dda0aa4"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-progress-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 152737,
+      "sha256": "684fac8f96e79ebae676abbd7782fc22c0014ec34f28a82735923dc5852f6315"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-progress-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8748,
+      "sha256": "7c8495f39fcc77172267436ea1d0ee089426db0f1cf3e09ccbf38b7f88951382"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-progress-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 121793,
+      "sha256": "547b11b279cae5234934634bda52f7f053d9b5be980a099c38850fad2efa5a0b"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-progress-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8224,
+      "sha256": "d771092bb368d1b1912dcfb61f899bae958614640a1dd5bc0f26ec24a8c1018c"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-structure-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 85283,
+      "sha256": "ee9301db8ceab4f0f4d62cd6e3692f49147a4a54af51fcb3cfc26ba3a9ce95d7"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-structure-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15225,
+      "sha256": "048d3640a93c3520f24b08748aa63d07ffd949a7331c314c4d28d2e1b855cf6b"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-structure-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 36268,
+      "sha256": "d76afaa66dd9e061e09c25df6bd07292ca8412f8bea55edb8102e078f082b187"
+    },
+    {
+      "path": "docs/ux-006-007-verification/before-structure-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15189,
+      "sha256": "5b150e71d4ca96d2bc2be8361c591a9e93777d68b62913767663d9a38c6d2753"
+    },
+    {
+      "path": "docs/ux-006-007-verification/camera-angles-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 40138,
+      "sha256": "11b497a422b019f718aacd1ac308bcb1c48dbdfd2eee96a220b6524071549842"
+    },
+    {
+      "path": "docs/ux-006-007-verification/camera-angles-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 110344,
+      "sha256": "49c43915dacf7091a11deedd8eb60973a00d37985d6ebb7018129e8560cd2c81"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-1-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 163951,
+      "sha256": "bce17387911df554aa9acfd163f8fb5fb896e998a140fc34ff3f0358e3c46277"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-1-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 40316,
+      "sha256": "1a0fe31ae3c99b3dac2c773ba0ca08fcab7b82eaa04edaa2f0636dca777cbf18"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-2-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 166468,
+      "sha256": "8b86ff8bd33cfc4ce9cf4c00e65642e5e544d362673fdab51977f8ae4958681f"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-2-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 39425,
+      "sha256": "1adf1a12085ab21d940e6d270d0a0b26105d9576827e63b3f106659f6256c623"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-3-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 165741,
+      "sha256": "3035d6823c24bc9c095f40a3ac3397e8be274449519ca8b393b4b8681fd4e7bb"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-3-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 38816,
+      "sha256": "2e71a97fb136226d63a80a6761b7beb8c05dbfaff2f53db01b3ca7adbe6cde87"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-4-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 165027,
+      "sha256": "a69c3526526affd4033ddd3aaf01c2624a6996a32ff330108e7f737e074d1ee6"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-4-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 37863,
+      "sha256": "f8f8fcea4dae8ee6c8ee33c81189b18132f1227a815333ac8d160b0c53c24804"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-5-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 163286,
+      "sha256": "5f232302ec4d2c508589aa2a0d3f954e9183cdf01cc388abbbdc2ecdd8eb1c11"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-5-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 38081,
+      "sha256": "8b4f7c68ba6f7e56f48c7486cf3c121d1e4f6a5ba4fc84ca5760065fcf0cf01e"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-6-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 165275,
+      "sha256": "f786e73c84bcad9d877d759795d00a26dfed1beef5c70826c43e2b3438730499"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-6-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 38064,
+      "sha256": "d22761eaa67f18a87b98148526abd54315fc867412f25bb85bf2e8f861af4357"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-7-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 165399,
+      "sha256": "487515265165efe36eab378e270dc85470acc9b3e88ccb9c9958e8bbadaca2aa"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-7-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 38132,
+      "sha256": "24091315ff7a6c89381832fff07883c458a132395d618d760f7b82abd9fb9b96"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-8-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 164488,
+      "sha256": "0492436c7908a1ca905b567893a074384f725a257746d9e403508229c87095a2"
+    },
+    {
+      "path": "docs/ux-006-007-verification/carbonic-angle-8-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 38408,
+      "sha256": "65dc13764e8cad843330220870ad63cf3de81e94a24cb1546ebda358cf52f84a"
+    },
+    {
+      "path": "docs/ux-006-007-verification/checks-1024.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 95671,
+      "sha256": "1779857ef40ca7646b1d7a94406c0c599a70924dd9177dc4fc5c44d3d59af114"
+    },
+    {
+      "path": "docs/ux-006-007-verification/checks-1280.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 96094,
+      "sha256": "15b82210798e0b16292110be89aac9c0a7b8d0166c947d7f17cfe45aeef02823"
+    },
+    {
+      "path": "docs/ux-006-007-verification/checks-1440-development.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 80368,
+      "sha256": "794305d7abc0d82c6cdd9bdc55b9abba31d8df4fb42d65965473df52a694ac0e"
+    },
+    {
+      "path": "docs/ux-006-007-verification/checks-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 95674,
+      "sha256": "5c0c413362d711b45756ed6d47710fa266cec1d571e0a419178f34642610f018"
+    },
+    {
+      "path": "docs/ux-006-007-verification/checks-1600.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 96363,
+      "sha256": "bc52fdea10e8876227edf1ba9907aed1069bcd937449651ec12db75e0234c0e9"
+    },
+    {
+      "path": "docs/ux-006-007-verification/checks-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 77250,
+      "sha256": "a03fdf64ddf419ca0b3a2ed6980dc49eac682e0d4aacf610462aabff75bd543c"
+    },
+    {
+      "path": "docs/ux-006-007-verification/checks-768.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 94866,
+      "sha256": "14bc12b46b6076576163e10f949d28e20945a608113bcc4bff8c11fe8160632d"
+    },
+    {
+      "path": "docs/ux-006-007-verification/console-verification.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 633,
+      "sha256": "5fa3f6439b870c5070069e305bdede18206bf1d8e4985baf90ceca7bd9483222"
+    },
+    {
+      "path": "docs/ux-006-007-verification/contrast-measurements.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1830,
+      "sha256": "6216a167b62b00d994c13d735b69e1a8debfb5ba4d83a1405aea0f69b5f89a11"
+    },
+    {
+      "path": "docs/ux-006-007-verification/final/build.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1429,
+      "sha256": "27aae974073e3030ce5a2816fc0ef92fa0a51f9790c3e8b0189045a9009a03af"
+    },
+    {
+      "path": "docs/ux-006-007-verification/final/diff-check.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1868,
+      "sha256": "30c28ab958d6ed9d406119d1f887c3f1d31b5a03bf372cf77758fb9beec3eb63"
+    },
+    {
+      "path": "docs/ux-006-007-verification/final/diff-stat.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 979,
+      "sha256": "9ea921948c92ecc87b45c7804fa148d52bd1e14186f125bc5acdf62074db3486"
+    },
+    {
+      "path": "docs/ux-006-007-verification/final/lint.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 46,
+      "sha256": "63542693038cc4485a6e67e06d28415f22cb7b03b897f7319af547816abb52d7"
+    },
+    {
+      "path": "docs/ux-006-007-verification/final/status.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1291,
+      "sha256": "c3a33e8a4c77d7a880b402d6b628b05195d9dea86d62fd781c024b5e67dcd47b"
+    },
+    {
+      "path": "docs/ux-006-007-verification/final/test-after-geometry.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 269,
+      "sha256": "e21c3772c944c471ed59eadfdbf21cee9c746b61676c37013e2c9d43d11270f9"
+    },
+    {
+      "path": "docs/ux-006-007-verification/final/test-final.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 268,
+      "sha256": "ada9b6958ce57c589587cf0675c804de00c37c40edee7cabe297f31421538ab6"
+    },
+    {
+      "path": "docs/ux-006-007-verification/final/test-serial.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1598,
+      "sha256": "bf56b1c375d89938b25f5fb0797f6c586bd8e1427c107e35cfe531fae8fbc268"
+    },
+    {
+      "path": "docs/ux-006-007-verification/final/test.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1391,
+      "sha256": "1a95380c0bad9b031ea48d54235f57321e105a64218d9e63518ac0e65c4299f8"
+    },
+    {
+      "path": "docs/ux-006-007-verification/final/typecheck.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 55,
+      "sha256": "765f10fc1581ec910b0abfea229e69c95a6d5ccc18a0ba47b691b27f3db63144"
+    },
+    {
+      "path": "docs/ux-006-007-verification/final/working-tree.patch",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 69341,
+      "sha256": "48375d4cef7b457d1840da50f3ec013dd13a43ac00620fb8ae35dceaa6746c04"
+    },
+    {
+      "path": "docs/ux-006-007-verification/graph-checks-1024.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 89013,
+      "sha256": "349ad3f18a545f96d9c2aecd310540b84174f005faf171dfa50625dc64a5f035"
+    },
+    {
+      "path": "docs/ux-006-007-verification/graph-checks-1280.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 89385,
+      "sha256": "a39d0bd89294c44546218c2251a27da2580270c8aa3c7d7719f2a5de44d45061"
+    },
+    {
+      "path": "docs/ux-006-007-verification/graph-checks-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 88949,
+      "sha256": "0c8dcb5e8d1def9c76a2d6d3e373efe43c66fc8f5c5949c59998ccdb72d25807"
+    },
+    {
+      "path": "docs/ux-006-007-verification/graph-checks-1600.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 89637,
+      "sha256": "c89b588f386c7a84ba41c4e5abbe217e4d3fac7c45ecad70a7b8454a0b971417"
+    },
+    {
+      "path": "docs/ux-006-007-verification/graph-checks-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 70346,
+      "sha256": "389351b73d68ca8ae0bb77e973767d73280b100b05928709dd0db1be26185717"
+    },
+    {
+      "path": "docs/ux-006-007-verification/graph-checks-768.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 88209,
+      "sha256": "8fb9cd4322da677c3dcd952a9bd5fb45a38ac213c53c27c9a21e2009e1f23825"
+    },
+    {
+      "path": "docs/ux-006-007-verification/phase-a2-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5544,
+      "sha256": "436268633d34a22392198eed2450c710b653f5fec9e690889fe3f805bb86908e"
+    },
+    {
+      "path": "docs/ux-006-007-verification/phase-a2-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5543,
+      "sha256": "f37c2c2b92825766609e1d5029032bc5dadaf91c9d47d02869c54d47712d967b"
+    },
+    {
+      "path": "docs/ux-006-007-verification/phase-a2-console.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "docs/ux-006-007-verification/preexisting-preservation.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 969,
+      "sha256": "614967d1db193f208b7151d01d377303fb6dc1df3e074ca6eb02810e6075ffaf"
+    },
+    {
+      "path": "docs/ux-006-007-verification/screenshot-metadata.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 7998,
+      "sha256": "f5fd2a5afd2b8caa2d6ea73fa521f718c43c4d7ccd561b4308638bb820240627"
+    },
+    {
+      "path": "docs/ux-006-007-verification/ux-006-007-diff.txt",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 26883,
+      "sha256": "750ab0115f84e65b3492f2044f99f2e7363eaaece36c4fe3a870054e785aa56d"
+    },
+    {
+      "path": "docs/ux-006-007-verification/verification-summary.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1402,
+      "sha256": "8e7e7bbf61ed22dc60a8033a96f9a6e0b7e2470be26eb5213581bacf204110ca"
+    },
+    {
+      "path": "docs/ux-008-verification/accessibility.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 400,
+      "sha256": "9e2f3027e65705a758b53cfe72212588e83f06d3c6a78b6ebda3a58e940d2c59"
+    },
+    {
+      "path": "docs/ux-008-verification/baseline/InitialVelocityPanel.tsx",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 9882,
+      "sha256": "a881903cf4d4dfb42aa76b0e2274a100a9de32003d8805007415234a42dc55c0"
+    },
+    {
+      "path": "docs/ux-008-verification/baseline/MichaelisMentenPanel.tsx",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 21586,
+      "sha256": "c0fbb3735e94766b041de44397e1b731fc25ed2123052f19d83d9d5f40d452d3"
+    },
+    {
+      "path": "docs/ux-008-verification/baseline/ReactionEnergyLab.tsx",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15307,
+      "sha256": "91051b8de7b35ea2024cdff1a0df0d4b7d238240c21fb01cc02f1c8fb7c01a08"
+    },
+    {
+      "path": "docs/ux-008-verification/baseline/preservation.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 11403,
+      "sha256": "5513316c6011e041474e657817b79cdb5e57330aaca29d575e1f30e70b7d6c91"
+    },
+    {
+      "path": "docs/ux-008-verification/baseline/styles.css",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 28730,
+      "sha256": "708ede5ffca8cdd76bcb7c5442178c8287111aeb6f96f9a1afe214edf6f6edec"
+    },
+    {
+      "path": "docs/ux-008-verification/before-mobile.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 7323,
+      "sha256": "79e5ee5083776e357221c847c1af02c55e230515954e4b8890923449482e4623"
+    },
+    {
+      "path": "docs/ux-008-verification/checks-390-smooth-timeout.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6136,
+      "sha256": "845e8fe7dfc948c1507d745192686c02144f7093898df8a1b5de2e8a72fe5866"
+    },
+    {
+      "path": "docs/ux-008-verification/checks-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6965,
+      "sha256": "3b6b39f1ce901039f9ee4ff068b08e432879cc13c19579609b5d5384cc813e1d"
+    },
+    {
+      "path": "docs/ux-008-verification/console-verification.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 708,
+      "sha256": "0b3afb918ae12e2abb9c45086e7ad954bc2469c55b67d9b0e5b81044040db18b"
+    },
+    {
+      "path": "docs/ux-008-verification/energy-catalyst-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 35168,
+      "sha256": "d98e80c1388bddbdd745d13a46b86ae8a99d1aab5bcffe07318f16dec050ec71"
+    },
+    {
+      "path": "docs/ux-008-verification/energy-graph-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 38123,
+      "sha256": "3cca0abe59a6568d7377f3ce84186171882ef869a484af376d39223f996a8418"
+    },
+    {
+      "path": "docs/ux-008-verification/final-build.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1429,
+      "sha256": "38f4f8f9fcd0b36bd49b5a25e179509faea648669209e5aa82c2cb5fdf69a913"
+    },
+    {
+      "path": "docs/ux-008-verification/final-lint.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 46,
+      "sha256": "63542693038cc4485a6e67e06d28415f22cb7b03b897f7319af547816abb52d7"
+    },
+    {
+      "path": "docs/ux-008-verification/final-typecheck.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 55,
+      "sha256": "765f10fc1581ec910b0abfea229e69c95a6d5ccc18a0ba47b691b27f3db63144"
+    },
+    {
+      "path": "docs/ux-008-verification/initial-feedback-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 39335,
+      "sha256": "998bd9e3a903a20384510c5c736958d5f9ab85417acc6e6d075f62bf9f228d95"
+    },
+    {
+      "path": "docs/ux-008-verification/initial-graph-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 32348,
+      "sha256": "b4f36f70f6be25325c570422a81fc089322fc9dc18edc68de47b4a0689be8860"
+    },
+    {
+      "path": "docs/ux-008-verification/layout-1024.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2271,
+      "sha256": "3b843689d7ad814f503b961169b4ff579266968d6efc0a1743277700db1bef40"
+    },
+    {
+      "path": "docs/ux-008-verification/layout-1280.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2284,
+      "sha256": "e1b61daa1c1a7b1ca40378233fd13cc7dd5f482ae4ae5b7735b4dfc3b8ccc51d"
+    },
+    {
+      "path": "docs/ux-008-verification/layout-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2284,
+      "sha256": "0e95327cab16270203b7c37d742cc811f34f1f3f85d0e3ebadab7fe68d99de86"
+    },
+    {
+      "path": "docs/ux-008-verification/layout-1600.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2284,
+      "sha256": "98c1a42bb7e5ae909f5c3ccbbb02fde37845d520d851530bdc4bdf8543ee2cd9"
+    },
+    {
+      "path": "docs/ux-008-verification/layout-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2303,
+      "sha256": "3af2b8136b5472cd97eabbbdf71327257dbaeed667ecc5364a046a5fa081183e"
+    },
+    {
+      "path": "docs/ux-008-verification/layout-768.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2271,
+      "sha256": "d40bca9d9b2f886e38c94bff410f0e5fd110001368d07aa881eaa6168d9ed893"
+    },
+    {
+      "path": "docs/ux-008-verification/manual-console.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "docs/ux-008-verification/mm-1024.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 64065,
+      "sha256": "9274f272ea6a36e0acda5e793a46587534102d204e5c8b62439e6a2ffb0419fd"
+    },
+    {
+      "path": "docs/ux-008-verification/mm-1280.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 94494,
+      "sha256": "e327bc70995d64de7970a8327c951907e5c94b01ac00256527beabc47f82dc25"
+    },
+    {
+      "path": "docs/ux-008-verification/mm-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 120514,
+      "sha256": "05deb6d11d0fd092f495b470969c3cf9ca390521f9498a28729b6a714bb9a0b3"
+    },
+    {
+      "path": "docs/ux-008-verification/mm-1600.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 120412,
+      "sha256": "f49261cc0c2ff38942ae4ed55bd49ab097e3c44b6ea565d60f2c2167666541ac"
+    },
+    {
+      "path": "docs/ux-008-verification/mm-768.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 72581,
+      "sha256": "2f9b280405246fa4016cac63f7baa5faa40a0f930124f676e62b69204010fd12"
+    },
+    {
+      "path": "docs/ux-008-verification/mm-expanded-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 33610,
+      "sha256": "3b498e9f72564e8ee457d07294556381fe4a1358b1618049cc5494cd873ffc9f"
+    },
+    {
+      "path": "docs/ux-008-verification/mm-feedback-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 28752,
+      "sha256": "f63d6ae077edf9c497b29e3405604faa2c62f5a2a99237e6ee5c8b07c86697fe"
+    },
+    {
+      "path": "docs/ux-008-verification/mm-graph-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 32835,
+      "sha256": "133eec1213cdbcee603b88817e76a38b4f1ada1e9c7973182bab0dca4c13a494"
+    },
+    {
+      "path": "docs/ux-008-verification/phase-a2-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5544,
+      "sha256": "436268633d34a22392198eed2450c710b653f5fec9e690889fe3f805bb86908e"
+    },
+    {
+      "path": "docs/ux-008-verification/phase-a2-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5543,
+      "sha256": "f37c2c2b92825766609e1d5029032bc5dadaf91c9d47d02869c54d47712d967b"
+    },
+    {
+      "path": "docs/ux-008-verification/preservation-result.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 354,
+      "sha256": "9f825e13404779d0c46d73413675cb010ef833f75ca8d2ae6d9410e5e1362d70"
+    },
+    {
+      "path": "docs/ux-008-verification/validation-summary.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1328,
+      "sha256": "f84fbdd131ec109398b2bc6d7c848ea193021bbbdcdfa3d092cd0b41d7711c51"
+    },
+    {
+      "path": "docs/ux-008-verification/viewport-summary.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 739,
+      "sha256": "0931e9fe53ca5a642840f223202c0d554a480adf68192879274eec22c0f13d4e"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/package-lock.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 107738,
+      "sha256": "e700ce6df49854416316a826263714c9f0cbdfcf99a2bec6805b461f11d6a732"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/package.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1018,
+      "sha256": "829c6a2b7962c145c997e1a1ec1589e117bad79083f9b889429eeedba96cddd7"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/preservation.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15615,
+      "sha256": "a849baee1a5b33295287624a42bc7c1b684203c63554c44938c845033ecbab23"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/app/App.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3797,
+      "sha256": "e7eb7a131017cbfe2b4347323abaf901c4abd61a7e068ab45e9bacc115b80ed4"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/app/LearningSession.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2142,
+      "sha256": "cd3898a96b9401affe723045ae0415a769376541b9967d40884d6cb56f70a4a7"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/app/ModuleNavigation.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1343,
+      "sha256": "7f8cdd50320b74c9b48ddb78938717cfaa90ae3bfec44f38e90fc580a6fa54b3"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/app/learningSessionStore.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3865,
+      "sha256": "ee943d7ed4a0801c7799ae88485705f40eaac32f5d4af06c8ab4e50aa223aae2"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/app/modules.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3256,
+      "sha256": "7b1ae9b1d31058168293eae1f6a5f1e1d3b865a03c18148383890b48918cbf02"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/app/useHashModule.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 867,
+      "sha256": "3877ebac0104a7d56b8fc662809269a06adb99f07dc7f64f2b478501e917c719"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/1K6M-assembly1-protein.pdb",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 576512,
+      "sha256": "91bff80c01110bd51c47ea3cea68ff3325cb81c800b3aa3bd93d7d3be3c62873"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/1K6M.cif",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 839650,
+      "sha256": "78f08722ec7093bb110a74456944bbe3acaf00cb9ee23b5a62331e9e789d7e49"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/1K6M.pdb",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 666873,
+      "sha256": "10c952b517220c0e52aa98a7d8d984f5fffdd42809c7b264d59d73a18213757a"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/1k6m-mapping.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 654,
+      "sha256": "49f45c0094c6c87f08979bb35a0e6b73067b2679576a8ac75a938f7bfc1ff9ef"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/P16118.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 53449,
+      "sha256": "5235b35a4e962f70c03aca03d54552a653abb227665a64c6182391cbde965184"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/P47871.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 147205,
+      "sha256": "61848589c479943652ab211dee36b585fcf1cdcb94b7df4fcdbaa22e6e0d8d37"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-10749675.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 9043,
+      "sha256": "ec20dcda2f5dd336bd25297d071c793fd80495c5d54865c458d80c92046220e7"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-1339450.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 12440,
+      "sha256": "63a4f94663038773bbb8ff548018e77072909d74c09468b374a4a1d705e6d558"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-15170386.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 7149,
+      "sha256": "7d0ae13ef49e2f8eaf7c2a3276b113391707872d4fe3964918bc212b3c5b9d59"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-2158992.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6810,
+      "sha256": "c42696ce553fbc5a86edaa87f2aaf9980c4f5603145047be05593c6fca5bc2e8"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-2846551.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6461,
+      "sha256": "42c11f507c17548dedd22c0941a09a67799082f7b548699a6f6e132368f31990"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-32193322.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 30089,
+      "sha256": "7b10af929f9452f9c7fc3094f2030dafd557a4cd044e2e576546ccc19a5cc91c"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-6260770.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8194,
+      "sha256": "381650c72c66bc90d262ccd30580069734be6d5d9f536cfe44c0a5ae40c5f685"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-6296099.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 11147,
+      "sha256": "d37f1c43eef43ac74d84ac6351331a5ccd8049fd46de6f0beccf6ce27d509ad4"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-6323408.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 9408,
+      "sha256": "f1b4e523ebbbc3e3a35435e8c457e96f2ad087156b6281ef40e9bb0b22eedba0"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-6455662.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 11486,
+      "sha256": "21cd857314bfe2be1657c4c02f0c592a6ffccbbea2be02868871fee654d351fe"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-7549867.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 7653,
+      "sha256": "8bbc4b3c080b211b2549fc1045c878888af0d750fe6d73f70d04c5f84658e02a"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-8390983.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 7041,
+      "sha256": "f3d310c6af6876e06240fa363e595241114432c3cc9167f118a35960eb8c4fe9"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/PMID-9211863.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8217,
+      "sha256": "4160671a1fd1e60c500939f2e55e487164ef98b88caae04511e77c91caf3a8fb"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/provenance.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8403,
+      "sha256": "554f733c16dadf756bcd837930935c7e9f0ad84f3287aa238bcbe78907850c7c"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/regulation/structure-paper.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 11523,
+      "sha256": "4ad77b0522b2144ba25a3d431ab03cd0ffaba95a1b65e2a68a671f1c69490b8e"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/data/structures/2CBA.pdb",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 219510,
+      "sha256": "7862c050b41ed8a867555699c6a0266c7997c06f7552593febf2af9c92c6e5a8"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/kinetics/michaelisMenten.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2981,
+      "sha256": "e64ca353e03558970457333e8be77a2194c94184b31d9bb0001a14dac4a7cef2"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/kinetics/progressCurve.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 4845,
+      "sha256": "f80ac0c453c3187ae1cdf68e6c1866ccd2ee5bfc5d91fdd84a64ccaf96cc3168"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/kinetics/types.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2267,
+      "sha256": "2970ede0399f3d66bebe2dc62659cc793cff04ff56cad34b3956629fe199cb2e"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/main.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 162,
+      "sha256": "b00ba8890cbabb2c8e1e862b4038c8b0626c14f4862c4e97b81654d387ee2775"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/carbonic-anhydrase/CarbonicAnhydraseLab.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 35550,
+      "sha256": "11b12b69f16eb85b1e0fee49a15ac4199e1a765cae572ce1cc6ae02853fc6c18"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/carbonic-anhydrase/ChemistryPanel.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 4001,
+      "sha256": "9ef128ecefb35dbede51b96e9c254ed1b34c0d3ec02e07ff2211996374fd439c"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/carbonic-anhydrase/ReadingGuide.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5559,
+      "sha256": "d8c4877a2a3da20a79ae07739ecb6d79b251ba573510d66483f25cba551dd4de"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/carbonic-anhydrase/ResidueFinder.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3810,
+      "sha256": "119daa4df7706365f0b6619a794e29f778d377ea4bc10925f215579b2ce28772"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/carbonic-anhydrase/StructureViewer.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3184,
+      "sha256": "98eb43aaf01377ed3d1bef92323f57aa31239f532bd6035cbfee09635ca7829f"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/carbonic-anhydrase/activeSite.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 4928,
+      "sha256": "6bbe2e06008bbbd7bb1f3813e04a287a2d82480307b6cb0f9cbc9691dc665a20"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/carbonic-anhydrase/stageView.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6461,
+      "sha256": "f315335afbf24ac7614037f01c652f7a2e0bbcefd31ebf103704768c1dcd36b5"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/carbonic-anhydrase/structureSource.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 469,
+      "sha256": "1eb485f4e9d5ff089a1e6d92f79ee07c5807735c2e203222aaabef9f849c18b8"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/kinetics/InitialVelocityPanel.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 11705,
+      "sha256": "f03fea5e22edbf86e928bb4fec50b0154556aa5b643cf05bfeea55fb82f7e69d"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/kinetics/KineticsLab.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 4811,
+      "sha256": "fea3712ab9230c9bc61758b009b1e2ef7c2960acf9da4df798a4b0356c49b47d"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/kinetics/MechanisticCaveatPanel.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 4859,
+      "sha256": "898c2dbdad6aa5177d5194511b0402a4e60e5afbf9fa073a3e6001d1d55058fa"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/kinetics/MichaelisMentenPanel.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 22774,
+      "sha256": "3a9c557d8d951a475cc30033ab70ed0e83bdce3e70daa47ab9b42d3903798702"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/kinetics/MichaelisMentenPlot.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 7256,
+      "sha256": "5dca81f1443c7e4592014adfc7dad0b43d0ab483b5f8eeb95006a8143db8c495"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/kinetics/ProgressCurvePlot.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 4801,
+      "sha256": "d39240f4b31516b235849567e454b91662bab1585b4862775a64ee9dcd7e9b6c"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/notes/ModelNotes.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 11643,
+      "sha256": "ed8a4122790449381a0de5a93fe10e8ef9f1cdd46baa1086d18f1c29cd66a558"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/placeholder/ComingSoon.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1020,
+      "sha256": "cdad75804c81dd7d94582f4edb30f53fcf7887d83a038aea9c7e3eaad543d42e"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/reaction-energy/EnergyDiagram.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 11480,
+      "sha256": "af52eaddd1e2c76902a9ebbd6ed29fb26aba5542ca88b424a577b36e98b437ea"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/reaction-energy/ReactionEnergyLab.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 17047,
+      "sha256": "15c3a3e763c88cb617288d1a609ed0a3d44ef7dfb4414d6c107a2a4c26a3961e"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/reaction-energy/energyProfile.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6476,
+      "sha256": "d78b1de91b2ea14906d203dfe7435c7a24f02f6c316cd8ca1b7e9ed6c930cf3b"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/regulation/Diagrams.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 10845,
+      "sha256": "2c2fefc0ca281f2c7dc603583680f1eb7dd238c9b390619022c15b9cde981f04"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/regulation/HormonalRegulation.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 14423,
+      "sha256": "6ad78c07a4494bf113da2502b8c0e132f8e2e411b181dff4f337fa3d04bd0039"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/regulation/ProteinStructure.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5115,
+      "sha256": "cf8e7e72b00ec3b25fa98c1abac3e667dc69801a04ce478a20db2c9966dd5d7f"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/regulation/ScientificContext.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3396,
+      "sha256": "46e7b1f1bc8e4889d307107241fa9268ef1875e8b6b0aa39c2d864fe6c430387"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/regulation/StructureFrame.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2320,
+      "sha256": "88c64c34f441f5e8c6581817c8df293203bf2d55103db045ba45cc00ef5330ae"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/regulation/StructureResults.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1713,
+      "sha256": "bb1a58af7f391c596ce1fd71a08406b4594875a90d4b6014b1fa9c3840a028f9"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/regulation/model.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5618,
+      "sha256": "b9392fd1a0425db95ad8b2049cd9ea7266ccf3f40b4a56a383bcb802567acb5a"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/regulation/regulation.css.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 20380,
+      "sha256": "2d9df86a013e555c7820a36941ef8047ed9d9041cd3cbe970834bfee91e8b474"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/regulation/structureSource.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 942,
+      "sha256": "0083506aed785eeeda7e20c64d3478c625f9728516a416b7e81ffbc9be35fe1e"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/modules/start/StartPage.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3887,
+      "sha256": "773a45a642c76ac5aebc86418702495da74d45bc0f92b4396a4fb5ff1228ee68"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/shared/components/Callout.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1140,
+      "sha256": "b2fd83e12c32e5e465156f0b1ba148107e146b4a684a9ba2db24171a92b45e0f"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/shared/components/Formula.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2438,
+      "sha256": "b5240ae0b8ffa278be77fc484ad14bc784d4156f7d3d23a1a5b1bb8dc10a286b"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/shared/components/ModuleHeader.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1029,
+      "sha256": "437aa055085a75037cf78cc0fd6c290b7593f7ce39039c6ebfefc505f23ee1d8"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/shared/components/Prediction.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5144,
+      "sha256": "57f757d9cac9dd5668109323ebea6d64a166b6494a28753f443605a157b3b4a2"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/shared/components/SectionJumpButton.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 746,
+      "sha256": "4ab58ea918de13c9e3f799a9d6ce14a844792d75a36cf77568e81a9bd3d99d3d"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/shared/components/Segmented.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 716,
+      "sha256": "9f38e42291fdb4f426c8778395aa79a9409674fb0ada371b131627ab67859420"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/shared/components/Slider.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1104,
+      "sha256": "58ae05a3e9522ba5a355d8ee80ace48cfe32e7b7cbed4c06ec60de4272671296"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/shared/components/useMeasuredWidth.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 780,
+      "sha256": "61f38990960ef049814e0219ce5b8b87a8d20ca2d3ffeeb84b0e02cf2bfae94c"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/shared/math/format.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1413,
+      "sha256": "234d376ea83d74cfa01a91a992da1ae46d893a870cffef29d92e6bb77cf6acfd"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/styles.css.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 29440,
+      "sha256": "bd03bcc1897a3c8255267a60fdaf7b9f3f1cadd56e18f3d34bcbe771e7747697"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/viewer/measurements/distance.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2884,
+      "sha256": "db186a172ca27a3b4a4ac653b71ce27c88bed80f9012512859602d93512dd159"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/viewer/pdb/atomNames.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1269,
+      "sha256": "2023a8c05da0658dc0eff40bd5856c1f39b0fcfebbc99b3dd07f501ead6afdcb"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/viewer/pdb/bonds.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1911,
+      "sha256": "3f7c2954dedd15166bb72e910b977d910cecdc96d815396e1d0011021a0ed812"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/viewer/pdb/elements.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1779,
+      "sha256": "c68caeff9ebd4ab1010ab1694105b97c586ba0381a717a42b005252bfb9e54b8"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/viewer/pdb/parsePdb.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 10370,
+      "sha256": "01c93a6775553c05d7dae4fa5d1f5614443f633a7d4b0d9b0829a2b6b4f2fb79"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/viewer/picking/picking.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3223,
+      "sha256": "dcc9913bf03a6d963adc02acda8325f0ba487441dbf2edda2ec8cc0b1d8b9690"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/viewer/rendering/StructureScene.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 27594,
+      "sha256": "d20fc591a2921097290ba903c2c31983dfb491d9d2f2fcea38c8db14e5fdf00a"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/viewer/rendering/fitSelection.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1409,
+      "sha256": "9d0e2f5e49a0091e3481e6c892fd7dc52939188d8ee13fe93afba586e2daa396"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/viewer/rendering/ribbon.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5932,
+      "sha256": "c6bd9bf5b54f597826ab3dafab8d05e9d0dfb87f070c6df190011620bf0711a8"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/src/vite-env.d.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 38,
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/browser/mobile-experiment-harness.html.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 301,
+      "sha256": "6d161dd7218d14d9fb31267bb2776d9d0146a5d712c82f475518031856aad5b1"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/browser/mobile-experiment-harness.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 11958,
+      "sha256": "abd0bf5c20ea9d2bf6afae56726fa3e0150089e81617d1e084c8e8b618267ebc"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/browser/phase-a2-harness.html.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 281,
+      "sha256": "b3d25ddb7e07f2b16809b12e7d1974e2ef5dbae0214c5fbc366e6fda0c5a8777"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/browser/phase-a2-harness.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 11057,
+      "sha256": "2bbe643018a8e80896bc0cd3cff3652c2598300500ee9990f94a24ef557db3da"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/browser/readability-harness.html.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 289,
+      "sha256": "096fd7dbe172b3b4a1a2463d39e2bd381edd0182fb0da500d5e27a3a831c76b3"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/browser/readability-harness.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 14060,
+      "sha256": "90e79ca7c7d4db877014f4e7c652c5a3534c9455dbfb1281e80885d01edba1bd"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/browser/regulation-harness.html.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 290,
+      "sha256": "3864031a2a3c3e4199bb0e2d1fdb4c95d42a5d36dcea9b9aca2c62dbd11bf4da"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/browser/regulation-harness.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1816,
+      "sha256": "fe4b4dcd5db9923cc1bfab577d62c3f033f762ac6686c36db536dbd99635d755"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/browser/session-harness.html.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 283,
+      "sha256": "3545f335e55e6360a97803ea87bdbcc7eed995ce409c31785800cd5e72ac8e1c"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/browser/session-harness.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 15972,
+      "sha256": "85799645c742bbf95a4b6d01ad55da7b58cf1da198bfd99c69499ff59de758bd"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/browser/ui-layout-checks.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5955,
+      "sha256": "4d60cbea452a80a0d35a3a5f60c516d0b0fcd0f8f358cfaa447aaacb0aafd616"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/equations.test.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 4273,
+      "sha256": "fb1b43f4d3cfe0da42bd67bbb7bf4bec76faaca7df2c684e584093b56dd9c781"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/language.test.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 14136,
+      "sha256": "701133fb9d15c89d0eb64fc7ac0e7478e0f8664a685113bccb9ef0e681b20954"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/learningSession.test.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6637,
+      "sha256": "a7e9a997c0eaec1f69d5fa48187df2f3bd8593c3809a39ac6009b469df196698"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/michaelisMenten.test.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5077,
+      "sha256": "cbc857b4408047aadb1f485ae73c47ace97e8096a4577e77d09f7467bbb8c080"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/mobileExperiment.test.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6479,
+      "sha256": "05fc4fc0e821444a8a6c0a25df0d7ba0993fef4af39df642cc07bb972e1258b4"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/phaseA2.test.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8657,
+      "sha256": "0bf17278feeee77bf01f871339d468c81175f272b9e7c875f8d2634cc5c84a6d"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/progressCurve.test.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6318,
+      "sha256": "75f18bf734a7a43c3b10382d37542e56dc9d45e3067e703e133264c5f04c8fd4"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/reactionEnergy.test.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 7659,
+      "sha256": "39d2a71a46c90ad8f32f20973fdd88538ff632e6aa60ad4f964ccc2eee785d30"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/readability.test.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3157,
+      "sha256": "6d17a2f5034f25203228a70ea640ea6bed5f8bf4a1692d62707ea3c08cce5e01"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/regulation.test.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 18135,
+      "sha256": "b6febcf91ace55b61d1ce6788a0a10adb6ed94e7cfc636eab3b2611d3e5b0832"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/stageView.test.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 7823,
+      "sha256": "fee42c965f0770b39c708c2f984ad94f7f2acb38da4bea51a3ffca2cac6e9d99"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/structure.test.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 9326,
+      "sha256": "71894fc943960655ae3f6b24bfc82b7941133b2061314baf14758bb83f3af3db"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/structureLifecycle.test.ts.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2416,
+      "sha256": "08129ea0057aa771cdad4e9c4c06a0dc1991a153a7932568b726f586598a8ab1"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/tests/uiLayout.test.tsx.snapshot",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3896,
+      "sha256": "4e2374c00247101aac34ddbe7b90a45919b3c29502a8e48824381e138e6728e3"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/baseline/working-tree.diff",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 85338,
+      "sha256": "08325569c4c214ade576aa2a337d3a8884fcbb864f3a3e798e91dc8d797ba907"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/build.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1429,
+      "sha256": "bd001dd5f4aa6a42b0a7b6ad3d85a32c29c70d55ac50e59ffc635210988c0a35"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/changed-files.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1131,
+      "sha256": "ebe49697d7c02c8aeac4688b34fd3e3fbf8cad2a8a629d10b4f3beece6e596f7"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/checks-1024.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8765,
+      "sha256": "41c1485050e979398f1c24a02c6d222276fd07d04af2bf6da4409d600f580579"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/checks-1280.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8765,
+      "sha256": "218446bcd886aef0f5355b26859a2c9728e5aa59a9b1ce5e784145984d2fd447"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/checks-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8765,
+      "sha256": "27b59066d88a0ff7b4476ac8c21cdab9f36e835ab7b48be61ca718b4e8658dba"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/checks-1600.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8765,
+      "sha256": "267333c0c935514c4fdec9c54f126aa798e9752d097fa6eecd6d856e3f194282"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/checks-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8879,
+      "sha256": "62aec94c334e387018f8c2c83302f1389d0c2a461a17f7983aa79b2e0424f6f5"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/checks-768.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 8796,
+      "sha256": "2a986f2569449dc3478d1f3b7c602be4d3f342b9956f5e2d2929656fcb9de39d"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/command-results.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 321,
+      "sha256": "7066c212388d9651bfe93954d87f1a83216fdf4990d05dc5248f9715ef79107c"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/comparison-dialog-390-compositor-transition.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 4658,
+      "sha256": "6d1dea7e3cc6ecb4444730edc9c61281abfda02c0bc4cb35d5ad7cd8e8f0c6cd"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/console-verification.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 130,
+      "sha256": "9e412853d697c1238b5ab5adcb6b926a737f646da7246d77b2284301449f4b51"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/content-preservation.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 231,
+      "sha256": "f15ac29be17cb8b3aaf0d3cb9cf1e05d10f758568157218dbbb2bed6366f7d9f"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/diff-check.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 2657,
+      "sha256": "9166edce6baddc8390d782253e4a2645b62880caf3432804ec57fbb999cd79e4"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/evidence-manifest.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 4595,
+      "sha256": "3f7d0c777c09f84f94b08b2f78afde10b9b914d77134684994d5278f5de75cc6"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/keyboard.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1390,
+      "sha256": "21c640cbd5e6f0bc29f5603fc69fb0cfd9dffcff40e65b034b5f58ee49f6a7ae"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/lint.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 46,
+      "sha256": "63542693038cc4485a6e67e06d28415f22cb7b03b897f7319af547816abb52d7"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/phase-a2-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5544,
+      "sha256": "436268633d34a22392198eed2450c710b653f5fec9e690889fe3f805bb86908e"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/phase-a2-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5543,
+      "sha256": "f37c2c2b92825766609e1d5029032bc5dadaf91c9d47d02869c54d47712d967b"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/preservation-result.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 9475,
+      "sha256": "8ac6e12f4e521b3cab6f82d6aeac19bea99bc3dce0c1184bb217d9a119ffda7b"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/reference-kinetics-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 5259,
+      "sha256": "8713af55ddb7ce319c68e2ff528a9ccc14f4f94c4e81c1233ce5be30df9823a3"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/reference-toc-1440.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 103361,
+      "sha256": "671c7b1ac52aa0fb766ac5a836d42885449c902c70c5d22f877192c7c3fab22e"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/reference-toc-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 3786,
+      "sha256": "045cdaed1db16d8f0de767783f0fd71a4d7dfd068d70a341b7ee80e7b1b638c7"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/skip-focused-390.jpg",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 43441,
+      "sha256": "c913dc4b5ab122da19b2048d02b8ec46304447db6f2dda7912b0ad9588b01481"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/skip-mobile.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 106,
+      "sha256": "8079d22527a9c89f57e2fecd4e16df2afbb08dbddc02360734e44652308b6487"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/structure-focus-1440.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 87,
+      "sha256": "5c228e22adced6265f7a3d1116687f19cca762d9a2ad36607f92e506d0e6b66d"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/structure-focus-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 829,
+      "sha256": "268de3760aacdf172d92120e3a4fe2f8e597d32dc171669d85f3e8a3c250561e"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/summary.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 6078,
+      "sha256": "3956ea560d24320ea799309a370fbc5f481a64526b6d941f6b5204748a2c99fa"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/test-timeout.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 1221,
+      "sha256": "949e30fe81b6aa1945364bb850056baba9961016bfd417ff5dcab92d5c769069"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/test.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 268,
+      "sha256": "5a8e551a276f581071548d9a58eea1059b730b97505677d2e038deb64128f3e4"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/typecheck.log",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 55,
+      "sha256": "765f10fc1581ec910b0abfea229e69c95a6d5ccc18a0ba47b691b27f3db63144"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/ux008-390.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 7000,
+      "sha256": "23558e0249837f1227d24671a397bce00a1dd18483b70a69d99e37ead6dc137c"
+    },
+    {
+      "path": "docs/ux-009-010-012-verification/viewport-summary.json",
+      "status": "new",
+      "category": "docs/intentional evidence",
+      "bytes": 751,
+      "sha256": "0d865157cb245dfadeb8bc5b09f4fd4ecf66f5358e50bd9847c44bf9d404f22c"
+    },
+    {
+      "path": "src/app/App.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 4990,
+      "sha256": "8d92c0fdc3692a42be212c6fb86d0e1378fcd96772912bdd06db36ee47762a29"
+    },
+    {
+      "path": "src/app/LearningSession.tsx",
+      "status": "new",
+      "category": "production",
+      "bytes": 2142,
+      "sha256": "cd3898a96b9401affe723045ae0415a769376541b9967d40884d6cb56f70a4a7"
+    },
+    {
+      "path": "src/app/learningSessionStore.ts",
+      "status": "new",
+      "category": "production",
+      "bytes": 3865,
+      "sha256": "ee943d7ed4a0801c7799ae88485705f40eaac32f5d4af06c8ab4e50aa223aae2"
+    },
+    {
+      "path": "src/app/modelNotesNavigation.ts",
+      "status": "new",
+      "category": "production",
+      "bytes": 1582,
+      "sha256": "60e80bcfb707d0ddfeba554b3c71d269baf2cf1c4ed11bf01b986cbfdb0b137b"
+    },
+    {
+      "path": "src/app/useHashModule.ts",
+      "status": "modified",
+      "category": "production",
+      "bytes": 998,
+      "sha256": "181c754f5de6fc56a33694feb80c24e919a15e300ad82408882cddfc92ea7c84"
+    },
+    {
+      "path": "src/modules/carbonic-anhydrase/CarbonicAnhydraseLab.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 35544,
+      "sha256": "43e28b4d37e859c187026f48b5fc22bc3d632fcfa5214858971bb03b8dc3fd24"
+    },
+    {
+      "path": "src/modules/carbonic-anhydrase/ChemistryPanel.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 4077,
+      "sha256": "c4c021cfe0b080a1a70ee2ac9335fe81e59b08c5746ef7e03a43ea11a006a75c"
+    },
+    {
+      "path": "src/modules/kinetics/InitialVelocityPanel.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 11781,
+      "sha256": "45029dec64e316e569735c3904c6540cce21114fa8799334618af7f48c22653b"
+    },
+    {
+      "path": "src/modules/kinetics/KineticsLab.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 4809,
+      "sha256": "875b658f95853da1cd34580de5109015f4ab7dc798572e1d9036aff55671b3e5"
+    },
+    {
+      "path": "src/modules/kinetics/MechanisticCaveatPanel.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 4935,
+      "sha256": "f452e4638b66e9a918c31c9c07e4064cf2dce99c7128b38f89c8517dbd58c9fc"
+    },
+    {
+      "path": "src/modules/kinetics/MichaelisMentenPanel.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 22774,
+      "sha256": "3a9c557d8d951a475cc30033ab70ed0e83bdce3e70daa47ab9b42d3903798702"
+    },
+    {
+      "path": "src/modules/kinetics/MichaelisMentenPlot.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 7256,
+      "sha256": "5dca81f1443c7e4592014adfc7dad0b43d0ab483b5f8eeb95006a8143db8c495"
+    },
+    {
+      "path": "src/modules/kinetics/ProgressCurvePlot.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 4801,
+      "sha256": "d39240f4b31516b235849567e454b91662bab1585b4862775a64ee9dcd7e9b6c"
+    },
+    {
+      "path": "src/modules/notes/ModelNotes.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 15741,
+      "sha256": "1794e882d879e1dd1c62dcad0ae2f55ae7f000bed09bc97832771ffb85d63410"
+    },
+    {
+      "path": "src/modules/placeholder/ComingSoon.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 1018,
+      "sha256": "d3c91f2a1e88b7c6d7316a2b7a583fb8b8decdd3c3ef781e1dc718cacaf85542"
+    },
+    {
+      "path": "src/modules/reaction-energy/EnergyDiagram.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 11480,
+      "sha256": "af52eaddd1e2c76902a9ebbd6ed29fb26aba5542ca88b424a577b36e98b437ea"
+    },
+    {
+      "path": "src/modules/reaction-energy/ReactionEnergyLab.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 17119,
+      "sha256": "4cdf3cc736f745ddedbb99e4efc6cc970f563a32dc78117921a64d6a1ff28c8e"
+    },
+    {
+      "path": "src/modules/reaction-energy/energyProfile.ts",
+      "status": "modified",
+      "category": "production",
+      "bytes": 6476,
+      "sha256": "d78b1de91b2ea14906d203dfe7435c7a24f02f6c316cd8ca1b7e9ed6c930cf3b"
+    },
+    {
+      "path": "src/modules/regulation/Diagrams.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 11609,
+      "sha256": "e02e9f67d0a946324cc5ccd78d4b3e4ba5df9a937234103dfcd92c1132905abb"
+    },
+    {
+      "path": "src/modules/regulation/HormonalRegulation.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 15153,
+      "sha256": "d9cae5395f3ae05a6386be1fc27a7d452bd87a321f67bc34a3a7bd10ffade09b"
+    },
+    {
+      "path": "src/modules/regulation/regulation.css",
+      "status": "modified",
+      "category": "production",
+      "bytes": 20379,
+      "sha256": "93fcba10104df7fcd9b7ea2dbf74010ede5ee5f406673599229554ceebb5d82a"
+    },
+    {
+      "path": "src/modules/start/StartPage.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 3885,
+      "sha256": "e6233da27dfd38a4ffa6b6a3acf8d4aa4841cbfebf9ca55b14f0b8e9516ecb43"
+    },
+    {
+      "path": "src/shared/components/ModuleHeader.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 1287,
+      "sha256": "2fcb22fa3e9e68719c52ad047ba8a0abaddd57bbc42f92bb39c9ce266665bce3"
+    },
+    {
+      "path": "src/shared/components/Prediction.tsx",
+      "status": "modified",
+      "category": "production",
+      "bytes": 5144,
+      "sha256": "57f757d9cac9dd5668109323ebea6d64a166b6494a28753f443605a157b3b4a2"
+    },
+    {
+      "path": "src/shared/components/SectionJumpButton.tsx",
+      "status": "new",
+      "category": "production",
+      "bytes": 746,
+      "sha256": "4ab58ea918de13c9e3f799a9d6ce14a844792d75a36cf77568e81a9bd3d99d3d"
+    },
+    {
+      "path": "src/styles.css",
+      "status": "modified",
+      "category": "production",
+      "bytes": 30345,
+      "sha256": "c79bddd25e8ddaef75a3ec94b651e1e83de4f26e95b6fdeccb2cc04bbdb50dbb"
+    },
+    {
+      "path": "tests/browser/mobile-experiment-harness.html",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 301,
+      "sha256": "6d161dd7218d14d9fb31267bb2776d9d0146a5d712c82f475518031856aad5b1"
+    },
+    {
+      "path": "tests/browser/mobile-experiment-harness.tsx",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 11958,
+      "sha256": "abd0bf5c20ea9d2bf6afae56726fa3e0150089e81617d1e084c8e8b618267ebc"
+    },
+    {
+      "path": "tests/browser/navigation-context-harness.html",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 296,
+      "sha256": "0e86b577c515cfb99eb2a2bfd27c2121e6e6f03fc46425547b8bffe06b286a97"
+    },
+    {
+      "path": "tests/browser/navigation-context-harness.tsx",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 12750,
+      "sha256": "d6188a17b0377603dd45578eb3099e4396afcdbf7b492f1d44052ad7197de5bd"
+    },
+    {
+      "path": "tests/browser/phase-a2-harness.html",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 281,
+      "sha256": "b3d25ddb7e07f2b16809b12e7d1974e2ef5dbae0214c5fbc366e6fda0c5a8777"
+    },
+    {
+      "path": "tests/browser/phase-a2-harness.tsx",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 11057,
+      "sha256": "2bbe643018a8e80896bc0cd3cff3652c2598300500ee9990f94a24ef557db3da"
+    },
+    {
+      "path": "tests/browser/readability-harness.html",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 289,
+      "sha256": "096fd7dbe172b3b4a1a2463d39e2bd381edd0182fb0da500d5e27a3a831c76b3"
+    },
+    {
+      "path": "tests/browser/readability-harness.tsx",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 14060,
+      "sha256": "90e79ca7c7d4db877014f4e7c652c5a3534c9455dbfb1281e80885d01edba1bd"
+    },
+    {
+      "path": "tests/browser/session-harness.html",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 283,
+      "sha256": "3545f335e55e6360a97803ea87bdbcc7eed995ce409c31785800cd5e72ac8e1c"
+    },
+    {
+      "path": "tests/browser/session-harness.tsx",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 15972,
+      "sha256": "85799645c742bbf95a4b6d01ad55da7b58cf1da198bfd99c69499ff59de758bd"
+    },
+    {
+      "path": "tests/learningSession.test.tsx",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 6637,
+      "sha256": "a7e9a997c0eaec1f69d5fa48187df2f3bd8593c3809a39ac6009b469df196698"
+    },
+    {
+      "path": "tests/mobileExperiment.test.tsx",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 6479,
+      "sha256": "05fc4fc0e821444a8a6c0a25df0d7ba0993fef4af39df642cc07bb972e1258b4"
+    },
+    {
+      "path": "tests/navigationContext.test.tsx",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 5477,
+      "sha256": "1c8425af3c03ec6a8c026896ba20c7b2403ad51ddd23f010a733b1c33be574a4"
+    },
+    {
+      "path": "tests/phaseA2.test.tsx",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 8657,
+      "sha256": "0bf17278feeee77bf01f871339d468c81175f272b9e7c875f8d2634cc5c84a6d"
+    },
+    {
+      "path": "tests/readability.test.tsx",
+      "status": "new",
+      "category": "tests/fixtures",
+      "bytes": 3157,
+      "sha256": "6d17a2f5034f25203228a70ea640ea6bed5f8bf4a1692d62707ea3c08cce5e01"
+    }
+  ],
+  "sourceFreeze": [
+    {
+      "path": "src/app/LearningSession.tsx",
+      "sha256": "cd3898a96b9401affe723045ae0415a769376541b9967d40884d6cb56f70a4a7"
+    },
+    {
+      "path": "src/app/learningSessionStore.ts",
+      "sha256": "ee943d7ed4a0801c7799ae88485705f40eaac32f5d4af06c8ab4e50aa223aae2"
+    },
+    {
+      "path": "src/app/modelNotesNavigation.ts",
+      "sha256": "60e80bcfb707d0ddfeba554b3c71d269baf2cf1c4ed11bf01b986cbfdb0b137b"
+    },
+    {
+      "path": "src/shared/components/SectionJumpButton.tsx",
+      "sha256": "4ab58ea918de13c9e3f799a9d6ce14a844792d75a36cf77568e81a9bd3d99d3d"
+    },
+    {
+      "path": "tests/browser/mobile-experiment-harness.html",
+      "sha256": "6d161dd7218d14d9fb31267bb2776d9d0146a5d712c82f475518031856aad5b1"
+    },
+    {
+      "path": "tests/browser/mobile-experiment-harness.tsx",
+      "sha256": "abd0bf5c20ea9d2bf6afae56726fa3e0150089e81617d1e084c8e8b618267ebc"
+    },
+    {
+      "path": "tests/browser/navigation-context-harness.html",
+      "sha256": "0e86b577c515cfb99eb2a2bfd27c2121e6e6f03fc46425547b8bffe06b286a97"
+    },
+    {
+      "path": "tests/browser/navigation-context-harness.tsx",
+      "sha256": "d6188a17b0377603dd45578eb3099e4396afcdbf7b492f1d44052ad7197de5bd"
+    },
+    {
+      "path": "tests/browser/phase-a2-harness.html",
+      "sha256": "b3d25ddb7e07f2b16809b12e7d1974e2ef5dbae0214c5fbc366e6fda0c5a8777"
+    },
+    {
+      "path": "tests/browser/phase-a2-harness.tsx",
+      "sha256": "2bbe643018a8e80896bc0cd3cff3652c2598300500ee9990f94a24ef557db3da"
+    },
+    {
+      "path": "tests/browser/readability-harness.html",
+      "sha256": "096fd7dbe172b3b4a1a2463d39e2bd381edd0182fb0da500d5e27a3a831c76b3"
+    },
+    {
+      "path": "tests/browser/readability-harness.tsx",
+      "sha256": "90e79ca7c7d4db877014f4e7c652c5a3534c9455dbfb1281e80885d01edba1bd"
+    },
+    {
+      "path": "tests/browser/session-harness.html",
+      "sha256": "3545f335e55e6360a97803ea87bdbcc7eed995ce409c31785800cd5e72ac8e1c"
+    },
+    {
+      "path": "tests/browser/session-harness.tsx",
+      "sha256": "85799645c742bbf95a4b6d01ad55da7b58cf1da198bfd99c69499ff59de758bd"
+    },
+    {
+      "path": "tests/learningSession.test.tsx",
+      "sha256": "a7e9a997c0eaec1f69d5fa48187df2f3bd8593c3809a39ac6009b469df196698"
+    },
+    {
+      "path": "tests/mobileExperiment.test.tsx",
+      "sha256": "05fc4fc0e821444a8a6c0a25df0d7ba0993fef4af39df642cc07bb972e1258b4"
+    },
+    {
+      "path": "tests/navigationContext.test.tsx",
+      "sha256": "1c8425af3c03ec6a8c026896ba20c7b2403ad51ddd23f010a733b1c33be574a4"
+    },
+    {
+      "path": "tests/phaseA2.test.tsx",
+      "sha256": "0bf17278feeee77bf01f871339d468c81175f272b9e7c875f8d2634cc5c84a6d"
+    },
+    {
+      "path": "tests/readability.test.tsx",
+      "sha256": "6d17a2f5034f25203228a70ea640ea6bed5f8bf4a1692d62707ea3c08cce5e01"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "e700ce6df49854416316a826263714c9f0cbdfcf99a2bec6805b461f11d6a732"
+    },
+    {
+      "path": "package.json",
+      "sha256": "829c6a2b7962c145c997e1a1ec1589e117bad79083f9b889429eeedba96cddd7"
+    },
+    {
+      "path": "src/app/App.tsx",
+      "sha256": "8d92c0fdc3692a42be212c6fb86d0e1378fcd96772912bdd06db36ee47762a29"
+    },
+    {
+      "path": "src/app/ModuleNavigation.tsx",
+      "sha256": "7f8cdd50320b74c9b48ddb78938717cfaa90ae3bfec44f38e90fc580a6fa54b3"
+    },
+    {
+      "path": "src/app/modules.ts",
+      "sha256": "7b1ae9b1d31058168293eae1f6a5f1e1d3b865a03c18148383890b48918cbf02"
+    },
+    {
+      "path": "src/app/useHashModule.ts",
+      "sha256": "181c754f5de6fc56a33694feb80c24e919a15e300ad82408882cddfc92ea7c84"
+    },
+    {
+      "path": "src/data/regulation/1K6M-assembly1-protein.pdb",
+      "sha256": "91bff80c01110bd51c47ea3cea68ff3325cb81c800b3aa3bd93d7d3be3c62873"
+    },
+    {
+      "path": "src/data/regulation/1K6M.cif",
+      "sha256": "78f08722ec7093bb110a74456944bbe3acaf00cb9ee23b5a62331e9e789d7e49"
+    },
+    {
+      "path": "src/data/regulation/1K6M.pdb",
+      "sha256": "10c952b517220c0e52aa98a7d8d984f5fffdd42809c7b264d59d73a18213757a"
+    },
+    {
+      "path": "src/data/regulation/1k6m-mapping.json",
+      "sha256": "49f45c0094c6c87f08979bb35a0e6b73067b2679576a8ac75a938f7bfc1ff9ef"
+    },
+    {
+      "path": "src/data/regulation/P16118.json",
+      "sha256": "5235b35a4e962f70c03aca03d54552a653abb227665a64c6182391cbde965184"
+    },
+    {
+      "path": "src/data/regulation/P47871.json",
+      "sha256": "61848589c479943652ab211dee36b585fcf1cdcb94b7df4fcdbaa22e6e0d8d37"
+    },
+    {
+      "path": "src/data/regulation/PMID-10749675.json",
+      "sha256": "ec20dcda2f5dd336bd25297d071c793fd80495c5d54865c458d80c92046220e7"
+    },
+    {
+      "path": "src/data/regulation/PMID-1339450.json",
+      "sha256": "63a4f94663038773bbb8ff548018e77072909d74c09468b374a4a1d705e6d558"
+    },
+    {
+      "path": "src/data/regulation/PMID-15170386.json",
+      "sha256": "7d0ae13ef49e2f8eaf7c2a3276b113391707872d4fe3964918bc212b3c5b9d59"
+    },
+    {
+      "path": "src/data/regulation/PMID-2158992.json",
+      "sha256": "c42696ce553fbc5a86edaa87f2aaf9980c4f5603145047be05593c6fca5bc2e8"
+    },
+    {
+      "path": "src/data/regulation/PMID-2846551.json",
+      "sha256": "42c11f507c17548dedd22c0941a09a67799082f7b548699a6f6e132368f31990"
+    },
+    {
+      "path": "src/data/regulation/PMID-32193322.json",
+      "sha256": "7b10af929f9452f9c7fc3094f2030dafd557a4cd044e2e576546ccc19a5cc91c"
+    },
+    {
+      "path": "src/data/regulation/PMID-6260770.json",
+      "sha256": "381650c72c66bc90d262ccd30580069734be6d5d9f536cfe44c0a5ae40c5f685"
+    },
+    {
+      "path": "src/data/regulation/PMID-6296099.json",
+      "sha256": "d37f1c43eef43ac74d84ac6351331a5ccd8049fd46de6f0beccf6ce27d509ad4"
+    },
+    {
+      "path": "src/data/regulation/PMID-6323408.json",
+      "sha256": "f1b4e523ebbbc3e3a35435e8c457e96f2ad087156b6281ef40e9bb0b22eedba0"
+    },
+    {
+      "path": "src/data/regulation/PMID-6455662.json",
+      "sha256": "21cd857314bfe2be1657c4c02f0c592a6ffccbbea2be02868871fee654d351fe"
+    },
+    {
+      "path": "src/data/regulation/PMID-7549867.json",
+      "sha256": "8bbc4b3c080b211b2549fc1045c878888af0d750fe6d73f70d04c5f84658e02a"
+    },
+    {
+      "path": "src/data/regulation/PMID-8390983.json",
+      "sha256": "f3d310c6af6876e06240fa363e595241114432c3cc9167f118a35960eb8c4fe9"
+    },
+    {
+      "path": "src/data/regulation/PMID-9211863.json",
+      "sha256": "4160671a1fd1e60c500939f2e55e487164ef98b88caae04511e77c91caf3a8fb"
+    },
+    {
+      "path": "src/data/regulation/provenance.json",
+      "sha256": "554f733c16dadf756bcd837930935c7e9f0ad84f3287aa238bcbe78907850c7c"
+    },
+    {
+      "path": "src/data/regulation/structure-paper.json",
+      "sha256": "4ad77b0522b2144ba25a3d431ab03cd0ffaba95a1b65e2a68a671f1c69490b8e"
+    },
+    {
+      "path": "src/data/structures/2CBA.pdb",
+      "sha256": "7862c050b41ed8a867555699c6a0266c7997c06f7552593febf2af9c92c6e5a8"
+    },
+    {
+      "path": "src/kinetics/michaelisMenten.ts",
+      "sha256": "e64ca353e03558970457333e8be77a2194c94184b31d9bb0001a14dac4a7cef2"
+    },
+    {
+      "path": "src/kinetics/progressCurve.ts",
+      "sha256": "f80ac0c453c3187ae1cdf68e6c1866ccd2ee5bfc5d91fdd84a64ccaf96cc3168"
+    },
+    {
+      "path": "src/kinetics/types.ts",
+      "sha256": "2970ede0399f3d66bebe2dc62659cc793cff04ff56cad34b3956629fe199cb2e"
+    },
+    {
+      "path": "src/main.tsx",
+      "sha256": "b00ba8890cbabb2c8e1e862b4038c8b0626c14f4862c4e97b81654d387ee2775"
+    },
+    {
+      "path": "src/modules/carbonic-anhydrase/CarbonicAnhydraseLab.tsx",
+      "sha256": "43e28b4d37e859c187026f48b5fc22bc3d632fcfa5214858971bb03b8dc3fd24"
+    },
+    {
+      "path": "src/modules/carbonic-anhydrase/ChemistryPanel.tsx",
+      "sha256": "c4c021cfe0b080a1a70ee2ac9335fe81e59b08c5746ef7e03a43ea11a006a75c"
+    },
+    {
+      "path": "src/modules/carbonic-anhydrase/ReadingGuide.tsx",
+      "sha256": "d8c4877a2a3da20a79ae07739ecb6d79b251ba573510d66483f25cba551dd4de"
+    },
+    {
+      "path": "src/modules/carbonic-anhydrase/ResidueFinder.tsx",
+      "sha256": "119daa4df7706365f0b6619a794e29f778d377ea4bc10925f215579b2ce28772"
+    },
+    {
+      "path": "src/modules/carbonic-anhydrase/StructureViewer.tsx",
+      "sha256": "98eb43aaf01377ed3d1bef92323f57aa31239f532bd6035cbfee09635ca7829f"
+    },
+    {
+      "path": "src/modules/carbonic-anhydrase/activeSite.ts",
+      "sha256": "6bbe2e06008bbbd7bb1f3813e04a287a2d82480307b6cb0f9cbc9691dc665a20"
+    },
+    {
+      "path": "src/modules/carbonic-anhydrase/stageView.ts",
+      "sha256": "f315335afbf24ac7614037f01c652f7a2e0bbcefd31ebf103704768c1dcd36b5"
+    },
+    {
+      "path": "src/modules/carbonic-anhydrase/structureSource.ts",
+      "sha256": "1eb485f4e9d5ff089a1e6d92f79ee07c5807735c2e203222aaabef9f849c18b8"
+    },
+    {
+      "path": "src/modules/kinetics/InitialVelocityPanel.tsx",
+      "sha256": "45029dec64e316e569735c3904c6540cce21114fa8799334618af7f48c22653b"
+    },
+    {
+      "path": "src/modules/kinetics/KineticsLab.tsx",
+      "sha256": "875b658f95853da1cd34580de5109015f4ab7dc798572e1d9036aff55671b3e5"
+    },
+    {
+      "path": "src/modules/kinetics/MechanisticCaveatPanel.tsx",
+      "sha256": "f452e4638b66e9a918c31c9c07e4064cf2dce99c7128b38f89c8517dbd58c9fc"
+    },
+    {
+      "path": "src/modules/kinetics/MichaelisMentenPanel.tsx",
+      "sha256": "3a9c557d8d951a475cc30033ab70ed0e83bdce3e70daa47ab9b42d3903798702"
+    },
+    {
+      "path": "src/modules/kinetics/MichaelisMentenPlot.tsx",
+      "sha256": "5dca81f1443c7e4592014adfc7dad0b43d0ab483b5f8eeb95006a8143db8c495"
+    },
+    {
+      "path": "src/modules/kinetics/ProgressCurvePlot.tsx",
+      "sha256": "d39240f4b31516b235849567e454b91662bab1585b4862775a64ee9dcd7e9b6c"
+    },
+    {
+      "path": "src/modules/notes/ModelNotes.tsx",
+      "sha256": "1794e882d879e1dd1c62dcad0ae2f55ae7f000bed09bc97832771ffb85d63410"
+    },
+    {
+      "path": "src/modules/placeholder/ComingSoon.tsx",
+      "sha256": "d3c91f2a1e88b7c6d7316a2b7a583fb8b8decdd3c3ef781e1dc718cacaf85542"
+    },
+    {
+      "path": "src/modules/reaction-energy/EnergyDiagram.tsx",
+      "sha256": "af52eaddd1e2c76902a9ebbd6ed29fb26aba5542ca88b424a577b36e98b437ea"
+    },
+    {
+      "path": "src/modules/reaction-energy/ReactionEnergyLab.tsx",
+      "sha256": "4cdf3cc736f745ddedbb99e4efc6cc970f563a32dc78117921a64d6a1ff28c8e"
+    },
+    {
+      "path": "src/modules/reaction-energy/energyProfile.ts",
+      "sha256": "d78b1de91b2ea14906d203dfe7435c7a24f02f6c316cd8ca1b7e9ed6c930cf3b"
+    },
+    {
+      "path": "src/modules/regulation/Diagrams.tsx",
+      "sha256": "e02e9f67d0a946324cc5ccd78d4b3e4ba5df9a937234103dfcd92c1132905abb"
+    },
+    {
+      "path": "src/modules/regulation/HormonalRegulation.tsx",
+      "sha256": "d9cae5395f3ae05a6386be1fc27a7d452bd87a321f67bc34a3a7bd10ffade09b"
+    },
+    {
+      "path": "src/modules/regulation/ProteinStructure.tsx",
+      "sha256": "cf8e7e72b00ec3b25fa98c1abac3e667dc69801a04ce478a20db2c9966dd5d7f"
+    },
+    {
+      "path": "src/modules/regulation/ScientificContext.tsx",
+      "sha256": "46e7b1f1bc8e4889d307107241fa9268ef1875e8b6b0aa39c2d864fe6c430387"
+    },
+    {
+      "path": "src/modules/regulation/StructureFrame.tsx",
+      "sha256": "88c64c34f441f5e8c6581817c8df293203bf2d55103db045ba45cc00ef5330ae"
+    },
+    {
+      "path": "src/modules/regulation/StructureResults.tsx",
+      "sha256": "bb1a58af7f391c596ce1fd71a08406b4594875a90d4b6014b1fa9c3840a028f9"
+    },
+    {
+      "path": "src/modules/regulation/model.ts",
+      "sha256": "b9392fd1a0425db95ad8b2049cd9ea7266ccf3f40b4a56a383bcb802567acb5a"
+    },
+    {
+      "path": "src/modules/regulation/regulation.css",
+      "sha256": "93fcba10104df7fcd9b7ea2dbf74010ede5ee5f406673599229554ceebb5d82a"
+    },
+    {
+      "path": "src/modules/regulation/structureSource.ts",
+      "sha256": "0083506aed785eeeda7e20c64d3478c625f9728516a416b7e81ffbc9be35fe1e"
+    },
+    {
+      "path": "src/modules/start/StartPage.tsx",
+      "sha256": "e6233da27dfd38a4ffa6b6a3acf8d4aa4841cbfebf9ca55b14f0b8e9516ecb43"
+    },
+    {
+      "path": "src/shared/components/Callout.tsx",
+      "sha256": "b2fd83e12c32e5e465156f0b1ba148107e146b4a684a9ba2db24171a92b45e0f"
+    },
+    {
+      "path": "src/shared/components/Formula.tsx",
+      "sha256": "b5240ae0b8ffa278be77fc484ad14bc784d4156f7d3d23a1a5b1bb8dc10a286b"
+    },
+    {
+      "path": "src/shared/components/ModuleHeader.tsx",
+      "sha256": "2fcb22fa3e9e68719c52ad047ba8a0abaddd57bbc42f92bb39c9ce266665bce3"
+    },
+    {
+      "path": "src/shared/components/Prediction.tsx",
+      "sha256": "57f757d9cac9dd5668109323ebea6d64a166b6494a28753f443605a157b3b4a2"
+    },
+    {
+      "path": "src/shared/components/Segmented.tsx",
+      "sha256": "9f38e42291fdb4f426c8778395aa79a9409674fb0ada371b131627ab67859420"
+    },
+    {
+      "path": "src/shared/components/Slider.tsx",
+      "sha256": "58ae05a3e9522ba5a355d8ee80ace48cfe32e7b7cbed4c06ec60de4272671296"
+    },
+    {
+      "path": "src/shared/components/useMeasuredWidth.ts",
+      "sha256": "61f38990960ef049814e0219ce5b8b87a8d20ca2d3ffeeb84b0e02cf2bfae94c"
+    },
+    {
+      "path": "src/shared/math/format.ts",
+      "sha256": "234d376ea83d74cfa01a91a992da1ae46d893a870cffef29d92e6bb77cf6acfd"
+    },
+    {
+      "path": "src/styles.css",
+      "sha256": "c79bddd25e8ddaef75a3ec94b651e1e83de4f26e95b6fdeccb2cc04bbdb50dbb"
+    },
+    {
+      "path": "src/viewer/measurements/distance.ts",
+      "sha256": "db186a172ca27a3b4a4ac653b71ce27c88bed80f9012512859602d93512dd159"
+    },
+    {
+      "path": "src/viewer/pdb/atomNames.ts",
+      "sha256": "2023a8c05da0658dc0eff40bd5856c1f39b0fcfebbc99b3dd07f501ead6afdcb"
+    },
+    {
+      "path": "src/viewer/pdb/bonds.ts",
+      "sha256": "3f7c2954dedd15166bb72e910b977d910cecdc96d815396e1d0011021a0ed812"
+    },
+    {
+      "path": "src/viewer/pdb/elements.ts",
+      "sha256": "c68caeff9ebd4ab1010ab1694105b97c586ba0381a717a42b005252bfb9e54b8"
+    },
+    {
+      "path": "src/viewer/pdb/parsePdb.ts",
+      "sha256": "01c93a6775553c05d7dae4fa5d1f5614443f633a7d4b0d9b0829a2b6b4f2fb79"
+    },
+    {
+      "path": "src/viewer/picking/picking.ts",
+      "sha256": "dcc9913bf03a6d963adc02acda8325f0ba487441dbf2edda2ec8cc0b1d8b9690"
+    },
+    {
+      "path": "src/viewer/rendering/StructureScene.ts",
+      "sha256": "d20fc591a2921097290ba903c2c31983dfb491d9d2f2fcea38c8db14e5fdf00a"
+    },
+    {
+      "path": "src/viewer/rendering/fitSelection.ts",
+      "sha256": "9d0e2f5e49a0091e3481e6c892fd7dc52939188d8ee13fe93afba586e2daa396"
+    },
+    {
+      "path": "src/viewer/rendering/ribbon.ts",
+      "sha256": "c6bd9bf5b54f597826ab3dafab8d05e9d0dfb87f070c6df190011620bf0711a8"
+    },
+    {
+      "path": "src/vite-env.d.ts",
+      "sha256": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5"
+    },
+    {
+      "path": "tests/browser/regulation-harness.html",
+      "sha256": "3864031a2a3c3e4199bb0e2d1fdb4c95d42a5d36dcea9b9aca2c62dbd11bf4da"
+    },
+    {
+      "path": "tests/browser/regulation-harness.tsx",
+      "sha256": "fe4b4dcd5db9923cc1bfab577d62c3f033f762ac6686c36db536dbd99635d755"
+    },
+    {
+      "path": "tests/browser/ui-layout-checks.ts",
+      "sha256": "4d60cbea452a80a0d35a3a5f60c516d0b0fcd0f8f358cfaa447aaacb0aafd616"
+    },
+    {
+      "path": "tests/equations.test.tsx",
+      "sha256": "fb1b43f4d3cfe0da42bd67bbb7bf4bec76faaca7df2c684e584093b56dd9c781"
+    },
+    {
+      "path": "tests/language.test.ts",
+      "sha256": "701133fb9d15c89d0eb64fc7ac0e7478e0f8664a685113bccb9ef0e681b20954"
+    },
+    {
+      "path": "tests/michaelisMenten.test.ts",
+      "sha256": "cbc857b4408047aadb1f485ae73c47ace97e8096a4577e77d09f7467bbb8c080"
+    },
+    {
+      "path": "tests/progressCurve.test.ts",
+      "sha256": "75f18bf734a7a43c3b10382d37542e56dc9d45e3067e703e133264c5f04c8fd4"
+    },
+    {
+      "path": "tests/reactionEnergy.test.ts",
+      "sha256": "39d2a71a46c90ad8f32f20973fdd88538ff632e6aa60ad4f964ccc2eee785d30"
+    },
+    {
+      "path": "tests/regulation.test.tsx",
+      "sha256": "b6febcf91ace55b61d1ce6788a0a10adb6ed94e7cfc636eab3b2611d3e5b0832"
+    },
+    {
+      "path": "tests/stageView.test.ts",
+      "sha256": "fee42c965f0770b39c708c2f984ad94f7f2acb38da4bea51a3ffca2cac6e9d99"
+    },
+    {
+      "path": "tests/structure.test.ts",
+      "sha256": "71894fc943960655ae3f6b24bfc82b7941133b2061314baf14758bb83f3af3db"
+    },
+    {
+      "path": "tests/structureLifecycle.test.ts",
+      "sha256": "08129ea0057aa771cdad4e9c4c06a0dc1991a153a7932568b726f586598a8ab1"
+    },
+    {
+      "path": "tests/uiLayout.test.tsx",
+      "sha256": "4e2374c00247101aac34ddbe7b90a45919b3c29502a8e48824381e138e6728e3"
+    }
+  ]
+}

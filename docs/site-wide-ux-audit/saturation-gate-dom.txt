@@ -1,0 +1,144 @@
+- banner:
+  - generic: E
+  - heading "Enzyme Explorer" [level=1]
+  - paragraph: 효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론
+  - paragraph: 모듈 03 · 효소 반응속도론 실험실
+- navigation "학습 모듈":
+  - link "Start 시작":
+    - /url: "#/start"
+    - generic: Start
+  - link "01 반응 에너지":
+    - /url: "#/reaction-energy"
+    - generic: "01"
+    - generic: 반응 에너지
+  - link "02 탄산무수화효소":
+    - /url: "#/carbonic-anhydrase"
+    - generic: "02"
+    - generic: 탄산무수화효소
+  - link "03 효소 반응속도론 실험실":
+    - /url: "#/kinetics"
+    - generic: "03"
+    - generic: 반응속도론
+  - link "04 효소 저해 · Enzyme II에서 다룰 예정":
+    - /url: "#/inhibition"
+    - generic: "04"
+    - generic: 효소 저해
+  - link "05 효소 조절":
+    - /url: "#/regulation"
+    - generic: "05"
+    - generic: 효소 조절
+  - link "Reference 모델 및 주의사항":
+    - /url: "#/model-notes"
+    - generic: Reference
+- main:
+  - paragraph: 모듈 03 · 반응속도론
+  - heading "효소 반응속도론 실험실" [level=2]
+  - paragraph: 효소가 반응 속도를 바꾸는 효과를 어떻게 실험적으로 확인할 수 있을까?
+  - generic: 교육용 모델
+  - text: 단일 기질, 비가역 반응, 초기 속도 모델
+  - button "이 모듈 초기화"
+  - group "탐구 단계":
+    - generic: 탐구 단계
+    - group "탐구 단계":
+      - button "03A · 초기 속도 측정"
+      - button "03B · Michaelis–Menten 탐색" [pressed]
+      - button "03C · Km과 반응 메커니즘"
+  - region "조건 조절":
+    - heading "조건 조절" [level=3]
+    - generic: 현재 기질 농도 [S]
+    - status:
+      - text: "600"
+      - generic: µM
+    - slider "현재 기질 농도 [S]" [active]: "600"
+    - paragraph: 그래프에서 현재 기질 농도에 해당하는 점을 선택합니다. [S]를 바꾸어도 곡선 자체는 변하지 않습니다.
+    - separator
+    - generic: 총 효소 농도 [E]T
+    - status:
+      - text: "5"
+      - generic: nM
+    - slider "총 효소 농도 [E]T": "5"
+    - generic: kcat
+    - status:
+      - text: "20"
+      - generic: s⁻¹
+    - slider "kcat": "20"
+    - generic: Km
+    - status:
+      - text: "300"
+      - generic: µM
+    - slider "Km": "300"
+    - button "현재 곡선을 비교 기준으로 저장"
+  - region "Michaelis–Menten 그래프":
+    - img "기질 농도에 따른 초기 속도 그래프. 기질 농도 축 0–600 µM, 속도 축 0–110 nM/s. Vmax 100.0 nM/s, Km 300 µM. 현재 [S] 600 µM에서 v₀는 66.7 nM/s입니다.":
+      - generic: "0"
+      - generic: "28"
+      - generic: "55"
+      - generic: "83"
+      - generic: "110"
+      - generic: "0"
+      - generic: "100"
+      - generic: "200"
+      - generic: "300"
+      - generic: "400"
+      - generic: "500"
+      - generic: "600"
+      - generic: "[S] (µM)"
+      - generic: v₀ (nM·s⁻¹)
+    - list:
+      - text: 현재 조건
+      - text: 현재 [S]
+    - paragraph: "기질 농도 축: 0–600 µM로 고정. 기본 탐색에서는 속도 축을 현재 Vmax에 맞추어 표시합니다."
+  - region "탐구 활동":
+    - heading "관찰" [level=3]
+    - term: Vmax = kcat[E]T
+    - definition: 100.0 nM·s⁻¹
+    - term: 현재 [S]
+    - definition: 600 µM
+    - term: 현재 초기 속도 v₀
+    - definition: 66.7 nM·s⁻¹
+    - term: v₀ / Vmax
+    - definition: 66.7%
+    - group "탐구 활동":
+      - generic: 탐구 활동
+      - group "탐구 활동":
+        - button "A · 기질 포화" [pressed]
+        - button "B · 효소 농도 2배"
+        - button "C · Km 변화"
+    - group "먼저 예측 기질 농도 [S]를 계속 높이면 v₀도 같은 비율로 계속 증가할까?":
+      - generic: 먼저 예측
+      - text: 기질 농도 [S]를 계속 높이면 v₀도 같은 비율로 계속 증가할까?
+      - radio "그렇다 — [S]가 2배가 되면 v₀도 계속 2배가 된다" [disabled]
+      - generic: 그렇다 — [S]가 2배가 되면 v₀도 계속 2배가 된다
+      - radio "아니다 — v₀는 증가하지만 점차 한계값에 가까워진다" [checked] [disabled]
+      - generic: 아니다 — v₀는 증가하지만 점차 한계값에 가까워진다
+      - radio "아니다 — v₀는 증가하다가 최고점 이후 다시 감소한다" [disabled]
+      - generic: 아니다 — v₀는 증가하다가 최고점 이후 다시 감소한다
+    - paragraph:
+      - text: "확정한 예측:"
+      - strong: 아니다 — v₀는 증가하지만 점차 한계값에 가까워진다
+    - paragraph:
+      - text: 이제
+      - strong: 현재 기질 농도 [S]
+      - text: 를 낮은 값에서 높은 값까지 움직이며 v₀와 Vmax의 관계를 관찰해 보세요.
+    - paragraph: 먼저 예측을 확정한 뒤 [S]를 Km보다 충분히 크게 높여 그래프가 어떻게 변하는지 확인하세요.
+    - note:
+      - 'heading "주의: Km을 기질 결합 친화도(binding affinity)와 단순히 같은 값으로 해석하면 안 됩니다" [level=4]':
+        - generic: "!"
+        - text: "주의: Km을 기질 결합 친화도(binding affinity)와 단순히 같은 값으로 해석하면 안 됩니다"
+      - paragraph:
+        - text: Michaelis–Menten 모델에서 Km은
+        - strong: v₀ = Vmax/2가 되는 기질 농도
+        - text: 입니다. 반응 속도를 측정해서 얻는 반응속도론적 값입니다.
+      - paragraph: Km과 기질 결합 친화도의 관계는 반응 메커니즘에 따라 달라집니다. Km에는 결합 단계뿐 아니라 촉매 단계의 속도상수도 함께 포함되기 때문에, Km이 달라졌다는 사실만으로 기질 결합 친화도가 어떻게 변했는지 일반적으로 단정할 수 없습니다.
+      - paragraph:
+        - text: 03C에서 Km 안에 결합 관련 속도상수가 어떻게 들어 있는지, 그리고 언제 Km이 K
+        - subscript: d
+        - text: 에 가까워질 수 있는지 확인할 수 있습니다.
+- contentinfo:
+  - generic: Enzyme Explorer · Enzyme I — 촉매 작용과 반응속도론
+  - link "모델 및 주의사항":
+    - /url: "#/model-notes"
+  - text: ·
+  - link "단백질 구조와 접힘 복습하기 ↗":
+    - /url: https://suimaire.github.io/protein-3d-explorer/
+  - generic: today 1 · total 15

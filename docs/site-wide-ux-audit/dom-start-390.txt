@@ -1,0 +1,71 @@
+- banner:
+  - generic: E
+  - heading "Enzyme Explorer" [level=1]
+  - paragraph: 효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론
+  - paragraph: 시작
+- navigation "학습 모듈":
+  - link "Start 시작" [active]:
+    - /url: "#/start"
+    - generic: Start
+  - link "01 반응 에너지":
+    - /url: "#/reaction-energy"
+    - generic: "01"
+    - generic: 반응 에너지
+  - link "02 탄산무수화효소":
+    - /url: "#/carbonic-anhydrase"
+    - generic: "02"
+    - generic: 탄산무수화효소
+  - link "03 효소 반응속도론 실험실":
+    - /url: "#/kinetics"
+    - generic: "03"
+    - generic: 반응속도론
+  - link "04 효소 저해 · Enzyme II에서 다룰 예정":
+    - /url: "#/inhibition"
+    - generic: "04"
+    - generic: 효소 저해
+  - link "05 효소 조절":
+    - /url: "#/regulation"
+    - generic: "05"
+    - generic: 효소 조절
+  - link "Reference 모델 및 주의사항":
+    - /url: "#/model-notes"
+    - generic: Reference
+- main:
+  - paragraph: Basic Biochemistry ET · 7차시 · Enzyme I
+  - heading "단백질은 어떻게 화학 반응을 더 빠르게 만들 수 있을까?" [level=2]
+  - paragraph: 같은 질문을 세 가지 방향에서 살펴봅니다. 각 모듈은 앞 모듈이 남긴 질문에 답하므로 순서대로 진행하세요. 모든 모듈에서 먼저 예측하고, 조건을 바꾸고, 결과를 관찰한 뒤에 설명을 읽습니다.
+  - list:
+    - button "01 에너지 Energy 왜 열역학적으로 유리한 반응도 느릴 수 있을까?":
+      - generic: "01"
+      - generic: 에너지 Energy
+      - generic: 왜 열역학적으로 유리한 반응도 느릴 수 있을까?
+    - button "02 활성 부위 화학 Active-site chemistry 분자의 3차원 환경은 어떻게 반응성을 바꿀까?":
+      - generic: "02"
+      - generic: 활성 부위 화학 Active-site chemistry
+      - generic: 분자의 3차원 환경은 어떻게 반응성을 바꿀까?
+    - button "03 반응속도론 Kinetics 효소의 효과를 실험적으로 어떻게 측정할 수 있을까?":
+      - generic: "03"
+      - generic: 반응속도론 Kinetics
+      - generic: 효소의 효과를 실험적으로 어떻게 측정할 수 있을까?
+  - region "세 모듈의 연결":
+    - heading "세 모듈을 잇는 흐름" [level=3]
+    - list:
+      - strong: 에너지.
+      - text: 열역학적으로 유리한 반응도 매우 오래 걸릴 수 있습니다. 반응 속도를 결정하는 것은 반응물과 생성물 사이의 활성화 장벽이기 때문입니다. 효소는 이 장벽을 낮출 뿐, 반응물과 생성물의 에너지 차이는 바꾸지 않습니다.
+      - strong: 활성 부위 화학.
+      - text: 인간 탄산무수화효소 II(human carbonic anhydrase II)에서는 Zn²⁺ 이온과 그 주변 잔기들이 결합한 solvent 분자의 화학적 성질을 바꿉니다. 단백질이 활성화 장벽이 더 낮은 반응 경로를 만드는 구체적인 예입니다.
+      - strong: 반응속도론.
+      - text: 이런 과정은 직접 볼 수 없습니다. 실험에서 측정할 수 있는 것은 반응 속도이므로, 마지막 모듈에서는 하나의 반응 진행 곡선에서 출발해 v₀ 대 [S] 관계 전체를 직접 쌓아 올립니다.
+  - region "이후 모듈":
+    - heading "이후 수업에서 다룰 내용" [level=3]
+    - list:
+      - strong: 모듈 04 — 효소 저해
+      - generic: Enzyme II에서 다룰 예정
+- contentinfo:
+  - generic: Enzyme Explorer · Enzyme I — 촉매 작용과 반응속도론
+  - link "모델 및 주의사항":
+    - /url: "#/model-notes"
+  - text: ·
+  - link "단백질 구조와 접힘 복습하기 ↗":
+    - /url: https://suimaire.github.io/protein-3d-explorer/
+  - generic: today 1 · total 15

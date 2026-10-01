@@ -1,0 +1,495 @@
+warning: in the working copy of 'src/modules/kinetics/MichaelisMentenPlot.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/kinetics/ProgressCurvePlot.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/reaction-energy/EnergyDiagram.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/regulation/regulation.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/styles.css', LF will be replaced by CRLF the next time Git touches it
+diff --git a/src/modules/kinetics/MichaelisMentenPlot.tsx b/src/modules/kinetics/MichaelisMentenPlot.tsx
+index 4d0995c..8ffd4a6 100644
+--- a/src/modules/kinetics/MichaelisMentenPlot.tsx
++++ b/src/modules/kinetics/MichaelisMentenPlot.tsx
+@@ -12,9 +12,8 @@ const sameParameters = (a: MichaelisMentenParameters, b: MichaelisMentenParamete
+ /**
+  * v0 against [S].
+  *
+- * Both axes are held fixed while a comparison is running: the x axis always spans 0–600 µM, and the y axis
+- * is driven by `velocityAxisMax`, which the panel locks before an experiment changes a parameter. Without
+- * that lock, doubling [E]T would double Vmax *and* the axis, and the two curves would look identical.
++ * The x axis always spans 0–600 µM. Both curves use one y scale driven by `velocityAxisMax`.
++ * The panel reserves reference headroom and expands it when needed to show the current curve.
+  */
+ export function MichaelisMentenPlot({
+   parameters,
+@@ -38,7 +37,7 @@ export function MichaelisMentenPlot({
+   const [host, width] = useMeasuredWidth(680);
+   const narrow = width < 520;
+   const height = Math.round(Math.min(420, Math.max(270, width * 0.6)));
+-  const m = {l: narrow ? 56 : 68, r: narrow ? 14 : 22, t: 16, b: narrow ? 52 : 58};
++  const m = {l: narrow ? 56 : 68, r: narrow ? 22 : 24, t: 26, b: narrow ? 52 : 58};
+   const pw = width - m.l - m.r;
+   const ph = height - m.t - m.b;
+   const X = (s: number) => m.l + (s / SUBSTRATE_AXIS_MAX) * pw;
+@@ -51,7 +50,7 @@ export function MichaelisMentenPlot({
+ 
+   const vmax = calculateVmax(parameters);
+   const current = calculateV0(parameters, currentSubstrate);
+-  const xTicks = [0, 100, 200, 300, 400, 500, 600];
++  const xTicks = narrow ? [0, 200, 400, 600] : [0, 100, 200, 300, 400, 500, 600];
+   const yTicks = [0, 0.25, 0.5, 0.75, 1].map((f) => f * velocityAxisMax);
+ 
+   return (
+@@ -62,6 +61,7 @@ export function MichaelisMentenPlot({
+         viewBox={`0 0 ${width} ${height}`}
+         role="img"
+         data-testid="mm-plot"
++        data-narrow={narrow}
+         data-vmax={vmax.toFixed(3)}
+         data-km={parameters.km}
+         data-current-substrate={currentSubstrate}
+@@ -78,7 +78,7 @@ export function MichaelisMentenPlot({
+           {yTicks.map((t) => (
+             <g key={t}>
+               <line x1={m.l} x2={m.l + pw} y1={Y(t)} y2={Y(t)} />
+-              <text x={m.l - 6} y={Y(t) + 4} textAnchor="end" fontSize={narrow ? 10.5 : 12}>
++              <text x={m.l - 6} y={Y(t) + 4} textAnchor="end">
+                 {t.toFixed(0)}
+               </text>
+             </g>
+@@ -86,7 +86,7 @@ export function MichaelisMentenPlot({
+           {xTicks.map((t) => (
+             <g key={t}>
+               <line x1={X(t)} x2={X(t)} y1={m.t} y2={m.t + ph} />
+-              <text x={X(t)} y={m.t + ph + 16} textAnchor="middle" fontSize={narrow ? 10.5 : 12}>
++              <text x={X(t)} y={m.t + ph + 18} textAnchor="middle">
+                 {t}
+               </text>
+             </g>
+@@ -97,7 +97,7 @@ export function MichaelisMentenPlot({
+         {showVmaxGuide ? (
+           <g data-testid="vmax-guide">
+             <line x1={m.l} x2={m.l + pw} y1={Y(vmax)} y2={Y(vmax)} stroke={KINETICS_COLORS.curve} strokeWidth={1.4} strokeDasharray="7 5" />
+-            <text x={m.l + pw - 4} y={Y(vmax) - 6} textAnchor="end" fill={KINETICS_COLORS.curve} fontSize={12}>
++            <text className="chart-key" x={m.l + pw - 4} y={Y(vmax) - 6} textAnchor="end" fill={KINETICS_COLORS.curve}>
+               Vmax = {vmax.toFixed(0)} nM·s⁻¹
+             </text>
+           </g>
+@@ -106,10 +106,10 @@ export function MichaelisMentenPlot({
+           <g data-testid="km-guide">
+             <line x1={m.l} x2={X(parameters.km)} y1={Y(vmax / 2)} y2={Y(vmax / 2)} stroke={KINETICS_COLORS.marker} strokeWidth={1.4} strokeDasharray="4 4" />
+             <line x1={X(parameters.km)} x2={X(parameters.km)} y1={Y(vmax / 2)} y2={m.t + ph} stroke={KINETICS_COLORS.marker} strokeWidth={1.4} strokeDasharray="4 4" />
+-            <text x={X(parameters.km) + 6} y={m.t + ph - 8} fill={KINETICS_COLORS.marker} fontSize={12}>
++            <text className="chart-key" x={Math.min(Math.max(X(parameters.km), m.l + 84), m.l + pw - 84)} textAnchor="middle" y={m.t + ph - 8} fill={KINETICS_COLORS.marker}>
+               [S] = Km = {parameters.km} µM
+             </text>
+-            <text x={m.l + 6} y={Y(vmax / 2) - 6} fill={KINETICS_COLORS.marker} fontSize={12}>
++            <text className="chart-key" x={m.l + 6} y={Y(vmax / 2) - 6} fill={KINETICS_COLORS.marker}>
+               Vmax / 2
+             </text>
+           </g>
+diff --git a/src/modules/kinetics/ProgressCurvePlot.tsx b/src/modules/kinetics/ProgressCurvePlot.tsx
+index db0e3da..47b72ef 100644
+--- a/src/modules/kinetics/ProgressCurvePlot.tsx
++++ b/src/modules/kinetics/ProgressCurvePlot.tsx
+@@ -28,7 +28,7 @@ export function ProgressCurvePlot({
+   const [host, width] = useMeasuredWidth(620);
+   const narrow = width < 480;
+   const height = Math.round(Math.min(380, Math.max(240, width * 0.58)));
+-  const m = {l: narrow ? 52 : 62, r: narrow ? 14 : 20, t: 16, b: narrow ? 50 : 54};
++  const m = {l: narrow ? 52 : 62, r: narrow ? 22 : 24, t: 34, b: narrow ? 50 : 54};
+   const pw = width - m.l - m.r;
+   const ph = height - m.t - m.b;
+   const duration = samples.at(-1)?.time ?? 1;
+@@ -36,8 +36,9 @@ export function ProgressCurvePlot({
+   const Y = (p: number) => m.t + (1 - p / initialSubstrate) * ph;
+ 
+   const path = samples.map((s, i) => `${i ? 'L' : 'M'}${X(s.time).toFixed(2)},${Y(s.product).toFixed(2)}`).join('');
+-  const yTicks = [0, 0.25, 0.5, 0.75, 1].map((f) => f * initialSubstrate);
+-  const xTicks = [0, 0.25, 0.5, 0.75, 1].map((f) => f * duration);
++  const tickFractions = narrow ? [0, 0.5, 1] : [0, 0.25, 0.5, 0.75, 1];
++  const yTicks = tickFractions.map((f) => f * initialSubstrate);
++  const xTicks = tickFractions.map((f) => f * duration);
+   const final = samples.at(-1);
+ 
+   return (
+@@ -48,6 +49,7 @@ export function ProgressCurvePlot({
+         viewBox={`0 0 ${width} ${height}`}
+         role="img"
+         data-testid="progress-curve"
++        data-narrow={narrow}
+         data-duration={duration.toFixed(2)}
+         data-final-product={final ? final.product.toFixed(3) : ''}
+         data-tangent={tangent ? 'on' : 'off'}
+@@ -66,7 +68,7 @@ export function ProgressCurvePlot({
+           {yTicks.map((t) => (
+             <g key={t}>
+               <line x1={m.l} x2={m.l + pw} y1={Y(t)} y2={Y(t)} />
+-              <text x={m.l - 6} y={Y(t) + 4} textAnchor="end" fontSize={narrow ? 10.5 : 12}>
++              <text x={m.l - 6} y={Y(t) + 4} textAnchor="end">
+                 {t.toFixed(0)}
+               </text>
+             </g>
+@@ -74,7 +76,7 @@ export function ProgressCurvePlot({
+           {xTicks.map((t) => (
+             <g key={t}>
+               <line x1={X(t)} x2={X(t)} y1={m.t} y2={m.t + ph} />
+-              <text x={X(t)} y={m.t + ph + 16} textAnchor="middle" fontSize={narrow ? 10.5 : 12}>
++              <text x={X(t)} y={m.t + ph + 18} textAnchor="middle">
+                 {t.toFixed(0)}
+               </text>
+             </g>
+@@ -96,10 +98,9 @@ export function ProgressCurvePlot({
+           </g>
+         ) : null}
+         <path d={path} fill="none" stroke={KINETICS_COLORS.curve} strokeWidth={2.8} strokeLinecap="round" clipPath="url(#progress-clip)" />
+-        {tangent && !narrow ? (
+-          // Placed above the tangent, far enough along the window that the real curve has already dropped
+-          // clear of it — the label must not sit on top of either line.
+-          <text x={X(duration * 0.52)} y={Y(tangent[1].product * 0.52) - 12} fill={KINETICS_COLORS.tangent} fontSize={12} textAnchor="middle">
++        {tangent ? (
++          // A reserved header keeps this measurement annotation clear of either line at every concentration.
++          <text className="chart-key" x={m.l + pw / 2} y={20} fill={KINETICS_COLORS.tangent} textAnchor="middle">
+             초기 속도 (t = 0에서의 접선)
+           </text>
+         ) : null}
+diff --git a/src/modules/reaction-energy/EnergyDiagram.tsx b/src/modules/reaction-energy/EnergyDiagram.tsx
+index d0b952c..3ab7f89 100644
+--- a/src/modules/reaction-energy/EnergyDiagram.tsx
++++ b/src/modules/reaction-energy/EnergyDiagram.tsx
+@@ -3,6 +3,8 @@ import {COORDINATE, ENERGY_DOMAIN, pathwayPoints, type Pathway, type ReactionEne
+ import {signed} from '../../shared/math/format';
+ 
+ export const PATHWAY_COLORS = {uncatalyzed: '#6b7a85', catalyzed: '#15618f', level: '#a8761c'} as const;
++/** Text has its own darker shades; the curve/arrow palette retains its meaning. */
++export const ENERGY_TEXT_COLORS = {uncatalyzed: '#51636f', catalyzed: '#15618f', level: '#8a5908'} as const;
+ 
+ /** A vertical measurement arrow between two energies, drawn with a head at each end. */
+ function EnergyArrow({
+@@ -10,6 +12,7 @@ function EnergyArrow({
+   top,
+   bottom,
+   color,
++  textColor,
+   dashed,
+   label,
+   anchor = 'start',
+@@ -20,6 +23,7 @@ function EnergyArrow({
+   top: number;
+   bottom: number;
+   color: string;
++  textColor: string;
+   dashed?: boolean;
+   label: string;
+   anchor?: 'start' | 'end';
+@@ -33,7 +37,7 @@ function EnergyArrow({
+       <path d={head(top, 1)} fill={color} />
+       <path d={head(bottom, -1)} fill={color} />
+       {hideLabel ? null : (
+-        <text x={anchor === 'start' ? x + 6 : x - 6} y={(top + bottom) / 2 + 4} textAnchor={anchor} fill={color} fontSize={12}>
++        <text className="chart-key" x={anchor === 'start' ? x + 6 : x - 6} y={(top + bottom) / 2 + 4} textAnchor={anchor} fill={textColor}>
+           {label}
+         </text>
+       )}
+@@ -64,7 +68,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
+ 
+   const narrow = width < 560;
+   const height = Math.round(Math.min(460, Math.max(300, width * 0.62)));
+-  const m = {l: narrow ? 50 : 64, r: narrow ? 14 : 22, t: 18, b: narrow ? 58 : 64};
++  const m = {l: narrow ? 50 : 64, r: narrow ? 20 : 26, t: 28, b: narrow ? 96 : 64};
+   const pw = width - m.l - m.r;
+   const ph = height - m.t - m.b;
+   const X = (x: number) => m.l + x * pw;
+@@ -75,7 +79,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
+       .map((s, i) => `${i ? 'L' : 'M'}${X(s.x).toFixed(2)},${Y(s.energy).toFixed(2)}`)
+       .join('');
+   const {uncatalyzed, catalyzed} = profile;
+-  const ticks = [-30, -15, 0, 15, 30, 45, 60, 70];
++  const ticks = narrow ? [-30, 0, 30, 60, 70] : [-30, -15, 0, 15, 30, 45, 60, 70];
+ 
+   const description =
+     `반응 좌표 다이어그램, 교육용 모델. 반응물 에너지 0, 생성물 에너지 ${signed(uncatalyzed.product, 0)} kJ/mol. ` +
+@@ -92,6 +96,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
+         viewBox={`0 0 ${width} ${height}`}
+         role="img"
+         data-testid={testId}
++        data-narrow={narrow}
+         data-enzyme={catalyzed ? 'on' : 'off'}
+         data-delta-g={profile.deltaG.toFixed(2)}
+         data-forward-uncatalyzed={uncatalyzed.forwardBarrier.toFixed(2)}
+@@ -104,7 +109,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
+           {ticks.map((t) => (
+             <g key={t}>
+               <line x1={m.l} x2={m.l + pw} y1={Y(t)} y2={Y(t)} />
+-              <text x={m.l - 6} y={Y(t) + 4} textAnchor="end" fontSize={narrow ? 10.5 : 12}>
++              <text x={m.l - 6} y={Y(t) + 4} textAnchor="end">
+                 {t}
+               </text>
+             </g>
+@@ -151,6 +156,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
+           top={Y(uncatalyzed.transitionState)}
+           bottom={Y(uncatalyzed.reactant)}
+           color={PATHWAY_COLORS.uncatalyzed}
++          textColor={ENERGY_TEXT_COLORS.uncatalyzed}
+           dashed
+           anchor="end"
+           hideLabel={narrow}
+@@ -163,6 +169,8 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
+             top={Y(catalyzed.transitionState)}
+             bottom={Y(catalyzed.reactant)}
+             color={PATHWAY_COLORS.catalyzed}
++            textColor={ENERGY_TEXT_COLORS.catalyzed}
++            anchor="end"
+             hideLabel={narrow}
+             label={`정반응 ${catalyzed.forwardBarrier.toFixed(0)}`}
+           />
+@@ -174,6 +182,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
+             top={Y(catalyzed.transitionState)}
+             bottom={Y(catalyzed.product)}
+             color={PATHWAY_COLORS.catalyzed}
++            textColor={ENERGY_TEXT_COLORS.catalyzed}
+             anchor="end"
+             hideLabel={narrow}
+             label={`역반응 ${catalyzed.reverseBarrier.toFixed(0)}`}
+@@ -185,6 +194,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
+           top={Y(uncatalyzed.transitionState)}
+           bottom={Y(uncatalyzed.product)}
+           color={PATHWAY_COLORS.uncatalyzed}
++          textColor={ENERGY_TEXT_COLORS.uncatalyzed}
+           dashed
+           hideLabel={narrow}
+           label={`역반응 ${uncatalyzed.reverseBarrier.toFixed(0)}`}
+@@ -195,11 +205,22 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
+           top={Y(Math.max(uncatalyzed.reactant, uncatalyzed.product))}
+           bottom={Y(Math.min(uncatalyzed.reactant, uncatalyzed.product))}
+           color={PATHWAY_COLORS.level}
++          textColor={ENERGY_TEXT_COLORS.level}
+           anchor="end"
+           hideLabel={narrow}
+           label={`ΔG ${signed(profile.deltaG, 0)}`}
+         />
+ 
++        {/* Narrow plots use two readable numeric rows instead of squeezing text between the arrows. */}
++        {narrow ? <g data-testid="energy-numeric-summary">
++          <text className="chart-key" x={width / 2} y={height - 76} textAnchor="middle" fill={ENERGY_TEXT_COLORS.uncatalyzed}>
++            정반응 {uncatalyzed.forwardBarrier.toFixed(0)}{catalyzed ? ` → ${catalyzed.forwardBarrier.toFixed(0)}` : ''} · 역반응 {uncatalyzed.reverseBarrier.toFixed(0)}{catalyzed ? ` → ${catalyzed.reverseBarrier.toFixed(0)}` : ''}
++          </text>
++          <text className="chart-key" x={width / 2} y={height - 56} textAnchor="middle" fill={ENERGY_TEXT_COLORS.level}>
++            ΔG {signed(profile.deltaG, 0)} · 단위 kJ·mol⁻¹
++          </text>
++        </g> : null}
++
+         <text className="state-label" x={X(COORDINATE.reactantEnd / 2)} y={Y(uncatalyzed.reactant) - 10} textAnchor="middle">
+           반응물
+         </text>
+@@ -231,7 +252,7 @@ export function EnergyDiagram({profile, testId = 'energy-diagram'}: {profile: Re
+           {narrow ? '반응 경로상의 개념적 진행 정도 · 시간축 아님' : '반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다.'}
+         </text>
+         {/* The rotated label has to fit inside the plot height, which is short on a phone. */}
+-        <text className="axis-label" transform={`translate(${narrow ? 13 : 15} ${m.t + ph / 2}) rotate(-90)`} textAnchor="middle" fontSize={narrow ? 11.5 : undefined}>
++        <text className="axis-label" transform={`translate(${narrow ? 15 : 17} ${m.t + ph / 2}) rotate(-90)`} textAnchor="middle">
+           {narrow ? '상대 자유에너지 (kJ·mol⁻¹)' : '상대 Gibbs 자유에너지 (kJ·mol⁻¹)'}
+         </text>
+       </svg>
+diff --git a/src/modules/regulation/regulation.css b/src/modules/regulation/regulation.css
+index a1ed604..7009761 100644
+--- a/src/modules/regulation/regulation.css
++++ b/src/modules/regulation/regulation.css
+@@ -34,7 +34,8 @@ main.regulation-module { padding-top: 12px; }
+ .reg-steps li[data-reached=true] { border-color: #648fa5; }
+ .reg-steps li[aria-current=step] { border-color: #175e84; color: #124e71; background: #edf5f9; border-radius: 4px; }
+ .reg-steps li > span { display: block; font-size: 12px; font-weight: bold; }
+-.reg-steps small { display: block; font-size: 11px; }
++.reg-steps small { display: block; font-size: 13px; overflow-wrap: anywhere; }
++.reg-steps li[aria-current=step] small { font-size: 14px; font-weight: bold; }
+ .reg-observation { height: 445px; overflow-y: auto; padding: 4px; scrollbar-gutter: stable; }
+ .reg-pathway { display: flex; flex-direction: column; align-items: stretch; }
+ .reg-signal-chain { display: flex; flex-wrap: wrap; gap: 2px 8px; align-content: center; justify-content: center; text-align: center; border: 1px solid #dce6ec; background: #f4f8fa; padding: 6px 10px; border-radius: 8px; min-height: 51px; font-size: 12px; line-height: 1.4; }
+@@ -52,12 +53,13 @@ main.regulation-module { padding-top: 12px; }
+ .reg-phosphatase { border-color: #ab8856; background: #fcf4e7; color: #795525; }
+ .reg-domain > span { font-size: 21px; font-weight: bold; }
+ .reg-domain small { font-size: 10px; }
+-.reg-domain strong { font-size: 13px; margin-top: 4px; }
++.reg-domain strong { font-size: 14px; margin-top: 4px; }
+ .reg-chain-link { text-align: center; color: #758e9e; }
+-.reg-domain-caption { text-align: center; font-size: 11px; color: #526570; padding-top: 3px; }
++.reg-domain-caption { text-align: center; font-size: 13px; color: #526570; padding-top: 3px; }
+ .reg-current { outline: 2px solid #2b7aa0; outline-offset: 3px; }
+-.reg-reactions { min-height: 48px; padding: 5px 2px; font-size: 11.5px; }
++.reg-reactions { min-height: 48px; padding: 5px 2px; font-size: 13px; }
+ .reg-reactions > div { display: flex; gap: 8px; justify-content: center; }
++.reg-reactions > div > span { min-width: 0; overflow-wrap: anywhere; }
+ .reg-reactions b { min-width: 64px; text-align: right; }
+ .reg-reaction-arrow { font-style: normal; font-weight: bold; border-bottom: 1px solid #567986; }
+ .reg-metabolite { display: grid; grid-template-columns: auto auto; align-items: center; gap: 0 10px; padding: 6px 15px; background: #f0f6fb; border: 1px solid #9dbbd0; border-radius: 12px; text-align: center; line-height: 1.3; }
+@@ -65,7 +67,7 @@ main.regulation-module { padding-top: 12px; }
+ .reg-metabolite b { font-size: 23px; }
+ .reg-metabolite strong { font-size: 17px; }
+ .reg-metabolite small { grid-column: 1 / -1; font-size: 11px; }
+-.reg-legend { font-size: 10.5px; text-align: center; margin: 7px 0 0; color: #5e737f; }
++.reg-legend { font-size: 14px; text-align: center; text-wrap: balance; margin: 7px 0 0; color: #5e737f; }
+ .reg-playback { display: flex; gap: 6px; flex-wrap: wrap; padding-top: 12px; border-top: 1px solid #e0e7eb; }
+ .reg-playback button { font-size: 12px; flex: 1; white-space: nowrap; padding: 6px 7px; }
+ .reg-narration { font-size: 13px; line-height: 1.55; min-height: 42px; margin: 8px 0 3px; color: #32566d; }
+@@ -132,19 +134,19 @@ main.regulation-module { padding-top: 12px; }
+ .reg-carbon-positions span { display: block; border: 1px solid #799cae; border-radius: 3px; background: #fff; }
+ .reg-carbon-positions b { display: block; color: #286c96; font-size: 12px; }
+ .reg-control-equation { border-left: 3px dashed #698fa8; padding-left: 14px; }
+-.reg-structure-source { font-size: 12px; margin: 0 0 5px; }
++.reg-structure-source { font-size: 13px; margin: 0 0 5px; }
+ .reg-structure .molecule-viewer { height: clamp(520px, 65vh, 650px); min-height: 0; }
+-.reg-structure-legend { display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 11px; font-weight: bold; }
++.reg-structure-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; justify-content: space-between; font-size: 14px; font-weight: bold; }
+ .reg-structure-legend span:first-child { color: #176c72; }
+ .reg-structure-legend span:last-child { color: #805b2a; }
+ .reg-structure-tools { display: flex; gap: 8px; align-items: center; margin-top: 5px; }
+ .reg-structure-tools button { font-size: 12px; }
+-.reg-picked { font-size: 11px; min-height: 20px; margin: 5px 0; }
++.reg-picked { font-size: 13px; min-height: 20px; margin: 5px 0; }
+ .reg-structure-inset { display: flex; align-items: center; gap: 16px; border-block: 1px dashed #c6afce; padding: 10px 8px; margin-top: 10px; background: #fbf8fd; }
+ .reg-structure-inset .reg-ser { min-height: 43px; flex: 0 0 190px; }
+ .reg-structure-inset .reg-ser > span:last-child { flex-basis: auto; }
+ .reg-structure-inset p { font-size: 12px; margin: 3px 0 0; }
+-.reg-structure-scope { margin-top: 5px; padding: 6px 9px; border: 1px solid #d3dfe5; border-radius: 7px; background: #f5f9fb; font-size: 11px; line-height: 1.6; }
++.reg-structure-scope { margin-top: 5px; padding: 6px 9px; border: 1px solid #d3dfe5; border-radius: 7px; background: #f5f9fb; font-size: 13px; line-height: 1.6; }
+ .reg-structure-scope summary { cursor: pointer; min-height: 32px; display: list-item; align-content: center; font-weight: bold; }
+ .reg-structure-scope p { margin: 6px 0; }
+ @media (max-width: 1180px) {
+@@ -173,8 +175,8 @@ main.regulation-module { padding-top: 12px; }
+   .reg-structure-inset { flex-direction: column; gap: 5px; align-items: stretch; }
+   .reg-structure-inset .reg-ser { flex: auto; }
+   .reg-center .segmented button { padding: 6px; min-height: 44px; }
+-  .reg-steps small { font-size: 10px; }
+-  .reg-reactions { font-size: 10.5px; }
++  .reg-steps small { font-size: 13px; }
++  .reg-legend, .reg-structure-legend { font-size: 13px; }
+   .reg-reactions > div { gap: 4px; }
+   .reg-reactions b { min-width: 55px; }
+   .reg-domain > span { font-size: 18px; }
+@@ -210,7 +212,7 @@ main.regulation-module { padding-top: 12px; }
+ .reg-structure-toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
+ .reg-structure-toolbar .segmented { margin: 0; flex: 1; min-width: 0; }
+ .reg-structure-toolbar .segmented div[role=group] { gap: 0; border-radius: 5px; background: #f0f4f7; padding: 3px; }
+-.reg-structure-toolbar .segmented button { background: transparent; border: 0; box-shadow: none; font-size: 12px; min-height: 44px; padding: 6px 10px; }
++.reg-structure-toolbar .segmented button { background: transparent; border: 0; box-shadow: none; font-size: 14px; min-height: 44px; padding: 6px 10px; }
+ .reg-structure-toolbar .segmented button[aria-pressed=true] { background: #fff; box-shadow: inset 0 -2px var(--accent); font-weight: bold; }
+ .reg-structure-toolbar .segmented button:hover { background: #e8f1f7; }
+ .reg-expand { flex: 0 0 auto; border: 0; background: #edf4f8; color: var(--accent-dark); font-size: 13px; }
+@@ -219,7 +221,7 @@ main.regulation-module { padding-top: 12px; }
+ .reg-structure-frame::backdrop { background: #142b42bf; }
+ .reg-structure-frame[data-expanded=true] .reg-focus-title { display: block; font-size: 15px; }
+ .reg-structure-frame[data-expanded=true] .molecule-viewer { flex: 1; height: auto; min-height: 160px; }
+-.reg-structure-frame[data-expanded=true] .reg-focus-caption { display: block; margin: 8px 0 0; font-size: 12px; color: var(--soft); }
++.reg-structure-frame[data-expanded=true] .reg-focus-caption { display: block; margin: 8px 0 0; font-size: 13px; color: var(--soft); }
+ @media (max-width: 1100px) {
+   .reg-workspace-structure { grid-template-columns: minmax(0, 1fr); }
+   .reg-workspace-structure .reg-input { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 8px 20px; }
+diff --git a/src/styles.css b/src/styles.css
+index bf2f440..ded2583 100644
+--- a/src/styles.css
++++ b/src/styles.css
+@@ -608,6 +608,9 @@ fieldset legend {
+ /* ---------- plots ---------- */
+ .plot,
+ .energy-diagram {
++  --chart-font-axis: 14px;
++  --chart-font-key: 14px;
++  --chart-font-tick: 13px;
+   width: 100%;
+   overflow: hidden;
+ }
+@@ -622,6 +625,21 @@ fieldset legend {
+ }
+ .plot-grid text {
+   fill: var(--soft);
++  font-size: var(--chart-font-tick);
++}
++.plot svg[data-narrow='true'],
++.energy-diagram svg[data-narrow='true'] {
++  --chart-font-axis: 13px;
++  --chart-font-key: 13px;
++  --chart-font-tick: 12px;
++}
++.chart-key {
++  font-size: var(--chart-font-key);
++  /* Keep guide text distinct where a curve passes behind it. */
++  paint-order: stroke;
++  stroke: #fff;
++  stroke-width: 3px;
++  stroke-linejoin: round;
+ }
+ .plot-frame {
+   fill: none;
+@@ -630,7 +648,7 @@ fieldset legend {
+ }
+ .axis-label {
+   fill: #3a4a54;
+-  font-size: 13px;
++  font-size: var(--chart-font-axis, 14px);
+ }
+ .axis-sublabel {
+   fill: var(--soft);
+@@ -638,7 +656,7 @@ fieldset legend {
+ }
+ .state-label {
+   fill: #3a4a54;
+-  font-size: 12.5px;
++  font-size: var(--chart-font-key, 14px);
+   font-weight: bold;
+ }
+ .level-guide {
+@@ -666,7 +684,7 @@ ul.legend {
+   gap: 8px 18px;
+   padding: 10px 0 0;
+   margin: 0;
+-  font-size: 13px;
++  font-size: 14px;
+   color: var(--soft);
+ }
+ ul.legend li {
+@@ -674,6 +692,9 @@ ul.legend li {
+   align-items: center;
+   gap: 6px;
+ }
++@media (max-width: 620px) {
++  ul.legend { font-size: 13px; }
++}
+ 
+ /* ---------- start page ---------- */
+ .start-page {
+@@ -866,7 +887,7 @@ details summary {
+ .atom-label {
+   position: absolute;
+   pointer-events: none;
+-  font-size: 12px;
++  font-size: 12.5px;
+   font-weight: bold;
+   color: #3c4d57;
+   background: #ffffffdc;
+@@ -876,13 +897,20 @@ details summary {
+   border-bottom: 2px solid #9fb0ba;
+ }
+ .atom-label.metal {
++  font-size: 15px;
+   color: #6d3b03;
+   border-bottom-color: var(--warn-line);
+ }
+ .atom-label.selected {
++  font-size: 15px;
+   color: #8c1f5c;
+   border-bottom-color: #b0327c;
+ }
++.atom-label.measure { font-size: 14px; }
++@media (max-width: 620px) {
++  .atom-label.selected, .atom-label.metal { font-size: 14px; }
++  .atom-label.measure { font-size: 13px; }
++}
+ .webgl-error {
+   padding: 20px;
+   color: #98241b;
+@@ -1006,7 +1034,7 @@ details summary {
+   color: #2d3d47;
+   background: #fffffff0;
+   border-bottom-color: #5c6b75;
+-  font-size: 11.5px;
++  font-size: 12.5px;
+ }
+ .atom-label.noted {
+   border-bottom-color: var(--accent);

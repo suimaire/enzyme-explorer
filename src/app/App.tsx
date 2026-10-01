@@ -1,5 +1,5 @@
-import {Suspense, lazy} from 'react';
-import {hashFor, moduleEntry} from './modules';
+import {Suspense, lazy, useEffect, useRef} from 'react';
+import {hashFor, moduleEntry, type ModuleId} from './modules';
 import {ModuleNavigation} from './ModuleNavigation';
 import {useHashModule} from './useHashModule';
 import {StartPage} from '../modules/start/StartPage';
@@ -7,6 +7,9 @@ import {ReactionEnergyLab} from '../modules/reaction-energy/ReactionEnergyLab';
 import {KineticsLab} from '../modules/kinetics/KineticsLab';
 import {ModelNotes} from '../modules/notes/ModelNotes';
 import {ComingSoon} from '../modules/placeholder/ComingSoon';
+import {LearningModuleScope, LearningSessionProvider} from './LearningSession';
+import type {LearningSession} from './learningSessionStore';
+import {pageTitle} from './modelNotesNavigation';
 
 /** Experimental structures and their renderer are loaded on demand. */
 const CarbonicAnhydraseLab = lazy(() =>
@@ -16,12 +19,31 @@ const HormonalRegulation = lazy(() => import('../modules/regulation/HormonalRegu
 
 export const PROTEIN_EXPLORER_URL = 'https://suimaire.github.io/protein-3d-explorer/';
 
-export function App() {
-  const [current, navigate] = useHashModule();
+export function App({session}: {session?: LearningSession} = {}) {
+  return <LearningSessionProvider session={session}><AppContent /></LearningSessionProvider>;
+}
+
+function AppContent() {
+  const [current, navigate, referenceSection] = useHashModule();
   const entry = moduleEntry(current);
+  const main = useRef<HTMLElement>(null);
+  const returnTarget = useRef<ModuleId | null>(null);
+  useEffect(() => {document.title = pageTitle(current);}, [current]);
+  useEffect(() => {
+    if (returnTarget.current !== current) return;
+    returnTarget.current = null;
+    main.current?.focus({preventScroll: true});
+    main.current?.scrollIntoView({block: 'start', behavior: 'auto'});
+  }, [current]);
+  function returnToModule(id: ModuleId) {returnTarget.current = id; navigate(id);}
 
   return (
     <>
+      <a className="skip-link" href="#main-content" onClick={event => {
+        event.preventDefault();
+        main.current?.focus({preventScroll: true});
+        main.current?.scrollIntoView({block: 'start', behavior: 'auto'});
+      }}>본문으로 건너뛰기</a>
       <header className={`site-header${current === 'regulation' ? ' regulation-shell' : ''}`}>
         <div className="brand-mark" aria-hidden="true">
           E
@@ -40,23 +62,29 @@ export function App() {
 
       <ModuleNavigation current={current} navigate={navigate} />
 
+      <p className="visually-hidden" role="status" aria-live="polite" aria-atomic="true">
+        {referenceSection ? '' : `${entry.title} 페이지로 이동했습니다.`}
+      </p>
+      <main id="main-content" ref={main} tabIndex={-1} aria-label={`${entry.title} 본문`}>
+
       {current === 'start' ? <StartPage onNavigate={navigate} /> : null}
-      {current === 'reaction-energy' ? <ReactionEnergyLab /> : null}
-      {current === 'kinetics' ? <KineticsLab /> : null}
+      {current === 'reaction-energy' ? <LearningModuleScope module="reactionEnergy"><ReactionEnergyLab /></LearningModuleScope> : null}
+      {current === 'kinetics' ? <LearningModuleScope module="kinetics"><KineticsLab /></LearningModuleScope> : null}
       {current === 'carbonic-anhydrase' ? (
         <Suspense
           fallback={
-            <main className="module">
+            <div className="module">
               <p>PDB 2CBA 구조를 불러오는 중…</p>
-            </main>
+            </div>
           }
         >
-          <CarbonicAnhydraseLab />
+          <LearningModuleScope module="carbonicAnhydrase"><CarbonicAnhydraseLab /></LearningModuleScope>
         </Suspense>
       ) : null}
-      {current === 'regulation' ? <Suspense fallback={<main className="module"><p>효소 조절 모듈을 불러오는 중…</p></main>}><HormonalRegulation /></Suspense> : null}
+      {current === 'regulation' ? <Suspense fallback={<div className="module"><p>효소 조절 모듈을 불러오는 중…</p></div>}><LearningModuleScope module="regulation"><HormonalRegulation /></LearningModuleScope></Suspense> : null}
       {current === 'inhibition' ? <ComingSoon id={current} /> : null}
-      {current === 'model-notes' ? <ModelNotes /> : null}
+      {current === 'model-notes' ? <ModelNotes section={referenceSection} onReturn={returnToModule} /> : null}
+      </main>
 
       <footer>
         <span>Enzyme Explorer · Enzyme I — 촉매 작용과 반응속도론</span>

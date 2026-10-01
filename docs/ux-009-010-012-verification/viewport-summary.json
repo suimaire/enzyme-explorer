@@ -1,0 +1,50 @@
+[
+  {
+    "viewport": [
+      1024,
+      768
+    ],
+    "count": 109,
+    "last": "ALL NAVIGATION CONTEXT CHECKS PASSED"
+  },
+  {
+    "viewport": [
+      768,
+      1024
+    ],
+    "count": 109,
+    "last": "ALL NAVIGATION CONTEXT CHECKS PASSED"
+  },
+  {
+    "viewport": [
+      1600,
+      900
+    ],
+    "count": 109,
+    "last": "ALL NAVIGATION CONTEXT CHECKS PASSED"
+  },
+  {
+    "viewport": [
+      1280,
+      800
+    ],
+    "count": 109,
+    "last": "ALL NAVIGATION CONTEXT CHECKS PASSED"
+  },
+  {
+    "viewport": [
+      1440,
+      900
+    ],
+    "count": 109,
+    "last": "ALL NAVIGATION CONTEXT CHECKS PASSED"
+  },
+  {
+    "viewport": [
+      390,
+      844
+    ],
+    "count": 110,
+    "last": "ALL NAVIGATION CONTEXT CHECKS PASSED"
+  }
+]

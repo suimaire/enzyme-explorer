@@ -12,9 +12,8 @@ const sameParameters = (a: MichaelisMentenParameters, b: MichaelisMentenParamete
 /**
  * v0 against [S].
  *
- * Both axes are held fixed while a comparison is running: the x axis always spans 0–600 µM, and the y axis
- * is driven by `velocityAxisMax`, which the panel locks before an experiment changes a parameter. Without
- * that lock, doubling [E]T would double Vmax *and* the axis, and the two curves would look identical.
+ * The x axis always spans 0–600 µM. Both curves use one y scale driven by `velocityAxisMax`.
+ * The panel reserves reference headroom and expands it when needed to show the current curve.
  */
 export function MichaelisMentenPlot({
   parameters,
@@ -38,7 +37,7 @@ export function MichaelisMentenPlot({
   const [host, width] = useMeasuredWidth(680);
   const narrow = width < 520;
   const height = Math.round(Math.min(420, Math.max(270, width * 0.6)));
-  const m = {l: narrow ? 56 : 68, r: narrow ? 14 : 22, t: 16, b: narrow ? 52 : 58};
+  const m = {l: narrow ? 56 : 68, r: narrow ? 22 : 24, t: 26, b: narrow ? 52 : 58};
   const pw = width - m.l - m.r;
   const ph = height - m.t - m.b;
   const X = (s: number) => m.l + (s / SUBSTRATE_AXIS_MAX) * pw;
@@ -51,7 +50,7 @@ export function MichaelisMentenPlot({
 
   const vmax = calculateVmax(parameters);
   const current = calculateV0(parameters, currentSubstrate);
-  const xTicks = [0, 100, 200, 300, 400, 500, 600];
+  const xTicks = narrow ? [0, 200, 400, 600] : [0, 100, 200, 300, 400, 500, 600];
   const yTicks = [0, 0.25, 0.5, 0.75, 1].map((f) => f * velocityAxisMax);
 
   return (
@@ -62,6 +61,7 @@ export function MichaelisMentenPlot({
         viewBox={`0 0 ${width} ${height}`}
         role="img"
         data-testid="mm-plot"
+        data-narrow={narrow}
         data-vmax={vmax.toFixed(3)}
         data-km={parameters.km}
         data-current-substrate={currentSubstrate}
@@ -78,7 +78,7 @@ export function MichaelisMentenPlot({
           {yTicks.map((t) => (
             <g key={t}>
               <line x1={m.l} x2={m.l + pw} y1={Y(t)} y2={Y(t)} />
-              <text x={m.l - 6} y={Y(t) + 4} textAnchor="end" fontSize={narrow ? 10.5 : 12}>
+              <text x={m.l - 6} y={Y(t) + 4} textAnchor="end">
                 {t.toFixed(0)}
               </text>
             </g>
@@ -86,7 +86,7 @@ export function MichaelisMentenPlot({
           {xTicks.map((t) => (
             <g key={t}>
               <line x1={X(t)} x2={X(t)} y1={m.t} y2={m.t + ph} />
-              <text x={X(t)} y={m.t + ph + 16} textAnchor="middle" fontSize={narrow ? 10.5 : 12}>
+              <text x={X(t)} y={m.t + ph + 18} textAnchor="middle">
                 {t}
               </text>
             </g>
@@ -97,7 +97,7 @@ export function MichaelisMentenPlot({
         {showVmaxGuide ? (
           <g data-testid="vmax-guide">
             <line x1={m.l} x2={m.l + pw} y1={Y(vmax)} y2={Y(vmax)} stroke={KINETICS_COLORS.curve} strokeWidth={1.4} strokeDasharray="7 5" />
-            <text x={m.l + pw - 4} y={Y(vmax) - 6} textAnchor="end" fill={KINETICS_COLORS.curve} fontSize={12}>
+            <text className="chart-key" x={m.l + pw - 4} y={Y(vmax) - 14} textAnchor="end" fill={KINETICS_COLORS.curve}>
               Vmax = {vmax.toFixed(0)} nM·s⁻¹
             </text>
           </g>
@@ -106,10 +106,10 @@ export function MichaelisMentenPlot({
           <g data-testid="km-guide">
             <line x1={m.l} x2={X(parameters.km)} y1={Y(vmax / 2)} y2={Y(vmax / 2)} stroke={KINETICS_COLORS.marker} strokeWidth={1.4} strokeDasharray="4 4" />
             <line x1={X(parameters.km)} x2={X(parameters.km)} y1={Y(vmax / 2)} y2={m.t + ph} stroke={KINETICS_COLORS.marker} strokeWidth={1.4} strokeDasharray="4 4" />
-            <text x={X(parameters.km) + 6} y={m.t + ph - 8} fill={KINETICS_COLORS.marker} fontSize={12}>
+            <text className="chart-key" x={Math.min(Math.max(X(parameters.km), m.l + 84), m.l + pw - 84)} textAnchor="middle" y={m.t + ph - 8} fill={KINETICS_COLORS.marker}>
               [S] = Km = {parameters.km} µM
             </text>
-            <text x={m.l + 6} y={Y(vmax / 2) - 6} fill={KINETICS_COLORS.marker} fontSize={12}>
+            <text className="chart-key" x={m.l + 6} y={Y(vmax / 2) - 16} fill={KINETICS_COLORS.marker}>
               Vmax / 2
             </text>
           </g>

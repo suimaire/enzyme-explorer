@@ -1,0 +1,83 @@
+import {Suspense, lazy} from 'react';
+import {hashFor, moduleEntry} from './modules';
+import {ModuleNavigation} from './ModuleNavigation';
+import {useHashModule} from './useHashModule';
+import {StartPage} from '../modules/start/StartPage';
+import {ReactionEnergyLab} from '../modules/reaction-energy/ReactionEnergyLab';
+import {KineticsLab} from '../modules/kinetics/KineticsLab';
+import {ModelNotes} from '../modules/notes/ModelNotes';
+import {ComingSoon} from '../modules/placeholder/ComingSoon';
+import {LearningModuleScope, LearningSessionProvider} from './LearningSession';
+import type {LearningSession} from './learningSessionStore';
+
+/** Experimental structures and their renderer are loaded on demand. */
+const CarbonicAnhydraseLab = lazy(() =>
+  import('../modules/carbonic-anhydrase/CarbonicAnhydraseLab').then((m) => ({default: m.CarbonicAnhydraseLab})),
+);
+const HormonalRegulation = lazy(() => import('../modules/regulation/HormonalRegulation').then(m => ({default: m.HormonalRegulation})));
+
+export const PROTEIN_EXPLORER_URL = 'https://suimaire.github.io/protein-3d-explorer/';
+
+export function App({session}: {session?: LearningSession} = {}) {
+  return <LearningSessionProvider session={session}><AppContent /></LearningSessionProvider>;
+}
+
+function AppContent() {
+  const [current, navigate] = useHashModule();
+  const entry = moduleEntry(current);
+
+  return (
+    <>
+      <header className={`site-header${current === 'regulation' ? ' regulation-shell' : ''}`}>
+        <div className="brand-mark" aria-hidden="true">
+          E
+        </div>
+        <div>
+          <h1>
+            Enzyme <span>Explorer</span>
+          </h1>
+          <p>효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론</p>
+        </div>
+        <p className="current-module">
+          {entry.number ? `모듈 ${entry.number} · ` : ''}
+          {entry.title}
+        </p>
+      </header>
+
+      <ModuleNavigation current={current} navigate={navigate} />
+
+      {current === 'start' ? <StartPage onNavigate={navigate} /> : null}
+      {current === 'reaction-energy' ? <LearningModuleScope module="reactionEnergy"><ReactionEnergyLab /></LearningModuleScope> : null}
+      {current === 'kinetics' ? <LearningModuleScope module="kinetics"><KineticsLab /></LearningModuleScope> : null}
+      {current === 'carbonic-anhydrase' ? (
+        <Suspense
+          fallback={
+            <main className="module">
+              <p>PDB 2CBA 구조를 불러오는 중…</p>
+            </main>
+          }
+        >
+          <LearningModuleScope module="carbonicAnhydrase"><CarbonicAnhydraseLab /></LearningModuleScope>
+        </Suspense>
+      ) : null}
+      {current === 'regulation' ? <Suspense fallback={<main className="module"><p>효소 조절 모듈을 불러오는 중…</p></main>}><LearningModuleScope module="regulation"><HormonalRegulation /></LearningModuleScope></Suspense> : null}
+      {current === 'inhibition' ? <ComingSoon id={current} /> : null}
+      {current === 'model-notes' ? <ModelNotes /> : null}
+
+      <footer>
+        <span>Enzyme Explorer · Enzyme I — 촉매 작용과 반응속도론</span>
+        <span>
+          <a href={hashFor('model-notes')} onClick={(e) => {e.preventDefault(); navigate('model-notes');}}>
+            모델 및 주의사항
+          </a>{' '}
+          ·{' '}
+          <a href={PROTEIN_EXPLORER_URL} target="_blank" rel="noreferrer noopener" data-testid="protein-explorer-link">
+            단백질 구조와 접힘 복습하기 ↗
+          </a>
+        </span>
+        {/* 조회수: 포털 공통 모듈(page-views.js)이 채운다. index.html 의 loader 참고 */}
+        <span data-page-views="" hidden />
+      </footer>
+    </>
+  );
+}

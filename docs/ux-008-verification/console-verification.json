@@ -1,0 +1,12 @@
+{
+  "finalSourceTimestamp": "2026-10-01T07:15:50.207Z",
+  "afterFinalSource": [],
+  "earlierFixtureLogs": [
+    {
+      "level": "error",
+      "message": "Error: 조건 조절로 돌아가기 ↑: target visible\n    at assert (http://127.0.0.1:5173/enzyme-explorer/tests/browser/mobile-experiment-harness.tsx?t=1790838615871:25:20)\n    at jump (http://127.0.0.1:5173/enzyme-explorer/tests/browser/mobile-experiment-harness.tsx?t=1790838615871:98:2)\n    at async runChecks (http://127.0.0.1:5173/enzyme-explorer/tests/browser/mobile-experiment-harness.tsx?t=1790838615871:177:2)",
+      "timestamp": "2026-10-01T07:11:58.452Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    }
+  ]
+}

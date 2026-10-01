@@ -1,0 +1,32 @@
+
+> enzyme-explorer@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.1 D:/CODEX/260831 biochemistry/enzyme-explorer
+
+ ❯ tests/reactionEnergy.test.ts (9 tests | 1 failed) 13632ms
+   ❯ reaction energy model (9)
+     × 4 · the transition state never drops below either end point, at any slider combination 5275ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/reactionEnergy.test.ts > reaction energy model > 4 · the transition state never drops below either end point, at any slider combination
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/reactionEnergy.test.ts:67:3
+     65|   });
+     66|
+     67|   it('4 · the transition state never drops below either end point, at …
+       |   ^
+     68|     for (const productEnergy of PRODUCTS)
+     69|       for (const barrierTop of TOPS)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 11 passed (12)
+      Tests  1 failed | 194 passed (195)
+   Start at  12:51:13
+   Duration  14.07s (tests 72%, transform 15%, import 13%)
+

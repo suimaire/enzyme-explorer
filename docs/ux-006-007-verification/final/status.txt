@@ -1,0 +1,33 @@
+## main...origin/main
+ M src/app/App.tsx
+ M src/modules/carbonic-anhydrase/CarbonicAnhydraseLab.tsx
+ M src/modules/kinetics/InitialVelocityPanel.tsx
+ M src/modules/kinetics/KineticsLab.tsx
+ M src/modules/kinetics/MichaelisMentenPanel.tsx
+ M src/modules/kinetics/MichaelisMentenPlot.tsx
+ M src/modules/kinetics/ProgressCurvePlot.tsx
+ M src/modules/reaction-energy/EnergyDiagram.tsx
+ M src/modules/reaction-energy/ReactionEnergyLab.tsx
+ M src/modules/reaction-energy/energyProfile.ts
+ M src/modules/regulation/HormonalRegulation.tsx
+ M src/modules/regulation/regulation.css
+ M src/shared/components/Prediction.tsx
+ M src/styles.css
+?? docs/SITE_WIDE_UX_AUDIT.md
+?? docs/UX_001_SESSION_VERIFICATION.md
+?? docs/UX_006_007_READABILITY_VERIFICATION.md
+?? docs/phase-a2-verification/
+?? docs/site-wide-ux-audit/
+?? docs/ux-001-verification/
+?? docs/ux-006-007-verification/
+?? src/app/LearningSession.tsx
+?? src/app/learningSessionStore.ts
+?? tests/browser/phase-a2-harness.html
+?? tests/browser/phase-a2-harness.tsx
+?? tests/browser/readability-harness.html
+?? tests/browser/readability-harness.tsx
+?? tests/browser/session-harness.html
+?? tests/browser/session-harness.tsx
+?? tests/learningSession.test.tsx
+?? tests/phaseA2.test.tsx
+?? tests/readability.test.tsx

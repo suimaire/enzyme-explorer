@@ -1,3 +1,4 @@
+import {modelNotesHash} from '../../app/modelNotesNavigation';
 import {Constant, DisplayEquation, Fraction, RateConstant, SchemeArrow} from '../../shared/components/Formula';
 
 /**
@@ -74,7 +75,7 @@ export function MechanisticCaveatPanel() {
       <p className="small">
         모듈 03 전체는 기질이 하나이고, 초기 속도 조건(initial-rate condition)이며, 협동성(cooperativity)이 없다고
         가정합니다. 실제 효소 중에는 Michaelis–Menten 반응속도론을 따르지 않는 효소도 많습니다. 자세한 내용은{' '}
-        <a href="#/model-notes">모델 및 주의사항</a>을 참고하세요.
+        <a href={modelNotesHash('kinetics')}>모델 및 주의사항</a>을 참고하세요.
       </p>
     </div>
   );

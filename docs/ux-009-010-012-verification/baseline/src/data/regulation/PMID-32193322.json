@@ -1,0 +1,824 @@
+{
+  "version": "6.9",
+  "hitCount": 1,
+  "request": {
+    "queryString": "EXT_ID:32193322 AND SRC:MED",
+    "internalQuery": "EXT_ID:32193322 AND SRC:MED",
+    "resultType": "CORE",
+    "cursorMark": "*",
+    "pageSize": 25,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "32193322",
+        "source": "MED",
+        "pmid": "32193322",
+        "doi": "10.1126/science.aaz5346",
+        "title": "Structural basis of G<sub>s</sub> and G<sub>i</sub> recognition by the human glucagon receptor.",
+        "authorString": "Qiao A, Han S, Li X, Li Z, Zhao P, Dai A, Chang R, Tai L, Tan Q, Chu X, Ma L, Thorsen TS, Reedtz-Runge S, Yang D, Wang MW, Sexton PM, Wootten D, Sun F, Zhao Q, Wu B.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Qiao A",
+              "lastName": "Qiao",
+              "firstName": "Anna",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-1490-9779"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "CAS Key Laboratory of Receptor Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  },
+                  {
+                    "affiliation": "State Key Laboratory of Drug Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  },
+                  {
+                    "affiliation": "University of Chinese Academy of Sciences, Beijing 100049, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Han S",
+              "lastName": "Han",
+              "firstName": "Shuo",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0760-0183"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "CAS Key Laboratory of Receptor Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  },
+                  {
+                    "affiliation": "State Key Laboratory of Drug Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Li X",
+              "lastName": "Li",
+              "firstName": "Xinmei",
+              "initials": "X",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-6202-218X"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Chinese Academy of Sciences, Beijing 100049, China."
+                  },
+                  {
+                    "affiliation": "National Laboratory of Biomacromolecules, National Center of Protein Science-Beijing, CAS Center for Excellence in Biomacromolecules, Institute of Biophysics, Chinese Academy of Sciences, Beijing 100101, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Li Z",
+              "lastName": "Li",
+              "firstName": "Zhixin",
+              "initials": "Z",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4288-5025"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Pharmacy, Fudan University, Shanghai 201203, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhao P",
+              "lastName": "Zhao",
+              "firstName": "Peishen",
+              "initials": "P",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-0185-0595"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Drug Discovery Biology and Department of Pharmacology, Monash Institute of Pharmaceutical Sciences, Monash University, Parkville, Victoria 3052, Australia."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Dai A",
+              "lastName": "Dai",
+              "firstName": "Antao",
+              "initials": "A",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4241-5346"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "CAS Key Laboratory of Receptor Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  },
+                  {
+                    "affiliation": "National Center for Drug Screening, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chang R",
+              "lastName": "Chang",
+              "firstName": "Rulve",
+              "initials": "R",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-2880-7952"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Pharmacy, Fudan University, Shanghai 201203, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tai L",
+              "lastName": "Tai",
+              "firstName": "Linhua",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8435-9683"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Chinese Academy of Sciences, Beijing 100049, China."
+                  },
+                  {
+                    "affiliation": "National Laboratory of Biomacromolecules, National Center of Protein Science-Beijing, CAS Center for Excellence in Biomacromolecules, Institute of Biophysics, Chinese Academy of Sciences, Beijing 100101, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Tan Q",
+              "lastName": "Tan",
+              "firstName": "Qiuxiang",
+              "initials": "Q",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-5006-7148"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "CAS Key Laboratory of Receptor Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  },
+                  {
+                    "affiliation": "State Key Laboratory of Drug Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Chu X",
+              "lastName": "Chu",
+              "firstName": "Xiaojing",
+              "initials": "X",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0262-0225"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "CAS Key Laboratory of Receptor Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  },
+                  {
+                    "affiliation": "State Key Laboratory of Drug Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Ma L",
+              "lastName": "Ma",
+              "firstName": "Limin",
+              "initials": "L",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1464-3125"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "CAS Key Laboratory of Receptor Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  },
+                  {
+                    "affiliation": "State Key Laboratory of Drug Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Thorsen TS",
+              "lastName": "Thorsen",
+              "firstName": "Thor Seneca",
+              "initials": "TS",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-4301-7342"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Novo Nordisk A/S, Måløv 2760, Denmark."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Reedtz-Runge S",
+              "lastName": "Reedtz-Runge",
+              "firstName": "Steffen",
+              "initials": "S",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-9216-3311"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "Novo Nordisk A/S, Måløv 2760, Denmark."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Yang D",
+              "lastName": "Yang",
+              "firstName": "Dehua",
+              "initials": "D",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-3028-3243"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "CAS Key Laboratory of Receptor Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  },
+                  {
+                    "affiliation": "National Center for Drug Screening, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wang MW",
+              "lastName": "Wang",
+              "firstName": "Ming-Wei",
+              "initials": "MW",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6550-9017"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "CAS Key Laboratory of Receptor Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  },
+                  {
+                    "affiliation": "University of Chinese Academy of Sciences, Beijing 100049, China."
+                  },
+                  {
+                    "affiliation": "School of Pharmacy, Fudan University, Shanghai 201203, China."
+                  },
+                  {
+                    "affiliation": "National Center for Drug Screening, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China."
+                  },
+                  {
+                    "affiliation": "School of Life Science and Technology, ShanghaiTech University, Shanghai 201210, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Sexton PM",
+              "lastName": "Sexton",
+              "firstName": "Patrick M",
+              "initials": "PM",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-8902-2473"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Pharmacy, Fudan University, Shanghai 201203, China."
+                  },
+                  {
+                    "affiliation": "Drug Discovery Biology and Department of Pharmacology, Monash Institute of Pharmaceutical Sciences, Monash University, Parkville, Victoria 3052, Australia."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wootten D",
+              "lastName": "Wootten",
+              "firstName": "Denise",
+              "initials": "D",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0003-4563-1642"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "School of Pharmacy, Fudan University, Shanghai 201203, China. denise.wootten@monash.edu feisun@ibp.ac.cn zhaoq@simm.ac.cn beiliwu@simm.ac.cn."
+                  },
+                  {
+                    "affiliation": "Drug Discovery Biology and Department of Pharmacology, Monash Institute of Pharmaceutical Sciences, Monash University, Parkville, Victoria 3052, Australia."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Sun F",
+              "lastName": "Sun",
+              "firstName": "Fei",
+              "initials": "F",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-0351-5144"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "University of Chinese Academy of Sciences, Beijing 100049, China. denise.wootten@monash.edu feisun@ibp.ac.cn zhaoq@simm.ac.cn beiliwu@simm.ac.cn."
+                  },
+                  {
+                    "affiliation": "National Laboratory of Biomacromolecules, National Center of Protein Science-Beijing, CAS Center for Excellence in Biomacromolecules, Institute of Biophysics, Chinese Academy of Sciences, Beijing 100101, China."
+                  },
+                  {
+                    "affiliation": "Center for Biological Imaging, Institute of Biophysics, Chinese Academy of Sciences, Beijing 100101, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Zhao Q",
+              "lastName": "Zhao",
+              "firstName": "Qiang",
+              "initials": "Q",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0001-6251-6676"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "State Key Laboratory of Drug Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China. denise.wootten@monash.edu feisun@ibp.ac.cn zhaoq@simm.ac.cn beiliwu@simm.ac.cn."
+                  },
+                  {
+                    "affiliation": "University of Chinese Academy of Sciences, Beijing 100049, China."
+                  },
+                  {
+                    "affiliation": "CAS Center for Excellence in Biomacromolecules, Chinese Academy of Sciences, Beijing 100101, China."
+                  }
+                ]
+              }
+            },
+            {
+              "fullName": "Wu B",
+              "lastName": "Wu",
+              "firstName": "Beili",
+              "initials": "B",
+              "authorId": {
+                "type": "ORCID",
+                "value": "0000-0002-1936-0909"
+              },
+              "authorAffiliationDetailsList": {
+                "authorAffiliation": [
+                  {
+                    "affiliation": "CAS Key Laboratory of Receptor Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China. denise.wootten@monash.edu feisun@ibp.ac.cn zhaoq@simm.ac.cn beiliwu@simm.ac.cn."
+                  },
+                  {
+                    "affiliation": "University of Chinese Academy of Sciences, Beijing 100049, China."
+                  },
+                  {
+                    "affiliation": "School of Life Science and Technology, ShanghaiTech University, Shanghai 201210, China."
+                  },
+                  {
+                    "affiliation": "CAS Center for Excellence in Biomacromolecules, Chinese Academy of Sciences, Beijing 100101, China."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "authorIdList": {
+          "authorId": [
+            {
+              "type": "ORCID",
+              "value": "0000-0001-5006-7148"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6251-6676"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-6550-9017"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8435-9683"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0001-8902-2473"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0262-0225"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-0351-5144"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1464-3125"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-1936-0909"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-2880-7952"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4288-5025"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-4301-7342"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-6202-218X"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0002-9216-3311"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0185-0595"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-0760-0183"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-1490-9779"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-3028-3243"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4241-5346"
+            },
+            {
+              "type": "ORCID",
+              "value": "0000-0003-4563-1642"
+            }
+          ]
+        },
+        "dataLinksTagsList": {
+          "dataLinkstag": [
+            "supporting_data",
+            "protocols",
+            "related_data"
+          ]
+        },
+        "journalInfo": {
+          "issue": "6484",
+          "volume": "367",
+          "journalIssueId": 2925788,
+          "dateOfPublication": "2020 Mar",
+          "monthOfPublication": 3,
+          "yearOfPublication": 2020,
+          "journal": {
+            "medlineAbbreviation": "Science",
+            "title": "Science (New York, N.Y.)",
+            "essn": "1095-9203",
+            "issn": "0036-8075",
+            "nlmid": "0404511",
+            "isoabbreviation": "Science"
+          },
+          "printPublicationDate": "2020-03-01"
+        },
+        "pubYear": "2020",
+        "pageInfo": "1346-1352",
+        "abstractText": "Class B G protein-coupled receptors, an important class of therapeutic targets, signal mainly through the G<sub>s</sub> class of heterotrimeric G proteins, although they do display some promiscuity in G protein binding. Using cryo-electron microscopy, we determined the structures of the human glucagon receptor (GCGR) bound to glucagon and distinct classes of heterotrimeric G proteins, G<sub>s</sub> or G<sub>i1</sub> These two structures adopt a similar open binding cavity to accommodate G<sub>s</sub> and G<sub>i1</sub> The G<sub>s</sub> binding selectivity of GCGR is explained by a larger interaction interface, but there are specific interactions that affect G<sub>i</sub> more than G<sub>s</sub> binding. Conformational differences in the receptor intracellular loops were found to be key selectivity determinants. These distinctions in transducer engagement were supported by mutagenesis and functional studies.",
+        "affiliation": "CAS Key Laboratory of Receptor Research, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai 201203, China.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, Non-U.S. Gov't",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "Australian national health and medical research council",
+              "grantId": "1150083",
+              "orderIn": 0
+            },
+            {
+              "agency": "Ministry of Science and Technology of the People&apos;s Republic of China",
+              "grantId": "2018ZX09711002",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation of China",
+              "grantId": "31825010",
+              "orderIn": 0
+            },
+            {
+              "agency": "Australian national health and medical research council",
+              "grantId": "1126857",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation of China",
+              "grantId": "81773792",
+              "orderIn": 0
+            },
+            {
+              "agency": "Chinese Academy of Sciences",
+              "grantId": "QYZDB-SSW-SMC054",
+              "orderIn": 0
+            },
+            {
+              "agency": "Ministry of Science and Technology of the People&apos;s Republic of China",
+              "grantId": "2018YFA0507000",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Mega R&amp;D Program for Drug Discovery",
+              "grantId": "2018ZX09735-001",
+              "orderIn": 0
+            },
+            {
+              "agency": "Shanghai Science and Technology Development Fund",
+              "grantId": "16ZR1407100",
+              "orderIn": 0
+            },
+            {
+              "agency": "Ministry of Science and Technology of the People&apos;s Republic of China",
+              "grantId": "2017YFA0504703",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation of China",
+              "grantId": "81525024",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation of China",
+              "grantId": "31830020",
+              "orderIn": 0
+            },
+            {
+              "agency": "National Science Foundation of China",
+              "grantId": "81872915",
+              "orderIn": 0
+            },
+            {
+              "agency": "Chinese Academy of Sciences",
+              "grantId": "QYZDB-SSW-SMC024",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Humans"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Glucagon",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "GTP-Binding Protein alpha Subunits, Gi-Go",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "UL",
+                    "qualifierName": "ultrastructure"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "GTP-Binding Protein alpha Subunits, Gs",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "UL",
+                    "qualifierName": "ultrastructure"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Receptors, Glucagon",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  },
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "UL",
+                    "qualifierName": "ultrastructure"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "CH",
+                    "qualifierName": "chemistry"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cryoelectron Microscopy"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Signal Transduction"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Binding Sites"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Conformation"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Binding"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Models, Molecular"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Protein Conformation, alpha-Helical"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "Glucagon",
+              "registryNumber": "9007-92-5"
+            },
+            {
+              "name": "Receptors, Glucagon",
+              "registryNumber": "0"
+            },
+            {
+              "name": "GTP-Binding Protein alpha Subunits, Gi-Go",
+              "registryNumber": "EC 3.6.5.1"
+            },
+            {
+              "name": "GTP-Binding Protein alpha Subunits, Gs",
+              "registryNumber": "EC 3.6.5.1"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1126/science.aaz5346"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 149,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "Y",
+        "dbCrossReferenceList": {
+          "dbName": [
+            "OMIM",
+            "PDB",
+            "UNIPROT"
+          ]
+        },
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "Y",
+        "hasData": "Y",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "2020-03-24",
+        "dateOfCreation": "2020-03-21",
+        "dateOfRevision": "2020-03-24",
+        "firstPublicationDate": "2020-03-01",
+        "firstIndexDate": "2020-03-21",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

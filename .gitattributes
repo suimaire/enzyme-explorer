@@ -1,2 +1,12 @@
 # Keep the deposited structure file byte-identical to the RCSB download (its SHA-256 is documented in README).
 *.pdb -text
+
+# Preserve archived UX evidence bytes and manifest hashes across checkouts.
+# Raw logs, patches and deposited structures intentionally contain trailing padding.
+# Application source, tests and Markdown reports retain normal whitespace checks.
+docs/site-wide-ux-audit/** -text whitespace=-blank-at-eol,-blank-at-eof
+docs/ux-001-verification/** -text whitespace=-blank-at-eol,-blank-at-eof
+docs/phase-a2-verification/** -text whitespace=-blank-at-eol,-blank-at-eof
+docs/ux-006-007-verification/** -text whitespace=-blank-at-eol,-blank-at-eof
+docs/ux-008-verification/** -text whitespace=-blank-at-eol,-blank-at-eof
+docs/ux-009-010-012-verification/** -text whitespace=-blank-at-eol,-blank-at-eof

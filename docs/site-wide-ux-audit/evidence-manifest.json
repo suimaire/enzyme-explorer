@@ -1,0 +1,949 @@
+{
+  "files": [
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-carbonic-anhydrase-390.jpg",
+      "bytes": 51152,
+      "sha256": "4ea81d56a7d604c1bf030e58a60e5e97fdac7a7b542e3a91d2d41f1f394d6c74",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-inhibition-390.jpg",
+      "bytes": 36999,
+      "sha256": "1f58e5322707e93a69febb1577ef5bc47b2a25f2ef68e5e5e2ec34c0476c817f",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 390,
+      "pixel_height": 843
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-kinetics-390.jpg",
+      "bytes": 37917,
+      "sha256": "d8d076e90f1edec562705ffb8ec6545bdff54ad21016272158b2fd5ed9084e79",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-model-notes-390.jpg",
+      "bytes": 52914,
+      "sha256": "d3ee0893936ed689997b84703623bb73200d492059fc4dbee7f6d2582e3b4cce",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-reaction-energy-390.jpg",
+      "bytes": 38821,
+      "sha256": "26d159f9225cded70f27fc2ac0dbdfbdcde801e4db9a9b056c68f413a815a996",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-regulation-390.jpg",
+      "bytes": 33449,
+      "sha256": "d0e67439f50864edd37b46d96caf1677d2caf7a4cbaf9f00c2af2e823e80125d",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-bottom-start-390.jpg",
+      "bytes": 54157,
+      "sha256": "6d9c9b0afa8aeee52717e60bd1668efbadd6c08858aaf83a570d9550179c9fa4",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-1440.jpg",
+      "bytes": 135567,
+      "sha256": "35bfd2f1d22ebee547e282f575897d3aabc07bdc0151b9df6bbd9eef5b899a20",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-anhydrase-1024.jpg",
+      "bytes": 61386,
+      "sha256": "8cc2fca725a62a365199da9aa173915897bca0ecfdfc826f4b4bd0931dc6d52b",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1009,
+      "pixel_height": 757
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-anhydrase-1280.jpg",
+      "bytes": 118217,
+      "sha256": "7b9021995a834d324f96f2353ea2c065c02051dcb50d45dc8f5ee04f6fe89864",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1265,
+      "pixel_height": 791
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-anhydrase-1440.jpg",
+      "bytes": 135516,
+      "sha256": "0767c6903887a41a55bd2717b5fc1ba8b09850911d420a7cdbc0c288bc3351ce",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-anhydrase-1600.jpg",
+      "bytes": 136581,
+      "sha256": "ce28d9667041b57c69a0f8e8d04dc61c050ee01924c736a0f134734d79bf089e",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1585,
+      "pixel_height": 892
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-anhydrase-390.jpg",
+      "bytes": 33870,
+      "sha256": "4f8ad0a6b0411c95805e74cfe389c4105b2c67e5211fc473e559ddba55dca47d",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-anhydrase-768.jpg",
+      "bytes": 77309,
+      "sha256": "4880a2ccb4544949dcb44b9483071449f1a8a4e5b96295509f99ca38ae020f00",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 753,
+      "pixel_height": 1004
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-drag-after.jpg",
+      "bytes": 136512,
+      "sha256": "9374e9821161747da38476675b445a18696020c733d1647acc226f687b61e0e0",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-drag-before.jpg",
+      "bytes": 135567,
+      "sha256": "35bfd2f1d22ebee547e282f575897d3aabc07bdc0151b9df6bbd9eef5b899a20",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-mobile-find.jpg",
+      "bytes": 40908,
+      "sha256": "6e550c3901d9c2921d7a2c8a24e87db3656fa5137e2dcc0a1daf5d2104fb3d65",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-carbonic-residue-distance.jpg",
+      "bytes": 85582,
+      "sha256": "2474546047458f1d6dcaa1e72867527d75987a8da92cd9bfb22231cacd3ff570",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-energy-1440.jpg",
+      "bytes": 116391,
+      "sha256": "904b705252e7f15f42bee2ddc6cf10f7278e393bc2f5c1946d5fad49cb56711f",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-energy-catalyst.jpg",
+      "bytes": 124262,
+      "sha256": "5ba8f490d2e90e05331fc596dcfea951cbf1ead663d9652e14e76df831933136",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-energy-clamped-mismatch.jpg",
+      "bytes": 112609,
+      "sha256": "5077aa26ddfa3a46d86215a15d76ce67cbadb57aad8f3eeca537c51b233b508f",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-energy-mobile-gate.jpg",
+      "bytes": 42305,
+      "sha256": "ba403c7a35f9bc06180df035ba3a04d9fdbe01c3aa34bfcb21d9a2b53d6bf210",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-energy-zoom-attempt.jpg",
+      "bytes": 116391,
+      "sha256": "904b705252e7f15f42bee2ddc6cf10f7278e393bc2f5c1946d5fad49cb56711f",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-inhibition-1024.jpg",
+      "bytes": 47932,
+      "sha256": "862353061c1433c11e5fa2e38c9eb0c6ab686fe44d33a97aa950aaa56ff50f0a",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1024,
+      "pixel_height": 768
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-inhibition-1280.jpg",
+      "bytes": 50386,
+      "sha256": "a7d6dd65ccb4a8667191648a2789f4b3f930153045efb37445ff0a4f48ff510b",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1280,
+      "pixel_height": 800
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-inhibition-1440.jpg",
+      "bytes": 53069,
+      "sha256": "76888b744cc210d3057ca504e6f715db35cf22cd17e9d91b4b85f6cd0cfb8bc2",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1440,
+      "pixel_height": 900
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-inhibition-1600.jpg",
+      "bytes": 54483,
+      "sha256": "85a42139cb41928cfd5e0150d042854c8676cf23aa58cde6280d81272c460446",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1600,
+      "pixel_height": 900
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-inhibition-390.jpg",
+      "bytes": 36529,
+      "sha256": "87aa39c7d0a96c4cf733650815e836046053190c2d45b898791a14dbb0314153",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 390,
+      "pixel_height": 843
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-inhibition-768.jpg",
+      "bytes": 45567,
+      "sha256": "be18b006d63601beeb5a60729cdde14972eb5535124f55aea68ae40c9c02f027",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 768,
+      "pixel_height": 1024
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-keyboard-focus.jpg",
+      "bytes": 117124,
+      "sha256": "e275bf3f0f62dcde03435e8971d1ad0c5a5a32b4a91006caef4aca18ced33fe5",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-03b.jpg",
+      "bytes": 117335,
+      "sha256": "1feb45de05401dce7ed4eab7292596833f9e557956393af8057f82462ecb2ed5",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-1024.jpg",
+      "bytes": 78486,
+      "sha256": "a1f0edc0be11f8a6da84ba5834c86446744cb619eae230380bb03ace51898dea",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1009,
+      "pixel_height": 757
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-1280.jpg",
+      "bytes": 92239,
+      "sha256": "dced37a72004ac3462d3be7148d553ba094d37e8aa88240574aee17720d391a9",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1265,
+      "pixel_height": 791
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-1440.jpg",
+      "bytes": 105540,
+      "sha256": "84d340e91c48cd111f6930f7e6de16a3086891c085e8b118286b6ffe1171b468",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-1600.jpg",
+      "bytes": 106759,
+      "sha256": "bd27a17058e2386912c27632ac81024445a8b4f2179be1a4e8a08530eb818fa7",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1585,
+      "pixel_height": 892
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-390.jpg",
+      "bytes": 37163,
+      "sha256": "dc6a79932dc1192a6d7a4e3eab116de4a190a9d839606fa565a21807fc01d216",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-768.jpg",
+      "bytes": 89247,
+      "sha256": "fdf12db733b83c0936a75a137d0e03c16b6971b560bc2f8ed9512fbeeefe6257",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 753,
+      "pixel_height": 1004
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-after-reference.jpg",
+      "bytes": 105586,
+      "sha256": "e0be597e820fc50b8c757386263f16c10ff516db2f8c1a2759a2255b5f84c506",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-axis-after.jpg",
+      "bytes": 103554,
+      "sha256": "4279e53122bc84b9d875c80fafeab649ad284473d0e41bd4e5c11d7baaf7d2b7",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-axis-before.jpg",
+      "bytes": 94649,
+      "sha256": "1ae7b4da04408c5fd52d0ef1dc79f541d076cdb8d7e1ce910b9c9188ee1a0d44",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-before-reference.jpg",
+      "bytes": 99369,
+      "sha256": "8eebeadbc593e2bb62d5f1072fdcb0f13b65e2169454c3aa81b5a2006ffd71b7",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-saturation-gate-full.jpg",
+      "bytes": 192942,
+      "sha256": "ccb81ca0e879201f20db9e60bf5f92b8d562ac0b1cf06b1c560883e886507231",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1424,
+      "pixel_height": 1664
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-kinetics-saturation-gate.jpg",
+      "bytes": 110453,
+      "sha256": "afae4396369c37c92143f15c21b5ca7ab5b7db3c507a4cde5da4714e5a186b50",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-model-notes-1024.jpg",
+      "bytes": 98220,
+      "sha256": "fc87689853649d04bec6ee2790304e124e51eeb8f87e7d2a51c0f3bb296e485e",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1009,
+      "pixel_height": 757
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-model-notes-1280.jpg",
+      "bytes": 103196,
+      "sha256": "be10b20acaa03488b594214b5f2dbcad0dff4db6051a8d256ac22279b7c8d4eb",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1265,
+      "pixel_height": 791
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-model-notes-1440.jpg",
+      "bytes": 117802,
+      "sha256": "21cae01c7a9c05a21bc30af24bb5b37dd83ceaf12cc553568c4d6a8d96c72dee",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-model-notes-1600.jpg",
+      "bytes": 120320,
+      "sha256": "19d4dcb3c75e4e0033832233f487f9cb27233d4d4bce7205b4299dac39d65d7d",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1585,
+      "pixel_height": 892
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-model-notes-390.jpg",
+      "bytes": 47644,
+      "sha256": "c1e6fb053cd43d4f7212b9074eb5eafbe22d08a4da3edc033c22d7041dd82530",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-model-notes-768.jpg",
+      "bytes": 120542,
+      "sha256": "dafcf69b7efaa9148377c1754464a75b70f66be8ff4abaee2afb627e6c6682cb",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 753,
+      "pixel_height": 1004
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reaction-energy-1024.jpg",
+      "bytes": 60292,
+      "sha256": "21f72e26cf47171f8e19858b2076b7ce979f843f0732dde18a2ccabad37dd4e4",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1009,
+      "pixel_height": 757
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reaction-energy-1280.jpg",
+      "bytes": 104438,
+      "sha256": "eda4adfe0fe29df9804c23f28ae6aca464744fe5c91c058f3aea5d13031a8fdb",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1265,
+      "pixel_height": 791
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reaction-energy-1440.jpg",
+      "bytes": 116461,
+      "sha256": "b5eb21a055d8178dace2b6e745d299390aa492019cec78260ff2711e9fa4f83c",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reaction-energy-1600.jpg",
+      "bytes": 118235,
+      "sha256": "63ac070914d0360efdee884c522f4cca3fd37eab408a086a3f85f28454f79fc9",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1585,
+      "pixel_height": 892
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reaction-energy-390.jpg",
+      "bytes": 35003,
+      "sha256": "86dc4f219c1e4ec78da4051fb1bba901c7ba4a09fc7813068fa89652971ddf78",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reaction-energy-768.jpg",
+      "bytes": 74407,
+      "sha256": "fb448c7e1b45aaaf04ed11aad3598bb607fe4d6a0aa01d0d5012e3fc59a892d4",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 753,
+      "pixel_height": 1004
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reference-1440.jpg",
+      "bytes": 117802,
+      "sha256": "21cae01c7a9c05a21bc30af24bb5b37dd83ceaf12cc553568c4d6a8d96c72dee",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-reference-bottom-mobile.jpg",
+      "bytes": 60553,
+      "sha256": "a7dfd6689a96ee220836d2228455bd192acc4cc72b1c92f19a3450dce397c57e",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-1024.jpg",
+      "bytes": 89813,
+      "sha256": "5e9971ba6e304c56779555032ae174b30704fd66b65fa8c14128b6008dd4455f",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1009,
+      "pixel_height": 757
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-1280.jpg",
+      "bytes": 97719,
+      "sha256": "370aa8c0e8a77bcdbfcebb80447d6e831b657439e8a0ac64c22f8b23e406cb5f",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1265,
+      "pixel_height": 791
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-1440.jpg",
+      "bytes": 113130,
+      "sha256": "02e8dac4608336f66271a57684b48a8e26c7811b517b4dfaaa89860030ef69c4",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-1600.jpg",
+      "bytes": 113642,
+      "sha256": "d288d21b05a04dc3e6e96a02f4802be6d9510ecc59e3c43c4a622209b48709ec",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1585,
+      "pixel_height": 892
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-390.jpg",
+      "bytes": 35035,
+      "sha256": "f2ba07f7af0850448880386f858a22d7870a97cfa08d74ecd3e838de11e8caed",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-3d-mobile.jpg",
+      "bytes": 36823,
+      "sha256": "c9368762091ab8bf4d690b115e71d55d54aa23de7099e6a44c5798115b4b81d5",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-3d.jpg",
+      "bytes": 115853,
+      "sha256": "9eac48b6f5285aeee0c6468e2a7a1a156ed4154e191d28706e8d102829c3b929",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-768.jpg",
+      "bytes": 93257,
+      "sha256": "b5ea4fc12b17c15204860dc10697c7baabe75f6eab73332f9741e4a54243775c",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 753,
+      "pixel_height": 1004
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-adp-label.jpg",
+      "bytes": 79907,
+      "sha256": "94d723e3ba25cf2a8f79c016b40588394addbd8fc9ad934ef34b9b87039cbead",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-clamp.jpg",
+      "bytes": 131150,
+      "sha256": "9cde672d3cb365f7a1df3d65cd58ba135745fb2105be190431da8fdb532c1b64",
+      "referenced_in_report": false,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-comparison-dialog.jpg",
+      "bytes": 93508,
+      "sha256": "7b47f7aebd2cea1b89d450aaa8dc1c78fd6118e752ed2c26477316233d6d1030",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-drag-after.jpg",
+      "bytes": 114533,
+      "sha256": "b82ba5168f31b293f006cad6a016eae4b2f364ad16fd43bfa2c90a20bf7d9087",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-drag-before.jpg",
+      "bytes": 115853,
+      "sha256": "9eac48b6f5285aeee0c6468e2a7a1a156ed4154e191d28706e8d102829c3b929",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-large-mobile.jpg",
+      "bytes": 43374,
+      "sha256": "0eaf385a9d4892cfe5f389f21d36be72b316a65b388435914cd5a5acaf4a3dd2",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 390,
+      "pixel_height": 843
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-regulation-large.jpg",
+      "bytes": 79559,
+      "sha256": "c2d15959a5f47473c9d6a5b398c38dbe7e2ea3cb1e59939cddf289d31b47fe0f",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1440,
+      "pixel_height": 900
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-start-1024.jpg",
+      "bytes": 94222,
+      "sha256": "e6124f3bee42fd4ba692807f2fdd4b8264cd05b23c1a57c0778dd3a964108f57",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1009,
+      "pixel_height": 757
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-start-1280.jpg",
+      "bytes": 99406,
+      "sha256": "e8b268d1a030e500e44da862af1e69192aa3ab9de70daef3e22119d092bade97",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1265,
+      "pixel_height": 791
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-start-1440.jpg",
+      "bytes": 115659,
+      "sha256": "922a3db864f8620d93c3bab26e73724bf95db0e6fe43b130c59025724a6a7d8a",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1425,
+      "pixel_height": 891
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-start-1600.jpg",
+      "bytes": 117223,
+      "sha256": "2c1ce751937b2ddae89c5f37a9a99623b785c403ec420a20ccef5cf9cb73b774",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1585,
+      "pixel_height": 892
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-start-390.jpg",
+      "bytes": 40466,
+      "sha256": "dcbb01e26aad27f71e5e437c5675b65d461df670dc6867a2be9d6ba2be7e5ada",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 375,
+      "pixel_height": 811
+    },
+    {
+      "path": "docs/site-wide-ux-audit/audit-start-768.jpg",
+      "bytes": 99807,
+      "sha256": "e697631e1ac904b9ba2222316f1f2517990588b906228fcc6961eb11f2024a33",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 753,
+      "pixel_height": 1004
+    },
+    {
+      "path": "docs/site-wide-ux-audit/axis-comparison.json",
+      "bytes": 388,
+      "sha256": "beb8ca405ffd5f973baaff9fb140744d2e620811d0e905cb6e49658540157156",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-carbonic-anhydrase-1440.txt",
+      "bytes": 5083,
+      "sha256": "b57455f275fa9a5891a20dbb89780a3027880d00e97176277fbe3167408d97b2",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-carbonic-anhydrase-390.txt",
+      "bytes": 5083,
+      "sha256": "b57455f275fa9a5891a20dbb89780a3027880d00e97176277fbe3167408d97b2",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-inhibition-1440.txt",
+      "bytes": 1817,
+      "sha256": "354e10693079c2378f08030afd2f299db3aaa584e74b96d1387609a165490c49",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-inhibition-390.txt",
+      "bytes": 1817,
+      "sha256": "354e10693079c2378f08030afd2f299db3aaa584e74b96d1387609a165490c49",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-kinetics-1440.txt",
+      "bytes": 4343,
+      "sha256": "50a8626bb058cfe94e2ce6f5ed4661b32adee1532050d684694396c496b0695c",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-kinetics-390.txt",
+      "bytes": 4343,
+      "sha256": "50a8626bb058cfe94e2ce6f5ed4661b32adee1532050d684694396c496b0695c",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-model-notes-1440.txt",
+      "bytes": 10555,
+      "sha256": "8084cbb70679d1034c24c59615a0fd71cefdc0ad9317d69adbe2e6a4f0430fdb",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-model-notes-390.txt",
+      "bytes": 10555,
+      "sha256": "8084cbb70679d1034c24c59615a0fd71cefdc0ad9317d69adbe2e6a4f0430fdb",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-reaction-energy-1440.txt",
+      "bytes": 5196,
+      "sha256": "9e726454522227fbbcbca49f125f095b03b9a5147a426c1f8a4eb6be0091376a",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-reaction-energy-390.txt",
+      "bytes": 5059,
+      "sha256": "d47dbdc315bb40b9ef04e5fa30edfd0f554fb271e8597be46f87c0e3e33964cc",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-regulation-1440.txt",
+      "bytes": 5980,
+      "sha256": "bfbbf49362755264469ac9413bc51db53c5c4b47bd521a2fca5705045b8b1cb8",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-regulation-390.txt",
+      "bytes": 5980,
+      "sha256": "bfbbf49362755264469ac9413bc51db53c5c4b47bd521a2fca5705045b8b1cb8",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-start-1440.txt",
+      "bytes": 3807,
+      "sha256": "090e77691117b701b8e0b64e1fa25e197b89ca173004a50c0614826784553565",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/dom-start-390.txt",
+      "bytes": 3807,
+      "sha256": "090e77691117b701b8e0b64e1fa25e197b89ca173004a50c0614826784553565",
+      "referenced_in_report": false
+    },
+    {
+      "path": "docs/site-wide-ux-audit/energy-graph-text-styles.json",
+      "bytes": 2111,
+      "sha256": "9fc490d31cc3a70d32a81956302b7143f3bb413be320bb9892572dfc0520ca12",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/focus-return-comparison.json",
+      "bytes": 64,
+      "sha256": "53f54a260db5775fb3d9ad3f97580017be9db3d1b63a9649840e7b31d8e79e01",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/keyboard-navigation.json",
+      "bytes": 1061,
+      "sha256": "2a7fa3f2671d5a96889f207ef7f9b605d82e9e017f6d38d221f6101aa399f89a",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/lifecycle-harness-run-1.json",
+      "bytes": 1453,
+      "sha256": "88b9a69efe259c46f42fa8c35e0e55d77e80e37c3d7900f3c455ee45f12071fb",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/lifecycle-harness-run-2.json",
+      "bytes": 1453,
+      "sha256": "3ec34d228a47a6a3d96bd7cab5ce3743ae149514d1d16ff0aa651e70283ec174",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/overview-1024.jpg",
+      "bytes": 238208,
+      "sha256": "746ec8f276fa64fe9a1fa0812a1e38adee0b75395cb7e82fb4901cb8014ad8b3",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1350,
+      "pixel_height": 1122
+    },
+    {
+      "path": "docs/site-wide-ux-audit/overview-1280.jpg",
+      "bytes": 201492,
+      "sha256": "55853ce3fcfbe721eb18f5ff2529367459d3c2111d449b716217813690849d72",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1350,
+      "pixel_height": 951
+    },
+    {
+      "path": "docs/site-wide-ux-audit/overview-1440.jpg",
+      "bytes": 190720,
+      "sha256": "10c9bcc547ecdbd08eaa29ba30e34581b58414a618fa8677c63164d7df6532cb",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1350,
+      "pixel_height": 951
+    },
+    {
+      "path": "docs/site-wide-ux-audit/overview-1600.jpg",
+      "bytes": 166666,
+      "sha256": "cfb94ea009a7c31e858f96d7b9ebaa18946ecddae2fc2f22e4050e23b81f8f36",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1350,
+      "pixel_height": 867
+    },
+    {
+      "path": "docs/site-wide-ux-audit/overview-390.jpg",
+      "bytes": 438983,
+      "sha256": "71908fb4ddebff3e4f0c31b9b4b70101553282e1cc74ea4582d64b364cd6e8ea",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1125,
+      "pixel_height": 2541
+    },
+    {
+      "path": "docs/site-wide-ux-audit/overview-768.jpg",
+      "bytes": 430350,
+      "sha256": "be5ec5a4284f0945b31652af825fc6c687d711be3b34353ec8df7d4a9eb88ca6",
+      "referenced_in_report": true,
+      "format": "JPEG",
+      "pixel_width": 1350,
+      "pixel_height": 1908
+    },
+    {
+      "path": "docs/site-wide-ux-audit/production-console-after-stress.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/production-console.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/production-route-stress.json",
+      "bytes": 1318,
+      "sha256": "d3f851a7ce88ed4711cb5dc575d592af009e18d3aaaafee81625358e5e6d62a2",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/regulation-clamp-high-dom.txt",
+      "bytes": 6091,
+      "sha256": "866147541009d9a5f3cdb797d6c4b92aaece91f0281e64163eada8d31a90ab2e",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/regulation-clamp-low-dom.txt",
+      "bytes": 6083,
+      "sha256": "ae6c4039d21bdb092207a6bea3cd4e807b208e9743d0880493bfaea86b2b7c4b",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/regulation-clamp-return-dom.txt",
+      "bytes": 6058,
+      "sha256": "ec8209d8a8339243b86d067e40f423fdd35fb8ed80dc298ff5ebbb4b3c76db22",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/responsive-metrics.json",
+      "bytes": 154075,
+      "sha256": "414970a34db61a5b671bb5bfa04c426073b5c679341ad5b7e7aea02d9b91e269",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/saturation-gate-dom.txt",
+      "bytes": 6417,
+      "sha256": "a547ed05952574288b90c9d6e1d76dd7f2503c58063101e1c20d6bb53d6e3359",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/scroll-bottom-checks.json",
+      "bytes": 749,
+      "sha256": "d5ef2b0de7457ed9c802e266867e1d1088db47ffbe36729230f8fe842e59e65c",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/site-wide-ux-audit/verification.json",
+      "bytes": 8871,
+      "sha256": "605c69d70769804eabfc27529a2485f9682500b49e65cccf71fa887e295b5520",
+      "referenced_in_report": true
+    },
+    {
+      "path": "docs/SITE_WIDE_UX_AUDIT.md",
+      "bytes": 65437,
+      "sha256": "1073209f2351cf192dec868489a5a2a65ec082e9db1dd2e393421268827bea26",
+      "referenced_in_report": false
+    }
+  ],
+  "file_count": 115,
+  "total_bytes": 8869125,
+  "note": "Image pixel sizes describe captured content, not the CSS viewport including scrollbars."
+}

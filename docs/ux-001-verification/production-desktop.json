@@ -1,0 +1,11 @@
+{
+  "multipleSubstrates": [
+    10,
+    50,
+    100,
+    500
+  ],
+  "referenceMeasurements": 4,
+  "baselineVmax": "100.000",
+  "resetCount": "모은 측정값 (0개)"
+}

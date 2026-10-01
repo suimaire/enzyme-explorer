@@ -1,0 +1,106 @@
+{
+  "checks": [
+    "PASS 03 really unmounts on Reference exit",
+    "PASS A: 50 µM measurement survives Reference",
+    "PASS 03A selected/checked/locked/reveal DOM matches restored progress",
+    "PASS B: 10/50/100/500 µM survive Start → 02 → 03",
+    "PASS C: 03B stage and four assay points survive Reference",
+    "PASS D: baseline, axis policy and accessible graph values survive another module",
+    "PASS 03B prediction, exploration gate and revealed guide survive",
+    "PASS E: explicit reset clears all kinetics progress and never revives it",
+    "PASS clear-assays remains cleared after Reference",
+    "PASS 01 catalyst condition, prediction and exploration survive",
+    "PASS 01 explicit reset remains reset",
+    "PASS 02 stage, six measured residues, locked answers and explanation survive",
+    "PASS 02 explicit reset clears answers, measurements, stage and reveals",
+    "PASS 05 scenario, narration progress, comparison, clamp and reveals survive",
+    "PASS 05 route exit pauses playback and invalidates pending ticks",
+    "PASS 05 restored narration remains paused at the same step",
+    "PASS 05 explicit reset clears scenario/progress/clamp/reveals",
+    "PASS all module snapshots contain only JSON learning data",
+    "PASS new App/refresh starts empty; no durable browser persistence",
+    "ALL LEARNING CHECKS PASSED"
+  ],
+  "lifecycle": {
+    "disposals": 4,
+    "rendererDisposals": 4,
+    "contextReleases": 4,
+    "contextsLost": 4,
+    "listenerCleanups": 4,
+    "controlsDisposals": 4,
+    "resizeDisconnects": 4,
+    "pendingFlights": 0,
+    "canceledFlights": 0
+  },
+  "connectedCanvases": 0,
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "snapshot": {
+    "kinetics": {
+      "predictions": {},
+      "reveals": {},
+      "section": "a",
+      "parameters": {
+        "km": 75,
+        "kcat": 20,
+        "enzymeTotal": 5
+      },
+      "assays": [],
+      "initialSubstrate": 50,
+      "assayRun": {
+        "substrate": 50
+      },
+      "measured": true,
+      "experiment": "saturation",
+      "substrate": 80,
+      "baseline": null,
+      "axisLock": null,
+      "showVmaxGuide": false,
+      "showKmGuide": false,
+      "exploredHigh": false
+    },
+    "reactionEnergy": {
+      "predictions": {
+        "main": {}
+      },
+      "reveals": {},
+      "productEnergy": -18,
+      "barrierTop": 55,
+      "barrierLowering": 20,
+      "enzyme": false,
+      "enzymeSeen": false
+    },
+    "carbonicAnhydrase": {
+      "predictions": {
+        "main": {}
+      },
+      "reveals": {},
+      "stage": 1,
+      "judgements": {},
+      "judgementsLocked": false,
+      "measured": []
+    },
+    "regulation": {
+      "predictions": {
+        "main": {}
+      },
+      "reveals": {},
+      "lab": {
+        "scenario": null,
+        "control": {
+          "mode": "hormoneDriven"
+        },
+        "view": "pathway",
+        "narration": {
+          "status": "idle",
+          "step": 0,
+          "run": 21
+        },
+        "observed": [],
+        "interventionObserved": false
+      }
+    }
+  }
+}

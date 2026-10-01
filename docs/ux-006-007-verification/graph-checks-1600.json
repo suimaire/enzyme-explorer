@@ -1,0 +1,2806 @@
+{
+  "viewport": [
+    1600,
+    900
+  ],
+  "checks": [
+    "PASS energy-diagram: accessible description retained",
+    "PASS energy-diagram: -30 inside SVG bounds",
+    "PASS energy-diagram: -30 font minimum",
+    "PASS energy-diagram: -15 inside SVG bounds",
+    "PASS energy-diagram: -15 font minimum",
+    "PASS energy-diagram: 0 inside SVG bounds",
+    "PASS energy-diagram: 0 font minimum",
+    "PASS energy-diagram: 15 inside SVG bounds",
+    "PASS energy-diagram: 15 font minimum",
+    "PASS energy-diagram: 30 inside SVG bounds",
+    "PASS energy-diagram: 30 font minimum",
+    "PASS energy-diagram: 45 inside SVG bounds",
+    "PASS energy-diagram: 45 font minimum",
+    "PASS energy-diagram: 60 inside SVG bounds",
+    "PASS energy-diagram: 60 font minimum",
+    "PASS energy-diagram: 70 inside SVG bounds",
+    "PASS energy-diagram: 70 font minimum",
+    "PASS energy-diagram: 정반응 55 inside SVG bounds",
+    "PASS energy-diagram: 정반응 55 font minimum",
+    "PASS energy-diagram: 역반응 73 inside SVG bounds",
+    "PASS energy-diagram: 역반응 73 font minimum",
+    "PASS energy-diagram: ΔG −18 inside SVG bounds",
+    "PASS energy-diagram: ΔG −18 font minimum",
+    "PASS energy-diagram: 반응물 inside SVG bounds",
+    "PASS energy-diagram: 반응물 font minimum",
+    "PASS energy-diagram: 생성물 inside SVG bounds",
+    "PASS energy-diagram: 생성물 font minimum",
+    "PASS energy-diagram: 전이 상태 inside SVG bounds",
+    "PASS energy-diagram: 전이 상태 font minimum",
+    "PASS energy-diagram: 반응 좌표(reaction coordinate) inside SVG bounds",
+    "PASS energy-diagram: 반응 좌표(reaction coordinate) font minimum",
+    "PASS energy-diagram: 반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다. inside SVG bounds",
+    "PASS energy-diagram: 상대 Gibbs 자유에너지 (kJ·mol⁻¹) inside SVG bounds",
+    "PASS energy-diagram: 상대 Gibbs 자유에너지 (kJ·mol⁻¹) font minimum",
+    "PASS energy-diagram: no text collisions ()",
+    "PASS 01 정반응 55: rgb(81, 99, 111), contrast 6.242:1",
+    "PASS 01 역반응 73: rgb(81, 99, 111), contrast 6.242:1",
+    "PASS 01 ΔG −18: rgb(138, 89, 8), contrast 5.978:1",
+    "PASS energy-default: legend minimum",
+    "PASS energy-default: no horizontal overflow",
+    "PASS energy-diagram: accessible description retained",
+    "PASS energy-diagram: -30 inside SVG bounds",
+    "PASS energy-diagram: -30 font minimum",
+    "PASS energy-diagram: -15 inside SVG bounds",
+    "PASS energy-diagram: -15 font minimum",
+    "PASS energy-diagram: 0 inside SVG bounds",
+    "PASS energy-diagram: 0 font minimum",
+    "PASS energy-diagram: 15 inside SVG bounds",
+    "PASS energy-diagram: 15 font minimum",
+    "PASS energy-diagram: 30 inside SVG bounds",
+    "PASS energy-diagram: 30 font minimum",
+    "PASS energy-diagram: 45 inside SVG bounds",
+    "PASS energy-diagram: 45 font minimum",
+    "PASS energy-diagram: 60 inside SVG bounds",
+    "PASS energy-diagram: 60 font minimum",
+    "PASS energy-diagram: 70 inside SVG bounds",
+    "PASS energy-diagram: 70 font minimum",
+    "PASS energy-diagram: 정반응 55 inside SVG bounds",
+    "PASS energy-diagram: 정반응 55 font minimum",
+    "PASS energy-diagram: 정반응 35 inside SVG bounds",
+    "PASS energy-diagram: 정반응 35 font minimum",
+    "PASS energy-diagram: 역반응 53 inside SVG bounds",
+    "PASS energy-diagram: 역반응 53 font minimum",
+    "PASS energy-diagram: 역반응 73 inside SVG bounds",
+    "PASS energy-diagram: 역반응 73 font minimum",
+    "PASS energy-diagram: ΔG −18 inside SVG bounds",
+    "PASS energy-diagram: ΔG −18 font minimum",
+    "PASS energy-diagram: 반응물 inside SVG bounds",
+    "PASS energy-diagram: 반응물 font minimum",
+    "PASS energy-diagram: 생성물 inside SVG bounds",
+    "PASS energy-diagram: 생성물 font minimum",
+    "PASS energy-diagram: 전이 상태 inside SVG bounds",
+    "PASS energy-diagram: 전이 상태 font minimum",
+    "PASS energy-diagram: 반응 좌표(reaction coordinate) inside SVG bounds",
+    "PASS energy-diagram: 반응 좌표(reaction coordinate) font minimum",
+    "PASS energy-diagram: 반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다. inside SVG bounds",
+    "PASS energy-diagram: 상대 Gibbs 자유에너지 (kJ·mol⁻¹) inside SVG bounds",
+    "PASS energy-diagram: 상대 Gibbs 자유에너지 (kJ·mol⁻¹) font minimum",
+    "PASS energy-diagram: no text collisions ()",
+    "PASS 01 정반응 55: rgb(81, 99, 111), contrast 6.242:1",
+    "PASS 01 정반응 35: rgb(21, 97, 143), contrast 6.691:1",
+    "PASS 01 역반응 53: rgb(21, 97, 143), contrast 6.691:1",
+    "PASS 01 역반응 73: rgb(81, 99, 111), contrast 6.242:1",
+    "PASS 01 ΔG −18: rgb(138, 89, 8), contrast 5.978:1",
+    "PASS energy-catalyst: legend minimum",
+    "PASS energy-catalyst: no horizontal overflow",
+    "PASS energy-diagram: accessible description retained",
+    "PASS energy-diagram: -30 inside SVG bounds",
+    "PASS energy-diagram: -30 font minimum",
+    "PASS energy-diagram: -15 inside SVG bounds",
+    "PASS energy-diagram: -15 font minimum",
+    "PASS energy-diagram: 0 inside SVG bounds",
+    "PASS energy-diagram: 0 font minimum",
+    "PASS energy-diagram: 15 inside SVG bounds",
+    "PASS energy-diagram: 15 font minimum",
+    "PASS energy-diagram: 30 inside SVG bounds",
+    "PASS energy-diagram: 30 font minimum",
+    "PASS energy-diagram: 45 inside SVG bounds",
+    "PASS energy-diagram: 45 font minimum",
+    "PASS energy-diagram: 60 inside SVG bounds",
+    "PASS energy-diagram: 60 font minimum",
+    "PASS energy-diagram: 70 inside SVG bounds",
+    "PASS energy-diagram: 70 font minimum",
+    "PASS energy-diagram: 정반응 55 inside SVG bounds",
+    "PASS energy-diagram: 정반응 55 font minimum",
+    "PASS energy-diagram: 정반응 35 inside SVG bounds",
+    "PASS energy-diagram: 정반응 35 font minimum",
+    "PASS energy-diagram: 역반응 5 inside SVG bounds",
+    "PASS energy-diagram: 역반응 5 font minimum",
+    "PASS energy-diagram: 역반응 25 inside SVG bounds",
+    "PASS energy-diagram: 역반응 25 font minimum",
+    "PASS energy-diagram: ΔG +30 inside SVG bounds",
+    "PASS energy-diagram: ΔG +30 font minimum",
+    "PASS energy-diagram: 반응물 inside SVG bounds",
+    "PASS energy-diagram: 반응물 font minimum",
+    "PASS energy-diagram: 생성물 inside SVG bounds",
+    "PASS energy-diagram: 생성물 font minimum",
+    "PASS energy-diagram: 전이 상태 inside SVG bounds",
+    "PASS energy-diagram: 전이 상태 font minimum",
+    "PASS energy-diagram: 반응 좌표(reaction coordinate) inside SVG bounds",
+    "PASS energy-diagram: 반응 좌표(reaction coordinate) font minimum",
+    "PASS energy-diagram: 반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다. inside SVG bounds",
+    "PASS energy-diagram: 상대 Gibbs 자유에너지 (kJ·mol⁻¹) inside SVG bounds",
+    "PASS energy-diagram: 상대 Gibbs 자유에너지 (kJ·mol⁻¹) font minimum",
+    "PASS energy-diagram: no text collisions ()",
+    "PASS 01 정반응 55: rgb(81, 99, 111), contrast 6.242:1",
+    "PASS 01 정반응 35: rgb(21, 97, 143), contrast 6.691:1",
+    "PASS 01 역반응 5: rgb(21, 97, 143), contrast 6.691:1",
+    "PASS 01 역반응 25: rgb(81, 99, 111), contrast 6.242:1",
+    "PASS 01 ΔG +30: rgb(138, 89, 8), contrast 5.978:1",
+    "PASS energy-maximum: legend minimum",
+    "PASS energy-maximum: no horizontal overflow",
+    "PASS energy-diagram: accessible description retained",
+    "PASS energy-diagram: -30 inside SVG bounds",
+    "PASS energy-diagram: -30 font minimum",
+    "PASS energy-diagram: -15 inside SVG bounds",
+    "PASS energy-diagram: -15 font minimum",
+    "PASS energy-diagram: 0 inside SVG bounds",
+    "PASS energy-diagram: 0 font minimum",
+    "PASS energy-diagram: 15 inside SVG bounds",
+    "PASS energy-diagram: 15 font minimum",
+    "PASS energy-diagram: 30 inside SVG bounds",
+    "PASS energy-diagram: 30 font minimum",
+    "PASS energy-diagram: 45 inside SVG bounds",
+    "PASS energy-diagram: 45 font minimum",
+    "PASS energy-diagram: 60 inside SVG bounds",
+    "PASS energy-diagram: 60 font minimum",
+    "PASS energy-diagram: 70 inside SVG bounds",
+    "PASS energy-diagram: 70 font minimum",
+    "PASS energy-diagram: 정반응 55 inside SVG bounds",
+    "PASS energy-diagram: 정반응 55 font minimum",
+    "PASS energy-diagram: 정반응 35 inside SVG bounds",
+    "PASS energy-diagram: 정반응 35 font minimum",
+    "PASS energy-diagram: 역반응 35 inside SVG bounds",
+    "PASS energy-diagram: 역반응 35 font minimum",
+    "PASS energy-diagram: 역반응 55 inside SVG bounds",
+    "PASS energy-diagram: 역반응 55 font minimum",
+    "PASS energy-diagram: ΔG 0 inside SVG bounds",
+    "PASS energy-diagram: ΔG 0 font minimum",
+    "PASS energy-diagram: 반응물 inside SVG bounds",
+    "PASS energy-diagram: 반응물 font minimum",
+    "PASS energy-diagram: 생성물 inside SVG bounds",
+    "PASS energy-diagram: 생성물 font minimum",
+    "PASS energy-diagram: 전이 상태 inside SVG bounds",
+    "PASS energy-diagram: 전이 상태 font minimum",
+    "PASS energy-diagram: 반응 좌표(reaction coordinate) inside SVG bounds",
+    "PASS energy-diagram: 반응 좌표(reaction coordinate) font minimum",
+    "PASS energy-diagram: 반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다. inside SVG bounds",
+    "PASS energy-diagram: 상대 Gibbs 자유에너지 (kJ·mol⁻¹) inside SVG bounds",
+    "PASS energy-diagram: 상대 Gibbs 자유에너지 (kJ·mol⁻¹) font minimum",
+    "PASS energy-diagram: no text collisions ()",
+    "PASS 01 정반응 55: rgb(81, 99, 111), contrast 6.242:1",
+    "PASS 01 정반응 35: rgb(21, 97, 143), contrast 6.691:1",
+    "PASS 01 역반응 35: rgb(21, 97, 143), contrast 6.691:1",
+    "PASS 01 역반응 55: rgb(81, 99, 111), contrast 6.242:1",
+    "PASS 01 ΔG 0: rgb(138, 89, 8), contrast 5.978:1",
+    "PASS energy-equal: legend minimum",
+    "PASS energy-equal: no horizontal overflow",
+    "PASS progress-curve: accessible description retained",
+    "PASS progress-curve: 0 inside SVG bounds",
+    "PASS progress-curve: 0 font minimum",
+    "PASS progress-curve: 13 inside SVG bounds",
+    "PASS progress-curve: 13 font minimum",
+    "PASS progress-curve: 25 inside SVG bounds",
+    "PASS progress-curve: 25 font minimum",
+    "PASS progress-curve: 38 inside SVG bounds",
+    "PASS progress-curve: 38 font minimum",
+    "PASS progress-curve: 50 inside SVG bounds",
+    "PASS progress-curve: 50 font minimum",
+    "PASS progress-curve: 0 inside SVG bounds",
+    "PASS progress-curve: 0 font minimum",
+    "PASS progress-curve: 192 inside SVG bounds",
+    "PASS progress-curve: 192 font minimum",
+    "PASS progress-curve: 385 inside SVG bounds",
+    "PASS progress-curve: 385 font minimum",
+    "PASS progress-curve: 577 inside SVG bounds",
+    "PASS progress-curve: 577 font minimum",
+    "PASS progress-curve: 770 inside SVG bounds",
+    "PASS progress-curve: 770 font minimum",
+    "PASS progress-curve: 초기 속도 (t = 0에서의 접선) inside SVG bounds",
+    "PASS progress-curve: 초기 속도 (t = 0에서의 접선) font minimum",
+    "PASS progress-curve: 시간 (s) inside SVG bounds",
+    "PASS progress-curve: 시간 (s) font minimum",
+    "PASS progress-curve: [P] (µM) inside SVG bounds",
+    "PASS progress-curve: [P] (µM) font minimum",
+    "PASS progress-curve: no text collisions ()",
+    "PASS progress: no horizontal overflow",
+    "PASS mm-plot: accessible description retained",
+    "PASS mm-plot: 0 inside SVG bounds",
+    "PASS mm-plot: 0 font minimum",
+    "PASS mm-plot: 28 inside SVG bounds",
+    "PASS mm-plot: 28 font minimum",
+    "PASS mm-plot: 55 inside SVG bounds",
+    "PASS mm-plot: 55 font minimum",
+    "PASS mm-plot: 83 inside SVG bounds",
+    "PASS mm-plot: 83 font minimum",
+    "PASS mm-plot: 110 inside SVG bounds",
+    "PASS mm-plot: 110 font minimum",
+    "PASS mm-plot: 0 inside SVG bounds",
+    "PASS mm-plot: 0 font minimum",
+    "PASS mm-plot: 100 inside SVG bounds",
+    "PASS mm-plot: 100 font minimum",
+    "PASS mm-plot: 200 inside SVG bounds",
+    "PASS mm-plot: 200 font minimum",
+    "PASS mm-plot: 300 inside SVG bounds",
+    "PASS mm-plot: 300 font minimum",
+    "PASS mm-plot: 400 inside SVG bounds",
+    "PASS mm-plot: 400 font minimum",
+    "PASS mm-plot: 500 inside SVG bounds",
+    "PASS mm-plot: 500 font minimum",
+    "PASS mm-plot: 600 inside SVG bounds",
+    "PASS mm-plot: 600 font minimum",
+    "PASS mm-plot: [S] (µM) inside SVG bounds",
+    "PASS mm-plot: [S] (µM) font minimum",
+    "PASS mm-plot: v₀ (nM·s⁻¹) inside SVG bounds",
+    "PASS mm-plot: v₀ (nM·s⁻¹) font minimum",
+    "PASS mm-plot: no text collisions ()",
+    "PASS mm-default: legend minimum",
+    "PASS mm-default: no horizontal overflow",
+    "PASS mm-plot: accessible description retained",
+    "PASS mm-plot: 0 inside SVG bounds",
+    "PASS mm-plot: 0 font minimum",
+    "PASS mm-plot: 28 inside SVG bounds",
+    "PASS mm-plot: 28 font minimum",
+    "PASS mm-plot: 55 inside SVG bounds",
+    "PASS mm-plot: 55 font minimum",
+    "PASS mm-plot: 83 inside SVG bounds",
+    "PASS mm-plot: 83 font minimum",
+    "PASS mm-plot: 110 inside SVG bounds",
+    "PASS mm-plot: 110 font minimum",
+    "PASS mm-plot: 0 inside SVG bounds",
+    "PASS mm-plot: 0 font minimum",
+    "PASS mm-plot: 100 inside SVG bounds",
+    "PASS mm-plot: 100 font minimum",
+    "PASS mm-plot: 200 inside SVG bounds",
+    "PASS mm-plot: 200 font minimum",
+    "PASS mm-plot: 300 inside SVG bounds",
+    "PASS mm-plot: 300 font minimum",
+    "PASS mm-plot: 400 inside SVG bounds",
+    "PASS mm-plot: 400 font minimum",
+    "PASS mm-plot: 500 inside SVG bounds",
+    "PASS mm-plot: 500 font minimum",
+    "PASS mm-plot: 600 inside SVG bounds",
+    "PASS mm-plot: 600 font minimum",
+    "PASS mm-plot: Vmax = 100 nM·s⁻¹ inside SVG bounds",
+    "PASS mm-plot: Vmax = 100 nM·s⁻¹ font minimum",
+    "PASS mm-plot: [S] = Km = 75 µM inside SVG bounds",
+    "PASS mm-plot: [S] = Km = 75 µM font minimum",
+    "PASS mm-plot: Vmax / 2 inside SVG bounds",
+    "PASS mm-plot: Vmax / 2 font minimum",
+    "PASS mm-plot: [S] (µM) inside SVG bounds",
+    "PASS mm-plot: [S] (µM) font minimum",
+    "PASS mm-plot: v₀ (nM·s⁻¹) inside SVG bounds",
+    "PASS mm-plot: v₀ (nM·s⁻¹) font minimum",
+    "PASS mm-plot: no text collisions ()",
+    "PASS mm-plot: Vmax = 100 nM·s⁻¹ clear of current marker",
+    "PASS mm-plot: [S] = Km = 75 µM clear of current marker",
+    "PASS mm-plot: Vmax / 2 clear of current marker",
+    "PASS mm-guides: legend minimum",
+    "PASS mm-guides: no horizontal overflow",
+    "PASS mm-plot: accessible description retained",
+    "PASS mm-plot: 0 inside SVG bounds",
+    "PASS mm-plot: 0 font minimum",
+    "PASS mm-plot: 28 inside SVG bounds",
+    "PASS mm-plot: 28 font minimum",
+    "PASS mm-plot: 55 inside SVG bounds",
+    "PASS mm-plot: 55 font minimum",
+    "PASS mm-plot: 83 inside SVG bounds",
+    "PASS mm-plot: 83 font minimum",
+    "PASS mm-plot: 110 inside SVG bounds",
+    "PASS mm-plot: 110 font minimum",
+    "PASS mm-plot: 0 inside SVG bounds",
+    "PASS mm-plot: 0 font minimum",
+    "PASS mm-plot: 100 inside SVG bounds",
+    "PASS mm-plot: 100 font minimum",
+    "PASS mm-plot: 200 inside SVG bounds",
+    "PASS mm-plot: 200 font minimum",
+    "PASS mm-plot: 300 inside SVG bounds",
+    "PASS mm-plot: 300 font minimum",
+    "PASS mm-plot: 400 inside SVG bounds",
+    "PASS mm-plot: 400 font minimum",
+    "PASS mm-plot: 500 inside SVG bounds",
+    "PASS mm-plot: 500 font minimum",
+    "PASS mm-plot: 600 inside SVG bounds",
+    "PASS mm-plot: 600 font minimum",
+    "PASS mm-plot: Vmax = 100 nM·s⁻¹ inside SVG bounds",
+    "PASS mm-plot: Vmax = 100 nM·s⁻¹ font minimum",
+    "PASS mm-plot: [S] = Km = 300 µM inside SVG bounds",
+    "PASS mm-plot: [S] = Km = 300 µM font minimum",
+    "PASS mm-plot: Vmax / 2 inside SVG bounds",
+    "PASS mm-plot: Vmax / 2 font minimum",
+    "PASS mm-plot: [S] (µM) inside SVG bounds",
+    "PASS mm-plot: [S] (µM) font minimum",
+    "PASS mm-plot: v₀ (nM·s⁻¹) inside SVG bounds",
+    "PASS mm-plot: v₀ (nM·s⁻¹) font minimum",
+    "PASS mm-plot: no text collisions ()",
+    "PASS mm-plot: Vmax = 100 nM·s⁻¹ clear of current marker",
+    "PASS mm-plot: [S] = Km = 300 µM clear of current marker",
+    "PASS mm-plot: Vmax / 2 clear of current marker",
+    "PASS mm-high: legend minimum",
+    "PASS mm-high: no horizontal overflow",
+    "PASS mm-plot: accessible description retained",
+    "PASS mm-plot: 0 inside SVG bounds",
+    "PASS mm-plot: 0 font minimum",
+    "PASS mm-plot: 83 inside SVG bounds",
+    "PASS mm-plot: 83 font minimum",
+    "PASS mm-plot: 165 inside SVG bounds",
+    "PASS mm-plot: 165 font minimum",
+    "PASS mm-plot: 248 inside SVG bounds",
+    "PASS mm-plot: 248 font minimum",
+    "PASS mm-plot: 330 inside SVG bounds",
+    "PASS mm-plot: 330 font minimum",
+    "PASS mm-plot: 0 inside SVG bounds",
+    "PASS mm-plot: 0 font minimum",
+    "PASS mm-plot: 100 inside SVG bounds",
+    "PASS mm-plot: 100 font minimum",
+    "PASS mm-plot: 200 inside SVG bounds",
+    "PASS mm-plot: 200 font minimum",
+    "PASS mm-plot: 300 inside SVG bounds",
+    "PASS mm-plot: 300 font minimum",
+    "PASS mm-plot: 400 inside SVG bounds",
+    "PASS mm-plot: 400 font minimum",
+    "PASS mm-plot: 500 inside SVG bounds",
+    "PASS mm-plot: 500 font minimum",
+    "PASS mm-plot: 600 inside SVG bounds",
+    "PASS mm-plot: 600 font minimum",
+    "PASS mm-plot: Vmax = 300 nM·s⁻¹ inside SVG bounds",
+    "PASS mm-plot: Vmax = 300 nM·s⁻¹ font minimum",
+    "PASS mm-plot: [S] = Km = 75 µM inside SVG bounds",
+    "PASS mm-plot: [S] = Km = 75 µM font minimum",
+    "PASS mm-plot: Vmax / 2 inside SVG bounds",
+    "PASS mm-plot: Vmax / 2 font minimum",
+    "PASS mm-plot: [S] (µM) inside SVG bounds",
+    "PASS mm-plot: [S] (µM) font minimum",
+    "PASS mm-plot: v₀ (nM·s⁻¹) inside SVG bounds",
+    "PASS mm-plot: v₀ (nM·s⁻¹) font minimum",
+    "PASS mm-plot: no text collisions ()",
+    "PASS mm-plot: Vmax = 300 nM·s⁻¹ clear of current marker",
+    "PASS mm-plot: [S] = Km = 75 µM clear of current marker",
+    "PASS mm-plot: Vmax / 2 clear of current marker",
+    "PASS mm-expanded: legend minimum",
+    "PASS mm-expanded: no horizontal overflow",
+    "ALL GRAPH CHECKS PASSED"
+  ],
+  "geometry": [
+    {
+      "id": "energy-diagram",
+      "narrow": false,
+      "bounds": {
+        "x": 422.82501220703125,
+        "y": 229.10000610351562,
+        "width": 661.8624877929688,
+        "height": 410,
+        "top": 229.10000610351562,
+        "right": 1084.6875,
+        "bottom": 639.1000061035156,
+        "left": 422.82501220703125
+      },
+      "collisions": [],
+      "items": [
+        {
+          "text": "-30",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 462.02545166015625,
+            "y": 545.1434326171875,
+            "width": 18.787500381469727,
+            "height": 14.399950981140137,
+            "top": 545.1434326171875,
+            "right": 480.812952041626,
+            "bottom": 559.5433835983276,
+            "left": 462.02545166015625
+          }
+        },
+        {
+          "text": "-15",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 462.02545166015625,
+            "y": 504.03125,
+            "width": 18.787500381469727,
+            "height": 14.40000057220459,
+            "top": 504.03125,
+            "right": 480.812952041626,
+            "bottom": 518.4312505722046,
+            "left": 462.02545166015625
+          }
+        },
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 473.575439453125,
+            "y": 462.9191589355469,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 462.9191589355469,
+            "right": 480.81293964385986,
+            "bottom": 477.31915950775146,
+            "left": 473.575439453125
+          }
+        },
+        {
+          "text": "15",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 421.80694580078125,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 421.80694580078125,
+            "right": 480.81293392181396,
+            "bottom": 436.20694637298584,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "30",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 380.6947937011719,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 380.6947937011719,
+            "right": 480.81293392181396,
+            "bottom": 395.09479427337646,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "45",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 339.5826721191406,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 339.5826721191406,
+            "right": 480.81293392181396,
+            "bottom": 353.9826726913452,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "60",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 298.47052001953125,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 298.47052001953125,
+            "right": 480.81293392181396,
+            "bottom": 312.87052059173584,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "70",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 271.0624084472656,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 271.0624084472656,
+            "right": 480.81293392181396,
+            "bottom": 285.4624090194702,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "정반응 55",
+          "size": 14,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 579.502197265625,
+            "y": 386.746826171875,
+            "width": 61.4375,
+            "height": 16,
+            "top": 386.746826171875,
+            "right": 640.939697265625,
+            "bottom": 402.746826171875,
+            "left": 579.502197265625
+          }
+        },
+        {
+          "text": "역반응 73",
+          "size": 14,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 904.5648803710938,
+            "y": 411.41412353515625,
+            "width": 61.4375,
+            "height": 16,
+            "top": 411.41412353515625,
+            "right": 966.0023803710938,
+            "bottom": 427.41412353515625,
+            "left": 904.5648803710938
+          }
+        },
+        {
+          "text": "ΔG −18",
+          "size": 14,
+          "fill": "rgb(138, 89, 8)",
+          "box": {
+            "x": 969.71875,
+            "y": 486.78643798828125,
+            "width": 48.66250228881836,
+            "height": 16,
+            "top": 486.78643798828125,
+            "right": 1018.3812522888184,
+            "bottom": 502.78643798828125,
+            "left": 969.71875
+          }
+        },
+        {
+          "text": "반응물",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 517.2872924804688,
+            "y": 448.1220397949219,
+            "width": 41.98749923706055,
+            "height": 16,
+            "top": 448.1220397949219,
+            "right": 559.2747917175293,
+            "bottom": 464.1220397949219,
+            "left": 517.2872924804688
+          }
+        },
+        {
+          "text": "생성물",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 986.2299194335938,
+            "y": 527.4503784179688,
+            "width": 41.98749923706055,
+            "height": 16,
+            "top": 527.4503784179688,
+            "right": 1028.2174186706543,
+            "bottom": 543.4503784179688,
+            "left": 986.2299194335938
+          }
+        },
+        {
+          "text": "전이 상태",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 742.821044921875,
+            "y": 295.3778991699219,
+            "width": 59.86249923706055,
+            "height": 16,
+            "top": 295.3778991699219,
+            "right": 802.6835441589355,
+            "bottom": 311.3778991699219,
+            "left": 742.821044921875
+          }
+        },
+        {
+          "text": "반응 좌표(reaction coordinate)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 678.6585693359375,
+            "y": 596.2636108398438,
+            "width": 188.3217315673828,
+            "height": 16.000049591064453,
+            "top": 596.2636108398438,
+            "right": 866.9803009033203,
+            "bottom": 612.2636604309082,
+            "left": 678.6585693359375
+          }
+        },
+        {
+          "text": "반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다.",
+          "size": 11.5,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 571.2460327148438,
+            "y": 616.659912109375,
+            "width": 403.0125427246094,
+            "height": 12.800000190734863,
+            "top": 616.659912109375,
+            "right": 974.2585754394531,
+            "bottom": 629.4599123001099,
+            "left": 571.2460327148438
+          }
+        },
+        {
+          "text": "상대 Gibbs 자유에너지 (kJ·mol⁻¹)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 427.021484375,
+            "y": 312.3460998535156,
+            "width": 16,
+            "height": 207.3764190673828,
+            "top": 312.3460998535156,
+            "right": 443.021484375,
+            "bottom": 519.7225189208984,
+            "left": 427.021484375
+          }
+        }
+      ]
+    },
+    {
+      "id": "energy-diagram",
+      "narrow": false,
+      "bounds": {
+        "x": 422.82501220703125,
+        "y": 213.90000915527344,
+        "width": 661.8624877929688,
+        "height": 410,
+        "top": 213.90000915527344,
+        "right": 1084.6875,
+        "bottom": 623.9000091552734,
+        "left": 422.82501220703125
+      },
+      "collisions": [],
+      "items": [
+        {
+          "text": "-30",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 462.02545166015625,
+            "y": 529.9434204101562,
+            "width": 18.787500381469727,
+            "height": 14.399950981140137,
+            "top": 529.9434204101562,
+            "right": 480.812952041626,
+            "bottom": 544.3433713912964,
+            "left": 462.02545166015625
+          }
+        },
+        {
+          "text": "-15",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 462.02545166015625,
+            "y": 488.8312683105469,
+            "width": 18.787500381469727,
+            "height": 14.40000057220459,
+            "top": 488.8312683105469,
+            "right": 480.812952041626,
+            "bottom": 503.23126888275146,
+            "left": 462.02545166015625
+          }
+        },
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 473.575439453125,
+            "y": 447.7191467285156,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 447.7191467285156,
+            "right": 480.81293964385986,
+            "bottom": 462.1191473007202,
+            "left": 473.575439453125
+          }
+        },
+        {
+          "text": "15",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 406.6069641113281,
+            "width": 14.46250057220459,
+            "height": 14.399975776672363,
+            "top": 406.6069641113281,
+            "right": 480.81293392181396,
+            "bottom": 421.0069398880005,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "30",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 365.49481201171875,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 365.49481201171875,
+            "right": 480.81293392181396,
+            "bottom": 379.89481258392334,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "45",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 324.3826599121094,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 324.3826599121094,
+            "right": 480.81293392181396,
+            "bottom": 338.78266048431396,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "60",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 283.2705078125,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 283.2705078125,
+            "right": 480.81293392181396,
+            "bottom": 297.6705083847046,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "70",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 255.86241149902344,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 255.86241149902344,
+            "right": 480.81293392181396,
+            "bottom": 270.262412071228,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "정반응 55",
+          "size": 14,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 579.502197265625,
+            "y": 371.5468444824219,
+            "width": 61.4375,
+            "height": 16,
+            "top": 371.5468444824219,
+            "right": 640.939697265625,
+            "bottom": 387.5468444824219,
+            "left": 579.502197265625
+          }
+        },
+        {
+          "text": "정반응 35",
+          "size": 14,
+          "fill": "rgb(21, 97, 143)",
+          "box": {
+            "x": 648.1279296875,
+            "y": 398.9549255371094,
+            "width": 61.4375,
+            "height": 16,
+            "top": 398.9549255371094,
+            "right": 709.5654296875,
+            "bottom": 414.9549255371094,
+            "left": 648.1279296875
+          }
+        },
+        {
+          "text": "역반응 53",
+          "size": 14,
+          "fill": "rgb(21, 97, 143)",
+          "box": {
+            "x": 762.504150390625,
+            "y": 423.6222229003906,
+            "width": 61.43745040893555,
+            "height": 16,
+            "top": 423.6222229003906,
+            "right": 823.9416007995605,
+            "bottom": 439.6222229003906,
+            "left": 762.504150390625
+          }
+        },
+        {
+          "text": "역반응 73",
+          "size": 14,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 904.5648803710938,
+            "y": 396.214111328125,
+            "width": 61.4375,
+            "height": 16,
+            "top": 396.214111328125,
+            "right": 966.0023803710938,
+            "bottom": 412.214111328125,
+            "left": 904.5648803710938
+          }
+        },
+        {
+          "text": "ΔG −18",
+          "size": 14,
+          "fill": "rgb(138, 89, 8)",
+          "box": {
+            "x": 969.71875,
+            "y": 471.58642578125,
+            "width": 48.66250228881836,
+            "height": 16,
+            "top": 471.58642578125,
+            "right": 1018.3812522888184,
+            "bottom": 487.58642578125,
+            "left": 969.71875
+          }
+        },
+        {
+          "text": "반응물",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 517.2872924804688,
+            "y": 432.9220275878906,
+            "width": 41.98749923706055,
+            "height": 16,
+            "top": 432.9220275878906,
+            "right": 559.2747917175293,
+            "bottom": 448.9220275878906,
+            "left": 517.2872924804688
+          }
+        },
+        {
+          "text": "생성물",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 986.2299194335938,
+            "y": 512.2504272460938,
+            "width": 41.98749923706055,
+            "height": 16,
+            "top": 512.2504272460938,
+            "right": 1028.2174186706543,
+            "bottom": 528.2504272460938,
+            "left": 986.2299194335938
+          }
+        },
+        {
+          "text": "전이 상태",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 742.821044921875,
+            "y": 280.1778869628906,
+            "width": 59.86249923706055,
+            "height": 16,
+            "top": 280.1778869628906,
+            "right": 802.6835441589355,
+            "bottom": 296.1778869628906,
+            "left": 742.821044921875
+          }
+        },
+        {
+          "text": "반응 좌표(reaction coordinate)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 678.6585693359375,
+            "y": 581.0636596679688,
+            "width": 188.3217315673828,
+            "height": 16.000049591064453,
+            "top": 581.0636596679688,
+            "right": 866.9803009033203,
+            "bottom": 597.0637092590332,
+            "left": 678.6585693359375
+          }
+        },
+        {
+          "text": "반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다.",
+          "size": 11.5,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 571.2460327148438,
+            "y": 601.4598999023438,
+            "width": 403.0125427246094,
+            "height": 12.800000190734863,
+            "top": 601.4598999023438,
+            "right": 974.2585754394531,
+            "bottom": 614.2599000930786,
+            "left": 571.2460327148438
+          }
+        },
+        {
+          "text": "상대 Gibbs 자유에너지 (kJ·mol⁻¹)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 427.021484375,
+            "y": 297.1460876464844,
+            "width": 16,
+            "height": 207.3764190673828,
+            "top": 297.1460876464844,
+            "right": 443.021484375,
+            "bottom": 504.5225067138672,
+            "left": 427.021484375
+          }
+        }
+      ]
+    },
+    {
+      "id": "energy-diagram",
+      "narrow": false,
+      "bounds": {
+        "x": 422.82501220703125,
+        "y": 213.90000915527344,
+        "width": 661.8624877929688,
+        "height": 410,
+        "top": 213.90000915527344,
+        "right": 1084.6875,
+        "bottom": 623.9000091552734,
+        "left": 422.82501220703125
+      },
+      "collisions": [],
+      "items": [
+        {
+          "text": "-30",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 462.02545166015625,
+            "y": 529.9434204101562,
+            "width": 18.787500381469727,
+            "height": 14.399950981140137,
+            "top": 529.9434204101562,
+            "right": 480.812952041626,
+            "bottom": 544.3433713912964,
+            "left": 462.02545166015625
+          }
+        },
+        {
+          "text": "-15",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 462.02545166015625,
+            "y": 488.8312683105469,
+            "width": 18.787500381469727,
+            "height": 14.40000057220459,
+            "top": 488.8312683105469,
+            "right": 480.812952041626,
+            "bottom": 503.23126888275146,
+            "left": 462.02545166015625
+          }
+        },
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 473.575439453125,
+            "y": 447.7191467285156,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 447.7191467285156,
+            "right": 480.81293964385986,
+            "bottom": 462.1191473007202,
+            "left": 473.575439453125
+          }
+        },
+        {
+          "text": "15",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 406.6069641113281,
+            "width": 14.46250057220459,
+            "height": 14.399975776672363,
+            "top": 406.6069641113281,
+            "right": 480.81293392181396,
+            "bottom": 421.0069398880005,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "30",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 365.49481201171875,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 365.49481201171875,
+            "right": 480.81293392181396,
+            "bottom": 379.89481258392334,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "45",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 324.3826599121094,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 324.3826599121094,
+            "right": 480.81293392181396,
+            "bottom": 338.78266048431396,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "60",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 283.2705078125,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 283.2705078125,
+            "right": 480.81293392181396,
+            "bottom": 297.6705083847046,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "70",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 255.86241149902344,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 255.86241149902344,
+            "right": 480.81293392181396,
+            "bottom": 270.262412071228,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "정반응 55",
+          "size": 14,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 579.502197265625,
+            "y": 371.5468444824219,
+            "width": 61.4375,
+            "height": 16,
+            "top": 371.5468444824219,
+            "right": 640.939697265625,
+            "bottom": 387.5468444824219,
+            "left": 579.502197265625
+          }
+        },
+        {
+          "text": "정반응 35",
+          "size": 14,
+          "fill": "rgb(21, 97, 143)",
+          "box": {
+            "x": 648.1279296875,
+            "y": 398.9549255371094,
+            "width": 61.4375,
+            "height": 16,
+            "top": 398.9549255371094,
+            "right": 709.5654296875,
+            "bottom": 414.9549255371094,
+            "left": 648.1279296875
+          }
+        },
+        {
+          "text": "역반응 5",
+          "size": 14,
+          "fill": "rgb(21, 97, 143)",
+          "box": {
+            "x": 770.2916259765625,
+            "y": 357.8427734375,
+            "width": 53.650001525878906,
+            "height": 16,
+            "top": 357.8427734375,
+            "right": 823.9416275024414,
+            "bottom": 373.8427734375,
+            "left": 770.2916259765625
+          }
+        },
+        {
+          "text": "역반응 25",
+          "size": 14,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 904.5648803710938,
+            "y": 330.4346923828125,
+            "width": 61.4375,
+            "height": 16,
+            "top": 330.4346923828125,
+            "right": 966.0023803710938,
+            "bottom": 346.4346923828125,
+            "left": 904.5648803710938
+          }
+        },
+        {
+          "text": "ΔG +30",
+          "size": 14,
+          "fill": "rgb(138, 89, 8)",
+          "box": {
+            "x": 969.71875,
+            "y": 405.8069763183594,
+            "width": 48.66250228881836,
+            "height": 15.99997615814209,
+            "top": 405.8069763183594,
+            "right": 1018.3812522888184,
+            "bottom": 421.80695247650146,
+            "left": 969.71875
+          }
+        },
+        {
+          "text": "반응물",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 517.2872924804688,
+            "y": 432.9220275878906,
+            "width": 41.98749923706055,
+            "height": 16,
+            "top": 432.9220275878906,
+            "right": 559.2747917175293,
+            "bottom": 448.9220275878906,
+            "left": 517.2872924804688
+          }
+        },
+        {
+          "text": "생성물",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 986.2299194335938,
+            "y": 350.6977233886719,
+            "width": 41.98749923706055,
+            "height": 16,
+            "top": 350.6977233886719,
+            "right": 1028.2174186706543,
+            "bottom": 366.6977233886719,
+            "left": 986.2299194335938
+          }
+        },
+        {
+          "text": "전이 상태",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 742.821044921875,
+            "y": 280.1778869628906,
+            "width": 59.86249923706055,
+            "height": 16,
+            "top": 280.1778869628906,
+            "right": 802.6835441589355,
+            "bottom": 296.1778869628906,
+            "left": 742.821044921875
+          }
+        },
+        {
+          "text": "반응 좌표(reaction coordinate)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 678.6585693359375,
+            "y": 581.0636596679688,
+            "width": 188.3217315673828,
+            "height": 16.000049591064453,
+            "top": 581.0636596679688,
+            "right": 866.9803009033203,
+            "bottom": 597.0637092590332,
+            "left": 678.6585693359375
+          }
+        },
+        {
+          "text": "반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다.",
+          "size": 11.5,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 571.2460327148438,
+            "y": 601.4598999023438,
+            "width": 403.0125427246094,
+            "height": 12.800000190734863,
+            "top": 601.4598999023438,
+            "right": 974.2585754394531,
+            "bottom": 614.2599000930786,
+            "left": 571.2460327148438
+          }
+        },
+        {
+          "text": "상대 Gibbs 자유에너지 (kJ·mol⁻¹)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 427.021484375,
+            "y": 297.1460876464844,
+            "width": 16,
+            "height": 207.3764190673828,
+            "top": 297.1460876464844,
+            "right": 443.021484375,
+            "bottom": 504.5225067138672,
+            "left": 427.021484375
+          }
+        }
+      ]
+    },
+    {
+      "id": "energy-diagram",
+      "narrow": false,
+      "bounds": {
+        "x": 422.82501220703125,
+        "y": 213.90000915527344,
+        "width": 661.8624877929688,
+        "height": 410,
+        "top": 213.90000915527344,
+        "right": 1084.6875,
+        "bottom": 623.9000091552734,
+        "left": 422.82501220703125
+      },
+      "collisions": [],
+      "items": [
+        {
+          "text": "-30",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 462.02545166015625,
+            "y": 529.9434204101562,
+            "width": 18.787500381469727,
+            "height": 14.399950981140137,
+            "top": 529.9434204101562,
+            "right": 480.812952041626,
+            "bottom": 544.3433713912964,
+            "left": 462.02545166015625
+          }
+        },
+        {
+          "text": "-15",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 462.02545166015625,
+            "y": 488.8312683105469,
+            "width": 18.787500381469727,
+            "height": 14.40000057220459,
+            "top": 488.8312683105469,
+            "right": 480.812952041626,
+            "bottom": 503.23126888275146,
+            "left": 462.02545166015625
+          }
+        },
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 473.575439453125,
+            "y": 447.7191467285156,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 447.7191467285156,
+            "right": 480.81293964385986,
+            "bottom": 462.1191473007202,
+            "left": 473.575439453125
+          }
+        },
+        {
+          "text": "15",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 406.6069641113281,
+            "width": 14.46250057220459,
+            "height": 14.399975776672363,
+            "top": 406.6069641113281,
+            "right": 480.81293392181396,
+            "bottom": 421.0069398880005,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "30",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 365.49481201171875,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 365.49481201171875,
+            "right": 480.81293392181396,
+            "bottom": 379.89481258392334,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "45",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 324.3826599121094,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 324.3826599121094,
+            "right": 480.81293392181396,
+            "bottom": 338.78266048431396,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "60",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 283.2705078125,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 283.2705078125,
+            "right": 480.81293392181396,
+            "bottom": 297.6705083847046,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "70",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 466.3504333496094,
+            "y": 255.86241149902344,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 255.86241149902344,
+            "right": 480.81293392181396,
+            "bottom": 270.262412071228,
+            "left": 466.3504333496094
+          }
+        },
+        {
+          "text": "정반응 55",
+          "size": 14,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 579.502197265625,
+            "y": 371.5468444824219,
+            "width": 61.4375,
+            "height": 16,
+            "top": 371.5468444824219,
+            "right": 640.939697265625,
+            "bottom": 387.5468444824219,
+            "left": 579.502197265625
+          }
+        },
+        {
+          "text": "정반응 35",
+          "size": 14,
+          "fill": "rgb(21, 97, 143)",
+          "box": {
+            "x": 648.1279296875,
+            "y": 398.9549255371094,
+            "width": 61.4375,
+            "height": 16,
+            "top": 398.9549255371094,
+            "right": 709.5654296875,
+            "bottom": 414.9549255371094,
+            "left": 648.1279296875
+          }
+        },
+        {
+          "text": "역반응 35",
+          "size": 14,
+          "fill": "rgb(21, 97, 143)",
+          "box": {
+            "x": 762.504150390625,
+            "y": 398.9549255371094,
+            "width": 61.43745040893555,
+            "height": 16,
+            "top": 398.9549255371094,
+            "right": 823.9416007995605,
+            "bottom": 414.9549255371094,
+            "left": 762.504150390625
+          }
+        },
+        {
+          "text": "역반응 55",
+          "size": 14,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 904.5648803710938,
+            "y": 371.5468444824219,
+            "width": 61.4375,
+            "height": 16,
+            "top": 371.5468444824219,
+            "right": 966.0023803710938,
+            "bottom": 387.5468444824219,
+            "left": 904.5648803710938
+          }
+        },
+        {
+          "text": "ΔG 0",
+          "size": 14,
+          "fill": "rgb(138, 89, 8)",
+          "box": {
+            "x": 985.6812744140625,
+            "y": 446.9191589355469,
+            "width": 32.70000076293945,
+            "height": 16,
+            "top": 446.9191589355469,
+            "right": 1018.381275177002,
+            "bottom": 462.9191589355469,
+            "left": 985.6812744140625
+          }
+        },
+        {
+          "text": "반응물",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 517.2872924804688,
+            "y": 432.9220275878906,
+            "width": 41.98749923706055,
+            "height": 16,
+            "top": 432.9220275878906,
+            "right": 559.2747917175293,
+            "bottom": 448.9220275878906,
+            "left": 517.2872924804688
+          }
+        },
+        {
+          "text": "생성물",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 986.2299194335938,
+            "y": 462.915771484375,
+            "width": 41.98749923706055,
+            "height": 16,
+            "top": 462.915771484375,
+            "right": 1028.2174186706543,
+            "bottom": 478.915771484375,
+            "left": 986.2299194335938
+          }
+        },
+        {
+          "text": "전이 상태",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 742.821044921875,
+            "y": 280.1778869628906,
+            "width": 59.86249923706055,
+            "height": 16,
+            "top": 280.1778869628906,
+            "right": 802.6835441589355,
+            "bottom": 296.1778869628906,
+            "left": 742.821044921875
+          }
+        },
+        {
+          "text": "반응 좌표(reaction coordinate)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 678.6585693359375,
+            "y": 581.0636596679688,
+            "width": 188.3217315673828,
+            "height": 16.000049591064453,
+            "top": 581.0636596679688,
+            "right": 866.9803009033203,
+            "bottom": 597.0637092590332,
+            "left": 678.6585693359375
+          }
+        },
+        {
+          "text": "반응 경로를 따라 진행되는 정도를 나타낸 개념적 좌표이며, 시간축이 아닙니다.",
+          "size": 11.5,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 571.2460327148438,
+            "y": 601.4598999023438,
+            "width": 403.0125427246094,
+            "height": 12.800000190734863,
+            "top": 601.4598999023438,
+            "right": 974.2585754394531,
+            "bottom": 614.2599000930786,
+            "left": 571.2460327148438
+          }
+        },
+        {
+          "text": "상대 Gibbs 자유에너지 (kJ·mol⁻¹)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 427.021484375,
+            "y": 297.1460876464844,
+            "width": 16,
+            "height": 207.3764190673828,
+            "top": 297.1460876464844,
+            "right": 443.021484375,
+            "bottom": 504.5225067138672,
+            "left": 427.021484375
+          }
+        }
+      ]
+    },
+    {
+      "id": "progress-curve",
+      "narrow": false,
+      "bounds": {
+        "x": 422.82501220703125,
+        "y": 273.1000061035156,
+        "width": 661.8624877929688,
+        "height": 380,
+        "top": 273.1000061035156,
+        "right": 1084.6875,
+        "bottom": 653.1000061035156,
+        "left": 422.82501220703125
+      },
+      "collisions": [],
+      "items": [
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 471.5758972167969,
+            "y": 591.0709228515625,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 591.0709228515625,
+            "right": 478.81339740753174,
+            "bottom": 605.4709234237671,
+            "left": 471.5758972167969
+          }
+        },
+        {
+          "text": "13",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 464.35089111328125,
+            "y": 518.0861206054688,
+            "width": 14.46250057220459,
+            "height": 14.399950981140137,
+            "top": 518.0861206054688,
+            "right": 478.81339168548584,
+            "bottom": 532.4860715866089,
+            "left": 464.35089111328125
+          }
+        },
+        {
+          "text": "25",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 464.35089111328125,
+            "y": 445.1012268066406,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 445.1012268066406,
+            "right": 478.81339168548584,
+            "bottom": 459.5012273788452,
+            "left": 464.35089111328125
+          }
+        },
+        {
+          "text": "38",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 464.35089111328125,
+            "y": 372.1164245605469,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 372.1164245605469,
+            "right": 478.81339168548584,
+            "bottom": 386.51642513275146,
+            "left": 464.35089111328125
+          }
+        },
+        {
+          "text": "50",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 464.35089111328125,
+            "y": 299.1315612792969,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 299.1315612792969,
+            "right": 478.81339168548584,
+            "bottom": 313.53156185150146,
+            "left": 464.35089111328125
+          }
+        },
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 481.193359375,
+            "y": 605.0679931640625,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 605.0679931640625,
+            "right": 488.43085956573486,
+            "bottom": 619.4679937362671,
+            "left": 481.193359375
+          }
+        },
+        {
+          "text": "192",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 617.9384765625,
+            "y": 605.0679931640625,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 605.0679931640625,
+            "right": 639.6259765625,
+            "bottom": 619.4679937362671,
+            "left": 617.9384765625
+          }
+        },
+        {
+          "text": "385",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 761.9085693359375,
+            "y": 605.0679931640625,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 605.0679931640625,
+            "right": 783.5960693359375,
+            "bottom": 619.4679937362671,
+            "left": 761.9085693359375
+          }
+        },
+        {
+          "text": "577",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 905.8787231445312,
+            "y": 605.0679931640625,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 605.0679931640625,
+            "right": 927.5662231445312,
+            "bottom": 619.4679937362671,
+            "left": 905.8787231445312
+          }
+        },
+        {
+          "text": "770",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 1049.8487548828125,
+            "y": 605.0679931640625,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 605.0679931640625,
+            "right": 1071.5362548828125,
+            "bottom": 619.4679937362671,
+            "left": 1049.8487548828125
+          }
+        },
+        {
+          "text": "초기 속도 (t = 0에서의 접선)",
+          "size": 14,
+          "fill": "rgb(181, 69, 31)",
+          "box": {
+            "x": 685.4898071289062,
+            "y": 280.3352966308594,
+            "width": 174.66470336914062,
+            "height": 16,
+            "top": 280.3352966308594,
+            "right": 860.1545104980469,
+            "bottom": 296.3352966308594,
+            "left": 685.4898071289062
+          }
+        },
+        {
+          "text": "시간 (s)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 748.6585693359375,
+            "y": 626.263427734375,
+            "width": 48.32685470581055,
+            "height": 16,
+            "top": 626.263427734375,
+            "right": 796.985424041748,
+            "bottom": 642.263427734375,
+            "left": 748.6585693359375
+          }
+        },
+        {
+          "text": "[P] (µM)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 425.0218811035156,
+            "y": 427.9493713378906,
+            "width": 16,
+            "height": 50.17143630981445,
+            "top": 427.9493713378906,
+            "right": 441.0218811035156,
+            "bottom": 478.1208076477051,
+            "left": 425.0218811035156
+          }
+        }
+      ]
+    },
+    {
+      "id": "mm-plot",
+      "narrow": false,
+      "bounds": {
+        "x": 422.82501220703125,
+        "y": 221.5,
+        "width": 661.8624877929688,
+        "height": 397,
+        "top": 221.5,
+        "right": 1084.6875,
+        "bottom": 618.5,
+        "left": 422.82501220703125
+      },
+      "collisions": [],
+      "items": [
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 477.5746154785156,
+            "y": 552.469970703125,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 552.469970703125,
+            "right": 484.8121156692505,
+            "bottom": 566.8699712753296,
+            "left": 477.5746154785156
+          }
+        },
+        {
+          "text": "28",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 470.349609375,
+            "y": 474.2362365722656,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 474.2362365722656,
+            "right": 484.8121099472046,
+            "bottom": 488.6362371444702,
+            "left": 470.349609375
+          }
+        },
+        {
+          "text": "55",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 470.349609375,
+            "y": 396.00250244140625,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 396.00250244140625,
+            "right": 484.8121099472046,
+            "bottom": 410.40250301361084,
+            "left": 470.349609375
+          }
+        },
+        {
+          "text": "83",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 470.349609375,
+            "y": 317.7687683105469,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 317.7687683105469,
+            "right": 484.8121099472046,
+            "bottom": 332.16876888275146,
+            "left": 470.349609375
+          }
+        },
+        {
+          "text": "110",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 464.099609375,
+            "y": 239.53501892089844,
+            "width": 20.712499618530273,
+            "height": 14.40000057220459,
+            "top": 239.53501892089844,
+            "right": 484.8121089935303,
+            "bottom": 253.93501949310303,
+            "left": 464.099609375
+          }
+        },
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 487.192138671875,
+            "y": 566.4671020507812,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 494.42963886260986,
+            "bottom": 580.8671026229858,
+            "left": 487.192138671875
+          }
+        },
+        {
+          "text": "100",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 574.9473876953125,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 596.6348876953125,
+            "bottom": 580.8671026229858,
+            "left": 574.9473876953125
+          }
+        },
+        {
+          "text": "200",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 669.9276733398438,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 691.6151733398438,
+            "bottom": 580.8671026229858,
+            "left": 669.9276733398438
+          }
+        },
+        {
+          "text": "300",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 764.9078979492188,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 786.5953979492188,
+            "bottom": 580.8671026229858,
+            "left": 764.9078979492188
+          }
+        },
+        {
+          "text": "400",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 859.88818359375,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 881.57568359375,
+            "bottom": 580.8671026229858,
+            "left": 859.88818359375
+          }
+        },
+        {
+          "text": "500",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 954.8684692382812,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 976.5559692382812,
+            "bottom": 580.8671026229858,
+            "left": 954.8684692382812
+          }
+        },
+        {
+          "text": "600",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 1049.8487548828125,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 1071.5362548828125,
+            "bottom": 580.8671026229858,
+            "left": 1049.8487548828125
+          }
+        },
+        {
+          "text": "[S] (µM)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 750.73291015625,
+            "y": 591.6617431640625,
+            "width": 50.171485900878906,
+            "height": 16,
+            "top": 591.6617431640625,
+            "right": 800.9043960571289,
+            "bottom": 607.6617431640625,
+            "left": 750.73291015625
+          }
+        },
+        {
+          "text": "v₀ (nM·s⁻¹)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 425.0218811035156,
+            "y": 369.9840087890625,
+            "width": 16,
+            "height": 68.7005615234375,
+            "top": 369.9840087890625,
+            "right": 441.0218811035156,
+            "bottom": 438.6845703125,
+            "left": 425.0218811035156
+          }
+        }
+      ]
+    },
+    {
+      "id": "mm-plot",
+      "narrow": false,
+      "bounds": {
+        "x": 422.82501220703125,
+        "y": 221.5,
+        "width": 661.8624877929688,
+        "height": 397,
+        "top": 221.5,
+        "right": 1084.6875,
+        "bottom": 618.5,
+        "left": 422.82501220703125
+      },
+      "collisions": [],
+      "items": [
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 477.5746154785156,
+            "y": 552.469970703125,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 552.469970703125,
+            "right": 484.8121156692505,
+            "bottom": 566.8699712753296,
+            "left": 477.5746154785156
+          }
+        },
+        {
+          "text": "28",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 470.349609375,
+            "y": 474.2362365722656,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 474.2362365722656,
+            "right": 484.8121099472046,
+            "bottom": 488.6362371444702,
+            "left": 470.349609375
+          }
+        },
+        {
+          "text": "55",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 470.349609375,
+            "y": 396.00250244140625,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 396.00250244140625,
+            "right": 484.8121099472046,
+            "bottom": 410.40250301361084,
+            "left": 470.349609375
+          }
+        },
+        {
+          "text": "83",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 470.349609375,
+            "y": 317.7687683105469,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 317.7687683105469,
+            "right": 484.8121099472046,
+            "bottom": 332.16876888275146,
+            "left": 470.349609375
+          }
+        },
+        {
+          "text": "110",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 464.099609375,
+            "y": 239.53501892089844,
+            "width": 20.712499618530273,
+            "height": 14.40000057220459,
+            "top": 239.53501892089844,
+            "right": 484.8121089935303,
+            "bottom": 253.93501949310303,
+            "left": 464.099609375
+          }
+        },
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 487.192138671875,
+            "y": 566.4671020507812,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 494.42963886260986,
+            "bottom": 580.8671026229858,
+            "left": 487.192138671875
+          }
+        },
+        {
+          "text": "100",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 574.9473876953125,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 596.6348876953125,
+            "bottom": 580.8671026229858,
+            "left": 574.9473876953125
+          }
+        },
+        {
+          "text": "200",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 669.9276733398438,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 691.6151733398438,
+            "bottom": 580.8671026229858,
+            "left": 669.9276733398438
+          }
+        },
+        {
+          "text": "300",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 764.9078979492188,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 786.5953979492188,
+            "bottom": 580.8671026229858,
+            "left": 764.9078979492188
+          }
+        },
+        {
+          "text": "400",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 859.88818359375,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 881.57568359375,
+            "bottom": 580.8671026229858,
+            "left": 859.88818359375
+          }
+        },
+        {
+          "text": "500",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 954.8684692382812,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 976.5559692382812,
+            "bottom": 580.8671026229858,
+            "left": 954.8684692382812
+          }
+        },
+        {
+          "text": "600",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 1049.8487548828125,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 1071.5362548828125,
+            "bottom": 580.8671026229858,
+            "left": 1049.8487548828125
+          }
+        },
+        {
+          "text": "Vmax = 100 nM·s⁻¹",
+          "size": 14,
+          "fill": "rgb(21, 97, 143)",
+          "box": {
+            "x": 935.28076171875,
+            "y": 249.1873779296875,
+            "width": 121.41259765625,
+            "height": 16,
+            "top": 249.1873779296875,
+            "right": 1056.693359375,
+            "bottom": 265.1873779296875,
+            "left": 935.28076171875
+          }
+        },
+        {
+          "text": "[S] = Km = 75 µM",
+          "size": 14,
+          "fill": "rgb(168, 38, 111)",
+          "box": {
+            "x": 520.2059326171875,
+            "y": 539.6724853515625,
+            "width": 109.17500305175781,
+            "height": 16,
+            "top": 539.6724853515625,
+            "right": 629.3809356689453,
+            "bottom": 555.6724853515625,
+            "left": 520.2059326171875
+          }
+        },
+        {
+          "text": "Vmax / 2",
+          "size": 14,
+          "fill": "rgb(168, 38, 111)",
+          "box": {
+            "x": 496.0096130371094,
+            "y": 389.43096923828125,
+            "width": 56.01250076293945,
+            "height": 16,
+            "top": 389.43096923828125,
+            "right": 552.0221138000488,
+            "bottom": 405.43096923828125,
+            "left": 496.0096130371094
+          }
+        },
+        {
+          "text": "[S] (µM)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 750.73291015625,
+            "y": 591.6617431640625,
+            "width": 50.171485900878906,
+            "height": 16,
+            "top": 591.6617431640625,
+            "right": 800.9043960571289,
+            "bottom": 607.6617431640625,
+            "left": 750.73291015625
+          }
+        },
+        {
+          "text": "v₀ (nM·s⁻¹)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 425.0218811035156,
+            "y": 369.9840087890625,
+            "width": 16,
+            "height": 68.7005615234375,
+            "top": 369.9840087890625,
+            "right": 441.0218811035156,
+            "bottom": 438.6845703125,
+            "left": 425.0218811035156
+          }
+        }
+      ]
+    },
+    {
+      "id": "mm-plot",
+      "narrow": false,
+      "bounds": {
+        "x": 422.82501220703125,
+        "y": 221.5,
+        "width": 661.8624877929688,
+        "height": 397,
+        "top": 221.5,
+        "right": 1084.6875,
+        "bottom": 618.5,
+        "left": 422.82501220703125
+      },
+      "collisions": [],
+      "items": [
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 477.5746154785156,
+            "y": 552.469970703125,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 552.469970703125,
+            "right": 484.8121156692505,
+            "bottom": 566.8699712753296,
+            "left": 477.5746154785156
+          }
+        },
+        {
+          "text": "28",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 470.349609375,
+            "y": 474.2362365722656,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 474.2362365722656,
+            "right": 484.8121099472046,
+            "bottom": 488.6362371444702,
+            "left": 470.349609375
+          }
+        },
+        {
+          "text": "55",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 470.349609375,
+            "y": 396.00250244140625,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 396.00250244140625,
+            "right": 484.8121099472046,
+            "bottom": 410.40250301361084,
+            "left": 470.349609375
+          }
+        },
+        {
+          "text": "83",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 470.349609375,
+            "y": 317.7687683105469,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 317.7687683105469,
+            "right": 484.8121099472046,
+            "bottom": 332.16876888275146,
+            "left": 470.349609375
+          }
+        },
+        {
+          "text": "110",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 464.099609375,
+            "y": 239.53501892089844,
+            "width": 20.712499618530273,
+            "height": 14.40000057220459,
+            "top": 239.53501892089844,
+            "right": 484.8121089935303,
+            "bottom": 253.93501949310303,
+            "left": 464.099609375
+          }
+        },
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 487.192138671875,
+            "y": 566.4671020507812,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 494.42963886260986,
+            "bottom": 580.8671026229858,
+            "left": 487.192138671875
+          }
+        },
+        {
+          "text": "100",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 574.9473876953125,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 596.6348876953125,
+            "bottom": 580.8671026229858,
+            "left": 574.9473876953125
+          }
+        },
+        {
+          "text": "200",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 669.9276733398438,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 691.6151733398438,
+            "bottom": 580.8671026229858,
+            "left": 669.9276733398438
+          }
+        },
+        {
+          "text": "300",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 764.9078979492188,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 786.5953979492188,
+            "bottom": 580.8671026229858,
+            "left": 764.9078979492188
+          }
+        },
+        {
+          "text": "400",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 859.88818359375,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 881.57568359375,
+            "bottom": 580.8671026229858,
+            "left": 859.88818359375
+          }
+        },
+        {
+          "text": "500",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 954.8684692382812,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 976.5559692382812,
+            "bottom": 580.8671026229858,
+            "left": 954.8684692382812
+          }
+        },
+        {
+          "text": "600",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 1049.8487548828125,
+            "y": 566.4671020507812,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 566.4671020507812,
+            "right": 1071.5362548828125,
+            "bottom": 580.8671026229858,
+            "left": 1049.8487548828125
+          }
+        },
+        {
+          "text": "Vmax = 100 nM·s⁻¹",
+          "size": 14,
+          "fill": "rgb(21, 97, 143)",
+          "box": {
+            "x": 935.28076171875,
+            "y": 249.1873779296875,
+            "width": 121.41259765625,
+            "height": 16,
+            "top": 249.1873779296875,
+            "right": 1056.693359375,
+            "bottom": 265.1873779296875,
+            "left": 935.28076171875
+          }
+        },
+        {
+          "text": "[S] = Km = 300 µM",
+          "size": 14,
+          "fill": "rgb(168, 38, 111)",
+          "box": {
+            "x": 717.2767333984375,
+            "y": 539.6724853515625,
+            "width": 116.949951171875,
+            "height": 16,
+            "top": 539.6724853515625,
+            "right": 834.2266845703125,
+            "bottom": 555.6724853515625,
+            "left": 717.2767333984375
+          }
+        },
+        {
+          "text": "Vmax / 2",
+          "size": 14,
+          "fill": "rgb(168, 38, 111)",
+          "box": {
+            "x": 496.0096130371094,
+            "y": 389.43096923828125,
+            "width": 56.01250076293945,
+            "height": 16,
+            "top": 389.43096923828125,
+            "right": 552.0221138000488,
+            "bottom": 405.43096923828125,
+            "left": 496.0096130371094
+          }
+        },
+        {
+          "text": "[S] (µM)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 750.73291015625,
+            "y": 591.6617431640625,
+            "width": 50.171485900878906,
+            "height": 16,
+            "top": 591.6617431640625,
+            "right": 800.9043960571289,
+            "bottom": 607.6617431640625,
+            "left": 750.73291015625
+          }
+        },
+        {
+          "text": "v₀ (nM·s⁻¹)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 425.0218811035156,
+            "y": 369.9840087890625,
+            "width": 16,
+            "height": 68.7005615234375,
+            "top": 369.9840087890625,
+            "right": 441.0218811035156,
+            "bottom": 438.6845703125,
+            "left": 425.0218811035156
+          }
+        }
+      ]
+    },
+    {
+      "id": "mm-plot",
+      "narrow": false,
+      "bounds": {
+        "x": 422.82501220703125,
+        "y": 183.10000610351562,
+        "width": 661.8624877929688,
+        "height": 397,
+        "top": 183.10000610351562,
+        "right": 1084.6875,
+        "bottom": 580.1000061035156,
+        "left": 422.82501220703125
+      },
+      "collisions": [],
+      "items": [
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 477.5746154785156,
+            "y": 514.0700073242188,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 514.0700073242188,
+            "right": 484.8121156692505,
+            "bottom": 528.4700078964233,
+            "left": 477.5746154785156
+          }
+        },
+        {
+          "text": "83",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 470.349609375,
+            "y": 435.83624267578125,
+            "width": 14.46250057220459,
+            "height": 14.40000057220459,
+            "top": 435.83624267578125,
+            "right": 484.8121099472046,
+            "bottom": 450.23624324798584,
+            "left": 470.349609375
+          }
+        },
+        {
+          "text": "165",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 463.1246032714844,
+            "y": 357.6025085449219,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 357.6025085449219,
+            "right": 484.8121032714844,
+            "bottom": 372.00250911712646,
+            "left": 463.1246032714844
+          }
+        },
+        {
+          "text": "248",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 463.1246032714844,
+            "y": 279.3687438964844,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 279.3687438964844,
+            "right": 484.8121032714844,
+            "bottom": 293.76874446868896,
+            "left": 463.1246032714844
+          }
+        },
+        {
+          "text": "330",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 463.1246032714844,
+            "y": 201.13499450683594,
+            "width": 21.6875,
+            "height": 14.400012016296387,
+            "top": 201.13499450683594,
+            "right": 484.8121032714844,
+            "bottom": 215.53500652313232,
+            "left": 463.1246032714844
+          }
+        },
+        {
+          "text": "0",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 487.192138671875,
+            "y": 528.0670776367188,
+            "width": 7.237500190734863,
+            "height": 14.40000057220459,
+            "top": 528.0670776367188,
+            "right": 494.42963886260986,
+            "bottom": 542.4670782089233,
+            "left": 487.192138671875
+          }
+        },
+        {
+          "text": "100",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 574.9473876953125,
+            "y": 528.0670776367188,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 528.0670776367188,
+            "right": 596.6348876953125,
+            "bottom": 542.4670782089233,
+            "left": 574.9473876953125
+          }
+        },
+        {
+          "text": "200",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 669.9276733398438,
+            "y": 528.0670776367188,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 528.0670776367188,
+            "right": 691.6151733398438,
+            "bottom": 542.4670782089233,
+            "left": 669.9276733398438
+          }
+        },
+        {
+          "text": "300",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 764.9078979492188,
+            "y": 528.0670776367188,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 528.0670776367188,
+            "right": 786.5953979492188,
+            "bottom": 542.4670782089233,
+            "left": 764.9078979492188
+          }
+        },
+        {
+          "text": "400",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 859.88818359375,
+            "y": 528.0670776367188,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 528.0670776367188,
+            "right": 881.57568359375,
+            "bottom": 542.4670782089233,
+            "left": 859.88818359375
+          }
+        },
+        {
+          "text": "500",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 954.8684692382812,
+            "y": 528.0670776367188,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 528.0670776367188,
+            "right": 976.5559692382812,
+            "bottom": 542.4670782089233,
+            "left": 954.8684692382812
+          }
+        },
+        {
+          "text": "600",
+          "size": 13,
+          "fill": "rgb(81, 99, 111)",
+          "box": {
+            "x": 1049.8487548828125,
+            "y": 528.0670776367188,
+            "width": 21.6875,
+            "height": 14.40000057220459,
+            "top": 528.0670776367188,
+            "right": 1071.5362548828125,
+            "bottom": 542.4670782089233,
+            "left": 1049.8487548828125
+          }
+        },
+        {
+          "text": "Vmax = 300 nM·s⁻¹",
+          "size": 14,
+          "fill": "rgb(21, 97, 143)",
+          "box": {
+            "x": 935.28076171875,
+            "y": 210.78738403320312,
+            "width": 121.41259765625,
+            "height": 16,
+            "top": 210.78738403320312,
+            "right": 1056.693359375,
+            "bottom": 226.78738403320312,
+            "left": 935.28076171875
+          }
+        },
+        {
+          "text": "[S] = Km = 75 µM",
+          "size": 14,
+          "fill": "rgb(168, 38, 111)",
+          "box": {
+            "x": 520.2059326171875,
+            "y": 501.2724609375,
+            "width": 109.17500305175781,
+            "height": 16,
+            "top": 501.2724609375,
+            "right": 629.3809356689453,
+            "bottom": 517.2724609375,
+            "left": 520.2059326171875
+          }
+        },
+        {
+          "text": "Vmax / 2",
+          "size": 14,
+          "fill": "rgb(168, 38, 111)",
+          "box": {
+            "x": 496.0096130371094,
+            "y": 351.0309753417969,
+            "width": 56.01250076293945,
+            "height": 16,
+            "top": 351.0309753417969,
+            "right": 552.0221138000488,
+            "bottom": 367.0309753417969,
+            "left": 496.0096130371094
+          }
+        },
+        {
+          "text": "[S] (µM)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 750.73291015625,
+            "y": 553.26171875,
+            "width": 50.171485900878906,
+            "height": 16,
+            "top": 553.26171875,
+            "right": 800.9043960571289,
+            "bottom": 569.26171875,
+            "left": 750.73291015625
+          }
+        },
+        {
+          "text": "v₀ (nM·s⁻¹)",
+          "size": 14,
+          "fill": "rgb(58, 74, 84)",
+          "box": {
+            "x": 425.0218811035156,
+            "y": 331.5840148925781,
+            "width": 16,
+            "height": 68.7005615234375,
+            "top": 331.5840148925781,
+            "right": 441.0218811035156,
+            "bottom": 400.2845764160156,
+            "left": 425.0218811035156
+          }
+        }
+      ]
+    }
+  ]
+}

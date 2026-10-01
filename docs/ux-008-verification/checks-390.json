@@ -1,0 +1,180 @@
+{
+  "viewport": [
+    390,
+    844
+  ],
+  "checks": [
+    "PASS 01 locked: helpers visible only at <=760",
+    "PASS 01 locked: semantic controls then graph",
+    "PASS 01 locked: no horizontal overflow",
+    "PASS 01 locked: all jumps named with unique targets",
+    "PASS 01 locked: hidden helpers absent from layout/focus navigation",
+    "PASS 01 catalyst initially gated",
+    "PASS 예측으로 이동 ↓: focus reaches energy-prediction",
+    "PASS 예측으로 이동 ↓: target visible",
+    "PASS 01 prerequisite becomes completion",
+    "PASS 촉매 조작으로 돌아가기 ↑: focus reaches energy-catalyst",
+    "PASS 촉매 조작으로 돌아가기 ↑: target visible",
+    "PASS 01 compact delta-g equals full observation",
+    "PASS 01 compact forward equals full observation",
+    "PASS 01 compact reverse equals full observation",
+    "PASS 01 single product slider",
+    "PASS 그래프에서 확인 ↓: focus reaches energy-graph",
+    "PASS 그래프에서 확인 ↓: target visible",
+    "PASS 조작으로 돌아가기 ↑: focus reaches energy-controls",
+    "PASS 조작으로 돌아가기 ↑: target visible",
+    "PASS 관찰과 질문으로 이동 ↓: focus reaches energy-prediction",
+    "PASS 관찰과 질문으로 이동 ↓: target visible",
+    "PASS 01 explanation reached",
+    "PASS UX-001 energy state and reveal preserved",
+    "PASS 03A empty: helpers visible only at <=760",
+    "PASS 03A empty: semantic controls then graph",
+    "PASS 03A empty: no horizontal overflow",
+    "PASS 03A empty: all jumps named with unique targets",
+    "PASS 03A empty: hidden helpers absent from layout/focus navigation",
+    "PASS 03A measured: helpers visible only at <=760",
+    "PASS 03A measured: semantic controls then graph",
+    "PASS 03A measured: no horizontal overflow",
+    "PASS 03A measured: all jumps named with unique targets",
+    "PASS 03A measured: hidden helpers absent from layout/focus navigation",
+    "PASS 03A nearby model measurement",
+    "PASS 진행 곡선에서 확인 ↓: focus reaches initial-graph",
+    "PASS 진행 곡선에서 확인 ↓: target visible",
+    "PASS 모은 측정값에서 확인 ↓: focus reaches initial-measurements",
+    "PASS 모은 측정값에서 확인 ↓: target visible",
+    "PASS 03A measured point in collected table",
+    "PASS 다른 [S]로 측정하기 ↑: focus reaches initial-controls",
+    "PASS 다른 [S]로 측정하기 ↑: target visible",
+    "PASS 03A changing next condition does not mislabel last run",
+    "PASS 03A new run clears nearby measurement",
+    "PASS UX-005 duplicate condition not recorded twice",
+    "PASS UX-005 explanation retains virtual measurement semantics",
+    "PASS 03B: helpers visible only at <=760",
+    "PASS 03B: semantic controls then graph",
+    "PASS 03B: no horizontal overflow",
+    "PASS 03B: all jumps named with unique targets",
+    "PASS 03B: hidden helpers absent from layout/focus navigation",
+    "PASS 03B compact follows active Km and v0",
+    "PASS 그래프에서 확인 ↓: focus reaches mm-graph",
+    "PASS 그래프에서 확인 ↓: target visible",
+    "PASS 예측과 해설에서 확인 ↓: focus reaches mm-inquiry",
+    "PASS 예측과 해설에서 확인 ↓: target visible",
+    "PASS UX-003 high Km range-limit explanation and ratio preserved",
+    "PASS 조건 조절로 돌아가기 ↑: focus reaches mm-controls",
+    "PASS 조건 조절로 돌아가기 ↑: target visible",
+    "PASS 그래프에서 확인 ↓: focus reaches mm-graph",
+    "PASS 그래프에서 확인 ↓: target visible",
+    "PASS UX-004 baseline and expanded axis preserved",
+    "PASS UX-001 kinetics measurements, baseline, explanation preserved",
+    "PASS 03B expanded: helpers visible only at <=760",
+    "PASS 03B expanded: semantic controls then graph",
+    "PASS 03B expanded: no horizontal overflow",
+    "PASS 03B expanded: all jumps named with unique targets",
+    "PASS 03B expanded: hidden helpers absent from layout/focus navigation",
+    "PASS reduced motion true: correct behavior and focus",
+    "PASS reduced motion false: correct behavior and focus",
+    "ALL UX-008 CHECKS PASSED"
+  ],
+  "evidence": {
+    "energyLocked": {
+      "controls": 531,
+      "graph": 1437,
+      "catalyst": 823,
+      "prediction": 1946,
+      "energyManipulation": 1017,
+      "substrate": null,
+      "measure": null,
+      "measurements": null,
+      "initialPrediction": null,
+      "km": null,
+      "baseline": null,
+      "condition": null,
+      "mmPrediction": null
+    },
+    "energy-prediction: 예측으로 이동 ↓": {
+      "focus": "energy-prediction",
+      "top": 16.479167938232422,
+      "scroll": 1930
+    },
+    "energy-catalyst: 촉매 조작으로 돌아가기 ↑": {
+      "focus": "energy-catalyst",
+      "top": 15.302083969116211,
+      "scroll": 807.3333129882812
+    },
+    "energy-graph: 그래프에서 확인 ↓": {
+      "focus": "energy-graph",
+      "top": 17.3125,
+      "scroll": 1374
+    },
+    "energy-controls: 조작으로 돌아가기 ↑": {
+      "focus": "energy-controls",
+      "top": 15.895833969116211,
+      "scroll": 529.3333129882812
+    },
+    "energy-prediction: 관찰과 질문으로 이동 ↓": {
+      "focus": "energy-prediction",
+      "top": 17.27083396911621,
+      "scroll": 1898
+    },
+    "initialMeasured": {
+      "controls": 698,
+      "graph": 1494,
+      "catalyst": null,
+      "prediction": null,
+      "energyManipulation": null,
+      "substrate": 928,
+      "measure": 1068,
+      "measurements": 2123,
+      "initialPrediction": 2414,
+      "km": null,
+      "baseline": null,
+      "condition": null,
+      "mmPrediction": null
+    },
+    "initial-graph: 진행 곡선에서 확인 ↓": {
+      "focus": "initial-graph",
+      "top": 16.58333396911621,
+      "scroll": 1492
+    },
+    "initial-measurements: 모은 측정값에서 확인 ↓": {
+      "focus": "initial-measurements",
+      "top": 16.666667938232422,
+      "scroll": 2106.666748046875
+    },
+    "initial-controls: 다른 [S]로 측정하기 ↑": {
+      "focus": "initial-controls",
+      "top": 14.166666984558105,
+      "scroll": 698.6666870117188
+    },
+    "mm": {
+      "controls": 879,
+      "graph": 1648,
+      "catalyst": null,
+      "prediction": null,
+      "energyManipulation": null,
+      "substrate": null,
+      "measure": null,
+      "measurements": null,
+      "initialPrediction": null,
+      "km": 1267,
+      "baseline": 1573,
+      "condition": 2278,
+      "mmPrediction": 2617
+    },
+    "mm-graph: 그래프에서 확인 ↓": {
+      "focus": "mm-graph",
+      "top": 15.989583969116211,
+      "scroll": 1646.6666259765625
+    },
+    "mm-inquiry: 예측과 해설에서 확인 ↓": {
+      "focus": "mm-inquiry",
+      "top": 17.53125,
+      "scroll": 2230.666748046875
+    },
+    "mm-controls: 조건 조절로 돌아가기 ↑": {
+      "focus": "mm-controls",
+      "top": 15.416666984558105,
+      "scroll": 878
+    }
+  }
+}

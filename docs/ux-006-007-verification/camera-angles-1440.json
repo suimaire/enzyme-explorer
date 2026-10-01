@@ -1,0 +1,1388 @@
+{
+  "viewport": [
+    1440,
+    900
+  ],
+  "checks": [
+    "PASS 02 His 94: font minimum",
+    "PASS 02 Nε2: font minimum",
+    "PASS 02 His 119: font minimum",
+    "PASS 02 His 96: font minimum",
+    "PASS 02 His 64: font minimum",
+    "PASS 02 His 107: font minimum",
+    "PASS 02 His 122: font minimum",
+    "PASS 02 ZN: font minimum",
+    "PASS 02 2.10 Å: font minimum",
+    "PASS 02 His 94: within viewer",
+    "PASS 02 Nε2: within viewer",
+    "PASS 02 His 119: within viewer",
+    "PASS 02 His 122: within viewer",
+    "PASS 02 ZN: within viewer",
+    "PASS 02 2.10 Å: within viewer",
+    "PASS 02 selected label matches selected residue readout",
+    "PASS 02 label rectangles occupy less than 18% of viewer",
+    "PASS 02 visible labels do not overlap ()",
+    "PASS 02 His 94: font minimum",
+    "PASS 02 Nε2: font minimum",
+    "PASS 02 His 119: font minimum",
+    "PASS 02 His 96: font minimum",
+    "PASS 02 His 64: font minimum",
+    "PASS 02 His 107: font minimum",
+    "PASS 02 His 122: font minimum",
+    "PASS 02 ZN: font minimum",
+    "PASS 02 2.10 Å: font minimum",
+    "PASS 02 His 94: within viewer",
+    "PASS 02 Nε2: within viewer",
+    "PASS 02 His 119: within viewer",
+    "PASS 02 His 96: within viewer",
+    "PASS 02 His 64: within viewer",
+    "PASS 02 His 122: within viewer",
+    "PASS 02 ZN: within viewer",
+    "PASS 02 2.10 Å: within viewer",
+    "PASS 02 selected label matches selected residue readout",
+    "PASS 02 label rectangles occupy less than 18% of viewer",
+    "PASS 02 visible labels do not overlap ()",
+    "PASS 02 His 94: font minimum",
+    "PASS 02 Nε2: font minimum",
+    "PASS 02 His 119: font minimum",
+    "PASS 02 His 96: font minimum",
+    "PASS 02 His 64: font minimum",
+    "PASS 02 His 107: font minimum",
+    "PASS 02 His 122: font minimum",
+    "PASS 02 ZN: font minimum",
+    "PASS 02 2.10 Å: font minimum",
+    "PASS 02 His 94: within viewer",
+    "PASS 02 Nε2: within viewer",
+    "PASS 02 His 119: within viewer",
+    "PASS 02 His 96: within viewer",
+    "PASS 02 His 122: within viewer",
+    "PASS 02 ZN: within viewer",
+    "PASS 02 2.10 Å: within viewer",
+    "PASS 02 selected label matches selected residue readout",
+    "PASS 02 label rectangles occupy less than 18% of viewer",
+    "PASS 02 visible labels do not overlap ()",
+    "PASS 02 His 94: font minimum",
+    "PASS 02 Nε2: font minimum",
+    "PASS 02 His 119: font minimum",
+    "PASS 02 His 96: font minimum",
+    "PASS 02 His 64: font minimum",
+    "PASS 02 His 107: font minimum",
+    "PASS 02 His 122: font minimum",
+    "PASS 02 ZN: font minimum",
+    "PASS 02 2.10 Å: font minimum",
+    "PASS 02 His 94: within viewer",
+    "PASS 02 Nε2: within viewer",
+    "PASS 02 His 119: within viewer",
+    "PASS 02 His 96: within viewer",
+    "PASS 02 His 122: within viewer",
+    "PASS 02 ZN: within viewer",
+    "PASS 02 2.10 Å: within viewer",
+    "PASS 02 selected label matches selected residue readout",
+    "PASS 02 label rectangles occupy less than 18% of viewer",
+    "PASS 02 visible labels do not overlap ()",
+    "PASS 02 His 94: font minimum",
+    "PASS 02 Nε2: font minimum",
+    "PASS 02 His 119: font minimum",
+    "PASS 02 His 96: font minimum",
+    "PASS 02 His 64: font minimum",
+    "PASS 02 His 107: font minimum",
+    "PASS 02 His 122: font minimum",
+    "PASS 02 ZN: font minimum",
+    "PASS 02 2.10 Å: font minimum",
+    "PASS 02 His 94: within viewer",
+    "PASS 02 Nε2: within viewer",
+    "PASS 02 His 119: within viewer",
+    "PASS 02 His 96: within viewer",
+    "PASS 02 His 122: within viewer",
+    "PASS 02 ZN: within viewer",
+    "PASS 02 2.10 Å: within viewer",
+    "PASS 02 selected label matches selected residue readout",
+    "PASS 02 label rectangles occupy less than 18% of viewer",
+    "PASS 02 visible labels do not overlap ()",
+    "PASS 02 His 94: font minimum",
+    "PASS 02 Nε2: font minimum",
+    "PASS 02 His 119: font minimum",
+    "PASS 02 His 96: font minimum",
+    "PASS 02 His 64: font minimum",
+    "PASS 02 His 107: font minimum",
+    "PASS 02 His 122: font minimum",
+    "PASS 02 ZN: font minimum",
+    "PASS 02 2.10 Å: font minimum",
+    "PASS 02 His 94: within viewer",
+    "PASS 02 Nε2: within viewer",
+    "PASS 02 His 119: within viewer",
+    "PASS 02 His 96: within viewer",
+    "PASS 02 His 122: within viewer",
+    "PASS 02 ZN: within viewer",
+    "PASS 02 2.10 Å: within viewer",
+    "PASS 02 selected label matches selected residue readout",
+    "PASS 02 label rectangles occupy less than 18% of viewer",
+    "PASS 02 visible labels do not overlap ()",
+    "PASS 02 His 94: font minimum",
+    "PASS 02 Nε2: font minimum",
+    "PASS 02 His 119: font minimum",
+    "PASS 02 His 96: font minimum",
+    "PASS 02 His 64: font minimum",
+    "PASS 02 His 107: font minimum",
+    "PASS 02 His 122: font minimum",
+    "PASS 02 ZN: font minimum",
+    "PASS 02 2.10 Å: font minimum",
+    "PASS 02 His 94: within viewer",
+    "PASS 02 Nε2: within viewer",
+    "PASS 02 His 119: within viewer",
+    "PASS 02 His 96: within viewer",
+    "PASS 02 His 64: within viewer",
+    "PASS 02 His 122: within viewer",
+    "PASS 02 ZN: within viewer",
+    "PASS 02 2.10 Å: within viewer",
+    "PASS 02 selected label matches selected residue readout",
+    "PASS 02 label rectangles occupy less than 18% of viewer",
+    "PASS 02 visible labels do not overlap ()",
+    "PASS 02 His 94: font minimum",
+    "PASS 02 Nε2: font minimum",
+    "PASS 02 His 119: font minimum",
+    "PASS 02 His 96: font minimum",
+    "PASS 02 His 64: font minimum",
+    "PASS 02 His 107: font minimum",
+    "PASS 02 His 122: font minimum",
+    "PASS 02 ZN: font minimum",
+    "PASS 02 2.10 Å: font minimum",
+    "PASS 02 His 94: within viewer",
+    "PASS 02 Nε2: within viewer",
+    "PASS 02 His 119: within viewer",
+    "PASS 02 His 96: within viewer",
+    "PASS 02 His 64: within viewer",
+    "PASS 02 His 122: within viewer",
+    "PASS 02 ZN: within viewer",
+    "PASS 02 2.10 Å: within viewer",
+    "PASS 02 selected label matches selected residue readout",
+    "PASS 02 label rectangles occupy less than 18% of viewer",
+    "PASS 02 visible labels do not overlap ()"
+  ],
+  "geometry": [
+    {
+      "angle": 1,
+      "cameraPosition": "-6.767,-22.585,6.790",
+      "cameraDistance": "22.500",
+      "area": 0.0220779665232594,
+      "collisions": [],
+      "labels": [
+        {
+          "text": "His 94",
+          "classes": "atom-label selected",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 754.4874877929688,
+            "y": -1196.6624755859375,
+            "width": 54.20000076293945,
+            "height": 27.600000381469727,
+            "top": -1196.6624755859375,
+            "right": 808.6874885559082,
+            "bottom": -1169.0624752044678,
+            "left": 754.4874877929688
+          }
+        },
+        {
+          "text": "Nε2",
+          "classes": "atom-label atom",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 628.8875122070312,
+            "y": -1129.8250732421875,
+            "width": 31.912500381469727,
+            "height": 23.600000381469727,
+            "top": -1129.8250732421875,
+            "right": 660.800012588501,
+            "bottom": -1106.2250728607178,
+            "left": 628.8875122070312
+          }
+        },
+        {
+          "text": "His 119",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 734.375,
+            "y": -1026.0750732421875,
+            "width": 53.087501525878906,
+            "height": 23.600000381469727,
+            "top": -1026.0750732421875,
+            "right": 787.4625015258789,
+            "bottom": -1002.4750728607178,
+            "left": 734.375
+          }
+        },
+        {
+          "text": "His 96",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 64",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 107",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 122",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 741.875,
+            "y": -1074.1875,
+            "width": 53.775001525878906,
+            "height": 23.600000381469727,
+            "top": -1074.1875,
+            "right": 795.6500015258789,
+            "bottom": -1050.5874996185303,
+            "left": 741.875
+          }
+        },
+        {
+          "text": "ZN",
+          "classes": "atom-label metal",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 585.625,
+            "y": -1054.5875244140625,
+            "width": 30,
+            "height": 27.600000381469727,
+            "top": -1054.5875244140625,
+            "right": 615.625,
+            "bottom": -1026.9875240325928,
+            "left": 585.625
+          }
+        },
+        {
+          "text": "2.10 Å",
+          "classes": "atom-label measure",
+          "hidden": false,
+          "size": "14px",
+          "box": {
+            "x": 604.4625244140625,
+            "y": -1092.4500732421875,
+            "width": 51.25,
+            "height": 26,
+            "top": -1092.4500732421875,
+            "right": 655.7125244140625,
+            "bottom": -1066.4500732421875,
+            "left": 604.4625244140625
+          }
+        }
+      ]
+    },
+    {
+      "angle": 2,
+      "cameraPosition": "-7.965,-21.658,3.909",
+      "cameraDistance": "22.500",
+      "area": 0.029117615488361004,
+      "collisions": [],
+      "labels": [
+        {
+          "text": "His 94",
+          "classes": "atom-label selected",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 738.7250366210938,
+            "y": -1362.8125,
+            "width": 54.20000076293945,
+            "height": 27.600000381469727,
+            "top": -1362.8125,
+            "right": 792.9250373840332,
+            "bottom": -1335.2124996185303,
+            "left": 738.7250366210938
+          }
+        },
+        {
+          "text": "Nε2",
+          "classes": "atom-label atom",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 632.6500244140625,
+            "y": -1275.0125732421875,
+            "width": 31.912500381469727,
+            "height": 23.600000381469727,
+            "top": -1275.0125732421875,
+            "right": 664.5625247955322,
+            "bottom": -1251.4125728607178,
+            "left": 632.6500244140625
+          }
+        },
+        {
+          "text": "His 119",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 759.875,
+            "y": -1199.8250732421875,
+            "width": 53.087501525878906,
+            "height": 23.600000381469727,
+            "top": -1199.8250732421875,
+            "right": 812.9625015258789,
+            "bottom": -1176.2250728607178,
+            "left": 759.875
+          }
+        },
+        {
+          "text": "His 96",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 592.4500122070312,
+            "y": -1149.9625244140625,
+            "width": 46.82500076293945,
+            "height": 23.600000381469727,
+            "top": -1149.9625244140625,
+            "right": 639.2750129699707,
+            "bottom": -1126.3625240325928,
+            "left": 592.4500122070312
+          }
+        },
+        {
+          "text": "His 64",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 384.82501220703125,
+            "y": -1488.6624755859375,
+            "width": 46.82500076293945,
+            "height": 23.600000381469727,
+            "top": -1488.6624755859375,
+            "right": 431.6500129699707,
+            "bottom": -1465.0624752044678,
+            "left": 384.82501220703125
+          }
+        },
+        {
+          "text": "His 107",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 122",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 771.1500244140625,
+            "y": -1273.362548828125,
+            "width": 53.775001525878906,
+            "height": 23.600000381469727,
+            "top": -1273.362548828125,
+            "right": 824.9250259399414,
+            "bottom": -1249.7625484466553,
+            "left": 771.1500244140625
+          }
+        },
+        {
+          "text": "ZN",
+          "classes": "atom-label metal",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 602.7625122070312,
+            "y": -1191.2750244140625,
+            "width": 30,
+            "height": 27.600000381469727,
+            "top": -1191.2750244140625,
+            "right": 632.7625122070312,
+            "bottom": -1163.6750240325928,
+            "left": 602.7625122070312
+          }
+        },
+        {
+          "text": "2.10 Å",
+          "classes": "atom-label measure",
+          "hidden": false,
+          "size": "14px",
+          "box": {
+            "x": 614.75,
+            "y": -1233.2249755859375,
+            "width": 51.25,
+            "height": 26,
+            "top": -1233.2249755859375,
+            "right": 666,
+            "bottom": -1207.2249755859375,
+            "left": 614.75
+          }
+        }
+      ]
+    },
+    {
+      "angle": 3,
+      "cameraPosition": "-9.807,-22.585,6.427",
+      "cameraDistance": "22.500",
+      "area": 0.0255977910058102,
+      "collisions": [],
+      "labels": [
+        {
+          "text": "His 94",
+          "classes": "atom-label selected",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 718.375,
+            "y": -1377.2000732421875,
+            "width": 54.20000076293945,
+            "height": 27.600000381469727,
+            "top": -1377.2000732421875,
+            "right": 772.5750007629395,
+            "bottom": -1349.6000728607178,
+            "left": 718.375
+          }
+        },
+        {
+          "text": "Nε2",
+          "classes": "atom-label atom",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 638.9249877929688,
+            "y": -1262.6624755859375,
+            "width": 31.912500381469727,
+            "height": 23.600000381469727,
+            "top": -1262.6624755859375,
+            "right": 670.8374881744385,
+            "bottom": -1239.0624752044678,
+            "left": 638.9249877929688
+          }
+        },
+        {
+          "text": "His 119",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 783.9500122070312,
+            "y": -1215.0625,
+            "width": 53.087501525878906,
+            "height": 23.600000381469727,
+            "top": -1215.0625,
+            "right": 837.0375137329102,
+            "bottom": -1191.4624996185303,
+            "left": 783.9500122070312
+          }
+        },
+        {
+          "text": "His 96",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 590.8624877929688,
+            "y": -1263.7750244140625,
+            "width": 46.82500076293945,
+            "height": 23.600000381469727,
+            "top": -1263.7750244140625,
+            "right": 637.6874885559082,
+            "bottom": -1240.1750240325928,
+            "left": 590.8624877929688
+          }
+        },
+        {
+          "text": "His 64",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 107",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 122",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 797.1000366210938,
+            "y": -1268.625,
+            "width": 53.775001525878906,
+            "height": 23.600000381469727,
+            "top": -1268.625,
+            "right": 850.8750381469727,
+            "bottom": -1245.0249996185303,
+            "left": 797.1000366210938
+          }
+        },
+        {
+          "text": "ZN",
+          "classes": "atom-label metal",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 622.1749877929688,
+            "y": -1173.4500732421875,
+            "width": 30,
+            "height": 27.600000381469727,
+            "top": -1173.4500732421875,
+            "right": 652.1749877929688,
+            "bottom": -1145.8500728607178,
+            "left": 622.1749877929688
+          }
+        },
+        {
+          "text": "2.10 Å",
+          "classes": "atom-label measure",
+          "hidden": false,
+          "size": "14px",
+          "box": {
+            "x": 627.6124877929688,
+            "y": -1218.2625732421875,
+            "width": 51.25,
+            "height": 26,
+            "top": -1218.2625732421875,
+            "right": 678.8624877929688,
+            "bottom": -1192.2625732421875,
+            "left": 627.6124877929688
+          }
+        }
+      ]
+    },
+    {
+      "angle": 4,
+      "cameraPosition": "-11.883,-19.595,5.264",
+      "cameraDistance": "20.250",
+      "area": 0.0255977910058102,
+      "collisions": [],
+      "labels": [
+        {
+          "text": "His 94",
+          "classes": "atom-label selected",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 698.1500244140625,
+            "y": -1388.5,
+            "width": 54.20000076293945,
+            "height": 27.600000381469727,
+            "top": -1388.5,
+            "right": 752.350025177002,
+            "bottom": -1360.8999996185303,
+            "left": 698.1500244140625
+          }
+        },
+        {
+          "text": "Nε2",
+          "classes": "atom-label atom",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 644.25,
+            "y": -1252.987548828125,
+            "width": 31.912500381469727,
+            "height": 23.600000381469727,
+            "top": -1252.987548828125,
+            "right": 676.1625003814697,
+            "bottom": -1229.3875484466553,
+            "left": 644.25
+          }
+        },
+        {
+          "text": "His 119",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 813.2625122070312,
+            "y": -1234.9375,
+            "width": 53.087501525878906,
+            "height": 23.600000381469727,
+            "top": -1234.9375,
+            "right": 866.3500137329102,
+            "bottom": -1211.3374996185303,
+            "left": 813.2625122070312
+          }
+        },
+        {
+          "text": "His 96",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 584.3250122070312,
+            "y": -1144.7249755859375,
+            "width": 46.82500076293945,
+            "height": 23.600000381469727,
+            "top": -1144.7249755859375,
+            "right": 631.1500129699707,
+            "bottom": -1121.1249752044678,
+            "left": 584.3250122070312
+          }
+        },
+        {
+          "text": "His 64",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 107",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 122",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 827.1875,
+            "y": -1324.7125244140625,
+            "width": 53.775001525878906,
+            "height": 23.600000381469727,
+            "top": -1324.7125244140625,
+            "right": 880.9625015258789,
+            "bottom": -1301.1125240325928,
+            "left": 827.1875
+          }
+        },
+        {
+          "text": "ZN",
+          "classes": "atom-label metal",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 642.375,
+            "y": -1155.3375244140625,
+            "width": 30,
+            "height": 27.600000381469727,
+            "top": -1155.3375244140625,
+            "right": 672.375,
+            "bottom": -1127.7375240325928,
+            "left": 642.375
+          }
+        },
+        {
+          "text": "2.10 Å",
+          "classes": "atom-label measure",
+          "hidden": false,
+          "size": "14px",
+          "box": {
+            "x": 640.3125,
+            "y": -1204.175048828125,
+            "width": 51.25,
+            "height": 26,
+            "top": -1204.175048828125,
+            "right": 691.5625,
+            "bottom": -1178.175048828125,
+            "left": 640.3125
+          }
+        }
+      ]
+    },
+    {
+      "angle": 5,
+      "cameraPosition": "-12.308,-20.429,8.041",
+      "cameraDistance": "20.250",
+      "area": 0.0255977910058102,
+      "collisions": [],
+      "labels": [
+        {
+          "text": "His 94",
+          "classes": "atom-label selected",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 672.5499877929688,
+            "y": -1393.3125,
+            "width": 54.20000076293945,
+            "height": 27.600000381469727,
+            "top": -1393.3125,
+            "right": 726.7499885559082,
+            "bottom": -1365.7124996185303,
+            "left": 672.5499877929688
+          }
+        },
+        {
+          "text": "Nε2",
+          "classes": "atom-label atom",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 655.8125,
+            "y": -1242.6500244140625,
+            "width": 31.912500381469727,
+            "height": 23.600000381469727,
+            "top": -1242.6500244140625,
+            "right": 687.7250003814697,
+            "bottom": -1219.0500240325928,
+            "left": 655.8125
+          }
+        },
+        {
+          "text": "His 119",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 827.3875122070312,
+            "y": -1264.2750244140625,
+            "width": 53.087501525878906,
+            "height": 23.600000381469727,
+            "top": -1264.2750244140625,
+            "right": 880.4750137329102,
+            "bottom": -1240.6750240325928,
+            "left": 827.3875122070312
+          }
+        },
+        {
+          "text": "His 96",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 593.4750366210938,
+            "y": -1154.375,
+            "width": 46.82500076293945,
+            "height": 23.600000381469727,
+            "top": -1154.375,
+            "right": 640.3000373840332,
+            "bottom": -1130.7749996185303,
+            "left": 593.4750366210938
+          }
+        },
+        {
+          "text": "His 64",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 107",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 122",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 840.5625,
+            "y": -1331.7625732421875,
+            "width": 53.775001525878906,
+            "height": 23.600000381469727,
+            "top": -1331.7625732421875,
+            "right": 894.3375015258789,
+            "bottom": -1308.1625728607178,
+            "left": 840.5625
+          }
+        },
+        {
+          "text": "ZN",
+          "classes": "atom-label metal",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 669.9249877929688,
+            "y": -1144.8125,
+            "width": 30,
+            "height": 27.600000381469727,
+            "top": -1144.8125,
+            "right": 699.9249877929688,
+            "bottom": -1117.2124996185303,
+            "left": 669.9249877929688
+          }
+        },
+        {
+          "text": "2.10 Å",
+          "classes": "atom-label measure",
+          "hidden": false,
+          "size": "14px",
+          "box": {
+            "x": 659.8250122070312,
+            "y": -1193.9749755859375,
+            "width": 51.25,
+            "height": 26,
+            "top": -1193.9749755859375,
+            "right": 711.0750122070312,
+            "bottom": -1167.9749755859375,
+            "left": 659.8250122070312
+          }
+        }
+      ]
+    },
+    {
+      "angle": 6,
+      "cameraPosition": "-15.050,-19.595,7.437",
+      "cameraDistance": "20.250",
+      "area": 0.0255977910058102,
+      "collisions": [],
+      "labels": [
+        {
+          "text": "His 94",
+          "classes": "atom-label selected",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 647.3624877929688,
+            "y": -1383.2000732421875,
+            "width": 54.20000076293945,
+            "height": 27.600000381469727,
+            "top": -1383.2000732421875,
+            "right": 701.5624885559082,
+            "bottom": -1355.6000728607178,
+            "left": 647.3624877929688
+          }
+        },
+        {
+          "text": "Nε2",
+          "classes": "atom-label atom",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 669.1375122070312,
+            "y": -1241.9500732421875,
+            "width": 31.912500381469727,
+            "height": 23.600000381469727,
+            "top": -1241.9500732421875,
+            "right": 701.050012588501,
+            "bottom": -1218.3500728607178,
+            "left": 669.1375122070312
+          }
+        },
+        {
+          "text": "His 119",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 832.3125,
+            "y": -1296.0374755859375,
+            "width": 53.087501525878906,
+            "height": 23.600000381469727,
+            "top": -1296.0374755859375,
+            "right": 885.4000015258789,
+            "bottom": -1272.4374752044678,
+            "left": 832.3125
+          }
+        },
+        {
+          "text": "His 96",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 611.7999877929688,
+            "y": -1110.0999755859375,
+            "width": 46.82500076293945,
+            "height": 23.600000381469727,
+            "top": -1110.0999755859375,
+            "right": 658.6249885559082,
+            "bottom": -1086.4999752044678,
+            "left": 611.7999877929688
+          }
+        },
+        {
+          "text": "His 64",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 107",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 122",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 847.9625244140625,
+            "y": -1396.175048828125,
+            "width": 53.775001525878906,
+            "height": 23.600000381469727,
+            "top": -1396.175048828125,
+            "right": 901.7375259399414,
+            "bottom": -1372.5750484466553,
+            "left": 847.9625244140625
+          }
+        },
+        {
+          "text": "ZN",
+          "classes": "atom-label metal",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 698.6375122070312,
+            "y": -1149.7249755859375,
+            "width": 30,
+            "height": 27.600000381469727,
+            "top": -1149.7249755859375,
+            "right": 728.6375122070312,
+            "bottom": -1122.1249752044678,
+            "left": 698.6375122070312
+          }
+        },
+        {
+          "text": "2.10 Å",
+          "classes": "atom-label measure",
+          "hidden": false,
+          "size": "14px",
+          "box": {
+            "x": 680.8624877929688,
+            "y": -1195.9124755859375,
+            "width": 51.25,
+            "height": 26,
+            "top": -1195.9124755859375,
+            "right": 732.1124877929688,
+            "bottom": -1169.9124755859375,
+            "left": 680.8624877929688
+          }
+        }
+      ]
+    },
+    {
+      "angle": 7,
+      "cameraPosition": "-14.145,-20.429,10.095",
+      "cameraDistance": "20.250",
+      "area": 0.029117615488361004,
+      "collisions": [],
+      "labels": [
+        {
+          "text": "His 94",
+          "classes": "atom-label selected",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 625.5375366210938,
+            "y": -1376.3125,
+            "width": 54.20000076293945,
+            "height": 27.600000381469727,
+            "top": -1376.3125,
+            "right": 679.7375373840332,
+            "bottom": -1348.7124996185303,
+            "left": 625.5375366210938
+          }
+        },
+        {
+          "text": "Nε2",
+          "classes": "atom-label atom",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 682.9375,
+            "y": -1236.8875732421875,
+            "width": 31.912500381469727,
+            "height": 23.600000381469727,
+            "top": -1236.8875732421875,
+            "right": 714.8500003814697,
+            "bottom": -1213.2875728607178,
+            "left": 682.9375
+          }
+        },
+        {
+          "text": "His 119",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 828.7000122070312,
+            "y": -1331.9000244140625,
+            "width": 53.087501525878906,
+            "height": 23.600000381469727,
+            "top": -1331.9000244140625,
+            "right": 881.7875137329102,
+            "bottom": -1308.3000240325928,
+            "left": 828.7000122070312
+          }
+        },
+        {
+          "text": "His 96",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 629.8624877929688,
+            "y": -1122.7125244140625,
+            "width": 46.82500076293945,
+            "height": 23.600000381469727,
+            "top": -1122.7125244140625,
+            "right": 676.6874885559082,
+            "bottom": -1099.1125240325928,
+            "left": 629.8624877929688
+          }
+        },
+        {
+          "text": "His 64",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 376.25,
+            "y": -1107.5750732421875,
+            "width": 46.82500076293945,
+            "height": 23.600000381469727,
+            "top": -1107.5750732421875,
+            "right": 423.07500076293945,
+            "bottom": -1083.9750728607178,
+            "left": 376.25
+          }
+        },
+        {
+          "text": "His 107",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 122",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 841.5,
+            "y": -1407.625,
+            "width": 53.775001525878906,
+            "height": 23.600000381469727,
+            "top": -1407.625,
+            "right": 895.2750015258789,
+            "bottom": -1384.0249996185303,
+            "left": 841.5
+          }
+        },
+        {
+          "text": "ZN",
+          "classes": "atom-label metal",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 727.2000122070312,
+            "y": -1151.3250732421875,
+            "width": 30,
+            "height": 27.600000381469727,
+            "top": -1151.3250732421875,
+            "right": 757.2000122070312,
+            "bottom": -1123.7250728607178,
+            "left": 727.2000122070312
+          }
+        },
+        {
+          "text": "2.10 Å",
+          "classes": "atom-label measure",
+          "hidden": false,
+          "size": "14px",
+          "box": {
+            "x": 701.875,
+            "y": -1194.3875732421875,
+            "width": 51.25,
+            "height": 26,
+            "top": -1194.3875732421875,
+            "right": 753.125,
+            "bottom": -1168.3875732421875,
+            "left": 701.875
+          }
+        }
+      ]
+    },
+    {
+      "angle": 8,
+      "cameraPosition": "-17.639,-21.452,10.626",
+      "cameraDistance": "22.275",
+      "area": 0.029117615488361004,
+      "collisions": [],
+      "labels": [
+        {
+          "text": "His 94",
+          "classes": "atom-label selected",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 613.5250244140625,
+            "y": -1350.5999755859375,
+            "width": 54.20000076293945,
+            "height": 27.600000381469727,
+            "top": -1350.5999755859375,
+            "right": 667.725025177002,
+            "bottom": -1322.9999752044678,
+            "left": 613.5250244140625
+          }
+        },
+        {
+          "text": "Nε2",
+          "classes": "atom-label atom",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 695.375,
+            "y": -1246.5625,
+            "width": 31.912500381469727,
+            "height": 23.600000381469727,
+            "top": -1246.5625,
+            "right": 727.2875003814697,
+            "bottom": -1222.9624996185303,
+            "left": 695.375
+          }
+        },
+        {
+          "text": "His 119",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 805.0875244140625,
+            "y": -1354.487548828125,
+            "width": 53.087501525878906,
+            "height": 23.600000381469727,
+            "top": -1354.487548828125,
+            "right": 858.1750259399414,
+            "bottom": -1330.8875484466553,
+            "left": 805.0875244140625
+          }
+        },
+        {
+          "text": "His 96",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 657.2750244140625,
+            "y": -1113.8875732421875,
+            "width": 46.82500076293945,
+            "height": 23.600000381469727,
+            "top": -1113.8875732421875,
+            "right": 704.100025177002,
+            "bottom": -1090.2875728607178,
+            "left": 657.2750244140625
+          }
+        },
+        {
+          "text": "His 64",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 464.45001220703125,
+            "y": -1081.5750732421875,
+            "width": 46.82500076293945,
+            "height": 23.600000381469727,
+            "top": -1081.5750732421875,
+            "right": 511.2750129699707,
+            "bottom": -1057.9750728607178,
+            "left": 464.45001220703125
+          }
+        },
+        {
+          "text": "His 107",
+          "classes": "atom-label ",
+          "hidden": true,
+          "size": "12.5px",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "top": 0,
+            "right": 0,
+            "bottom": 0,
+            "left": 0
+          }
+        },
+        {
+          "text": "His 122",
+          "classes": "atom-label ",
+          "hidden": false,
+          "size": "12.5px",
+          "box": {
+            "x": 821.4625244140625,
+            "y": -1459.737548828125,
+            "width": 53.775001525878906,
+            "height": 23.600000381469727,
+            "top": -1459.737548828125,
+            "right": 875.2375259399414,
+            "bottom": -1436.1375484466553,
+            "left": 821.4625244140625
+          }
+        },
+        {
+          "text": "ZN",
+          "classes": "atom-label metal",
+          "hidden": false,
+          "size": "15px",
+          "box": {
+            "x": 746.1375122070312,
+            "y": -1175.8875732421875,
+            "width": 30,
+            "height": 27.600000381469727,
+            "top": -1175.8875732421875,
+            "right": 776.1375122070312,
+            "bottom": -1148.2875728607178,
+            "left": 746.1375122070312
+          }
+        },
+        {
+          "text": "2.10 Å",
+          "classes": "atom-label measure",
+          "hidden": false,
+          "size": "14px",
+          "box": {
+            "x": 717.5875244140625,
+            "y": -1211.3875732421875,
+            "width": 51.25,
+            "height": 26,
+            "top": -1211.3875732421875,
+            "right": 768.8375244140625,
+            "bottom": -1185.3875732421875,
+            "left": 717.5875244140625
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "branch": "main",
+  "modifiedPreexistingFiles": [
+    "src\\modules\\kinetics\\InitialVelocityPanel.tsx",
+    "src\\modules\\kinetics\\MichaelisMentenPanel.tsx",
+    "src\\modules\\reaction-energy\\ReactionEnergyLab.tsx",
+    "src\\styles.css"
+  ],
+  "head": "6d19656f77cf812b2001ef57328bc15e66871dac",
+  "unchangedPreexistingFiles": 98
+}

@@ -1,0 +1,94 @@
+- banner:
+  - generic: E
+  - heading "Enzyme Explorer" [level=1]
+  - paragraph: 효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론
+  - paragraph: 모듈 02 · 탄산무수화효소
+- navigation "학습 모듈":
+  - link "Start 시작":
+    - /url: "#/start"
+    - generic: Start
+  - link "01 반응 에너지":
+    - /url: "#/reaction-energy"
+    - generic: "01"
+    - generic: 반응 에너지
+  - link "02 탄산무수화효소" [active]:
+    - /url: "#/carbonic-anhydrase"
+    - generic: "02"
+    - generic: 탄산무수화효소
+  - link "03 효소 반응속도론 실험실":
+    - /url: "#/kinetics"
+    - generic: "03"
+    - generic: 반응속도론
+  - link "04 효소 저해 · Enzyme II에서 다룰 예정":
+    - /url: "#/inhibition"
+    - generic: "04"
+    - generic: 효소 저해
+  - link "05 효소 조절":
+    - /url: "#/regulation"
+    - generic: "05"
+    - generic: 효소 조절
+  - link "Reference 모델 및 주의사항":
+    - /url: "#/model-notes"
+    - generic: Reference
+- main:
+  - paragraph: 모듈 02 · 활성 부위 화학
+  - heading "탄산무수화효소의 활성 부위" [level=2]
+  - paragraph: 활성 부위의 화학적 환경은 물의 반응성을 어떻게 바꿀까?
+  - generic: 실험 구조 데이터
+  - text: PDB 2CBA · X-ray diffraction · 1.54 Å
+  - button "이 모듈 초기화"
+  - region "3D 화면 조작":
+    - heading "탐구 순서" [level=3]
+    - list:
+      - button "1단계 전체 단백질에서 활성 부위 찾기" [pressed]:
+        - generic: 1단계
+        - text: 전체 단백질에서 활성 부위 찾기
+      - button "2단계 Zn²⁺에 직접 배위하는 잔기 찾기":
+        - generic: 2단계
+        - text: Zn²⁺에 직접 배위하는 잔기 찾기
+      - button "3단계 Zn²⁺에 결합한 solvent 관찰":
+        - generic: 3단계
+        - text: Zn²⁺에 결합한 solvent 관찰
+      - button "4단계 His64의 역할 비교":
+        - generic: 4단계
+        - text: His64의 역할 비교
+    - group "표시 방식":
+      - generic: 표시 방식
+      - group "표시 방식":
+        - button "리본" [pressed]
+        - button "막대"
+        - button "공간 채움"
+    - paragraph: "1단계 기본 표시: 전체 단백질 리본과 Zn²⁺ 구. 다른 단계로 이동하면 그 단계의 기본 표시로 돌아갑니다."
+    - button "활성 부위로 이동"
+    - button "카메라 초기화"
+    - paragraph: 드래그하여 회전하고, 스크롤하거나 두 손가락으로 확대·축소합니다. 잔기를 클릭하면 선택되고 Zn²⁺까지의 거리가 측정됩니다. 3D 화면에 키보드 초점이 있을 때는 방향키로 회전하고 + / − 키로 확대·축소할 수 있습니다.
+  - region "3D 구조":
+    - generic "Human Carbonic Anhydrase II, PDB 2CBA, chain A. 촉매 작용을 하는 Zn²⁺ 이온이 표시된 단백질 리본 모델. 드래그하여 회전, 스크롤하여 확대·축소, 잔기를 클릭하여 선택."
+    - generic: ZN
+    - generic: 잔기 258개 · 수소를 제외한 원자 2280개 · 위치가 결정된 물 분자 220개
+    - generic: 거리는 PDB에 등록된 좌표에서 측정한 값 (Å)
+    - paragraph: 선택한 잔기가 없습니다. [찾기] 버튼을 누르거나 리본·곁사슬을 클릭하면 Zn²⁺까지의 거리를 측정합니다.
+  - region "단계별 안내와 질문":
+    - heading "1단계 · 전체 단백질에서 활성 부위 찾기" [level=3]
+    - paragraph: 인간 탄산무수화효소 II(Human Carbonic Anhydrase II)는 약 260개 잔기로 이루어진 하나의 폴리펩타이드 사슬이며, 가운데의 비틀린 β-병풍 구조가 두드러집니다. 짙은 구가 Zn²⁺ 이온입니다. 이 모듈에서 다루는 일은 모두 이 이온에서 몇 Å 이내의 활성 부위(active site)에서 일어납니다.
+    - paragraph:
+      - button "활성 부위로 이동"
+    - paragraph:
+      - text: 폴리펩타이드 사슬이 어떻게 이런 모양으로 접히는지 다시 보고 싶다면
+      - link "단백질 구조와 접힘 복습하기 ↗":
+        - /url: https://suimaire.github.io/protein-3d-explorer/
+    - heading "활성 부위 요약" [level=3]
+    - paragraph: 2단계에서 직접 배위 여부를 판단하고 확정하면 측정한 요약이 여기에 표시됩니다.
+  - region "활성 부위 화학":
+    - heading "반응 메커니즘 해석 활성 부위는 물의 반응성을 어떻게 바꿀까?" [level=3]:
+      - generic: 반응 메커니즘 해석
+      - text: 활성 부위는 물의 반응성을 어떻게 바꿀까?
+    - paragraph: 먼저 3단계를 진행하세요. 이 부분은 3단계에서 찾은 solvent 자리에 대한 설명입니다.
+- contentinfo:
+  - generic: Enzyme Explorer · Enzyme I — 촉매 작용과 반응속도론
+  - link "모델 및 주의사항":
+    - /url: "#/model-notes"
+  - text: ·
+  - link "단백질 구조와 접힘 복습하기 ↗":
+    - /url: https://suimaire.github.io/protein-3d-explorer/
+  - generic: today 1 · total 15

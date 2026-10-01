@@ -1,0 +1,77 @@
+{
+  "viewport": [
+    1280,
+    800
+  ],
+  "checks": [
+    "PASS 01: helpers visible only at <=760",
+    "PASS 01: original three-column grid",
+    "PASS 01: no horizontal overflow",
+    "PASS 01: all jumps named with unique targets",
+    "PASS 01: hidden helpers absent from layout/focus navigation",
+    "PASS 03A: helpers visible only at <=760",
+    "PASS 03A: original three-column grid",
+    "PASS 03A: no horizontal overflow",
+    "PASS 03A: all jumps named with unique targets",
+    "PASS 03A: hidden helpers absent from layout/focus navigation",
+    "PASS 03A measured: helpers visible only at <=760",
+    "PASS 03A measured: original three-column grid",
+    "PASS 03A measured: no horizontal overflow",
+    "PASS 03A measured: all jumps named with unique targets",
+    "PASS 03A measured: hidden helpers absent from layout/focus navigation",
+    "PASS 03A measurements precede interpretation in DOM",
+    "PASS 03B: helpers visible only at <=760",
+    "PASS 03B: original three-column grid",
+    "PASS 03B: no horizontal overflow",
+    "PASS 03B: all jumps named with unique targets",
+    "PASS 03B: hidden helpers absent from layout/focus navigation",
+    "ALL UX-008 LAYOUT CHECKS PASSED"
+  ],
+  "evidence": {
+    "energyLocked": {
+      "controls": 272,
+      "graph": 272,
+      "catalyst": 630,
+      "prediction": 287,
+      "energyManipulation": 808,
+      "substrate": null,
+      "measure": null,
+      "measurements": null,
+      "initialPrediction": null,
+      "km": null,
+      "baseline": null,
+      "condition": null,
+      "mmPrediction": null
+    },
+    "initialMeasured": {
+      "controls": 357,
+      "graph": 357,
+      "catalyst": null,
+      "prediction": null,
+      "energyManipulation": null,
+      "substrate": 651,
+      "measure": 886,
+      "measurements": 517,
+      "initialPrediction": 747,
+      "km": null,
+      "baseline": null,
+      "condition": null,
+      "mmPrediction": null
+    },
+    "mm": {
+      "controls": 430,
+      "graph": 430,
+      "catalyst": null,
+      "prediction": null,
+      "energyManipulation": null,
+      "substrate": null,
+      "measure": null,
+      "measurements": null,
+      "initialPrediction": null,
+      "km": 840,
+      "baseline": 890,
+      "condition": 445,
+      "mmPrediction": 783
+    }
+  }
+}

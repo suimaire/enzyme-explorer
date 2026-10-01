@@ -1,0 +1,145 @@
+- banner:
+  - generic: E
+  - heading "Enzyme Explorer" [level=1]
+  - paragraph: 효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론
+  - paragraph: 모듈 05 · 효소 조절
+- navigation "학습 모듈":
+  - link "Start 시작":
+    - /url: "#/start"
+    - generic: Start
+  - link "01 반응 에너지":
+    - /url: "#/reaction-energy"
+    - generic: "01"
+    - generic: 반응 에너지
+  - link "02 탄산무수화효소":
+    - /url: "#/carbonic-anhydrase"
+    - generic: "02"
+    - generic: 탄산무수화효소
+  - link "03 효소 반응속도론 실험실":
+    - /url: "#/kinetics"
+    - generic: "03"
+    - generic: 반응속도론
+  - link "04 효소 저해 · Enzyme II에서 다룰 예정":
+    - /url: "#/inhibition"
+    - generic: "04"
+    - generic: 효소 저해
+  - link "05 효소 조절":
+    - /url: "#/regulation"
+    - generic: "05"
+    - generic: 효소 조절
+  - link "Reference 모델 및 주의사항":
+    - /url: "#/model-notes"
+    - generic: Reference
+- main:
+  - paragraph: 모듈 05 · Enzyme II
+  - heading "Hormonal Regulation" [level=2]
+  - paragraph: 인슐린과 글루카곤은 한 단백질의 두 활성을 어떻게 조절할까?
+  - generic: 간 PFKFB1 · L형
+  - generic: 정성적 조절 모델
+  - button "이 모듈 초기화"
+  - generic: 한 단백질, 두 촉매 활성. 신호를 보내고 조절의 연결을 따라가세요.
+  - strong: "가상 개입: F-2,6-BP 고정"
+  - region "① 신호 보내기":
+    - heading "① 신호 보내기" [level=3]
+    - text: "✓ 예측 확정: 아직 모르겠음"
+    - generic: 이제 두 신호를 자유롭게 비교하세요.
+    - button "신호 선택 인슐린 우세 신호 보내기 식후 상황을 생각해 보세요":
+      - generic: 신호 선택
+      - strong:
+        - text: 인슐린 우세
+        - text: 신호 보내기
+      - generic: 식후 상황을 생각해 보세요
+    - button "✓ 선택한 신호 글루카곤 우세 신호 보내기 공복 상황을 생각해 보세요" [pressed]:
+      - generic: ✓ 선택한 신호
+      - strong:
+        - text: 글루카곤 우세
+        - text: 신호 보내기
+      - generic: 공복 상황을 생각해 보세요
+    - paragraph: 실제 생리에서는 두 호르몬이 함께 존재합니다. 여기서는 우세한 조절 신호를 비교합니다.
+    - generic "관찰 완료한 상황":
+      - generic: ✓ 인슐린 우세 관찰
+      - generic: ✓ 글루카곤 우세 관찰
+  - region "② 무엇이 바뀌는가?":
+    - heading "② 무엇이 바뀌는가?" [level=3]
+    - group "관찰 보기":
+      - generic: 관찰 보기
+      - group "관찰 보기":
+        - button "조절 경로"
+        - button "실제 3D 구조"
+        - button "중간 신호 직접 조작" [pressed]
+    - list "설명 단계":
+      - generic: "1"
+      - generic: 수용체 / 신호전달
+      - generic: "2"
+      - generic: 조절 Ser
+      - generic: "3"
+      - generic: 두 촉매 활성
+      - generic: "4"
+      - generic: F-2,6-BP
+      - generic: "5"
+      - generic: 하위 조절 방향
+    - heading "F-2,6-BP만 바꾸면?" [level=4]
+    - paragraph: 인과 관계를 탐구하는 모델 조작입니다. 실제 약물 처치나 실험 protocol이 아닙니다.
+    - group "F-2,6-BP 가상 개입":
+      - button "낮게 고정" [active] [pressed]
+      - button "높게 고정"
+      - button "호르몬 조절로 복귀"
+    - generic: 글루카곤 우세 · 상위 상태 유지
+    - generic: 조절 Ser 인산화 방향 · PKA
+    - generic: PFK-2 상대적 활성 감소 ↓
+    - generic: FBPase-2 상대적 활성 증가 ↑
+    - generic: 호르몬 조절이 예측
+    - strong: F-2,6-BP 낮음
+    - generic: 감소 방향 ↓
+    - generic: ↓
+    - text: 가상 개입으로 덮어쓰기 · 하위 효과만 변경
+    - generic: 하위 효소에 적용
+    - strong: F-2,6-BP 낮음
+    - generic: 가상 고정 · 호르몬 / 조절 Ser / 두 촉매 활성 유지
+    - generic: 하위 효소와 대사 조절 방향 → 결과 패널
+    - button "가상 개입 해설 보기"
+    - group "설명 재생 조작":
+      - button "이전 단계": ← 이전
+      - button "▶ 재생"
+      - button "다음 단계" [disabled]: 다음 →
+      - button "처음부터"
+    - paragraph:
+      - generic: 5/5 ·
+      - text: PFK-1 활성화 자극 감소 ↓; FBPase-1 억제 완화. 이 조절축의 방향을 오른쪽에서 확인하세요.
+    - paragraph: 교육용 설명 재생 · 실제 반응 시간이 아닙니다.
+  - complementary "③ 어떤 결과인가?":
+    - heading "③ 어떤 결과인가?" [level=3]
+    - paragraph: 이 조절축이 이끄는 방향
+    - paragraph:
+      - text: 호르몬 조절이 예측
+      - generic: F-2,6-BP 낮음
+      - text: · 감소 방향 ↓
+    - paragraph:
+      - text: 하위 효소에 적용
+      - generic: F-2,6-BP 낮음
+      - text: · 가상 고정
+    - generic: ⇢
+    - text: PFK-1
+    - strong: 활성화 자극 감소 ↓
+    - generic: ┤
+    - text: FBPase-1
+    - strong: 억제 완화
+    - generic: 해당과정
+    - strong: 억제 방향 ↓
+    - generic: 포도당신생
+    - strong: 촉진 방향 ↑
+    - paragraph: F-2,6-BP는 조절 신호로 작용하며, 이 조절 표시에서 소모되지 않습니다.
+    - paragraph: 다른 조절 요인을 고정했을 때 이 조절축이 유도하는 방향입니다. 실제 대사속도나 혈당을 계산하지 않습니다.
+  - button "인산기 이동 확인 +"
+  - button "호르몬 비교 해설 보기"
+  - generic "인산화가 두 활성을 어떻게 바꾸는지 보기"
+  - generic "다른 조직에서도 같을까?"
+  - generic "자료·잔기 번호·모델의 한계"
+- contentinfo:
+  - generic: Enzyme Explorer · Enzyme I — 촉매 작용과 반응속도론
+  - link "모델 및 주의사항":
+    - /url: "#/model-notes"
+  - text: ·
+  - link "단백질 구조와 접힘 복습하기 ↗":
+    - /url: https://suimaire.github.io/protein-3d-explorer/
+  - generic: today 1 · total 15

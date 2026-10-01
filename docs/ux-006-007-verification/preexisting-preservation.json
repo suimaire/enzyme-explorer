@@ -1,0 +1,38 @@
+[
+  {
+    "file": "src/app/App.tsx",
+    "unchangedPreexistingDiff": true
+  },
+  {
+    "file": "src/modules/carbonic-anhydrase/CarbonicAnhydraseLab.tsx",
+    "unchangedPreexistingDiff": true
+  },
+  {
+    "file": "src/modules/kinetics/InitialVelocityPanel.tsx",
+    "unchangedPreexistingDiff": true
+  },
+  {
+    "file": "src/modules/kinetics/KineticsLab.tsx",
+    "unchangedPreexistingDiff": true
+  },
+  {
+    "file": "src/modules/kinetics/MichaelisMentenPanel.tsx",
+    "unchangedPreexistingDiff": true
+  },
+  {
+    "file": "src/modules/reaction-energy/ReactionEnergyLab.tsx",
+    "unchangedPreexistingDiff": true
+  },
+  {
+    "file": "src/modules/reaction-energy/energyProfile.ts",
+    "unchangedPreexistingDiff": true
+  },
+  {
+    "file": "src/modules/regulation/HormonalRegulation.tsx",
+    "unchangedPreexistingDiff": true
+  },
+  {
+    "file": "src/shared/components/Prediction.tsx",
+    "unchangedPreexistingDiff": true
+  }
+]

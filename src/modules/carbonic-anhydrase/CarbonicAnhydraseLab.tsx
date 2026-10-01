@@ -16,6 +16,7 @@ import {atomDisplayName} from '../../viewer/pdb/atomNames';
 import {inferBonds} from '../../viewer/pdb/bonds';
 import {PROTEIN_EXPLORER_URL} from '../../app/App';
 import type {Representation} from '../../viewer/rendering/StructureScene';
+import {useLearningState, useResetLearningModule} from '../../app/LearningSession';
 
 type QuestionKey = 'shuttle';
 
@@ -53,30 +54,37 @@ export function CarbonicAnhydraseLab() {
   const {model, error} = useStructure();
   if (error)
     return (
-      <main className="module">
+      <div className="module">
         <p role="alert">
           PDB {STRUCTURE_SOURCE.pdbId} 구조를 불러오지 못했습니다. ({error})
         </p>
-      </main>
+      </div>
     );
   if (!model)
     return (
-      <main className="module">
+      <div className="module">
         <p>PDB {STRUCTURE_SOURCE.pdbId} 구조를 불러오는 중…</p>
-      </main>
+      </div>
     );
   return <Lab model={model} />;
 }
 
 function Lab({model}: {model: Model}) {
   const {structure, bonds, site} = model;
-  const [stage, setStage] = useState<Stage>(1);
-  const [representation, setRepresentation] = useState<Representation>(STAGE_PRESETS[1].representation);
+  const [stage, setStage] = useLearningState('carbonicAnhydrase', 'stage');
+  const [representation, setRepresentation] = useState<Representation>(STAGE_PRESETS[stage].representation);
   const [selected, setSelected] = useState<number | null>(null);
-  const [camera, setCamera] = useState<CameraRequest>({preset: 'overview', token: 0});
-  const [judgements, setJudgements] = useState<Map<number, Judgement>>(new Map());
-  const [judgementsLocked, setJudgementsLocked] = useState(false);
-  const [measured, setMeasured] = useState<Set<number>>(new Set());
+  const [camera, setCamera] = useState<CameraRequest>(() => {
+    const shuttle = site.histidines.find(h => h.resSeq === 64) ?? null;
+    const atoms = stageCameraAtoms(structure, site, shuttle, stage);
+    return atoms ? {preset: 'atoms', atoms, token: 1} : {preset: 'overview', token: 0};
+  });
+  const [answers, setAnswers] = useLearningState('carbonicAnhydrase', 'judgements');
+  const judgements = useMemo(() => new Map(Object.entries(answers).map(([index, answer]) => [Number(index), answer])), [answers]);
+  const [judgementsLocked, setJudgementsLocked] = useLearningState('carbonicAnhydrase', 'judgementsLocked');
+  const [measuredIndices, setMeasuredIndices] = useLearningState('carbonicAnhydrase', 'measured');
+  const measured = useMemo(() => new Set(measuredIndices), [measuredIndices]);
+  const resetSession = useResetLearningModule('carbonicAnhydrase');
   const predictions = usePredictions<QuestionKey>();
 
   /** His64 is named here, but its classification comes from the measured distance, not from its number. */
@@ -95,7 +103,7 @@ function Lab({model}: {model: Model}) {
     focus('atoms', [...structure.residues[residueIndex].atoms, site.metal.atomIndex, ...extra]);
 
   const markMeasured = (residueIndex: number) =>
-    setMeasured((prev) => (prev.has(residueIndex) ? prev : new Set(prev).add(residueIndex)));
+    setMeasuredIndices(prev => prev.includes(residueIndex) ? prev : [...prev, residueIndex]);
 
   const workspace = useRef<HTMLElement>(null);
   /** The [찾기] button last used, so a student on a narrow screen can jump back to the list after looking. */
@@ -151,18 +159,19 @@ function Lab({model}: {model: Model}) {
   };
 
   const reset = () => {
+    resetSession();
     setStage(1);
     setRepresentation(STAGE_PRESETS[1].representation);
     setSelected(null);
-    setJudgements(new Map());
+    setAnswers({});
     setJudgementsLocked(false);
-    setMeasured(new Set());
+    setMeasuredIndices([]);
     predictions.reset();
     focus('overview');
   };
 
   const judge = (residueIndex: number, judgement: Judgement) =>
-    setJudgements((prev) => new Map(prev).set(residueIndex, judgement));
+    setAnswers(prev => ({...prev, [residueIndex]: judgement}));
 
   const allJudged = site.histidines.every((h) => judgements.has(h.residueIndex));
   const agreed = site.histidines.filter((h) => judgements.get(h.residueIndex) === (h.coordinating ? 'yes' : 'no')).length;
@@ -176,7 +185,7 @@ function Lab({model}: {model: Model}) {
   const rowClass = (residueIndex: number) => (selected === residueIndex ? 'is-selected' : undefined);
 
   return (
-    <main className="module" data-testid="module-carbonic-anhydrase">
+    <div className="module" data-testid="module-carbonic-anhydrase">
       <ModuleHeader
         id="carbonic-anhydrase"
         tag={
@@ -680,6 +689,6 @@ function Lab({model}: {model: Model}) {
       </div>
 
       <ChemistryPanel unlocked={stage >= 3} />
-    </main>
+    </div>
   );
 }

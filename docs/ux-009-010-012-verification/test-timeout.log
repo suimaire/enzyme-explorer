@@ -1,0 +1,32 @@
+
+> enzyme-explorer@0.1.0 test
+> vitest run
+
+
+ RUN  v5.0.1 D:/CODEX/260831 biochemistry/enzyme-explorer
+
+ ❯ tests/reactionEnergy.test.ts (9 tests | 1 failed) 13752ms
+   ❯ reaction energy model (9)
+     × 6 · every drawable energy stays inside the fixed y-axis domain, so the axis never has to rescale 5198ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  tests/reactionEnergy.test.ts > reaction energy model > 6 · every drawable energy stays inside the fixed y-axis domain, so the axis never has to rescale
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ tests/reactionEnergy.test.ts:90:3
+     88|   });
+     89|
+     90|   it('6 · every drawable energy stays inside the fixed y-axis domain, …
+       |   ^
+     91|     for (const productEnergy of PRODUCTS)
+     92|       for (const barrierTop of TOPS)
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed | 14 passed (15)
+      Tests  1 failed | 245 passed (246)
+   Start at  17:26:37
+   Duration  14.16s (tests 66%, transform 19%, import 14%)
+

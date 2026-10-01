@@ -1,0 +1,3 @@
+git diff --check: passed (exit 0)
+git diff --cached --check: passed (exit 0)
+558 intended staged files; 112 source/test/dependency files preserved; 503 archived evidence blobs byte-identical.

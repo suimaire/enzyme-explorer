@@ -28,7 +28,7 @@ export function ProgressCurvePlot({
   const [host, width] = useMeasuredWidth(620);
   const narrow = width < 480;
   const height = Math.round(Math.min(380, Math.max(240, width * 0.58)));
-  const m = {l: narrow ? 52 : 62, r: narrow ? 14 : 20, t: 16, b: narrow ? 50 : 54};
+  const m = {l: narrow ? 52 : 62, r: narrow ? 22 : 24, t: 34, b: narrow ? 50 : 54};
   const pw = width - m.l - m.r;
   const ph = height - m.t - m.b;
   const duration = samples.at(-1)?.time ?? 1;
@@ -36,8 +36,9 @@ export function ProgressCurvePlot({
   const Y = (p: number) => m.t + (1 - p / initialSubstrate) * ph;
 
   const path = samples.map((s, i) => `${i ? 'L' : 'M'}${X(s.time).toFixed(2)},${Y(s.product).toFixed(2)}`).join('');
-  const yTicks = [0, 0.25, 0.5, 0.75, 1].map((f) => f * initialSubstrate);
-  const xTicks = [0, 0.25, 0.5, 0.75, 1].map((f) => f * duration);
+  const tickFractions = narrow ? [0, 0.5, 1] : [0, 0.25, 0.5, 0.75, 1];
+  const yTicks = tickFractions.map((f) => f * initialSubstrate);
+  const xTicks = tickFractions.map((f) => f * duration);
   const final = samples.at(-1);
 
   return (
@@ -48,6 +49,7 @@ export function ProgressCurvePlot({
         viewBox={`0 0 ${width} ${height}`}
         role="img"
         data-testid="progress-curve"
+        data-narrow={narrow}
         data-duration={duration.toFixed(2)}
         data-final-product={final ? final.product.toFixed(3) : ''}
         data-tangent={tangent ? 'on' : 'off'}
@@ -66,7 +68,7 @@ export function ProgressCurvePlot({
           {yTicks.map((t) => (
             <g key={t}>
               <line x1={m.l} x2={m.l + pw} y1={Y(t)} y2={Y(t)} />
-              <text x={m.l - 6} y={Y(t) + 4} textAnchor="end" fontSize={narrow ? 10.5 : 12}>
+              <text x={m.l - 6} y={Y(t) + 4} textAnchor="end">
                 {t.toFixed(0)}
               </text>
             </g>
@@ -74,7 +76,7 @@ export function ProgressCurvePlot({
           {xTicks.map((t) => (
             <g key={t}>
               <line x1={X(t)} x2={X(t)} y1={m.t} y2={m.t + ph} />
-              <text x={X(t)} y={m.t + ph + 16} textAnchor="middle" fontSize={narrow ? 10.5 : 12}>
+              <text x={X(t)} y={m.t + ph + 18} textAnchor="middle">
                 {t.toFixed(0)}
               </text>
             </g>
@@ -96,10 +98,9 @@ export function ProgressCurvePlot({
           </g>
         ) : null}
         <path d={path} fill="none" stroke={KINETICS_COLORS.curve} strokeWidth={2.8} strokeLinecap="round" clipPath="url(#progress-clip)" />
-        {tangent && !narrow ? (
-          // Placed above the tangent, far enough along the window that the real curve has already dropped
-          // clear of it — the label must not sit on top of either line.
-          <text x={X(duration * 0.52)} y={Y(tangent[1].product * 0.52) - 12} fill={KINETICS_COLORS.tangent} fontSize={12} textAnchor="middle">
+        {tangent ? (
+          // A reserved header keeps this measurement annotation clear of either line at every concentration.
+          <text className="chart-key" x={m.l + pw / 2} y={20} fill={KINETICS_COLORS.tangent} textAnchor="middle">
             초기 속도 (t = 0에서의 접선)
           </text>
         ) : null}

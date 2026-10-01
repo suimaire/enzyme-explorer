@@ -1,0 +1,261 @@
+{
+  "viewport": [
+    1600,
+    900
+  ],
+  "checks": [
+    "PASS start: rail focus retained",
+    "PASS start: title matches registry",
+    "PASS start: aria-current",
+    "PASS start: one stable main",
+    "PASS start: original module padding and max width retained",
+    "PASS start: no horizontal overflow",
+    "PASS reaction-energy: rail focus retained",
+    "PASS reaction-energy: title matches registry",
+    "PASS reaction-energy: aria-current",
+    "PASS reaction-energy: one stable main",
+    "PASS reaction-energy: original module padding and max width retained",
+    "PASS reaction-energy: no horizontal overflow",
+    "PASS carbonic-anhydrase: rail focus retained",
+    "PASS carbonic-anhydrase: title matches registry",
+    "PASS carbonic-anhydrase: aria-current",
+    "PASS carbonic-anhydrase: one stable main",
+    "PASS carbonic-anhydrase: original module padding and max width retained",
+    "PASS carbonic-anhydrase: no horizontal overflow",
+    "PASS kinetics: rail focus retained",
+    "PASS kinetics: title matches registry",
+    "PASS kinetics: aria-current",
+    "PASS kinetics: one stable main",
+    "PASS kinetics: original module padding and max width retained",
+    "PASS kinetics: no horizontal overflow",
+    "PASS inhibition: rail focus retained",
+    "PASS inhibition: title matches registry",
+    "PASS inhibition: aria-current",
+    "PASS inhibition: one stable main",
+    "PASS inhibition: original module padding and max width retained",
+    "PASS inhibition: no horizontal overflow",
+    "PASS regulation: rail focus retained",
+    "PASS regulation: title matches registry",
+    "PASS regulation: aria-current",
+    "PASS regulation: one stable main",
+    "PASS regulation: original module padding and max width retained",
+    "PASS regulation: no horizontal overflow",
+    "PASS model-notes: rail focus retained",
+    "PASS model-notes: title matches registry",
+    "PASS model-notes: aria-current",
+    "PASS model-notes: one stable main",
+    "PASS model-notes: original module padding and max width retained",
+    "PASS model-notes: no horizontal overflow",
+    "PASS unknown route uses Start title/content",
+    "PASS skip visible on focus",
+    "PASS skip focuses main without changing route",
+    "PASS compact semantic TOC has five links",
+    "PASS Reference section learning order",
+    "PASS sections retain visible core limitations",
+    "PASS model-notes-common: focused",
+    "PASS model-notes-common: heading visible",
+    "PASS common: TOC replaces current history entry",
+    "PASS model-notes-energy: focused",
+    "PASS model-notes-energy: heading visible",
+    "PASS energy: TOC replaces current history entry",
+    "PASS model-notes-carbonic: focused",
+    "PASS model-notes-carbonic: heading visible",
+    "PASS carbonic: TOC replaces current history entry",
+    "PASS model-notes-kinetics: focused",
+    "PASS model-notes-kinetics: heading visible",
+    "PASS kinetics: TOC replaces current history entry",
+    "PASS model-notes-regulation: focused",
+    "PASS model-notes-regulation: heading visible",
+    "PASS regulation: TOC replaces current history entry",
+    "PASS TOC/Reference no horizontal overflow",
+    "PASS source link preserved",
+    "PASS expanded Reference no horizontal overflow",
+    "PASS energy: contextual Reference link exists",
+    "PASS model-notes-energy: focused",
+    "PASS model-notes-energy: heading visible",
+    "PASS Reference title",
+    "PASS energy: explicit return route and main focus",
+    "PASS UX-001 01 prediction and conditions survive direct Reference/return",
+    "PASS kinetics: contextual Reference link exists",
+    "PASS model-notes-kinetics: focused",
+    "PASS model-notes-kinetics: heading visible",
+    "PASS Reference title",
+    "PASS Back restores 03A measurement",
+    "PASS Back from removed Reference heading uses surviving main",
+    "PASS model-notes-kinetics: focused",
+    "PASS model-notes-kinetics: heading visible",
+    "PASS Forward restores the direct section URL",
+    "PASS kinetics: explicit return route and main focus",
+    "PASS kinetics: contextual Reference link exists",
+    "PASS model-notes-kinetics: focused",
+    "PASS model-notes-kinetics: heading visible",
+    "PASS Reference title",
+    "PASS kinetics: explicit return route and main focus",
+    "PASS UX-001 03B baseline, axis and conditions survive direct Reference/return",
+    "PASS carbonic: contextual Reference link exists",
+    "PASS model-notes-carbonic: focused",
+    "PASS model-notes-carbonic: heading visible",
+    "PASS Reference title",
+    "PASS carbonic: explicit return route and main focus",
+    "PASS dialog opens with internal focus",
+    "PASS dialog Tab containment shift=false",
+    "PASS dialog Tab containment shift=true",
+    "PASS cancel/ESC path returns to trigger",
+    "PASS close button returns to trigger",
+    "PASS native close event returns to trigger",
+    "PASS state reset uses section fallback when trigger becomes disabled",
+    "PASS regulation: contextual Reference link exists",
+    "PASS model-notes-regulation: focused",
+    "PASS model-notes-regulation: heading visible",
+    "PASS Reference title",
+    "PASS regulation: explicit return route and main focus",
+    "PASS UX-001 05 hormone and clamp survive direct Reference/return",
+    "PASS missing trigger falls back to live comparison heading",
+    "PASS route unmount releases modal and uses live main fallback",
+    "ALL NAVIGATION CONTEXT CHECKS PASSED"
+  ],
+  "evidence": {
+    "model-notes-common": {
+      "top": 15.90000057220459,
+      "bottom": 45.65000057220459,
+      "scroll": 360.79998779296875,
+      "focus": {
+        "tag": "H3",
+        "id": "model-notes-common",
+        "name": null
+      }
+    },
+    "model-notes-energy": {
+      "top": 16.350000381469727,
+      "bottom": 46.10000038146973,
+      "scroll": 545.5999755859375,
+      "focus": {
+        "tag": "H3",
+        "id": "model-notes-energy",
+        "name": null
+      }
+    },
+    "model-notes-carbonic": {
+      "top": 16.30000114440918,
+      "bottom": 46.05000114440918,
+      "scroll": 1023.2000122070312,
+      "focus": {
+        "tag": "H3",
+        "id": "model-notes-carbonic",
+        "name": null
+      }
+    },
+    "model-notes-kinetics": {
+      "top": 16.25,
+      "bottom": 46,
+      "scroll": 1585.5999755859375,
+      "focus": {
+        "tag": "H3",
+        "id": "model-notes-kinetics",
+        "name": null
+      }
+    },
+    "model-notes-regulation": {
+      "top": 15.9375,
+      "bottom": 45.6875,
+      "scroll": 2100.800048828125,
+      "focus": {
+        "tag": "H3",
+        "id": "model-notes-regulation",
+        "name": null
+      }
+    },
+    "session": {
+      "kinetics": {
+        "predictions": {},
+        "reveals": {},
+        "section": "b",
+        "parameters": {
+          "km": 75,
+          "kcat": 60,
+          "enzymeTotal": 5
+        },
+        "assays": [
+          {
+            "initialSubstrate": 50,
+            "initialVelocity": 40,
+            "parameters": {
+              "km": 75,
+              "kcat": 20,
+              "enzymeTotal": 5
+            }
+          }
+        ],
+        "initialSubstrate": 50,
+        "assayRun": {
+          "substrate": 50
+        },
+        "measured": true,
+        "experiment": "saturation",
+        "substrate": 80,
+        "baseline": {
+          "km": 75,
+          "kcat": 20,
+          "enzymeTotal": 5
+        },
+        "axisLock": 114.99999999999999,
+        "showVmaxGuide": false,
+        "showKmGuide": false,
+        "exploredHigh": false
+      },
+      "reactionEnergy": {
+        "predictions": {
+          "main": {
+            "opening": {
+              "choice": "no",
+              "locked": true
+            }
+          }
+        },
+        "reveals": {},
+        "productEnergy": 30,
+        "barrierTop": 55,
+        "barrierLowering": 20,
+        "enzyme": true,
+        "enzymeSeen": true
+      },
+      "carbonicAnhydrase": {
+        "predictions": {},
+        "reveals": {},
+        "stage": 1,
+        "judgements": {},
+        "judgementsLocked": false,
+        "measured": []
+      },
+      "regulation": {
+        "predictions": {
+          "main": {
+            "f26": {
+              "choice": "insulin",
+              "locked": true
+            }
+          }
+        },
+        "reveals": {},
+        "lab": {
+          "scenario": "glucagonDominant",
+          "control": {
+            "mode": "clamped",
+            "level": "high"
+          },
+          "view": "pathway",
+          "narration": {
+            "step": 5,
+            "run": 30,
+            "status": "completed"
+          },
+          "observed": [
+            "insulinDominant",
+            "glucagonDominant"
+          ],
+          "interventionObserved": true
+        }
+      }
+    }
+  }
+}

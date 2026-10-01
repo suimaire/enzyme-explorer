@@ -1,0 +1,103 @@
+{
+  "audit_date": "2026-10-01 Asia/Seoul",
+  "commit": "6d19656f77cf812b2001ef57328bc15e66871dac",
+  "branch": "main",
+  "application_source_diff": false,
+  "staged_diff": false,
+  "only_audit_artifacts_untracked": true,
+  "issue_counts": {
+    "P0": 1,
+    "P1": 2,
+    "P2": 10,
+    "P3": 3
+  },
+  "route_count": 7,
+  "viewport_cases": 42,
+  "viewport_sizes": [
+    "1600x900",
+    "1440x900",
+    "1280x800",
+    "1024x768",
+    "768x1024",
+    "390x844"
+  ],
+  "public_route_cycles": 25,
+  "regulation_modal_cycles": 24,
+  "bottom_routes_checked": 7,
+  "report_sections": [
+    [
+      "1",
+      "Executive Summary"
+    ],
+    [
+      "2",
+      "Audit Environment"
+    ],
+    [
+      "3",
+      "Page Inventory"
+    ],
+    [
+      "4",
+      "Cross-site Findings"
+    ],
+    [
+      "5",
+      "Page-by-page Findings"
+    ],
+    [
+      "6",
+      "Issue Register"
+    ],
+    [
+      "7",
+      "Screenshots"
+    ],
+    [
+      "8",
+      "Recommended Fix Order"
+    ],
+    [
+      "9",
+      "Do Not Change"
+    ],
+    [
+      "10",
+      "Unverified"
+    ]
+  ],
+  "report_links_checked": 88,
+  "baseline": {
+    "test_files": 10,
+    "tests_passed": 174,
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed",
+    "build_warning": "chunks above 500 kB"
+  },
+  "viewport_override": "reset",
+  "owned_local_dev_server": "stopped",
+  "git_status": {
+    "command": "git status --short --branch --untracked-files=all",
+    "stdout": "## main...origin/main\n?? docs/SITE_WIDE_UX_AUDIT.md\n?? docs/site-wide-ux-audit/audit-bottom-carbonic-anhydrase-390.jpg\n?? docs/site-wide-ux-audit/audit-bottom-inhibition-390.jpg\n?? docs/site-wide-ux-audit/audit-bottom-kinetics-390.jpg\n?? docs/site-wide-ux-audit/audit-bottom-model-notes-390.jpg\n?? docs/site-wide-ux-audit/audit-bottom-reaction-energy-390.jpg\n?? docs/site-wide-ux-audit/audit-bottom-regulation-390.jpg\n?? docs/site-wide-ux-audit/audit-bottom-start-390.jpg\n?? docs/site-wide-ux-audit/audit-carbonic-1440.jpg\n?? docs/site-wide-ux-audit/audit-carbonic-anhydrase-1024.jpg\n?? docs/site-wide-ux-audit/audit-carbonic-anhydrase-1280.jpg\n?? docs/site-wide-ux-audit/audit-carbonic-anhydrase-1440.jpg\n?? docs/site-wide-ux-audit/audit-carbonic-anhydrase-1600.jpg\n?? docs/site-wide-ux-audit/audit-carbonic-anhydrase-390.jpg\n?? docs/site-wide-ux-audit/audit-carbonic-anhydrase-768.jpg\n?? docs/site-wide-ux-audit/audit-carbonic-drag-after.jpg\n?? docs/site-wide-ux-audit/audit-carbonic-drag-before.jpg\n?? docs/site-wide-ux-audit/audit-carbonic-mobile-find.jpg\n?? docs/site-wide-ux-audit/audit-carbonic-residue-distance.jpg\n?? docs/site-wide-ux-audit/audit-energy-1440.jpg\n?? docs/site-wide-ux-audit/audit-energy-catalyst.jpg\n?? docs/site-wide-ux-audit/audit-energy-clamped-mismatch.jpg\n?? docs/site-wide-ux-audit/audit-energy-mobile-gate.jpg\n?? docs/site-wide-ux-audit/audit-energy-zoom-attempt.jpg\n?? docs/site-wide-ux-audit/audit-inhibition-1024.jpg\n?? docs/site-wide-ux-audit/audit-inhibition-1280.jpg\n?? docs/site-wide-ux-audit/audit-inhibition-1440.jpg\n?? docs/site-wide-ux-audit/audit-inhibition-1600.jpg\n?? docs/site-wide-ux-audit/audit-inhibition-390.jpg\n?? docs/site-wide-ux-audit/audit-inhibition-768.jpg\n?? docs/site-wide-ux-audit/audit-keyboard-focus.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-03b.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-1024.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-1280.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-1440.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-1600.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-390.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-768.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-after-reference.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-axis-after.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-axis-before.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-before-reference.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-saturation-gate-full.jpg\n?? docs/site-wide-ux-audit/audit-kinetics-saturation-gate.jpg\n?? docs/site-wide-ux-audit/audit-model-notes-1024.jpg\n?? docs/site-wide-ux-audit/audit-model-notes-1280.jpg\n?? docs/site-wide-ux-audit/audit-model-notes-1440.jpg\n?? docs/site-wide-ux-audit/audit-model-notes-1600.jpg\n?? docs/site-wide-ux-audit/audit-model-notes-390.jpg\n?? docs/site-wide-ux-audit/audit-model-notes-768.jpg\n?? docs/site-wide-ux-audit/audit-reaction-energy-1024.jpg\n?? docs/site-wide-ux-audit/audit-reaction-energy-1280.jpg\n?? docs/site-wide-ux-audit/audit-reaction-energy-1440.jpg\n?? docs/site-wide-ux-audit/audit-reaction-energy-1600.jpg\n?? docs/site-wide-ux-audit/audit-reaction-energy-390.jpg\n?? docs/site-wide-ux-audit/audit-reaction-energy-768.jpg\n?? docs/site-wide-ux-audit/audit-reference-1440.jpg\n?? docs/site-wide-ux-audit/audit-reference-bottom-mobile.jpg\n?? docs/site-wide-ux-audit/audit-regulation-1024.jpg\n?? docs/site-wide-ux-audit/audit-regulation-1280.jpg\n?? docs/site-wide-ux-audit/audit-regulation-1440.jpg\n?? docs/site-wide-ux-audit/audit-regulation-1600.jpg\n?? docs/site-wide-ux-audit/audit-regulation-390.jpg\n?? docs/site-wide-ux-audit/audit-regulation-3d-mobile.jpg\n?? docs/site-wide-ux-audit/audit-regulation-3d.jpg\n?? docs/site-wide-ux-audit/audit-regulation-768.jpg\n?? docs/site-wide-ux-audit/audit-regulation-adp-label.jpg\n?? docs/site-wide-ux-audit/audit-regulation-clamp.jpg\n?? docs/site-wide-ux-audit/audit-regulation-comparison-dialog.jpg\n?? docs/site-wide-ux-audit/audit-regulation-drag-after.jpg\n?? docs/site-wide-ux-audit/audit-regulation-drag-before.jpg\n?? docs/site-wide-ux-audit/audit-regulation-large-mobile.jpg\n?? docs/site-wide-ux-audit/audit-regulation-large.jpg\n?? docs/site-wide-ux-audit/audit-start-1024.jpg\n?? docs/site-wide-ux-audit/audit-start-1280.jpg\n?? docs/site-wide-ux-audit/audit-start-1440.jpg\n?? docs/site-wide-ux-audit/audit-start-1600.jpg\n?? docs/site-wide-ux-audit/audit-start-390.jpg\n?? docs/site-wide-ux-audit/audit-start-768.jpg\n?? docs/site-wide-ux-audit/axis-comparison.json\n?? docs/site-wide-ux-audit/dom-carbonic-anhydrase-1440.txt\n?? docs/site-wide-ux-audit/dom-carbonic-anhydrase-390.txt\n?? docs/site-wide-ux-audit/dom-inhibition-1440.txt\n?? docs/site-wide-ux-audit/dom-inhibition-390.txt\n?? docs/site-wide-ux-audit/dom-kinetics-1440.txt\n?? docs/site-wide-ux-audit/dom-kinetics-390.txt\n?? docs/site-wide-ux-audit/dom-model-notes-1440.txt\n?? docs/site-wide-ux-audit/dom-model-notes-390.txt\n?? docs/site-wide-ux-audit/dom-reaction-energy-1440.txt\n?? docs/site-wide-ux-audit/dom-reaction-energy-390.txt\n?? docs/site-wide-ux-audit/dom-regulation-1440.txt\n?? docs/site-wide-ux-audit/dom-regulation-390.txt\n?? docs/site-wide-ux-audit/dom-start-1440.txt\n?? docs/site-wide-ux-audit/dom-start-390.txt\n?? docs/site-wide-ux-audit/energy-graph-text-styles.json\n?? docs/site-wide-ux-audit/evidence-manifest.json\n?? docs/site-wide-ux-audit/focus-return-comparison.json\n?? docs/site-wide-ux-audit/keyboard-navigation.json\n?? docs/site-wide-ux-audit/lifecycle-harness-run-1.json\n?? docs/site-wide-ux-audit/lifecycle-harness-run-2.json\n?? docs/site-wide-ux-audit/overview-1024.jpg\n?? docs/site-wide-ux-audit/overview-1280.jpg\n?? docs/site-wide-ux-audit/overview-1440.jpg\n?? docs/site-wide-ux-audit/overview-1600.jpg\n?? docs/site-wide-ux-audit/overview-390.jpg\n?? docs/site-wide-ux-audit/overview-768.jpg\n?? docs/site-wide-ux-audit/production-console-after-stress.json\n?? docs/site-wide-ux-audit/production-console.json\n?? docs/site-wide-ux-audit/production-route-stress.json\n?? docs/site-wide-ux-audit/regulation-clamp-high-dom.txt\n?? docs/site-wide-ux-audit/regulation-clamp-low-dom.txt\n?? docs/site-wide-ux-audit/regulation-clamp-return-dom.txt\n?? docs/site-wide-ux-audit/responsive-metrics.json\n?? docs/site-wide-ux-audit/saturation-gate-dom.txt\n?? docs/site-wide-ux-audit/scroll-bottom-checks.json\n?? docs/site-wide-ux-audit/verification.json",
+    "stderr": "warning: unable to access 'C:\\Users\\CH P/.config/git/ignore': Permission denied\nwarning: unable to access 'C:\\Users\\CH P/.config/git/ignore': Permission denied"
+  },
+  "git_diff_stat": {
+    "command": "git diff --stat",
+    "stdout": "",
+    "stderr": ""
+  },
+  "git_staged_diff_stat": {
+    "command": "git diff --cached --stat",
+    "stdout": "",
+    "stderr": "warning: unable to access 'C:\\Users\\CH P/.config/git/ignore': Permission denied"
+  },
+  "limits": [
+    "Actual reduced-motion browser media condition unverified",
+    "Actual 200 percent browser zoom unverified",
+    "No real mobile/projector/screen reader/heap/offline profile"
+  ],
+  "text_note": "Numeric DOM measurements are authoritative; some legacy DOM text captures have encoding loss. Fresh issue DOM captures preserve UTF-8.",
+  "report_issue_details": 16,
+  "final_working_tree_check": "PASS"
+}

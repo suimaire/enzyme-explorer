@@ -1,7 +1,10 @@
+import {modelNotesHash} from '../../app/modelNotesNavigation';
 import {useMemo, useState} from 'react';
+import {useLearningState} from '../../app/LearningSession';
 import {ProgressCurvePlot} from './ProgressCurvePlot';
 import {PredictQuestion, Reveal, usePredictions} from '../../shared/components/Prediction';
 import {TeachingModel} from '../../shared/components/Callout';
+import {SectionJumpButton} from '../../shared/components/SectionJumpButton';
 import {assayDuration, generateProgressCurve, initialRateTangent, measuredInitialVelocity} from '../../kinetics/progressCurve';
 import type {AssayResult, MichaelisMentenParameters} from '../../kinetics/types';
 
@@ -13,9 +16,8 @@ type QuestionKey = 'linear';
 /**
  * 03A — where a v0 value comes from.
  *
- * A student picks [S]₀, runs an assay, sees a product progress curve, and only then measures its initial
- * slope. The Michaelis–Menten curve is never shown here; it is assembled in 03B out of the points measured
- * in this panel.
+ * A student picks [S]₀, runs an assay, sees a product progress curve, then records the model's t=0 rate.
+ * The tangent illustrates the experimental slope concept; the button records an analytical model value.
  */
 export function InitialVelocityPanel({
   parameters,
@@ -28,10 +30,11 @@ export function InitialVelocityPanel({
   onRecord: (result: AssayResult) => void;
   onClear: () => void;
 }) {
-  const [substrate, setSubstrate] = useState<number>(SUBSTRATE_CHOICES[2]);
-  const [run, setRun] = useState<{substrate: number} | null>(null);
-  const [measured, setMeasured] = useState(false);
-  const predictions = usePredictions<QuestionKey>();
+  const [substrate, setSubstrate] = useLearningState('kinetics', 'initialSubstrate');
+  const [run, setRun] = useLearningState('kinetics', 'assayRun');
+  const [measured, setMeasured] = useLearningState('kinetics', 'measured');
+  const [duplicateMeasurement, setDuplicateMeasurement] = useState(false);
+  const predictions = usePredictions<QuestionKey>('initial');
 
   const simulation = useMemo(() => {
     if (!run) return null;
@@ -49,23 +52,27 @@ export function InitialVelocityPanel({
   const startRun = () => {
     setRun({substrate});
     setMeasured(false);
+    setDuplicateMeasurement(false);
   };
 
   const measure = () => {
     if (!run || !simulation) return;
     setMeasured(true);
+    setDuplicateMeasurement(alreadyRecorded);
     if (!alreadyRecorded) {
       onRecord({initialSubstrate: run.substrate, initialVelocity: simulation.velocity, parameters});
     }
   };
 
   return (
-    <div className="workbench" data-testid="panel-03a">
+    <div className="workbench mobile-experiment" data-testid="panel-03a">
       <section className="controls" aria-label="측정 조건">
-        <h3>반응 측정하기</h3>
+        <h3 id="initial-controls" className="section-jump-target" tabIndex={-1}>반응 측정하기</h3>
         <p className="small">
-          효소 시료 X를 일정한 농도로 사용합니다. 이 측정의 목적은 효소의 반응속도 상수를 알아내는 것이며, 03B에서 그
-          값을 구체적으로 다룹니다.
+          효소 시료 X를 일정한 농도로 사용합니다. 기질 농도에 따른 초기 속도를 관찰하고, 03B에서 모델 곡선과 비교합니다.
+        </p>
+        <p className="small" data-testid="virtual-measurement-note">
+          실험 원자료가 아닌 모델 계산 기반 가상 측정입니다. 무작위 측정 오차 없이, 동일 조건은 1개 측정점으로 관리합니다.
         </p>
         <p className="small flow-note" data-testid="velocity-flow">
           반응 진행 곡선 → 초기 구간의 기울기 → 초기 속도 v₀ → v₀ 대 [S] 그래프(03B)
@@ -86,10 +93,29 @@ export function InitialVelocityPanel({
             초기 속도 측정
           </button>
         ) : null}
+        <div aria-live="polite" data-testid="measurement-status">
+          {measured && duplicateMeasurement && alreadyRecorded
+            ? <p className="small">동일 조건의 모델값은 이미 기록되어 있습니다. 독립 반복 실험으로 추가하지 않습니다.</p>
+            : null}
+        </div>
+        {measured && simulation ? <div className="readout compact-feedback mobile-experiment-helper" data-testid="initial-compact-readout" aria-live="polite">
+          <h3>현재 가상 측정</h3>
+          <p className="small">모델 계산 기반 · 측정한 조건의 기록값</p>
+          <dl>
+            <div><dt>측정한 [S]₀</dt><dd>{run!.substrate} µM</dd></div>
+            <div><dt>측정된 v₀</dt><dd>{simulation.velocity.toFixed(1)} nM·s⁻¹</dd></div>
+          </dl>
+        </div> : null}
+        <SectionJumpButton targetId="initial-graph">진행 곡선에서 확인 ↓</SectionJumpButton>
+        <div className="mobile-experiment-helper">
+          <p className="small">해설을 보려면 예측도 확정하세요.</p>
+          <SectionJumpButton targetId="initial-prediction">예측으로 이동 ↓</SectionJumpButton>
+        </div>
         <TeachingModel>비가역 반응으로 단순화한 Michaelis–Menten 모델</TeachingModel>
       </section>
 
       <section className="workspace" aria-label="반응 진행 곡선">
+        <h3 id="initial-graph" className="section-jump-target mobile-experiment-helper" tabIndex={-1}>반응 진행 곡선</h3>
         {simulation ? (
           <>
             <p className="plot-caption">
@@ -100,22 +126,11 @@ export function InitialVelocityPanel({
         ) : (
           <p className="placeholder-note">초기 기질 농도 [S]₀를 고르고 반응을 시작하면 반응 진행 곡선(progress curve)이 그려집니다.</p>
         )}
+        <SectionJumpButton targetId="initial-controls">측정 조작으로 돌아가기 ↑</SectionJumpButton>
+        <SectionJumpButton targetId="initial-measurements">모은 측정값에서 확인 ↓</SectionJumpButton>
       </section>
 
       <section className="inquiry" aria-label="질문과 측정 결과">
-        <PredictQuestion
-          predictions={predictions}
-          name="linear"
-          testId="q-linear"
-          question="반응이 시작된 뒤 생성물은 일정한 속도로 계속 쌓일까?"
-          choices={[
-            {id: 'constant', label: '그렇다 — 생성물 농도 [P]가 직선으로 증가한다'},
-            {id: 'slows', label: '아니다 — 처음에 가장 빠르게 증가하고 점차 느려진다'},
-            {id: 'speeds', label: '아니다 — 처음에는 느리다가 점차 빨라진다'},
-          ]}
-          hint="예측을 확정한 뒤 반응을 시작해 비교해 보세요."
-        />
-
         <div className="readout">
           <h3>측정 결과</h3>
           {measured && simulation ? (
@@ -130,12 +145,12 @@ export function InitialVelocityPanel({
               </div>
             </dl>
           ) : (
-            <p className="small">반응을 시작한 뒤, 초기 구간의 기울기로 초기 속도(initial velocity, v₀)를 측정하세요.</p>
+            <p className="small">반응을 시작한 뒤, 측정 버튼으로 모델의 초기 속도(initial velocity, v₀)를 기록하세요.</p>
           )}
         </div>
 
         <div className="readout">
-          <h3>모은 측정값 ({assays.length}개)</h3>
+          <h3 id="initial-measurements" className="section-jump-target" tabIndex={-1}>모은 측정값 ({assays.length}개)</h3>
           {assays.length ? (
             <table data-testid="assay-table">
               <thead>
@@ -166,6 +181,22 @@ export function InitialVelocityPanel({
               측정값 모두 지우기
             </button>
           ) : null}
+          <SectionJumpButton targetId="initial-controls">다른 [S]로 측정하기 ↑</SectionJumpButton>
+        </div>
+        <div id="initial-prediction" className="section-jump-target" tabIndex={-1} role="group" aria-label="진행 곡선 예측">
+          <PredictQuestion
+            predictions={predictions}
+            name="linear"
+            testId="q-linear"
+            question="반응이 시작된 뒤 생성물은 일정한 속도로 계속 쌓일까?"
+            choices={[
+              {id: 'constant', label: '그렇다 — 생성물 농도 [P]가 직선으로 증가한다'},
+              {id: 'slows', label: '아니다 — 처음에 가장 빠르게 증가하고 점차 느려진다'},
+              {id: 'speeds', label: '아니다 — 처음에는 느리다가 점차 빨라진다'},
+            ]}
+            hint="예측을 확정한 뒤 반응을 시작해 비교해 보세요."
+          />
+          <SectionJumpButton targetId="initial-controls">측정 조작으로 돌아가기 ↑</SectionJumpButton>
         </div>
       </section>
 
@@ -186,8 +217,12 @@ export function InitialVelocityPanel({
             점들을 모아 그래프를 완성합니다.
           </p>
           <p className="small">
+            실험에서는 초기 구간의 기울기로 v₀를 추정합니다. 이 교육용 도구의 측정 버튼은 현재 모델의 t=0 초기 속도를
+            계산하여 기록합니다.
+          </p>
+          <p className="small">
             이 시뮬레이션은 P = S₀ − S 조건에서 dS/dt = −Vmax·S/(Km + S)를 적분합니다. 역반응, 생성물 저해(product
-            inhibition), 효소 불활성화는 고려하지 않습니다. 자세한 내용은 <a href="#/model-notes">모델 및 주의사항</a>을
+            inhibition), 효소 불활성화는 고려하지 않습니다. 자세한 내용은 <a href={modelNotesHash('kinetics')}>모델 및 주의사항</a>을
             참고하세요.
           </p>
         </Reveal>

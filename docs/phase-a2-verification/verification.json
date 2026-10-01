@@ -1,0 +1,219 @@
+{
+  "date": "2026-10-01",
+  "timezone": "Asia/Seoul",
+  "scope": [
+    "UX-002",
+    "UX-003",
+    "UX-004",
+    "UX-005"
+  ],
+  "branch": "main",
+  "head": "6d19656f77cf812b2001ef57328bc15e66871dac",
+  "baseline": {
+    "testFiles": 11,
+    "tests": 182,
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed",
+    "diffCheck": "passed",
+    "firstTestRun": "181 passed, 1 existing reaction-energy domain test timed out; unmodified rerun passed all 182"
+  },
+  "final": {
+    "testFiles": 12,
+    "tests": 195,
+    "addedVitestTests": 13,
+    "typecheck": "passed",
+    "lint": "passed",
+    "build": "passed",
+    "diffCheck": "passed"
+  },
+  "browser": {
+    "engine": "Microsoft Edge",
+    "desktop": {
+      "viewport": [
+        1440,
+        900
+      ],
+      "checks": 44,
+      "result": "ALL PHASE A2 CHECKS PASSED",
+      "file": "checks-1440.json"
+    },
+    "mobile": {
+      "viewport": [
+        390,
+        844
+      ],
+      "checks": 44,
+      "result": "ALL PHASE A2 CHECKS PASSED",
+      "file": "checks-390.json"
+    },
+    "responsive": "No horizontal page or note overflow; new mobile maximum/virtual note 3 lines, duplicate/rescale note 2 lines, saturation ratio 1 line",
+    "console": {
+      "desktopApp": [],
+      "mobileApp": [],
+      "mobileFixture": []
+    },
+    "limitation": "CSS viewport override, not physical phone testing"
+  },
+  "energy": {
+    "formula": "min(LOWERING_RANGE.max, clampTransitionState(TS, product) - max(REACTANT_ENERGY, product) - MIN_BARRIER)",
+    "minimumBarrier": 5,
+    "controlMaximum": 35,
+    "representative": {
+      "transitionState": 55,
+      "product": 30,
+      "oldRequest": 35,
+      "newMaximum": 20,
+      "selectedReduction": 20,
+      "appliedReduction": 20,
+      "forward": [
+        55,
+        35
+      ],
+      "reverse": [
+        25,
+        5
+      ]
+    },
+    "zeroAllowed": "Representable as 0; disabled when no barrier reduction is possible",
+    "modelCalculation": "unchanged"
+  },
+  "saturation": {
+    "substrateMaximum": 600,
+    "paths": [
+      "[S] >= 4Km: near-saturation explanation",
+      "[S] reaches maximum below 4Km: range-limit explanation"
+    ],
+    "predictionRequired": true,
+    "kmResults": {
+      "energy": {
+        "maximum": "20",
+        "value": "20",
+        "forward": "55 → 35 kJ·mol⁻¹",
+        "reverse": "25 → 5 kJ·mol⁻¹"
+      },
+      "km100": {
+        "path": "near",
+        "ratio": "현재 [S] / Km = 4.0 · v₀ = 0.80 Vmax",
+        "fraction": "80.0%"
+      },
+      "km150": {
+        "path": "near",
+        "ratio": "현재 [S] / Km = 4.0 · v₀ = 0.80 Vmax",
+        "fraction": "80.0%"
+      },
+      "km155": {
+        "path": "range",
+        "ratio": "현재 [S] / Km = 3.9 · v₀ = 0.79 Vmax",
+        "fraction": "79.5%"
+      },
+      "km300": {
+        "path": "range",
+        "ratio": "현재 [S] / Km = 2.0 · v₀ = 0.67 Vmax",
+        "fraction": "66.7%"
+      },
+      "axis": {
+        "maximum": "330.000",
+        "feedback": "속도 축 자동 확장: 115 → 330 nM·s⁻¹. 두 곡선은 같은 축으로 비교합니다."
+      },
+      "measurement": {
+        "value": "40.0 nM·s⁻¹",
+        "rows": 1,
+        "duplicateFeedback": "동일 조건의 모델값은 이미 기록되어 있습니다. 독립 반복 실험으로 추가하지 않습니다."
+      }
+    }
+  },
+  "axis": {
+    "policy": "Preserve reference headroom, expand to current Vmax * 1.1 as needed; one shared y-axis",
+    "example": [
+      115,
+      330
+    ],
+    "xAxis": [
+      0,
+      600
+    ]
+  },
+  "measurement": {
+    "source": "Analytical model initial rate at t=0, no random measurement noise",
+    "conditionPolicy": "One collected point per condition; inline duplicate feedback",
+    "example": {
+      "substrate": 50,
+      "velocity": 40,
+      "rowsAfterRepeat": 1
+    }
+  },
+  "session": {
+    "architectureAndSnapshotTypes": "unchanged",
+    "measurementReferenceRoundTrip": "passed",
+    "baselineModuleRoundTrip": "passed",
+    "explicitResetRoundTrip": "passed"
+  },
+  "applicationFiles": [
+    "src/modules/reaction-energy/energyProfile.ts",
+    "src/modules/reaction-energy/ReactionEnergyLab.tsx",
+    "src/modules/kinetics/InitialVelocityPanel.tsx",
+    "src/modules/kinetics/MichaelisMentenPanel.tsx",
+    "src/modules/kinetics/MichaelisMentenPlot.tsx"
+  ],
+  "testFiles": [
+    "tests/phaseA2.test.tsx",
+    "tests/browser/phase-a2-harness.html",
+    "tests/browser/phase-a2-harness.tsx"
+  ],
+  "remainingIssues": [
+    [
+      "UX-006",
+      "그래프 텍스트 대비"
+    ],
+    [
+      "UX-007",
+      "그래프·구조 핵심 글씨 크기"
+    ],
+    [
+      "UX-008",
+      "모바일 조작과 결과의 거리"
+    ],
+    [
+      "UX-009",
+      "당인산 비교 dialog 포커스 복귀"
+    ],
+    [
+      "UX-010",
+      "Reference 목차·anchor"
+    ],
+    [
+      "UX-011",
+      "Start의 05 소개"
+    ],
+    [
+      "UX-012",
+      "본문 바로가기·route 문맥"
+    ],
+    [
+      "UX-013",
+      "ADP caption"
+    ],
+    [
+      "UX-014",
+      "rail 예정 표시"
+    ],
+    [
+      "UX-015",
+      "footer 과정 범위"
+    ],
+    [
+      "UX-016",
+      "resize 후 현재 rail 항목 노출"
+    ]
+  ],
+  "unchanged": [
+    "Existing UX-001 work preserved",
+    "Session store/types/restore architecture",
+    "Package/dependencies",
+    "Global CSS/design",
+    "Branch/HEAD/staged state"
+  ],
+  "developmentHistory": "One fixture assertion corrected for floating-point headroom 114.99999999999999 vs 115; original failure retained in development-fixture-history.json, both final runs pass",
+  "buildWarnings": "Existing chunks above 500 kB (Three.js / ProteinStructure)"
+}

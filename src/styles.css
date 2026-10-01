@@ -11,6 +11,7 @@
   --surface: #f7f9fb;
   --warn: #8a5908;
   --warn-line: #bd8b29;
+  --section-jump-gap: 16px;
 }
 
 * {
@@ -96,6 +97,30 @@ hr {
 }
 
 /* ---------- shell ---------- */
+.skip-link {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 100;
+  padding: 10px 16px;
+  background: #fff;
+  border: 2px solid var(--accent);
+  border-radius: 5px;
+  transform: translateY(calc(-100% - 20px));
+}
+.skip-link:focus { transform: none; }
+#main-content,
+.notes h3[id] { scroll-margin-top: var(--section-jump-gap); }
+.notes-toc { padding: 8px 0; border-bottom: 1px solid var(--line); }
+.notes-toc p { margin: 6px 0; }
+.notes-toc ul { display: flex; flex-wrap: wrap; gap: 6px 16px; list-style: none; padding: 0; margin: 0; }
+.notes-toc li { margin: 0; }
+.notes-toc a { display: inline-block; padding: 8px 0; }
+.notes-return { margin: 8px 0; }
+.notes-return a { display: inline-block; padding: 6px 0; }
+.notes h4 { margin: 14px 0 6px; }
+.notes-details { border-top: 1px solid var(--line); padding-top: 8px; }
+.notes-details summary { cursor: pointer; color: var(--accent); padding: 8px 0; }
 .site-header {
   padding: 18px max(20px, calc((100% - 1400px) / 2));
   display: flex;
@@ -179,7 +204,7 @@ h1 span {
   color: var(--soft);
 }
 
-main.module {
+div.module {
   max-width: 1440px;
   padding: 22px max(20px, 24px) 28px;
   margin: auto;
@@ -302,7 +327,7 @@ h2 {
     grid-template-columns: minmax(0, 1fr);
     grid-template-areas: 'workspace' 'controls' 'inquiry' 'observation';
   }
-  main.module {
+  div.module {
     padding: 18px 14px 26px;
   }
   h2 {
@@ -311,6 +336,34 @@ h2 {
 }
 
 /* ---------- controls ---------- */
+.mobile-experiment-helper {
+  display: none;
+}
+.section-jump-target {
+  /* Header and module rail are in normal flow and scroll away with the document. */
+  scroll-margin-top: var(--section-jump-gap);
+}
+@media (max-width: 760px) {
+  .workbench.mobile-experiment {
+    /* Match the existing semantic DOM order; leave the desktop/tablet grid intact. */
+    grid-template-areas: 'controls' 'workspace' 'inquiry' 'observation';
+  }
+  .mobile-experiment-helper {
+    display: block;
+  }
+  .section-jump {
+    margin: 8px 0;
+  }
+  .compact-feedback {
+    margin-top: 12px;
+    padding-top: 10px;
+    border-top: 1px solid var(--line);
+  }
+  .compact-feedback p {
+    margin: 0 0 6px;
+  }
+}
+
 .slider-control {
   margin-bottom: 14px;
 }
@@ -608,6 +661,9 @@ fieldset legend {
 /* ---------- plots ---------- */
 .plot,
 .energy-diagram {
+  --chart-font-axis: 14px;
+  --chart-font-key: 14px;
+  --chart-font-tick: 13px;
   width: 100%;
   overflow: hidden;
 }
@@ -622,6 +678,21 @@ fieldset legend {
 }
 .plot-grid text {
   fill: var(--soft);
+  font-size: var(--chart-font-tick);
+}
+.plot svg[data-narrow='true'],
+.energy-diagram svg[data-narrow='true'] {
+  --chart-font-axis: 13px;
+  --chart-font-key: 13px;
+  --chart-font-tick: 12px;
+}
+.chart-key {
+  font-size: var(--chart-font-key);
+  /* Keep guide text distinct where a curve passes behind it. */
+  paint-order: stroke;
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-linejoin: round;
 }
 .plot-frame {
   fill: none;
@@ -630,7 +701,7 @@ fieldset legend {
 }
 .axis-label {
   fill: #3a4a54;
-  font-size: 13px;
+  font-size: var(--chart-font-axis, 14px);
 }
 .axis-sublabel {
   fill: var(--soft);
@@ -638,7 +709,7 @@ fieldset legend {
 }
 .state-label {
   fill: #3a4a54;
-  font-size: 12.5px;
+  font-size: var(--chart-font-key, 14px);
   font-weight: bold;
 }
 .level-guide {
@@ -666,13 +737,16 @@ ul.legend {
   gap: 8px 18px;
   padding: 10px 0 0;
   margin: 0;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--soft);
 }
 ul.legend li {
   display: flex;
   align-items: center;
   gap: 6px;
+}
+@media (max-width: 620px) {
+  ul.legend { font-size: 13px; }
 }
 
 /* ---------- start page ---------- */
@@ -866,7 +940,7 @@ details summary {
 .atom-label {
   position: absolute;
   pointer-events: none;
-  font-size: 12px;
+  font-size: 12.5px;
   font-weight: bold;
   color: #3c4d57;
   background: #ffffffdc;
@@ -876,12 +950,19 @@ details summary {
   border-bottom: 2px solid #9fb0ba;
 }
 .atom-label.metal {
+  font-size: 15px;
   color: #6d3b03;
   border-bottom-color: var(--warn-line);
 }
 .atom-label.selected {
+  font-size: 15px;
   color: #8c1f5c;
   border-bottom-color: #b0327c;
+}
+.atom-label.measure { font-size: 14px; }
+@media (max-width: 620px) {
+  .atom-label.selected, .atom-label.metal { font-size: 14px; }
+  .atom-label.measure { font-size: 13px; }
 }
 .webgl-error {
   padding: 20px;
@@ -1006,7 +1087,7 @@ details summary {
   color: #2d3d47;
   background: #fffffff0;
   border-bottom-color: #5c6b75;
-  font-size: 11.5px;
+  font-size: 12.5px;
 }
 .atom-label.noted {
   border-bottom-color: var(--accent);

@@ -1,11 +1,12 @@
 import {useCallback, useEffect, useState} from 'react';
 import {hashFor, moduleFromHash, type ModuleId} from './modules';
+import {modelNotesSectionFromHash, type ModelNotesSection} from './modelNotesNavigation';
 
 /** Current module from the URL hash, kept in sync with the browser's back and forward buttons. */
-export function useHashModule(): [ModuleId, (id: ModuleId) => void] {
-  const [id, setId] = useState<ModuleId>(() => moduleFromHash(window.location.hash));
+export function useHashModule(): [ModuleId, (id: ModuleId) => void, ModelNotesSection | null] {
+  const [hash, setHash] = useState(() => window.location.hash);
   useEffect(() => {
-    const onChange = () => setId(moduleFromHash(window.location.hash));
+    const onChange = () => setHash(window.location.hash);
     window.addEventListener('hashchange', onChange);
     return () => window.removeEventListener('hashchange', onChange);
   }, []);
@@ -14,5 +15,5 @@ export function useHashModule(): [ModuleId, (id: ModuleId) => void] {
     // Each module starts at its own question rather than at the scroll position of the previous one.
     window.scrollTo({top: 0});
   }, []);
-  return [id, navigate];
+  return [moduleFromHash(hash), navigate, modelNotesSectionFromHash(hash)];
 }

@@ -1,10 +1,15 @@
-import {useMemo, useState} from 'react';
+import {modelNotesHash} from '../../app/modelNotesNavigation';
+import {useMemo} from 'react';
+import {useLearningState, useResetLearningModule} from '../../app/LearningSession';
+import {ENERGY_DEFAULTS as DEFAULTS} from '../../app/learningSessionStore';
 import {EnergyDiagram, PATHWAY_COLORS} from './EnergyDiagram';
 import {
   BARRIER_TOP_RANGE,
   LOWERING_RANGE,
+  MIN_BARRIER,
   PRODUCT_RANGE,
   clampTransitionState,
+  maxBarrierLowering,
   reactionEnergyProfile,
   relativeRateFactor,
 } from './energyProfile';
@@ -13,9 +18,8 @@ import {PredictQuestion, Reveal, usePredictions} from '../../shared/components/P
 import {Segmented} from '../../shared/components/Segmented';
 import {Slider} from '../../shared/components/Slider';
 import {TeachingModel} from '../../shared/components/Callout';
+import {SectionJumpButton} from '../../shared/components/SectionJumpButton';
 import {multiplier, signed} from '../../shared/math/format';
-
-const DEFAULTS = {productEnergy: -18, barrierTop: 55, barrierLowering: 20};
 
 type QuestionKey = 'opening' | 'deltaG' | 'barrier' | 'rate' | 'equilibrium';
 
@@ -24,12 +28,13 @@ type QuestionKey = 'opening' | 'deltaG' | 'barrier' | 'rate' | 'equilibrium';
  * switches the enzyme on and reads the same three numbers off the same axis.
  */
 export function ReactionEnergyLab() {
-  const [productEnergy, setProductEnergy] = useState(DEFAULTS.productEnergy);
-  const [barrierTop, setBarrierTop] = useState(DEFAULTS.barrierTop);
-  const [barrierLowering, setBarrierLowering] = useState(DEFAULTS.barrierLowering);
-  const [enzyme, setEnzyme] = useState(false);
+  const [productEnergy, setProductEnergy] = useLearningState('reactionEnergy', 'productEnergy');
+  const [barrierTop, setBarrierTop] = useLearningState('reactionEnergy', 'barrierTop');
+  const [barrierLowering, setBarrierLowering] = useLearningState('reactionEnergy', 'barrierLowering');
+  const [enzyme, setEnzyme] = useLearningState('reactionEnergy', 'enzyme');
   /** Remembers that the catalysed pathway has been seen at least once, so the follow-up questions are earned. */
-  const [enzymeSeen, setEnzymeSeen] = useState(false);
+  const [enzymeSeen, setEnzymeSeen] = useLearningState('reactionEnergy', 'enzymeSeen');
+  const resetSession = useResetLearningModule('reactionEnergy');
   const predictions = usePredictions<QuestionKey>();
 
   const profile = useMemo(
@@ -40,11 +45,23 @@ export function ReactionEnergyLab() {
   /** The slider can ask for a transition state below an end point; this is the value the model actually uses. */
   const clampedTop = clampTransitionState(barrierTop, productEnergy);
   const clamped = clampedTop > barrierTop;
+  const maxLowering = maxBarrierLowering(barrierTop, productEnergy);
+
+  // Update the selected reduction with the energy condition, before the next render uses either value.
+  const changeProductEnergy = (value: number) => {
+    setBarrierLowering((previous) => Math.min(previous, maxBarrierLowering(barrierTop, value)));
+    setProductEnergy(value);
+  };
+  const changeBarrierTop = (value: number) => {
+    setBarrierLowering((previous) => Math.min(previous, maxBarrierLowering(value, productEnergy)));
+    setBarrierTop(value);
+  };
 
   const openingLocked = predictions.get('opening').locked;
   const followUps: QuestionKey[] = ['deltaG', 'barrier', 'rate', 'equilibrium'];
 
   const reset = () => {
+    resetSession();
     setProductEnergy(DEFAULTS.productEnergy);
     setBarrierTop(DEFAULTS.barrierTop);
     setBarrierLowering(DEFAULTS.barrierLowering);
@@ -58,17 +75,39 @@ export function ReactionEnergyLab() {
     if (value === 'on') setEnzymeSeen(true);
   };
 
+  // The compact feedback and full observation use the same model values and formatting.
+  const energyValues = (compact = false) => <>
+    <div>
+      <dt>{compact ? 'ΔG' : '반응의 ΔG'}</dt>
+      <dd data-testid={compact ? 'compact-delta-g' : 'readout-delta-g'}>{signed(profile.deltaG, 0)} kJ·mol⁻¹</dd>
+    </div>
+    <div>
+      <dt>{compact ? '정방향 장벽' : '정반응 활성화 장벽 ΔG‡'}</dt>
+      <dd data-testid={compact ? 'compact-forward' : 'readout-forward'}>
+        {uncatalyzed.forwardBarrier.toFixed(0)}
+        {catalyzed ? <> → <strong>{catalyzed.forwardBarrier.toFixed(0)}</strong></> : null} kJ·mol⁻¹
+      </dd>
+    </div>
+    <div>
+      <dt>{compact ? '역방향 장벽' : '역반응 활성화 장벽 ΔG‡'}</dt>
+      <dd data-testid={compact ? 'compact-reverse' : 'readout-reverse'}>
+        {uncatalyzed.reverseBarrier.toFixed(0)}
+        {catalyzed ? <> → <strong>{catalyzed.reverseBarrier.toFixed(0)}</strong></> : null} kJ·mol⁻¹
+      </dd>
+    </div>
+  </>;
+
   return (
-    <main className="module" data-testid="module-reaction-energy">
+    <div className="module" data-testid="module-reaction-energy">
       <ModuleHeader
         id="reaction-energy"
         tag={<TeachingModel>하나의 활성화 장벽으로 단순화한 교육용 모델 · 상대 에너지(kJ·mol⁻¹)는 측정값이 아닌 설정값</TeachingModel>}
         onReset={reset}
       />
 
-      <div className="workbench">
+      <div className="workbench mobile-experiment">
         <section className="controls" aria-label="조건 조절">
-          <h3>조건 조절</h3>
+          <h3 id="energy-controls" className="section-jump-target" tabIndex={-1}>조건 조절</h3>
           <Slider
             testId="product-energy"
             label="생성물의 자유에너지"
@@ -77,7 +116,7 @@ export function ReactionEnergyLab() {
             max={PRODUCT_RANGE.max}
             step={PRODUCT_RANGE.step}
             unit="kJ·mol⁻¹"
-            onChange={setProductEnergy}
+            onChange={changeProductEnergy}
             note="반응물 상태를 0으로 고정한 상대값입니다."
           />
           <Slider
@@ -88,41 +127,53 @@ export function ReactionEnergyLab() {
             max={BARRIER_TOP_RANGE.max}
             step={BARRIER_TOP_RANGE.step}
             unit="kJ·mol⁻¹"
-            onChange={setBarrierTop}
+            onChange={changeBarrierTop}
             note={
               clamped
                 ? `${clampedTop} kJ·mol⁻¹로 유지됨: 전이 상태는 그것이 연결하는 두 상태보다 낮을 수 없습니다.`
                 : '반응 경로에서 에너지가 가장 높은 지점입니다. 항상 반응물과 생성물보다 높게 유지됩니다.'
             }
           />
-          <Segmented
-            label="효소"
-            value={enzyme ? 'on' : 'off'}
-            options={
-              [
-                ['off', '없음'],
-                ['on', '있음'],
-              ] as const
-            }
-            onChange={switchEnzyme}
-            disabled={!openingLocked}
-          />
-          {openingLocked ? null : <p className="gate-note">효소를 넣기 전에 첫 번째 예측을 먼저 확정하세요.</p>}
-          <Slider
-            testId="barrier-lowering"
-            label="효소에 의한 전이 상태 에너지 감소"
-            value={barrierLowering}
-            min={LOWERING_RANGE.min}
-            max={LOWERING_RANGE.max}
-            step={LOWERING_RANGE.step}
-            unit="kJ·mol⁻¹"
-            onChange={setBarrierLowering}
-            disabled={!enzyme}
-            note="전이 상태의 에너지에만 적용됩니다. 반응물과 생성물의 에너지는 그대로입니다."
-          />
+          <div id="energy-catalyst" className="section-jump-target" tabIndex={-1} role="group" aria-label="촉매 조작">
+            <Segmented
+              label="효소"
+              value={enzyme ? 'on' : 'off'}
+              options={
+                [
+                  ['off', '없음'],
+                  ['on', '있음'],
+                ] as const
+              }
+              onChange={switchEnzyme}
+              disabled={!openingLocked}
+            />
+            {openingLocked ? <p className="small mobile-experiment-helper" data-testid="catalyst-prerequisite-complete">✓ 예측 확정됨</p> : <>
+              <p className="gate-note">효소를 넣기 전에 첫 번째 예측을 먼저 확정하세요.</p>
+              <SectionJumpButton targetId="energy-prediction">예측으로 이동 ↓</SectionJumpButton>
+            </>}
+            <Slider
+              testId="barrier-lowering"
+              label="효소에 의한 전이 상태 에너지 감소"
+              value={barrierLowering}
+              min={LOWERING_RANGE.min}
+              max={maxLowering}
+              step={LOWERING_RANGE.step}
+              unit="kJ·mol⁻¹"
+              onChange={setBarrierLowering}
+              disabled={!enzyme || maxLowering === 0}
+              note={`현재 조건에서 최대 감소량: ${maxLowering} kJ·mol⁻¹. 정·역반응 장벽을 최소 ${MIN_BARRIER} kJ·mol⁻¹로 유지합니다. 반응물·생성물 에너지는 그대로입니다.`}
+            />
+          </div>
+          <div className="readout compact-feedback mobile-experiment-helper" data-testid="energy-compact-readout">
+            <h3>현재 결과</h3>
+            <dl>{energyValues(true)}</dl>
+          </div>
+          <SectionJumpButton targetId="energy-graph">그래프에서 확인 ↓</SectionJumpButton>
+          <SectionJumpButton targetId="energy-prediction">관찰과 질문으로 이동 ↓</SectionJumpButton>
         </section>
 
         <section className="workspace" aria-label="반응 좌표 다이어그램">
+          <h3 id="energy-graph" className="section-jump-target mobile-experiment-helper" tabIndex={-1}>반응 좌표 다이어그램</h3>
           <EnergyDiagram profile={profile} />
           <ul className="legend">
             <li>
@@ -146,43 +197,30 @@ export function ReactionEnergyLab() {
               반응물·생성물의 에너지 수준
             </li>
           </ul>
+          <SectionJumpButton targetId="energy-controls">조작으로 돌아가기 ↑</SectionJumpButton>
         </section>
 
         <section className="inquiry" aria-label="질문과 관찰 결과">
-          <PredictQuestion
-            predictions={predictions}
-            name="opening"
-            testId="opening-question"
-            question="ΔG < 0인 반응은 반드시 빠르게 일어날까?"
-            choices={[
-              {id: 'yes', label: '그렇다'},
-              {id: 'no', label: '아니다'},
-              {id: 'unknown', label: '이 정보만으로는 알 수 없다'},
-            ]}
-            hint="다이어그램을 조작하기 전에 먼저 정하세요."
-          />
+          <div id="energy-prediction" className="section-jump-target" tabIndex={-1} role="group" aria-label="촉매 비교 전 예측과 관찰">
+            <PredictQuestion
+              predictions={predictions}
+              name="opening"
+              testId="opening-question"
+              question="ΔG < 0인 반응은 반드시 빠르게 일어날까?"
+              choices={[
+                {id: 'yes', label: '그렇다'},
+                {id: 'no', label: '아니다'},
+                {id: 'unknown', label: '이 정보만으로는 알 수 없다'},
+              ]}
+              hint="다이어그램을 조작하기 전에 먼저 정하세요."
+            />
+            {openingLocked ? <SectionJumpButton targetId="energy-catalyst">촉매 조작으로 돌아가기 ↑</SectionJumpButton> : null}
+          </div>
 
           <div className="readout" data-testid="energy-readout">
             <h3>관찰</h3>
             <dl>
-              <div>
-                <dt>반응의 ΔG</dt>
-                <dd data-testid="readout-delta-g">{signed(profile.deltaG, 0)} kJ·mol⁻¹</dd>
-              </div>
-              <div>
-                <dt>정반응 활성화 장벽 ΔG‡</dt>
-                <dd data-testid="readout-forward">
-                  {uncatalyzed.forwardBarrier.toFixed(0)}
-                  {catalyzed ? <> → <strong>{catalyzed.forwardBarrier.toFixed(0)}</strong></> : null} kJ·mol⁻¹
-                </dd>
-              </div>
-              <div>
-                <dt>역반응 활성화 장벽 ΔG‡</dt>
-                <dd data-testid="readout-reverse">
-                  {uncatalyzed.reverseBarrier.toFixed(0)}
-                  {catalyzed ? <> → <strong>{catalyzed.reverseBarrier.toFixed(0)}</strong></> : null} kJ·mol⁻¹
-                </dd>
-              </div>
+              {energyValues()}
               <div className="prose-row">
                 <dt>평형의 위치</dt>
                 <dd data-testid="readout-equilibrium">효소가 있어도 평형의 위치는 변하지 않습니다.</dd>
@@ -286,10 +324,10 @@ export function ReactionEnergyLab() {
           <p className="small">
             엄밀히 말하면 평형 상수를 결정하는 것은 표준 자유에너지 변화 ΔG°이며, 이 다이어그램의 에너지 수준도 표준 상태의
             자유에너지입니다. 자세한 내용과 하나의 장벽으로 그린 모델의 한계는{' '}
-            <a href="#/model-notes">모델 및 주의사항</a>을 참고하세요.
+            <a href={modelNotesHash('energy')}>모델 및 주의사항</a>을 참고하세요.
           </p>
         </Reveal>
       </section>
-    </main>
+    </div>
   );
 }

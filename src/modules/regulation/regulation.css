@@ -1,6 +1,6 @@
 .regulation-module { max-width: 1480px; }
 .site-header.regulation-shell { padding-top: 8px; padding-bottom: 8px; }
-main.regulation-module { padding-top: 12px; }
+div.regulation-module { padding-top: 12px; }
 .regulation-module .module-heading { margin-bottom: 10px; }
 .regulation-module .module-heading h2 { font-size: 26px; line-height: 1.2; }
 .reg-badges { display: flex; gap: 6px; flex-wrap: wrap; }
@@ -34,7 +34,8 @@ main.regulation-module { padding-top: 12px; }
 .reg-steps li[data-reached=true] { border-color: #648fa5; }
 .reg-steps li[aria-current=step] { border-color: #175e84; color: #124e71; background: #edf5f9; border-radius: 4px; }
 .reg-steps li > span { display: block; font-size: 12px; font-weight: bold; }
-.reg-steps small { display: block; font-size: 11px; }
+.reg-steps small { display: block; font-size: 13px; overflow-wrap: anywhere; }
+.reg-steps li[aria-current=step] small { font-size: 14px; font-weight: bold; }
 .reg-observation { height: 445px; overflow-y: auto; padding: 4px; scrollbar-gutter: stable; }
 .reg-pathway { display: flex; flex-direction: column; align-items: stretch; }
 .reg-signal-chain { display: flex; flex-wrap: wrap; gap: 2px 8px; align-content: center; justify-content: center; text-align: center; border: 1px solid #dce6ec; background: #f4f8fa; padding: 6px 10px; border-radius: 8px; min-height: 51px; font-size: 12px; line-height: 1.4; }
@@ -52,12 +53,13 @@ main.regulation-module { padding-top: 12px; }
 .reg-phosphatase { border-color: #ab8856; background: #fcf4e7; color: #795525; }
 .reg-domain > span { font-size: 21px; font-weight: bold; }
 .reg-domain small { font-size: 10px; }
-.reg-domain strong { font-size: 13px; margin-top: 4px; }
+.reg-domain strong { font-size: 14px; margin-top: 4px; }
 .reg-chain-link { text-align: center; color: #758e9e; }
-.reg-domain-caption { text-align: center; font-size: 11px; color: #526570; padding-top: 3px; }
+.reg-domain-caption { text-align: center; font-size: 13px; color: #526570; padding-top: 3px; }
 .reg-current { outline: 2px solid #2b7aa0; outline-offset: 3px; }
-.reg-reactions { min-height: 48px; padding: 5px 2px; font-size: 11.5px; }
+.reg-reactions { min-height: 48px; padding: 5px 2px; font-size: 13px; }
 .reg-reactions > div { display: flex; gap: 8px; justify-content: center; }
+.reg-reactions > div > span { min-width: 0; overflow-wrap: anywhere; }
 .reg-reactions b { min-width: 64px; text-align: right; }
 .reg-reaction-arrow { font-style: normal; font-weight: bold; border-bottom: 1px solid #567986; }
 .reg-metabolite { display: grid; grid-template-columns: auto auto; align-items: center; gap: 0 10px; padding: 6px 15px; background: #f0f6fb; border: 1px solid #9dbbd0; border-radius: 12px; text-align: center; line-height: 1.3; }
@@ -65,7 +67,7 @@ main.regulation-module { padding-top: 12px; }
 .reg-metabolite b { font-size: 23px; }
 .reg-metabolite strong { font-size: 17px; }
 .reg-metabolite small { grid-column: 1 / -1; font-size: 11px; }
-.reg-legend { font-size: 10.5px; text-align: center; margin: 7px 0 0; color: #5e737f; }
+.reg-legend { font-size: 14px; text-align: center; text-wrap: balance; margin: 7px 0 0; color: #5e737f; }
 .reg-playback { display: flex; gap: 6px; flex-wrap: wrap; padding-top: 12px; border-top: 1px solid #e0e7eb; }
 .reg-playback button { font-size: 12px; flex: 1; white-space: nowrap; padding: 6px 7px; }
 .reg-narration { font-size: 13px; line-height: 1.55; min-height: 42px; margin: 8px 0 3px; color: #32566d; }
@@ -132,19 +134,19 @@ main.regulation-module { padding-top: 12px; }
 .reg-carbon-positions span { display: block; border: 1px solid #799cae; border-radius: 3px; background: #fff; }
 .reg-carbon-positions b { display: block; color: #286c96; font-size: 12px; }
 .reg-control-equation { border-left: 3px dashed #698fa8; padding-left: 14px; }
-.reg-structure-source { font-size: 12px; margin: 0 0 5px; }
+.reg-structure-source { font-size: 13px; margin: 0 0 5px; }
 .reg-structure .molecule-viewer { height: clamp(520px, 65vh, 650px); min-height: 0; }
-.reg-structure-legend { display: flex; flex-wrap: wrap; justify-content: space-between; font-size: 11px; font-weight: bold; }
+.reg-structure-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; justify-content: space-between; font-size: 14px; font-weight: bold; }
 .reg-structure-legend span:first-child { color: #176c72; }
 .reg-structure-legend span:last-child { color: #805b2a; }
 .reg-structure-tools { display: flex; gap: 8px; align-items: center; margin-top: 5px; }
 .reg-structure-tools button { font-size: 12px; }
-.reg-picked { font-size: 11px; min-height: 20px; margin: 5px 0; }
+.reg-picked { font-size: 13px; min-height: 20px; margin: 5px 0; }
 .reg-structure-inset { display: flex; align-items: center; gap: 16px; border-block: 1px dashed #c6afce; padding: 10px 8px; margin-top: 10px; background: #fbf8fd; }
 .reg-structure-inset .reg-ser { min-height: 43px; flex: 0 0 190px; }
 .reg-structure-inset .reg-ser > span:last-child { flex-basis: auto; }
 .reg-structure-inset p { font-size: 12px; margin: 3px 0 0; }
-.reg-structure-scope { margin-top: 5px; padding: 6px 9px; border: 1px solid #d3dfe5; border-radius: 7px; background: #f5f9fb; font-size: 11px; line-height: 1.6; }
+.reg-structure-scope { margin-top: 5px; padding: 6px 9px; border: 1px solid #d3dfe5; border-radius: 7px; background: #f5f9fb; font-size: 13px; line-height: 1.6; }
 .reg-structure-scope summary { cursor: pointer; min-height: 32px; display: list-item; align-content: center; font-weight: bold; }
 .reg-structure-scope p { margin: 6px 0; }
 @media (max-width: 1180px) {
@@ -173,8 +175,8 @@ main.regulation-module { padding-top: 12px; }
   .reg-structure-inset { flex-direction: column; gap: 5px; align-items: stretch; }
   .reg-structure-inset .reg-ser { flex: auto; }
   .reg-center .segmented button { padding: 6px; min-height: 44px; }
-  .reg-steps small { font-size: 10px; }
-  .reg-reactions { font-size: 10.5px; }
+  .reg-steps small { font-size: 13px; }
+  .reg-legend, .reg-structure-legend { font-size: 13px; }
   .reg-reactions > div { gap: 4px; }
   .reg-reactions b { min-width: 55px; }
   .reg-domain > span { font-size: 18px; }
@@ -210,7 +212,7 @@ main.regulation-module { padding-top: 12px; }
 .reg-structure-toolbar { display: flex; gap: 10px; align-items: center; margin-bottom: 8px; }
 .reg-structure-toolbar .segmented { margin: 0; flex: 1; min-width: 0; }
 .reg-structure-toolbar .segmented div[role=group] { gap: 0; border-radius: 5px; background: #f0f4f7; padding: 3px; }
-.reg-structure-toolbar .segmented button { background: transparent; border: 0; box-shadow: none; font-size: 12px; min-height: 44px; padding: 6px 10px; }
+.reg-structure-toolbar .segmented button { background: transparent; border: 0; box-shadow: none; font-size: 14px; min-height: 44px; padding: 6px 10px; }
 .reg-structure-toolbar .segmented button[aria-pressed=true] { background: #fff; box-shadow: inset 0 -2px var(--accent); font-weight: bold; }
 .reg-structure-toolbar .segmented button:hover { background: #e8f1f7; }
 .reg-expand { flex: 0 0 auto; border: 0; background: #edf4f8; color: var(--accent-dark); font-size: 13px; }
@@ -219,7 +221,7 @@ main.regulation-module { padding-top: 12px; }
 .reg-structure-frame::backdrop { background: #142b42bf; }
 .reg-structure-frame[data-expanded=true] .reg-focus-title { display: block; font-size: 15px; }
 .reg-structure-frame[data-expanded=true] .molecule-viewer { flex: 1; height: auto; min-height: 160px; }
-.reg-structure-frame[data-expanded=true] .reg-focus-caption { display: block; margin: 8px 0 0; font-size: 12px; color: var(--soft); }
+.reg-structure-frame[data-expanded=true] .reg-focus-caption { display: block; margin: 8px 0 0; font-size: 13px; color: var(--soft); }
 @media (max-width: 1100px) {
   .reg-workspace-structure { grid-template-columns: minmax(0, 1fr); }
   .reg-workspace-structure .reg-input { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 8px 20px; }
@@ -238,7 +240,8 @@ main.regulation-module { padding-top: 12px; }
   .reg-structure-toolbar { flex-wrap: wrap; gap: 6px; }
   .reg-structure-toolbar .segmented { flex-basis: 100%; order: 1; }
   .reg-structure-toolbar .segmented div[role=group] { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .reg-structure-toolbar .segmented button { font-size: 13px; }
   .reg-expand { margin-left: auto; }
   .reg-structure-frame[data-expanded=true] { padding: 10px; }
-  .reg-structure-frame[data-expanded=true] .reg-focus-caption { font-size: 11px; }
+  .reg-structure-frame[data-expanded=true] .reg-focus-caption { font-size: 13px; }
 }

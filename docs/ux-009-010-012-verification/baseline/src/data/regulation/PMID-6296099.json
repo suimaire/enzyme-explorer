@@ -1,0 +1,322 @@
+{
+  "version": "6.9",
+  "hitCount": 1,
+  "request": {
+    "queryString": "EXT_ID:6296099 AND SRC:MED",
+    "internalQuery": "EXT_ID:6296099 AND SRC:MED",
+    "resultType": "CORE",
+    "cursorMark": "*",
+    "pageSize": 25,
+    "sort": "",
+    "synonym": false
+  },
+  "resultList": {
+    "result": [
+      {
+        "id": "6296099",
+        "source": "MED",
+        "pmid": "6296099",
+        "doi": "10.1016/s0021-9258(18)33012-6",
+        "title": "The action of insulin on hepatic fructose 2,6-bisphosphate metabolism.",
+        "authorString": "Pilkis SJ, Chrisman TD, El-Maghrabi MR, Colosia A, Fox E, Pilkis J, Claus TH.",
+        "authorList": {
+          "author": [
+            {
+              "fullName": "Pilkis SJ",
+              "lastName": "Pilkis",
+              "firstName": "S J",
+              "initials": "SJ"
+            },
+            {
+              "fullName": "Chrisman TD",
+              "lastName": "Chrisman",
+              "firstName": "T D",
+              "initials": "TD"
+            },
+            {
+              "fullName": "El-Maghrabi MR",
+              "lastName": "El-Maghrabi",
+              "firstName": "M R",
+              "initials": "MR"
+            },
+            {
+              "fullName": "Colosia A",
+              "lastName": "Colosia",
+              "firstName": "A",
+              "initials": "A"
+            },
+            {
+              "fullName": "Fox E",
+              "lastName": "Fox",
+              "firstName": "E",
+              "initials": "E"
+            },
+            {
+              "fullName": "Pilkis J",
+              "lastName": "Pilkis",
+              "firstName": "J",
+              "initials": "J"
+            },
+            {
+              "fullName": "Claus TH",
+              "lastName": "Claus",
+              "firstName": "T H",
+              "initials": "TH"
+            }
+          ]
+        },
+        "journalInfo": {
+          "issue": "3",
+          "volume": "258",
+          "journalIssueId": 526602,
+          "dateOfPublication": "1983 Feb",
+          "monthOfPublication": 2,
+          "yearOfPublication": 1983,
+          "journal": {
+            "medlineAbbreviation": "J Biol Chem",
+            "title": "The Journal of biological chemistry",
+            "essn": "1083-351X",
+            "issn": "0021-9258",
+            "isoabbreviation": "J Biol Chem",
+            "nlmid": "2985121R"
+          },
+          "printPublicationDate": "1983-02-01"
+        },
+        "pubYear": "1983",
+        "pageInfo": "1495-1503",
+        "abstractText": "The inhibition of hepatocyte 6-phosphofructo-1-kinase by glucagon was suppressed by insulin when the enzyme was measured in crude extracts. However, no effect of either hormone was observed after the removal of allosteric effectors from the enzyme, suggesting that the alterations in activity may be due to changes in the level of fructose 2,6-bisphosphate, a potent allosteric activator of the enzyme. Insulin opposed the action of both glucagon and exogenous cyclic AMP to lower fructose 2,6-bisphosphate levels. The concentration of glucagon and of cyclic AMP that gave a half-maximal decrease in fructose 2,6-bisphosphate levels was increased in the presence of 10 nM insulin from 0.03 to 0.09 nM and from 12 to 36 microM, respectively. Insulin also counteracted the effect of maximal concentrations of epinephrine on fructose 2,6-bisphosphate levels. In the presence of 0.02 nM glucagon or 10 microM epinephrine, 10 nM insulin enhanced 6-phosphofructo-2-kinase and decreased fructose 2,6-bisphosphatase activity in (NH4)2SO4-treated hepatocyte extracts. The bifunctional enzyme 6-phosphofructo-2-kinase/fructose 2,6-bisphosphatase was shown to be a substrate for the cAMP-dependent protein kinase but not for phosphorylase kinase. It was concluded that insulin opposed the action of glucagon and epinephrine by affecting the phosphorylation state of 6-phosphofructo-2-kinase/fructose 2,6-bisphosphatase. Fructose 2,6-bisphosphate levels were decreased in liver cells from diabetic rats. Addition of 30 mM glucose elevated fructose 2,6-bisphosphate levels in cells from fed and 24-h-starved rats but not in cells from diabetic rats. This was probably due to decreases in both 6-phosphofructo-2-kinase and glucokinase activity in the diabetic state. These results show that insulin has both short and long term effects on fructose 2,6-bisphosphate metabolism in liver.",
+        "publicationStatus": "ppublish",
+        "language": "eng",
+        "pubModel": "Print",
+        "pubTypeList": {
+          "pubType": [
+            "Research Support, U.S. Gov't, P.H.S.",
+            "Journal Article"
+          ]
+        },
+        "grantsList": {
+          "grant": [
+            {
+              "agency": "NIADDK NIH HHS",
+              "acronym": "AM",
+              "grantId": "AM18270",
+              "orderIn": 0
+            }
+          ]
+        },
+        "meshHeadingList": {
+          "meshHeading": [
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Liver",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "DE",
+                    "qualifierName": "drug effects"
+                  },
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Animals"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rats, Inbred Strains"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Rats"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Epinephrine",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Glucagon",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Insulin",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Fructosediphosphates",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Hexosediphosphates",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "Y",
+                    "abbreviation": "ME",
+                    "qualifierName": "metabolism"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Cyclic AMP",
+              "meshQualifierList": {
+                "meshQualifier": [
+                  {
+                    "majorTopic_YN": "N",
+                    "abbreviation": "PD",
+                    "qualifierName": "pharmacology"
+                  }
+                ]
+              }
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Kinetics"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "Male"
+            },
+            {
+              "majorTopic_YN": "N",
+              "descriptorName": "In Vitro Techniques"
+            }
+          ]
+        },
+        "chemicalList": {
+          "chemical": [
+            {
+              "name": "fructose 2,6-diphosphate",
+              "registryNumber": "79082-92-1"
+            },
+            {
+              "name": "Glucagon",
+              "registryNumber": "9007-92-5"
+            },
+            {
+              "name": "Fructosediphosphates",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Hexosediphosphates",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Insulin",
+              "registryNumber": "0"
+            },
+            {
+              "name": "Cyclic AMP",
+              "registryNumber": "E0399OZS9N"
+            },
+            {
+              "name": "Epinephrine",
+              "registryNumber": "YKH834O4BH"
+            }
+          ]
+        },
+        "subsetList": {
+          "subset": [
+            {
+              "code": "IM",
+              "name": "Index Medicus"
+            }
+          ]
+        },
+        "fullTextUrlList": {
+          "fullTextUrl": [
+            {
+              "availability": "Open access",
+              "availabilityCode": "OA",
+              "documentStyle": "doi",
+              "site": "Unpaywall",
+              "url": "https://doi.org/10.1016/s0021-9258(18)33012-6"
+            },
+            {
+              "availability": "Free",
+              "availabilityCode": "F",
+              "documentStyle": "abs",
+              "site": "intl.jbc.org",
+              "url": "http://intl.jbc.org/cgi/content/abstract/258/3/1495"
+            },
+            {
+              "availability": "Subscription required",
+              "availabilityCode": "S",
+              "documentStyle": "doi",
+              "site": "DOI",
+              "url": "https://doi.org/10.1016/S0021-9258(18)33012-6"
+            }
+          ]
+        },
+        "isOpenAccess": "N",
+        "inEPMC": "N",
+        "inPMC": "N",
+        "citedByCount": 57,
+        "hasReferences": "Y",
+        "hasTextMinedTerms": "Y",
+        "hasDbCrossReferences": "N",
+        "hasPDF": "N",
+        "hasBook": "N",
+        "hasSuppl": "N",
+        "hasLabsLinks": "N",
+        "hasData": "N",
+        "license": "cc by",
+        "authMan": "N",
+        "epmcAuthMan": "N",
+        "nihAuthMan": "N",
+        "hasTMAccessionNumbers": "N",
+        "dateOfCompletion": "1983-03-17",
+        "dateOfCreation": "1983-02-10",
+        "dateOfRevision": "2021-02-10",
+        "firstPublicationDate": "1983-02-01",
+        "firstIndexDate": "2008-01-29",
+        "hasEvaluations": "N"
+      }
+    ]
+  }
+}

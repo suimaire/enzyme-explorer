@@ -1,0 +1,12 @@
+{
+  "finalSince": "2026-10-01T04:39:19.7570290Z",
+  "history": [
+    {
+      "level": "error",
+      "message": "Error: energy-diagram: no text collisions (정반응 35 / 역반응 35)\n    at assert (http://127.0.0.1:5174/enzyme-explorer/tests/browser/readability-harness.tsx:26:24)\n    at checkGraph (http://127.0.0.1:5174/enzyme-explorer/tests/browser/readability-harness.tsx:87:2)\n    at runChecks (http://127.0.0.1:5174/enzyme-explorer/tests/browser/readability-harness.tsx:247:3)",
+      "timestamp": "2026-10-01T04:03:42.400Z",
+      "url": "http://127.0.0.1:5174/enzyme-explorer/@vite/client"
+    }
+  ],
+  "finalLogs": []
+}

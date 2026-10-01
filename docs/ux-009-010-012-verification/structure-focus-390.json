@@ -1,0 +1,12 @@
+{
+  "structureBefore": {
+    "camera": "63.435,92.719,223.651",
+    "canvas": "<canvas data-engine=\"three.js r170\" width=\"320\" height=\"437\" tabindex=\"0\" aria-label=\"사람 간 PFKFB1 1K6M 실험 구조. 드래그로 회전, 휠로 확대. 방향 키로 회전, 더하기 빼기로 확대.\" style=\"display: block; touch-action: none; width: 320px; height: 437px;\"></canvas>"
+  },
+  "structureAfter": {
+    "camera": "63.435,92.719,223.651",
+    "canvas": "<canvas data-engine=\"three.js r170\" width=\"320\" height=\"437\" tabindex=\"0\" aria-label=\"사람 간 PFKFB1 1K6M 실험 구조. 드래그로 회전, 휠로 확대. 방향 키로 회전, 더하기 빼기로 확대.\" style=\"display: block; touch-action: none; width: 320px; height: 437px;\"></canvas>",
+    "focus": "크게 보기",
+    "modal": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "modifiedProductionFiles": [
+    "src\\styles.css",
+    "src\\app\\App.tsx",
+    "src\\app\\useHashModule.ts",
+    "src\\modules\\carbonic-anhydrase\\CarbonicAnhydraseLab.tsx",
+    "src\\modules\\carbonic-anhydrase\\ChemistryPanel.tsx",
+    "src\\modules\\kinetics\\InitialVelocityPanel.tsx",
+    "src\\modules\\kinetics\\KineticsLab.tsx",
+    "src\\modules\\kinetics\\MechanisticCaveatPanel.tsx",
+    "src\\modules\\notes\\ModelNotes.tsx",
+    "src\\modules\\placeholder\\ComingSoon.tsx",
+    "src\\modules\\reaction-energy\\ReactionEnergyLab.tsx",
+    "src\\modules\\regulation\\Diagrams.tsx",
+    "src\\modules\\regulation\\HormonalRegulation.tsx",
+    "src\\modules\\regulation\\regulation.css",
+    "src\\modules\\start\\StartPage.tsx",
+    "src\\shared\\components\\ModuleHeader.tsx"
+  ],
+  "newProductionFiles": [
+    "src/app/modelNotesNavigation.ts"
+  ],
+  "newTestFiles": [
+    "tests/navigationContext.test.tsx",
+    "tests/browser/navigation-context-harness.html",
+    "tests/browser/navigation-context-harness.tsx"
+  ],
+  "unchangedOriginalFiles": 92,
+  "originalFilesChecked": 108
+}

@@ -1,0 +1,10 @@
+warning: in the working copy of 'src/app/App.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/carbonic-anhydrase/CarbonicAnhydraseLab.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/kinetics/InitialVelocityPanel.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/kinetics/KineticsLab.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/kinetics/MichaelisMentenPanel.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/kinetics/MichaelisMentenPlot.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/reaction-energy/ReactionEnergyLab.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/reaction-energy/energyProfile.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/regulation/HormonalRegulation.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/shared/components/Prediction.tsx', LF will be replaced by CRLF the next time Git touches it
