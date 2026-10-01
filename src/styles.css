@@ -203,6 +203,15 @@ h1 span {
   text-transform: uppercase;
   color: var(--soft);
 }
+.module-nav .module-planned {
+  padding: 2px 4px;
+  border-radius: 3px;
+  background: #f2f6f9;
+  color: var(--soft);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+}
 
 div.module {
   max-width: 1440px;
@@ -806,6 +815,45 @@ ul.legend li {
 .card-question {
   font-size: 16px;
   color: #22303a;
+}
+.start-explore {
+  margin-top: 26px;
+}
+.start-explore > p {
+  margin-bottom: 14px;
+}
+.start-explore .module-card {
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 14px;
+  text-decoration: none;
+}
+.start-explore .card-number {
+  grid-row: 1 / 5;
+}
+.start-explore .card-eyebrow,
+.start-explore .card-title {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+}
+.start-explore .card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #22303a;
+}
+.start-explore .card-title small {
+  font-size: 13.5px;
+  font-weight: normal;
+  color: var(--soft);
+}
+.start-explore .start-ready {
+  border-color: var(--accent);
+  color: var(--accent-dark);
+}
+.start-explore .card-cta {
+  font-weight: bold;
+  color: var(--accent);
 }
 .start-flow ol,
 .start-planned ul {

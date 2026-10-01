@@ -1,0 +1,261 @@
+diff --git a/.gitattributes b/.gitattributes
+index 1af1312..9bc92c3 100644
+--- a/.gitattributes
++++ b/.gitattributes
+@@ -1,5 +1,26 @@
+-# Keep the deposited structure file byte-identical to the RCSB download (its SHA-256 is documented in README).
+-*.pdb -text
++# Preserve immutable scientific assets byte-for-byte for documented provenance hashes.
++src/data/structures/2CBA.pdb -text
++# Raw downloads and the processed assembly listed in regulation/provenance.json.
++src/data/regulation/1K6M.cif -text
++src/data/regulation/1K6M.pdb -text
++src/data/regulation/1K6M-assembly1-protein.pdb -text
++src/data/regulation/1k6m-mapping.json -text
++src/data/regulation/P16118.json -text
++src/data/regulation/P47871.json -text
++src/data/regulation/PMID-10749675.json -text
++src/data/regulation/PMID-1339450.json -text
++src/data/regulation/PMID-15170386.json -text
++src/data/regulation/PMID-2158992.json -text
++src/data/regulation/PMID-2846551.json -text
++src/data/regulation/PMID-32193322.json -text
++src/data/regulation/PMID-6260770.json -text
++src/data/regulation/PMID-6296099.json -text
++src/data/regulation/PMID-6323408.json -text
++src/data/regulation/PMID-6455662.json -text
++src/data/regulation/PMID-7549867.json -text
++src/data/regulation/PMID-8390983.json -text
++src/data/regulation/PMID-9211863.json -text
++src/data/regulation/structure-paper.json -text
+ 
+ # Preserve archived UX evidence bytes and manifest hashes across checkouts.
+ # Raw logs, patches and deposited structures intentionally contain trailing padding.
+diff --git a/src/modules/regulation/Diagrams.tsx b/src/modules/regulation/Diagrams.tsx
+index 2e7947e..b6e4468 100644
+--- a/src/modules/regulation/Diagrams.tsx
++++ b/src/modules/regulation/Diagrams.tsx
+@@ -86,13 +86,15 @@ export function Results({result, step, clamped}: {result: RegulationResult | nul
+ export function PhosphateTrace() {
+   const [target, setTarget] = useState<'protein' | 'sugar'>('protein');
+   const [run, setRun] = useState(0);
++  const nucleotideLabel = run ? 'ADP' : 'ATP';
++  const nucleotideRole = run ? '인산기 전달 후 생성물' : '말단 인산기 공여체';
+   return <div className="reg-trace" data-testid="phosphate-trace">
+     <div className="reg-inline-buttons" role="group" aria-label="인산기 전달 대상">
+       <button type="button" aria-pressed={target === 'protein'} onClick={() => {setTarget('protein'); setRun(0);}}>A · PKA → 단백질</button>
+       <button type="button" aria-pressed={target === 'sugar'} onClick={() => {setTarget('sugar'); setRun(0);}}>B · PFK-2 → 당</button>
+     </div>
+     <div className={`reg-transfer ${target}`} key={`${target}-${run}`}>
+-      <div><b>{run ? 'ADP' : 'ATP'}</b><small>말단 인산기 공여체</small></div>
++      <div><b>{nucleotideLabel}</b><small>{nucleotideRole}</small></div>
+       <div className="reg-transfer-track"><b>{target === 'protein' ? 'PKA' : 'PFK-2'}</b><span aria-hidden="true">━━━━━━━━→</span><i className={run ? 'reg-phosphate moving' : 'reg-phosphate'}>{target === 'protein' ? '◇P' : '●P'}</i></div>
+       <div><b>{target === 'protein' ? run ? '조절 Ser–O–P ◇' : '조절 Ser–OH' : run ? 'F-2,6-BP · 2번 ●P' : 'F6P · 2번 위치'}</b><small>{target === 'protein' ? '◇ 단백질의 조절 인산기' : '● 당에 붙는 인산기'}</small></div>
+     </div>
+diff --git a/src/modules/start/StartPage.tsx b/src/modules/start/StartPage.tsx
+index 797bec9..13c3bcb 100644
+--- a/src/modules/start/StartPage.tsx
++++ b/src/modules/start/StartPage.tsx
+@@ -1,4 +1,4 @@
+-import {MODULES, type ModuleId} from '../../app/modules';
++import {hashFor, moduleEntry, MODULES, type ModuleId} from '../../app/modules';
+ 
+ const CARDS: {id: ModuleId; number: string; eyebrow: string; english: string; question: string}[] = [
+   {id: 'reaction-energy', number: '01', eyebrow: '에너지', english: 'Energy', question: '왜 열역학적으로 유리한 반응도 느릴 수 있을까?'},
+@@ -14,6 +14,7 @@ const CARDS: {id: ModuleId; number: string; eyebrow: string; english: string; qu
+ 
+ /** The home screen opens with the question of the whole session rather than with an explanation. */
+ export function StartPage({onNavigate}: {onNavigate: (id: ModuleId) => void}) {
++  const regulation = moduleEntry('regulation');
+   const planned = MODULES.filter((m) => m.status === 'planned');
+   return (
+     <div className="module start-page" data-testid="module-start">
+@@ -21,12 +22,13 @@ export function StartPage({onNavigate}: {onNavigate: (id: ModuleId) => void}) {
+         <p className="eyebrow">Basic Biochemistry ET · 7차시 · Enzyme I</p>
+         <h2>단백질은 어떻게 화학 반응을 더 빠르게 만들 수 있을까?</h2>
+         <p>
+-          같은 질문을 세 가지 방향에서 살펴봅니다. 각 모듈은 앞 모듈이 남긴 질문에 답하므로 순서대로 진행하세요. 모든
+-          모듈에서 먼저 예측하고, 조건을 바꾸고, 결과를 관찰한 뒤에 설명을 읽습니다.
++          같은 질문을 세 가지 방향에서 살펴봅니다. 기본 학습은 01 → 02 → 03 순서로 진행하는 것을 권장합니다.
++          모든 모듈에서 먼저 예측하고, 조건을 바꾸고, 결과를 관찰한 뒤에 설명을 읽습니다.
+         </p>
+       </section>
+ 
+-      <ul className="card-grid">
++      <h3 id="start-core-heading">기본 학습 흐름</h3>
++      <ul className="card-grid" aria-labelledby="start-core-heading">
+         {CARDS.map((c) => (
+           <li key={c.id}>
+             <button type="button" className="module-card" onClick={() => onNavigate(c.id)} data-testid={`card-${c.id}`}>
+@@ -55,20 +57,47 @@ export function StartPage({onNavigate}: {onNavigate: (id: ModuleId) => void}) {
+           </li>
+           <li>
+             <strong>반응속도론.</strong> 이런 과정은 직접 볼 수 없습니다. 실험에서 측정할 수 있는 것은 반응 속도이므로,
+-            마지막 모듈에서는 하나의 반응 진행 곡선에서 출발해 v₀ 대 [S] 관계 전체를 직접 쌓아 올립니다.
++            03에서는 하나의 반응 진행 곡선에서 출발해 v₀ 대 [S] 관계 전체를 직접 쌓아 올립니다.
+           </li>
+         </ol>
+       </section>
+ 
+-      <section className="start-planned" aria-label="이후 모듈">
+-        <h3>이후 수업에서 다룰 내용</h3>
++      {regulation.status === 'ready' ? (
++        <section className="start-explore" aria-labelledby="start-explore-heading">
++          <h3 id="start-explore-heading">더 탐구해 보기</h3>
++          <p>추가 심화 탐구입니다. 다른 모듈을 완료하지 않아도 지금 시작할 수 있습니다.</p>
++          <a
++            className="module-card"
++            href={hashFor(regulation.id)}
++            onClick={(event) => {event.preventDefault(); onNavigate(regulation.id);}}
++            aria-labelledby="start-regulation-number start-regulation-title start-regulation-cta"
++            aria-describedby="start-regulation-description"
++            data-testid={`card-${regulation.id}`}
++          >
++            <span className="card-number" id="start-regulation-number">{regulation.number}</span>
++            <span className="card-eyebrow">
++              {regulation.eyebrow} <span className="badge start-ready">현재 이용 가능</span>
++            </span>
++            <span className="card-title" id="start-regulation-title">
++              {regulation.title} <small lang="en">{regulation.heading}</small>
++            </span>
++            <span className="card-question" id="start-regulation-description">
++              간 PFKFB1 L형을 중심으로 인슐린·글루카곤 신호가 효소 활성과 대사 조절 방향을 어떻게 바꾸는지 탐구합니다.
++            </span>
++            <span className="card-cta" id="start-regulation-cta">학습 시작 <span aria-hidden="true">→</span></span>
++          </a>
++        </section>
++      ) : null}
++
++      <section className="start-planned" aria-label="준비 중인 모듈">
++        <h3>준비 중</h3>
+         <ul>
+           {planned.map((m) => (
+             <li key={m.id}>
+               <strong>
+                 모듈 {m.number} — {m.title}
+               </strong>{' '}
+-              <span className="badge">Enzyme II에서 다룰 예정</span>
++              <span className="badge">{m.eyebrow}에서 다룰 예정</span>
+             </li>
+           ))}
+         </ul>
+diff --git a/src/styles.css b/src/styles.css
+index df69096..3683943 100644
+--- a/src/styles.css
++++ b/src/styles.css
+@@ -807,6 +807,45 @@ ul.legend li {
+   font-size: 16px;
+   color: #22303a;
+ }
++.start-explore {
++  margin-top: 26px;
++}
++.start-explore > p {
++  margin-bottom: 14px;
++}
++.start-explore .module-card {
++  grid-template-columns: auto minmax(0, 1fr);
++  column-gap: 14px;
++  text-decoration: none;
++}
++.start-explore .card-number {
++  grid-row: 1 / 5;
++}
++.start-explore .card-eyebrow,
++.start-explore .card-title {
++  display: flex;
++  align-items: baseline;
++  flex-wrap: wrap;
++  gap: 4px 8px;
++}
++.start-explore .card-title {
++  font-size: 18px;
++  font-weight: bold;
++  color: #22303a;
++}
++.start-explore .card-title small {
++  font-size: 13.5px;
++  font-weight: normal;
++  color: var(--soft);
++}
++.start-explore .start-ready {
++  border-color: var(--accent);
++  color: var(--accent-dark);
++}
++.start-explore .card-cta {
++  font-weight: bold;
++  color: var(--accent);
++}
+ .start-flow ol,
+ .start-planned ul {
+   max-width: 78ch;
+diff --git a/tests/browser/navigation-context-harness.tsx b/tests/browser/navigation-context-harness.tsx
+index 3334473..d39ff49 100644
+--- a/tests/browser/navigation-context-harness.tsx
++++ b/tests/browser/navigation-context-harness.tsx
+@@ -55,6 +55,40 @@ async function returnFrom(section: string) {
+   const hash=target.getAttribute('href'); target.click(); await frame();
+   assert(location.hash===hash && document.activeElement?.id==='main-content', `${section}: explicit return route and main focus`);
+ }
++async function phosphateTraceChecks() {
++  await button('인산기 이동 확인 +');
++  const labBefore=JSON.stringify(session.get('regulation','lab'));
++  const reactionsBefore=testId('catalytic-reactions').textContent;
++  for (const target of [
++    {button:'A · PKA → 단백질', before:'조절 Ser–OH', after:'조절 Ser–O–P ◇', equation:'ATP → ADP; PKA의 대상은 단백질입니다. cAMP는 인산기 공여체가 아닙니다.'},
++    {button:'B · PFK-2 → 당', before:'F6P · 2번 위치', after:'F-2,6-BP · 2번 ●P', equation:'F6P + ATP → F-2,6-BP + ADP; PFK-2의 대상은 F6P입니다.'},
++  ]) {
++    await button(target.button);
++    const trace=testId('phosphate-trace');
++    function check(transferred: boolean) {
++      const transfer=trace.querySelector<HTMLElement>('.reg-transfer')!;
++      const nucleotide=transfer.firstElementChild!;
++      const caption=nucleotide.querySelector('small')!;
++      const phase=transferred?'after':'before';
++      assert(nucleotide.querySelector('b')!.textContent===(transferred?'ADP':'ATP'), `UX-013 ${target.button} ${phase}: nucleotide`);
++      assert(caption.textContent===(transferred?'인산기 전달 후 생성물':'말단 인산기 공여체'), `UX-013 ${target.button} ${phase}: role caption`);
++      assert(!nucleotide.closest('[hidden], [aria-hidden="true"]') && !nucleotide.querySelector('[aria-label], [aria-hidden="true"]'), `UX-013 ${target.button} ${phase}: nucleotide and caption exposed as text`);
++      assert(transfer.lastElementChild!.querySelector('b')!.textContent===(transferred?target.after:target.before), `UX-013 ${target.button} ${phase}: distinct reaction target`);
++      assert(trace.querySelector('p')!.textContent===target.equation, `UX-013 ${target.button} ${phase}: reaction equation unchanged`);
++      assert(trace.querySelectorAll('small').length===2 && (!transferred || !transfer.textContent!.includes('말단 인산기 공여체')), `UX-013 ${target.button} ${phase}: no stale donor caption`);
++      const bounds=caption.getBoundingClientRect();
++      assert(bounds.width>0 && caption.scrollWidth<=caption.clientWidth && bounds.left>=0 && bounds.right<=innerWidth && trace.scrollWidth<=trace.clientWidth, `UX-013 ${target.button} ${phase}: caption/card fit viewport`);
++      evidence[`UX-013 ${target.button} ${phase}`]={nucleotide:nucleotide.textContent,target:transfer.lastElementChild!.textContent,captionBounds:{width:bounds.width,height:bounds.height}};
++    }
++    check(false);
++    await button('인산기 전달 보기'); check(true);
++    await button('인산기 전달 보기'); check(true);
++  }
++  await button('A · PKA → 단백질');
++  assert(testId('phosphate-trace').querySelector('.reg-transfer > div')!.textContent==='ATP말단 인산기 공여체', 'UX-013 switching back to A resets nucleotide and role together');
++  assert(JSON.stringify(session.get('regulation','lab'))===labBefore && testId('catalytic-reactions').textContent===reactionsBefore, 'UX-013 transfers preserve hormone, narration, clamp and pathway reactions');
++  await button('인산기 이동 확인 −');
++}
+ async function runChecks() {
+   checks.length=0;
+   const stableMain=document.getElementById('main-content');
+@@ -124,6 +158,7 @@ async function runChecks() {
+     if (session.get('regulation','lab').narration.status==='playing') await button('Ⅱ 일시정지');
+     while(session.get('regulation','lab').narration.step<5) await button('다음 →');
+   }
++  await phosphateTraceChecks();
+   const trigger=document.querySelector<HTMLButtonElement>('.reg-metabolite')!;
+   trigger.focus(); trigger.click(); await frame();
+   const dialog=document.querySelector<HTMLDialogElement>('.reg-comparison')!;
+diff --git a/tests/regulation.test.tsx b/tests/regulation.test.tsx
+index ed9663b..88a8235 100644
+--- a/tests/regulation.test.tsx
++++ b/tests/regulation.test.tsx
+@@ -184,6 +184,12 @@ describe('disclosure and biochemical semantics', () => {
+     expect(right.includes('data-testid="reg-results"')).toBe(step === 5);
+     if (step < 5) expect(right).not.toContain(result.glycolysis);
+   });
++  it('labels the initial ATP nucleotide as the phosphate donor', () => {
++    const trace = renderToStaticMarkup(<PhosphateTrace />);
++    expect(trace).toContain('<b>ATP</b><small>말단 인산기 공여체</small>');
++    expect(trace).not.toContain('<b>ADP</b>');
++    expect(trace).not.toContain('인산기 전달 후 생성물');
++  });
+   it('separates protein, sugar and hydrolysis reactions', () => {
+     const trace = renderToStaticMarkup(<PhosphateTrace />);
+     expect(trace).toContain('PKA → 단백질');

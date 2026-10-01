@@ -1,0 +1,2160 @@
+{
+  "base": "http://127.0.0.1:4174/enzyme-explorer/",
+  "mode": "production",
+  "channel": "chrome",
+  "version": "154.0.8037.58",
+  "checks": [
+    "1440: first Tab reaches skip link",
+    "1440: skip link focuses main",
+    "start 1440: active rail visible",
+    "start 1440: layout has no horizontal overflow",
+    "start 1440: route document title",
+    "start 1440: footer scope",
+    "start 1440: only 04 has planned badge",
+    "1440: Start 05 ready",
+    "1440: Start 04 planned",
+    "reaction-energy 1440: active rail visible",
+    "reaction-energy 1440: layout has no horizontal overflow",
+    "reaction-energy 1440: route document title",
+    "reaction-energy 1440: footer scope",
+    "reaction-energy 1440: only 04 has planned badge",
+    "carbonic-anhydrase 1440: active rail visible",
+    "carbonic-anhydrase 1440: layout has no horizontal overflow",
+    "carbonic-anhydrase 1440: route document title",
+    "carbonic-anhydrase 1440: footer scope",
+    "carbonic-anhydrase 1440: only 04 has planned badge",
+    "kinetics 1440: active rail visible",
+    "kinetics 1440: layout has no horizontal overflow",
+    "kinetics 1440: route document title",
+    "kinetics 1440: footer scope",
+    "kinetics 1440: only 04 has planned badge",
+    "inhibition 1440: active rail visible",
+    "inhibition 1440: layout has no horizontal overflow",
+    "inhibition 1440: route document title",
+    "inhibition 1440: footer scope",
+    "inhibition 1440: only 04 has planned badge",
+    "regulation 1440: active rail visible",
+    "regulation 1440: layout has no horizontal overflow",
+    "regulation 1440: route document title",
+    "regulation 1440: footer scope",
+    "regulation 1440: only 04 has planned badge",
+    "model-notes 1440: active rail visible",
+    "model-notes 1440: layout has no horizontal overflow",
+    "model-notes 1440: route document title",
+    "model-notes 1440: footer scope",
+    "model-notes 1440: only 04 has planned badge",
+    "1440: Reference TOC",
+    "1440: titles distinguish all routes",
+    "1440: contextual Reference focuses 03 section",
+    "1440: Reference TOC available",
+    "1440: Reference TOC direct section",
+    "1440: explicit module return focuses main",
+    "1440: public 03 measurement survives Reference",
+    "1440: explicit reset does not revive measurement",
+    "1440: Sugar comparison Escape returns trigger focus",
+    "1440: A · PKA → 단백질 ATP donor",
+    "1440: A · PKA → 단백질 ADP product caption",
+    "1440: B · PFK-2 → 당 ATP donor",
+    "1440: B · PFK-2 → 당 ADP product caption",
+    "390: first Tab reaches skip link",
+    "390: skip link focuses main",
+    "start 390: active rail visible",
+    "start 390: layout has no horizontal overflow",
+    "start 390: route document title",
+    "start 390: footer scope",
+    "start 390: only 04 has planned badge",
+    "390: Start 05 ready",
+    "390: Start 04 planned",
+    "reaction-energy 390: active rail visible",
+    "reaction-energy 390: layout has no horizontal overflow",
+    "reaction-energy 390: route document title",
+    "reaction-energy 390: footer scope",
+    "reaction-energy 390: only 04 has planned badge",
+    "carbonic-anhydrase 390: active rail visible",
+    "carbonic-anhydrase 390: layout has no horizontal overflow",
+    "carbonic-anhydrase 390: route document title",
+    "carbonic-anhydrase 390: footer scope",
+    "carbonic-anhydrase 390: only 04 has planned badge",
+    "kinetics 390: active rail visible",
+    "kinetics 390: layout has no horizontal overflow",
+    "kinetics 390: route document title",
+    "kinetics 390: footer scope",
+    "kinetics 390: only 04 has planned badge",
+    "inhibition 390: active rail visible",
+    "inhibition 390: layout has no horizontal overflow",
+    "inhibition 390: route document title",
+    "inhibition 390: footer scope",
+    "inhibition 390: only 04 has planned badge",
+    "regulation 390: active rail visible",
+    "regulation 390: layout has no horizontal overflow",
+    "regulation 390: route document title",
+    "regulation 390: footer scope",
+    "regulation 390: only 04 has planned badge",
+    "model-notes 390: active rail visible",
+    "model-notes 390: layout has no horizontal overflow",
+    "model-notes 390: route document title",
+    "model-notes 390: footer scope",
+    "model-notes 390: only 04 has planned badge",
+    "390: Reference TOC",
+    "390: titles distinguish all routes",
+    "390: contextual Reference focuses 03 section",
+    "390: Reference TOC available",
+    "390: Reference TOC direct section",
+    "390: explicit module return focuses main",
+    "390: public 03 measurement survives Reference",
+    "390: explicit reset does not revive measurement",
+    "390: Sugar comparison Escape returns trigger focus",
+    "390: A · PKA → 단백질 ATP donor",
+    "390: A · PKA → 단백질 ADP product caption",
+    "390: B · PFK-2 → 당 ATP donor",
+    "390: B · PFK-2 → 당 ADP product caption",
+    "1024: first Tab reaches skip link",
+    "1024: skip link focuses main",
+    "start 1024: active rail visible",
+    "start 1024: layout has no horizontal overflow",
+    "start 1024: route document title",
+    "start 1024: footer scope",
+    "start 1024: only 04 has planned badge",
+    "1024: Start 05 ready",
+    "1024: Start 04 planned",
+    "reaction-energy 1024: active rail visible",
+    "reaction-energy 1024: layout has no horizontal overflow",
+    "reaction-energy 1024: route document title",
+    "reaction-energy 1024: footer scope",
+    "reaction-energy 1024: only 04 has planned badge",
+    "carbonic-anhydrase 1024: active rail visible",
+    "carbonic-anhydrase 1024: layout has no horizontal overflow",
+    "carbonic-anhydrase 1024: route document title",
+    "carbonic-anhydrase 1024: footer scope",
+    "carbonic-anhydrase 1024: only 04 has planned badge",
+    "kinetics 1024: active rail visible",
+    "kinetics 1024: layout has no horizontal overflow",
+    "kinetics 1024: route document title",
+    "kinetics 1024: footer scope",
+    "kinetics 1024: only 04 has planned badge",
+    "inhibition 1024: active rail visible",
+    "inhibition 1024: layout has no horizontal overflow",
+    "inhibition 1024: route document title",
+    "inhibition 1024: footer scope",
+    "inhibition 1024: only 04 has planned badge",
+    "regulation 1024: active rail visible",
+    "regulation 1024: layout has no horizontal overflow",
+    "regulation 1024: route document title",
+    "regulation 1024: footer scope",
+    "regulation 1024: only 04 has planned badge",
+    "model-notes 1024: active rail visible",
+    "model-notes 1024: layout has no horizontal overflow",
+    "model-notes 1024: route document title",
+    "model-notes 1024: footer scope",
+    "model-notes 1024: only 04 has planned badge",
+    "1024: Reference TOC",
+    "1024: titles distinguish all routes",
+    "768: first Tab reaches skip link",
+    "768: skip link focuses main",
+    "start 768: active rail visible",
+    "start 768: layout has no horizontal overflow",
+    "start 768: route document title",
+    "start 768: footer scope",
+    "start 768: only 04 has planned badge",
+    "768: Start 05 ready",
+    "768: Start 04 planned",
+    "reaction-energy 768: active rail visible",
+    "reaction-energy 768: layout has no horizontal overflow",
+    "reaction-energy 768: route document title",
+    "reaction-energy 768: footer scope",
+    "reaction-energy 768: only 04 has planned badge",
+    "carbonic-anhydrase 768: active rail visible",
+    "carbonic-anhydrase 768: layout has no horizontal overflow",
+    "carbonic-anhydrase 768: route document title",
+    "carbonic-anhydrase 768: footer scope",
+    "carbonic-anhydrase 768: only 04 has planned badge",
+    "kinetics 768: active rail visible",
+    "kinetics 768: layout has no horizontal overflow",
+    "kinetics 768: route document title",
+    "kinetics 768: footer scope",
+    "kinetics 768: only 04 has planned badge",
+    "inhibition 768: active rail visible",
+    "inhibition 768: layout has no horizontal overflow",
+    "inhibition 768: route document title",
+    "inhibition 768: footer scope",
+    "inhibition 768: only 04 has planned badge",
+    "regulation 768: active rail visible",
+    "regulation 768: layout has no horizontal overflow",
+    "regulation 768: route document title",
+    "regulation 768: footer scope",
+    "regulation 768: only 04 has planned badge",
+    "model-notes 768: active rail visible",
+    "model-notes 768: layout has no horizontal overflow",
+    "model-notes 768: route document title",
+    "model-notes 768: footer scope",
+    "model-notes 768: only 04 has planned badge",
+    "768: Reference TOC",
+    "768: titles distinguish all routes",
+    "kinetics 1440→390: same route active rail visible",
+    "kinetics 390: document scroll and focus preserved",
+    "kinetics 390→768: same route active rail visible",
+    "kinetics 768: document scroll and focus preserved",
+    "kinetics 768→390: same route active rail visible",
+    "kinetics 390: document scroll and focus preserved",
+    "kinetics 390→1440: same route active rail visible",
+    "kinetics 1440: document scroll and focus preserved",
+    "kinetics: rail-only resize preserves exact document scroll/focus",
+    "regulation 1440→390: same route active rail visible",
+    "regulation 390: document scroll and focus preserved",
+    "regulation 390: vertical scroll unchanged",
+    "regulation 390→768: same route active rail visible",
+    "regulation 768: document scroll and focus preserved",
+    "regulation 768: vertical scroll unchanged",
+    "regulation 768→390: same route active rail visible",
+    "regulation 390: document scroll and focus preserved",
+    "regulation 390: vertical scroll unchanged",
+    "regulation 390→1440: same route active rail visible",
+    "regulation 1440: document scroll and focus preserved",
+    "regulation 1440: vertical scroll unchanged",
+    "regulation: rail-only resize preserves exact document scroll/focus",
+    "model-notes 1440→390: same route active rail visible",
+    "model-notes 390: document scroll and focus preserved",
+    "model-notes 390: vertical scroll unchanged",
+    "model-notes 390→768: same route active rail visible",
+    "model-notes 768: document scroll and focus preserved",
+    "model-notes 768: vertical scroll unchanged",
+    "model-notes 768→390: same route active rail visible",
+    "model-notes 390: document scroll and focus preserved",
+    "model-notes 390: vertical scroll unchanged",
+    "model-notes 390→1440: same route active rail visible",
+    "model-notes 1440: document scroll and focus preserved",
+    "model-notes 1440: vertical scroll unchanged",
+    "model-notes: rail-only resize preserves exact document scroll/focus",
+    "rail keyboard: Tab 03→04",
+    "rail keyboard: 04 remains clickable and planned",
+    "rail keyboard: Tab 04→05",
+    "rail keyboard: Shift+Tab 05→04",
+    "no console warning/error, page error or HTTP failure"
+  ],
+  "layout": [
+    {
+      "route": "#/start",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1440,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 20,
+        "y": 92.640625,
+        "width": 64.359375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 84.359375,
+        "bottom": 143.640625,
+        "left": 20
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "시작 · Enzyme Explorer",
+      "pageWidth": 1440,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1440,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 87.546875,
+        "y": 92.640625,
+        "width": 120.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 207.6875,
+        "bottom": 143.640625,
+        "left": 87.546875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "반응 에너지 · Enzyme Explorer",
+      "pageWidth": 1440,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1440,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 211.6875,
+        "y": 92.640625,
+        "width": 144.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 355.9375,
+        "bottom": 143.640625,
+        "left": 211.6875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "탄산무수화효소 · Enzyme Explorer",
+      "pageWidth": 1440,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1440,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 359.9375,
+        "y": 92.640625,
+        "width": 116.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 476.1875,
+        "bottom": 143.640625,
+        "left": 359.9375
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+      "pageWidth": 1440,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1440,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 480.1875,
+        "y": 92.640625,
+        "width": 145.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 625.328125,
+        "bottom": 143.640625,
+        "left": 480.1875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "효소 저해 · Enzyme Explorer",
+      "pageWidth": 1440,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "x": 0,
+        "y": 72.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 72.640625,
+        "right": 1440,
+        "bottom": 124.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 629.328125,
+        "y": 72.640625,
+        "width": 106.140625,
+        "height": 51,
+        "top": 72.640625,
+        "right": 735.46875,
+        "bottom": 123.640625,
+        "left": 629.328125
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "효소 조절 · Enzyme Explorer",
+      "pageWidth": 1440,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1440,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 739.46875,
+        "y": 92.640625,
+        "width": 98.34375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 837.8125,
+        "bottom": 143.640625,
+        "left": 739.46875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "모델 및 주의사항 · Enzyme Explorer",
+      "pageWidth": 1440,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "x": 0,
+        "y": 225.828125,
+        "width": 390,
+        "height": 52,
+        "top": 225.828125,
+        "right": 390,
+        "bottom": 277.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 14,
+        "y": 225.828125,
+        "width": 64.359375,
+        "height": 51,
+        "top": 225.828125,
+        "right": 78.359375,
+        "bottom": 276.828125,
+        "left": 14
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "시작 · Enzyme Explorer",
+      "pageWidth": 390,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "x": 0,
+        "y": 225.828125,
+        "width": 390,
+        "height": 52,
+        "top": 225.828125,
+        "right": 390,
+        "bottom": 277.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 81.546875,
+        "y": 225.828125,
+        "width": 120.140625,
+        "height": 51,
+        "top": 225.828125,
+        "right": 201.6875,
+        "bottom": 276.828125,
+        "left": 81.546875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "반응 에너지 · Enzyme Explorer",
+      "pageWidth": 390,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "x": 0,
+        "y": 225.828125,
+        "width": 390,
+        "height": 52,
+        "top": 225.828125,
+        "right": 390,
+        "bottom": 277.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 205.6875,
+        "y": 225.828125,
+        "width": 144.25,
+        "height": 51,
+        "top": 225.828125,
+        "right": 349.9375,
+        "bottom": 276.828125,
+        "left": 205.6875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "탄산무수화효소 · Enzyme Explorer",
+      "pageWidth": 390,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "x": 0,
+        "y": 225.828125,
+        "width": 390,
+        "height": 52,
+        "top": 225.828125,
+        "right": 390,
+        "bottom": 277.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 261.9375,
+        "y": 225.828125,
+        "width": 116.25,
+        "height": 51,
+        "top": 225.828125,
+        "right": 378.1875,
+        "bottom": 276.828125,
+        "left": 261.9375
+      },
+      "scrollY": 0,
+      "scrollLeft": 92,
+      "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+      "pageWidth": 390,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "x": 0,
+        "y": 225.828125,
+        "width": 390,
+        "height": 52,
+        "top": 225.828125,
+        "right": 390,
+        "bottom": 277.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 233.1875,
+        "y": 225.828125,
+        "width": 145.140625,
+        "height": 51,
+        "top": 225.828125,
+        "right": 378.328125,
+        "bottom": 276.828125,
+        "left": 233.1875
+      },
+      "scrollY": 0,
+      "scrollLeft": 241,
+      "title": "효소 저해 · Enzyme Explorer",
+      "pageWidth": 390,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "x": 0,
+        "y": 205.828125,
+        "width": 390,
+        "height": 52,
+        "top": 205.828125,
+        "right": 390,
+        "bottom": 257.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 272.328125,
+        "y": 205.828125,
+        "width": 106.140625,
+        "height": 51,
+        "top": 205.828125,
+        "right": 378.46875,
+        "bottom": 256.828125,
+        "left": 272.328125
+      },
+      "scrollY": 0,
+      "scrollLeft": 351,
+      "title": "효소 조절 · Enzyme Explorer",
+      "pageWidth": 390,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "x": 0,
+        "y": 225.828125,
+        "width": 390,
+        "height": 52,
+        "top": 225.828125,
+        "right": 390,
+        "bottom": 277.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 279.46875,
+        "y": 225.828125,
+        "width": 98.34375,
+        "height": 51,
+        "top": 225.828125,
+        "right": 377.8125,
+        "bottom": 276.828125,
+        "left": 279.46875
+      },
+      "scrollY": 0,
+      "scrollLeft": 454,
+      "title": "모델 및 주의사항 · Enzyme Explorer",
+      "pageWidth": 390,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1024,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 14,
+        "y": 92.640625,
+        "width": 64.359375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 78.359375,
+        "bottom": 143.640625,
+        "left": 14
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "시작 · Enzyme Explorer",
+      "pageWidth": 1024,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1024,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 81.546875,
+        "y": 92.640625,
+        "width": 120.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 201.6875,
+        "bottom": 143.640625,
+        "left": 81.546875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "반응 에너지 · Enzyme Explorer",
+      "pageWidth": 1024,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1024,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 205.6875,
+        "y": 92.640625,
+        "width": 144.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 349.9375,
+        "bottom": 143.640625,
+        "left": 205.6875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "탄산무수화효소 · Enzyme Explorer",
+      "pageWidth": 1024,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1024,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 353.9375,
+        "y": 92.640625,
+        "width": 116.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 470.1875,
+        "bottom": 143.640625,
+        "left": 353.9375
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+      "pageWidth": 1024,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1024,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 474.1875,
+        "y": 92.640625,
+        "width": 145.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 619.328125,
+        "bottom": 143.640625,
+        "left": 474.1875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "효소 저해 · Enzyme Explorer",
+      "pageWidth": 1024,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "x": 0,
+        "y": 72.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 72.640625,
+        "right": 1024,
+        "bottom": 124.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 623.328125,
+        "y": 72.640625,
+        "width": 106.140625,
+        "height": 51,
+        "top": 72.640625,
+        "right": 729.46875,
+        "bottom": 123.640625,
+        "left": 623.328125
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "효소 조절 · Enzyme Explorer",
+      "pageWidth": 1024,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1024,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 733.46875,
+        "y": 92.640625,
+        "width": 98.34375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 831.8125,
+        "bottom": 143.640625,
+        "left": 733.46875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "모델 및 주의사항 · Enzyme Explorer",
+      "pageWidth": 1024,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 768,
+        "height": 52,
+        "top": 92.640625,
+        "right": 768,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 14,
+        "y": 92.640625,
+        "width": 64.359375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 78.359375,
+        "bottom": 143.640625,
+        "left": 14
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "시작 · Enzyme Explorer",
+      "pageWidth": 768,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 768,
+        "height": 52,
+        "top": 92.640625,
+        "right": 768,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 81.546875,
+        "y": 92.640625,
+        "width": 120.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 201.6875,
+        "bottom": 143.640625,
+        "left": 81.546875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "반응 에너지 · Enzyme Explorer",
+      "pageWidth": 768,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 768,
+        "height": 52,
+        "top": 92.640625,
+        "right": 768,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 205.6875,
+        "y": 92.640625,
+        "width": 144.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 349.9375,
+        "bottom": 143.640625,
+        "left": 205.6875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "탄산무수화효소 · Enzyme Explorer",
+      "pageWidth": 768,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 768,
+        "height": 52,
+        "top": 92.640625,
+        "right": 768,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 353.9375,
+        "y": 92.640625,
+        "width": 116.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 470.1875,
+        "bottom": 143.640625,
+        "left": 353.9375
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+      "pageWidth": 768,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 768,
+        "height": 52,
+        "top": 92.640625,
+        "right": 768,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 474.1875,
+        "y": 92.640625,
+        "width": 145.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 619.328125,
+        "bottom": 143.640625,
+        "left": 474.1875
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "효소 저해 · Enzyme Explorer",
+      "pageWidth": 768,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "x": 0,
+        "y": 72.640625,
+        "width": 768,
+        "height": 52,
+        "top": 72.640625,
+        "right": 768,
+        "bottom": 124.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 623.328125,
+        "y": 72.640625,
+        "width": 106.140625,
+        "height": 51,
+        "top": 72.640625,
+        "right": 729.46875,
+        "bottom": 123.640625,
+        "left": 623.328125
+      },
+      "scrollY": 0,
+      "scrollLeft": 0,
+      "title": "효소 조절 · Enzyme Explorer",
+      "pageWidth": 768,
+      "focus": "main-content"
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 768,
+        "height": 52,
+        "top": 92.640625,
+        "right": 768,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 657.46875,
+        "y": 92.640625,
+        "width": 98.34375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 755.8125,
+        "bottom": 143.640625,
+        "left": 657.46875
+      },
+      "scrollY": 0,
+      "scrollLeft": 76,
+      "title": "모델 및 주의사항 · Enzyme Explorer",
+      "pageWidth": 768,
+      "focus": "main-content"
+    }
+  ],
+  "resize": [
+    {
+      "id": "kinetics",
+      "before": {
+        "route": "#/kinetics",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -159.359375,
+          "width": 1440,
+          "height": 52,
+          "top": -159.359375,
+          "right": 1440,
+          "bottom": -107.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 359.9375,
+          "y": -159.359375,
+          "width": 116.25,
+          "height": 51,
+          "top": -159.359375,
+          "right": 476.1875,
+          "bottom": -108.359375,
+          "left": 359.9375
+        },
+        "scrollY": 252,
+        "scrollLeft": 0,
+        "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+        "pageWidth": 1440,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/kinetics",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -26.171875,
+          "width": 390,
+          "height": 52,
+          "top": -26.171875,
+          "right": 390,
+          "bottom": 25.828125,
+          "left": 0
+        },
+        "active": {
+          "x": 261.9375,
+          "y": -26.171875,
+          "width": 116.25,
+          "height": 51,
+          "top": -26.171875,
+          "right": 378.1875,
+          "bottom": 24.828125,
+          "left": 261.9375
+        },
+        "scrollY": 252,
+        "scrollLeft": 92,
+        "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+        "pageWidth": 390,
+        "focus": "main-content"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "id": "kinetics",
+      "before": {
+        "route": "#/kinetics",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -26.171875,
+          "width": 390,
+          "height": 52,
+          "top": -26.171875,
+          "right": 390,
+          "bottom": 25.828125,
+          "left": 0
+        },
+        "active": {
+          "x": 261.9375,
+          "y": -26.171875,
+          "width": 116.25,
+          "height": 51,
+          "top": -26.171875,
+          "right": 378.1875,
+          "bottom": 24.828125,
+          "left": 261.9375
+        },
+        "scrollY": 252,
+        "scrollLeft": 92,
+        "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+        "pageWidth": 390,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/kinetics",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -25.359375,
+          "width": 768,
+          "height": 52,
+          "top": -25.359375,
+          "right": 768,
+          "bottom": 26.640625,
+          "left": 0
+        },
+        "active": {
+          "x": 275.9375,
+          "y": -25.359375,
+          "width": 116.25,
+          "height": 51,
+          "top": -25.359375,
+          "right": 392.1875,
+          "bottom": 25.640625,
+          "left": 275.9375
+        },
+        "scrollY": 118,
+        "scrollLeft": 78,
+        "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+        "pageWidth": 768,
+        "focus": "main-content"
+      },
+      "verticalDelta": -134
+    },
+    {
+      "id": "kinetics",
+      "before": {
+        "route": "#/kinetics",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -25.359375,
+          "width": 768,
+          "height": 52,
+          "top": -25.359375,
+          "right": 768,
+          "bottom": 26.640625,
+          "left": 0
+        },
+        "active": {
+          "x": 275.9375,
+          "y": -25.359375,
+          "width": 116.25,
+          "height": 51,
+          "top": -25.359375,
+          "right": 392.1875,
+          "bottom": 25.640625,
+          "left": 275.9375
+        },
+        "scrollY": 118,
+        "scrollLeft": 78,
+        "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+        "pageWidth": 768,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/kinetics",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -26.171875,
+          "width": 390,
+          "height": 52,
+          "top": -26.171875,
+          "right": 390,
+          "bottom": 25.828125,
+          "left": 0
+        },
+        "active": {
+          "x": 261.9375,
+          "y": -26.171875,
+          "width": 116.25,
+          "height": 51,
+          "top": -26.171875,
+          "right": 378.1875,
+          "bottom": 24.828125,
+          "left": 261.9375
+        },
+        "scrollY": 252,
+        "scrollLeft": 92,
+        "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+        "pageWidth": 390,
+        "focus": "main-content"
+      },
+      "verticalDelta": 134
+    },
+    {
+      "id": "kinetics",
+      "before": {
+        "route": "#/kinetics",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -26.171875,
+          "width": 390,
+          "height": 52,
+          "top": -26.171875,
+          "right": 390,
+          "bottom": 25.828125,
+          "left": 0
+        },
+        "active": {
+          "x": 261.9375,
+          "y": -26.171875,
+          "width": 116.25,
+          "height": 51,
+          "top": -26.171875,
+          "right": 378.1875,
+          "bottom": 24.828125,
+          "left": 261.9375
+        },
+        "scrollY": 252,
+        "scrollLeft": 92,
+        "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+        "pageWidth": 390,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/kinetics",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -25.359375,
+          "width": 1440,
+          "height": 52,
+          "top": -25.359375,
+          "right": 1440,
+          "bottom": 26.640625,
+          "left": 0
+        },
+        "active": {
+          "x": 359.9375,
+          "y": -25.359375,
+          "width": 116.25,
+          "height": 51,
+          "top": -25.359375,
+          "right": 476.1875,
+          "bottom": 25.640625,
+          "left": 359.9375
+        },
+        "scrollY": 118,
+        "scrollLeft": 0,
+        "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+        "pageWidth": 1440,
+        "focus": "main-content"
+      },
+      "verticalDelta": -134
+    },
+    {
+      "id": "kinetics",
+      "kind": "rail-only",
+      "before": {
+        "route": "#/kinetics",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -25.359375,
+          "width": 1440,
+          "height": 52,
+          "top": -25.359375,
+          "right": 1440,
+          "bottom": 26.640625,
+          "left": 0
+        },
+        "active": {
+          "x": 359.9375,
+          "y": -25.359375,
+          "width": 116.25,
+          "height": 51,
+          "top": -25.359375,
+          "right": 476.1875,
+          "bottom": 25.640625,
+          "left": 359.9375
+        },
+        "scrollY": 118,
+        "scrollLeft": 0,
+        "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+        "pageWidth": 1440,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/kinetics",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -25.359375,
+          "width": 390,
+          "height": 52,
+          "top": -25.359375,
+          "right": 390,
+          "bottom": 26.640625,
+          "left": 0
+        },
+        "active": {
+          "x": 261.9375,
+          "y": -25.359375,
+          "width": 116.25,
+          "height": 51,
+          "top": -25.359375,
+          "right": 378.1875,
+          "bottom": 25.640625,
+          "left": 261.9375
+        },
+        "scrollY": 118,
+        "scrollLeft": 98,
+        "title": "효소 반응속도론 실험실 · Enzyme Explorer",
+        "pageWidth": 1440,
+        "focus": "main-content"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "id": "regulation",
+      "before": {
+        "route": "#/regulation",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -227.359375,
+          "width": 1440,
+          "height": 52,
+          "top": -227.359375,
+          "right": 1440,
+          "bottom": -175.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 629.328125,
+          "y": -227.359375,
+          "width": 106.140625,
+          "height": 51,
+          "top": -227.359375,
+          "right": 735.46875,
+          "bottom": -176.359375,
+          "left": 629.328125
+        },
+        "scrollY": 300,
+        "scrollLeft": 0,
+        "title": "효소 조절 · Enzyme Explorer",
+        "pageWidth": 1440,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/regulation",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -94.171875,
+          "width": 390,
+          "height": 52,
+          "top": -94.171875,
+          "right": 390,
+          "bottom": -42.171875,
+          "left": 0
+        },
+        "active": {
+          "x": 272.328125,
+          "y": -94.171875,
+          "width": 106.140625,
+          "height": 51,
+          "top": -94.171875,
+          "right": 378.46875,
+          "bottom": -43.171875,
+          "left": 272.328125
+        },
+        "scrollY": 300,
+        "scrollLeft": 351,
+        "title": "효소 조절 · Enzyme Explorer",
+        "pageWidth": 390,
+        "focus": "main-content"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "id": "regulation",
+      "before": {
+        "route": "#/regulation",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -94.171875,
+          "width": 390,
+          "height": 52,
+          "top": -94.171875,
+          "right": 390,
+          "bottom": -42.171875,
+          "left": 0
+        },
+        "active": {
+          "x": 272.328125,
+          "y": -94.171875,
+          "width": 106.140625,
+          "height": 51,
+          "top": -94.171875,
+          "right": 378.46875,
+          "bottom": -43.171875,
+          "left": 272.328125
+        },
+        "scrollY": 300,
+        "scrollLeft": 351,
+        "title": "효소 조절 · Enzyme Explorer",
+        "pageWidth": 390,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/regulation",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -227.359375,
+          "width": 768,
+          "height": 52,
+          "top": -227.359375,
+          "right": 768,
+          "bottom": -175.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 545.328125,
+          "y": -227.359375,
+          "width": 106.140625,
+          "height": 51,
+          "top": -227.359375,
+          "right": 651.46875,
+          "bottom": -176.359375,
+          "left": 545.328125
+        },
+        "scrollY": 300,
+        "scrollLeft": 78,
+        "title": "효소 조절 · Enzyme Explorer",
+        "pageWidth": 768,
+        "focus": "main-content"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "id": "regulation",
+      "before": {
+        "route": "#/regulation",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -227.359375,
+          "width": 768,
+          "height": 52,
+          "top": -227.359375,
+          "right": 768,
+          "bottom": -175.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 545.328125,
+          "y": -227.359375,
+          "width": 106.140625,
+          "height": 51,
+          "top": -227.359375,
+          "right": 651.46875,
+          "bottom": -176.359375,
+          "left": 545.328125
+        },
+        "scrollY": 300,
+        "scrollLeft": 78,
+        "title": "효소 조절 · Enzyme Explorer",
+        "pageWidth": 768,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/regulation",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -94.171875,
+          "width": 390,
+          "height": 52,
+          "top": -94.171875,
+          "right": 390,
+          "bottom": -42.171875,
+          "left": 0
+        },
+        "active": {
+          "x": 272.328125,
+          "y": -94.171875,
+          "width": 106.140625,
+          "height": 51,
+          "top": -94.171875,
+          "right": 378.46875,
+          "bottom": -43.171875,
+          "left": 272.328125
+        },
+        "scrollY": 300,
+        "scrollLeft": 351,
+        "title": "효소 조절 · Enzyme Explorer",
+        "pageWidth": 390,
+        "focus": "main-content"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "id": "regulation",
+      "before": {
+        "route": "#/regulation",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -94.171875,
+          "width": 390,
+          "height": 52,
+          "top": -94.171875,
+          "right": 390,
+          "bottom": -42.171875,
+          "left": 0
+        },
+        "active": {
+          "x": 272.328125,
+          "y": -94.171875,
+          "width": 106.140625,
+          "height": 51,
+          "top": -94.171875,
+          "right": 378.46875,
+          "bottom": -43.171875,
+          "left": 272.328125
+        },
+        "scrollY": 300,
+        "scrollLeft": 351,
+        "title": "효소 조절 · Enzyme Explorer",
+        "pageWidth": 390,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/regulation",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -227.359375,
+          "width": 1440,
+          "height": 52,
+          "top": -227.359375,
+          "right": 1440,
+          "bottom": -175.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 629.328125,
+          "y": -227.359375,
+          "width": 106.140625,
+          "height": 51,
+          "top": -227.359375,
+          "right": 735.46875,
+          "bottom": -176.359375,
+          "left": 629.328125
+        },
+        "scrollY": 300,
+        "scrollLeft": 0,
+        "title": "효소 조절 · Enzyme Explorer",
+        "pageWidth": 1440,
+        "focus": "main-content"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "id": "regulation",
+      "kind": "rail-only",
+      "before": {
+        "route": "#/regulation",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -227.359375,
+          "width": 1440,
+          "height": 52,
+          "top": -227.359375,
+          "right": 1440,
+          "bottom": -175.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 629.328125,
+          "y": -227.359375,
+          "width": 106.140625,
+          "height": 51,
+          "top": -227.359375,
+          "right": 735.46875,
+          "bottom": -176.359375,
+          "left": 629.328125
+        },
+        "scrollY": 300,
+        "scrollLeft": 0,
+        "title": "효소 조절 · Enzyme Explorer",
+        "pageWidth": 1440,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/regulation",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -227.359375,
+          "width": 390,
+          "height": 52,
+          "top": -227.359375,
+          "right": 390,
+          "bottom": -175.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 272.328125,
+          "y": -227.359375,
+          "width": 106.140625,
+          "height": 51,
+          "top": -227.359375,
+          "right": 378.46875,
+          "bottom": -176.359375,
+          "left": 272.328125
+        },
+        "scrollY": 300,
+        "scrollLeft": 357,
+        "title": "효소 조절 · Enzyme Explorer",
+        "pageWidth": 1440,
+        "focus": "main-content"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "id": "model-notes",
+      "before": {
+        "route": "#/model-notes",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -207.359375,
+          "width": 1440,
+          "height": 52,
+          "top": -207.359375,
+          "right": 1440,
+          "bottom": -155.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 739.46875,
+          "y": -207.359375,
+          "width": 98.34375,
+          "height": 51,
+          "top": -207.359375,
+          "right": 837.8125,
+          "bottom": -156.359375,
+          "left": 739.46875
+        },
+        "scrollY": 300,
+        "scrollLeft": 0,
+        "title": "모델 및 주의사항 · Enzyme Explorer",
+        "pageWidth": 1440,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/model-notes",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -74.171875,
+          "width": 390,
+          "height": 52,
+          "top": -74.171875,
+          "right": 390,
+          "bottom": -22.171875,
+          "left": 0
+        },
+        "active": {
+          "x": 279.46875,
+          "y": -74.171875,
+          "width": 98.34375,
+          "height": 51,
+          "top": -74.171875,
+          "right": 377.8125,
+          "bottom": -23.171875,
+          "left": 279.46875
+        },
+        "scrollY": 300,
+        "scrollLeft": 454,
+        "title": "모델 및 주의사항 · Enzyme Explorer",
+        "pageWidth": 390,
+        "focus": "main-content"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "id": "model-notes",
+      "before": {
+        "route": "#/model-notes",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -74.171875,
+          "width": 390,
+          "height": 52,
+          "top": -74.171875,
+          "right": 390,
+          "bottom": -22.171875,
+          "left": 0
+        },
+        "active": {
+          "x": 279.46875,
+          "y": -74.171875,
+          "width": 98.34375,
+          "height": 51,
+          "top": -74.171875,
+          "right": 377.8125,
+          "bottom": -23.171875,
+          "left": 279.46875
+        },
+        "scrollY": 300,
+        "scrollLeft": 454,
+        "title": "모델 및 주의사항 · Enzyme Explorer",
+        "pageWidth": 390,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/model-notes",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -207.359375,
+          "width": 768,
+          "height": 52,
+          "top": -207.359375,
+          "right": 768,
+          "bottom": -155.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 655.46875,
+          "y": -207.359375,
+          "width": 98.34375,
+          "height": 51,
+          "top": -207.359375,
+          "right": 753.8125,
+          "bottom": -156.359375,
+          "left": 655.46875
+        },
+        "scrollY": 300,
+        "scrollLeft": 78,
+        "title": "모델 및 주의사항 · Enzyme Explorer",
+        "pageWidth": 768,
+        "focus": "main-content"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "id": "model-notes",
+      "before": {
+        "route": "#/model-notes",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -207.359375,
+          "width": 768,
+          "height": 52,
+          "top": -207.359375,
+          "right": 768,
+          "bottom": -155.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 655.46875,
+          "y": -207.359375,
+          "width": 98.34375,
+          "height": 51,
+          "top": -207.359375,
+          "right": 753.8125,
+          "bottom": -156.359375,
+          "left": 655.46875
+        },
+        "scrollY": 300,
+        "scrollLeft": 78,
+        "title": "모델 및 주의사항 · Enzyme Explorer",
+        "pageWidth": 768,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/model-notes",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -74.171875,
+          "width": 390,
+          "height": 52,
+          "top": -74.171875,
+          "right": 390,
+          "bottom": -22.171875,
+          "left": 0
+        },
+        "active": {
+          "x": 279.46875,
+          "y": -74.171875,
+          "width": 98.34375,
+          "height": 51,
+          "top": -74.171875,
+          "right": 377.8125,
+          "bottom": -23.171875,
+          "left": 279.46875
+        },
+        "scrollY": 300,
+        "scrollLeft": 454,
+        "title": "모델 및 주의사항 · Enzyme Explorer",
+        "pageWidth": 390,
+        "focus": "main-content"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "id": "model-notes",
+      "before": {
+        "route": "#/model-notes",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -74.171875,
+          "width": 390,
+          "height": 52,
+          "top": -74.171875,
+          "right": 390,
+          "bottom": -22.171875,
+          "left": 0
+        },
+        "active": {
+          "x": 279.46875,
+          "y": -74.171875,
+          "width": 98.34375,
+          "height": 51,
+          "top": -74.171875,
+          "right": 377.8125,
+          "bottom": -23.171875,
+          "left": 279.46875
+        },
+        "scrollY": 300,
+        "scrollLeft": 454,
+        "title": "모델 및 주의사항 · Enzyme Explorer",
+        "pageWidth": 390,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/model-notes",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -207.359375,
+          "width": 1440,
+          "height": 52,
+          "top": -207.359375,
+          "right": 1440,
+          "bottom": -155.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 739.46875,
+          "y": -207.359375,
+          "width": 98.34375,
+          "height": 51,
+          "top": -207.359375,
+          "right": 837.8125,
+          "bottom": -156.359375,
+          "left": 739.46875
+        },
+        "scrollY": 300,
+        "scrollLeft": 0,
+        "title": "모델 및 주의사항 · Enzyme Explorer",
+        "pageWidth": 1440,
+        "focus": "main-content"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "id": "model-notes",
+      "kind": "rail-only",
+      "before": {
+        "route": "#/model-notes",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -207.359375,
+          "width": 1440,
+          "height": 52,
+          "top": -207.359375,
+          "right": 1440,
+          "bottom": -155.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 739.46875,
+          "y": -207.359375,
+          "width": 98.34375,
+          "height": 51,
+          "top": -207.359375,
+          "right": 837.8125,
+          "bottom": -156.359375,
+          "left": 739.46875
+        },
+        "scrollY": 300,
+        "scrollLeft": 0,
+        "title": "모델 및 주의사항 · Enzyme Explorer",
+        "pageWidth": 1440,
+        "focus": "main-content"
+      },
+      "after": {
+        "route": "#/model-notes",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "x": 0,
+          "y": -207.359375,
+          "width": 390,
+          "height": 52,
+          "top": -207.359375,
+          "right": 390,
+          "bottom": -155.359375,
+          "left": 0
+        },
+        "active": {
+          "x": 279.46875,
+          "y": -207.359375,
+          "width": 98.34375,
+          "height": 51,
+          "top": -207.359375,
+          "right": 377.8125,
+          "bottom": -156.359375,
+          "left": 279.46875
+        },
+        "scrollY": 300,
+        "scrollLeft": 460,
+        "title": "모델 및 주의사항 · Enzyme Explorer",
+        "pageWidth": 1440,
+        "focus": "main-content"
+      },
+      "verticalDelta": 0
+    }
+  ],
+  "harnesses": [],
+  "lifecycle": [],
+  "messages": []
+}

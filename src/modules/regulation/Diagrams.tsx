@@ -86,13 +86,15 @@ export function Results({result, step, clamped}: {result: RegulationResult | nul
 export function PhosphateTrace() {
   const [target, setTarget] = useState<'protein' | 'sugar'>('protein');
   const [run, setRun] = useState(0);
+  const nucleotideLabel = run ? 'ADP' : 'ATP';
+  const nucleotideRole = run ? '인산기 전달 후 생성물' : '말단 인산기 공여체';
   return <div className="reg-trace" data-testid="phosphate-trace">
     <div className="reg-inline-buttons" role="group" aria-label="인산기 전달 대상">
       <button type="button" aria-pressed={target === 'protein'} onClick={() => {setTarget('protein'); setRun(0);}}>A · PKA → 단백질</button>
       <button type="button" aria-pressed={target === 'sugar'} onClick={() => {setTarget('sugar'); setRun(0);}}>B · PFK-2 → 당</button>
     </div>
     <div className={`reg-transfer ${target}`} key={`${target}-${run}`}>
-      <div><b>{run ? 'ADP' : 'ATP'}</b><small>말단 인산기 공여체</small></div>
+      <div><b>{nucleotideLabel}</b><small>{nucleotideRole}</small></div>
       <div className="reg-transfer-track"><b>{target === 'protein' ? 'PKA' : 'PFK-2'}</b><span aria-hidden="true">━━━━━━━━→</span><i className={run ? 'reg-phosphate moving' : 'reg-phosphate'}>{target === 'protein' ? '◇P' : '●P'}</i></div>
       <div><b>{target === 'protein' ? run ? '조절 Ser–O–P ◇' : '조절 Ser–OH' : run ? 'F-2,6-BP · 2번 ●P' : 'F6P · 2번 위치'}</b><small>{target === 'protein' ? '◇ 단백질의 조절 인산기' : '● 당에 붙는 인산기'}</small></div>
     </div>

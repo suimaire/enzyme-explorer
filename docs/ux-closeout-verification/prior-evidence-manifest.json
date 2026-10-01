@@ -1,0 +1,506 @@
+[
+  {
+    "path": "docs/ux-011-verification/typecheck.log",
+    "bytes": 55,
+    "sha256": "765f10fc1581ec910b0abfea229e69c95a6d5ccc18a0ba47b691b27f3db63144",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-011-verification/test.log",
+    "bytes": 268,
+    "sha256": "56adadde70176d93b308d64371ee4aa56d26a870f3bf01834a5f9d85c22282c2",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-011-verification/summary.json",
+    "bytes": 1309,
+    "sha256": "3df6ec504ec7212a75bf0445a45ef65482e7af0b3eac280a656d06cdbff36af8",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-011-verification/status.txt",
+    "bytes": 344,
+    "sha256": "35ea0c56d62e17659822c8c257a58b15ffedf16e2fb6ab6955070d24e53b3de5",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-011-verification/start-390.json",
+    "bytes": 2828,
+    "sha256": "6c34d63ed60562a1b14c494cf94b55305ae169db749dee44697ab4217f9a7f84",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-011-verification/start-1440.json",
+    "bytes": 2829,
+    "sha256": "add67bcff51b197ade4c5fd80024bfcb829c5e61ee1db4b802d9fdcba6484d71",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-011-verification/raw-integrity.json",
+    "bytes": 4650,
+    "sha256": "1f5955847091751617ed067306a8514241686ec482e09f10e4f1a04dbb2394c4",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-011-verification/production-keyboard-navigation.json",
+    "bytes": 887,
+    "sha256": "ddc5d87f96f4b79d4c728afa6a10fc48c1790c3c5d166b76d37a4af79eda2d46",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-011-verification/navigation-390.json",
+    "bytes": 12865,
+    "sha256": "92190de77af41eff0c5d552109508fff400753124ef62126307f1a202e873296",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-011-verification/navigation-1440.json",
+    "bytes": 12846,
+    "sha256": "5c5afd29e9864f685a6bf30973299e17ee7a0b34ac832147d8a808c06d31b8a0",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-011-verification/lint.log",
+    "bytes": 46,
+    "sha256": "63542693038cc4485a6e67e06d28415f22cb7b03b897f7319af547816abb52d7",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-011-verification/layout.json",
+    "bytes": 6180,
+    "sha256": "3a1061ede5036e3c955577d495d5d3ae19a956785393e3d28a2ce489a6eb6ac2",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-011-verification/keyboard.json",
+    "bytes": 2372,
+    "sha256": "fc55c5f0e8cd659d31f49a35d3756e3267fede60545d742c8f9666f2bb3cce86",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-011-verification/keyboard-390.png",
+    "bytes": 49636,
+    "sha256": "b6269a2fdbc7fc14bb8e9deae0c0a6e602b998c289d530c196ae291e6f0c0fa8",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/keyboard-1440.png",
+    "bytes": 112147,
+    "sha256": "c6d8bac3c86fdd5920cf75bad14a7e3034de7eec8743885365c91fd5cbb816e1",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/first-768.png",
+    "bytes": 101679,
+    "sha256": "2fa7e945ecfaffabdb4c347382f49ee6b097d0fd5c2b3f2998e97d5bcca1769c",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/first-390.png",
+    "bytes": 45091,
+    "sha256": "776c0c4bf904bd4d5ecb392a46261f46951b8111830497bcca06a5fb8a6c77bc",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/first-1600.png",
+    "bytes": 122838,
+    "sha256": "793064f6f336366d76aa145a9437149a3b703c7db737ec164c87f77e22af107b",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/first-1440.png",
+    "bytes": 121122,
+    "sha256": "674aa775644ece42d80c855fb57e8f64d95b884e9170720388952dccfd399127",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/first-1280.png",
+    "bytes": 103439,
+    "sha256": "1abd49d31babee6c88cc325672c9eb19d8450d8f1614c798a74b58fff40bb58c",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/first-1024.png",
+    "bytes": 93430,
+    "sha256": "a5d2cd093299a5cfb65ea2d95f563217b185618b793038278cce391c49331010",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/final.diff",
+    "bytes": 14938,
+    "sha256": "ecbe5741f051588d387d3f2b136958f3d5e0f47ae7e0cfcb5d44f174511f61ea",
+    "role": "Historical reviewed patch"
+  },
+  {
+    "path": "docs/ux-011-verification/diff-stat.txt",
+    "bytes": 469,
+    "sha256": "4be5f3fce00c34a0a78b567fdbc1ccca842fe31ff9130d8b4dd612e0f46ef57d",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-011-verification/diff-check.log",
+    "bytes": 727,
+    "sha256": "2621c9680a9165d519f17ba80d2b2378a8dc0a8c137c585b8b9de201f46c6804",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-011-verification/build.log",
+    "bytes": 1429,
+    "sha256": "40c44156fea92c58e41f3e97582086ce23f68b4624e6faeb230ade60c670c369",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-011-verification/before-390.png",
+    "bytes": 115104,
+    "sha256": "bb08a369fe52415d4517fb243c561fe42b0cc47125d4e339f5ca0ab7b850dff0",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/before-1440.png",
+    "bytes": 139712,
+    "sha256": "02b758d2afbd390ae5a8af28140cc5f3e3df3a09e32925e7a34438fe9e5d9e23",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/after-768.png",
+    "bytes": 142502,
+    "sha256": "e0bcf01dbdcc474a7289266cef905273b6d134fd19b25e11ffe102c51add4d10",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/after-390.png",
+    "bytes": 136540,
+    "sha256": "71325159b48d41aa8121250c6a3e088ecf5e1fda8c2fd3683e192d71f6d7956b",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/after-1600.png",
+    "bytes": 164293,
+    "sha256": "d9a490354ef8611b102d995ce526b305fcc20d4bf2917ff14ed1eb5f57cadb00",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/after-1440.png",
+    "bytes": 161967,
+    "sha256": "213f6441b66c09b81a797bf7cdab7de21fe92d1588c1346ff88a81a946a057b4",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/after-1280.png",
+    "bytes": 159845,
+    "sha256": "0b1be167575bdf550e4e1784e18119cb59f1fe51ef762ffa312f08d0b4d38124",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-011-verification/after-1024.png",
+    "bytes": 155676,
+    "sha256": "1ac972bd40d20c9cb6b8aac2aae6dd8a8b0a56aa08c0c97993a396b206e7f2a7",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/typecheck.log",
+    "bytes": 55,
+    "sha256": "765f10fc1581ec910b0abfea229e69c95a6d5ccc18a0ba47b691b27f3db63144",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-014-016-verification/test.log",
+    "bytes": 268,
+    "sha256": "ff4bf68b3b7b74eea0db3f1ffdcfdc7513e88d1f4ec0662eb44cb659cfcb3514",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-014-016-verification/summary.json",
+    "bytes": 688,
+    "sha256": "61c2b283f44b21e397322e084ca40ccdaa614e4f1035ff8afde4001112a11590",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/styles-preservation.json",
+    "bytes": 249,
+    "sha256": "50202a9c63ebcdc9452d4df5e0054e59aa4ecd7e54c531f9b5b7e136adf38cb1",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/raw-integrity.json",
+    "bytes": 5113,
+    "sha256": "024784db2f759e96a2aef0fdcc69804bce414b611d6ed99044ddf083770d8df7",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/preservation.json",
+    "bytes": 29343,
+    "sha256": "4ec38624f889dc3c3575c954a7eef95ceee9af02dfe66db64457c46539478b6f",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/msedge-results.json",
+    "bytes": 110725,
+    "sha256": "608716e3e97d963e0efb664f04322227b4b73f7912c050fb698453cff4201dc9",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/msedge-regulation-390.png",
+    "bytes": 35004,
+    "sha256": "2f92ce56faaadf83b052c48bf6e005fb5951d913232b56caaa511d64901e9a50",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/msedge-regulation-1440.png",
+    "bytes": 96694,
+    "sha256": "afd213b2f1f657b0193d8cecbc566470d5f2ba25ae851f32f8de90a0c2500185",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/msedge-model-notes-390.png",
+    "bytes": 34384,
+    "sha256": "a5ad83aa17120699ea6e558e94a4b86f0cb1a34582d97dd0585a0b7c498f9149",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/msedge-model-notes-1440.png",
+    "bytes": 66649,
+    "sha256": "f982f59b98e7eb4b291487b1a35d888c1b8e28f53861961e430b7e23b934db0a",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/msedge-inhibition-390.png",
+    "bytes": 30662,
+    "sha256": "97baad23fb68d313435f52aa99874c3423056479dd9e86b35546395f3d931304",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/msedge-inhibition-1440.png",
+    "bytes": 36595,
+    "sha256": "fdfd4581c4b86aaca80f83085f0fa9a4e72701ab251a361193500e8095c20b33",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/lint.log",
+    "bytes": 46,
+    "sha256": "63542693038cc4485a6e67e06d28415f22cb7b03b897f7319af547816abb52d7",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-014-016-verification/final-status.txt",
+    "bytes": 588,
+    "sha256": "594f9ee0533c9b6097abb6a611ca79f74be587e010608263902ec91085a96fb1",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-014-016-verification/final-diff-stat.txt",
+    "bytes": 676,
+    "sha256": "8321c6e08984cd1fd077e1ab4192658b0238be52a8973024caac8bdd371ceaa1",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-014-016-verification/diff-check.log",
+    "bytes": 1078,
+    "sha256": "b39591796643be1a6459611aed41c8f2500fb30a6b8f5008c2732f15398cac1c",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-014-016-verification/command-results.json",
+    "bytes": 321,
+    "sha256": "7066c212388d9651bfe93954d87f1a83216fdf4990d05dc5248f9715ef79107c",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-start-390.json",
+    "bytes": 2828,
+    "sha256": "7ce5ffba296f104400de66fcd2155b24b45f2d4dc21cc50abcefd9bbdfc36534",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-start-1440.json",
+    "bytes": 2829,
+    "sha256": "add67bcff51b197ade4c5fd80024bfcb829c5e61ee1db4b802d9fdcba6484d71",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-session-390.json",
+    "bytes": 3061,
+    "sha256": "10fb8fc181ff3559fd815b9802f7d427e8204b01024f6f541bbe8b0605707ae4",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-session-1440.json",
+    "bytes": 3062,
+    "sha256": "fa5dc61de08d472a72b940e85546f772167a685136a60700231d62d881fd642b",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-results.json",
+    "bytes": 352964,
+    "sha256": "f74f61616cd323b57b17bac55b510f78e07a07f00b5cbe50af0a2b44e9f91168",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-regulation-390.png",
+    "bytes": 35004,
+    "sha256": "2f92ce56faaadf83b052c48bf6e005fb5951d913232b56caaa511d64901e9a50",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-regulation-1440.png",
+    "bytes": 96694,
+    "sha256": "afd213b2f1f657b0193d8cecbc566470d5f2ba25ae851f32f8de90a0c2500185",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-readability-390.json",
+    "bytes": 63140,
+    "sha256": "bde937192b87793bb01fd4d8402e3b067131c00c2c15b06bc36950e9fe785cc8",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-readability-1440.json",
+    "bytes": 82783,
+    "sha256": "3a6a901449fc4acc94043b2f29179eda569f6974201f9c2723280534f9c50f98",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-production-results.json",
+    "bytes": 110777,
+    "sha256": "31a89c882a2eb05cd3ad6cb31c54d6b0709ccb65f74ce4813f6ef74c3c497943",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-production-regulation-390.png",
+    "bytes": 35004,
+    "sha256": "2f92ce56faaadf83b052c48bf6e005fb5951d913232b56caaa511d64901e9a50",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-production-regulation-1440.png",
+    "bytes": 96694,
+    "sha256": "afd213b2f1f657b0193d8cecbc566470d5f2ba25ae851f32f8de90a0c2500185",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-production-model-notes-390.png",
+    "bytes": 34384,
+    "sha256": "a5ad83aa17120699ea6e558e94a4b86f0cb1a34582d97dd0585a0b7c498f9149",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-production-model-notes-1440.png",
+    "bytes": 66649,
+    "sha256": "f982f59b98e7eb4b291487b1a35d888c1b8e28f53861961e430b7e23b934db0a",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-production-inhibition-390.png",
+    "bytes": 30662,
+    "sha256": "97baad23fb68d313435f52aa99874c3423056479dd9e86b35546395f3d931304",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-production-inhibition-1440.png",
+    "bytes": 36595,
+    "sha256": "fdfd4581c4b86aaca80f83085f0fa9a4e72701ab251a361193500e8095c20b33",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-phase-a2-390.json",
+    "bytes": 5543,
+    "sha256": "ca8864a449797ffdf27f6df10371e3f749aca9d0862b506dc6283339f03a020e",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-phase-a2-1440.json",
+    "bytes": 5544,
+    "sha256": "436268633d34a22392198eed2450c710b653f5fec9e690889fe3f805bb86908e",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-navigation-context-390.json",
+    "bytes": 12872,
+    "sha256": "978b853157274a17f18853914c26336f9afa300270401366c5e34d9125fdec0c",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-navigation-context-1440.json",
+    "bytes": 12846,
+    "sha256": "5c5afd29e9864f685a6bf30973299e17ee7a0b34ac832147d8a808c06d31b8a0",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-model-notes-390.png",
+    "bytes": 34384,
+    "sha256": "a5ad83aa17120699ea6e558e94a4b86f0cb1a34582d97dd0585a0b7c498f9149",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-model-notes-1440.png",
+    "bytes": 66649,
+    "sha256": "f982f59b98e7eb4b291487b1a35d888c1b8e28f53861961e430b7e23b934db0a",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-mobile-experiment-390.json",
+    "bytes": 6798,
+    "sha256": "957e174e0c9c7d6e0567789b06f2ba626773d9c964f9992090e4a8b90983441a",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-initial-results.json",
+    "bytes": 352958,
+    "sha256": "faa24b02a9227b73272b1a98ddc59e883853d0e344b58842dd49f9dde9e2f2b1",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-inhibition-390.png",
+    "bytes": 30662,
+    "sha256": "97baad23fb68d313435f52aa99874c3423056479dd9e86b35546395f3d931304",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/chrome-inhibition-1440.png",
+    "bytes": 36595,
+    "sha256": "fdfd4581c4b86aaca80f83085f0fa9a4e72701ab251a361193500e8095c20b33",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/changed-existing-files.json",
+    "bytes": 83,
+    "sha256": "2cc5170e1e84fb0dc885f54c38092a0b213ffbd46598d3ad0779bc7d2d4bd424",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/build.log",
+    "bytes": 1429,
+    "sha256": "cf097e8d38fb8690bec2453969e5e0f172040d738b3fd630149618c01c4084a5",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-014-016-verification/baseline-status.txt",
+    "bytes": 344,
+    "sha256": "35ea0c56d62e17659822c8c257a58b15ffedf16e2fb6ab6955070d24e53b3de5",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-014-016-verification/baseline-regulation-390.png",
+    "bytes": 34579,
+    "sha256": "9e21f956ebbd428f66ffad27e038423be42c32f13733eaee13f655e4aec470fa",
+    "role": "Original before/after or browser viewport screenshot"
+  },
+  {
+    "path": "docs/ux-014-016-verification/baseline-head.txt",
+    "bytes": 50,
+    "sha256": "9b5f38e266f1804673931acb2659de6f2575f2c5afc0d8b55287e1d7f99760ed",
+    "role": "Historical command or repository-state log"
+  },
+  {
+    "path": "docs/ux-014-016-verification/baseline-hashes.json",
+    "bytes": 16696,
+    "sha256": "693fcd7fe277f4d082fd77501cc72cd5d70dfd4060b0dc8df8fc0c246b4f0d50",
+    "role": "Browser/command/integrity or preservation record"
+  },
+  {
+    "path": "docs/ux-014-016-verification/baseline-diff-stat.txt",
+    "bytes": 469,
+    "sha256": "4be5f3fce00c34a0a78b567fdbc1ccca842fe31ff9130d8b4dd612e0f46ef57d",
+    "role": "Historical command or repository-state log"
+  }
+]

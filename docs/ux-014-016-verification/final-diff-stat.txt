@@ -1,0 +1,10 @@
+ .gitattributes                               | 25 +++++++++++++--
+ docs/SITE_WIDE_UX_AUDIT.md                   | 38 +++++++++++-----------
+ src/app/App.tsx                              |  2 +-
+ src/app/ModuleNavigation.tsx                 | 43 +++++++++++++++++++++----
+ src/modules/regulation/Diagrams.tsx          |  4 ++-
+ src/modules/start/StartPage.tsx              | 45 +++++++++++++++++++++-----
+ src/styles.css                               | 48 ++++++++++++++++++++++++++++
+ tests/browser/navigation-context-harness.tsx | 35 ++++++++++++++++++++
+ tests/regulation.test.tsx                    |  6 ++++
+ 9 files changed, 209 insertions(+), 37 deletions(-)

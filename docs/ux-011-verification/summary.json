@@ -1,0 +1,48 @@
+{
+  "branch": "main",
+  "head": "96f72cb fix: improve enzyme explorer learning UX",
+  "tests": 255,
+  "testFiles": 16,
+  "addedTests": 8,
+  "typecheck": "passed",
+  "lint": "passed",
+  "build": "passed",
+  "buildWarning": "Existing chunks larger than 500 kB",
+  "diffCheckExit": 0,
+  "preserved": [
+    {
+      "path": ".gitattributes",
+      "hash": "19EBD101294EF1984FA115BB4A211CADD173CCA7CF0F1AD44CB88695E43A84EF",
+      "unchanged": true
+    },
+    {
+      "path": "src/modules/regulation/Diagrams.tsx",
+      "hash": "E9070B667F296FF6C8609EDB1E6A969A0E2B049B985855D86BE2909A5E46AB0E",
+      "unchanged": true
+    },
+    {
+      "path": "tests/browser/navigation-context-harness.tsx",
+      "hash": "1168AF4B5056D41EBF97B6B40AAF22F46E803E69B47FEC3F5C8FA6A954F9A30C",
+      "unchanged": true
+    },
+    {
+      "path": "tests/regulation.test.tsx",
+      "hash": "8BE4EE95C7663356864FFE8706D9878C3AEB5C12B81B1AA23F1973A9C3AF5C13",
+      "unchanged": true
+    }
+  ],
+  "applicationFiles": [
+    "src/modules/start/StartPage.tsx",
+    "src/styles.css"
+  ],
+  "testFilesAdded": [
+    "tests/start.test.tsx",
+    "tests/browser/start-harness.html",
+    "tests/browser/start-harness.tsx"
+  ],
+  "untouchedIssues": [
+    "UX-014",
+    "UX-015",
+    "UX-016"
+  ]
+}

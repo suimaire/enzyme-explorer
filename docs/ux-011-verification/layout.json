@@ -1,0 +1,278 @@
+[
+  {
+    "cards": [
+      {
+        "height": 127.1875,
+        "scrollWidth": 448,
+        "testId": "card-reaction-energy",
+        "top": 438.96875,
+        "width": 448
+      },
+      {
+        "height": 127.1875,
+        "scrollWidth": 448,
+        "testId": "card-carbonic-anhydrase",
+        "top": 438.96875,
+        "width": 448
+      },
+      {
+        "height": 127.1875,
+        "scrollWidth": 448,
+        "testId": "card-kinetics",
+        "top": 438.96875,
+        "width": 448
+      },
+      {
+        "height": 161.171875,
+        "scrollWidth": 1375,
+        "testId": "card-regulation",
+        "top": 996.0625,
+        "width": 1375
+      }
+    ],
+    "headings": [
+      "기본 학습 흐름",
+      "세 모듈을 잇는 흐름",
+      "더 탐구해 보기",
+      "준비 중"
+    ],
+    "pageHeight": 1366,
+    "pageWidth": 1425,
+    "planned": "준비 중모듈 04 — 효소 저해 Enzyme II에서 다룰 예정",
+    "ready": "현재 이용 가능",
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  {
+    "cards": [
+      {
+        "height": 152.78125,
+        "scrollWidth": 345,
+        "testId": "card-reaction-energy",
+        "top": 662.53125,
+        "width": 345
+      },
+      {
+        "height": 152.78125,
+        "scrollWidth": 345,
+        "testId": "card-carbonic-anhydrase",
+        "top": 829.3125,
+        "width": 345
+      },
+      {
+        "height": 152.78125,
+        "scrollWidth": 345,
+        "testId": "card-kinetics",
+        "top": 996.09375,
+        "width": 345
+      },
+      {
+        "height": 237.953125,
+        "scrollWidth": 345,
+        "testId": "card-regulation",
+        "top": 1809.125,
+        "width": 345
+      }
+    ],
+    "headings": [
+      "기본 학습 흐름",
+      "세 모듈을 잇는 흐름",
+      "더 탐구해 보기",
+      "준비 중"
+    ],
+    "pageHeight": 2307,
+    "pageWidth": 375,
+    "planned": "준비 중모듈 04 — 효소 저해 Enzyme II에서 다룰 예정",
+    "ready": "현재 이용 가능",
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "cards": [
+      {
+        "height": 127.1875,
+        "scrollWidth": 453,
+        "testId": "card-reaction-energy",
+        "top": 438.96875,
+        "width": 453
+      },
+      {
+        "height": 127.1875,
+        "scrollWidth": 453,
+        "testId": "card-carbonic-anhydrase",
+        "top": 438.96875,
+        "width": 453
+      },
+      {
+        "height": 127.1875,
+        "scrollWidth": 453,
+        "testId": "card-kinetics",
+        "top": 438.96875,
+        "width": 453
+      },
+      {
+        "height": 161.171875,
+        "scrollWidth": 1390,
+        "testId": "card-regulation",
+        "top": 996.0625,
+        "width": 1390
+      }
+    ],
+    "headings": [
+      "기본 학습 흐름",
+      "세 모듈을 잇는 흐름",
+      "더 탐구해 보기",
+      "준비 중"
+    ],
+    "pageHeight": 1366,
+    "pageWidth": 1585,
+    "planned": "준비 중모듈 04 — 효소 저해 Enzyme II에서 다룰 예정",
+    "ready": "현재 이용 가능",
+    "viewport": [
+      1600,
+      900
+    ]
+  },
+  {
+    "cards": [
+      {
+        "height": 152.78125,
+        "scrollWidth": 394,
+        "testId": "card-reaction-energy",
+        "top": 438.96875,
+        "width": 394
+      },
+      {
+        "height": 152.78125,
+        "scrollWidth": 394,
+        "testId": "card-carbonic-anhydrase",
+        "top": 438.96875,
+        "width": 394
+      },
+      {
+        "height": 152.78125,
+        "scrollWidth": 394,
+        "testId": "card-kinetics",
+        "top": 438.96875,
+        "width": 394
+      },
+      {
+        "height": 161.171875,
+        "scrollWidth": 1215,
+        "testId": "card-regulation",
+        "top": 1021.65625,
+        "width": 1215
+      }
+    ],
+    "headings": [
+      "기본 학습 흐름",
+      "세 모듈을 잇는 흐름",
+      "더 탐구해 보기",
+      "준비 중"
+    ],
+    "pageHeight": 1391,
+    "pageWidth": 1265,
+    "planned": "준비 중모듈 04 — 효소 저해 Enzyme II에서 다룰 예정",
+    "ready": "현재 이용 가능",
+    "viewport": [
+      1280,
+      800
+    ]
+  },
+  {
+    "cards": [
+      {
+        "height": 152.78125,
+        "scrollWidth": 309,
+        "testId": "card-reaction-energy",
+        "top": 438.96875,
+        "width": 309
+      },
+      {
+        "height": 152.78125,
+        "scrollWidth": 309,
+        "testId": "card-carbonic-anhydrase",
+        "top": 438.96875,
+        "width": 309
+      },
+      {
+        "height": 152.78125,
+        "scrollWidth": 309,
+        "testId": "card-kinetics",
+        "top": 438.96875,
+        "width": 309
+      },
+      {
+        "height": 161.171875,
+        "scrollWidth": 959,
+        "testId": "card-regulation",
+        "top": 1021.65625,
+        "width": 959
+      }
+    ],
+    "headings": [
+      "기본 학습 흐름",
+      "세 모듈을 잇는 흐름",
+      "더 탐구해 보기",
+      "준비 중"
+    ],
+    "pageHeight": 1391,
+    "pageWidth": 1009,
+    "planned": "준비 중모듈 04 — 효소 저해 Enzyme II에서 다룰 예정",
+    "ready": "현재 이용 가능",
+    "viewport": [
+      1024,
+      768
+    ]
+  },
+  {
+    "cards": [
+      {
+        "height": 152.78125,
+        "scrollWidth": 344,
+        "testId": "card-reaction-energy",
+        "top": 438.96875,
+        "width": 344
+      },
+      {
+        "height": 152.78125,
+        "scrollWidth": 344,
+        "testId": "card-carbonic-anhydrase",
+        "top": 438.96875,
+        "width": 344
+      },
+      {
+        "height": 152.78125,
+        "scrollWidth": 344,
+        "testId": "card-kinetics",
+        "top": 605.75,
+        "width": 344
+      },
+      {
+        "height": 186.765625,
+        "scrollWidth": 703,
+        "testId": "card-regulation",
+        "top": 1188.4375,
+        "width": 703
+      }
+    ],
+    "headings": [
+      "기본 학습 흐름",
+      "세 모듈을 잇는 흐름",
+      "더 탐구해 보기",
+      "준비 중"
+    ],
+    "pageHeight": 1584,
+    "pageWidth": 753,
+    "planned": "준비 중모듈 04 — 효소 저해 Enzyme II에서 다룰 예정",
+    "ready": "현재 이용 가능",
+    "viewport": [
+      768,
+      1024
+    ]
+  }
+]

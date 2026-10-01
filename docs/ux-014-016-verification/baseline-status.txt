@@ -1,0 +1,11 @@
+## main...origin/main
+ M .gitattributes
+ M src/modules/regulation/Diagrams.tsx
+ M src/modules/start/StartPage.tsx
+ M src/styles.css
+ M tests/browser/navigation-context-harness.tsx
+ M tests/regulation.test.tsx
+?? docs/ux-011-verification/
+?? tests/browser/start-harness.html
+?? tests/browser/start-harness.tsx
+?? tests/start.test.tsx

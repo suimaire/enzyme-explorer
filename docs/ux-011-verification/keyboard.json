@@ -1,0 +1,110 @@
+[
+  {
+    "bounds": {
+      "bottom": 691.234375,
+      "left": 24,
+      "right": 1401,
+      "top": 530.0625
+    },
+    "focusVisible": true,
+    "focused": "card-regulation",
+    "href": "#/regulation",
+    "label": "05 효소 조절 Hormonal Regulation 학습 시작 →",
+    "outline": "rgb(22, 123, 186) solid 3px",
+    "pageWidth": 1425,
+    "viewport": [
+      1440,
+      900
+    ]
+  },
+  {
+    "bounds": {
+      "bottom": 584.078125,
+      "left": 14,
+      "right": 361,
+      "top": 346.125
+    },
+    "focusVisible": true,
+    "focused": "card-regulation",
+    "href": "#/regulation",
+    "label": "05 효소 조절 Hormonal Regulation 학습 시작 →",
+    "outline": "rgb(22, 123, 186) solid 3px",
+    "pageWidth": 375,
+    "viewport": [
+      390,
+      844
+    ]
+  },
+  {
+    "bounds": {
+      "bottom": 691.234375,
+      "left": 96.5,
+      "right": 1488.5,
+      "top": 530.0625
+    },
+    "focusVisible": true,
+    "focused": "card-regulation",
+    "href": "#/regulation",
+    "label": "05 효소 조절 Hormonal Regulation 학습 시작 →",
+    "outline": "rgb(22, 123, 186) solid 3px",
+    "pageWidth": 1585,
+    "viewport": [
+      1600,
+      900
+    ]
+  },
+  {
+    "bounds": {
+      "bottom": 591.828125,
+      "left": 24,
+      "right": 1241,
+      "top": 430.65625
+    },
+    "focusVisible": true,
+    "focused": "card-regulation",
+    "href": "#/regulation",
+    "label": "05 효소 조절 Hormonal Regulation 학습 시작 →",
+    "outline": "rgb(22, 123, 186) solid 3px",
+    "pageWidth": 1265,
+    "viewport": [
+      1280,
+      800
+    ]
+  },
+  {
+    "bounds": {
+      "bottom": 559.828125,
+      "left": 24,
+      "right": 985,
+      "top": 398.65625
+    },
+    "focusVisible": true,
+    "focused": "card-regulation",
+    "href": "#/regulation",
+    "label": "05 효소 조절 Hormonal Regulation 학습 시작 →",
+    "outline": "rgb(22, 123, 186) solid 3px",
+    "pageWidth": 1009,
+    "viewport": [
+      1024,
+      768
+    ]
+  },
+  {
+    "bounds": {
+      "bottom": 1024.203125,
+      "left": 24,
+      "right": 729,
+      "top": 837.4375
+    },
+    "focusVisible": true,
+    "focused": "card-regulation",
+    "href": "#/regulation",
+    "label": "05 효소 조절 Hormonal Regulation 학습 시작 →",
+    "outline": "rgb(22, 123, 186) solid 3px",
+    "pageWidth": 753,
+    "viewport": [
+      768,
+      1024
+    ]
+  }
+]

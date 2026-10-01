@@ -87,7 +87,7 @@ function AppContent() {
       </main>
 
       <footer>
-        <span>Enzyme Explorer · Enzyme I — 촉매 작용과 반응속도론</span>
+        <span>Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절</span>
         <span>
           <a href={hashFor('model-notes')} onClick={(e) => {e.preventDefault(); navigate('model-notes');}}>
             모델 및 주의사항

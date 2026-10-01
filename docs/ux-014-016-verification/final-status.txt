@@ -1,0 +1,18 @@
+## main...origin/main
+ M .gitattributes
+ M docs/SITE_WIDE_UX_AUDIT.md
+ M src/app/App.tsx
+ M src/app/ModuleNavigation.tsx
+ M src/modules/regulation/Diagrams.tsx
+ M src/modules/start/StartPage.tsx
+ M src/styles.css
+ M tests/browser/navigation-context-harness.tsx
+ M tests/regulation.test.tsx
+?? docs/UX_014_015_016_POLISH_VERIFICATION.md
+?? docs/ux-011-verification/
+?? docs/ux-014-016-verification/
+?? tests/browser/chrome-polish-checks.mjs
+?? tests/browser/start-harness.html
+?? tests/browser/start-harness.tsx
+?? tests/moduleNavigation.test.tsx
+?? tests/start.test.tsx

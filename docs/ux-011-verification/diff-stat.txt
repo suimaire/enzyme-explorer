@@ -1,0 +1,7 @@
+ .gitattributes                               | 25 ++++++++++++++--
+ src/modules/regulation/Diagrams.tsx          |  4 ++-
+ src/modules/start/StartPage.tsx              | 45 +++++++++++++++++++++++-----
+ src/styles.css                               | 39 ++++++++++++++++++++++++
+ tests/browser/navigation-context-harness.tsx | 35 ++++++++++++++++++++++
+ tests/regulation.test.tsx                    |  6 ++++
+ 6 files changed, 143 insertions(+), 11 deletions(-)

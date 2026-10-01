@@ -1,0 +1,10 @@
+warning: in the working copy of '.gitattributes', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/HANDOFF_2026-10-01.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/SITE_WIDE_UX_AUDIT.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/App.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/app/ModuleNavigation.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/regulation/Diagrams.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/start/StartPage.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/styles.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/browser/navigation-context-harness.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/regulation.test.tsx', LF will be replaced by CRLF the next time Git touches it

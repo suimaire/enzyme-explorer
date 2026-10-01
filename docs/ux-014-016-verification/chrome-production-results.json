@@ -1,0 +1,4069 @@
+{
+  "base": "http://127.0.0.1:4175/enzyme-explorer/",
+  "channel": "chrome",
+  "version": "154.0.8037.58",
+  "checks": [
+    "start 1600: active DOMRect within rail (1px tolerance)",
+    "start 1600: no page horizontal overflow",
+    "start 1600: touch targets at least 44px",
+    "start 1600: shared global footer",
+    "start 1600: compact readable planned indicator",
+    "reaction-energy 1600: active DOMRect within rail (1px tolerance)",
+    "reaction-energy 1600: no page horizontal overflow",
+    "reaction-energy 1600: touch targets at least 44px",
+    "reaction-energy 1600: shared global footer",
+    "reaction-energy 1600: compact readable planned indicator",
+    "carbonic-anhydrase 1600: active DOMRect within rail (1px tolerance)",
+    "carbonic-anhydrase 1600: no page horizontal overflow",
+    "carbonic-anhydrase 1600: touch targets at least 44px",
+    "carbonic-anhydrase 1600: shared global footer",
+    "carbonic-anhydrase 1600: compact readable planned indicator",
+    "kinetics 1600: active DOMRect within rail (1px tolerance)",
+    "kinetics 1600: no page horizontal overflow",
+    "kinetics 1600: touch targets at least 44px",
+    "kinetics 1600: shared global footer",
+    "kinetics 1600: compact readable planned indicator",
+    "inhibition 1600: active DOMRect within rail (1px tolerance)",
+    "inhibition 1600: no page horizontal overflow",
+    "inhibition 1600: touch targets at least 44px",
+    "inhibition 1600: shared global footer",
+    "inhibition 1600: compact readable planned indicator",
+    "regulation 1600: active DOMRect within rail (1px tolerance)",
+    "regulation 1600: no page horizontal overflow",
+    "regulation 1600: touch targets at least 44px",
+    "regulation 1600: shared global footer",
+    "regulation 1600: compact readable planned indicator",
+    "model-notes 1600: active DOMRect within rail (1px tolerance)",
+    "model-notes 1600: no page horizontal overflow",
+    "model-notes 1600: touch targets at least 44px",
+    "model-notes 1600: shared global footer",
+    "model-notes 1600: compact readable planned indicator",
+    "start 1440: active DOMRect within rail (1px tolerance)",
+    "start 1440: no page horizontal overflow",
+    "start 1440: touch targets at least 44px",
+    "start 1440: shared global footer",
+    "start 1440: compact readable planned indicator",
+    "reaction-energy 1440: active DOMRect within rail (1px tolerance)",
+    "reaction-energy 1440: no page horizontal overflow",
+    "reaction-energy 1440: touch targets at least 44px",
+    "reaction-energy 1440: shared global footer",
+    "reaction-energy 1440: compact readable planned indicator",
+    "carbonic-anhydrase 1440: active DOMRect within rail (1px tolerance)",
+    "carbonic-anhydrase 1440: no page horizontal overflow",
+    "carbonic-anhydrase 1440: touch targets at least 44px",
+    "carbonic-anhydrase 1440: shared global footer",
+    "carbonic-anhydrase 1440: compact readable planned indicator",
+    "kinetics 1440: active DOMRect within rail (1px tolerance)",
+    "kinetics 1440: no page horizontal overflow",
+    "kinetics 1440: touch targets at least 44px",
+    "kinetics 1440: shared global footer",
+    "kinetics 1440: compact readable planned indicator",
+    "inhibition 1440: active DOMRect within rail (1px tolerance)",
+    "inhibition 1440: no page horizontal overflow",
+    "inhibition 1440: touch targets at least 44px",
+    "inhibition 1440: shared global footer",
+    "inhibition 1440: compact readable planned indicator",
+    "regulation 1440: active DOMRect within rail (1px tolerance)",
+    "regulation 1440: no page horizontal overflow",
+    "regulation 1440: touch targets at least 44px",
+    "regulation 1440: shared global footer",
+    "regulation 1440: compact readable planned indicator",
+    "model-notes 1440: active DOMRect within rail (1px tolerance)",
+    "model-notes 1440: no page horizontal overflow",
+    "model-notes 1440: touch targets at least 44px",
+    "model-notes 1440: shared global footer",
+    "model-notes 1440: compact readable planned indicator",
+    "start 1280: active DOMRect within rail (1px tolerance)",
+    "start 1280: no page horizontal overflow",
+    "start 1280: touch targets at least 44px",
+    "start 1280: shared global footer",
+    "start 1280: compact readable planned indicator",
+    "reaction-energy 1280: active DOMRect within rail (1px tolerance)",
+    "reaction-energy 1280: no page horizontal overflow",
+    "reaction-energy 1280: touch targets at least 44px",
+    "reaction-energy 1280: shared global footer",
+    "reaction-energy 1280: compact readable planned indicator",
+    "carbonic-anhydrase 1280: active DOMRect within rail (1px tolerance)",
+    "carbonic-anhydrase 1280: no page horizontal overflow",
+    "carbonic-anhydrase 1280: touch targets at least 44px",
+    "carbonic-anhydrase 1280: shared global footer",
+    "carbonic-anhydrase 1280: compact readable planned indicator",
+    "kinetics 1280: active DOMRect within rail (1px tolerance)",
+    "kinetics 1280: no page horizontal overflow",
+    "kinetics 1280: touch targets at least 44px",
+    "kinetics 1280: shared global footer",
+    "kinetics 1280: compact readable planned indicator",
+    "inhibition 1280: active DOMRect within rail (1px tolerance)",
+    "inhibition 1280: no page horizontal overflow",
+    "inhibition 1280: touch targets at least 44px",
+    "inhibition 1280: shared global footer",
+    "inhibition 1280: compact readable planned indicator",
+    "regulation 1280: active DOMRect within rail (1px tolerance)",
+    "regulation 1280: no page horizontal overflow",
+    "regulation 1280: touch targets at least 44px",
+    "regulation 1280: shared global footer",
+    "regulation 1280: compact readable planned indicator",
+    "model-notes 1280: active DOMRect within rail (1px tolerance)",
+    "model-notes 1280: no page horizontal overflow",
+    "model-notes 1280: touch targets at least 44px",
+    "model-notes 1280: shared global footer",
+    "model-notes 1280: compact readable planned indicator",
+    "start 1024: active DOMRect within rail (1px tolerance)",
+    "start 1024: no page horizontal overflow",
+    "start 1024: touch targets at least 44px",
+    "start 1024: shared global footer",
+    "start 1024: compact readable planned indicator",
+    "reaction-energy 1024: active DOMRect within rail (1px tolerance)",
+    "reaction-energy 1024: no page horizontal overflow",
+    "reaction-energy 1024: touch targets at least 44px",
+    "reaction-energy 1024: shared global footer",
+    "reaction-energy 1024: compact readable planned indicator",
+    "carbonic-anhydrase 1024: active DOMRect within rail (1px tolerance)",
+    "carbonic-anhydrase 1024: no page horizontal overflow",
+    "carbonic-anhydrase 1024: touch targets at least 44px",
+    "carbonic-anhydrase 1024: shared global footer",
+    "carbonic-anhydrase 1024: compact readable planned indicator",
+    "kinetics 1024: active DOMRect within rail (1px tolerance)",
+    "kinetics 1024: no page horizontal overflow",
+    "kinetics 1024: touch targets at least 44px",
+    "kinetics 1024: shared global footer",
+    "kinetics 1024: compact readable planned indicator",
+    "inhibition 1024: active DOMRect within rail (1px tolerance)",
+    "inhibition 1024: no page horizontal overflow",
+    "inhibition 1024: touch targets at least 44px",
+    "inhibition 1024: shared global footer",
+    "inhibition 1024: compact readable planned indicator",
+    "regulation 1024: active DOMRect within rail (1px tolerance)",
+    "regulation 1024: no page horizontal overflow",
+    "regulation 1024: touch targets at least 44px",
+    "regulation 1024: shared global footer",
+    "regulation 1024: compact readable planned indicator",
+    "model-notes 1024: active DOMRect within rail (1px tolerance)",
+    "model-notes 1024: no page horizontal overflow",
+    "model-notes 1024: touch targets at least 44px",
+    "model-notes 1024: shared global footer",
+    "model-notes 1024: compact readable planned indicator",
+    "start 768: active DOMRect within rail (1px tolerance)",
+    "start 768: no page horizontal overflow",
+    "start 768: touch targets at least 44px",
+    "start 768: shared global footer",
+    "start 768: compact readable planned indicator",
+    "reaction-energy 768: active DOMRect within rail (1px tolerance)",
+    "reaction-energy 768: no page horizontal overflow",
+    "reaction-energy 768: touch targets at least 44px",
+    "reaction-energy 768: shared global footer",
+    "reaction-energy 768: compact readable planned indicator",
+    "carbonic-anhydrase 768: active DOMRect within rail (1px tolerance)",
+    "carbonic-anhydrase 768: no page horizontal overflow",
+    "carbonic-anhydrase 768: touch targets at least 44px",
+    "carbonic-anhydrase 768: shared global footer",
+    "carbonic-anhydrase 768: compact readable planned indicator",
+    "kinetics 768: active DOMRect within rail (1px tolerance)",
+    "kinetics 768: no page horizontal overflow",
+    "kinetics 768: touch targets at least 44px",
+    "kinetics 768: shared global footer",
+    "kinetics 768: compact readable planned indicator",
+    "inhibition 768: active DOMRect within rail (1px tolerance)",
+    "inhibition 768: no page horizontal overflow",
+    "inhibition 768: touch targets at least 44px",
+    "inhibition 768: shared global footer",
+    "inhibition 768: compact readable planned indicator",
+    "regulation 768: active DOMRect within rail (1px tolerance)",
+    "regulation 768: no page horizontal overflow",
+    "regulation 768: touch targets at least 44px",
+    "regulation 768: shared global footer",
+    "regulation 768: compact readable planned indicator",
+    "model-notes 768: active DOMRect within rail (1px tolerance)",
+    "model-notes 768: no page horizontal overflow",
+    "model-notes 768: touch targets at least 44px",
+    "model-notes 768: shared global footer",
+    "model-notes 768: compact readable planned indicator",
+    "start 390: active DOMRect within rail (1px tolerance)",
+    "start 390: no page horizontal overflow",
+    "start 390: touch targets at least 44px",
+    "start 390: shared global footer",
+    "start 390: compact readable planned indicator",
+    "reaction-energy 390: active DOMRect within rail (1px tolerance)",
+    "reaction-energy 390: no page horizontal overflow",
+    "reaction-energy 390: touch targets at least 44px",
+    "reaction-energy 390: shared global footer",
+    "reaction-energy 390: compact readable planned indicator",
+    "carbonic-anhydrase 390: active DOMRect within rail (1px tolerance)",
+    "carbonic-anhydrase 390: no page horizontal overflow",
+    "carbonic-anhydrase 390: touch targets at least 44px",
+    "carbonic-anhydrase 390: shared global footer",
+    "carbonic-anhydrase 390: compact readable planned indicator",
+    "kinetics 390: active DOMRect within rail (1px tolerance)",
+    "kinetics 390: no page horizontal overflow",
+    "kinetics 390: touch targets at least 44px",
+    "kinetics 390: shared global footer",
+    "kinetics 390: compact readable planned indicator",
+    "inhibition 390: active DOMRect within rail (1px tolerance)",
+    "inhibition 390: no page horizontal overflow",
+    "inhibition 390: touch targets at least 44px",
+    "inhibition 390: shared global footer",
+    "inhibition 390: compact readable planned indicator",
+    "regulation 390: active DOMRect within rail (1px tolerance)",
+    "regulation 390: no page horizontal overflow",
+    "regulation 390: touch targets at least 44px",
+    "regulation 390: shared global footer",
+    "regulation 390: compact readable planned indicator",
+    "model-notes 390: active DOMRect within rail (1px tolerance)",
+    "model-notes 390: no page horizontal overflow",
+    "model-notes 390: touch targets at least 44px",
+    "model-notes 390: shared global footer",
+    "model-notes 390: compact readable planned indicator",
+    "reaction-energy 1440→390: same route, active visible",
+    "reaction-energy 1440→390: focus retained",
+    "reaction-energy 390→768: same route, active visible",
+    "reaction-energy 390→768: focus retained",
+    "reaction-energy 768→390: same route, active visible",
+    "reaction-energy 768→390: focus retained",
+    "reaction-energy 390→1440: same route, active visible",
+    "reaction-energy 390→1440: focus retained",
+    "kinetics 1440→390: same route, active visible",
+    "kinetics 1440→390: focus retained",
+    "kinetics 390→768: same route, active visible",
+    "kinetics 390→768: focus retained",
+    "kinetics 768→390: same route, active visible",
+    "kinetics 768→390: focus retained",
+    "kinetics 390→1440: same route, active visible",
+    "kinetics 390→1440: focus retained",
+    "inhibition 1440→390: same route, active visible",
+    "inhibition 1440→390: focus retained",
+    "inhibition 390→768: same route, active visible",
+    "inhibition 390→768: focus retained",
+    "inhibition 768→390: same route, active visible",
+    "inhibition 768→390: focus retained",
+    "inhibition 390→1440: same route, active visible",
+    "inhibition 390→1440: focus retained",
+    "regulation 1440→390: same route, active visible",
+    "regulation 1440→390: focus retained",
+    "regulation 390→768: same route, active visible",
+    "regulation 390→768: focus retained",
+    "regulation 768→390: same route, active visible",
+    "regulation 768→390: focus retained",
+    "regulation 390→1440: same route, active visible",
+    "regulation 390→1440: focus retained",
+    "model-notes 1440→390: same route, active visible",
+    "model-notes 1440→390: focus retained",
+    "model-notes 390→768: same route, active visible",
+    "model-notes 390→768: focus retained",
+    "model-notes 768→390: same route, active visible",
+    "model-notes 768→390: focus retained",
+    "model-notes 390→1440: same route, active visible",
+    "model-notes 390→1440: focus retained",
+    "rail-only width change triggers ResizeObserver",
+    "rail-only adjustment changes neither document scrollY nor focus",
+    "1440→390 document vertical change equals native reflow control",
+    "manual horizontal scrolling is not forced back to active item",
+    "height-only resize does not override manual horizontal scroll",
+    "route change still reveals the new active item",
+    "visible active item keeps its scrollLeft after resize",
+    "planned accessible name contains status exactly once",
+    "visual planned indicator is hidden from duplicate narration",
+    "Tab from 03 reaches clickable 04",
+    "Enter on 04 opens planned route and retains aria-current",
+    "active 04 retains underline and planned badge",
+    "04 still shows the planned announcement",
+    "Tab from 04 reaches ready 05",
+    "Shift+Tab returns to 04",
+    "resize does not force focus to a different element",
+    "no browser console warnings, errors or page errors"
+  ],
+  "matrix": [
+    {
+      "route": "#/start",
+      "viewport": [
+        1600,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1600,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1600,
+        "height": 52
+      },
+      "active": {
+        "left": 100,
+        "right": 164.359375,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 64.359375,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1600,
+      "scrollY": 0,
+      "pageWidth": 1600,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 661.140625,
+        "right": 693.140625,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        1600,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1600,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1600,
+        "height": 52
+      },
+      "active": {
+        "left": 167.546875,
+        "right": 287.6875,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 120.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1600,
+      "scrollY": 0,
+      "pageWidth": 1600,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 660.328125,
+        "right": 692.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        1600,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1600,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1600,
+        "height": 52
+      },
+      "active": {
+        "left": 291.6875,
+        "right": 435.9375,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 144.25,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1600,
+      "scrollY": 0,
+      "pageWidth": 1600,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 660.328125,
+        "right": 692.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        1600,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1600,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1600,
+        "height": 52
+      },
+      "active": {
+        "left": 439.9375,
+        "right": 556.1875,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 116.25,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1600,
+      "scrollY": 0,
+      "pageWidth": 1600,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 660.328125,
+        "right": 692.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        1600,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1600,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1600,
+        "height": 52
+      },
+      "active": {
+        "left": 560.1875,
+        "right": 705.328125,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 145.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1600,
+      "scrollY": 0,
+      "pageWidth": 1600,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 660.328125,
+        "right": 692.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        1600,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1600,
+        "top": 72.640625,
+        "bottom": 124.640625,
+        "width": 1600,
+        "height": 52
+      },
+      "active": {
+        "left": 709.328125,
+        "right": 815.46875,
+        "top": 72.640625,
+        "bottom": 123.640625,
+        "width": 106.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1600,
+      "scrollY": 0,
+      "pageWidth": 1600,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 660.328125,
+        "right": 692.328125,
+        "top": 88.9375,
+        "bottom": 107.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        1600,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1600,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1600,
+        "height": 52
+      },
+      "active": {
+        "left": 819.46875,
+        "right": 917.8125,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 98.34375,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1600,
+      "scrollY": 0,
+      "pageWidth": 1600,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 660.328125,
+        "right": 692.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1440,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1440,
+        "height": 52
+      },
+      "active": {
+        "left": 20,
+        "right": 84.359375,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 64.359375,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "pageWidth": 1440,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 581.140625,
+        "right": 613.140625,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1440,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1440,
+        "height": 52
+      },
+      "active": {
+        "left": 87.546875,
+        "right": 207.6875,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 120.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "pageWidth": 1440,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 580.328125,
+        "right": 612.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1440,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1440,
+        "height": 52
+      },
+      "active": {
+        "left": 211.6875,
+        "right": 355.9375,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 144.25,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "pageWidth": 1440,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 580.328125,
+        "right": 612.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1440,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1440,
+        "height": 52
+      },
+      "active": {
+        "left": 359.9375,
+        "right": 476.1875,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 116.25,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "pageWidth": 1440,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 580.328125,
+        "right": 612.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1440,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1440,
+        "height": 52
+      },
+      "active": {
+        "left": 480.1875,
+        "right": 625.328125,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 145.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "pageWidth": 1440,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 580.328125,
+        "right": 612.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1440,
+        "top": 72.640625,
+        "bottom": 124.640625,
+        "width": 1440,
+        "height": 52
+      },
+      "active": {
+        "left": 629.328125,
+        "right": 735.46875,
+        "top": 72.640625,
+        "bottom": 123.640625,
+        "width": 106.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "pageWidth": 1440,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 580.328125,
+        "right": 612.328125,
+        "top": 88.9375,
+        "bottom": 107.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        1440,
+        900
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1440,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1440,
+        "height": 52
+      },
+      "active": {
+        "left": 739.46875,
+        "right": 837.8125,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 98.34375,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1440,
+      "scrollY": 0,
+      "pageWidth": 1440,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 580.328125,
+        "right": 612.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        1280,
+        800
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1280,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1280,
+        "height": 52
+      },
+      "active": {
+        "left": 14,
+        "right": 78.359375,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 64.359375,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1280,
+      "scrollY": 0,
+      "pageWidth": 1280,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 575.140625,
+        "right": 607.140625,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        1280,
+        800
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1280,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1280,
+        "height": 52
+      },
+      "active": {
+        "left": 81.546875,
+        "right": 201.6875,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 120.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1280,
+      "scrollY": 0,
+      "pageWidth": 1280,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        1280,
+        800
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1280,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1280,
+        "height": 52
+      },
+      "active": {
+        "left": 205.6875,
+        "right": 349.9375,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 144.25,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1280,
+      "scrollY": 0,
+      "pageWidth": 1280,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        1280,
+        800
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1280,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1280,
+        "height": 52
+      },
+      "active": {
+        "left": 353.9375,
+        "right": 470.1875,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 116.25,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1280,
+      "scrollY": 0,
+      "pageWidth": 1280,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        1280,
+        800
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1280,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1280,
+        "height": 52
+      },
+      "active": {
+        "left": 474.1875,
+        "right": 619.328125,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 145.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1280,
+      "scrollY": 0,
+      "pageWidth": 1280,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        1280,
+        800
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1280,
+        "top": 72.640625,
+        "bottom": 124.640625,
+        "width": 1280,
+        "height": 52
+      },
+      "active": {
+        "left": 623.328125,
+        "right": 729.46875,
+        "top": 72.640625,
+        "bottom": 123.640625,
+        "width": 106.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1280,
+      "scrollY": 0,
+      "pageWidth": 1280,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 88.9375,
+        "bottom": 107.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        1280,
+        800
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1280,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1280,
+        "height": 52
+      },
+      "active": {
+        "left": 733.46875,
+        "right": 831.8125,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 98.34375,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1280,
+      "scrollY": 0,
+      "pageWidth": 1280,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1024,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1024,
+        "height": 52
+      },
+      "active": {
+        "left": 14,
+        "right": 78.359375,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 64.359375,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1024,
+      "scrollY": 0,
+      "pageWidth": 1024,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 575.140625,
+        "right": 607.140625,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1024,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1024,
+        "height": 52
+      },
+      "active": {
+        "left": 81.546875,
+        "right": 201.6875,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 120.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1024,
+      "scrollY": 0,
+      "pageWidth": 1024,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1024,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1024,
+        "height": 52
+      },
+      "active": {
+        "left": 205.6875,
+        "right": 349.9375,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 144.25,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1024,
+      "scrollY": 0,
+      "pageWidth": 1024,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1024,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1024,
+        "height": 52
+      },
+      "active": {
+        "left": 353.9375,
+        "right": 470.1875,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 116.25,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1024,
+      "scrollY": 0,
+      "pageWidth": 1024,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1024,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1024,
+        "height": 52
+      },
+      "active": {
+        "left": 474.1875,
+        "right": 619.328125,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 145.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1024,
+      "scrollY": 0,
+      "pageWidth": 1024,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1024,
+        "top": 72.640625,
+        "bottom": 124.640625,
+        "width": 1024,
+        "height": 52
+      },
+      "active": {
+        "left": 623.328125,
+        "right": 729.46875,
+        "top": 72.640625,
+        "bottom": 123.640625,
+        "width": 106.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1024,
+      "scrollY": 0,
+      "pageWidth": 1024,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 88.9375,
+        "bottom": 107.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        1024,
+        768
+      ],
+      "rail": {
+        "left": 0,
+        "right": 1024,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 1024,
+        "height": 52
+      },
+      "active": {
+        "left": 733.46875,
+        "right": 831.8125,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 98.34375,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 1024,
+      "scrollY": 0,
+      "pageWidth": 1024,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "left": 0,
+        "right": 768,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 768,
+        "height": 52
+      },
+      "active": {
+        "left": 14,
+        "right": 78.359375,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 64.359375,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 847,
+      "scrollY": 0,
+      "pageWidth": 768,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 575.140625,
+        "right": 607.140625,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "left": 0,
+        "right": 768,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 768,
+        "height": 52
+      },
+      "active": {
+        "left": 81.546875,
+        "right": 201.6875,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 120.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 846,
+      "scrollY": 0,
+      "pageWidth": 768,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "left": 0,
+        "right": 768,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 768,
+        "height": 52
+      },
+      "active": {
+        "left": 205.6875,
+        "right": 349.9375,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 144.25,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 846,
+      "scrollY": 0,
+      "pageWidth": 768,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "left": 0,
+        "right": 768,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 768,
+        "height": 52
+      },
+      "active": {
+        "left": 353.9375,
+        "right": 470.1875,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 116.25,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 846,
+      "scrollY": 0,
+      "pageWidth": 768,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "left": 0,
+        "right": 768,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 768,
+        "height": 52
+      },
+      "active": {
+        "left": 474.1875,
+        "right": 619.328125,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 145.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 846,
+      "scrollY": 0,
+      "pageWidth": 768,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "left": 0,
+        "right": 768,
+        "top": 72.640625,
+        "bottom": 124.640625,
+        "width": 768,
+        "height": 52
+      },
+      "active": {
+        "left": 623.328125,
+        "right": 729.46875,
+        "top": 72.640625,
+        "bottom": 123.640625,
+        "width": 106.140625,
+        "height": 51
+      },
+      "scrollLeft": 0,
+      "scrollWidth": 846,
+      "scrollY": 0,
+      "pageWidth": 768,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 574.328125,
+        "right": 606.328125,
+        "top": 88.9375,
+        "bottom": 107.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        768,
+        1024
+      ],
+      "rail": {
+        "left": 0,
+        "right": 768,
+        "top": 92.640625,
+        "bottom": 144.640625,
+        "width": 768,
+        "height": 52
+      },
+      "active": {
+        "left": 657.46875,
+        "right": 755.8125,
+        "top": 92.640625,
+        "bottom": 143.640625,
+        "width": 98.34375,
+        "height": 51
+      },
+      "scrollLeft": 76,
+      "scrollWidth": 846,
+      "scrollY": 0,
+      "pageWidth": 768,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 498.328125,
+        "right": 530.328125,
+        "top": 108.9375,
+        "bottom": 127.328125,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "left": 0,
+        "right": 390,
+        "top": 225.828125,
+        "bottom": 277.828125,
+        "width": 390,
+        "height": 52
+      },
+      "active": {
+        "left": 12,
+        "right": 76.359375,
+        "top": 225.828125,
+        "bottom": 276.828125,
+        "width": 64.359375,
+        "height": 51
+      },
+      "scrollLeft": 2,
+      "scrollWidth": 847,
+      "scrollY": 0,
+      "pageWidth": 390,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 573.140625,
+        "right": 605.140625,
+        "top": 242.125,
+        "bottom": 260.515625,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "left": 0,
+        "right": 390,
+        "top": 225.828125,
+        "bottom": 277.828125,
+        "width": 390,
+        "height": 52
+      },
+      "active": {
+        "left": 79.546875,
+        "right": 199.6875,
+        "top": 225.828125,
+        "bottom": 276.828125,
+        "width": 120.140625,
+        "height": 51
+      },
+      "scrollLeft": 2,
+      "scrollWidth": 846,
+      "scrollY": 0,
+      "pageWidth": 390,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 572.328125,
+        "right": 604.328125,
+        "top": 242.125,
+        "bottom": 260.515625,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "left": 0,
+        "right": 390,
+        "top": 225.828125,
+        "bottom": 277.828125,
+        "width": 390,
+        "height": 52
+      },
+      "active": {
+        "left": 203.6875,
+        "right": 347.9375,
+        "top": 225.828125,
+        "bottom": 276.828125,
+        "width": 144.25,
+        "height": 51
+      },
+      "scrollLeft": 2,
+      "scrollWidth": 846,
+      "scrollY": 0,
+      "pageWidth": 390,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 572.328125,
+        "right": 604.328125,
+        "top": 242.125,
+        "bottom": 260.515625,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "left": 0,
+        "right": 390,
+        "top": 225.828125,
+        "bottom": 277.828125,
+        "width": 390,
+        "height": 52
+      },
+      "active": {
+        "left": 261.9375,
+        "right": 378.1875,
+        "top": 225.828125,
+        "bottom": 276.828125,
+        "width": 116.25,
+        "height": 51
+      },
+      "scrollLeft": 92,
+      "scrollWidth": 846,
+      "scrollY": 0,
+      "pageWidth": 390,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 482.328125,
+        "right": 514.328125,
+        "top": 242.125,
+        "bottom": 260.515625,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "left": 0,
+        "right": 390,
+        "top": 225.828125,
+        "bottom": 277.828125,
+        "width": 390,
+        "height": 52
+      },
+      "active": {
+        "left": 233.1875,
+        "right": 378.328125,
+        "top": 225.828125,
+        "bottom": 276.828125,
+        "width": 145.140625,
+        "height": 51
+      },
+      "scrollLeft": 241,
+      "scrollWidth": 846,
+      "scrollY": 0,
+      "pageWidth": 390,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 333.328125,
+        "right": 365.328125,
+        "top": 242.125,
+        "bottom": 260.515625,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "left": 0,
+        "right": 390,
+        "top": 205.828125,
+        "bottom": 257.828125,
+        "width": 390,
+        "height": 52
+      },
+      "active": {
+        "left": 272.328125,
+        "right": 378.46875,
+        "top": 205.828125,
+        "bottom": 256.828125,
+        "width": 106.140625,
+        "height": 51
+      },
+      "scrollLeft": 351,
+      "scrollWidth": 846,
+      "scrollY": 0,
+      "pageWidth": 390,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 223.328125,
+        "right": 255.328125,
+        "top": 222.125,
+        "bottom": 240.515625,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        390,
+        844
+      ],
+      "rail": {
+        "left": 0,
+        "right": 390,
+        "top": 225.828125,
+        "bottom": 277.828125,
+        "width": 390,
+        "height": 52
+      },
+      "active": {
+        "left": 279.46875,
+        "right": 377.8125,
+        "top": 225.828125,
+        "bottom": 276.828125,
+        "width": 98.34375,
+        "height": 51
+      },
+      "scrollLeft": 454,
+      "scrollWidth": 846,
+      "scrollY": 0,
+      "pageWidth": 390,
+      "focus": "BODY",
+      "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+      "badge": {
+        "text": "예정",
+        "left": 120.328125,
+        "right": 152.328125,
+        "top": 242.125,
+        "bottom": 260.515625,
+        "width": 32,
+        "height": 18.390625,
+        "fontSize": "12px"
+      },
+      "linkHeight": 51,
+      "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+    }
+  ],
+  "resize": [
+    {
+      "route": "reaction-energy",
+      "before": {
+        "route": "#/reaction-energy",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 1440,
+          "top": -74.359375,
+          "bottom": -22.359375,
+          "width": 1440,
+          "height": 52
+        },
+        "active": {
+          "left": 87.546875,
+          "right": 207.6875,
+          "top": -74.359375,
+          "bottom": -23.359375,
+          "width": 120.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 1440,
+        "scrollY": 167,
+        "pageWidth": 1440,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 580.328125,
+          "right": 612.328125,
+          "top": -58.0625,
+          "bottom": -39.671875,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/reaction-energy",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": 58.828125,
+          "bottom": 110.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 81.546875,
+          "right": 201.6875,
+          "top": 58.828125,
+          "bottom": 109.828125,
+          "width": 120.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 846,
+        "scrollY": 167,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 574.328125,
+          "right": 606.328125,
+          "top": 75.125,
+          "bottom": 93.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "reaction-energy",
+      "before": {
+        "route": "#/reaction-energy",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": 58.828125,
+          "bottom": 110.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 81.546875,
+          "right": 201.6875,
+          "top": 58.828125,
+          "bottom": 109.828125,
+          "width": 120.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 846,
+        "scrollY": 167,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 574.328125,
+          "right": 606.328125,
+          "top": 75.125,
+          "bottom": 93.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/reaction-energy",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 768,
+          "top": 66.640625,
+          "bottom": 118.640625,
+          "width": 768,
+          "height": 52
+        },
+        "active": {
+          "left": 81.546875,
+          "right": 201.6875,
+          "top": 66.640625,
+          "bottom": 117.640625,
+          "width": 120.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 846,
+        "scrollY": 26,
+        "pageWidth": 768,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 574.328125,
+          "right": 606.328125,
+          "top": 82.9375,
+          "bottom": 101.328125,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": -141
+    },
+    {
+      "route": "reaction-energy",
+      "before": {
+        "route": "#/reaction-energy",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 768,
+          "top": 66.640625,
+          "bottom": 118.640625,
+          "width": 768,
+          "height": 52
+        },
+        "active": {
+          "left": 81.546875,
+          "right": 201.6875,
+          "top": 66.640625,
+          "bottom": 117.640625,
+          "width": 120.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 846,
+        "scrollY": 26,
+        "pageWidth": 768,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 574.328125,
+          "right": 606.328125,
+          "top": 82.9375,
+          "bottom": 101.328125,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/reaction-energy",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": 58.828125,
+          "bottom": 110.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 81.546875,
+          "right": 201.6875,
+          "top": 58.828125,
+          "bottom": 109.828125,
+          "width": 120.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 846,
+        "scrollY": 167,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 574.328125,
+          "right": 606.328125,
+          "top": 75.125,
+          "bottom": 93.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 141
+    },
+    {
+      "route": "reaction-energy",
+      "before": {
+        "route": "#/reaction-energy",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": 58.828125,
+          "bottom": 110.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 81.546875,
+          "right": 201.6875,
+          "top": 58.828125,
+          "bottom": 109.828125,
+          "width": 120.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 846,
+        "scrollY": 167,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 574.328125,
+          "right": 606.328125,
+          "top": 75.125,
+          "bottom": 93.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/reaction-energy",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 1440,
+          "top": 66.640625,
+          "bottom": 118.640625,
+          "width": 1440,
+          "height": 52
+        },
+        "active": {
+          "left": 87.546875,
+          "right": 207.6875,
+          "top": 66.640625,
+          "bottom": 117.640625,
+          "width": 120.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 1440,
+        "scrollY": 26,
+        "pageWidth": 1440,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 580.328125,
+          "right": 612.328125,
+          "top": 82.9375,
+          "bottom": 101.328125,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": -141
+    },
+    {
+      "route": "kinetics",
+      "before": {
+        "route": "#/kinetics",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 1440,
+          "top": -159.359375,
+          "bottom": -107.359375,
+          "width": 1440,
+          "height": 52
+        },
+        "active": {
+          "left": 359.9375,
+          "right": 476.1875,
+          "top": -159.359375,
+          "bottom": -108.359375,
+          "width": 116.25,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 1440,
+        "scrollY": 252,
+        "pageWidth": 1440,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 580.328125,
+          "right": 612.328125,
+          "top": -143.0625,
+          "bottom": -124.671875,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/kinetics",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -26.171875,
+          "bottom": 25.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 261.9375,
+          "right": 378.1875,
+          "top": -26.171875,
+          "bottom": 24.828125,
+          "width": 116.25,
+          "height": 51
+        },
+        "scrollLeft": 92,
+        "scrollWidth": 846,
+        "scrollY": 252,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 482.328125,
+          "right": 514.328125,
+          "top": -9.875,
+          "bottom": 8.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "kinetics",
+      "before": {
+        "route": "#/kinetics",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -26.171875,
+          "bottom": 25.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 261.9375,
+          "right": 378.1875,
+          "top": -26.171875,
+          "bottom": 24.828125,
+          "width": 116.25,
+          "height": 51
+        },
+        "scrollLeft": 92,
+        "scrollWidth": 846,
+        "scrollY": 252,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 482.328125,
+          "right": 514.328125,
+          "top": -9.875,
+          "bottom": 8.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/kinetics",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 768,
+          "top": -25.359375,
+          "bottom": 26.640625,
+          "width": 768,
+          "height": 52
+        },
+        "active": {
+          "left": 275.9375,
+          "right": 392.1875,
+          "top": -25.359375,
+          "bottom": 25.640625,
+          "width": 116.25,
+          "height": 51
+        },
+        "scrollLeft": 78,
+        "scrollWidth": 846,
+        "scrollY": 118,
+        "pageWidth": 768,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 496.328125,
+          "right": 528.328125,
+          "top": -9.0625,
+          "bottom": 9.328125,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": -134
+    },
+    {
+      "route": "kinetics",
+      "before": {
+        "route": "#/kinetics",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 768,
+          "top": -25.359375,
+          "bottom": 26.640625,
+          "width": 768,
+          "height": 52
+        },
+        "active": {
+          "left": 275.9375,
+          "right": 392.1875,
+          "top": -25.359375,
+          "bottom": 25.640625,
+          "width": 116.25,
+          "height": 51
+        },
+        "scrollLeft": 78,
+        "scrollWidth": 846,
+        "scrollY": 118,
+        "pageWidth": 768,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 496.328125,
+          "right": 528.328125,
+          "top": -9.0625,
+          "bottom": 9.328125,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/kinetics",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -26.171875,
+          "bottom": 25.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 261.9375,
+          "right": 378.1875,
+          "top": -26.171875,
+          "bottom": 24.828125,
+          "width": 116.25,
+          "height": 51
+        },
+        "scrollLeft": 92,
+        "scrollWidth": 846,
+        "scrollY": 252,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 482.328125,
+          "right": 514.328125,
+          "top": -9.875,
+          "bottom": 8.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 134
+    },
+    {
+      "route": "kinetics",
+      "before": {
+        "route": "#/kinetics",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -26.171875,
+          "bottom": 25.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 261.9375,
+          "right": 378.1875,
+          "top": -26.171875,
+          "bottom": 24.828125,
+          "width": 116.25,
+          "height": 51
+        },
+        "scrollLeft": 92,
+        "scrollWidth": 846,
+        "scrollY": 252,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 482.328125,
+          "right": 514.328125,
+          "top": -9.875,
+          "bottom": 8.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/kinetics",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 1440,
+          "top": -25.359375,
+          "bottom": 26.640625,
+          "width": 1440,
+          "height": 52
+        },
+        "active": {
+          "left": 359.9375,
+          "right": 476.1875,
+          "top": -25.359375,
+          "bottom": 25.640625,
+          "width": 116.25,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 1440,
+        "scrollY": 118,
+        "pageWidth": 1440,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 580.328125,
+          "right": 612.328125,
+          "top": -9.0625,
+          "bottom": 9.328125,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": -134
+    },
+    {
+      "route": "inhibition",
+      "before": {
+        "route": "#/inhibition",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 1440,
+          "top": 92.640625,
+          "bottom": 144.640625,
+          "width": 1440,
+          "height": 52
+        },
+        "active": {
+          "left": 480.1875,
+          "right": 625.328125,
+          "top": 92.640625,
+          "bottom": 143.640625,
+          "width": 145.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 1440,
+        "scrollY": 0,
+        "pageWidth": 1440,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 580.328125,
+          "right": 612.328125,
+          "top": 108.9375,
+          "bottom": 127.328125,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/inhibition",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": 225.828125,
+          "bottom": 277.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 233.1875,
+          "right": 378.328125,
+          "top": 225.828125,
+          "bottom": 276.828125,
+          "width": 145.140625,
+          "height": 51
+        },
+        "scrollLeft": 241,
+        "scrollWidth": 846,
+        "scrollY": 0,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 333.328125,
+          "right": 365.328125,
+          "top": 242.125,
+          "bottom": 260.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "inhibition",
+      "before": {
+        "route": "#/inhibition",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": 225.828125,
+          "bottom": 277.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 233.1875,
+          "right": 378.328125,
+          "top": 225.828125,
+          "bottom": 276.828125,
+          "width": 145.140625,
+          "height": 51
+        },
+        "scrollLeft": 241,
+        "scrollWidth": 846,
+        "scrollY": 0,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 333.328125,
+          "right": 365.328125,
+          "top": 242.125,
+          "bottom": 260.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/inhibition",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 768,
+          "top": 92.640625,
+          "bottom": 144.640625,
+          "width": 768,
+          "height": 52
+        },
+        "active": {
+          "left": 396.1875,
+          "right": 541.328125,
+          "top": 92.640625,
+          "bottom": 143.640625,
+          "width": 145.140625,
+          "height": 51
+        },
+        "scrollLeft": 78,
+        "scrollWidth": 846,
+        "scrollY": 0,
+        "pageWidth": 768,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 496.328125,
+          "right": 528.328125,
+          "top": 108.9375,
+          "bottom": 127.328125,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "inhibition",
+      "before": {
+        "route": "#/inhibition",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 768,
+          "top": 92.640625,
+          "bottom": 144.640625,
+          "width": 768,
+          "height": 52
+        },
+        "active": {
+          "left": 396.1875,
+          "right": 541.328125,
+          "top": 92.640625,
+          "bottom": 143.640625,
+          "width": 145.140625,
+          "height": 51
+        },
+        "scrollLeft": 78,
+        "scrollWidth": 846,
+        "scrollY": 0,
+        "pageWidth": 768,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 496.328125,
+          "right": 528.328125,
+          "top": 108.9375,
+          "bottom": 127.328125,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/inhibition",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": 225.828125,
+          "bottom": 277.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 233.1875,
+          "right": 378.328125,
+          "top": 225.828125,
+          "bottom": 276.828125,
+          "width": 145.140625,
+          "height": 51
+        },
+        "scrollLeft": 241,
+        "scrollWidth": 846,
+        "scrollY": 0,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 333.328125,
+          "right": 365.328125,
+          "top": 242.125,
+          "bottom": 260.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "inhibition",
+      "before": {
+        "route": "#/inhibition",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": 225.828125,
+          "bottom": 277.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 233.1875,
+          "right": 378.328125,
+          "top": 225.828125,
+          "bottom": 276.828125,
+          "width": 145.140625,
+          "height": 51
+        },
+        "scrollLeft": 241,
+        "scrollWidth": 846,
+        "scrollY": 0,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 333.328125,
+          "right": 365.328125,
+          "top": 242.125,
+          "bottom": 260.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/inhibition",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 1440,
+          "top": 92.640625,
+          "bottom": 144.640625,
+          "width": 1440,
+          "height": 52
+        },
+        "active": {
+          "left": 480.1875,
+          "right": 625.328125,
+          "top": 92.640625,
+          "bottom": 143.640625,
+          "width": 145.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 1440,
+        "scrollY": 0,
+        "pageWidth": 1440,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 580.328125,
+          "right": 612.328125,
+          "top": 108.9375,
+          "bottom": 127.328125,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "regulation",
+      "before": {
+        "route": "#/regulation",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 1440,
+          "top": -459.359375,
+          "bottom": -407.359375,
+          "width": 1440,
+          "height": 52
+        },
+        "active": {
+          "left": 629.328125,
+          "right": 735.46875,
+          "top": -459.359375,
+          "bottom": -408.359375,
+          "width": 106.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 1440,
+        "scrollY": 532,
+        "pageWidth": 1440,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 580.328125,
+          "right": 612.328125,
+          "top": -443.0625,
+          "bottom": -424.671875,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/regulation",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -326.171875,
+          "bottom": -274.171875,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 272.328125,
+          "right": 378.46875,
+          "top": -326.171875,
+          "bottom": -275.171875,
+          "width": 106.140625,
+          "height": 51
+        },
+        "scrollLeft": 351,
+        "scrollWidth": 846,
+        "scrollY": 532,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 223.328125,
+          "right": 255.328125,
+          "top": -309.875,
+          "bottom": -291.484375,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "regulation",
+      "before": {
+        "route": "#/regulation",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -326.171875,
+          "bottom": -274.171875,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 272.328125,
+          "right": 378.46875,
+          "top": -326.171875,
+          "bottom": -275.171875,
+          "width": 106.140625,
+          "height": 51
+        },
+        "scrollLeft": 351,
+        "scrollWidth": 846,
+        "scrollY": 532,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 223.328125,
+          "right": 255.328125,
+          "top": -309.875,
+          "bottom": -291.484375,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/regulation",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 768,
+          "top": -459.359375,
+          "bottom": -407.359375,
+          "width": 768,
+          "height": 52
+        },
+        "active": {
+          "left": 545.328125,
+          "right": 651.46875,
+          "top": -459.359375,
+          "bottom": -408.359375,
+          "width": 106.140625,
+          "height": 51
+        },
+        "scrollLeft": 78,
+        "scrollWidth": 846,
+        "scrollY": 532,
+        "pageWidth": 768,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 496.328125,
+          "right": 528.328125,
+          "top": -443.0625,
+          "bottom": -424.671875,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "regulation",
+      "before": {
+        "route": "#/regulation",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 768,
+          "top": -459.359375,
+          "bottom": -407.359375,
+          "width": 768,
+          "height": 52
+        },
+        "active": {
+          "left": 545.328125,
+          "right": 651.46875,
+          "top": -459.359375,
+          "bottom": -408.359375,
+          "width": 106.140625,
+          "height": 51
+        },
+        "scrollLeft": 78,
+        "scrollWidth": 846,
+        "scrollY": 532,
+        "pageWidth": 768,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 496.328125,
+          "right": 528.328125,
+          "top": -443.0625,
+          "bottom": -424.671875,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/regulation",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -326.171875,
+          "bottom": -274.171875,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 272.328125,
+          "right": 378.46875,
+          "top": -326.171875,
+          "bottom": -275.171875,
+          "width": 106.140625,
+          "height": 51
+        },
+        "scrollLeft": 351,
+        "scrollWidth": 846,
+        "scrollY": 532,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 223.328125,
+          "right": 255.328125,
+          "top": -309.875,
+          "bottom": -291.484375,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "regulation",
+      "before": {
+        "route": "#/regulation",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -326.171875,
+          "bottom": -274.171875,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 272.328125,
+          "right": 378.46875,
+          "top": -326.171875,
+          "bottom": -275.171875,
+          "width": 106.140625,
+          "height": 51
+        },
+        "scrollLeft": 351,
+        "scrollWidth": 846,
+        "scrollY": 532,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 223.328125,
+          "right": 255.328125,
+          "top": -309.875,
+          "bottom": -291.484375,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/regulation",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 1440,
+          "top": -459.359375,
+          "bottom": -407.359375,
+          "width": 1440,
+          "height": 52
+        },
+        "active": {
+          "left": 629.328125,
+          "right": 735.46875,
+          "top": -459.359375,
+          "bottom": -408.359375,
+          "width": 106.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 1440,
+        "scrollY": 532,
+        "pageWidth": 1440,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 580.328125,
+          "right": 612.328125,
+          "top": -443.0625,
+          "bottom": -424.671875,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "model-notes",
+      "before": {
+        "route": "#/model-notes",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 1440,
+          "top": -507.359375,
+          "bottom": -455.359375,
+          "width": 1440,
+          "height": 52
+        },
+        "active": {
+          "left": 739.46875,
+          "right": 837.8125,
+          "top": -507.359375,
+          "bottom": -456.359375,
+          "width": 98.34375,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 1440,
+        "scrollY": 600,
+        "pageWidth": 1440,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 580.328125,
+          "right": 612.328125,
+          "top": -491.0625,
+          "bottom": -472.671875,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/model-notes",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -374.171875,
+          "bottom": -322.171875,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 279.46875,
+          "right": 377.8125,
+          "top": -374.171875,
+          "bottom": -323.171875,
+          "width": 98.34375,
+          "height": 51
+        },
+        "scrollLeft": 454,
+        "scrollWidth": 846,
+        "scrollY": 600,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 120.328125,
+          "right": 152.328125,
+          "top": -357.875,
+          "bottom": -339.484375,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "model-notes",
+      "before": {
+        "route": "#/model-notes",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -374.171875,
+          "bottom": -322.171875,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 279.46875,
+          "right": 377.8125,
+          "top": -374.171875,
+          "bottom": -323.171875,
+          "width": 98.34375,
+          "height": 51
+        },
+        "scrollLeft": 454,
+        "scrollWidth": 846,
+        "scrollY": 600,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 120.328125,
+          "right": 152.328125,
+          "top": -357.875,
+          "bottom": -339.484375,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/model-notes",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 768,
+          "top": -507.359375,
+          "bottom": -455.359375,
+          "width": 768,
+          "height": 52
+        },
+        "active": {
+          "left": 655.46875,
+          "right": 753.8125,
+          "top": -507.359375,
+          "bottom": -456.359375,
+          "width": 98.34375,
+          "height": 51
+        },
+        "scrollLeft": 78,
+        "scrollWidth": 846,
+        "scrollY": 600,
+        "pageWidth": 768,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 496.328125,
+          "right": 528.328125,
+          "top": -491.0625,
+          "bottom": -472.671875,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "model-notes",
+      "before": {
+        "route": "#/model-notes",
+        "viewport": [
+          768,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 768,
+          "top": -507.359375,
+          "bottom": -455.359375,
+          "width": 768,
+          "height": 52
+        },
+        "active": {
+          "left": 655.46875,
+          "right": 753.8125,
+          "top": -507.359375,
+          "bottom": -456.359375,
+          "width": 98.34375,
+          "height": 51
+        },
+        "scrollLeft": 78,
+        "scrollWidth": 846,
+        "scrollY": 600,
+        "pageWidth": 768,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 496.328125,
+          "right": 528.328125,
+          "top": -491.0625,
+          "bottom": -472.671875,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/model-notes",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -374.171875,
+          "bottom": -322.171875,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 279.46875,
+          "right": 377.8125,
+          "top": -374.171875,
+          "bottom": -323.171875,
+          "width": 98.34375,
+          "height": 51
+        },
+        "scrollLeft": 454,
+        "scrollWidth": 846,
+        "scrollY": 600,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 120.328125,
+          "right": 152.328125,
+          "top": -357.875,
+          "bottom": -339.484375,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "route": "model-notes",
+      "before": {
+        "route": "#/model-notes",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -374.171875,
+          "bottom": -322.171875,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 279.46875,
+          "right": 377.8125,
+          "top": -374.171875,
+          "bottom": -323.171875,
+          "width": 98.34375,
+          "height": 51
+        },
+        "scrollLeft": 454,
+        "scrollWidth": 846,
+        "scrollY": 600,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 120.328125,
+          "right": 152.328125,
+          "top": -357.875,
+          "bottom": -339.484375,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/model-notes",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 1440,
+          "top": -507.359375,
+          "bottom": -455.359375,
+          "width": 1440,
+          "height": 52
+        },
+        "active": {
+          "left": 739.46875,
+          "right": 837.8125,
+          "top": -507.359375,
+          "bottom": -456.359375,
+          "width": 98.34375,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 1440,
+        "scrollY": 600,
+        "pageWidth": 1440,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 580.328125,
+          "right": 612.328125,
+          "top": -491.0625,
+          "bottom": -472.671875,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "verticalDelta": 0
+    },
+    {
+      "kind": "container-only",
+      "before": {
+        "route": "#/regulation",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 1440,
+          "top": -459.359375,
+          "bottom": -407.359375,
+          "width": 1440,
+          "height": 52
+        },
+        "active": {
+          "left": 629.328125,
+          "right": 735.46875,
+          "top": -459.359375,
+          "bottom": -408.359375,
+          "width": 106.140625,
+          "height": 51
+        },
+        "scrollLeft": 0,
+        "scrollWidth": 1440,
+        "scrollY": 532,
+        "pageWidth": 1440,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 580.328125,
+          "right": 612.328125,
+          "top": -443.0625,
+          "bottom": -424.671875,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/regulation",
+        "viewport": [
+          1440,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": -459.359375,
+          "bottom": -407.359375,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 272.328125,
+          "right": 378.46875,
+          "top": -459.359375,
+          "bottom": -408.359375,
+          "width": 106.140625,
+          "height": 51
+        },
+        "scrollLeft": 357,
+        "scrollWidth": 858,
+        "scrollY": 532,
+        "pageWidth": 1440,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 223.328125,
+          "right": 255.328125,
+          "top": -443.0625,
+          "bottom": -424.671875,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      }
+    },
+    {
+      "kind": "vertical-control",
+      "samples": [
+        {
+          "disableRailObserver": false,
+          "before": {
+            "route": "#/regulation",
+            "viewport": [
+              1440,
+              900
+            ],
+            "rail": {
+              "left": 0,
+              "right": 1440,
+              "top": -459.359375,
+              "bottom": -407.359375,
+              "width": 1440,
+              "height": 52
+            },
+            "active": {
+              "left": 629.328125,
+              "right": 735.46875,
+              "top": -459.359375,
+              "bottom": -408.359375,
+              "width": 106.140625,
+              "height": 51
+            },
+            "scrollLeft": 0,
+            "scrollWidth": 1440,
+            "scrollY": 532,
+            "pageWidth": 1440,
+            "focus": "main-content",
+            "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+            "badge": {
+              "text": "예정",
+              "left": 580.328125,
+              "right": 612.328125,
+              "top": -443.0625,
+              "bottom": -424.671875,
+              "width": 32,
+              "height": 18.390625,
+              "fontSize": "12px"
+            },
+            "linkHeight": 51,
+            "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+          },
+          "after": {
+            "route": "#/regulation",
+            "viewport": [
+              390,
+              900
+            ],
+            "rail": {
+              "left": 0,
+              "right": 390,
+              "top": -326.171875,
+              "bottom": -274.171875,
+              "width": 390,
+              "height": 52
+            },
+            "active": {
+              "left": 272.328125,
+              "right": 378.46875,
+              "top": -326.171875,
+              "bottom": -275.171875,
+              "width": 106.140625,
+              "height": 51
+            },
+            "scrollLeft": 351,
+            "scrollWidth": 846,
+            "scrollY": 532,
+            "pageWidth": 390,
+            "focus": "main-content",
+            "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+            "badge": {
+              "text": "예정",
+              "left": 223.328125,
+              "right": 255.328125,
+              "top": -309.875,
+              "bottom": -291.484375,
+              "width": 32,
+              "height": 18.390625,
+              "fontSize": "12px"
+            },
+            "linkHeight": 51,
+            "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+          },
+          "delta": 0
+        },
+        {
+          "disableRailObserver": true,
+          "before": {
+            "route": "#/regulation",
+            "viewport": [
+              1440,
+              900
+            ],
+            "rail": {
+              "left": 0,
+              "right": 1440,
+              "top": -459.359375,
+              "bottom": -407.359375,
+              "width": 1440,
+              "height": 52
+            },
+            "active": {
+              "left": 629.328125,
+              "right": 735.46875,
+              "top": -459.359375,
+              "bottom": -408.359375,
+              "width": 106.140625,
+              "height": 51
+            },
+            "scrollLeft": 0,
+            "scrollWidth": 1440,
+            "scrollY": 532,
+            "pageWidth": 1440,
+            "focus": "main-content",
+            "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+            "badge": {
+              "text": "예정",
+              "left": 580.328125,
+              "right": 612.328125,
+              "top": -443.0625,
+              "bottom": -424.671875,
+              "width": 32,
+              "height": 18.390625,
+              "fontSize": "12px"
+            },
+            "linkHeight": 51,
+            "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+          },
+          "after": {
+            "route": "#/regulation",
+            "viewport": [
+              390,
+              900
+            ],
+            "rail": {
+              "left": 0,
+              "right": 390,
+              "top": -326.171875,
+              "bottom": -274.171875,
+              "width": 390,
+              "height": 52
+            },
+            "active": {
+              "left": 623.328125,
+              "right": 729.46875,
+              "top": -326.171875,
+              "bottom": -275.171875,
+              "width": 106.140625,
+              "height": 51
+            },
+            "scrollLeft": 0,
+            "scrollWidth": 846,
+            "scrollY": 532,
+            "pageWidth": 390,
+            "focus": "main-content",
+            "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+            "badge": {
+              "text": "예정",
+              "left": 574.328125,
+              "right": 606.328125,
+              "top": -309.875,
+              "bottom": -291.484375,
+              "width": 32,
+              "height": 18.390625,
+              "fontSize": "12px"
+            },
+            "linkHeight": 51,
+            "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+          },
+          "delta": 0
+        }
+      ]
+    },
+    {
+      "kind": "already-visible",
+      "before": {
+        "route": "#/reaction-energy",
+        "viewport": [
+          390,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 390,
+          "top": 225.828125,
+          "bottom": 277.828125,
+          "width": 390,
+          "height": 52
+        },
+        "active": {
+          "left": 11.546875,
+          "right": 131.6875,
+          "top": 225.828125,
+          "bottom": 276.828125,
+          "width": 120.140625,
+          "height": 51
+        },
+        "scrollLeft": 70,
+        "scrollWidth": 846,
+        "scrollY": 0,
+        "pageWidth": 390,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 504.328125,
+          "right": 536.328125,
+          "top": 242.125,
+          "bottom": 260.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      },
+      "after": {
+        "route": "#/reaction-energy",
+        "viewport": [
+          400,
+          900
+        ],
+        "rail": {
+          "left": 0,
+          "right": 400,
+          "top": 225.828125,
+          "bottom": 277.828125,
+          "width": 400,
+          "height": 52
+        },
+        "active": {
+          "left": 11.546875,
+          "right": 131.6875,
+          "top": 225.828125,
+          "bottom": 276.828125,
+          "width": 120.140625,
+          "height": 51
+        },
+        "scrollLeft": 70,
+        "scrollWidth": 846,
+        "scrollY": 0,
+        "pageWidth": 400,
+        "focus": "main-content",
+        "footer": "Enzyme Explorer · 효소의 촉매 작용, 반응속도론과 조절",
+        "badge": {
+          "text": "예정",
+          "left": 504.328125,
+          "right": 536.328125,
+          "top": 242.125,
+          "bottom": 260.515625,
+          "width": 32,
+          "height": 18.390625,
+          "fontSize": "12px"
+        },
+        "linkHeight": 51,
+        "underline": "rgb(21, 97, 143) 0px -3px 0px 0px inset"
+      }
+    }
+  ],
+  "regressions": [],
+  "messages": []
+}

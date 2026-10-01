@@ -1,5 +1,26 @@
-# Keep the deposited structure file byte-identical to the RCSB download (its SHA-256 is documented in README).
-*.pdb -text
+# Preserve immutable scientific assets byte-for-byte for documented provenance hashes.
+src/data/structures/2CBA.pdb -text
+# Raw downloads and the processed assembly listed in regulation/provenance.json.
+src/data/regulation/1K6M.cif -text
+src/data/regulation/1K6M.pdb -text
+src/data/regulation/1K6M-assembly1-protein.pdb -text
+src/data/regulation/1k6m-mapping.json -text
+src/data/regulation/P16118.json -text
+src/data/regulation/P47871.json -text
+src/data/regulation/PMID-10749675.json -text
+src/data/regulation/PMID-1339450.json -text
+src/data/regulation/PMID-15170386.json -text
+src/data/regulation/PMID-2158992.json -text
+src/data/regulation/PMID-2846551.json -text
+src/data/regulation/PMID-32193322.json -text
+src/data/regulation/PMID-6260770.json -text
+src/data/regulation/PMID-6296099.json -text
+src/data/regulation/PMID-6323408.json -text
+src/data/regulation/PMID-6455662.json -text
+src/data/regulation/PMID-7549867.json -text
+src/data/regulation/PMID-8390983.json -text
+src/data/regulation/PMID-9211863.json -text
+src/data/regulation/structure-paper.json -text
 
 # Preserve archived UX evidence bytes and manifest hashes across checkouts.
 # Raw logs, patches and deposited structures intentionally contain trailing padding.
@@ -10,3 +31,6 @@ docs/phase-a2-verification/** -text whitespace=-blank-at-eol,-blank-at-eof
 docs/ux-006-007-verification/** -text whitespace=-blank-at-eol,-blank-at-eof
 docs/ux-008-verification/** -text whitespace=-blank-at-eol,-blank-at-eof
 docs/ux-009-010-012-verification/** -text whitespace=-blank-at-eol,-blank-at-eof
+docs/ux-011-verification/** -text whitespace=-blank-at-eol,-blank-at-eof
+docs/ux-014-016-verification/** -text whitespace=-blank-at-eol,-blank-at-eof
+docs/ux-closeout-verification/** -text

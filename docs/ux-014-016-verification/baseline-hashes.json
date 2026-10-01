@@ -1,0 +1,466 @@
+[
+  {
+    "path": "src/main.tsx",
+    "sha256": "fec3b0ccf01a88ce02efdb93a375d138158c9c22bdc82ec9083804d6050336ac"
+  },
+  {
+    "path": "src/styles.css",
+    "sha256": "f0e56f3bb5a9881c992a3abfff9bf62f57e7053a26930936850afb74ce1b8ab5"
+  },
+  {
+    "path": "src/vite-env.d.ts",
+    "sha256": "424faf9241dd699dda995b367ed36665732da1e6ec1f33b2fd40394488ecac92"
+  },
+  {
+    "path": "src/app/App.tsx",
+    "sha256": "d8077341df1c17fe5634289569f7b1e60aa8eb2c48094675b1479391a5236130"
+  },
+  {
+    "path": "src/app/LearningSession.tsx",
+    "sha256": "0dc5155153d092570629c8036c17415a37fe7917278dcc0d3a0ffaa24cc2e010"
+  },
+  {
+    "path": "src/app/learningSessionStore.ts",
+    "sha256": "6d677ecafbb99dc8180cc059d5fe91642623d5e42b63a6f1d4ffef89976040cf"
+  },
+  {
+    "path": "src/app/modelNotesNavigation.ts",
+    "sha256": "493543d081c83a518d11fa2235bd73e471b489101be57de914307b2d68e18156"
+  },
+  {
+    "path": "src/app/ModuleNavigation.tsx",
+    "sha256": "a8d83314e81ee261a3b60b1b2cd7f416dfa768f134682af12b897c6e1a70d7f4"
+  },
+  {
+    "path": "src/app/modules.ts",
+    "sha256": "9cd5e1cb5922a9bc62d96fe4b1735e1846bbe66205d47a93836b79e231ce5544"
+  },
+  {
+    "path": "src/app/useHashModule.ts",
+    "sha256": "d9642855dc1a5eecbfa3f9bfc3a0ba3711744ca80c37f6ab3412ea94ec9e558e"
+  },
+  {
+    "path": "src/data/regulation/1K6M-assembly1-protein.pdb",
+    "sha256": "91bff80c01110bd51c47ea3cea68ff3325cb81c800b3aa3bd93d7d3be3c62873"
+  },
+  {
+    "path": "src/data/regulation/1k6m-mapping.json",
+    "sha256": "49f45c0094c6c87f08979bb35a0e6b73067b2679576a8ac75a938f7bfc1ff9ef"
+  },
+  {
+    "path": "src/data/regulation/1K6M.cif",
+    "sha256": "78f08722ec7093bb110a74456944bbe3acaf00cb9ee23b5a62331e9e789d7e49"
+  },
+  {
+    "path": "src/data/regulation/1K6M.pdb",
+    "sha256": "10c952b517220c0e52aa98a7d8d984f5fffdd42809c7b264d59d73a18213757a"
+  },
+  {
+    "path": "src/data/regulation/P16118.json",
+    "sha256": "5235b35a4e962f70c03aca03d54552a653abb227665a64c6182391cbde965184"
+  },
+  {
+    "path": "src/data/regulation/P47871.json",
+    "sha256": "61848589c479943652ab211dee36b585fcf1cdcb94b7df4fcdbaa22e6e0d8d37"
+  },
+  {
+    "path": "src/data/regulation/PMID-10749675.json",
+    "sha256": "ec20dcda2f5dd336bd25297d071c793fd80495c5d54865c458d80c92046220e7"
+  },
+  {
+    "path": "src/data/regulation/PMID-1339450.json",
+    "sha256": "63a4f94663038773bbb8ff548018e77072909d74c09468b374a4a1d705e6d558"
+  },
+  {
+    "path": "src/data/regulation/PMID-15170386.json",
+    "sha256": "7d0ae13ef49e2f8eaf7c2a3276b113391707872d4fe3964918bc212b3c5b9d59"
+  },
+  {
+    "path": "src/data/regulation/PMID-2158992.json",
+    "sha256": "c42696ce553fbc5a86edaa87f2aaf9980c4f5603145047be05593c6fca5bc2e8"
+  },
+  {
+    "path": "src/data/regulation/PMID-2846551.json",
+    "sha256": "42c11f507c17548dedd22c0941a09a67799082f7b548699a6f6e132368f31990"
+  },
+  {
+    "path": "src/data/regulation/PMID-32193322.json",
+    "sha256": "7b10af929f9452f9c7fc3094f2030dafd557a4cd044e2e576546ccc19a5cc91c"
+  },
+  {
+    "path": "src/data/regulation/PMID-6260770.json",
+    "sha256": "381650c72c66bc90d262ccd30580069734be6d5d9f536cfe44c0a5ae40c5f685"
+  },
+  {
+    "path": "src/data/regulation/PMID-6296099.json",
+    "sha256": "d37f1c43eef43ac74d84ac6351331a5ccd8049fd46de6f0beccf6ce27d509ad4"
+  },
+  {
+    "path": "src/data/regulation/PMID-6323408.json",
+    "sha256": "f1b4e523ebbbc3e3a35435e8c457e96f2ad087156b6281ef40e9bb0b22eedba0"
+  },
+  {
+    "path": "src/data/regulation/PMID-6455662.json",
+    "sha256": "21cd857314bfe2be1657c4c02f0c592a6ffccbbea2be02868871fee654d351fe"
+  },
+  {
+    "path": "src/data/regulation/PMID-7549867.json",
+    "sha256": "8bbc4b3c080b211b2549fc1045c878888af0d750fe6d73f70d04c5f84658e02a"
+  },
+  {
+    "path": "src/data/regulation/PMID-8390983.json",
+    "sha256": "f3d310c6af6876e06240fa363e595241114432c3cc9167f118a35960eb8c4fe9"
+  },
+  {
+    "path": "src/data/regulation/PMID-9211863.json",
+    "sha256": "4160671a1fd1e60c500939f2e55e487164ef98b88caae04511e77c91caf3a8fb"
+  },
+  {
+    "path": "src/data/regulation/provenance.json",
+    "sha256": "270af4fb384f1f680314b862ce201b697a3078ffe892fcc6bd8964843f7030b3"
+  },
+  {
+    "path": "src/data/regulation/structure-paper.json",
+    "sha256": "4ad77b0522b2144ba25a3d431ab03cd0ffaba95a1b65e2a68a671f1c69490b8e"
+  },
+  {
+    "path": "src/data/structures/2CBA.pdb",
+    "sha256": "7862c050b41ed8a867555699c6a0266c7997c06f7552593febf2af9c92c6e5a8"
+  },
+  {
+    "path": "src/kinetics/michaelisMenten.ts",
+    "sha256": "05786f9bb31bbe8f085f58af89fdccda905f865aabf7a789120d950e05626f77"
+  },
+  {
+    "path": "src/kinetics/progressCurve.ts",
+    "sha256": "1523230ccb66237027f95d2dfa577db00da6c2f66bee9290f2c9c2bcf3a2d2fb"
+  },
+  {
+    "path": "src/kinetics/types.ts",
+    "sha256": "5f533ed18dcd06ab183c34ea910ac5e54cf693f53c316bce2e9512ed298e4738"
+  },
+  {
+    "path": "src/modules/carbonic-anhydrase/activeSite.ts",
+    "sha256": "182bbc7bf6c2268af5a904a334917d0e20859f0d5c0bd3f1aaacdba800f221a5"
+  },
+  {
+    "path": "src/modules/carbonic-anhydrase/CarbonicAnhydraseLab.tsx",
+    "sha256": "62d2ee2807fdea327a0ebe74f53de7feef6fbd9c87fdac4d5b91039956c51207"
+  },
+  {
+    "path": "src/modules/carbonic-anhydrase/ChemistryPanel.tsx",
+    "sha256": "cd79c14fc6f4121904b39a61419878ce21500b87cd9090b8a128a58af5f461e3"
+  },
+  {
+    "path": "src/modules/carbonic-anhydrase/ReadingGuide.tsx",
+    "sha256": "7cd62e68b06d6aa05942047175cfb90f8302dfa53a04a259e86fdd5008da94bf"
+  },
+  {
+    "path": "src/modules/carbonic-anhydrase/ResidueFinder.tsx",
+    "sha256": "4cbb76804e3ef63bb791962892320230242bc2ab33e4f89050f8a8d86511eeb0"
+  },
+  {
+    "path": "src/modules/carbonic-anhydrase/stageView.ts",
+    "sha256": "225f182e54147e1394d2693bd500c277c5697bcd4629690855ddc5e115c71bc8"
+  },
+  {
+    "path": "src/modules/carbonic-anhydrase/structureSource.ts",
+    "sha256": "01c386c271e30c0ea2bb6870cd492d4282371da22cc1f472aa5496841761b50a"
+  },
+  {
+    "path": "src/modules/carbonic-anhydrase/StructureViewer.tsx",
+    "sha256": "98eb43aaf01377ed3d1bef92323f57aa31239f532bd6035cbfee09635ca7829f"
+  },
+  {
+    "path": "src/modules/kinetics/InitialVelocityPanel.tsx",
+    "sha256": "af90b405ee52ce223cc2cca92c2a10c662da20de73e435190e8ed5d704137653"
+  },
+  {
+    "path": "src/modules/kinetics/KineticsLab.tsx",
+    "sha256": "74f0c2f298d515ba9c5bfb20565227d5a2bef0513a4f4505807e07e0fa8f16f0"
+  },
+  {
+    "path": "src/modules/kinetics/MechanisticCaveatPanel.tsx",
+    "sha256": "091d5fd9435bb194c43d7ed0b3c42cc1ff538a66923537ffcd18d741849af6e7"
+  },
+  {
+    "path": "src/modules/kinetics/MichaelisMentenPanel.tsx",
+    "sha256": "dd05030240f8f106549ea9cd0915c7090868179efc74e6198b66d5678f80b415"
+  },
+  {
+    "path": "src/modules/kinetics/MichaelisMentenPlot.tsx",
+    "sha256": "7fa8cdd70a5c9dde766366ab704959845a08bde36cbe3da696e5750bb8ed24d6"
+  },
+  {
+    "path": "src/modules/kinetics/ProgressCurvePlot.tsx",
+    "sha256": "940cca3a39b0af9829548a9b9d11cacc71646c53e6e4d70aef3a3157f58a3fdf"
+  },
+  {
+    "path": "src/modules/notes/ModelNotes.tsx",
+    "sha256": "08b175d50b8f7f983b4f293df8034cf9acc6834ec512e8b4abe1834ec2ebc875"
+  },
+  {
+    "path": "src/modules/placeholder/ComingSoon.tsx",
+    "sha256": "d3c91f2a1e88b7c6d7316a2b7a583fb8b8decdd3c3ef781e1dc718cacaf85542"
+  },
+  {
+    "path": "src/modules/reaction-energy/EnergyDiagram.tsx",
+    "sha256": "07b0bd4140852d91c56d3bcebdd2aa4a7b54ded91e2d9a847bd79a220a0d6b77"
+  },
+  {
+    "path": "src/modules/reaction-energy/energyProfile.ts",
+    "sha256": "a15332bb9f95503195ade6891315c0652703b7eec96e9d4e1df09b273d37185a"
+  },
+  {
+    "path": "src/modules/reaction-energy/ReactionEnergyLab.tsx",
+    "sha256": "06637a4107d2f81b86fe40d1e0c3676140624a7a5a5db5b711d76a7f2d3f71d5"
+  },
+  {
+    "path": "src/modules/regulation/Diagrams.tsx",
+    "sha256": "e9070b667f296ff6c8609edb1e6a969a0e2b049b985855d86be2909a5e46ab0e"
+  },
+  {
+    "path": "src/modules/regulation/HormonalRegulation.tsx",
+    "sha256": "076a886b59d6fae2594ba40cb443a64e311ac5bbf153b668867d23c000dfb8db"
+  },
+  {
+    "path": "src/modules/regulation/model.ts",
+    "sha256": "81d90174e639773976161f9aa5d7aa7f70968edd49d62c62564fc88bf19fc37b"
+  },
+  {
+    "path": "src/modules/regulation/ProteinStructure.tsx",
+    "sha256": "742626ca0fd7a9956c59a6ae059b484da168eead90eab4542247703b5fefec41"
+  },
+  {
+    "path": "src/modules/regulation/regulation.css",
+    "sha256": "119828024e537b5606a0ca3ba9bfa08a4d91cec8d8370b19b8b0aa73cff615f8"
+  },
+  {
+    "path": "src/modules/regulation/ScientificContext.tsx",
+    "sha256": "1868518f42e532811adbbe27307c892fdc4636bcf2f065efb4f9ab6d75008b55"
+  },
+  {
+    "path": "src/modules/regulation/StructureFrame.tsx",
+    "sha256": "07bf66774f1cf261f931baf68e096d9e79d8278e18bb768c6f12cd326df951f6"
+  },
+  {
+    "path": "src/modules/regulation/StructureResults.tsx",
+    "sha256": "0b9cd34e0491d441bb5663a5f129f829ba3c9b9eb78b13783dde3d96ea8f4a76"
+  },
+  {
+    "path": "src/modules/regulation/structureSource.ts",
+    "sha256": "d1fb6851ef2a6ef8a419ab2377febd824b5a454b339c4c77d9fbde01eaef97e4"
+  },
+  {
+    "path": "src/modules/start/StartPage.tsx",
+    "sha256": "cba792cbe83213c028d3fdcb5998402090de9c4ab551ce1b243a065a1fd73c5c"
+  },
+  {
+    "path": "src/shared/components/Callout.tsx",
+    "sha256": "b2fd83e12c32e5e465156f0b1ba148107e146b4a684a9ba2db24171a92b45e0f"
+  },
+  {
+    "path": "src/shared/components/Formula.tsx",
+    "sha256": "4f0a906c596c261f64b6481ee5694ffba68882336b51947b3025786496e4fde4"
+  },
+  {
+    "path": "src/shared/components/ModuleHeader.tsx",
+    "sha256": "63aa6291e0d02c69b41574078bae74c4ffaefb50ddc5ceeb37bd3157593bd686"
+  },
+  {
+    "path": "src/shared/components/Prediction.tsx",
+    "sha256": "6c9a4d3a3b3878c1b1505e5513a79e3541193f20fde56ab06b385574d742d197"
+  },
+  {
+    "path": "src/shared/components/SectionJumpButton.tsx",
+    "sha256": "4afe20fa328b3b92eb217810523adf5e3d5fede300688194f39eb841c8c9f006"
+  },
+  {
+    "path": "src/shared/components/Segmented.tsx",
+    "sha256": "839caae6d343fab159a65149336b9d7d346902b124eca79210f16927c7919bb4"
+  },
+  {
+    "path": "src/shared/components/Slider.tsx",
+    "sha256": "66f74765ccb217dc193a6c24932531d65ef831259448d8d2f528406b74679e8d"
+  },
+  {
+    "path": "src/shared/components/useMeasuredWidth.ts",
+    "sha256": "64b1be860196e4d88f4c8e410b9c3ee7a0e8de97247382a0c04234e35cd19370"
+  },
+  {
+    "path": "src/shared/math/format.ts",
+    "sha256": "0ecfa82858f1cbe8ce20a9f2bbc2716a63a629bb35687ccfd1aebfc5f3162d80"
+  },
+  {
+    "path": "src/viewer/measurements/distance.ts",
+    "sha256": "7e148ae83887fd527e9102216c64a3ff33e54c01d7aa2bf0694ee502a258f6f7"
+  },
+  {
+    "path": "src/viewer/pdb/atomNames.ts",
+    "sha256": "8c6f94f6ee168cb2d2602cd6bdcdc122f17a0e16309acc4f34a5b863c82ecc24"
+  },
+  {
+    "path": "src/viewer/pdb/bonds.ts",
+    "sha256": "db48acd9631c30a8198cb5ed85b97c1b04e94ec1064342fbc689330e891b64b2"
+  },
+  {
+    "path": "src/viewer/pdb/elements.ts",
+    "sha256": "20a3a6acb274239bd7f8d8950b5236162c9f8b2b012999a4ad1ef5e2e761fc34"
+  },
+  {
+    "path": "src/viewer/pdb/parsePdb.ts",
+    "sha256": "39a96256cb0134231cf2cfa07d4f7417aba1b290c174505df2f2cfc385d23fa1"
+  },
+  {
+    "path": "src/viewer/picking/picking.ts",
+    "sha256": "dcc9913bf03a6d963adc02acda8325f0ba487441dbf2edda2ec8cc0b1d8b9690"
+  },
+  {
+    "path": "src/viewer/rendering/fitSelection.ts",
+    "sha256": "531b85588d56885df464501b053b968c4b24fbd9d651c1349f125624c6159864"
+  },
+  {
+    "path": "src/viewer/rendering/ribbon.ts",
+    "sha256": "71a707c3aeb6765f86793df776a6dd0d11b0739bf1d47e677d19490c6dcd789d"
+  },
+  {
+    "path": "src/viewer/rendering/StructureScene.ts",
+    "sha256": "0b51e9c33c6a574ed6b902d6d393caa21af7dfe197e9935c4bf55fa4cbf97b20"
+  },
+  {
+    "path": "tests/equations.test.tsx",
+    "sha256": "5fdb4e4b33c497e630def3ab27ca12ad3e26a9ba80dc1fd3187873cccc596086"
+  },
+  {
+    "path": "tests/language.test.ts",
+    "sha256": "5aefa704d3e5e1be951275934a4b252529ff5251f6a9f5fdd4dd73edd1f50c70"
+  },
+  {
+    "path": "tests/learningSession.test.tsx",
+    "sha256": "5db758a6bdac0a109b61d3830d8c02b4c8de7888d2f528eb9c023f02ca3ea37f"
+  },
+  {
+    "path": "tests/michaelisMenten.test.ts",
+    "sha256": "a347d7258070b7db2b0073667dea8a61c94a6777a5b63569e4720931a22523d7"
+  },
+  {
+    "path": "tests/mobileExperiment.test.tsx",
+    "sha256": "9816ea2a9d093704d862285d403c2249bbf9cf5bb633e3542f27a4bfb223606f"
+  },
+  {
+    "path": "tests/navigationContext.test.tsx",
+    "sha256": "8874b31eaf241abc5544348901bb81d5a288b6bc1a2faf76a21203b95f2502ac"
+  },
+  {
+    "path": "tests/phaseA2.test.tsx",
+    "sha256": "74d0cee96497a7e65e4763524aa92e624aaf30593015969a1c0a25b39cda87f6"
+  },
+  {
+    "path": "tests/progressCurve.test.ts",
+    "sha256": "c0a2dfffb124d199df25c443fd387eb640d97c3e1061b665135b5afa33d94bae"
+  },
+  {
+    "path": "tests/reactionEnergy.test.ts",
+    "sha256": "da5bbf2b6f1341ad3aad65a93c9461376d6b790be9fe9e47ee0b2752067acbb8"
+  },
+  {
+    "path": "tests/readability.test.tsx",
+    "sha256": "910537a92178a271cc17958f8bb89f89b428e56ae495ac239f3da29a15aa3724"
+  },
+  {
+    "path": "tests/regulation.test.tsx",
+    "sha256": "8be4ee95c7663356864ffe8706d9878c3aeb5c12b81b1aa23f1973a9c3af5c13"
+  },
+  {
+    "path": "tests/stageView.test.ts",
+    "sha256": "cbeb24ad9d9c166f2396763ea42961afc9a64e628429c9d959d1b40730d0dcb5"
+  },
+  {
+    "path": "tests/start.test.tsx",
+    "sha256": "ca2f722d2da1fdf6816867e36ebbf5e3e5a7634bc80ec3c541dfdca3561ef6d4"
+  },
+  {
+    "path": "tests/structure.test.ts",
+    "sha256": "97bf5d19171a4e5d8f0a25fc4285d5c18d66c2e4a06f7f566be3f7642522e4af"
+  },
+  {
+    "path": "tests/structureLifecycle.test.ts",
+    "sha256": "22c0c69af7e2cdbf2ccbd4cb716ba6c3f47d5bccbdfba44aff4ef333d5cd8ad9"
+  },
+  {
+    "path": "tests/uiLayout.test.tsx",
+    "sha256": "cf5658d8d692bffa288e338fa7b8dd2d22b559990b5390a65579f26f9d9696b1"
+  },
+  {
+    "path": "tests/browser/mobile-experiment-harness.html",
+    "sha256": "f5f33b663877ed2e8ebb68f6860d725cffaaccfbcef162be6e4453a104e75221"
+  },
+  {
+    "path": "tests/browser/mobile-experiment-harness.tsx",
+    "sha256": "9b528772fa6863864a1c79777e2ab1ccdb28ceeff3b7a1619fe1ac641b73bb20"
+  },
+  {
+    "path": "tests/browser/navigation-context-harness.html",
+    "sha256": "d1162f994e8d4ba85e37975160c4505902874740d90b2a01be384465b040032a"
+  },
+  {
+    "path": "tests/browser/navigation-context-harness.tsx",
+    "sha256": "1168af4b5056d41ebf97b6b40aaf22f46e803e69b47fec3f5c8fa6a954f9a30c"
+  },
+  {
+    "path": "tests/browser/phase-a2-harness.html",
+    "sha256": "16b73048f247817d24dd8db5ba87655168630c4690c1eed59e82bff255770217"
+  },
+  {
+    "path": "tests/browser/phase-a2-harness.tsx",
+    "sha256": "456d3624980ebb896474d9a60ffdf1b94beafe41095a59e0ebb3701f0c3e3a95"
+  },
+  {
+    "path": "tests/browser/readability-harness.html",
+    "sha256": "2ce9f40489fd916669af31ca7b39a91f1e0f77297a23a7a2de66c90b9473e3fd"
+  },
+  {
+    "path": "tests/browser/readability-harness.tsx",
+    "sha256": "9050cd50877cc21e840e7e24114b1428d05e7769cfc3ea70d6d3e95efbe13e98"
+  },
+  {
+    "path": "tests/browser/regulation-harness.html",
+    "sha256": "724c24eab780ba42c0ea082e4a11539235c5a8eb0a0553b2f32d4531aca42613"
+  },
+  {
+    "path": "tests/browser/regulation-harness.tsx",
+    "sha256": "73a41388e33fba923d6aa27f1121a52a98ee3a77381ad01cfd145c7c9ad35b85"
+  },
+  {
+    "path": "tests/browser/session-harness.html",
+    "sha256": "3b016c2ceb2e6997be183e08f0e4f8edc78588d80b7f04b9586e1e12b7211b52"
+  },
+  {
+    "path": "tests/browser/session-harness.tsx",
+    "sha256": "430ef80464ef7035d44dc82340da849b4ed79d83564bd4965805ddbbeebb3e25"
+  },
+  {
+    "path": "tests/browser/start-harness.html",
+    "sha256": "57195de26fba2d522489023dbf38b68a867a9a9a835fa91683f4e9e02aa4b11d"
+  },
+  {
+    "path": "tests/browser/start-harness.tsx",
+    "sha256": "860e0ff809468c12a53bc39089cc00123df15d27feb4f1a94c88b2a8a7ed893d"
+  },
+  {
+    "path": "tests/browser/ui-layout-checks.ts",
+    "sha256": "73982f4118368163ed628231b0600e7469c1a6fb97401e3cf427471f352db45d"
+  },
+  {
+    "path": ".gitattributes",
+    "sha256": "19ebd101294ef1984fa115bb4a211cadd173cca7cf0f1ad44cb88695e43a84ef"
+  },
+  {
+    "path": "package.json",
+    "sha256": "1b63e2854e27bf44a3acdf4d32e500bdcedc205e7bcdc68e4a1044f3ce8d535b"
+  },
+  {
+    "path": "package-lock.json",
+    "sha256": "42285fef3ca693c703f6ddaf4e9037a96c59213251fcebfc1252d7e0122ebf92"
+  }
+]

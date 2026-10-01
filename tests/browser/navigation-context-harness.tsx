@@ -55,6 +55,40 @@ async function returnFrom(section: string) {
   const hash=target.getAttribute('href'); target.click(); await frame();
   assert(location.hash===hash && document.activeElement?.id==='main-content', `${section}: explicit return route and main focus`);
 }
+async function phosphateTraceChecks() {
+  await button('인산기 이동 확인 +');
+  const labBefore=JSON.stringify(session.get('regulation','lab'));
+  const reactionsBefore=testId('catalytic-reactions').textContent;
+  for (const target of [
+    {button:'A · PKA → 단백질', before:'조절 Ser–OH', after:'조절 Ser–O–P ◇', equation:'ATP → ADP; PKA의 대상은 단백질입니다. cAMP는 인산기 공여체가 아닙니다.'},
+    {button:'B · PFK-2 → 당', before:'F6P · 2번 위치', after:'F-2,6-BP · 2번 ●P', equation:'F6P + ATP → F-2,6-BP + ADP; PFK-2의 대상은 F6P입니다.'},
+  ]) {
+    await button(target.button);
+    const trace=testId('phosphate-trace');
+    function check(transferred: boolean) {
+      const transfer=trace.querySelector<HTMLElement>('.reg-transfer')!;
+      const nucleotide=transfer.firstElementChild!;
+      const caption=nucleotide.querySelector('small')!;
+      const phase=transferred?'after':'before';
+      assert(nucleotide.querySelector('b')!.textContent===(transferred?'ADP':'ATP'), `UX-013 ${target.button} ${phase}: nucleotide`);
+      assert(caption.textContent===(transferred?'인산기 전달 후 생성물':'말단 인산기 공여체'), `UX-013 ${target.button} ${phase}: role caption`);
+      assert(!nucleotide.closest('[hidden], [aria-hidden="true"]') && !nucleotide.querySelector('[aria-label], [aria-hidden="true"]'), `UX-013 ${target.button} ${phase}: nucleotide and caption exposed as text`);
+      assert(transfer.lastElementChild!.querySelector('b')!.textContent===(transferred?target.after:target.before), `UX-013 ${target.button} ${phase}: distinct reaction target`);
+      assert(trace.querySelector('p')!.textContent===target.equation, `UX-013 ${target.button} ${phase}: reaction equation unchanged`);
+      assert(trace.querySelectorAll('small').length===2 && (!transferred || !transfer.textContent!.includes('말단 인산기 공여체')), `UX-013 ${target.button} ${phase}: no stale donor caption`);
+      const bounds=caption.getBoundingClientRect();
+      assert(bounds.width>0 && caption.scrollWidth<=caption.clientWidth && bounds.left>=0 && bounds.right<=innerWidth && trace.scrollWidth<=trace.clientWidth, `UX-013 ${target.button} ${phase}: caption/card fit viewport`);
+      evidence[`UX-013 ${target.button} ${phase}`]={nucleotide:nucleotide.textContent,target:transfer.lastElementChild!.textContent,captionBounds:{width:bounds.width,height:bounds.height}};
+    }
+    check(false);
+    await button('인산기 전달 보기'); check(true);
+    await button('인산기 전달 보기'); check(true);
+  }
+  await button('A · PKA → 단백질');
+  assert(testId('phosphate-trace').querySelector('.reg-transfer > div')!.textContent==='ATP말단 인산기 공여체', 'UX-013 switching back to A resets nucleotide and role together');
+  assert(JSON.stringify(session.get('regulation','lab'))===labBefore && testId('catalytic-reactions').textContent===reactionsBefore, 'UX-013 transfers preserve hormone, narration, clamp and pathway reactions');
+  await button('인산기 이동 확인 −');
+}
 async function runChecks() {
   checks.length=0;
   const stableMain=document.getElementById('main-content');
@@ -124,6 +158,7 @@ async function runChecks() {
     if (session.get('regulation','lab').narration.status==='playing') await button('Ⅱ 일시정지');
     while(session.get('regulation','lab').narration.step<5) await button('다음 →');
   }
+  await phosphateTraceChecks();
   const trigger=document.querySelector<HTMLButtonElement>('.reg-metabolite')!;
   trigger.focus(); trigger.click(); await frame();
   const dialog=document.querySelector<HTMLDialogElement>('.reg-comparison')!;

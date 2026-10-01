@@ -1,4 +1,4 @@
-import {MODULES, type ModuleId} from '../../app/modules';
+import {hashFor, moduleEntry, MODULES, type ModuleId} from '../../app/modules';
 
 const CARDS: {id: ModuleId; number: string; eyebrow: string; english: string; question: string}[] = [
   {id: 'reaction-energy', number: '01', eyebrow: '에너지', english: 'Energy', question: '왜 열역학적으로 유리한 반응도 느릴 수 있을까?'},
@@ -14,6 +14,7 @@ const CARDS: {id: ModuleId; number: string; eyebrow: string; english: string; qu
 
 /** The home screen opens with the question of the whole session rather than with an explanation. */
 export function StartPage({onNavigate}: {onNavigate: (id: ModuleId) => void}) {
+  const regulation = moduleEntry('regulation');
   const planned = MODULES.filter((m) => m.status === 'planned');
   return (
     <div className="module start-page" data-testid="module-start">
@@ -21,12 +22,13 @@ export function StartPage({onNavigate}: {onNavigate: (id: ModuleId) => void}) {
         <p className="eyebrow">Basic Biochemistry ET · 7차시 · Enzyme I</p>
         <h2>단백질은 어떻게 화학 반응을 더 빠르게 만들 수 있을까?</h2>
         <p>
-          같은 질문을 세 가지 방향에서 살펴봅니다. 각 모듈은 앞 모듈이 남긴 질문에 답하므로 순서대로 진행하세요. 모든
-          모듈에서 먼저 예측하고, 조건을 바꾸고, 결과를 관찰한 뒤에 설명을 읽습니다.
+          같은 질문을 세 가지 방향에서 살펴봅니다. 기본 학습은 01 → 02 → 03 순서로 진행하는 것을 권장합니다.
+          모든 모듈에서 먼저 예측하고, 조건을 바꾸고, 결과를 관찰한 뒤에 설명을 읽습니다.
         </p>
       </section>
 
-      <ul className="card-grid">
+      <h3 id="start-core-heading">기본 학습 흐름</h3>
+      <ul className="card-grid" aria-labelledby="start-core-heading">
         {CARDS.map((c) => (
           <li key={c.id}>
             <button type="button" className="module-card" onClick={() => onNavigate(c.id)} data-testid={`card-${c.id}`}>
@@ -55,20 +57,47 @@ export function StartPage({onNavigate}: {onNavigate: (id: ModuleId) => void}) {
           </li>
           <li>
             <strong>반응속도론.</strong> 이런 과정은 직접 볼 수 없습니다. 실험에서 측정할 수 있는 것은 반응 속도이므로,
-            마지막 모듈에서는 하나의 반응 진행 곡선에서 출발해 v₀ 대 [S] 관계 전체를 직접 쌓아 올립니다.
+            03에서는 하나의 반응 진행 곡선에서 출발해 v₀ 대 [S] 관계 전체를 직접 쌓아 올립니다.
           </li>
         </ol>
       </section>
 
-      <section className="start-planned" aria-label="이후 모듈">
-        <h3>이후 수업에서 다룰 내용</h3>
+      {regulation.status === 'ready' ? (
+        <section className="start-explore" aria-labelledby="start-explore-heading">
+          <h3 id="start-explore-heading">더 탐구해 보기</h3>
+          <p>추가 심화 탐구입니다. 다른 모듈을 완료하지 않아도 지금 시작할 수 있습니다.</p>
+          <a
+            className="module-card"
+            href={hashFor(regulation.id)}
+            onClick={(event) => {event.preventDefault(); onNavigate(regulation.id);}}
+            aria-labelledby="start-regulation-number start-regulation-title start-regulation-cta"
+            aria-describedby="start-regulation-description"
+            data-testid={`card-${regulation.id}`}
+          >
+            <span className="card-number" id="start-regulation-number">{regulation.number}</span>
+            <span className="card-eyebrow">
+              {regulation.eyebrow} <span className="badge start-ready">현재 이용 가능</span>
+            </span>
+            <span className="card-title" id="start-regulation-title">
+              {regulation.title} <small lang="en">{regulation.heading}</small>
+            </span>
+            <span className="card-question" id="start-regulation-description">
+              간 PFKFB1 L형을 중심으로 인슐린·글루카곤 신호가 효소 활성과 대사 조절 방향을 어떻게 바꾸는지 탐구합니다.
+            </span>
+            <span className="card-cta" id="start-regulation-cta">학습 시작 <span aria-hidden="true">→</span></span>
+          </a>
+        </section>
+      ) : null}
+
+      <section className="start-planned" aria-label="준비 중인 모듈">
+        <h3>준비 중</h3>
         <ul>
           {planned.map((m) => (
             <li key={m.id}>
               <strong>
                 모듈 {m.number} — {m.title}
               </strong>{' '}
-              <span className="badge">Enzyme II에서 다룰 예정</span>
+              <span className="badge">{m.eyebrow}에서 다룰 예정</span>
             </li>
           ))}
         </ul>

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Seoul",
+  "branch": "main",
+  "startHead": "96f72cb0eb7281ef87daba6c19d23c07c100823e",
+  "precommitOriginMain": "96f72cb0eb7281ef87daba6c19d23c07c100823e",
+  "originalIssues": 16,
+  "resolved": 16,
+  "unresolved": 0,
+  "inhibition": "planned, not implemented",
+  "testFiles": 17,
+  "tests": 277,
+  "commands": [
+    {
+      "command": "npm test",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run typecheck",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run lint",
+      "exitCode": 0
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0
+    },
+    {
+      "command": "git diff --check",
+      "exitCode": 0
+    }
+  ],
+  "browser": "Chrome 154.0.8037.58 headless Windows",
+  "localChecks": 262,
+  "productionChecks": 226,
+  "routeViewportCombinationsPerRun": 28,
+  "routePreservingResizes": 12,
+  "railOnlyResizes": 3,
+  "existingHarnessRuns": 11,
+  "existingHarnessChecksIncludingCompletionMarkers": 1190,
+  "browserWarningsErrors": 0,
+  "rawAssetsPassed": 21,
+  "rawAssetsTotal": 21,
+  "webgl": {
+    "module05LargeOpenClose": 5,
+    "module05Exit": 1,
+    "module02EntriesExits": 5
+  },
+  "commitPush": "Pending successful staged review; deployment/public verification reported after push"
+}

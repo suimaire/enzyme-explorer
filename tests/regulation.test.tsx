@@ -184,6 +184,12 @@ describe('disclosure and biochemical semantics', () => {
     expect(right.includes('data-testid="reg-results"')).toBe(step === 5);
     if (step < 5) expect(right).not.toContain(result.glycolysis);
   });
+  it('labels the initial ATP nucleotide as the phosphate donor', () => {
+    const trace = renderToStaticMarkup(<PhosphateTrace />);
+    expect(trace).toContain('<b>ATP</b><small>말단 인산기 공여체</small>');
+    expect(trace).not.toContain('<b>ADP</b>');
+    expect(trace).not.toContain('인산기 전달 후 생성물');
+  });
   it('separates protein, sugar and hydrolysis reactions', () => {
     const trace = renderToStaticMarkup(<PhosphateTrace />);
     expect(trace).toContain('PKA → 단백질');

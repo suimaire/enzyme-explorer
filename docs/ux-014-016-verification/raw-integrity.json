@@ -1,0 +1,142 @@
+[
+  {
+    "name": "1K6M-assembly1-protein.pdb",
+    "kind": "processed",
+    "expected": "91bff80c01110bd51c47ea3cea68ff3325cb81c800b3aa3bd93d7d3be3c62873",
+    "actual": "91bff80c01110bd51c47ea3cea68ff3325cb81c800b3aa3bd93d7d3be3c62873",
+    "passed": true
+  },
+  {
+    "name": "1k6m-mapping.json",
+    "kind": "source",
+    "expected": "49f45c0094c6c87f08979bb35a0e6b73067b2679576a8ac75a938f7bfc1ff9ef",
+    "actual": "49f45c0094c6c87f08979bb35a0e6b73067b2679576a8ac75a938f7bfc1ff9ef",
+    "passed": true
+  },
+  {
+    "name": "1K6M.cif",
+    "kind": "source",
+    "expected": "78f08722ec7093bb110a74456944bbe3acaf00cb9ee23b5a62331e9e789d7e49",
+    "actual": "78f08722ec7093bb110a74456944bbe3acaf00cb9ee23b5a62331e9e789d7e49",
+    "passed": true
+  },
+  {
+    "name": "1K6M.pdb",
+    "kind": "source",
+    "expected": "10c952b517220c0e52aa98a7d8d984f5fffdd42809c7b264d59d73a18213757a",
+    "actual": "10c952b517220c0e52aa98a7d8d984f5fffdd42809c7b264d59d73a18213757a",
+    "passed": true
+  },
+  {
+    "name": "P16118.json",
+    "kind": "source",
+    "expected": "5235b35a4e962f70c03aca03d54552a653abb227665a64c6182391cbde965184",
+    "actual": "5235b35a4e962f70c03aca03d54552a653abb227665a64c6182391cbde965184",
+    "passed": true
+  },
+  {
+    "name": "P47871.json",
+    "kind": "source",
+    "expected": "61848589c479943652ab211dee36b585fcf1cdcb94b7df4fcdbaa22e6e0d8d37",
+    "actual": "61848589c479943652ab211dee36b585fcf1cdcb94b7df4fcdbaa22e6e0d8d37",
+    "passed": true
+  },
+  {
+    "name": "PMID-1339450.json",
+    "kind": "source",
+    "expected": "63a4f94663038773bbb8ff548018e77072909d74c09468b374a4a1d705e6d558",
+    "actual": "63a4f94663038773bbb8ff548018e77072909d74c09468b374a4a1d705e6d558",
+    "passed": true
+  },
+  {
+    "name": "PMID-32193322.json",
+    "kind": "source",
+    "expected": "7b10af929f9452f9c7fc3094f2030dafd557a4cd044e2e576546ccc19a5cc91c",
+    "actual": "7b10af929f9452f9c7fc3094f2030dafd557a4cd044e2e576546ccc19a5cc91c",
+    "passed": true
+  },
+  {
+    "name": "PMID-6260770.json",
+    "kind": "source",
+    "expected": "381650c72c66bc90d262ccd30580069734be6d5d9f536cfe44c0a5ae40c5f685",
+    "actual": "381650c72c66bc90d262ccd30580069734be6d5d9f536cfe44c0a5ae40c5f685",
+    "passed": true
+  },
+  {
+    "name": "PMID-6296099.json",
+    "kind": "source",
+    "expected": "d37f1c43eef43ac74d84ac6351331a5ccd8049fd46de6f0beccf6ce27d509ad4",
+    "actual": "d37f1c43eef43ac74d84ac6351331a5ccd8049fd46de6f0beccf6ce27d509ad4",
+    "passed": true
+  },
+  {
+    "name": "PMID-6323408.json",
+    "kind": "source",
+    "expected": "f1b4e523ebbbc3e3a35435e8c457e96f2ad087156b6281ef40e9bb0b22eedba0",
+    "actual": "f1b4e523ebbbc3e3a35435e8c457e96f2ad087156b6281ef40e9bb0b22eedba0",
+    "passed": true
+  },
+  {
+    "name": "PMID-6455662.json",
+    "kind": "source",
+    "expected": "21cd857314bfe2be1657c4c02f0c592a6ffccbbea2be02868871fee654d351fe",
+    "actual": "21cd857314bfe2be1657c4c02f0c592a6ffccbbea2be02868871fee654d351fe",
+    "passed": true
+  },
+  {
+    "name": "structure-paper.json",
+    "kind": "source",
+    "expected": "4ad77b0522b2144ba25a3d431ab03cd0ffaba95a1b65e2a68a671f1c69490b8e",
+    "actual": "4ad77b0522b2144ba25a3d431ab03cd0ffaba95a1b65e2a68a671f1c69490b8e",
+    "passed": true
+  },
+  {
+    "name": "PMID-10749675.json",
+    "kind": "source",
+    "expected": "ec20dcda2f5dd336bd25297d071c793fd80495c5d54865c458d80c92046220e7",
+    "actual": "ec20dcda2f5dd336bd25297d071c793fd80495c5d54865c458d80c92046220e7",
+    "passed": true
+  },
+  {
+    "name": "PMID-8390983.json",
+    "kind": "source",
+    "expected": "f3d310c6af6876e06240fa363e595241114432c3cc9167f118a35960eb8c4fe9",
+    "actual": "f3d310c6af6876e06240fa363e595241114432c3cc9167f118a35960eb8c4fe9",
+    "passed": true
+  },
+  {
+    "name": "PMID-7549867.json",
+    "kind": "source",
+    "expected": "8bbc4b3c080b211b2549fc1045c878888af0d750fe6d73f70d04c5f84658e02a",
+    "actual": "8bbc4b3c080b211b2549fc1045c878888af0d750fe6d73f70d04c5f84658e02a",
+    "passed": true
+  },
+  {
+    "name": "PMID-2158992.json",
+    "kind": "source",
+    "expected": "c42696ce553fbc5a86edaa87f2aaf9980c4f5603145047be05593c6fca5bc2e8",
+    "actual": "c42696ce553fbc5a86edaa87f2aaf9980c4f5603145047be05593c6fca5bc2e8",
+    "passed": true
+  },
+  {
+    "name": "PMID-15170386.json",
+    "kind": "source",
+    "expected": "7d0ae13ef49e2f8eaf7c2a3276b113391707872d4fe3964918bc212b3c5b9d59",
+    "actual": "7d0ae13ef49e2f8eaf7c2a3276b113391707872d4fe3964918bc212b3c5b9d59",
+    "passed": true
+  },
+  {
+    "name": "PMID-2846551.json",
+    "kind": "source",
+    "expected": "42c11f507c17548dedd22c0941a09a67799082f7b548699a6f6e132368f31990",
+    "actual": "42c11f507c17548dedd22c0941a09a67799082f7b548699a6f6e132368f31990",
+    "passed": true
+  },
+  {
+    "name": "PMID-9211863.json",
+    "kind": "source",
+    "expected": "4160671a1fd1e60c500939f2e55e487164ef98b88caae04511e77c91caf3a8fb",
+    "actual": "4160671a1fd1e60c500939f2e55e487164ef98b88caae04511e77c91caf3a8fb",
+    "passed": true
+  }
+]

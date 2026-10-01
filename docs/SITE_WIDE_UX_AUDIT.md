@@ -285,24 +285,26 @@ F-2,6-BP와 F-1,6-BP의 위치·생성 효소·조절물질/중간체 역할을 
 
 P0/P1/P2/P3는 사용자가 제시한 기준을 적용했다. 난이도는 XS(작은 문구/스타일), S(한 기능 수정), M(상태/공통 배치 및 회귀 영향), L(광범위한 구조 변경)이며 실제 구현 견적 확정은 아니다.
 
-| ID | Priority | Route | Issue | User impact | Difficulty |
-|---|---|---|---|---|---|
-| UX-001 | P0 | 03↔Reference, 전역 | route 왕복 시 세션 측정값 소실 | 수집 자료를 다시 만들어야 함 | M |
-| UX-002 | P1 | 01 | 요청한 촉매 감소량과 실제 적용량 불일치 | 장벽 감소의 의미를 잘못 읽음 | S |
-| UX-003 | P1 | 03B | 높은 Km에서 포화 해설 조건 도달 불가 | 지시대로 탐색해도 해설 진행 불가 | S |
-| UX-004 | P2 | 03B | 속도 축 고정 안내와 실제 재스케일 불일치 | 곡선 높이 비교를 오해 | S |
-| UX-005 | P2 | 03A/B | 가상 측정·반복의 성격이 가까이 드러나지 않음 | 독립 실험 데이터/fit처럼 해석 | S |
-| UX-006 | P2 | 01 | 일부 작은 그래프 텍스트 대비 미달 | 낮은 시력에서 장벽/ΔG 판독 어려움 | XS |
-| UX-007 | P2 | 01/02/03/05 | 핵심 그래프/구조 라벨이 10.5–13px | 교실 시연·모바일 읽기 부담 | M |
-| UX-008 | P2 | 01/03 | mobile prerequisite·control·graph 분리 | 긴 상하 왕복으로 실험 흐름 중단 | M |
-| UX-009 | P2 | 05 당 비교 | ESC 종료 뒤 focus=BODY | 키보드 위치를 잃음 | S |
-| UX-010 | P2 | Reference | section 직접 이동/학생·심화 층위 부족 | 필요한 한계를 찾기 어려움 | M |
-| UX-011 | P2 | Start | 현재 사용 가능한 05 소개 누락 | 실제 학습 범위 발견 어려움 | S |
-| UX-012 | P2 | 전역 | 본문 바로가기/route 문맥 진입 부족 | 키보드로 rail을 반복 통과 | S |
-| UX-013 | P2 | 05 인산기 전달 | ADP 아래 ATP 공여체 caption 유지 | 반응 후 생성물 역할 혼동 | XS |
-| UX-014 | P3 | 전역 rail/04 | 예정 모듈 시각 표시 부족 | 가용 기능으로 기대하고 이동 | XS |
-| UX-015 | P3 | 전역 footer/05 | Enzyme I footer와 II 모듈 범위 불일치 | 과정 범위 인식 혼란 | XS |
-| UX-016 | P3 | 전역 rail | viewport 축소 시 현재 항목이 숨음 | resize 뒤 rail에서 현재 위치 확인 어려움 | S |
+2026-10-02 closeout: 아래 이슈 설명과 이후 재현 기록은 원래 감사 당시의 관찰을 보존한다. **현재 상태는 UX-001~016 모두 해결**이며, 최종 polish에서는 UX-014~016만 수정하고 UX-001~013을 회귀 검사했다. [최종 A~S 검증 및 제한 사항](UX_014_015_016_POLISH_VERIFICATION.md), [자동 테스트 결과](ux-014-016-verification/command-results.json), [Chrome 통합 검증](ux-014-016-verification/chrome-results.json). 04의 학습 기능은 계속 planned이며, 04 구현 완료를 의미하지 않는다. [2026-10-02 최종 closeout 재검증](SITE_WIDE_UX_AUDIT_CLOSEOUT.md)이 최신 해결 상태와 검증 범위다.
+
+| ID | Priority | Route | Issue | User impact | Difficulty | 현재 상태 |
+|---|---|---|---|---|---|---|
+| UX-001 | P0 | 03↔Reference, 전역 | route 왕복 시 세션 측정값 소실 | 수집 자료를 다시 만들어야 함 | M | RESOLVED |
+| UX-002 | P1 | 01 | 요청한 촉매 감소량과 실제 적용량 불일치 | 장벽 감소의 의미를 잘못 읽음 | S | RESOLVED |
+| UX-003 | P1 | 03B | 높은 Km에서 포화 해설 조건 도달 불가 | 지시대로 탐색해도 해설 진행 불가 | S | RESOLVED |
+| UX-004 | P2 | 03B | 속도 축 고정 안내와 실제 재스케일 불일치 | 곡선 높이 비교를 오해 | S | RESOLVED |
+| UX-005 | P2 | 03A/B | 가상 측정·반복의 성격이 가까이 드러나지 않음 | 독립 실험 데이터/fit처럼 해석 | S | RESOLVED |
+| UX-006 | P2 | 01 | 일부 작은 그래프 텍스트 대비 미달 | 낮은 시력에서 장벽/ΔG 판독 어려움 | XS | RESOLVED |
+| UX-007 | P2 | 01/02/03/05 | 핵심 그래프/구조 라벨이 10.5–13px | 교실 시연·모바일 읽기 부담 | M | RESOLVED |
+| UX-008 | P2 | 01/03 | mobile prerequisite·control·graph 분리 | 긴 상하 왕복으로 실험 흐름 중단 | M | RESOLVED |
+| UX-009 | P2 | 05 당 비교 | ESC 종료 뒤 focus=BODY | 키보드 위치를 잃음 | S | RESOLVED |
+| UX-010 | P2 | Reference | section 직접 이동/학생·심화 층위 부족 | 필요한 한계를 찾기 어려움 | M | RESOLVED |
+| UX-011 | P2 | Start | 현재 사용 가능한 05 소개 누락 | 실제 학습 범위 발견 어려움 | S | RESOLVED |
+| UX-012 | P2 | 전역 | 본문 바로가기/route 문맥 진입 부족 | 키보드로 rail을 반복 통과 | S | RESOLVED |
+| UX-013 | P2 | 05 인산기 전달 | ADP 아래 ATP 공여체 caption 유지 | 반응 후 생성물 역할 혼동 | XS | RESOLVED |
+| UX-014 | P3 | 전역 rail/04 | 예정 모듈 시각 표시 부족 | 가용 기능으로 기대하고 이동 | XS | RESOLVED |
+| UX-015 | P3 | 전역 footer/05 | Enzyme I footer와 II 모듈 범위 불일치 | 과정 범위 인식 혼란 | XS | RESOLVED |
+| UX-016 | P3 | 전역 rail | viewport 축소 시 현재 항목이 숨음 | resize 뒤 rail에서 현재 위치 확인 어려움 | S | RESOLVED |
 
 ### UX-001 — 모듈 이동이 수집 데이터를 버림
 

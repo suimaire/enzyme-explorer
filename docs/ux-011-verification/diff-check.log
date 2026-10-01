@@ -1,0 +1,6 @@
+warning: in the working copy of '.gitattributes', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/regulation/Diagrams.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/modules/start/StartPage.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'src/styles.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/browser/navigation-context-harness.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/regulation.test.tsx', LF will be replaced by CRLF the next time Git touches it

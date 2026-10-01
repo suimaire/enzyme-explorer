@@ -1,0 +1,155 @@
+{
+  "checks": [
+    "PASS UX-002 product +30 clamps slider and stored reduction from 35 to 20",
+    "PASS UX-002 applied reduction is 20 in both directions, with minimum reverse barrier 5",
+    "PASS UX-002 ΔG stays +30 with catalyst",
+    "PASS UX-002 off/on keeps guarded reduction",
+    "PASS UX-002 lowering transition state also clamps stored input",
+    "PASS UX-002 zero available reduction is representable and disabled",
+    "PASS UX-002 endpoint guard remains active at zero reduction",
+    "PASS UX-001 clamped energy state survives Reference",
+    "PASS UX-003 Km 100 stays gated below observation boundary",
+    "PASS UX-003 Km 100 has a reachable completion path",
+    "PASS UX-003 Km 100 opens the correct near explanation",
+    "PASS UX-003 Km 100 keeps substrate maximum 600",
+    "PASS UX-003 Km 150 stays gated below observation boundary",
+    "PASS UX-003 Km 150 has a reachable completion path",
+    "PASS UX-003 Km 150 opens the correct near explanation",
+    "PASS UX-003 Km 150 keeps substrate maximum 600",
+    "PASS UX-003 Km 155 stays gated below observation boundary",
+    "PASS UX-003 Km 155 has a reachable completion path",
+    "PASS UX-003 Km 155 opens the correct range explanation",
+    "PASS UX-003 Km 155 keeps substrate maximum 600",
+    "PASS UX-003 Km 300 stays gated below observation boundary",
+    "PASS UX-003 Km 300 has a reachable completion path",
+    "PASS UX-003 Km 300 opens the correct range explanation",
+    "PASS UX-003 Km 300 keeps substrate maximum 600",
+    "PASS UX-003 Km 300 gives ratio 2.0 and speed 0.67 Vmax",
+    "PASS UX-003 completed range observation remains available while comparing lower [S]",
+    "PASS UX-001 completed range explanation survives Reference",
+    "PASS UX-003 changing Km rechecks observation for the new condition",
+    "PASS UX-004 baseline reserves 115 without a rescale message",
+    "PASS UX-004 axis expands 115 to 330, retaining baseline Vmax 100",
+    "PASS UX-004 feedback and caption describe actual expansion",
+    "PASS UX-004 both curves are reprojected inside the same SVG coordinate system",
+    "PASS UX-004 current Vmax remains explicit",
+    "PASS UX-001 baseline and axis reserve survive module round trip",
+    "PASS UX-004 no expansion message when the curve fits the reserved range",
+    "PASS UX-005 origin/no-noise/one-condition note is always near controls",
+    "PASS UX-005 first 50 µM records the unchanged analytical model value 40.0",
+    "PASS UX-005 first measurement has no duplicate message",
+    "PASS UX-005 repeated condition does not add an independent row",
+    "PASS UX-005 duplicate measurement reports inline feedback",
+    "PASS UX-005 model recording and experimental slope/window error are distinguished",
+    "PASS UX-001 03A measurement survives Reference",
+    "PASS UX-005 cleared condition can be recorded again without stale duplicate feedback",
+    "PASS UX-001 explicit reset survives Reference with no revived measurements/baseline/status",
+    "ALL PHASE A2 CHECKS PASSED"
+  ],
+  "results": {
+    "energy": {
+      "maximum": "20",
+      "value": "20",
+      "forward": "55 → 35 kJ·mol⁻¹",
+      "reverse": "25 → 5 kJ·mol⁻¹"
+    },
+    "km100": {
+      "path": "near",
+      "ratio": "현재 [S] / Km = 4.0 · v₀ = 0.80 Vmax",
+      "fraction": "80.0%"
+    },
+    "km150": {
+      "path": "near",
+      "ratio": "현재 [S] / Km = 4.0 · v₀ = 0.80 Vmax",
+      "fraction": "80.0%"
+    },
+    "km155": {
+      "path": "range",
+      "ratio": "현재 [S] / Km = 3.9 · v₀ = 0.79 Vmax",
+      "fraction": "79.5%"
+    },
+    "km300": {
+      "path": "range",
+      "ratio": "현재 [S] / Km = 2.0 · v₀ = 0.67 Vmax",
+      "fraction": "66.7%"
+    },
+    "axis": {
+      "maximum": "330.000",
+      "feedback": "속도 축 자동 확장: 115 → 330 nM·s⁻¹. 두 곡선은 같은 축으로 비교합니다."
+    },
+    "measurement": {
+      "value": "40.0 nM·s⁻¹",
+      "rows": 1,
+      "duplicateFeedback": "동일 조건의 모델값은 이미 기록되어 있습니다. 독립 반복 실험으로 추가하지 않습니다."
+    }
+  },
+  "viewport": {
+    "width": 390,
+    "height": 900
+  },
+  "snapshot": {
+    "kinetics": {
+      "predictions": {},
+      "reveals": {},
+      "section": "a",
+      "parameters": {
+        "km": 75,
+        "kcat": 20,
+        "enzymeTotal": 5
+      },
+      "assays": [],
+      "initialSubstrate": 50,
+      "assayRun": null,
+      "measured": false,
+      "experiment": "saturation",
+      "substrate": 80,
+      "baseline": null,
+      "axisLock": null,
+      "showVmaxGuide": false,
+      "showKmGuide": false,
+      "exploredHigh": false
+    },
+    "reactionEnergy": {
+      "predictions": {
+        "main": {
+          "opening": {
+            "choice": "no",
+            "locked": true
+          }
+        }
+      },
+      "reveals": {},
+      "productEnergy": 30,
+      "barrierTop": 20,
+      "barrierLowering": 0,
+      "enzyme": true,
+      "enzymeSeen": true
+    },
+    "carbonicAnhydrase": {
+      "predictions": {},
+      "reveals": {},
+      "stage": 1,
+      "judgements": {},
+      "judgementsLocked": false,
+      "measured": []
+    },
+    "regulation": {
+      "predictions": {},
+      "reveals": {},
+      "lab": {
+        "scenario": null,
+        "control": {
+          "mode": "hormoneDriven"
+        },
+        "view": "pathway",
+        "narration": {
+          "status": "idle",
+          "step": 0,
+          "run": 0
+        },
+        "observed": [],
+        "interventionObserved": false
+      }
+    }
+  }
+}

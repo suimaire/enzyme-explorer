@@ -1,0 +1,109 @@
+{
+  "viewport": [
+    390,
+    844
+  ],
+  "checks": [
+    "PASS 05 has a semantic link to the registry route",
+    "PASS 05 is visibly usable",
+    "PASS 01/02/03 basic cards retained",
+    "PASS 04 remains planned",
+    "PASS 04 announcement is non-interactive",
+    "PASS 05 accessible name identifies the module and action",
+    "PASS 05 has a single keyboard stop",
+    "PASS 05 states optional access without prerequisites",
+    "PASS 05 link accepts keyboard focus",
+    "PASS Start CTA opens 05 with the existing route title",
+    "PASS 05 opens before any basic-module completion",
+    "PASS 05 → Start restores the Start route and title",
+    "PASS Start does not reset any learning session",
+    "PASS Start CTA restores prediction, hormone, narration, intervention and other modules",
+    "PASS 05 prediction remains locked after the round trip",
+    "PASS 03 → Start → 05 preserves the complete shared session",
+    "PASS stable main and skip-link policy retained",
+    "PASS Start has no page horizontal overflow",
+    "ALL START DISCOVERY CHECKS PASSED"
+  ],
+  "session": {
+    "kinetics": {
+      "predictions": {},
+      "reveals": {},
+      "section": "a",
+      "parameters": {
+        "km": 75,
+        "kcat": 20,
+        "enzymeTotal": 5
+      },
+      "assays": [
+        {
+          "initialSubstrate": 50,
+          "initialVelocity": 40,
+          "parameters": {
+            "km": 75,
+            "kcat": 20,
+            "enzymeTotal": 5
+          }
+        }
+      ],
+      "initialSubstrate": 50,
+      "assayRun": null,
+      "measured": false,
+      "experiment": "saturation",
+      "substrate": 80,
+      "baseline": null,
+      "axisLock": null,
+      "showVmaxGuide": false,
+      "showKmGuide": false,
+      "exploredHigh": false
+    },
+    "reactionEnergy": {
+      "predictions": {},
+      "reveals": {},
+      "productEnergy": -18,
+      "barrierTop": 55,
+      "barrierLowering": 20,
+      "enzyme": false,
+      "enzymeSeen": true
+    },
+    "carbonicAnhydrase": {
+      "predictions": {},
+      "reveals": {},
+      "stage": 1,
+      "judgements": {
+        "64": "no",
+        "94": "yes"
+      },
+      "judgementsLocked": false,
+      "measured": []
+    },
+    "regulation": {
+      "predictions": {
+        "main": {
+          "f26": {
+            "choice": "insulin",
+            "locked": true
+          }
+        }
+      },
+      "reveals": {},
+      "lab": {
+        "scenario": "glucagonDominant",
+        "control": {
+          "mode": "clamped",
+          "level": "high"
+        },
+        "view": "intervention",
+        "narration": {
+          "step": 5,
+          "run": 13,
+          "status": "completed"
+        },
+        "observed": [
+          "insulinDominant",
+          "glucagonDominant"
+        ],
+        "interventionObserved": true
+      }
+    }
+  }
+}

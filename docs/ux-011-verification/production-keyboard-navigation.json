@@ -1,0 +1,28 @@
+{
+  "backwardFocus": "card-kinetics",
+  "forwardFocus": {
+    "href": "#/model-notes",
+    "tag": "A"
+  },
+  "entered": {
+    "url": "http://127.0.0.1:4173/enzyme-explorer/#/regulation",
+    "title": "효소 조절 · Enzyme Explorer"
+  },
+  "returned": {
+    "url": "http://127.0.0.1:4173/enzyme-explorer/#/start",
+    "title": "시작 · Enzyme Explorer"
+  },
+  "forwarded": {
+    "url": "http://127.0.0.1:4173/enzyme-explorer/#/regulation",
+    "title": "효소 조절 · Enzyme Explorer"
+  },
+  "errors": [],
+  "priorHarnessErrors": [
+    {
+      "level": "error",
+      "message": "TypeError: Cannot read properties of null (reading 'dataset')\n    at runChecks (http://127.0.0.1:5173/enzyme-explorer/tests/browser/start-harness.tsx?t=1790870404435:98:33)",
+      "timestamp": "2026-10-01T16:00:17.635Z",
+      "url": "http://127.0.0.1:5173/enzyme-explorer/@vite/client"
+    }
+  ]
+}
