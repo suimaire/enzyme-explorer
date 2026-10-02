@@ -58,6 +58,10 @@ function AppContent() {
           {entry.number ? `모듈 ${entry.number} · ` : ''}
           {entry.title}
         </p>
+        <a className="portal-link" href="https://suimaire.github.io/" aria-label="메인 포털로 돌아가기">
+          <span className="portal-label-full">← 메인 포털</span>
+          <span className="portal-label-short">← 포털</span>
+        </a>
       </header>
 
       <ModuleNavigation current={current} navigate={navigate} />

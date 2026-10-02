@@ -1,0 +1,4727 @@
+{
+  "base": "http://127.0.0.1:5174/enzyme-explorer/",
+  "channel": "chrome",
+  "version": "154.0.8037.58",
+  "checks": [
+    "start 1600×900: named semantic portal link visible",
+    "start 1600×900: exact absolute URL, default same tab",
+    "start 1600×900: expected responsive wording",
+    "start 1600×900: 44px touch target",
+    "start 1600×900: portal visible in viewport",
+    "start 1600×900: portal fully within header",
+    "start 1600×900: no header/page horizontal overflow",
+    "start 1600×900: portal aligned to right header inset",
+    "start 1600×900: title stays on one line",
+    "start 1600×900: subtitle wrapping preserved",
+    "start 1600×900: existing module rail directly below header",
+    "start 1600×900: original seven rail routes preserved",
+    "start 1600×900: active rail link visible and underlined",
+    "start 1600×900: only 04 retains planned badge",
+    "start 1600×900: existing radius and restrained weight",
+    "start 1600×900: portal vertically aligned with title/subtitle",
+    "reaction-energy 1600×900: named semantic portal link visible",
+    "reaction-energy 1600×900: exact absolute URL, default same tab",
+    "reaction-energy 1600×900: expected responsive wording",
+    "reaction-energy 1600×900: 44px touch target",
+    "reaction-energy 1600×900: portal visible in viewport",
+    "reaction-energy 1600×900: portal fully within header",
+    "reaction-energy 1600×900: no header/page horizontal overflow",
+    "reaction-energy 1600×900: portal aligned to right header inset",
+    "reaction-energy 1600×900: title stays on one line",
+    "reaction-energy 1600×900: subtitle wrapping preserved",
+    "reaction-energy 1600×900: existing module rail directly below header",
+    "reaction-energy 1600×900: original seven rail routes preserved",
+    "reaction-energy 1600×900: active rail link visible and underlined",
+    "reaction-energy 1600×900: only 04 retains planned badge",
+    "reaction-energy 1600×900: existing radius and restrained weight",
+    "reaction-energy 1600×900: portal vertically aligned with title/subtitle",
+    "carbonic-anhydrase 1600×900: named semantic portal link visible",
+    "carbonic-anhydrase 1600×900: exact absolute URL, default same tab",
+    "carbonic-anhydrase 1600×900: expected responsive wording",
+    "carbonic-anhydrase 1600×900: 44px touch target",
+    "carbonic-anhydrase 1600×900: portal visible in viewport",
+    "carbonic-anhydrase 1600×900: portal fully within header",
+    "carbonic-anhydrase 1600×900: no header/page horizontal overflow",
+    "carbonic-anhydrase 1600×900: portal aligned to right header inset",
+    "carbonic-anhydrase 1600×900: title stays on one line",
+    "carbonic-anhydrase 1600×900: subtitle wrapping preserved",
+    "carbonic-anhydrase 1600×900: existing module rail directly below header",
+    "carbonic-anhydrase 1600×900: original seven rail routes preserved",
+    "carbonic-anhydrase 1600×900: active rail link visible and underlined",
+    "carbonic-anhydrase 1600×900: only 04 retains planned badge",
+    "carbonic-anhydrase 1600×900: existing radius and restrained weight",
+    "carbonic-anhydrase 1600×900: portal vertically aligned with title/subtitle",
+    "kinetics 1600×900: named semantic portal link visible",
+    "kinetics 1600×900: exact absolute URL, default same tab",
+    "kinetics 1600×900: expected responsive wording",
+    "kinetics 1600×900: 44px touch target",
+    "kinetics 1600×900: portal visible in viewport",
+    "kinetics 1600×900: portal fully within header",
+    "kinetics 1600×900: no header/page horizontal overflow",
+    "kinetics 1600×900: portal aligned to right header inset",
+    "kinetics 1600×900: title stays on one line",
+    "kinetics 1600×900: subtitle wrapping preserved",
+    "kinetics 1600×900: existing module rail directly below header",
+    "kinetics 1600×900: original seven rail routes preserved",
+    "kinetics 1600×900: active rail link visible and underlined",
+    "kinetics 1600×900: only 04 retains planned badge",
+    "kinetics 1600×900: existing radius and restrained weight",
+    "kinetics 1600×900: portal vertically aligned with title/subtitle",
+    "inhibition 1600×900: named semantic portal link visible",
+    "inhibition 1600×900: exact absolute URL, default same tab",
+    "inhibition 1600×900: expected responsive wording",
+    "inhibition 1600×900: 44px touch target",
+    "inhibition 1600×900: portal visible in viewport",
+    "inhibition 1600×900: portal fully within header",
+    "inhibition 1600×900: no header/page horizontal overflow",
+    "inhibition 1600×900: portal aligned to right header inset",
+    "inhibition 1600×900: title stays on one line",
+    "inhibition 1600×900: subtitle wrapping preserved",
+    "inhibition 1600×900: existing module rail directly below header",
+    "inhibition 1600×900: original seven rail routes preserved",
+    "inhibition 1600×900: active rail link visible and underlined",
+    "inhibition 1600×900: only 04 retains planned badge",
+    "inhibition 1600×900: existing radius and restrained weight",
+    "inhibition 1600×900: portal vertically aligned with title/subtitle",
+    "regulation 1600×900: named semantic portal link visible",
+    "regulation 1600×900: exact absolute URL, default same tab",
+    "regulation 1600×900: expected responsive wording",
+    "regulation 1600×900: 44px touch target",
+    "regulation 1600×900: portal visible in viewport",
+    "regulation 1600×900: portal fully within header",
+    "regulation 1600×900: no header/page horizontal overflow",
+    "regulation 1600×900: portal aligned to right header inset",
+    "regulation 1600×900: title stays on one line",
+    "regulation 1600×900: subtitle wrapping preserved",
+    "regulation 1600×900: existing module rail directly below header",
+    "regulation 1600×900: original seven rail routes preserved",
+    "regulation 1600×900: active rail link visible and underlined",
+    "regulation 1600×900: only 04 retains planned badge",
+    "regulation 1600×900: existing radius and restrained weight",
+    "regulation 1600×900: portal vertically aligned with title/subtitle",
+    "model-notes 1600×900: named semantic portal link visible",
+    "model-notes 1600×900: exact absolute URL, default same tab",
+    "model-notes 1600×900: expected responsive wording",
+    "model-notes 1600×900: 44px touch target",
+    "model-notes 1600×900: portal visible in viewport",
+    "model-notes 1600×900: portal fully within header",
+    "model-notes 1600×900: no header/page horizontal overflow",
+    "model-notes 1600×900: portal aligned to right header inset",
+    "model-notes 1600×900: title stays on one line",
+    "model-notes 1600×900: subtitle wrapping preserved",
+    "model-notes 1600×900: existing module rail directly below header",
+    "model-notes 1600×900: original seven rail routes preserved",
+    "model-notes 1600×900: active rail link visible and underlined",
+    "model-notes 1600×900: only 04 retains planned badge",
+    "model-notes 1600×900: existing radius and restrained weight",
+    "model-notes 1600×900: portal vertically aligned with title/subtitle",
+    "1600: first Tab reaches skip link",
+    "1600: focused skip link visible",
+    "1600: second Tab reaches portal link",
+    "1600: portal focus outline retained",
+    "1600: next Tab reaches module rail START",
+    "1600: Shift+Tab returns to portal",
+    "1600: skip activation still focuses main without changing route",
+    "start 1440×900: named semantic portal link visible",
+    "start 1440×900: exact absolute URL, default same tab",
+    "start 1440×900: expected responsive wording",
+    "start 1440×900: 44px touch target",
+    "start 1440×900: portal visible in viewport",
+    "start 1440×900: portal fully within header",
+    "start 1440×900: no header/page horizontal overflow",
+    "start 1440×900: portal aligned to right header inset",
+    "start 1440×900: title stays on one line",
+    "start 1440×900: subtitle wrapping preserved",
+    "start 1440×900: existing module rail directly below header",
+    "start 1440×900: original seven rail routes preserved",
+    "start 1440×900: active rail link visible and underlined",
+    "start 1440×900: only 04 retains planned badge",
+    "start 1440×900: existing radius and restrained weight",
+    "start 1440×900: portal vertically aligned with title/subtitle",
+    "reaction-energy 1440×900: named semantic portal link visible",
+    "reaction-energy 1440×900: exact absolute URL, default same tab",
+    "reaction-energy 1440×900: expected responsive wording",
+    "reaction-energy 1440×900: 44px touch target",
+    "reaction-energy 1440×900: portal visible in viewport",
+    "reaction-energy 1440×900: portal fully within header",
+    "reaction-energy 1440×900: no header/page horizontal overflow",
+    "reaction-energy 1440×900: portal aligned to right header inset",
+    "reaction-energy 1440×900: title stays on one line",
+    "reaction-energy 1440×900: subtitle wrapping preserved",
+    "reaction-energy 1440×900: existing module rail directly below header",
+    "reaction-energy 1440×900: original seven rail routes preserved",
+    "reaction-energy 1440×900: active rail link visible and underlined",
+    "reaction-energy 1440×900: only 04 retains planned badge",
+    "reaction-energy 1440×900: existing radius and restrained weight",
+    "reaction-energy 1440×900: portal vertically aligned with title/subtitle",
+    "carbonic-anhydrase 1440×900: named semantic portal link visible",
+    "carbonic-anhydrase 1440×900: exact absolute URL, default same tab",
+    "carbonic-anhydrase 1440×900: expected responsive wording",
+    "carbonic-anhydrase 1440×900: 44px touch target",
+    "carbonic-anhydrase 1440×900: portal visible in viewport",
+    "carbonic-anhydrase 1440×900: portal fully within header",
+    "carbonic-anhydrase 1440×900: no header/page horizontal overflow",
+    "carbonic-anhydrase 1440×900: portal aligned to right header inset",
+    "carbonic-anhydrase 1440×900: title stays on one line",
+    "carbonic-anhydrase 1440×900: subtitle wrapping preserved",
+    "carbonic-anhydrase 1440×900: existing module rail directly below header",
+    "carbonic-anhydrase 1440×900: original seven rail routes preserved",
+    "carbonic-anhydrase 1440×900: active rail link visible and underlined",
+    "carbonic-anhydrase 1440×900: only 04 retains planned badge",
+    "carbonic-anhydrase 1440×900: existing radius and restrained weight",
+    "carbonic-anhydrase 1440×900: portal vertically aligned with title/subtitle",
+    "kinetics 1440×900: named semantic portal link visible",
+    "kinetics 1440×900: exact absolute URL, default same tab",
+    "kinetics 1440×900: expected responsive wording",
+    "kinetics 1440×900: 44px touch target",
+    "kinetics 1440×900: portal visible in viewport",
+    "kinetics 1440×900: portal fully within header",
+    "kinetics 1440×900: no header/page horizontal overflow",
+    "kinetics 1440×900: portal aligned to right header inset",
+    "kinetics 1440×900: title stays on one line",
+    "kinetics 1440×900: subtitle wrapping preserved",
+    "kinetics 1440×900: existing module rail directly below header",
+    "kinetics 1440×900: original seven rail routes preserved",
+    "kinetics 1440×900: active rail link visible and underlined",
+    "kinetics 1440×900: only 04 retains planned badge",
+    "kinetics 1440×900: existing radius and restrained weight",
+    "kinetics 1440×900: portal vertically aligned with title/subtitle",
+    "inhibition 1440×900: named semantic portal link visible",
+    "inhibition 1440×900: exact absolute URL, default same tab",
+    "inhibition 1440×900: expected responsive wording",
+    "inhibition 1440×900: 44px touch target",
+    "inhibition 1440×900: portal visible in viewport",
+    "inhibition 1440×900: portal fully within header",
+    "inhibition 1440×900: no header/page horizontal overflow",
+    "inhibition 1440×900: portal aligned to right header inset",
+    "inhibition 1440×900: title stays on one line",
+    "inhibition 1440×900: subtitle wrapping preserved",
+    "inhibition 1440×900: existing module rail directly below header",
+    "inhibition 1440×900: original seven rail routes preserved",
+    "inhibition 1440×900: active rail link visible and underlined",
+    "inhibition 1440×900: only 04 retains planned badge",
+    "inhibition 1440×900: existing radius and restrained weight",
+    "inhibition 1440×900: portal vertically aligned with title/subtitle",
+    "regulation 1440×900: named semantic portal link visible",
+    "regulation 1440×900: exact absolute URL, default same tab",
+    "regulation 1440×900: expected responsive wording",
+    "regulation 1440×900: 44px touch target",
+    "regulation 1440×900: portal visible in viewport",
+    "regulation 1440×900: portal fully within header",
+    "regulation 1440×900: no header/page horizontal overflow",
+    "regulation 1440×900: portal aligned to right header inset",
+    "regulation 1440×900: title stays on one line",
+    "regulation 1440×900: subtitle wrapping preserved",
+    "regulation 1440×900: existing module rail directly below header",
+    "regulation 1440×900: original seven rail routes preserved",
+    "regulation 1440×900: active rail link visible and underlined",
+    "regulation 1440×900: only 04 retains planned badge",
+    "regulation 1440×900: existing radius and restrained weight",
+    "regulation 1440×900: portal vertically aligned with title/subtitle",
+    "model-notes 1440×900: named semantic portal link visible",
+    "model-notes 1440×900: exact absolute URL, default same tab",
+    "model-notes 1440×900: expected responsive wording",
+    "model-notes 1440×900: 44px touch target",
+    "model-notes 1440×900: portal visible in viewport",
+    "model-notes 1440×900: portal fully within header",
+    "model-notes 1440×900: no header/page horizontal overflow",
+    "model-notes 1440×900: portal aligned to right header inset",
+    "model-notes 1440×900: title stays on one line",
+    "model-notes 1440×900: subtitle wrapping preserved",
+    "model-notes 1440×900: existing module rail directly below header",
+    "model-notes 1440×900: original seven rail routes preserved",
+    "model-notes 1440×900: active rail link visible and underlined",
+    "model-notes 1440×900: only 04 retains planned badge",
+    "model-notes 1440×900: existing radius and restrained weight",
+    "model-notes 1440×900: portal vertically aligned with title/subtitle",
+    "1440: first Tab reaches skip link",
+    "1440: focused skip link visible",
+    "1440: second Tab reaches portal link",
+    "1440: portal focus outline retained",
+    "1440: next Tab reaches module rail START",
+    "1440: Shift+Tab returns to portal",
+    "1440: skip activation still focuses main without changing route",
+    "start 1280×800: named semantic portal link visible",
+    "start 1280×800: exact absolute URL, default same tab",
+    "start 1280×800: expected responsive wording",
+    "start 1280×800: 44px touch target",
+    "start 1280×800: portal visible in viewport",
+    "start 1280×800: portal fully within header",
+    "start 1280×800: no header/page horizontal overflow",
+    "start 1280×800: portal aligned to right header inset",
+    "start 1280×800: title stays on one line",
+    "start 1280×800: subtitle wrapping preserved",
+    "start 1280×800: existing module rail directly below header",
+    "start 1280×800: original seven rail routes preserved",
+    "start 1280×800: active rail link visible and underlined",
+    "start 1280×800: only 04 retains planned badge",
+    "start 1280×800: existing radius and restrained weight",
+    "start 1280×800: portal vertically aligned with title/subtitle",
+    "reaction-energy 1280×800: named semantic portal link visible",
+    "reaction-energy 1280×800: exact absolute URL, default same tab",
+    "reaction-energy 1280×800: expected responsive wording",
+    "reaction-energy 1280×800: 44px touch target",
+    "reaction-energy 1280×800: portal visible in viewport",
+    "reaction-energy 1280×800: portal fully within header",
+    "reaction-energy 1280×800: no header/page horizontal overflow",
+    "reaction-energy 1280×800: portal aligned to right header inset",
+    "reaction-energy 1280×800: title stays on one line",
+    "reaction-energy 1280×800: subtitle wrapping preserved",
+    "reaction-energy 1280×800: existing module rail directly below header",
+    "reaction-energy 1280×800: original seven rail routes preserved",
+    "reaction-energy 1280×800: active rail link visible and underlined",
+    "reaction-energy 1280×800: only 04 retains planned badge",
+    "reaction-energy 1280×800: existing radius and restrained weight",
+    "reaction-energy 1280×800: portal vertically aligned with title/subtitle",
+    "carbonic-anhydrase 1280×800: named semantic portal link visible",
+    "carbonic-anhydrase 1280×800: exact absolute URL, default same tab",
+    "carbonic-anhydrase 1280×800: expected responsive wording",
+    "carbonic-anhydrase 1280×800: 44px touch target",
+    "carbonic-anhydrase 1280×800: portal visible in viewport",
+    "carbonic-anhydrase 1280×800: portal fully within header",
+    "carbonic-anhydrase 1280×800: no header/page horizontal overflow",
+    "carbonic-anhydrase 1280×800: portal aligned to right header inset",
+    "carbonic-anhydrase 1280×800: title stays on one line",
+    "carbonic-anhydrase 1280×800: subtitle wrapping preserved",
+    "carbonic-anhydrase 1280×800: existing module rail directly below header",
+    "carbonic-anhydrase 1280×800: original seven rail routes preserved",
+    "carbonic-anhydrase 1280×800: active rail link visible and underlined",
+    "carbonic-anhydrase 1280×800: only 04 retains planned badge",
+    "carbonic-anhydrase 1280×800: existing radius and restrained weight",
+    "carbonic-anhydrase 1280×800: portal vertically aligned with title/subtitle",
+    "kinetics 1280×800: named semantic portal link visible",
+    "kinetics 1280×800: exact absolute URL, default same tab",
+    "kinetics 1280×800: expected responsive wording",
+    "kinetics 1280×800: 44px touch target",
+    "kinetics 1280×800: portal visible in viewport",
+    "kinetics 1280×800: portal fully within header",
+    "kinetics 1280×800: no header/page horizontal overflow",
+    "kinetics 1280×800: portal aligned to right header inset",
+    "kinetics 1280×800: title stays on one line",
+    "kinetics 1280×800: subtitle wrapping preserved",
+    "kinetics 1280×800: existing module rail directly below header",
+    "kinetics 1280×800: original seven rail routes preserved",
+    "kinetics 1280×800: active rail link visible and underlined",
+    "kinetics 1280×800: only 04 retains planned badge",
+    "kinetics 1280×800: existing radius and restrained weight",
+    "kinetics 1280×800: portal vertically aligned with title/subtitle",
+    "inhibition 1280×800: named semantic portal link visible",
+    "inhibition 1280×800: exact absolute URL, default same tab",
+    "inhibition 1280×800: expected responsive wording",
+    "inhibition 1280×800: 44px touch target",
+    "inhibition 1280×800: portal visible in viewport",
+    "inhibition 1280×800: portal fully within header",
+    "inhibition 1280×800: no header/page horizontal overflow",
+    "inhibition 1280×800: portal aligned to right header inset",
+    "inhibition 1280×800: title stays on one line",
+    "inhibition 1280×800: subtitle wrapping preserved",
+    "inhibition 1280×800: existing module rail directly below header",
+    "inhibition 1280×800: original seven rail routes preserved",
+    "inhibition 1280×800: active rail link visible and underlined",
+    "inhibition 1280×800: only 04 retains planned badge",
+    "inhibition 1280×800: existing radius and restrained weight",
+    "inhibition 1280×800: portal vertically aligned with title/subtitle",
+    "regulation 1280×800: named semantic portal link visible",
+    "regulation 1280×800: exact absolute URL, default same tab",
+    "regulation 1280×800: expected responsive wording",
+    "regulation 1280×800: 44px touch target",
+    "regulation 1280×800: portal visible in viewport",
+    "regulation 1280×800: portal fully within header",
+    "regulation 1280×800: no header/page horizontal overflow",
+    "regulation 1280×800: portal aligned to right header inset",
+    "regulation 1280×800: title stays on one line",
+    "regulation 1280×800: subtitle wrapping preserved",
+    "regulation 1280×800: existing module rail directly below header",
+    "regulation 1280×800: original seven rail routes preserved",
+    "regulation 1280×800: active rail link visible and underlined",
+    "regulation 1280×800: only 04 retains planned badge",
+    "regulation 1280×800: existing radius and restrained weight",
+    "regulation 1280×800: portal vertically aligned with title/subtitle",
+    "model-notes 1280×800: named semantic portal link visible",
+    "model-notes 1280×800: exact absolute URL, default same tab",
+    "model-notes 1280×800: expected responsive wording",
+    "model-notes 1280×800: 44px touch target",
+    "model-notes 1280×800: portal visible in viewport",
+    "model-notes 1280×800: portal fully within header",
+    "model-notes 1280×800: no header/page horizontal overflow",
+    "model-notes 1280×800: portal aligned to right header inset",
+    "model-notes 1280×800: title stays on one line",
+    "model-notes 1280×800: subtitle wrapping preserved",
+    "model-notes 1280×800: existing module rail directly below header",
+    "model-notes 1280×800: original seven rail routes preserved",
+    "model-notes 1280×800: active rail link visible and underlined",
+    "model-notes 1280×800: only 04 retains planned badge",
+    "model-notes 1280×800: existing radius and restrained weight",
+    "model-notes 1280×800: portal vertically aligned with title/subtitle",
+    "1280: first Tab reaches skip link",
+    "1280: focused skip link visible",
+    "1280: second Tab reaches portal link",
+    "1280: portal focus outline retained",
+    "1280: next Tab reaches module rail START",
+    "1280: Shift+Tab returns to portal",
+    "1280: skip activation still focuses main without changing route",
+    "start 1024×768: named semantic portal link visible",
+    "start 1024×768: exact absolute URL, default same tab",
+    "start 1024×768: expected responsive wording",
+    "start 1024×768: 44px touch target",
+    "start 1024×768: portal visible in viewport",
+    "start 1024×768: portal fully within header",
+    "start 1024×768: no header/page horizontal overflow",
+    "start 1024×768: portal aligned to right header inset",
+    "start 1024×768: title stays on one line",
+    "start 1024×768: subtitle wrapping preserved",
+    "start 1024×768: existing module rail directly below header",
+    "start 1024×768: original seven rail routes preserved",
+    "start 1024×768: active rail link visible and underlined",
+    "start 1024×768: only 04 retains planned badge",
+    "start 1024×768: existing radius and restrained weight",
+    "start 1024×768: portal vertically aligned with title/subtitle",
+    "reaction-energy 1024×768: named semantic portal link visible",
+    "reaction-energy 1024×768: exact absolute URL, default same tab",
+    "reaction-energy 1024×768: expected responsive wording",
+    "reaction-energy 1024×768: 44px touch target",
+    "reaction-energy 1024×768: portal visible in viewport",
+    "reaction-energy 1024×768: portal fully within header",
+    "reaction-energy 1024×768: no header/page horizontal overflow",
+    "reaction-energy 1024×768: portal aligned to right header inset",
+    "reaction-energy 1024×768: title stays on one line",
+    "reaction-energy 1024×768: subtitle wrapping preserved",
+    "reaction-energy 1024×768: existing module rail directly below header",
+    "reaction-energy 1024×768: original seven rail routes preserved",
+    "reaction-energy 1024×768: active rail link visible and underlined",
+    "reaction-energy 1024×768: only 04 retains planned badge",
+    "reaction-energy 1024×768: existing radius and restrained weight",
+    "reaction-energy 1024×768: portal vertically aligned with title/subtitle",
+    "carbonic-anhydrase 1024×768: named semantic portal link visible",
+    "carbonic-anhydrase 1024×768: exact absolute URL, default same tab",
+    "carbonic-anhydrase 1024×768: expected responsive wording",
+    "carbonic-anhydrase 1024×768: 44px touch target",
+    "carbonic-anhydrase 1024×768: portal visible in viewport",
+    "carbonic-anhydrase 1024×768: portal fully within header",
+    "carbonic-anhydrase 1024×768: no header/page horizontal overflow",
+    "carbonic-anhydrase 1024×768: portal aligned to right header inset",
+    "carbonic-anhydrase 1024×768: title stays on one line",
+    "carbonic-anhydrase 1024×768: subtitle wrapping preserved",
+    "carbonic-anhydrase 1024×768: existing module rail directly below header",
+    "carbonic-anhydrase 1024×768: original seven rail routes preserved",
+    "carbonic-anhydrase 1024×768: active rail link visible and underlined",
+    "carbonic-anhydrase 1024×768: only 04 retains planned badge",
+    "carbonic-anhydrase 1024×768: existing radius and restrained weight",
+    "carbonic-anhydrase 1024×768: portal vertically aligned with title/subtitle",
+    "kinetics 1024×768: named semantic portal link visible",
+    "kinetics 1024×768: exact absolute URL, default same tab",
+    "kinetics 1024×768: expected responsive wording",
+    "kinetics 1024×768: 44px touch target",
+    "kinetics 1024×768: portal visible in viewport",
+    "kinetics 1024×768: portal fully within header",
+    "kinetics 1024×768: no header/page horizontal overflow",
+    "kinetics 1024×768: portal aligned to right header inset",
+    "kinetics 1024×768: title stays on one line",
+    "kinetics 1024×768: subtitle wrapping preserved",
+    "kinetics 1024×768: existing module rail directly below header",
+    "kinetics 1024×768: original seven rail routes preserved",
+    "kinetics 1024×768: active rail link visible and underlined",
+    "kinetics 1024×768: only 04 retains planned badge",
+    "kinetics 1024×768: existing radius and restrained weight",
+    "kinetics 1024×768: portal vertically aligned with title/subtitle",
+    "inhibition 1024×768: named semantic portal link visible",
+    "inhibition 1024×768: exact absolute URL, default same tab",
+    "inhibition 1024×768: expected responsive wording",
+    "inhibition 1024×768: 44px touch target",
+    "inhibition 1024×768: portal visible in viewport",
+    "inhibition 1024×768: portal fully within header",
+    "inhibition 1024×768: no header/page horizontal overflow",
+    "inhibition 1024×768: portal aligned to right header inset",
+    "inhibition 1024×768: title stays on one line",
+    "inhibition 1024×768: subtitle wrapping preserved",
+    "inhibition 1024×768: existing module rail directly below header",
+    "inhibition 1024×768: original seven rail routes preserved",
+    "inhibition 1024×768: active rail link visible and underlined",
+    "inhibition 1024×768: only 04 retains planned badge",
+    "inhibition 1024×768: existing radius and restrained weight",
+    "inhibition 1024×768: portal vertically aligned with title/subtitle",
+    "regulation 1024×768: named semantic portal link visible",
+    "regulation 1024×768: exact absolute URL, default same tab",
+    "regulation 1024×768: expected responsive wording",
+    "regulation 1024×768: 44px touch target",
+    "regulation 1024×768: portal visible in viewport",
+    "regulation 1024×768: portal fully within header",
+    "regulation 1024×768: no header/page horizontal overflow",
+    "regulation 1024×768: portal aligned to right header inset",
+    "regulation 1024×768: title stays on one line",
+    "regulation 1024×768: subtitle wrapping preserved",
+    "regulation 1024×768: existing module rail directly below header",
+    "regulation 1024×768: original seven rail routes preserved",
+    "regulation 1024×768: active rail link visible and underlined",
+    "regulation 1024×768: only 04 retains planned badge",
+    "regulation 1024×768: existing radius and restrained weight",
+    "regulation 1024×768: portal vertically aligned with title/subtitle",
+    "model-notes 1024×768: named semantic portal link visible",
+    "model-notes 1024×768: exact absolute URL, default same tab",
+    "model-notes 1024×768: expected responsive wording",
+    "model-notes 1024×768: 44px touch target",
+    "model-notes 1024×768: portal visible in viewport",
+    "model-notes 1024×768: portal fully within header",
+    "model-notes 1024×768: no header/page horizontal overflow",
+    "model-notes 1024×768: portal aligned to right header inset",
+    "model-notes 1024×768: title stays on one line",
+    "model-notes 1024×768: subtitle wrapping preserved",
+    "model-notes 1024×768: existing module rail directly below header",
+    "model-notes 1024×768: original seven rail routes preserved",
+    "model-notes 1024×768: active rail link visible and underlined",
+    "model-notes 1024×768: only 04 retains planned badge",
+    "model-notes 1024×768: existing radius and restrained weight",
+    "model-notes 1024×768: portal vertically aligned with title/subtitle",
+    "1024: first Tab reaches skip link",
+    "1024: focused skip link visible",
+    "1024: second Tab reaches portal link",
+    "1024: portal focus outline retained",
+    "1024: next Tab reaches module rail START",
+    "1024: Shift+Tab returns to portal",
+    "1024: skip activation still focuses main without changing route",
+    "start 768×1024: named semantic portal link visible",
+    "start 768×1024: exact absolute URL, default same tab",
+    "start 768×1024: expected responsive wording",
+    "start 768×1024: 44px touch target",
+    "start 768×1024: portal visible in viewport",
+    "start 768×1024: portal fully within header",
+    "start 768×1024: no header/page horizontal overflow",
+    "start 768×1024: portal aligned to right header inset",
+    "start 768×1024: title stays on one line",
+    "start 768×1024: subtitle wrapping preserved",
+    "start 768×1024: existing module rail directly below header",
+    "start 768×1024: original seven rail routes preserved",
+    "start 768×1024: active rail link visible and underlined",
+    "start 768×1024: only 04 retains planned badge",
+    "start 768×1024: existing radius and restrained weight",
+    "start 768×1024: portal vertically aligned with title/subtitle",
+    "reaction-energy 768×1024: named semantic portal link visible",
+    "reaction-energy 768×1024: exact absolute URL, default same tab",
+    "reaction-energy 768×1024: expected responsive wording",
+    "reaction-energy 768×1024: 44px touch target",
+    "reaction-energy 768×1024: portal visible in viewport",
+    "reaction-energy 768×1024: portal fully within header",
+    "reaction-energy 768×1024: no header/page horizontal overflow",
+    "reaction-energy 768×1024: portal aligned to right header inset",
+    "reaction-energy 768×1024: title stays on one line",
+    "reaction-energy 768×1024: subtitle wrapping preserved",
+    "reaction-energy 768×1024: existing module rail directly below header",
+    "reaction-energy 768×1024: original seven rail routes preserved",
+    "reaction-energy 768×1024: active rail link visible and underlined",
+    "reaction-energy 768×1024: only 04 retains planned badge",
+    "reaction-energy 768×1024: existing radius and restrained weight",
+    "reaction-energy 768×1024: portal vertically aligned with title/subtitle",
+    "carbonic-anhydrase 768×1024: named semantic portal link visible",
+    "carbonic-anhydrase 768×1024: exact absolute URL, default same tab",
+    "carbonic-anhydrase 768×1024: expected responsive wording",
+    "carbonic-anhydrase 768×1024: 44px touch target",
+    "carbonic-anhydrase 768×1024: portal visible in viewport",
+    "carbonic-anhydrase 768×1024: portal fully within header",
+    "carbonic-anhydrase 768×1024: no header/page horizontal overflow",
+    "carbonic-anhydrase 768×1024: portal aligned to right header inset",
+    "carbonic-anhydrase 768×1024: title stays on one line",
+    "carbonic-anhydrase 768×1024: subtitle wrapping preserved",
+    "carbonic-anhydrase 768×1024: existing module rail directly below header",
+    "carbonic-anhydrase 768×1024: original seven rail routes preserved",
+    "carbonic-anhydrase 768×1024: active rail link visible and underlined",
+    "carbonic-anhydrase 768×1024: only 04 retains planned badge",
+    "carbonic-anhydrase 768×1024: existing radius and restrained weight",
+    "carbonic-anhydrase 768×1024: portal vertically aligned with title/subtitle",
+    "kinetics 768×1024: named semantic portal link visible",
+    "kinetics 768×1024: exact absolute URL, default same tab",
+    "kinetics 768×1024: expected responsive wording",
+    "kinetics 768×1024: 44px touch target",
+    "kinetics 768×1024: portal visible in viewport",
+    "kinetics 768×1024: portal fully within header",
+    "kinetics 768×1024: no header/page horizontal overflow",
+    "kinetics 768×1024: portal aligned to right header inset",
+    "kinetics 768×1024: title stays on one line",
+    "kinetics 768×1024: subtitle wrapping preserved",
+    "kinetics 768×1024: existing module rail directly below header",
+    "kinetics 768×1024: original seven rail routes preserved",
+    "kinetics 768×1024: active rail link visible and underlined",
+    "kinetics 768×1024: only 04 retains planned badge",
+    "kinetics 768×1024: existing radius and restrained weight",
+    "kinetics 768×1024: portal vertically aligned with title/subtitle",
+    "inhibition 768×1024: named semantic portal link visible",
+    "inhibition 768×1024: exact absolute URL, default same tab",
+    "inhibition 768×1024: expected responsive wording",
+    "inhibition 768×1024: 44px touch target",
+    "inhibition 768×1024: portal visible in viewport",
+    "inhibition 768×1024: portal fully within header",
+    "inhibition 768×1024: no header/page horizontal overflow",
+    "inhibition 768×1024: portal aligned to right header inset",
+    "inhibition 768×1024: title stays on one line",
+    "inhibition 768×1024: subtitle wrapping preserved",
+    "inhibition 768×1024: existing module rail directly below header",
+    "inhibition 768×1024: original seven rail routes preserved",
+    "inhibition 768×1024: active rail link visible and underlined",
+    "inhibition 768×1024: only 04 retains planned badge",
+    "inhibition 768×1024: existing radius and restrained weight",
+    "inhibition 768×1024: portal vertically aligned with title/subtitle",
+    "regulation 768×1024: named semantic portal link visible",
+    "regulation 768×1024: exact absolute URL, default same tab",
+    "regulation 768×1024: expected responsive wording",
+    "regulation 768×1024: 44px touch target",
+    "regulation 768×1024: portal visible in viewport",
+    "regulation 768×1024: portal fully within header",
+    "regulation 768×1024: no header/page horizontal overflow",
+    "regulation 768×1024: portal aligned to right header inset",
+    "regulation 768×1024: title stays on one line",
+    "regulation 768×1024: subtitle wrapping preserved",
+    "regulation 768×1024: existing module rail directly below header",
+    "regulation 768×1024: original seven rail routes preserved",
+    "regulation 768×1024: active rail link visible and underlined",
+    "regulation 768×1024: only 04 retains planned badge",
+    "regulation 768×1024: existing radius and restrained weight",
+    "regulation 768×1024: portal vertically aligned with title/subtitle",
+    "model-notes 768×1024: named semantic portal link visible",
+    "model-notes 768×1024: exact absolute URL, default same tab",
+    "model-notes 768×1024: expected responsive wording",
+    "model-notes 768×1024: 44px touch target",
+    "model-notes 768×1024: portal visible in viewport",
+    "model-notes 768×1024: portal fully within header",
+    "model-notes 768×1024: no header/page horizontal overflow",
+    "model-notes 768×1024: portal aligned to right header inset",
+    "model-notes 768×1024: title stays on one line",
+    "model-notes 768×1024: subtitle wrapping preserved",
+    "model-notes 768×1024: existing module rail directly below header",
+    "model-notes 768×1024: original seven rail routes preserved",
+    "model-notes 768×1024: active rail link visible and underlined",
+    "model-notes 768×1024: only 04 retains planned badge",
+    "model-notes 768×1024: existing radius and restrained weight",
+    "model-notes 768×1024: portal vertically aligned with title/subtitle",
+    "768: first Tab reaches skip link",
+    "768: focused skip link visible",
+    "768: second Tab reaches portal link",
+    "768: portal focus outline retained",
+    "768: next Tab reaches module rail START",
+    "768: Shift+Tab returns to portal",
+    "768: skip activation still focuses main without changing route",
+    "start 390×844: named semantic portal link visible",
+    "start 390×844: exact absolute URL, default same tab",
+    "start 390×844: expected responsive wording",
+    "start 390×844: 44px touch target",
+    "start 390×844: portal visible in viewport",
+    "start 390×844: portal fully within header",
+    "start 390×844: no header/page horizontal overflow",
+    "start 390×844: portal aligned to right header inset",
+    "start 390×844: title stays on one line",
+    "start 390×844: subtitle wrapping preserved",
+    "start 390×844: existing module rail directly below header",
+    "start 390×844: original seven rail routes preserved",
+    "start 390×844: active rail link visible and underlined",
+    "start 390×844: only 04 retains planned badge",
+    "start 390×844: existing radius and restrained weight",
+    "start 390×844: portal below full-width mobile subtitle",
+    "reaction-energy 390×844: named semantic portal link visible",
+    "reaction-energy 390×844: exact absolute URL, default same tab",
+    "reaction-energy 390×844: expected responsive wording",
+    "reaction-energy 390×844: 44px touch target",
+    "reaction-energy 390×844: portal visible in viewport",
+    "reaction-energy 390×844: portal fully within header",
+    "reaction-energy 390×844: no header/page horizontal overflow",
+    "reaction-energy 390×844: portal aligned to right header inset",
+    "reaction-energy 390×844: title stays on one line",
+    "reaction-energy 390×844: subtitle wrapping preserved",
+    "reaction-energy 390×844: existing module rail directly below header",
+    "reaction-energy 390×844: original seven rail routes preserved",
+    "reaction-energy 390×844: active rail link visible and underlined",
+    "reaction-energy 390×844: only 04 retains planned badge",
+    "reaction-energy 390×844: existing radius and restrained weight",
+    "reaction-energy 390×844: portal below full-width mobile subtitle",
+    "carbonic-anhydrase 390×844: named semantic portal link visible",
+    "carbonic-anhydrase 390×844: exact absolute URL, default same tab",
+    "carbonic-anhydrase 390×844: expected responsive wording",
+    "carbonic-anhydrase 390×844: 44px touch target",
+    "carbonic-anhydrase 390×844: portal visible in viewport",
+    "carbonic-anhydrase 390×844: portal fully within header",
+    "carbonic-anhydrase 390×844: no header/page horizontal overflow",
+    "carbonic-anhydrase 390×844: portal aligned to right header inset",
+    "carbonic-anhydrase 390×844: title stays on one line",
+    "carbonic-anhydrase 390×844: subtitle wrapping preserved",
+    "carbonic-anhydrase 390×844: existing module rail directly below header",
+    "carbonic-anhydrase 390×844: original seven rail routes preserved",
+    "carbonic-anhydrase 390×844: active rail link visible and underlined",
+    "carbonic-anhydrase 390×844: only 04 retains planned badge",
+    "carbonic-anhydrase 390×844: existing radius and restrained weight",
+    "carbonic-anhydrase 390×844: portal below full-width mobile subtitle",
+    "kinetics 390×844: named semantic portal link visible",
+    "kinetics 390×844: exact absolute URL, default same tab",
+    "kinetics 390×844: expected responsive wording",
+    "kinetics 390×844: 44px touch target",
+    "kinetics 390×844: portal visible in viewport",
+    "kinetics 390×844: portal fully within header",
+    "kinetics 390×844: no header/page horizontal overflow",
+    "kinetics 390×844: portal aligned to right header inset",
+    "kinetics 390×844: title stays on one line",
+    "kinetics 390×844: subtitle wrapping preserved",
+    "kinetics 390×844: existing module rail directly below header",
+    "kinetics 390×844: original seven rail routes preserved",
+    "kinetics 390×844: active rail link visible and underlined",
+    "kinetics 390×844: only 04 retains planned badge",
+    "kinetics 390×844: existing radius and restrained weight",
+    "kinetics 390×844: portal below full-width mobile subtitle",
+    "inhibition 390×844: named semantic portal link visible",
+    "inhibition 390×844: exact absolute URL, default same tab",
+    "inhibition 390×844: expected responsive wording",
+    "inhibition 390×844: 44px touch target",
+    "inhibition 390×844: portal visible in viewport",
+    "inhibition 390×844: portal fully within header",
+    "inhibition 390×844: no header/page horizontal overflow",
+    "inhibition 390×844: portal aligned to right header inset",
+    "inhibition 390×844: title stays on one line",
+    "inhibition 390×844: subtitle wrapping preserved",
+    "inhibition 390×844: existing module rail directly below header",
+    "inhibition 390×844: original seven rail routes preserved",
+    "inhibition 390×844: active rail link visible and underlined",
+    "inhibition 390×844: only 04 retains planned badge",
+    "inhibition 390×844: existing radius and restrained weight",
+    "inhibition 390×844: portal below full-width mobile subtitle",
+    "regulation 390×844: named semantic portal link visible",
+    "regulation 390×844: exact absolute URL, default same tab",
+    "regulation 390×844: expected responsive wording",
+    "regulation 390×844: 44px touch target",
+    "regulation 390×844: portal visible in viewport",
+    "regulation 390×844: portal fully within header",
+    "regulation 390×844: no header/page horizontal overflow",
+    "regulation 390×844: portal aligned to right header inset",
+    "regulation 390×844: title stays on one line",
+    "regulation 390×844: subtitle wrapping preserved",
+    "regulation 390×844: existing module rail directly below header",
+    "regulation 390×844: original seven rail routes preserved",
+    "regulation 390×844: active rail link visible and underlined",
+    "regulation 390×844: only 04 retains planned badge",
+    "regulation 390×844: existing radius and restrained weight",
+    "regulation 390×844: portal below full-width mobile subtitle",
+    "model-notes 390×844: named semantic portal link visible",
+    "model-notes 390×844: exact absolute URL, default same tab",
+    "model-notes 390×844: expected responsive wording",
+    "model-notes 390×844: 44px touch target",
+    "model-notes 390×844: portal visible in viewport",
+    "model-notes 390×844: portal fully within header",
+    "model-notes 390×844: no header/page horizontal overflow",
+    "model-notes 390×844: portal aligned to right header inset",
+    "model-notes 390×844: title stays on one line",
+    "model-notes 390×844: subtitle wrapping preserved",
+    "model-notes 390×844: existing module rail directly below header",
+    "model-notes 390×844: original seven rail routes preserved",
+    "model-notes 390×844: active rail link visible and underlined",
+    "model-notes 390×844: only 04 retains planned badge",
+    "model-notes 390×844: existing radius and restrained weight",
+    "model-notes 390×844: portal below full-width mobile subtitle",
+    "390: first Tab reaches skip link",
+    "390: focused skip link visible",
+    "390: second Tab reaches portal link",
+    "390: portal focus outline retained",
+    "390: next Tab reaches module rail START",
+    "390: Shift+Tab returns to portal",
+    "390: skip activation still focuses main without changing route",
+    "1440: clicking portal navigates current page without opening a tab",
+    "390: clicking portal navigates current page without opening a tab",
+    "no browser console warning/error, page error or failed HTTP response"
+  ],
+  "matrix": [
+    {
+      "route": "#/start",
+      "viewport": [
+        1600,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1600,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 158,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 530.015625,
+        "bottom": 49.046875,
+        "left": 158
+      },
+      "subtitle": {
+        "x": 158,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 530.015625,
+        "bottom": 73.640625,
+        "left": 158
+      },
+      "portal": {
+        "x": 1392.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1500,
+        "bottom": 67.8125,
+        "left": 1392.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1600,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1600,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 100,
+        "y": 92.640625,
+        "width": 64.359375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 164.359375,
+        "bottom": 143.640625,
+        "left": 100
+      },
+      "pageWidth": 1600,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        1600,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1600,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 158,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 530.015625,
+        "bottom": 49.046875,
+        "left": 158
+      },
+      "subtitle": {
+        "x": 158,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 530.015625,
+        "bottom": 73.640625,
+        "left": 158
+      },
+      "portal": {
+        "x": 1392.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1500,
+        "bottom": 67.8125,
+        "left": 1392.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1600,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1600,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 167.546875,
+        "y": 92.640625,
+        "width": 120.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 287.6875,
+        "bottom": 143.640625,
+        "left": 167.546875
+      },
+      "pageWidth": 1600,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        1600,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1600,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 158,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 530.015625,
+        "bottom": 49.046875,
+        "left": 158
+      },
+      "subtitle": {
+        "x": 158,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 530.015625,
+        "bottom": 73.640625,
+        "left": 158
+      },
+      "portal": {
+        "x": 1392.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1500,
+        "bottom": 67.8125,
+        "left": 1392.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1600,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1600,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 291.6875,
+        "y": 92.640625,
+        "width": 144.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 435.9375,
+        "bottom": 143.640625,
+        "left": 291.6875
+      },
+      "pageWidth": 1600,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        1600,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1600,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 158,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 530.015625,
+        "bottom": 49.046875,
+        "left": 158
+      },
+      "subtitle": {
+        "x": 158,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 530.015625,
+        "bottom": 73.640625,
+        "left": 158
+      },
+      "portal": {
+        "x": 1392.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1500,
+        "bottom": 67.8125,
+        "left": 1392.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1600,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1600,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 439.9375,
+        "y": 92.640625,
+        "width": 116.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 556.1875,
+        "bottom": 143.640625,
+        "left": 439.9375
+      },
+      "pageWidth": 1600,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        1600,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1600,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 158,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 530.015625,
+        "bottom": 49.046875,
+        "left": 158
+      },
+      "subtitle": {
+        "x": 158,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 530.015625,
+        "bottom": 73.640625,
+        "left": 158
+      },
+      "portal": {
+        "x": 1392.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1500,
+        "bottom": 67.8125,
+        "left": 1392.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1600,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1600,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 560.1875,
+        "y": 92.640625,
+        "width": 145.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 705.328125,
+        "bottom": 143.640625,
+        "left": 560.1875
+      },
+      "pageWidth": 1600,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        1600,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 72.640625,
+        "top": 0,
+        "right": 1600,
+        "bottom": 72.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 158,
+        "y": 8,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 8,
+        "right": 530.015625,
+        "bottom": 39.046875,
+        "left": 158
+      },
+      "subtitle": {
+        "x": 158,
+        "y": 42.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 42.046875,
+        "right": 530.015625,
+        "bottom": 63.640625,
+        "left": 158
+      },
+      "portal": {
+        "x": 1392.21875,
+        "y": 13.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 13.8125,
+        "right": 1500,
+        "bottom": 57.8125,
+        "left": 1392.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 72.640625,
+        "width": 1600,
+        "height": 52,
+        "top": 72.640625,
+        "right": 1600,
+        "bottom": 124.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 709.328125,
+        "y": 72.640625,
+        "width": 106.140625,
+        "height": 51,
+        "top": 72.640625,
+        "right": 815.46875,
+        "bottom": 123.640625,
+        "left": 709.328125
+      },
+      "pageWidth": 1600,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        1600,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1600,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1600,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 158,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 530.015625,
+        "bottom": 49.046875,
+        "left": 158
+      },
+      "subtitle": {
+        "x": 158,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 530.015625,
+        "bottom": 73.640625,
+        "left": 158
+      },
+      "portal": {
+        "x": 1392.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1500,
+        "bottom": 67.8125,
+        "left": 1392.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1600,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1600,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 819.46875,
+        "y": 92.640625,
+        "width": 98.34375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 917.8125,
+        "bottom": 143.640625,
+        "left": 819.46875
+      },
+      "pageWidth": 1600,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        1440,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1440,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1312.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1420,
+        "bottom": 67.8125,
+        "left": 1312.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1440,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 20,
+        "y": 92.640625,
+        "width": 64.359375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 84.359375,
+        "bottom": 143.640625,
+        "left": 20
+      },
+      "pageWidth": 1440,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        1440,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1440,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1312.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1420,
+        "bottom": 67.8125,
+        "left": 1312.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1440,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 87.546875,
+        "y": 92.640625,
+        "width": 120.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 207.6875,
+        "bottom": 143.640625,
+        "left": 87.546875
+      },
+      "pageWidth": 1440,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        1440,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1440,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1312.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1420,
+        "bottom": 67.8125,
+        "left": 1312.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1440,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 211.6875,
+        "y": 92.640625,
+        "width": 144.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 355.9375,
+        "bottom": 143.640625,
+        "left": 211.6875
+      },
+      "pageWidth": 1440,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        1440,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1440,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1312.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1420,
+        "bottom": 67.8125,
+        "left": 1312.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1440,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 359.9375,
+        "y": 92.640625,
+        "width": 116.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 476.1875,
+        "bottom": 143.640625,
+        "left": 359.9375
+      },
+      "pageWidth": 1440,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        1440,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1440,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1312.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1420,
+        "bottom": 67.8125,
+        "left": 1312.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1440,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 480.1875,
+        "y": 92.640625,
+        "width": 145.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 625.328125,
+        "bottom": 143.640625,
+        "left": 480.1875
+      },
+      "pageWidth": 1440,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        1440,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 72.640625,
+        "top": 0,
+        "right": 1440,
+        "bottom": 72.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 8,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 8,
+        "right": 450.015625,
+        "bottom": 39.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 42.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 42.046875,
+        "right": 450.015625,
+        "bottom": 63.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1312.21875,
+        "y": 13.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 13.8125,
+        "right": 1420,
+        "bottom": 57.8125,
+        "left": 1312.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 72.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 72.640625,
+        "right": 1440,
+        "bottom": 124.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 629.328125,
+        "y": 72.640625,
+        "width": 106.140625,
+        "height": 51,
+        "top": 72.640625,
+        "right": 735.46875,
+        "bottom": 123.640625,
+        "left": 629.328125
+      },
+      "pageWidth": 1440,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        1440,
+        900
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1440,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1312.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1420,
+        "bottom": 67.8125,
+        "left": 1312.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1440,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1440,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 739.46875,
+        "y": 92.640625,
+        "width": 98.34375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 837.8125,
+        "bottom": 143.640625,
+        "left": 739.46875
+      },
+      "pageWidth": 1440,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        1280,
+        800
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1280,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1152.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1260,
+        "bottom": 67.8125,
+        "left": 1152.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1280,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1280,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 14,
+        "y": 92.640625,
+        "width": 64.359375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 78.359375,
+        "bottom": 143.640625,
+        "left": 14
+      },
+      "pageWidth": 1280,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        1280,
+        800
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1280,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1152.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1260,
+        "bottom": 67.8125,
+        "left": 1152.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1280,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1280,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 81.546875,
+        "y": 92.640625,
+        "width": 120.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 201.6875,
+        "bottom": 143.640625,
+        "left": 81.546875
+      },
+      "pageWidth": 1280,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        1280,
+        800
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1280,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1152.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1260,
+        "bottom": 67.8125,
+        "left": 1152.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1280,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1280,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 205.6875,
+        "y": 92.640625,
+        "width": 144.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 349.9375,
+        "bottom": 143.640625,
+        "left": 205.6875
+      },
+      "pageWidth": 1280,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        1280,
+        800
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1280,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1152.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1260,
+        "bottom": 67.8125,
+        "left": 1152.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1280,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1280,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 353.9375,
+        "y": 92.640625,
+        "width": 116.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 470.1875,
+        "bottom": 143.640625,
+        "left": 353.9375
+      },
+      "pageWidth": 1280,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        1280,
+        800
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1280,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1152.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1260,
+        "bottom": 67.8125,
+        "left": 1152.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1280,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1280,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 474.1875,
+        "y": 92.640625,
+        "width": 145.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 619.328125,
+        "bottom": 143.640625,
+        "left": 474.1875
+      },
+      "pageWidth": 1280,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        1280,
+        800
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 72.640625,
+        "top": 0,
+        "right": 1280,
+        "bottom": 72.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 8,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 8,
+        "right": 450.015625,
+        "bottom": 39.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 42.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 42.046875,
+        "right": 450.015625,
+        "bottom": 63.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1152.21875,
+        "y": 13.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 13.8125,
+        "right": 1260,
+        "bottom": 57.8125,
+        "left": 1152.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 72.640625,
+        "width": 1280,
+        "height": 52,
+        "top": 72.640625,
+        "right": 1280,
+        "bottom": 124.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 623.328125,
+        "y": 72.640625,
+        "width": 106.140625,
+        "height": 51,
+        "top": 72.640625,
+        "right": 729.46875,
+        "bottom": 123.640625,
+        "left": 623.328125
+      },
+      "pageWidth": 1280,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        1280,
+        800
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1280,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1280,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 1152.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1260,
+        "bottom": 67.8125,
+        "left": 1152.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1280,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1280,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 733.46875,
+        "y": 92.640625,
+        "width": 98.34375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 831.8125,
+        "bottom": 143.640625,
+        "left": 733.46875
+      },
+      "pageWidth": 1280,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        1024,
+        768
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1024,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 896.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1004,
+        "bottom": 67.8125,
+        "left": 896.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1024,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 14,
+        "y": 92.640625,
+        "width": 64.359375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 78.359375,
+        "bottom": 143.640625,
+        "left": 14
+      },
+      "pageWidth": 1024,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        1024,
+        768
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1024,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 896.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1004,
+        "bottom": 67.8125,
+        "left": 896.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1024,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 81.546875,
+        "y": 92.640625,
+        "width": 120.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 201.6875,
+        "bottom": 143.640625,
+        "left": 81.546875
+      },
+      "pageWidth": 1024,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        1024,
+        768
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1024,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 896.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1004,
+        "bottom": 67.8125,
+        "left": 896.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1024,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 205.6875,
+        "y": 92.640625,
+        "width": 144.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 349.9375,
+        "bottom": 143.640625,
+        "left": 205.6875
+      },
+      "pageWidth": 1024,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        1024,
+        768
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1024,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 896.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1004,
+        "bottom": 67.8125,
+        "left": 896.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1024,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 353.9375,
+        "y": 92.640625,
+        "width": 116.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 470.1875,
+        "bottom": 143.640625,
+        "left": 353.9375
+      },
+      "pageWidth": 1024,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        1024,
+        768
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1024,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 896.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1004,
+        "bottom": 67.8125,
+        "left": 896.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1024,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 474.1875,
+        "y": 92.640625,
+        "width": 145.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 619.328125,
+        "bottom": 143.640625,
+        "left": 474.1875
+      },
+      "pageWidth": 1024,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        1024,
+        768
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 72.640625,
+        "top": 0,
+        "right": 1024,
+        "bottom": 72.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 8,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 8,
+        "right": 450.015625,
+        "bottom": 39.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 42.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 42.046875,
+        "right": 450.015625,
+        "bottom": 63.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 896.21875,
+        "y": 13.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 13.8125,
+        "right": 1004,
+        "bottom": 57.8125,
+        "left": 896.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 72.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 72.640625,
+        "right": 1024,
+        "bottom": 124.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 623.328125,
+        "y": 72.640625,
+        "width": 106.140625,
+        "height": 51,
+        "top": 72.640625,
+        "right": 729.46875,
+        "bottom": 123.640625,
+        "left": 623.328125
+      },
+      "pageWidth": 1024,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        1024,
+        768
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 1024,
+        "height": 92.640625,
+        "top": 0,
+        "right": 1024,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 896.21875,
+        "y": 23.8125,
+        "width": 107.78125,
+        "height": 44,
+        "top": 23.8125,
+        "right": 1004,
+        "bottom": 67.8125,
+        "left": 896.21875
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 1024,
+        "height": 52,
+        "top": 92.640625,
+        "right": 1024,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 733.46875,
+        "y": 92.640625,
+        "width": 98.34375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 831.8125,
+        "bottom": 143.640625,
+        "left": 733.46875
+      },
+      "pageWidth": 1024,
+      "portalText": "← 메인 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        768,
+        1024
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 92.640625,
+        "top": 0,
+        "right": 768,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 684.109375,
+        "y": 23.8125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 23.8125,
+        "right": 748,
+        "bottom": 67.8125,
+        "left": 684.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 768,
+        "height": 52,
+        "top": 92.640625,
+        "right": 768,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 14,
+        "y": 92.640625,
+        "width": 64.359375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 78.359375,
+        "bottom": 143.640625,
+        "left": 14
+      },
+      "pageWidth": 768,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        768,
+        1024
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 92.640625,
+        "top": 0,
+        "right": 768,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 684.109375,
+        "y": 23.8125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 23.8125,
+        "right": 748,
+        "bottom": 67.8125,
+        "left": 684.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 768,
+        "height": 52,
+        "top": 92.640625,
+        "right": 768,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 81.546875,
+        "y": 92.640625,
+        "width": 120.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 201.6875,
+        "bottom": 143.640625,
+        "left": 81.546875
+      },
+      "pageWidth": 768,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        768,
+        1024
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 92.640625,
+        "top": 0,
+        "right": 768,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 684.109375,
+        "y": 23.8125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 23.8125,
+        "right": 748,
+        "bottom": 67.8125,
+        "left": 684.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 768,
+        "height": 52,
+        "top": 92.640625,
+        "right": 768,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 205.6875,
+        "y": 92.640625,
+        "width": 144.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 349.9375,
+        "bottom": 143.640625,
+        "left": 205.6875
+      },
+      "pageWidth": 768,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        768,
+        1024
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 92.640625,
+        "top": 0,
+        "right": 768,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 684.109375,
+        "y": 23.8125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 23.8125,
+        "right": 748,
+        "bottom": 67.8125,
+        "left": 684.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 768,
+        "height": 52,
+        "top": 92.640625,
+        "right": 768,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 353.9375,
+        "y": 92.640625,
+        "width": 116.25,
+        "height": 51,
+        "top": 92.640625,
+        "right": 470.1875,
+        "bottom": 143.640625,
+        "left": 353.9375
+      },
+      "pageWidth": 768,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        768,
+        1024
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 92.640625,
+        "top": 0,
+        "right": 768,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 684.109375,
+        "y": 23.8125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 23.8125,
+        "right": 748,
+        "bottom": 67.8125,
+        "left": 684.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 768,
+        "height": 52,
+        "top": 92.640625,
+        "right": 768,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 474.1875,
+        "y": 92.640625,
+        "width": 145.140625,
+        "height": 51,
+        "top": 92.640625,
+        "right": 619.328125,
+        "bottom": 143.640625,
+        "left": 474.1875
+      },
+      "pageWidth": 768,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        768,
+        1024
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 72.640625,
+        "top": 0,
+        "right": 768,
+        "bottom": 72.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 8,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 8,
+        "right": 450.015625,
+        "bottom": 39.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 42.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 42.046875,
+        "right": 450.015625,
+        "bottom": 63.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 684.109375,
+        "y": 13.8125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 13.8125,
+        "right": 748,
+        "bottom": 57.8125,
+        "left": 684.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 72.640625,
+        "width": 768,
+        "height": 52,
+        "top": 72.640625,
+        "right": 768,
+        "bottom": 124.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 623.328125,
+        "y": 72.640625,
+        "width": 106.140625,
+        "height": 51,
+        "top": 72.640625,
+        "right": 729.46875,
+        "bottom": 123.640625,
+        "left": 623.328125
+      },
+      "pageWidth": 768,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        768,
+        1024
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 768,
+        "height": 92.640625,
+        "top": 0,
+        "right": 768,
+        "bottom": 92.640625,
+        "left": 0
+      },
+      "title": {
+        "x": 78,
+        "y": 18,
+        "width": 372.015625,
+        "height": 31.046875,
+        "top": 18,
+        "right": 450.015625,
+        "bottom": 49.046875,
+        "left": 78
+      },
+      "subtitle": {
+        "x": 78,
+        "y": 52.046875,
+        "width": 372.015625,
+        "height": 21.59375,
+        "top": 52.046875,
+        "right": 450.015625,
+        "bottom": 73.640625,
+        "left": 78
+      },
+      "portal": {
+        "x": 684.109375,
+        "y": 23.8125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 23.8125,
+        "right": 748,
+        "bottom": 67.8125,
+        "left": 684.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 92.640625,
+        "width": 768,
+        "height": 52,
+        "top": 92.640625,
+        "right": 768,
+        "bottom": 144.640625,
+        "left": 0
+      },
+      "active": {
+        "x": 657.46875,
+        "y": 92.640625,
+        "width": 98.34375,
+        "height": 51,
+        "top": 92.640625,
+        "right": 755.8125,
+        "bottom": 143.640625,
+        "left": 657.46875
+      },
+      "pageWidth": 768,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/start",
+      "viewport": [
+        390,
+        844
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 225.828125,
+        "top": 0,
+        "right": 390,
+        "bottom": 225.828125,
+        "left": 0
+      },
+      "title": {
+        "x": 20,
+        "y": 76,
+        "width": 350,
+        "height": 31.046875,
+        "top": 76,
+        "right": 370,
+        "bottom": 107.046875,
+        "left": 20
+      },
+      "subtitle": {
+        "x": 20,
+        "y": 110.046875,
+        "width": 350,
+        "height": 43.1875,
+        "top": 110.046875,
+        "right": 370,
+        "bottom": 153.234375,
+        "left": 20
+      },
+      "portal": {
+        "x": 306.109375,
+        "y": 165.53125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 165.53125,
+        "right": 370,
+        "bottom": 209.53125,
+        "left": 306.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 225.828125,
+        "width": 390,
+        "height": 52,
+        "top": 225.828125,
+        "right": 390,
+        "bottom": 277.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 14,
+        "y": 225.828125,
+        "width": 64.359375,
+        "height": 51,
+        "top": 225.828125,
+        "right": 78.359375,
+        "bottom": 276.828125,
+        "left": 14
+      },
+      "pageWidth": 390,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/reaction-energy",
+      "viewport": [
+        390,
+        844
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 225.828125,
+        "top": 0,
+        "right": 390,
+        "bottom": 225.828125,
+        "left": 0
+      },
+      "title": {
+        "x": 20,
+        "y": 76,
+        "width": 350,
+        "height": 31.046875,
+        "top": 76,
+        "right": 370,
+        "bottom": 107.046875,
+        "left": 20
+      },
+      "subtitle": {
+        "x": 20,
+        "y": 110.046875,
+        "width": 350,
+        "height": 43.1875,
+        "top": 110.046875,
+        "right": 370,
+        "bottom": 153.234375,
+        "left": 20
+      },
+      "portal": {
+        "x": 306.109375,
+        "y": 165.53125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 165.53125,
+        "right": 370,
+        "bottom": 209.53125,
+        "left": 306.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 225.828125,
+        "width": 390,
+        "height": 52,
+        "top": 225.828125,
+        "right": 390,
+        "bottom": 277.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 81.546875,
+        "y": 225.828125,
+        "width": 120.140625,
+        "height": 51,
+        "top": 225.828125,
+        "right": 201.6875,
+        "bottom": 276.828125,
+        "left": 81.546875
+      },
+      "pageWidth": 390,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/carbonic-anhydrase",
+      "viewport": [
+        390,
+        844
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 225.828125,
+        "top": 0,
+        "right": 390,
+        "bottom": 225.828125,
+        "left": 0
+      },
+      "title": {
+        "x": 20,
+        "y": 76,
+        "width": 350,
+        "height": 31.046875,
+        "top": 76,
+        "right": 370,
+        "bottom": 107.046875,
+        "left": 20
+      },
+      "subtitle": {
+        "x": 20,
+        "y": 110.046875,
+        "width": 350,
+        "height": 43.1875,
+        "top": 110.046875,
+        "right": 370,
+        "bottom": 153.234375,
+        "left": 20
+      },
+      "portal": {
+        "x": 306.109375,
+        "y": 165.53125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 165.53125,
+        "right": 370,
+        "bottom": 209.53125,
+        "left": 306.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 225.828125,
+        "width": 390,
+        "height": 52,
+        "top": 225.828125,
+        "right": 390,
+        "bottom": 277.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 205.6875,
+        "y": 225.828125,
+        "width": 144.25,
+        "height": 51,
+        "top": 225.828125,
+        "right": 349.9375,
+        "bottom": 276.828125,
+        "left": 205.6875
+      },
+      "pageWidth": 390,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/kinetics",
+      "viewport": [
+        390,
+        844
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 225.828125,
+        "top": 0,
+        "right": 390,
+        "bottom": 225.828125,
+        "left": 0
+      },
+      "title": {
+        "x": 20,
+        "y": 76,
+        "width": 350,
+        "height": 31.046875,
+        "top": 76,
+        "right": 370,
+        "bottom": 107.046875,
+        "left": 20
+      },
+      "subtitle": {
+        "x": 20,
+        "y": 110.046875,
+        "width": 350,
+        "height": 43.1875,
+        "top": 110.046875,
+        "right": 370,
+        "bottom": 153.234375,
+        "left": 20
+      },
+      "portal": {
+        "x": 306.109375,
+        "y": 165.53125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 165.53125,
+        "right": 370,
+        "bottom": 209.53125,
+        "left": 306.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 225.828125,
+        "width": 390,
+        "height": 52,
+        "top": 225.828125,
+        "right": 390,
+        "bottom": 277.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 261.9375,
+        "y": 225.828125,
+        "width": 116.25,
+        "height": 51,
+        "top": 225.828125,
+        "right": 378.1875,
+        "bottom": 276.828125,
+        "left": 261.9375
+      },
+      "pageWidth": 390,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/inhibition",
+      "viewport": [
+        390,
+        844
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 225.828125,
+        "top": 0,
+        "right": 390,
+        "bottom": 225.828125,
+        "left": 0
+      },
+      "title": {
+        "x": 20,
+        "y": 76,
+        "width": 350,
+        "height": 31.046875,
+        "top": 76,
+        "right": 370,
+        "bottom": 107.046875,
+        "left": 20
+      },
+      "subtitle": {
+        "x": 20,
+        "y": 110.046875,
+        "width": 350,
+        "height": 43.1875,
+        "top": 110.046875,
+        "right": 370,
+        "bottom": 153.234375,
+        "left": 20
+      },
+      "portal": {
+        "x": 306.109375,
+        "y": 165.53125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 165.53125,
+        "right": 370,
+        "bottom": 209.53125,
+        "left": 306.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 225.828125,
+        "width": 390,
+        "height": 52,
+        "top": 225.828125,
+        "right": 390,
+        "bottom": 277.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 233.1875,
+        "y": 225.828125,
+        "width": 145.140625,
+        "height": 51,
+        "top": 225.828125,
+        "right": 378.328125,
+        "bottom": 276.828125,
+        "left": 233.1875
+      },
+      "pageWidth": 390,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/regulation",
+      "viewport": [
+        390,
+        844
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 205.828125,
+        "top": 0,
+        "right": 390,
+        "bottom": 205.828125,
+        "left": 0
+      },
+      "title": {
+        "x": 20,
+        "y": 66,
+        "width": 350,
+        "height": 31.046875,
+        "top": 66,
+        "right": 370,
+        "bottom": 97.046875,
+        "left": 20
+      },
+      "subtitle": {
+        "x": 20,
+        "y": 100.046875,
+        "width": 350,
+        "height": 43.1875,
+        "top": 100.046875,
+        "right": 370,
+        "bottom": 143.234375,
+        "left": 20
+      },
+      "portal": {
+        "x": 306.109375,
+        "y": 155.53125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 155.53125,
+        "right": 370,
+        "bottom": 199.53125,
+        "left": 306.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 205.828125,
+        "width": 390,
+        "height": 52,
+        "top": 205.828125,
+        "right": 390,
+        "bottom": 257.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 272.328125,
+        "y": 205.828125,
+        "width": 106.140625,
+        "height": 51,
+        "top": 205.828125,
+        "right": 378.46875,
+        "bottom": 256.828125,
+        "left": 272.328125
+      },
+      "pageWidth": 390,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    },
+    {
+      "route": "#/model-notes",
+      "viewport": [
+        390,
+        844
+      ],
+      "header": {
+        "x": 0,
+        "y": 0,
+        "width": 390,
+        "height": 225.828125,
+        "top": 0,
+        "right": 390,
+        "bottom": 225.828125,
+        "left": 0
+      },
+      "title": {
+        "x": 20,
+        "y": 76,
+        "width": 350,
+        "height": 31.046875,
+        "top": 76,
+        "right": 370,
+        "bottom": 107.046875,
+        "left": 20
+      },
+      "subtitle": {
+        "x": 20,
+        "y": 110.046875,
+        "width": 350,
+        "height": 43.1875,
+        "top": 110.046875,
+        "right": 370,
+        "bottom": 153.234375,
+        "left": 20
+      },
+      "portal": {
+        "x": 306.109375,
+        "y": 165.53125,
+        "width": 63.890625,
+        "height": 44,
+        "top": 165.53125,
+        "right": 370,
+        "bottom": 209.53125,
+        "left": 306.109375
+      },
+      "rail": {
+        "x": 0,
+        "y": 225.828125,
+        "width": 390,
+        "height": 52,
+        "top": 225.828125,
+        "right": 390,
+        "bottom": 277.828125,
+        "left": 0
+      },
+      "active": {
+        "x": 279.46875,
+        "y": 225.828125,
+        "width": 98.34375,
+        "height": 51,
+        "top": 225.828125,
+        "right": 377.8125,
+        "bottom": 276.828125,
+        "left": 279.46875
+      },
+      "pageWidth": 390,
+      "portalText": "← 포털",
+      "href": "https://suimaire.github.io/",
+      "target": null,
+      "portalStyle": {
+        "borderRadius": "5px",
+        "fontWeight": "400",
+        "color": "rgb(21, 97, 143)"
+      },
+      "titleLineHeight": 31.05,
+      "subtitleLineHeight": 21.6,
+      "railLinks": [
+        "#/start",
+        "#/reaction-energy",
+        "#/carbonic-anhydrase",
+        "#/kinetics",
+        "#/inhibition",
+        "#/regulation",
+        "#/model-notes"
+      ],
+      "activeUnderline": "rgb(21, 97, 143) 0px -3px 0px 0px inset",
+      "plannedLinks": [
+        "#/inhibition"
+      ],
+      "portalClipped": false,
+      "focus": ""
+    }
+  ],
+  "keyboard": [
+    {
+      "viewport": [
+        1600,
+        900
+      ],
+      "focus": {
+        "style": "solid",
+        "width": "3px",
+        "offset": "3px",
+        "color": "rgb(22, 123, 186)",
+        "border": "rgb(21, 97, 143)"
+      }
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "focus": {
+        "style": "solid",
+        "width": "3px",
+        "offset": "3px",
+        "color": "rgb(22, 123, 186)",
+        "border": "rgb(21, 97, 143)"
+      }
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "focus": {
+        "style": "solid",
+        "width": "3px",
+        "offset": "3px",
+        "color": "rgb(22, 123, 186)",
+        "border": "rgb(21, 97, 143)"
+      }
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "focus": {
+        "style": "solid",
+        "width": "3px",
+        "offset": "3px",
+        "color": "rgb(22, 123, 186)",
+        "border": "rgb(21, 97, 143)"
+      }
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "focus": {
+        "style": "solid",
+        "width": "3px",
+        "offset": "3px",
+        "color": "rgb(22, 123, 186)",
+        "border": "rgb(21, 97, 143)"
+      }
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "focus": {
+        "style": "solid",
+        "width": "3px",
+        "offset": "3px",
+        "color": "rgb(22, 123, 186)",
+        "border": "rgb(21, 97, 143)"
+      }
+    }
+  ],
+  "navigation": [
+    {
+      "width": 1440,
+      "url": "https://suimaire.github.io/",
+      "pagesBefore": 1,
+      "pagesAfter": 1
+    },
+    {
+      "width": 390,
+      "url": "https://suimaire.github.io/",
+      "pagesBefore": 1,
+      "pagesAfter": 1
+    }
+  ],
+  "messages": []
+}
