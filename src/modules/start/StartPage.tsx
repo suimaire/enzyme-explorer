@@ -1,15 +1,9 @@
 import {hashFor, moduleEntry, MODULES, type ModuleId} from '../../app/modules';
 
-const CARDS: {id: ModuleId; number: string; eyebrow: string; english: string; question: string}[] = [
-  {id: 'reaction-energy', number: '01', eyebrow: '에너지', english: 'Energy', question: '왜 열역학적으로 유리한 반응도 느릴 수 있을까?'},
-  {
-    id: 'carbonic-anhydrase',
-    number: '02',
-    eyebrow: '활성 부위 화학',
-    english: 'Active-site chemistry',
-    question: '분자의 3차원 환경은 어떻게 반응성을 바꿀까?',
-  },
-  {id: 'kinetics', number: '03', eyebrow: '반응속도론', english: 'Kinetics', question: '효소의 효과를 실험적으로 어떻게 측정할 수 있을까?'},
+const CARDS: {id: ModuleId; number: string; eyebrow: string; question: string}[] = [
+  {id: 'reaction-energy', number: '01', eyebrow: '에너지', question: '왜 열역학적으로 유리한 반응도 느릴 수 있을까?'},
+  {id: 'carbonic-anhydrase', number: '02', eyebrow: '활성 부위 화학', question: '분자의 3차원 환경은 어떻게 반응성을 바꿀까?'},
+  {id: 'kinetics', number: '03', eyebrow: '반응속도론', question: '효소의 효과를 실험적으로 어떻게 측정할 수 있을까?'},
 ];
 
 /** The home screen opens with the question of the whole session rather than with an explanation. */
@@ -19,7 +13,7 @@ export function StartPage({onNavigate}: {onNavigate: (id: ModuleId) => void}) {
   return (
     <div className="module start-page" data-testid="module-start">
       <section className="start-question">
-        <p className="eyebrow">Basic Biochemistry ET · 7차시 · Enzyme I</p>
+        <p className="eyebrow">기초 생화학 7차시 · 효소 I</p>
         <h2>단백질은 어떻게 화학 반응을 더 빠르게 만들 수 있을까?</h2>
         <p>
           같은 질문을 세 가지 방향에서 살펴봅니다. 기본 학습은 01 → 02 → 03 순서로 진행하는 것을 권장합니다.
@@ -34,9 +28,10 @@ export function StartPage({onNavigate}: {onNavigate: (id: ModuleId) => void}) {
             <button type="button" className="module-card" onClick={() => onNavigate(c.id)} data-testid={`card-${c.id}`}>
               <span className="card-number">{c.number}</span>
               <span className="card-eyebrow">
-                {c.eyebrow} <small lang="en">{c.english}</small>
+                {c.eyebrow}
               </span>
               <span className="card-question">{c.question}</span>
+              <span className="card-cta">시작하기</span>
             </button>
           </li>
         ))}
@@ -79,12 +74,12 @@ export function StartPage({onNavigate}: {onNavigate: (id: ModuleId) => void}) {
               {regulation.eyebrow} <span className="badge start-ready">현재 이용 가능</span>
             </span>
             <span className="card-title" id="start-regulation-title">
-              {regulation.title} <small lang="en">{regulation.heading}</small>
+              {regulation.heading ?? regulation.title}
             </span>
             <span className="card-question" id="start-regulation-description">
               간 PFKFB1 L형을 중심으로 인슐린·글루카곤 신호가 효소 활성과 대사 조절 방향을 어떻게 바꾸는지 탐구합니다.
             </span>
-            <span className="card-cta" id="start-regulation-cta">학습 시작 <span aria-hidden="true">→</span></span>
+            <span className="card-cta" id="start-regulation-cta">학습 시작</span>
           </a>
         </section>
       ) : null}

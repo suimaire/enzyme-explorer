@@ -30,7 +30,7 @@ export type ModuleEntry = {
 };
 
 export const MODULES: readonly ModuleEntry[] = [
-  {id: 'start', number: null, eyebrow: 'Start', title: '시작', question: '단백질은 어떻게 화학 반응을 더 빠르게 만들 수 있을까?', status: 'ready'},
+  {id: 'start', number: null, eyebrow: '처음', title: '시작', question: '단백질은 어떻게 화학 반응을 더 빠르게 만들 수 있을까?', status: 'ready'},
   {
     id: 'reaction-energy',
     number: '01',
@@ -57,8 +57,8 @@ export const MODULES: readonly ModuleEntry[] = [
     status: 'ready',
   },
   {id: 'inhibition', number: '04', eyebrow: 'Enzyme II', title: '효소 저해', question: '', status: 'planned'},
-  {id: 'regulation', number: '05', eyebrow: 'Enzyme II', title: '효소 조절', heading: 'Hormonal Regulation', question: '인슐린과 글루카곤은 한 단백질의 두 활성을 어떻게 조절할까?', status: 'ready'},
-  {id: 'model-notes', number: null, eyebrow: 'Reference', title: '모델 및 주의사항', question: '', status: 'ready'},
+  {id: 'regulation', number: '05', eyebrow: 'Enzyme II', title: '효소 조절', heading: '호르몬에 의한 효소 조절', question: '인슐린과 글루카곤은 한 단백질의 두 활성을 어떻게 조절할까?', status: 'ready'},
+  {id: 'model-notes', number: null, eyebrow: '참고 자료', title: '모델 및 주의사항', question: '', status: 'ready'},
 ];
 
 export const moduleEntry = (id: ModuleId): ModuleEntry => MODULES.find((m) => m.id === id)!;

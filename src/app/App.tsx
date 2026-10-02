@@ -18,6 +18,7 @@ const CarbonicAnhydraseLab = lazy(() =>
 const HormonalRegulation = lazy(() => import('../modules/regulation/HormonalRegulation').then(m => ({default: m.HormonalRegulation})));
 
 export const PROTEIN_EXPLORER_URL = 'https://suimaire.github.io/protein-3d-explorer/';
+const PORTAL_URL = 'https://suimaire.github.io/';
 
 export function App({session}: {session?: LearningSession} = {}) {
   return <LearningSessionProvider session={session}><AppContent /></LearningSessionProvider>;
@@ -45,19 +46,15 @@ function AppContent() {
         main.current?.scrollIntoView({block: 'start', behavior: 'auto'});
       }}>본문으로 건너뛰기</a>
       <header className={`site-header${current === 'regulation' ? ' regulation-shell' : ''}`}>
-        <div className="brand-mark" aria-hidden="true">
-          E
-        </div>
         <div>
-          <h1>
-            Enzyme <span>Explorer</span>
-          </h1>
-          <p>효소는 어떻게 반응 속도를 바꾸는가 · 촉매 작용과 반응속도론</p>
+          <nav className="breadcrumb" aria-label="현재 위치">
+            <a href={PORTAL_URL}>수업 포털</a>
+            <span aria-hidden="true">›</span>
+            <a href={`${PORTAL_URL}#molecular`}>분자 · 생화학 탐구</a>
+          </nav>
+          <h1>효소 촉매와 반응속도론 탐색기</h1>
+          <p>효소가 반응을 빠르게 만드는 원리를 에너지 그림, 3D 구조, 측정 그래프로 차례로 확인합니다.</p>
         </div>
-        <p className="current-module">
-          {entry.number ? `모듈 ${entry.number} · ` : ''}
-          {entry.title}
-        </p>
       </header>
 
       <ModuleNavigation current={current} navigate={navigate} />
@@ -94,9 +91,10 @@ function AppContent() {
           </a>{' '}
           ·{' '}
           <a href={PROTEIN_EXPLORER_URL} target="_blank" rel="noreferrer noopener" data-testid="protein-explorer-link">
-            단백질 구조와 접힘 복습하기 ↗
+            단백질 구조와 접힘 복습하기 (새 창)
           </a>
         </span>
+        <span className="footer-brand">HAFS Biology Lab · CH Park</span>
         {/* 조회수: 포털 공통 모듈(page-views.js)이 채운다. index.html 의 loader 참고 */}
         <span data-page-views="" hidden />
       </footer>

@@ -45,10 +45,10 @@ export function ModuleNavigation({current, navigate}: {current: ModuleId; naviga
   return <nav ref={rail} className="module-nav" aria-label="학습 모듈">
     {MODULES.map(m => <a key={m.id} href={hashFor(m.id)}
       aria-current={current === m.id ? 'page' : undefined}
-      aria-label={`${m.number ?? m.eyebrow} ${m.title}${m.status === 'planned' ? ' · Enzyme II에서 다룰 예정' : ''}`}
+      aria-label={`${m.number ? `${m.number} ` : ''}${m.title}${m.status === 'planned' ? ' · Enzyme II에서 다룰 예정' : ''}`}
       data-testid={`nav-${m.id}`} onClick={e => {e.preventDefault(); navigate(m.id);}}>
-      <small>{m.number ?? m.eyebrow}</small>
-      {m.number && <span>{m.id === 'kinetics' ? '반응속도론' : m.title}</span>}
+      {m.number && <small>{m.number}</small>}
+      <span>{m.id === 'kinetics' ? '반응속도론' : m.id === 'model-notes' ? '참고 자료' : m.title}</span>
       {m.status === 'planned' && <span className="module-planned" aria-hidden="true">예정</span>}
     </a>)}
   </nav>;

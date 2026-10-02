@@ -219,7 +219,7 @@ describe('module registry and hash navigation', () => {
 
   it('keeps inhibition planned and marks the implemented regulation module ready', () => {
     expect(MODULES.filter((m) => m.status === 'planned').map((m) => m.id)).toEqual(['inhibition']);
-    expect(MODULES.find(m => m.id === 'regulation')).toMatchObject({status: 'ready', number: '05', title: '효소 조절', heading: 'Hormonal Regulation'});
+    expect(MODULES.find(m => m.id === 'regulation')).toMatchObject({status: 'ready', number: '05', title: '효소 조절', heading: '호르몬에 의한 효소 조절'});
     expect(MODULES.filter((m) => m.number !== null).map((m) => m.number)).toEqual(['01', '02', '03', '04', '05']);
   });
 });

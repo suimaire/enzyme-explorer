@@ -27,7 +27,7 @@ describe('Start module discovery (UX-011)', () => {
 
   it('introduces the current liver PFKFB1 L-form scope without promising quantitative outputs', () => {
     const card = exploration();
-    for (const text of ['05', '효소 조절', 'Hormonal Regulation', 'Enzyme II', '간 PFKFB1 L형', '인슐린·글루카곤 신호', '효소 활성과 대사 조절 방향']) expect(card).toContain(text);
+    for (const text of ['05', '호르몬에 의한 효소 조절', 'Enzyme II', '간 PFKFB1 L형', '인슐린·글루카곤 신호', '효소 활성과 대사 조절 방향']) expect(card).toContain(text);
   });
 
   it('shows the ready module as usable with a start CTA and no planned badge', () => {
@@ -58,7 +58,6 @@ describe('Start module discovery (UX-011)', () => {
     for (const id of labels) expect(card).toContain(`id="${id}"`);
     expect(card).toContain('aria-describedby="start-regulation-description"');
     expect(card).toContain('id="start-regulation-description"');
-    expect(card).toContain('lang="en"');
   });
 
   it('reads the route, number, titles, category and availability from the registry on render', () => {
@@ -68,7 +67,7 @@ describe('Start module discovery (UX-011)', () => {
       : original(id));
     try {
       const card = exploration();
-      for (const text of ['href="#/kinetics"', '>09</span>', '등록된 제목', 'Registry heading', 'Registry category']) expect(card).toContain(text);
+      for (const text of ['href="#/kinetics"', '>09</span>', 'Registry heading', 'Registry category']) expect(card).toContain(text);
       spy.mockImplementation(id => ({...original(id), status: 'planned'}));
       expect(render()).not.toContain('class="start-explore"');
     } finally {spy.mockRestore();}

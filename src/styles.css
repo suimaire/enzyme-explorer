@@ -1535,3 +1535,134 @@ details summary {
     display: inline-block;
   }
 }
+
+/* ==========================================================================
+   학습자 중심 정리 (2026-10)
+   - 영문 대문자·넓은 자간 라벨을 한글 보통 글씨로
+   - 로고 타일 대신 포털 위치(breadcrumb)와 한글 제목
+   - 카드 번호를 장식이 아닌 '순서' 표시로 축소
+   ========================================================================== */
+:root {
+  font-family: 'Pretendard', 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', system-ui, sans-serif;
+  color: #1d2a33;
+}
+.site-header {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.site-header h1 {
+  font-size: 22px;
+  letter-spacing: -0.3px;
+}
+.site-header p {
+  font-size: 14.5px;
+  color: #4a5a66;
+}
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 7px;
+  margin-bottom: 3px;
+  font-size: 13.5px;
+  color: #5a6a75;
+}
+.breadcrumb a {
+  color: #4a5a66;
+  text-decoration: none;
+  padding: 2px 0;
+}
+.breadcrumb a:hover {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+.module-nav a {
+  font-size: 14.5px;
+}
+.module-nav small {
+  font-size: 12.5px;
+  letter-spacing: 0;
+  text-transform: none;
+  font-variant-numeric: tabular-nums;
+  color: #6a7984;
+}
+.module-nav a[aria-current='page'] small {
+  color: var(--accent);
+}
+.eyebrow,
+.teaching-model-tag,
+.predict-tag,
+.explain-tag,
+.stage-list small {
+  text-transform: none;
+  letter-spacing: 0;
+}
+.eyebrow {
+  font-size: 13.5px;
+  font-weight: 600;
+}
+.badge {
+  letter-spacing: 0;
+}
+.predict-tag,
+.explain-tag {
+  font-size: 12px;
+  padding: 1px 7px;
+}
+.stage-list small {
+  font-size: 12.5px;
+}
+
+/* 시작 화면: 큰 장식 숫자 대신 '번호 · 주제' 한 줄, 카드 아래 행동 문구 */
+.start-question h2 {
+  font-size: 29px;
+  letter-spacing: -0.4px;
+}
+.start-question p {
+  font-size: 16.5px;
+  line-height: 1.75;
+}
+.module-card {
+  gap: 8px;
+  padding: 18px 20px;
+  align-content: start;
+}
+.card-grid .module-card {
+  grid-template-columns: auto minmax(0, 1fr);
+  column-gap: 8px;
+}
+.card-grid .card-number,
+.start-explore .card-number {
+  font-size: 15px;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+}
+.card-grid .card-eyebrow {
+  font-size: 15px;
+  color: var(--accent-dark);
+}
+.card-grid .card-question,
+.card-grid .card-cta {
+  grid-column: 1 / -1;
+}
+.card-question {
+  font-size: 16.5px;
+  line-height: 1.6;
+}
+.card-cta {
+  align-self: end;
+  margin-top: 6px;
+  font-size: 14.5px;
+  font-weight: bold;
+  color: var(--accent);
+}
+.module-card:hover .card-cta {
+  text-decoration: underline;
+}
+.start-explore .card-number {
+  grid-row: 1 / 5;
+}
+
+footer .footer-brand {
+  color: #5a6a75;
+}
