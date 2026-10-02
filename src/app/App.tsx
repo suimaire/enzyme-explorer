@@ -48,13 +48,15 @@ function AppContent() {
       <header className={`site-header${current === 'regulation' ? ' regulation-shell' : ''}`}>
         <div>
           <nav className="breadcrumb" aria-label="현재 위치">
-            <a href={PORTAL_URL}>수업 포털</a>
-            <span aria-hidden="true">›</span>
             <a href={`${PORTAL_URL}#molecular`}>분자 · 생화학 탐구</a>
           </nav>
           <h1>효소 촉매와 반응속도론 탐색기</h1>
           <p>효소가 반응을 빠르게 만드는 원리를 에너지 그림, 3D 구조, 측정 그래프로 차례로 확인합니다.</p>
         </div>
+        <a className="portal-link" href={PORTAL_URL} aria-label="메인 포털로 돌아가기">
+          <span className="portal-label-full">← 메인 포털</span>
+          <span className="portal-label-short">← 포털</span>
+        </a>
       </header>
 
       <ModuleNavigation current={current} navigate={navigate} />

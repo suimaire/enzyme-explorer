@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-02",
+  "timezone": "Asia/Seoul",
+  "placement": "Header right, outside and above module rail; below subtitle on narrow mobile",
+  "desktopText": "← 메인 포털",
+  "mobileText": "← 포털",
+  "shortLabelMaxWidth": 800,
+  "href": "https://suimaire.github.io/",
+  "target": null,
+  "accessibleName": "메인 포털로 돌아가기",
+  "touchTargetHeight": 44,
+  "keyboardOrder": [
+    "skip link",
+    "portal",
+    "module rail START"
+  ],
+  "browser": "chrome",
+  "browserVersion": "154.0.8037.58",
+  "viewports": [
+    [
+      1600,
+      900
+    ],
+    [
+      1440,
+      900
+    ],
+    [
+      1280,
+      800
+    ],
+    [
+      1024,
+      768
+    ],
+    [
+      768,
+      1024
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "development": {
+    "matrix": 42,
+    "messages": [],
+    "checks": 717
+  },
+  "production": {
+    "matrix": 42,
+    "messages": [],
+    "checks": 717
+  },
+  "baselineHeaderComparisons": [
+    {
+      "viewport": [
+        1600,
+        900
+      ],
+      "headerHeightDelta": 0.0,
+      "titleWidthDelta": 0.0,
+      "subtitleHeightDelta": 0.0
+    },
+    {
+      "viewport": [
+        1440,
+        900
+      ],
+      "headerHeightDelta": 0.0,
+      "titleWidthDelta": 0.0,
+      "subtitleHeightDelta": 0.0
+    },
+    {
+      "viewport": [
+        1280,
+        800
+      ],
+      "headerHeightDelta": 0.0,
+      "titleWidthDelta": 0.0,
+      "subtitleHeightDelta": 0.0
+    },
+    {
+      "viewport": [
+        1024,
+        768
+      ],
+      "headerHeightDelta": 0.0,
+      "titleWidthDelta": 0.0,
+      "subtitleHeightDelta": 0.0
+    },
+    {
+      "viewport": [
+        768,
+        1024
+      ],
+      "headerHeightDelta": 0.0,
+      "titleWidthDelta": 0.0,
+      "subtitleHeightDelta": 0.0
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "headerHeightDelta": 0.0,
+      "titleWidthDelta": 0,
+      "subtitleHeightDelta": 0.0
+    }
+  ],
+  "sameTabNavigation": {
+    "results": [
+      {
+        "width": 1440,
+        "url": "https://suimaire.github.io/",
+        "pagesBefore": 1,
+        "pagesAfter": 1
+      },
+      {
+        "width": 390,
+        "url": "https://suimaire.github.io/",
+        "pagesBefore": 1,
+        "pagesAfter": 1
+      }
+    ],
+    "destinationResponseIntercepted": true
+  },
+  "regressions": {
+    "harnessRuns": 11,
+    "harnessCheckItems": 1190.0,
+    "checks": 262,
+    "messages": [],
+    "runner": "tests/browser/closeout-checks.mjs (unchanged)"
+  },
+  "unit": {
+    "files": 18,
+    "outcome": "passed",
+    "tests": 285,
+    "newTests": 8
+  },
+  "finalCommands": {
+    "lint": "passed",
+    "build": "passed",
+    "test": "passed",
+    "typecheck": "passed",
+    "diffCheck": "passed"
+  },
+  "existingBuildWarning": "Chunks over 500 kB: three 510.63 kB, ProteinStructure 582.20 kB",
+  "changedApplicationFiles": [
+    "src/app/App.tsx",
+    "src/styles.css"
+  ],
+  "addedTestFiles": [
+    "tests/portalNavigation.test.tsx",
+    "tests/browser/portal-navigation-checks.mjs"
+  ],
+  "localCacheCleanup": "Existing ignored .browser-cache/staged-review.mjs archived byte-for-byte as staged-review.mjs.txt to remove its pre-existing no-undef lint error; ESLint configuration unchanged",
+  "protectedFiles": "All tracked files except App.tsx and styles.css unchanged, including existing tests, scientific modules/data, rail/router/session, package files",
+  "branch": "main",
+  "head": "147fb5a",
+  "commitPushBranchChange": false,
+  "published": false
+}

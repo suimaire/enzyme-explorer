@@ -160,6 +160,32 @@ h1 span {
   font-size: 14px;
   padding: 6px 0;
 }
+.portal-link {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  margin-left: auto;
+  min-height: 44px;
+  padding: 7px 14px;
+  border: 1px solid #c6d1d8;
+  border-radius: 5px;
+  color: var(--accent);
+  font-size: 14px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.portal-link:hover,
+.portal-link:focus-visible {
+  background: #edf4f8;
+  border-color: var(--accent);
+}
+.portal-label-short { display: none; }
+@media (max-width: 800px) {
+  /* Keep the wrapped header row height while the 44px target uses its existing spacing. */
+  .portal-link { margin-block: -3px; padding-inline: 8px; }
+  .portal-label-full { display: none; }
+  .portal-label-short { display: inline; }
+}
 
 .module-nav {
   display: flex;

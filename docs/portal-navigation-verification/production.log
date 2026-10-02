@@ -1,0 +1,22 @@
+{
+  "channel": "chrome",
+  "version": "154.0.8037.58",
+  "checks": 717,
+  "matrix": 42,
+  "keyboard": 6,
+  "navigation": [
+    {
+      "width": 1440,
+      "url": "https://suimaire.github.io/",
+      "pagesBefore": 1,
+      "pagesAfter": 1
+    },
+    {
+      "width": 390,
+      "url": "https://suimaire.github.io/",
+      "pagesBefore": 1,
+      "pagesAfter": 1
+    }
+  ],
+  "messages": []
+}
